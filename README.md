@@ -1,31 +1,10 @@
-# mps-kotlin-typesystem/mps-kotlin-typesystem
+# Type system for MPS kotlin
+This repository contains an implementation of the kotlin type system to be used with the kotlin language in MPS.
+The implementation relies on [MPS coderules](https://github.com/jetbrains/mps-coderules).
 
+## Requirements
+The project requires a version of MPS bundling kotlin (not available currently, more details in the future) with
+the codesrules plugins (please refer to [coderules readme](https://github.com/jetbrains/mps-coderules) for instructions).
 
-
-## Getting Started
-
-Download links:
-
-SSH clone URL: ssh://git@git.jetbrains.team/mps-kotlin-typesystem/mps-kotlin-typesystem.git
-
-HTTPS clone URL: https://git.jetbrains.team/mps-kotlin-typesystem/mps-kotlin-typesystem.git
-
-
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-## Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Examples
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a production system.
-
-## Resources
-
-Add links to external resources for this project, such as CI server, bug tracker, etc.
+## Structure of the project
+More details to come :)

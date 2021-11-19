@@ -1,0 +1,24 @@
+# Local IDE configurations when running from sources/tests/ant
+/system/
+/config/
+/tmpsettings/
+/build/
+
+# MacOS user UI setting related file
+.DS_Store
+
+# Intellij Idea user workspace setting files
+**/.idea/workspace.xml
+**/.mps/workspace.xml
+**/.mps/product-workspace.xml
+
+# Local user commits
+**/.idea/shelf
+**/.mps/shelf
+
+# Build artifacts
+classes_gen
+kotlin_gen
+source_gen
+source_gen.caches
+*.class
