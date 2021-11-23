@@ -5,8 +5,8 @@
     <devkit ref="4866b4b4-6ecd-49f3-ae68-c62248cc4306(jetbrains.mps.kotlin.devkit.jvm)" />
   </languages>
   <imports>
-    <import index="4zq2" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" />
-    <import index="yt48" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.io(jetbrains.mps.kotlin.stdlib/)" />
+    <import index="16p0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" />
+    <import index="2qza" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.io(jetbrains.mps.kotlin.stdlib/)" />
   </imports>
   <registry>
     <language id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin">
@@ -154,7 +154,7 @@
         <node concept="1XD0bi" id="1PigBMiBaW3" role="1XbAXm">
           <property role="TrG5h" value="wantNull" />
           <node concept="1XD088" id="1PigBMiBdTL" role="37iW8f">
-            <ref role="1SePDO" to="4zq2:~kotlin/Boolean" resolve="Boolean" />
+            <ref role="1SePDO" to="16p0:~kotlin/Boolean" resolve="Boolean" />
           </node>
         </node>
         <node concept="TgwzM" id="5D4bOjqMFBQ" role="1XbAXh">
@@ -220,7 +220,7 @@
           </node>
         </node>
         <node concept="1NbEFs" id="1PigBMiBw5U" role="THmaL">
-          <ref role="AarEw" to="yt48:~.println()" resolve="println" />
+          <ref role="AarEw" to="2qza:~.println()" resolve="println" />
           <node concept="1XD0eI" id="1PigBMiBw5V" role="TWiod">
             <node concept="1XD08G" id="1PigBMiBw5W" role="1XD0ZN">
               <node concept="21VMdE" id="1PigBMiBw5X" role="1XD0V$">
@@ -263,7 +263,7 @@
           </node>
         </node>
         <node concept="1NbEFs" id="1PigBMiBnOX" role="THmaL">
-          <ref role="AarEw" to="yt48:~.println()" resolve="println" />
+          <ref role="AarEw" to="2qza:~.println()" resolve="println" />
           <node concept="1XD0eI" id="1PigBMiBorM" role="TWiod">
             <node concept="1XD08G" id="1PigBMiBorK" role="1XD0ZN">
               <node concept="21VMdE" id="1PigBMiBorL" role="1XD0V$">
