@@ -6,5 +6,5 @@ The implementation relies on [MPS coderules](https://github.com/jetbrains/mps-co
 The project requires a version of MPS bundling kotlin (not available currently, more details in the future) with
 the codesrules plugins (please refer to [coderules readme](https://github.com/jetbrains/mps-coderules) for instructions).
 
-## Structure of the project
-More details to come :)
+## Implement types for languages based on MPS Kotlin
+The [structure of the project](./doc/structure.md) gives a starting point to implement your types along with this typesystem implementation. You may also refer to this project for examples.
