@@ -120,6 +120,7 @@
       <concept id="3189788309731981027" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleSolutionRuntime" flags="ng" index="1E0d5M">
         <reference id="3189788309731981028" name="solution" index="1E0d5P" />
       </concept>
+      <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="3189788309731917348" name="runtime" index="1E1XAP" />
       </concept>
@@ -170,7 +171,7 @@
       <node concept="3981dG" id="1diEraJ0skB" role="39821P">
         <node concept="3_J27D" id="1diEraJ0skC" role="Nbhlr">
           <node concept="3Mxwew" id="1diEraJ0skD" role="3MwsjC">
-            <property role="3MwjfP" value="kotlin-typesystem.zip" />
+            <property role="3MwjfP" value="mps-kotlin-typesystem.zip" />
           </node>
         </node>
         <node concept="m$_wl" id="1diEraJ0skE" role="39821P">
@@ -180,7 +181,7 @@
       </node>
     </node>
     <node concept="m$_wf" id="1diEraJ0skp" role="3989C9">
-      <property role="m$_wk" value="kotlinTypesystem" />
+      <property role="m$_wk" value="jetbrains.mps.kotlin.typesystem" />
       <node concept="3_J27D" id="1diEraJ0skq" role="m$_yQ">
         <node concept="3Mxwew" id="41G9GPckERK" role="3MwsjC">
           <property role="3MwjfP" value="MPS Kotlin Typesystem" />
@@ -216,7 +217,7 @@
       </node>
       <node concept="3_J27D" id="69s32WJ3dwI" role="3s6cr7">
         <node concept="3Mxwew" id="69s32WJ3dwK" role="3MwsjC">
-          <property role="3MwjfP" value="Coderules typesystem for kotlin" />
+          <property role="3MwjfP" value="Coderules typesystem for MPS kotlin" />
         </node>
       </node>
     </node>
@@ -336,6 +337,53 @@
         <node concept="1SiIV0" id="1ZO_snCPGfx" role="3bR37C">
           <node concept="1Busua" id="1ZO_snCPGfy" role="1SiIV1">
             <ref role="1Busuk" node="2b3dSh2EpNK" resolve="jetbrains.mps.kotlinExt" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="6RInlDMvdsd" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="jetbrains.mps.kotlin.plugin.build" />
+        <property role="3LESm3" value="4ddb9520-4888-4a48-8d5b-4d6aa4ec0a2b" />
+        <node concept="55IIr" id="6RInlDMvdsg" role="3LF7KH">
+          <node concept="2Ry0Ak" id="6RInlDMvdsZ" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="6RInlDMvdt4" role="2Ry0An">
+              <property role="2Ry0Am" value="kotlin.plugin.build" />
+              <node concept="2Ry0Ak" id="6RInlDMvdt9" role="2Ry0An">
+                <property role="2Ry0Am" value="jetbrains.mps.kotlin.plugin.build.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6RInlDMvdtj" role="3bR37C">
+          <node concept="3bR9La" id="6RInlDMvdtk" role="1SiIV1">
+            <ref role="3bR37D" to="zqd8:3PhVAH_WgTu" resolve="jetbrains.mps.coderules.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6RInlDMvdtl" role="3bR37C">
+          <node concept="3bR9La" id="6RInlDMvdtm" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="6RInlDMvdtr" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6RInlDMvdts" role="1HemKq">
+            <node concept="55IIr" id="6RInlDMvdtn" role="3LXTmr">
+              <node concept="2Ry0Ak" id="6RInlDMvdto" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6RInlDMvdtp" role="2Ry0An">
+                  <property role="2Ry0Am" value="kotlin.plugin.build" />
+                  <node concept="2Ry0Ak" id="6RInlDMvdtq" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6RInlDMvdtt" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
           </node>
         </node>
       </node>

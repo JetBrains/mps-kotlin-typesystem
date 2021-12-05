@@ -53,6 +53,7 @@ In practice, several **macros** can be used to trigger processing of a node:
 - dataflowOfList<Types[], Before, After, Status>(nodes[]) : process the dataflow for the child list (only before and after the list are required, connection are automatic between nodes)
 - isolatedDataflowOf/List<Type>(node) : start a new dataflow at the given position. Should be used to retrieve type of a node that is not part of current flow (variable reference, currently not in a dataflow...).
 - conditionalDataflowOf<Before, AfterTrue, AfterFalse, Status>(node) : process the dataflow for the child and get two different handle for result depending on boolean result
+
 It is not advised to manually insert **dataflow** or **setupDataFlow** coderules constraints, the macros above handle more logic internal to the dataflow "framework" (recursion prevension, constraint scopes...). The _Status_ variable must always be set and hold information on current flow (whether it should be stopped for instance).
 
 When creating type processing for a concept, coderules constraint **dataflow(Node, Type, Before, After, Status)** should be matched. Node and Status are supposed to not be free, while Type, Before and After are most likely free variables (After can be assigned to conditional term which hold conditional resulting branches).

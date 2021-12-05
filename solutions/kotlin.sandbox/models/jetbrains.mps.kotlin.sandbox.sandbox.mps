@@ -6,8 +6,8 @@
     <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="0" />
   </languages>
   <imports>
-    <import index="16p0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" />
-    <import index="2qza" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.io(jetbrains.mps.kotlin.stdlib/)" />
+    <import index="a3ie" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" />
+    <import index="znn8" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.io(jetbrains.mps.kotlin.stdlib/)" />
   </imports>
   <registry>
     <language id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin">
@@ -46,6 +46,9 @@
       <concept id="5032507314956342214" name="jetbrains.mps.kotlin.structure.PostfixIncOperation" flags="ng" index="gk1PV" />
       <concept id="5032507314956342049" name="jetbrains.mps.kotlin.structure.DivOperation" flags="ng" index="gk1Qs" />
       <concept id="5032507314956342019" name="jetbrains.mps.kotlin.structure.MinusOperation" flags="ng" index="gk1QY" />
+      <concept id="5032507314958578745" name="jetbrains.mps.kotlin.structure.IOverloadableOperator" flags="ng" index="gvzE4">
+        <reference id="4288690671358895744" name="provider" index="1ap9JL" />
+      </concept>
       <concept id="7358760241248942182" name="jetbrains.mps.kotlin.structure.Comment" flags="ng" index="gXE$l">
         <child id="7358760241248948562" name="lines" index="gXG0x" />
       </concept>
@@ -964,7 +967,7 @@
         <node concept="1XD0bi" id="788DB8wIthD" role="1XbAXm">
           <property role="TrG5h" value="b" />
           <node concept="1XD088" id="o_tr4rKZSh" role="37iW8f">
-            <ref role="1SePDO" to="16p0:~kotlin/Int" resolve="Int" />
+            <ref role="1SePDO" to="a3ie:~kotlin/Int" resolve="Int" />
           </node>
         </node>
         <node concept="TgwzM" id="788DB8wIthF" role="1XbAXh">
@@ -994,7 +997,7 @@
         <node concept="1XD0l2" id="o_tr4rKZQE" role="2BPcuh" />
         <node concept="1XD0kn" id="o_tr4rKZQF" role="1XPytU" />
         <node concept="1XD088" id="o_tr4rKZQG" role="21NdcZ">
-          <ref role="1SePDO" to="16p0:~kotlin/Int" resolve="Int" />
+          <ref role="1SePDO" to="a3ie:~kotlin/Int" resolve="Int" />
         </node>
       </node>
       <node concept="1XD0bz" id="788DB8wBSMU" role="KS$fE">
@@ -1041,10 +1044,20 @@
           </node>
         </node>
         <node concept="gk1L9" id="2nEPytiAGdd" role="THmaL">
+          <ref role="1ap9JL" node="o_tr4rKZQ_" resolve="plus" />
           <node concept="UZU4S" id="2nEPytiAGdg" role="21Pkll">
             <ref role="UZU4V" node="788DB8wBSOO" resolve="b" />
           </node>
           <node concept="UZU4S" id="2nEPytiAGcS" role="21Pkln">
+            <ref role="UZU4V" node="788DB8wBSOy" resolve="a" />
+          </node>
+        </node>
+        <node concept="gk1L9" id="3cpjc8KZtbZ" role="THmaL">
+          <ref role="1ap9JL" node="788DB8wIthC" resolve="plus" />
+          <node concept="UZU4S" id="3cpjc8KZtfu" role="21Pkll">
+            <ref role="UZU4V" node="788DB8wBSOO" resolve="b" />
+          </node>
+          <node concept="UZU4S" id="3cpjc8KZtay" role="21Pkln">
             <ref role="UZU4V" node="788DB8wBSOy" resolve="a" />
           </node>
         </node>
@@ -1057,7 +1070,9 @@
         </node>
         <node concept="1XD0kP" id="6ov$ndRLVuU" role="THmaL">
           <node concept="gk1L9" id="6ov$ndRLVuV" role="1XD01e">
+            <ref role="1ap9JL" node="o_tr4rKZQ_" resolve="plus" />
             <node concept="gk1Qs" id="6ov$ndRLVuW" role="21Pkll">
+              <ref role="1ap9JL" node="788DB8wBSMU" resolve="div" />
               <node concept="UZU4S" id="6ov$ndRLVuX" role="21Pkll">
                 <ref role="UZU4V" node="788DB8wBSOy" resolve="a" />
               </node>
@@ -1127,7 +1142,7 @@
         <node concept="1XD0bi" id="5MrhAo3dmD0" role="1XbAXm">
           <property role="TrG5h" value="param" />
           <node concept="1XD088" id="6563FJLoc83" role="37iW8f">
-            <ref role="1SePDO" to="16p0:~kotlin/Double" resolve="Double" />
+            <ref role="1SePDO" to="a3ie:~kotlin/Double" resolve="Double" />
           </node>
         </node>
         <node concept="TgwzM" id="5MrhAo3dmAu" role="1XbAXh">
@@ -1138,7 +1153,7 @@
         <node concept="1XD0l2" id="5MrhAo3dmAw" role="2BPcuh" />
         <node concept="1XD0kn" id="5MrhAo3dmB3" role="1XPytU" />
         <node concept="1XD088" id="6563FJLoceA" role="21NdcZ">
-          <ref role="1SePDO" to="16p0:~kotlin/Double" resolve="Double" />
+          <ref role="1SePDO" to="a3ie:~kotlin/Double" resolve="Double" />
         </node>
       </node>
       <node concept="1XD0bz" id="6563FJLoc6D" role="KS$fE">
@@ -1247,6 +1262,7 @@
           </node>
           <node concept="1XD0mK" id="5MrhAo3dncc" role="1XD05H">
             <node concept="gk1L9" id="5MrhAo3dncd" role="1XD0cX">
+              <ref role="1ap9JL" node="5MrhAo3dmAs" resolve="plus" />
               <node concept="UZU4S" id="5MrhAo3dnce" role="21Pkll">
                 <ref role="UZU4V" node="5MrhAo3dmJv" resolve="d" />
               </node>
@@ -1263,6 +1279,7 @@
           </node>
           <node concept="1XD0mK" id="5MrhAo3dnco" role="1XD05H">
             <node concept="gk1L9" id="5MrhAo3dncp" role="1XD0cX">
+              <ref role="1ap9JL" to="a3ie:~kotlin/Double.plus(kotlin/Byte)" resolve="plus" />
               <node concept="UZU4S" id="5MrhAo3dncq" role="21Pkll">
                 <ref role="UZU4V" node="5MrhAo3dmKo" resolve="e" />
               </node>
@@ -1279,10 +1296,12 @@
           </node>
           <node concept="1XD0mK" id="5MrhAo3dncx" role="1XD05H">
             <node concept="gk1L9" id="5MrhAo3dncy" role="1XD0cX">
+              <ref role="1ap9JL" to="a3ie:~kotlin/Double.plus(kotlin/Byte)" resolve="plus" />
               <node concept="UZU4S" id="5MrhAo3dncz" role="21Pkll">
                 <ref role="UZU4V" node="5MrhAo3dmKo" resolve="e" />
               </node>
               <node concept="gk1L9" id="5MrhAo3dnc$" role="21Pkln">
+                <ref role="1ap9JL" node="5MrhAo3dmAs" resolve="plus" />
                 <node concept="UZU4S" id="5MrhAo3dnc_" role="21Pkln">
                   <ref role="UZU4V" node="5MrhAo3dmHi" resolve="c" />
                 </node>
@@ -1301,6 +1320,7 @@
           </node>
           <node concept="1XD0mK" id="5MrhAo3dmL$" role="1XD05H">
             <node concept="gk1QY" id="5MrhAo3dngH" role="1XD0cX">
+              <ref role="1ap9JL" node="5MrhAo3dnbM" resolve="minus" />
               <node concept="UZU4S" id="5MrhAo3dngK" role="21Pkll">
                 <ref role="UZU4V" node="5MrhAo3dmJv" resolve="d" />
               </node>
@@ -1333,7 +1353,9 @@
           </node>
           <node concept="1XD0mK" id="5MrhAo3dmOa" role="1XD05H">
             <node concept="gk1QY" id="5MrhAo3dnhb" role="1XD0cX">
+              <ref role="1ap9JL" node="5MrhAo3dnbM" resolve="minus" />
               <node concept="gk1QY" id="5MrhAo3dngZ" role="21Pkln">
+                <ref role="1ap9JL" node="5MrhAo3dnbM" resolve="minus" />
                 <node concept="UZU4S" id="5MrhAo3dngT" role="21Pkln">
                   <ref role="UZU4V" node="5MrhAo3dmHi" resolve="c" />
                 </node>
@@ -1636,7 +1658,7 @@
           <property role="21VRqZ" value="true" />
           <property role="21VRqX" value="true" />
           <node concept="1XD088" id="Tmm2uCb_1G" role="37iW8f">
-            <ref role="1SePDO" to="16p0:~kotlin/Int" resolve="Int" />
+            <ref role="1SePDO" to="a3ie:~kotlin/Int" resolve="Int" />
           </node>
         </node>
       </node>
@@ -1652,6 +1674,7 @@
         </node>
         <node concept="TgwzM" id="3sxwjgEA7eS" role="1XbAXh">
           <node concept="giPaf" id="3sxwjgEA7hP" role="THmaL">
+            <ref role="1ap9JL" to="a3ie:~kotlin/Any.equals(kotlin/Any)" resolve="equals" />
             <node concept="1XD0k2" id="3sxwjgEA7i1" role="21Pkll" />
             <node concept="UZU4S" id="3sxwjgEA7hG" role="21Pkln">
               <ref role="UZU4V" node="3sxwjgEA7eZ" resolve="animal" />
@@ -1697,7 +1720,7 @@
         </node>
         <node concept="TgwzM" id="3sxwjgEA7tP" role="1XbAXh">
           <node concept="1NbEFs" id="5DluWmNdq90" role="THmaL">
-            <ref role="AarEw" to="2qza:~.println()" resolve="println" />
+            <ref role="AarEw" to="znn8:~.println()" resolve="println" />
             <node concept="1XD0eI" id="3sxwjgEA7tR" role="TWiod">
               <node concept="1XD08G" id="3sxwjgEA7tS" role="1XD0ZN">
                 <node concept="21VMdE" id="3sxwjgEA7tT" role="1XD0V$">
@@ -1774,7 +1797,7 @@
             <node concept="1NbEFs" id="5DluWmNdq3H" role="1XD0cX">
               <ref role="AarEw" node="7IwkP0yJfs0" resolve="A" />
               <node concept="1XD088" id="jIFYxcA9_E" role="TPadX">
-                <ref role="1SePDO" to="16p0:~kotlin/Double" resolve="Double" />
+                <ref role="1SePDO" to="a3ie:~kotlin/Double" resolve="Double" />
               </node>
             </node>
           </node>
@@ -1797,7 +1820,7 @@
                 </node>
               </node>
               <node concept="1NbEtQ" id="5DluWmNdq3N" role="1XD07G">
-                <ref role="AarEw" to="16p0:~kotlin/Number.toInt()" resolve="toInt" />
+                <ref role="AarEw" to="a3ie:~kotlin/Number.toInt()" resolve="toInt" />
               </node>
             </node>
           </node>
@@ -1835,7 +1858,7 @@
         <property role="TrG5h" value="returnsInt2" />
         <node concept="1XD0mE" id="6yQJbFyMl2J" role="1XD0Z0">
           <node concept="1XD088" id="6yQJbFyMl2P" role="1XD036">
-            <ref role="1SePDO" to="16p0:~kotlin/Int" resolve="Int" />
+            <ref role="1SePDO" to="a3ie:~kotlin/Int" resolve="Int" />
           </node>
         </node>
       </node>
@@ -1856,7 +1879,7 @@
       <node concept="1XD0eA" id="3E7baJHNr7a" role="TDYyH">
         <property role="TrG5h" value="a" />
         <node concept="1XD088" id="3E7baJHNr7F" role="1XD0Z0">
-          <ref role="1SePDO" to="16p0:~kotlin/Int" resolve="Int" />
+          <ref role="1SePDO" to="a3ie:~kotlin/Int" resolve="Int" />
         </node>
       </node>
       <node concept="1XD0l2" id="3E7baJHNr7b" role="2BPcuh" />
@@ -1951,6 +1974,7 @@
         <node concept="AQkLs" id="eMKlnF$8gJ" role="THmaL" />
         <node concept="1XD0b9" id="eMKlnF$80r" role="THmaL">
           <node concept="giPaf" id="eMKlnF$80J" role="1XD00_">
+            <ref role="1ap9JL" to="a3ie:~kotlin/Any.equals(kotlin/Any)" resolve="equals" />
             <node concept="1XD0k2" id="eMKlnF$80Q" role="21Pkll" />
             <node concept="UZU4S" id="eMKlnF$80E" role="21Pkln">
               <ref role="UZU4V" node="eMKlnFx9nP" resolve="a" />
@@ -2461,7 +2485,7 @@
     <property role="TrG5h" value="ReceiverType" />
     <node concept="eKYAL" id="4rvPz7vbpCo" role="1XD0Tu" />
     <node concept="1XD0aY" id="4rvPz7vbpCt" role="1XD0Tu">
-      <property role="TrG5h" value="SomeReceivingClass" />
+      <property role="TrG5h" value="Receiving" />
       <node concept="1XD0bf" id="4rvPz7vbpCv" role="KDYUA">
         <node concept="1XD0l2" id="4rvPz7vbpCx" role="2BPcuh" />
       </node>
@@ -2516,6 +2540,9 @@
           <property role="1Xb$ne" value="true" />
           <node concept="1XD0eA" id="4rvPz7vbpEh" role="TDYyP">
             <property role="TrG5h" value="myObject" />
+            <node concept="1XD088" id="4TnHK1QKNLO" role="1XD0Z0">
+              <ref role="1SePDO" node="4rvPz7vbpCt" resolve="SomeReceivingClass" />
+            </node>
           </node>
           <node concept="1XD0mK" id="4rvPz7vbpEm" role="1XD05H">
             <node concept="1NbEFs" id="4rvPz7vbpEa" role="1XD0cX">
