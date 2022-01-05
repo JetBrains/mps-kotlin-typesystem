@@ -175,7 +175,7 @@
           </node>
         </node>
         <node concept="m$_wl" id="1diEraJ0skE" role="39821P">
-          <ref role="m_rDy" node="1diEraJ0skp" resolve="kotlinTypesystem" />
+          <ref role="m_rDy" node="1diEraJ0skp" resolve="jetbrains.mps.kotlin.typesystem" />
           <node concept="pUk6x" id="1diEraJ0skF" role="pUk7w" />
         </node>
       </node>
@@ -202,7 +202,7 @@
         <ref role="m$_y1" to="zqd8:7BVjoXzUx67" resolve="jetbrains.mps.coderules" />
       </node>
       <node concept="m$_yC" id="69s32WJ3d_K" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:1diEraJ0skp" resolve="kotlin" />
+        <ref role="m$_y1" to="ffeo:1diEraJ0skp" resolve="jetbrains.mps.kotlin" />
       </node>
       <node concept="3_J27D" id="1diEraJ0skw" role="m_cZH">
         <node concept="3Mxwew" id="1diEraJ0skx" role="3MwsjC">
@@ -270,6 +270,16 @@
         <node concept="1SiIV0" id="69s32WJfBN1" role="3bR37C">
           <node concept="3bR9La" id="69s32WJfBN2" role="1SiIV1">
             <ref role="3bR37D" to="zqd8:65DJywFj0Fi" resolve="jetbrains.mps.coderules.typechecking" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3xTUo83yYRJ" role="3bR37C">
+          <node concept="3bR9La" id="3xTUo83yYRK" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:Ye$g8PO8Vb" resolve="jetbrains.mps.kotlin.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7WpE6U5hkS9" role="3bR37C">
+          <node concept="3bR9La" id="7WpE6U5hkSa" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
       </node>

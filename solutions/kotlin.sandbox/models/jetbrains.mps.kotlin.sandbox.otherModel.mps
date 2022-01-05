@@ -2,11 +2,11 @@
 <model ref="r:0d0ca30b-e372-4f11-a141-d20b44de2828(jetbrains.mps.kotlin.sandbox.otherModel)">
   <persistence version="9" />
   <languages>
-    <devkit ref="4866b4b4-6ecd-49f3-ae68-c62248cc4306(jetbrains.mps.kotlin.devkit.jvm)" />
+    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="0" />
   </languages>
   <imports>
-    <import index="16p0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" />
-    <import index="2qza" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.io(jetbrains.mps.kotlin.stdlib/)" />
+    <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
+    <import index="aucy" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.io(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
   </imports>
   <registry>
     <language id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin">
@@ -74,7 +74,7 @@
         <child id="2936055411798374203" name="target" index="1XD07G" />
       </concept>
       <concept id="2936055411798373481" name="jetbrains.mps.kotlin.structure.ClassDeclaration" flags="ng" index="1XD0aY">
-        <child id="2324909103763444261" name="constructor" index="KDYUA" />
+        <child id="2324909103763444261" name="primaryConstructor" index="KDYUA" />
       </concept>
       <concept id="2936055411798373406" name="jetbrains.mps.kotlin.structure.IfExpression" flags="ng" index="1XD0b9">
         <child id="2936055411798374133" name="body" index="1XD00y" />
@@ -154,7 +154,7 @@
         <node concept="1XD0bi" id="1PigBMiBaW3" role="1XbAXm">
           <property role="TrG5h" value="wantNull" />
           <node concept="1XD088" id="1PigBMiBdTL" role="37iW8f">
-            <ref role="1SePDO" to="16p0:~kotlin/Boolean" resolve="Boolean" />
+            <ref role="1SePDO" to="0:~kotlin/Boolean" resolve="Boolean" />
           </node>
         </node>
         <node concept="TgwzM" id="5D4bOjqMFBQ" role="1XbAXh">
@@ -220,7 +220,7 @@
           </node>
         </node>
         <node concept="1NbEFs" id="1PigBMiBw5U" role="THmaL">
-          <ref role="AarEw" to="2qza:~.println()" resolve="println" />
+          <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
           <node concept="1XD0eI" id="1PigBMiBw5V" role="TWiod">
             <node concept="1XD08G" id="1PigBMiBw5W" role="1XD0ZN">
               <node concept="21VMdE" id="1PigBMiBw5X" role="1XD0V$">
@@ -263,7 +263,7 @@
           </node>
         </node>
         <node concept="1NbEFs" id="1PigBMiBnOX" role="THmaL">
-          <ref role="AarEw" to="2qza:~.println()" resolve="println" />
+          <ref role="AarEw" to="aucy:~.println()" resolve="println" />
           <node concept="1XD0eI" id="1PigBMiBorM" role="TWiod">
             <node concept="1XD08G" id="1PigBMiBorK" role="1XD0ZN">
               <node concept="21VMdE" id="1PigBMiBorL" role="1XD0V$">

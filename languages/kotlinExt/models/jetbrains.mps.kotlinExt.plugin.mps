@@ -218,6 +218,12 @@
                       <ref role="ehGHo" to="hcm8:5D4bOjrr8CG" resolve="IFunctionCallLike" />
                     </node>
                   </node>
+                  <node concept="37vLTG" id="7nsCnXYhh9O" role="3clF46">
+                    <property role="TrG5h" value="receiverType" />
+                    <node concept="3Tqbb2" id="7nsCnXYhnAm" role="1tU5fm">
+                      <ref role="ehGHo" to="hcm8:2yYXHtl6Jh1" resolve="IType" />
+                    </node>
+                  </node>
                   <node concept="37vLTG" id="7VTXQs1saf4" role="3clF46">
                     <property role="TrG5h" value="candidates" />
                     <node concept="A3Dl8" id="7VTXQs1saf5" role="1tU5fm">
@@ -246,6 +252,9 @@
                             <ref role="37wK5l" to="fefm:UQJ11Or2B9" resolve="OverloadResolutionQuery" />
                             <node concept="37vLTw" id="UQJ11OrlJv" role="37wK5m">
                               <ref role="3cqZAo" node="7VTXQs1saf2" resolve="call" />
+                            </node>
+                            <node concept="37vLTw" id="7nsCnXYhq7O" role="37wK5m">
+                              <ref role="3cqZAo" node="7nsCnXYhh9O" resolve="receiverType" />
                             </node>
                             <node concept="37vLTw" id="UQJ11OroHI" role="37wK5m">
                               <ref role="3cqZAo" node="7VTXQs1saf4" resolve="candidates" />
