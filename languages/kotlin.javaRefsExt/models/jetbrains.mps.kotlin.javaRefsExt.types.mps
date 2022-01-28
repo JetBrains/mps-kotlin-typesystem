@@ -14,7 +14,6 @@
     <import index="d5k6" ref="r:e9005ea6-e4e0-4b7f-8b34-6e6513630cda(jetbrains.mps.kotlin.baseLanguage.typeConversion)" />
     <import index="hez" ref="r:b038209d-51a9-4919-b6e5-4fafce96fa00(jetbrains.mps.kotlin.behavior)" />
     <import index="hcm8" ref="r:72a7bf00-0175-42ca-b99b-fe8519b6a16f(jetbrains.mps.kotlin.structure)" implicit="true" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -165,9 +164,6 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
-      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
-        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
-      </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
@@ -656,21 +652,6 @@
                       <node concept="2ShNRf" id="27wMicDk$SY" role="33vP2m">
                         <node concept="1pGfFk" id="27wMicDk$SX" role="2ShVmc">
                           <ref role="37wK5l" to="fefm:27wMicD8jkU" resolve="SuperClassPathsVisitor" />
-                          <node concept="2OqwBi" id="6ov$ndRzwRd" role="37wK5m">
-                            <node concept="2OqwBi" id="6ov$ndRzwgW" role="2Oq$k0">
-                              <node concept="liA8E" id="6ov$ndRzwF_" role="2OqNvi">
-                                <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
-                              </node>
-                              <node concept="2JrnkZ" id="6ov$ndRzwh1" role="2Oq$k0">
-                                <node concept="3A2sRY" id="6ov$ndRzv36" role="2JrQYb">
-                                  <ref role="3A2yKK" node="3lDDPlni$jC" resolve="klass" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="6ov$ndRzxg1" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
-                            </node>
-                          </node>
                         </node>
                       </node>
                     </node>

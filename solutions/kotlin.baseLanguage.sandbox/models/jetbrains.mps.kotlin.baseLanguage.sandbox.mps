@@ -14,8 +14,8 @@
       <concept id="7565185111013327093" name="jetbrains.mps.kotlin.javaRefs.structure.JavaClassType" flags="ng" index="2EYIWN">
         <reference id="7565185111013327225" name="javaClass" index="2EYIUZ" />
       </concept>
-      <concept id="1139611333302792698" name="jetbrains.mps.kotlin.javaRefs.structure.JavaInterfaceInheritanceSpecifier" flags="ng" index="Klgu2">
-        <reference id="1139611333302806723" name="interface" index="KllUV" />
+      <concept id="1139611333302792698" name="jetbrains.mps.kotlin.javaRefs.structure.JavaClassSuperSpecifier" flags="ng" index="Klgu2">
+        <reference id="1139611333302806723" name="classifier" index="KllUV" />
       </concept>
     </language>
     <language id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin">
@@ -35,8 +35,7 @@
       <concept id="2324909103759097704" name="jetbrains.mps.kotlin.structure.IWithClassBody" flags="ng" index="KS$fF">
         <child id="2324909103759097705" name="members" index="KS$fE" />
       </concept>
-      <concept id="1314219036497609650" name="jetbrains.mps.kotlin.structure.FunctionBody" flags="ng" index="TgwzM" />
-      <concept id="1314219036498225646" name="jetbrains.mps.kotlin.structure.IStatementScopeProvider" flags="ng" index="THmaI">
+      <concept id="1314219036498225646" name="jetbrains.mps.kotlin.structure.IStatementHolder" flags="ng" index="THmaI">
         <child id="1314219036498225649" name="statements" index="THmaL" />
       </concept>
       <concept id="6565639133219057675" name="jetbrains.mps.kotlin.structure.IArguments" flags="ng" index="TWioa">
@@ -58,7 +57,6 @@
       </concept>
       <concept id="2936055411798373428" name="jetbrains.mps.kotlin.structure.FunctionDeclaration" flags="ng" index="1XD0bz">
         <property id="4908873499999643325" name="isOverride" index="3qOnjd" />
-        <child id="2936055411806083462" name="body" index="1XbAXh" />
       </concept>
       <concept id="2936055411798373439" name="jetbrains.mps.kotlin.structure.AbstractFunctionCall" flags="ng" index="1XD0bC">
         <reference id="1991556721072067817" name="function" index="AarEw" />
@@ -100,25 +98,22 @@
       <node concept="1XD0bz" id="ZgHBwZyA8Z" role="KS$fE">
         <property role="TrG5h" value="activate" />
         <property role="3qOnjd" value="true" />
-        <node concept="TgwzM" id="ZgHBwZyA91" role="1XbAXh">
-          <node concept="1NbEFs" id="7WpE6U5cirs" role="THmaL">
-            <ref role="AarEw" to="aucy:~.println()" resolve="println" />
-            <node concept="1XD0eI" id="7WpE6U5civO" role="TWiod">
-              <node concept="1XD08G" id="ZgHBwZyDt0" role="1XD0ZN">
-                <node concept="21VMdE" id="ZgHBwZyDuK" role="1XD0V$">
-                  <property role="21VMdD" value="It works!" />
-                </node>
-                <node concept="21VMdE" id="ZgHBwZyDt1" role="1XD0V$" />
+        <node concept="1XD0l2" id="ZgHBwZyA93" role="2BPcuh" />
+        <node concept="1NbEFs" id="7WpE6U5cirs" role="THmaL">
+          <ref role="AarEw" to="aucy:~.println()" resolve="println" />
+          <node concept="1XD0eI" id="7WpE6U5civO" role="TWiod">
+            <node concept="1XD08G" id="ZgHBwZyDt0" role="1XD0ZN">
+              <node concept="21VMdE" id="ZgHBwZyDuK" role="1XD0V$">
+                <property role="21VMdD" value="It works!" />
               </node>
+              <node concept="21VMdE" id="ZgHBwZyDt1" role="1XD0V$" />
             </node>
           </node>
         </node>
-        <node concept="1XD0l2" id="ZgHBwZyA93" role="2BPcuh" />
       </node>
       <node concept="1XD0bz" id="ZgHBwZyAgF" role="KS$fE">
         <property role="TrG5h" value="deactivate" />
         <property role="3qOnjd" value="true" />
-        <node concept="TgwzM" id="ZgHBwZyAgH" role="1XbAXh" />
         <node concept="1XD0l2" id="ZgHBwZyAgJ" role="2BPcuh" />
       </node>
     </node>

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="2405a196-e75d-462c-938b-ae8e3fac20aa" name="jetbrains.mps.baseLanguage.kotlinRefs" version="0" />
-    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="0" />
+    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
@@ -104,12 +104,11 @@
       <concept id="2324909103759097704" name="jetbrains.mps.kotlin.structure.IWithClassBody" flags="ng" index="KS$fF">
         <child id="2324909103759097705" name="members" index="KS$fE" />
       </concept>
-      <concept id="1314219036497609650" name="jetbrains.mps.kotlin.structure.FunctionBody" flags="ng" index="TgwzM" />
       <concept id="1314219036499415210" name="jetbrains.mps.kotlin.structure.AbstractPropertyDeclaration" flags="ng" index="TDTJE">
         <property id="2936055411806090009" name="isReadonly" index="1Xb$ne" />
         <child id="2936055411798374330" name="assignment" index="1XD05H" />
       </concept>
-      <concept id="1314219036498225646" name="jetbrains.mps.kotlin.structure.IStatementScopeProvider" flags="ng" index="THmaI">
+      <concept id="1314219036498225646" name="jetbrains.mps.kotlin.structure.IStatementHolder" flags="ng" index="THmaI">
         <child id="1314219036498225649" name="statements" index="THmaL" />
       </concept>
       <concept id="6565639133219057675" name="jetbrains.mps.kotlin.structure.IArguments" flags="ng" index="TWioa">
@@ -135,9 +134,7 @@
         <child id="2324909103763444261" name="primaryConstructor" index="KDYUA" />
       </concept>
       <concept id="2936055411798373400" name="jetbrains.mps.kotlin.structure.PrimaryConstructor" flags="ng" index="1XD0bf" />
-      <concept id="2936055411798373428" name="jetbrains.mps.kotlin.structure.FunctionDeclaration" flags="ng" index="1XD0bz">
-        <child id="2936055411806083462" name="body" index="1XbAXh" />
-      </concept>
+      <concept id="2936055411798373428" name="jetbrains.mps.kotlin.structure.FunctionDeclaration" flags="ng" index="1XD0bz" />
       <concept id="2936055411798373439" name="jetbrains.mps.kotlin.structure.AbstractFunctionCall" flags="ng" index="1XD0bC">
         <reference id="1991556721072067817" name="function" index="AarEw" />
       </concept>
@@ -383,30 +380,28 @@
     <node concept="eKYAL" id="7xKsisVFGoV" role="1XD0Tu" />
     <node concept="1XD0bz" id="1d2BQ0ZQssH" role="1XD0Tu">
       <property role="TrG5h" value="standaloneMethod" />
-      <node concept="TgwzM" id="1d2BQ0ZQssJ" role="1XbAXh">
-        <node concept="1XD0a7" id="2JsDCii7eyu" role="THmaL">
-          <node concept="1NbEtQ" id="2JsDCii7ezv" role="1XD07H">
-            <ref role="AarEw" to="qw9d:~KClass.isInstance(kotlin/Any?)" resolve="isInstance" />
-            <node concept="1XD0eI" id="1huKj6f3BtH" role="TWiod">
-              <node concept="1NbEFs" id="1huKj6f3BtL" role="1XD0ZN">
-                <ref role="AarEw" node="1t03WaziTQs" resolve="SampleClass" />
-                <node concept="1XD088" id="1huKj6f3BtM" role="TPadX">
-                  <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
-                </node>
+      <node concept="1XD0l2" id="1d2BQ0ZQssL" role="2BPcuh" />
+      <node concept="1XD0a7" id="2JsDCii7eyu" role="THmaL">
+        <node concept="1NbEtQ" id="2JsDCii7ezv" role="1XD07H">
+          <ref role="AarEw" to="qw9d:~KClass.isInstance(kotlin/Any?)" resolve="isInstance" />
+          <node concept="1XD0eI" id="1huKj6f3BtH" role="TWiod">
+            <node concept="1NbEFs" id="1huKj6f3BtL" role="1XD0ZN">
+              <ref role="AarEw" node="1t03WaziTQs" resolve="SampleClass" />
+              <node concept="1XD088" id="1huKj6f3BtM" role="TPadX">
+                <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
               </node>
             </node>
-          </node>
-          <node concept="21SRaq" id="1huKj6f3BxF" role="21Pmik">
-            <node concept="1XD0em" id="1huKj6f3BxG" role="21Pmik">
-              <node concept="1XD088" id="1huKj6f3BxH" role="1XD0Sn">
-                <ref role="1SePDO" node="1t03WaziTQq" resolve="SampleClass" />
-              </node>
-            </node>
-            <node concept="1XD0fw" id="1huKj6f3BxI" role="1XD07G" />
           </node>
         </node>
+        <node concept="21SRaq" id="1huKj6f3BxF" role="21Pmik">
+          <node concept="1XD0em" id="1huKj6f3BxG" role="21Pmik">
+            <node concept="1XD088" id="1huKj6f3BxH" role="1XD0Sn">
+              <ref role="1SePDO" node="1t03WaziTQq" resolve="SampleClass" />
+            </node>
+          </node>
+          <node concept="1XD0fw" id="1huKj6f3BxI" role="1XD07G" />
+        </node>
       </node>
-      <node concept="1XD0l2" id="1d2BQ0ZQssL" role="2BPcuh" />
     </node>
     <node concept="1XD09x" id="1d2BQ0ZVHHb" role="1XD0Tg">
       <property role="21C2eP" value="somePackage" />

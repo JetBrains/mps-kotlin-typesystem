@@ -20,9 +20,7 @@
     <import index="fefm" ref="r:1007e072-ac19-4b13-85dc-0e4118398cf2(jetbrains.mps.kotlinExt.types)" />
     <import index="vciu" ref="r:42fb31e7-122b-4950-aa58-2f5f6e5595ce(jetbrains.mps.kotlin.overloading)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="hcm8" ref="r:72a7bf00-0175-42ca-b99b-fe8519b6a16f(jetbrains.mps.kotlin.structure)" implicit="true" />
     <import index="ev0w" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typechecking.backend(MPS.Core/)" implicit="true" />
-    <import index="hez" ref="r:b038209d-51a9-4919-b6e5-4fafce96fa00(jetbrains.mps.kotlin.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -154,10 +152,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
-        <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -214,15 +209,13 @@
                   <property role="TrG5h" value="resolve" />
                   <node concept="37vLTG" id="7VTXQs1saf2" role="3clF46">
                     <property role="TrG5h" value="call" />
-                    <node concept="3Tqbb2" id="7VTXQs1saf3" role="1tU5fm">
-                      <ref role="ehGHo" to="hcm8:5D4bOjrr8CG" resolve="IFunctionCallLike" />
+                    <node concept="3uibUv" id="7mJe6tm_OCp" role="1tU5fm">
+                      <ref role="3uigEE" to="vciu:7mJe6tmz$Nk" resolve="FunctionCall" />
                     </node>
                   </node>
-                  <node concept="37vLTG" id="7nsCnXYhh9O" role="3clF46">
-                    <property role="TrG5h" value="receiverType" />
-                    <node concept="3Tqbb2" id="7nsCnXYhnAm" role="1tU5fm">
-                      <ref role="ehGHo" to="hcm8:2yYXHtl6Jh1" resolve="IType" />
-                    </node>
+                  <node concept="37vLTG" id="7mJe6tm_Rhf" role="3clF46">
+                    <property role="TrG5h" value="contextNode" />
+                    <node concept="3Tqbb2" id="7mJe6tm_Y1D" role="1tU5fm" />
                   </node>
                   <node concept="37vLTG" id="7VTXQs1saf4" role="3clF46">
                     <property role="TrG5h" value="candidates" />
@@ -252,9 +245,6 @@
                             <ref role="37wK5l" to="fefm:UQJ11Or2B9" resolve="OverloadResolutionQuery" />
                             <node concept="37vLTw" id="UQJ11OrlJv" role="37wK5m">
                               <ref role="3cqZAo" node="7VTXQs1saf2" resolve="call" />
-                            </node>
-                            <node concept="37vLTw" id="7nsCnXYhq7O" role="37wK5m">
-                              <ref role="3cqZAo" node="7nsCnXYhh9O" resolve="receiverType" />
                             </node>
                             <node concept="37vLTw" id="UQJ11OroHI" role="37wK5m">
                               <ref role="3cqZAo" node="7VTXQs1saf4" resolve="candidates" />
@@ -287,7 +277,7 @@
                                     <node concept="liA8E" id="UQJ11O6ePq" role="2OqNvi">
                                       <ref role="37wK5l" to="1ka:~TypecheckingSession.getQueries(org.jetbrains.mps.openapi.model.SNode)" resolve="getQueries" />
                                       <node concept="37vLTw" id="UQJ11O6ePr" role="37wK5m">
-                                        <ref role="3cqZAo" node="7VTXQs1saf2" resolve="call" />
+                                        <ref role="3cqZAo" node="7mJe6tm_Rhf" resolve="contextNode" />
                                       </node>
                                     </node>
                                   </node>
@@ -305,7 +295,7 @@
                                         <node concept="Tc6Ow" id="3DWITUNu7t6" role="2ShVmc">
                                           <node concept="3Tqbb2" id="3DWITUNu7t7" role="HW$YZ" />
                                           <node concept="37vLTw" id="3DWITUNu7t8" role="HW$Y0">
-                                            <ref role="3cqZAo" node="7VTXQs1saf2" resolve="call" />
+                                            <ref role="3cqZAo" node="7mJe6tm_Rhf" resolve="contextNode" />
                                           </node>
                                         </node>
                                       </node>
@@ -321,8 +311,8 @@
                                           <node concept="37vLTw" id="3DWITUNuezD" role="2Oq$k0">
                                             <ref role="3cqZAo" node="7VTXQs1saf2" resolve="call" />
                                           </node>
-                                          <node concept="2qgKlT" id="3DWITUNuh$J" role="2OqNvi">
-                                            <ref role="37wK5l" to="hez:1VI7K1jROBX" resolve="getArguments" />
+                                          <node concept="liA8E" id="7mJe6tmA2nL" role="2OqNvi">
+                                            <ref role="37wK5l" to="vciu:7mJe6tmz$R9" resolve="getArguments" />
                                           </node>
                                         </node>
                                       </node>
