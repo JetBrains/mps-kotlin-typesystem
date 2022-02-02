@@ -181,7 +181,7 @@
     <node concept="2tJIrI" id="3cpjc8KSVJf" role="jymVt" />
     <node concept="3Tm1VV" id="3cpjc8KSQeM" role="1B3o_S" />
     <node concept="3uibUv" id="3cpjc8KSVH2" role="EKbjA">
-      <ref role="3uigEE" to="ze1i:~ModuleRuntime$Activator" resolve="Activator" />
+      <ref role="3uigEE" to="ze1i:~ModuleRuntime$Activator" resolve="ModuleRuntime.Activator" />
     </node>
     <node concept="3clFb_" id="3cpjc8KSVJN" role="jymVt">
       <property role="TrG5h" value="activate" />
@@ -339,7 +339,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="3cpjc8KSVJT" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="3cpjc8KTtrT" role="jymVt" />
@@ -369,7 +369,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="3cpjc8KSVK5" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
