@@ -57,7 +57,7 @@
         <id>jetbrains.mps.kotlin.typesystem</id>
         <name>MPS Kotlin Typesystem</name>
         <description>Coderules typesystem for MPS kotlin</description>
-        <version>${coderules.ci.mps.release}-0.9-b${coderules.ci.build.num}</version>
+        <version>${ci.mps.release}-0.9-b${ci.build.num}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.coderules</depends>
         <depends>jetbrains.mps.kotlin</depends>
@@ -77,7 +77,7 @@
         <id>jetbrains.mps.kotlin.typesystem</id>
         <name>MPS Kotlin Typesystem</name>
         <description>Coderules typesystem for MPS kotlin</description>
-        <version>${coderules.ci.mps.release}-0.9-b${coderules.ci.build.num}</version>
+        <version>${ci.mps.release}-0.9-b${ci.build.num}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.coderules</depends>
         <depends>jetbrains.mps.kotlin</depends>

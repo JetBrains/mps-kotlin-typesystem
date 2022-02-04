@@ -258,13 +258,13 @@
       </node>
       <node concept="3_J27D" id="1diEraJ0sks" role="m$_w8">
         <node concept="3Mxwey" id="4XsNDZX0EoU" role="3MwsjC">
-          <ref role="3Mxwex" to="zqd8:5Hdh9$IhmQ$" resolve="ci.mps.release" />
+          <ref role="3Mxwex" node="5Hdh9$IhmQ$" resolve="ci.mps.release" />
         </node>
         <node concept="3Mxwew" id="2BiN_P7R7Wi" role="3MwsjC">
           <property role="3MwjfP" value="-0.9-b" />
         </node>
         <node concept="3Mxwey" id="2BiN_P7R81m" role="3MwsjC">
-          <ref role="3Mxwex" to="zqd8:2BiN_P7R7jO" resolve="ci.build.num" />
+          <ref role="3Mxwex" node="2BiN_P7R7jO" resolve="ci.build.num" />
         </node>
       </node>
       <node concept="m$f5U" id="1diEraJ0sku" role="m$_yh">

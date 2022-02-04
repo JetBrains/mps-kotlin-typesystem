@@ -1,10 +1,39 @@
 import java.util.regex.*
 import java.util.zip.*
 import java.io.*
+import de.itemis.mps.gradle.*
+
+// ==== resolving java 11 ====
+def jdkHome
+
+// Sdk specified
+if (project.hasProperty("jdk")) {
+    // No further check
+    jdkHome = project.property('jdk')
+}
+// Current java version is 11
+else if (JavaVersion.current() == JavaVersion.VERSION_11) {
+    // Perfect then -> use it
+    jdkHome = System.getProperty('java.home')
+}
+// Neither specified, but MPS installation provided with a jbr folder !
+else if (project.hasProperty("mpsDir") && file("$mpsDir/jbr").exists()) {
+    // That was close
+    jdkHome = "$mpsDir/jbr"
+} else {
+    // No way to get it working that way, in previous releases it was possible to download JDK from bintray
+    // but since it moved to teamcity, it requires authentication
+    throw new GradleException("unable to locate JDK11 environment, please specify path to one using -Djdk")
+}
 
 buildscript {
     repositories {
-       mavenCentral()
+        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.4.+'
     }
 }
 
@@ -36,13 +65,8 @@ configurations {
 }
 
 dependencies {
-  // initialize JUnit optional ant task
-  junitAnt 'junit:junit:4.8.2'
-  junitAnt('org.apache.ant:ant-junit:1.9.2') {
-      transitive = false
-  }
+  junitAnt 'org.apache.ant:ant-junit:1.10.9'
 
-  // MPS-related stuff declared as project properties
   mps ("org:${mpsBuildConfiguration}:${mpsBuildArtifact}") {
     artifact {
       name = mpsBuildArtifact
@@ -54,11 +78,11 @@ dependencies {
 
 task installMps(type: Copy)  {
   onlyIf {
-    ! file('MPS_HOME').exists()
+    ! file(mpsLocation).exists()
   }
 
   from zipTree(configurations.mps[0])
-  into 'MPS_HOME'
+  into mpsLocation
 
   // Gradle woodoo for unzipping an archive
   eachFile { FileCopyDetails fcp ->
@@ -82,18 +106,10 @@ task installMps(type: Copy)  {
 
 task installCoderules(type: Copy) {
   onlyIf {
-    ! file('coderules').exists()
+    ! file(coderulesLocation).exists()
   }
   // Here [1] is hardcoded value to avoid specifying we need coderules zip (which has changing name) and not the build build number file
-  from zipTree(configurations.coderules[1]) into 'coderules'
-}
-
-task deleteMps(type: Delete) {
-  delete 'MPS_HOME'
-}
-
-task deleteCoderules(type: Delete) {
-  delete 'coderules'
+  from zipTree(configurations.coderules[1]) into coderulesLocation
 }
 
 task setup(dependsOn: [installMps, installCoderules]) {
@@ -106,58 +122,38 @@ def buildNumber() {
   System.env.BUILD_NUMBER =~ /MPS-([0-9]+)\.([0-9]+).([0-9]+)-([0-9]+)/
 }
 
-ant.taskdef(name: 'junit',
-            classname: 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTask',
-            classpath: configurations.junitAnt.asPath)
+def scriptArgs = [
+  'mps_home': mpsLocation,
+  'coderules_home': coderulesLocation,
+  'ci.build.num': "${buildNumber().find() ? buildNumber()[0][4] : '9999'}".toString(),
+  'ci.build.tag': "${buildNumber().find() ? buildNumber()[0][4] : 'SNAPSHOT'}".toString()
+]
 
-ant.importBuild('buildTempAlteration.xml') { antTarget ->
-    'mps-kotlin-'+antTarget
+// Declare them as global variable for the MPS plugin (see https://github.com/mbeddr/mps-gradle-plugin)
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = scriptArgs.collect { "-D$it.key=$it.value".toString() }
+ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = configurations.junitAnt.fileCollection { true } + project.files("$jdkHome/lib/tools.jar")
+ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = file("$jdkHome/bin/java")
+
+task buildPlugin(type: BuildLanguages, dependsOn: setup) {
+  script "$rootDir/buildTempAlteration.xml"
 }
 
-ant.properties.'mps.ant.log' = "debug"
-
-// ensure 'setup' runs before 'fetchDependencies' and 'declare-mps-tasks'
-'mps-kotlin-fetchDependencies' {
-  dependsOn {
-    'setup'
-  }
+task testPlugin(type: TestLanguages, dependsOn: setup) {
+  script "$rootDir/buildTempAlteration.xml"
 }
-
-'mps-kotlin-declare-mps-tasks' {
-  dependsOn {
-    'setup'
-  }
-}
-
-// ensure 'generate' runs before 'classes' ('generate' is NOT optional)
-'mps-kotlin-classes' {
-  dependsOn {
-    'mps-kotlin-generate'
-  }
-  mustRunAfter {
-    'mps-kotlin-generate'
-  }
-}
-
 
 assemble {
-  dependsOn {
-    [ ':mps-kotlin-assemble' ]
-  }
-}
-
-clean {
-  dependsOn {
-    [ ':mps-kotlin-clean', ':mps-kotlin-cleanSources', deleteCoderules ]
-  }
-  finalizedBy {
-     deleteMps
-  }
+  dependsOn { buildPlugin }
 }
 
 check {
-  // tests from this target also include model checker invocation, which requires everything to be built
-  finalizedBy {
-    ':mps-kotlin-check'
-  }
+  dependsOn { testPlugin }
+}
+
+task deleteDeps(type: Delete) {
+  delete 'deps'
+}
+
+clean {
+  finalizedBy { deleteDeps }
 }
