@@ -9,6 +9,8 @@
 
 # Intellij Idea user workspace setting files
 **/.idea/workspace.xml
+**/.idea/gradle.xml
+**/.idea/jarRepositories.xml
 **/.mps/workspace.xml
 **/.mps/product-workspace.xml
 
@@ -18,7 +20,15 @@
 
 # Build artifacts
 classes_gen
-kotlin_gen
 source_gen
 source_gen.caches
 *.class
+MPS_HOME
+coderules
+.mps-caches
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build

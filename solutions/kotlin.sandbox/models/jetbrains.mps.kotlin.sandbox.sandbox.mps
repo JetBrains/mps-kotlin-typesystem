@@ -140,7 +140,6 @@
       <concept id="2936055411806083456" name="jetbrains.mps.kotlin.structure.IFunctionParameters" flags="ng" index="1XbAXn">
         <child id="2936055411806083457" name="parameters" index="1XbAXm" />
       </concept>
-      <concept id="2936055411798373584" name="jetbrains.mps.kotlin.structure.IExpression" flags="ng" index="1XD087" />
       <concept id="2936055411798373599" name="jetbrains.mps.kotlin.structure.ClassType" flags="ng" index="1XD088" />
       <concept id="2936055411798373622" name="jetbrains.mps.kotlin.structure.ConstructorSuperSpecifier" flags="ng" index="1XD08x">
         <reference id="2324909103760693884" name="target" index="KYurZ" />
@@ -3215,13 +3214,6 @@
         </node>
       </node>
       <node concept="AQkLs" id="45iC02HURAA" role="THmaL" />
-      <node concept="1XD0bM" id="45iC02HUVJb" role="THmaL">
-        <node concept="1XD0f0" id="45iC02HUWt3" role="THmaL" />
-        <node concept="1XD0eA" id="45iC02HUVJd" role="1XD07g" />
-        <node concept="1XD087" id="45iC02HUVJf" role="1XD07v" />
-      </node>
-      <node concept="AQkLs" id="45iC02HUVFF" role="THmaL" />
-      <node concept="1XD0fa" id="45iC02HDLqh" role="THmaL" />
       <node concept="1XD0bM" id="6gam3525$B1" role="THmaL">
         <ref role="1ap9JL" to="pyzm:~IntProgression.iterator()" resolve="iterator" />
         <ref role="zbWbu" to="1xrd:~IntIterator.next()" resolve="next" />

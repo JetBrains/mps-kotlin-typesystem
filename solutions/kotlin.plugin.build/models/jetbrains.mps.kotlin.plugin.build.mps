@@ -22,8 +22,14 @@
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
+      <concept id="2755237150521975431" name="jetbrains.mps.build.structure.BuildVariableMacroInitWithString" flags="ng" index="aVJcg">
+        <child id="2755237150521975437" name="value" index="aVJcq" />
+      </concept>
       <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
         <child id="7321017245477039051" name="compositePart" index="iGT6I" />
+      </concept>
+      <concept id="3767587139141066978" name="jetbrains.mps.build.structure.BuildVariableMacro" flags="ng" index="2kB4xC">
+        <child id="2755237150521975432" name="initialValue" index="aVJcv" />
       </concept>
       <concept id="4993211115183325728" name="jetbrains.mps.build.structure.BuildProjectDependency" flags="ng" index="2sgV4H">
         <reference id="5617550519002745380" name="script" index="1l3spb" />
@@ -41,7 +47,9 @@
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
-      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT" />
+      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
+        <child id="7389400916848144618" name="defaultPath" index="398pKh" />
+      </concept>
       <concept id="7389400916848153117" name="jetbrains.mps.build.structure.BuildSourceMacroRelativePath" flags="ng" index="398BVA">
         <reference id="7389400916848153130" name="macro" index="398BVh" />
       </concept>
@@ -68,6 +76,9 @@
       </concept>
       <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
         <property id="4903714810883755350" name="text" index="3MwjfP" />
+      </concept>
+      <concept id="4903714810883702017" name="jetbrains.mps.build.structure.BuildVarRefStringPart" flags="ng" index="3Mxwey">
+        <reference id="4903714810883702018" name="macro" index="3Mxwex" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -135,16 +146,62 @@
     </language>
   </registry>
   <node concept="1l3spW" id="1diEraJ0sk7">
-    <property role="TrG5h" value="kotlinTypesystem" />
+    <property role="TrG5h" value="mps-kotlin-typesystem" />
     <property role="2DA0ip" value="../.." />
-    <property role="turDy" value="buildKotlinTypesystem.xml" />
+    <property role="turDy" value="build.xml" />
     <node concept="10PD9b" id="1diEraJ0sk8" role="10PD9s" />
     <node concept="3b7kt6" id="1diEraJ0sk9" role="10PD9s" />
     <node concept="398rNT" id="1diEraJ0ska" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
+      <node concept="55IIr" id="7It_P_nMQ4l" role="398pKh">
+        <node concept="2Ry0Ak" id="7It_P_nMQ6x" role="iGT6I">
+          <property role="2Ry0Am" value="MPS_HOME" />
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="5finDujyZWy" role="1l3spd">
       <property role="TrG5h" value="coderules_home" />
+      <node concept="55IIr" id="5z$xVyutvd6" role="398pKh">
+        <node concept="2Ry0Ak" id="5z$xVyutvd9" role="iGT6I">
+          <property role="2Ry0Am" value="coderules" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="JCrxhFPDJe" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.coderules_home" />
+      <node concept="398BVA" id="JCrxhFPDJn" role="398pKh">
+        <ref role="398BVh" node="5finDujyZWy" resolve="coderules_home" />
+      </node>
+    </node>
+    <node concept="2kB4xC" id="2BiN_P7R7jO" role="1l3spd">
+      <property role="TrG5h" value="ci.build.num" />
+      <node concept="aVJcg" id="2BiN_P7R7Ma" role="aVJcv">
+        <node concept="NbPM2" id="2BiN_P7R7M9" role="aVJcq">
+          <node concept="3Mxwew" id="2BiN_P7R7M8" role="3MwsjC">
+            <property role="3MwjfP" value="9999" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2kB4xC" id="C1f6iDxxIR" role="1l3spd">
+      <property role="TrG5h" value="ci.build.tag" />
+      <node concept="aVJcg" id="C1f6iDxxJm" role="aVJcv">
+        <node concept="NbPM2" id="C1f6iDxxJl" role="aVJcq">
+          <node concept="3Mxwew" id="C1f6iDxxJk" role="3MwsjC">
+            <property role="3MwjfP" value="SNAPSHOT" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2kB4xC" id="5Hdh9$IhmQ$" role="1l3spd">
+      <property role="TrG5h" value="ci.mps.release" />
+      <node concept="aVJcg" id="5Hdh9$IhmQ_" role="aVJcv">
+        <node concept="NbPM2" id="5Hdh9$IhmQA" role="aVJcq">
+          <node concept="3Mxwew" id="5Hdh9$IhmQB" role="3MwsjC">
+            <property role="3MwjfP" value="213" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2sgV4H" id="1diEraJ0skb" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
@@ -171,7 +228,19 @@
       <node concept="3981dG" id="1diEraJ0skB" role="39821P">
         <node concept="3_J27D" id="1diEraJ0skC" role="Nbhlr">
           <node concept="3Mxwew" id="1diEraJ0skD" role="3MwsjC">
-            <property role="3MwjfP" value="mps-kotlin-typesystem.zip" />
+            <property role="3MwjfP" value="mps-kotlin-typesystem-" />
+          </node>
+          <node concept="3Mxwey" id="3cBtKDsaqcW" role="3MwsjC">
+            <ref role="3Mxwex" node="5Hdh9$IhmQ$" resolve="ci.mps.release" />
+          </node>
+          <node concept="3Mxwew" id="3cBtKDsaqd6" role="3MwsjC">
+            <property role="3MwjfP" value="-b" />
+          </node>
+          <node concept="3Mxwey" id="3cBtKDsaqda" role="3MwsjC">
+            <ref role="3Mxwex" node="C1f6iDxxIR" resolve="ci.build.tag" />
+          </node>
+          <node concept="3Mxwew" id="3cBtKDsaqdg" role="3MwsjC">
+            <property role="3MwjfP" value=".zip" />
           </node>
         </node>
         <node concept="m$_wl" id="1diEraJ0skE" role="39821P">
@@ -188,8 +257,14 @@
         </node>
       </node>
       <node concept="3_J27D" id="1diEraJ0sks" role="m$_w8">
-        <node concept="3Mxwew" id="1diEraJ0skt" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
+        <node concept="3Mxwey" id="4XsNDZX0EoU" role="3MwsjC">
+          <ref role="3Mxwex" to="zqd8:5Hdh9$IhmQ$" resolve="ci.mps.release" />
+        </node>
+        <node concept="3Mxwew" id="2BiN_P7R7Wi" role="3MwsjC">
+          <property role="3MwjfP" value="-0.9-b" />
+        </node>
+        <node concept="3Mxwey" id="2BiN_P7R81m" role="3MwsjC">
+          <ref role="3Mxwex" to="zqd8:2BiN_P7R7jO" resolve="ci.build.num" />
         </node>
       </node>
       <node concept="m$f5U" id="1diEraJ0sku" role="m$_yh">
@@ -204,9 +279,12 @@
       <node concept="m$_yC" id="69s32WJ3d_K" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:1diEraJ0skp" resolve="jetbrains.mps.kotlin" />
       </node>
+      <node concept="m$_yC" id="3cBtKDs9oof" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
+      </node>
       <node concept="3_J27D" id="1diEraJ0skw" role="m_cZH">
         <node concept="3Mxwew" id="1diEraJ0skx" role="3MwsjC">
-          <property role="3MwjfP" value="kotlin-mps" />
+          <property role="3MwjfP" value="mps-kotlin-typesystem" />
         </node>
       </node>
       <node concept="2pNNFK" id="1diEraJ0sky" role="20twgj">
