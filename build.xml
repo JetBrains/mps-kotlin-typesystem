@@ -3,8 +3,8 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/mps-kotlin-typesystem" />
   <property name="build.layout" location="${build.dir}/artifacts/mps-kotlin-typesystem" />
-  <property name="mps_home" location="${basedir}/MPS_HOME" />
-  <property name="coderules_home" location="${basedir}/coderules" />
+  <property name="mps_home" location="${basedir}/deps/mps" />
+  <property name="coderules_home" location="${basedir}/deps/coderules" />
   <property name="mps.macro.coderules_home" location="${coderules_home}" />
   <property name="ci.build.num" value="9999" />
   <property name="ci.build.tag" value="SNAPSHOT" />
@@ -56,13 +56,15 @@
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>jetbrains.mps.kotlin.typesystem</id>
         <name>MPS Kotlin Typesystem</name>
-        <description>Coderules typesystem for MPS kotlin</description>
-        <version>${ci.mps.release}-0.9-b${ci.build.num}</version>
+        <description>Coderules typesystem for kotlin in MPS</description>
+        <version>${ci.mps.release}b${ci.build.num}</version>
+        <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.coderules</depends>
         <depends>jetbrains.mps.kotlin</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
+        <idea-version since-build="213" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -76,13 +78,15 @@
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>jetbrains.mps.kotlin.typesystem</id>
         <name>MPS Kotlin Typesystem</name>
-        <description>Coderules typesystem for MPS kotlin</description>
-        <version>${ci.mps.release}-0.9-b${ci.build.num}</version>
+        <description>Coderules typesystem for kotlin in MPS</description>
+        <version>${ci.mps.release}b${ci.build.num}</version>
+        <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.coderules</depends>
         <depends>jetbrains.mps.kotlin</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
+        <idea-version since-build="213" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -132,11 +136,9 @@
         </dependencies>
         <uses>
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
-          <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
           <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
           <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
           <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
-          <language id="l:96ee7a94-411d-4cf8-9b94-96cad7e52411:jetbrains.mps.baseLanguage.jdk7" />
           <language id="l:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67:jetbrains.mps.baseLanguage.lightweightdsl" />
           <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
           <language id="l:acfc188d-d5d6-4598-b370-6f4a983f05b2:jetbrains.mps.baseLanguage.methodReferences" />
@@ -244,11 +246,9 @@
         </dependencies>
         <uses>
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
-          <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
           <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
           <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
           <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
-          <language id="l:96ee7a94-411d-4cf8-9b94-96cad7e52411:jetbrains.mps.baseLanguage.jdk7" />
           <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
           <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
           <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
@@ -380,25 +380,13 @@
     <echo message="generating" />
     <generate fork="true" logLevel="${mps.ant.log}">      
       <settings refid="m2m-defaults" />
+      <plugin path="${artifacts.coderules}/jetbrains.mps.coderules" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" />
       <plugin path="${artifacts.mps}/plugins/mps-kotlin" />
       <plugin path="${artifacts.mps}/plugins/mps-make" />
-      <library file="${artifacts.coderules}/deploy/jetbrains.mps.coderules.jar" />
-      <library file="${artifacts.coderules}/deploy/jetbrains.mps.coderules.runtime.jar" />
-      <library file="${artifacts.coderules}/deploy/jetbrains.mps.coderules.typechecking.jar" />
-      <library file="${artifacts.coderules}/deploy/jetbrains.mps.devkit.aspect.types.jar" />
-      <library file="${artifacts.coderules}/deploy/jetbrains.mps.lang.coderules.jar" />
-      <library file="${artifacts.coderules}/deploy/jetbrains.mps.lang.coderules.runtime.jar" />
-      <library file="${artifacts.coderules}/deploy/jetbrains.mps.lang.coderules.template.jar" />
-      <library file="${artifacts.coderules}/deploy/jetbrains.mps.lang.typechecking.jar" />
-      <library file="${artifacts.coderules}/deploy/jetbrains.mps.lang.typechecking.runtime.jar" />
-      <library file="${artifacts.coderules}/deploy/jetbrains.mps.lang.types.jar" />
-      <library file="${artifacts.coderules}/deploy/jetbrains.mps.logic.jar" />
-      <library file="${artifacts.coderules}/deploy/jetbrains.mps.logic.reactor.jar" />
-      <library file="${artifacts.coderules}/deploy/jetbrains.mps.logic.runtime.jar" />
-      <library file="${artifacts.coderules}/deploy/jetbrains.mps.typechecking.annotation.jar" />
+      <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <library file="${artifacts.mps}/languages/baseLanguage/closures.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/collections.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
@@ -522,7 +510,6 @@
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.refactoring.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.runtime.jar" />
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
-      <library file="${build.tmp}/deps/coderules/jetbrains.mps.coderules-_dl__lbrace_ci.mps.release_rbrace_-0.9-b_dl__lbrace_ci.build.tag_rbrace_.zip/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.build.jar" />
       <chunk>
         <module file="${basedir}/languages/kotlin.javaRefsExt/jetbrains.mps.kotlin.javaRefsExt.mpl" />
         <module file="${basedir}/solutions/kotlin.plugin.build/jetbrains.mps.kotlin.plugin.build.msd" />
@@ -585,26 +572,26 @@
         <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/eclipse.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.coderules}/deploy/jetbrains.mps.coderules.jar" />
-        <fileset file="${artifacts.coderules}/deploy/jetbrains.mps.coderules.runtime.jar" />
-        <fileset file="${artifacts.coderules}/deploy/jetbrains.mps.coderules.typechecking.jar" />
+        <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.jar" />
+        <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.runtime.jar" />
+        <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.typechecking.jar" />
         <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-kotlin/languages/kotlin/jetbrains.mps.kotlin.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-kotlin/languages/kotlin/jetbrains.mps.kotlin.runtime.jar" />
-        <fileset file="${artifacts.coderules}/deploy/jetbrains.mps.lang.coderules.runtime.jar" />
-        <fileset file="${artifacts.coderules}/deploy/jetbrains.mps.lang.coderules.template.jar" />
+        <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.lang.coderules.runtime.jar" />
+        <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.lang.coderules.template.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${artifacts.coderules}/deploy/jetbrains.mps.lang.typechecking.runtime.jar" />
-        <fileset file="${artifacts.coderules}/deploy/jetbrains.mps.logic.runtime.jar" />
-        <fileset dir="${artifacts.coderules}/deploy/lib" includes="reactive-streams-1.0.0.final.jar" />
-        <fileset dir="${artifacts.coderules}/deploy/lib" includes="rxjava-2.2.18.jar" />
-        <fileset dir="${artifacts.coderules}/deploy/lib" includes="rxjava2-swing-0.3.7.jar" />
-        <fileset dir="${artifacts.coderules}/deploy/lib" includes="collection-0.7.jar" />
-        <fileset dir="${artifacts.coderules}/deploy/lib" includes="trove4j-3.0.3.jar" />
-        <fileset dir="${artifacts.coderules}/deploy/lib" includes="conreactor-core-0.9.14.jar" />
+        <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.lang.typechecking.runtime.jar" />
+        <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.logic.runtime.jar" />
+        <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="reactive-streams-1.0.0.final.jar" />
+        <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="rxjava-2.2.18.jar" />
+        <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="rxjava2-swing-0.3.7.jar" />
+        <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="collection-0.7.jar" />
+        <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="trove4j-3.0.3.jar" />
+        <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="conreactor-core-0.9.14.jar" />
       </classpath>
     </javac>
   </target>
@@ -660,17 +647,17 @@
         <fileset file="${artifacts.mps}/plugins/mps-kotlin/languages/kotlin/jetbrains.mps.kotlin.baseLanguage.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-kotlin/languages/kotlin/jetbrains.mps.kotlin.javaRefs.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-kotlin/languages/kotlin/jetbrains.mps.kotlin.runtime.jar" />
-        <fileset file="${artifacts.coderules}/deploy/jetbrains.mps.lang.coderules.runtime.jar" />
-        <fileset file="${artifacts.coderules}/deploy/jetbrains.mps.lang.coderules.template.jar" />
+        <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.lang.coderules.runtime.jar" />
+        <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.lang.coderules.template.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${artifacts.coderules}/deploy/jetbrains.mps.lang.typechecking.runtime.jar" />
-        <fileset file="${artifacts.coderules}/deploy/jetbrains.mps.logic.runtime.jar" />
-        <fileset dir="${artifacts.coderules}/deploy/lib" includes="collection-0.7.jar" />
-        <fileset dir="${artifacts.coderules}/deploy/lib" includes="trove4j-3.0.3.jar" />
-        <fileset dir="${artifacts.coderules}/deploy/lib" includes="conreactor-core-0.9.14.jar" />
+        <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.lang.typechecking.runtime.jar" />
+        <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.logic.runtime.jar" />
+        <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="collection-0.7.jar" />
+        <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="trove4j-3.0.3.jar" />
+        <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="conreactor-core-0.9.14.jar" />
       </classpath>
     </javac>
   </target>
@@ -684,7 +671,7 @@
         <path location="${basedir}/solutions/kotlin.plugin.build/source_gen" />
       </src>
       <classpath>
-        <fileset file="${build.tmp}/deps/coderules/jetbrains.mps.coderules-_dl__lbrace_ci.mps.release_rbrace_-0.9-b_dl__lbrace_ci.build.tag_rbrace_.zip/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.build.jar" />
+        <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.build.jar" />
       </classpath>
     </javac>
   </target>

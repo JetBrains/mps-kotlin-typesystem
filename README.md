@@ -12,9 +12,9 @@ the [codesrules plugins](https://github.com/jetbrains/mps-coderules) to be opene
 Binaries of the plugin can be downloaded on [this build configuration](https://teamcity.jetbrains.com/buildConfiguration/MPS_20213_Distribution_MpsKotlinTypesystem) (link valid for 2021.3, change version number in link for ulterior versions).
 
 ### Building the plugin
-Manual building of the plugin can be done through gradle script with `./gradlew assemble`, several parameters may be configured in `gradle.properties`.
+Manual building of the plugin can be done through gradle scripts with `./gradlew -b setup.gradle && ./gradlew assemble`, several parameters may be configured in `gradle.properties`.
 
-**Note:** building the plugin through MPS is currently not easily done, read [here](README_BUILD.txt) for more information.
+Through MPS, one need to set the `coderules_home` path variable or have coderules set up in "deps/coderules" (`./gradlew -b setup.gradle installCoderules` will download it there).
 
 ## Extending the typesystem
 The [structure of the project](./doc/structure.md) gives a starting point to implement your types along with this typesystem implementation. You may also refer to this project for examples.

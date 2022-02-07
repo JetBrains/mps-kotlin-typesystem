@@ -1,0 +1,74 @@
+// Script to be run before 'build.gradle'
+defaultTasks 'setup'
+
+repositories {
+    ivy {
+        url 'https://teamcity.jetbrains.com/guestAuth/repository/download'
+        patternLayout {
+            ivy '[module]/[revision]/teamcity-ivy.xml'
+            artifact '[module]/[revision]/[artifact].[ext]'
+        }
+    }
+    mavenCentral()
+    mavenLocal()
+}
+
+configurations {
+    mps
+    coderules
+}
+
+dependencies {
+    mps("org:${mpsBuildConfiguration}:${mpsBuildArtifact}") {
+        artifact {
+            name = mpsBuildArtifact
+            type = "zip"
+        }
+    }
+    coderules("org:${coderulesBuildConfiguration}:lastFinished")
+}
+
+task installMps(type: Copy) {
+    onlyIf {
+        !file(mpsLocation).exists()
+    }
+
+    from zipTree(configurations.mps[0])
+    into mpsLocation
+
+    // Gradle woodoo for unzipping an archive
+    eachFile { FileCopyDetails fcp ->
+        // copy the contents of the directory named "MPS ${mpsRelease}"
+        if (fcp.relativePath.pathString.startsWith("MPS ${mpsRelease}/")) {
+            // remap the file to the root
+            def segments = fcp.relativePath.segments
+            def pathsegments = segments[1..-1] as String[]
+            fcp.relativePath = new RelativePath(!fcp.file.isDirectory(), pathsegments)
+
+        } else {
+            fcp.exclude()
+        }
+        // avoid overriding files
+        if (fcp.relativePath.getFile(destinationDir).exists()) {
+            it.exclude()
+        }
+    }
+    includeEmptyDirs = false
+}
+
+task installCoderules(type: Copy) {
+    onlyIf {
+        !file(coderulesLocation).exists()
+    }
+
+    // Condition below identify the coderules plugin files among its artifacts
+    from zipTree(configurations.coderules[1])
+    into coderulesLocation
+}
+
+task setup(dependsOn: [installMps, installCoderules])
+
+task clean(type: Delete) {
+    // We don't use mpsLocation and coderulesLocation as they can be external references
+    delete "deps"
+}
