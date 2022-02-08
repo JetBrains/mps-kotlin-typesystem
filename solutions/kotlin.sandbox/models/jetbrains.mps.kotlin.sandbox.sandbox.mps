@@ -3745,7 +3745,7 @@
       </node>
     </node>
     <node concept="1NbEFs" id="rbYB7Q9MsG" role="THmaL">
-      <ref role="AarEw" to="aucy:~.println()" resolve="println" />
+      <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
       <node concept="1XD0eI" id="rbYB7Q9Mul" role="TWiod">
         <node concept="UZU4S" id="rbYB7Q9Muk" role="1XD0ZN">
           <ref role="UZU4V" node="rbYB7Q6ARr" resolve="a" />
@@ -3798,7 +3798,7 @@
       </node>
     </node>
     <node concept="1NbEFs" id="rbYB7Q9MVc" role="THmaL">
-      <ref role="AarEw" to="aucy:~.println()" resolve="println" />
+      <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
       <node concept="1XD0eI" id="rbYB7Q9MXl" role="TWiod">
         <node concept="UZU4S" id="rbYB7Q9MXk" role="1XD0ZN">
           <ref role="UZU4V" node="rbYB7Q9MJa" resolve="e" />
@@ -3842,7 +3842,7 @@
       </node>
     </node>
     <node concept="1NbEFs" id="rbYB7Q9Oby" role="THmaL">
-      <ref role="AarEw" to="aucy:~.println()" resolve="println" />
+      <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
       <node concept="1XD0eI" id="rbYB7Q9OdH" role="TWiod">
         <node concept="UZU4S" id="rbYB7Q9OdG" role="1XD0ZN">
           <ref role="UZU4V" node="rbYB7Q9NfT" resolve="d" />
@@ -4406,7 +4406,7 @@
         <node concept="1XD08z" id="rbYB7Qdcss" role="3qOnj9" />
         <node concept="1XD0l2" id="rbYB7Qdcst" role="2BPcuh" />
         <node concept="1NbEFs" id="rbYB7Qdc$e" role="THmaL">
-          <ref role="AarEw" to="aucy:~.println()" resolve="println" />
+          <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
           <node concept="1XD0eI" id="rbYB7QdcB_" role="TWiod">
             <node concept="1XD08G" id="rbYB7QdcBz" role="1XD0ZN">
               <node concept="21VMdE" id="rbYB7QdcB$" role="1XD0V$">
@@ -4476,7 +4476,7 @@
         <property role="TrG5h" value="sayHello" />
         <node concept="1XD0l2" id="rbYB7QddCm" role="2BPcuh" />
         <node concept="1NbEFs" id="rbYB7QddII" role="THmaL">
-          <ref role="AarEw" to="aucy:~.println()" resolve="println" />
+          <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
           <node concept="1XD0eI" id="rbYB7QddO1" role="TWiod">
             <node concept="1XD08G" id="rbYB7QddNZ" role="1XD0ZN">
               <node concept="21VMdE" id="rbYB7QddO0" role="1XD0V$">
@@ -4549,7 +4549,7 @@
         <property role="TrG5h" value="sayHello" />
         <node concept="1XD0l2" id="rbYB7Qdght" role="2BPcuh" />
         <node concept="1NbEFs" id="rbYB7Qdgob" role="THmaL">
-          <ref role="AarEw" to="aucy:~.println()" resolve="println" />
+          <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
           <node concept="1XD0eI" id="rbYB7Qdgqc" role="TWiod">
             <node concept="1XD08G" id="rbYB7Qdgqa" role="1XD0ZN">
               <node concept="1XD0lO" id="rbYB7QdgvE" role="1XD0V$">
@@ -5888,7 +5888,7 @@
         </node>
       </node>
       <node concept="gk1L9" id="6qs$OhcEx3V" role="THmaL">
-        <ref role="1ap9JL" to="0:~Int.plus(Byte)" resolve="plus" />
+        <ref role="1ap9JL" to="0:~Int.plus(Int)" resolve="plus" />
         <node concept="UZU4S" id="6qs$OhcEx40" role="21Pkll">
           <ref role="UZU4V" node="6qs$OhcEwP0" resolve="y" />
         </node>
@@ -5901,7 +5901,7 @@
     <node concept="1XD0bz" id="6qs$OhcEx6m" role="1XD0Tu">
       <property role="TrG5h" value="main" />
       <node concept="1NbEFs" id="6qs$OhcExep" role="THmaL">
-        <ref role="AarEw" to="0:~.TODO()" resolve="TODO" />
+        <ref role="AarEw" to="0:~.TODO(String)" resolve="TODO" />
         <node concept="1XD0eI" id="6qs$OhcExfd" role="TWiod">
           <node concept="1XD08G" id="6qs$OhcExfb" role="1XD0ZN">
             <node concept="21VMdE" id="6qs$OhcExfk" role="1XD0V$">
@@ -5960,7 +5960,7 @@
         </node>
       </node>
       <node concept="1NbEFs" id="6qs$OhcExfH" role="THmaL">
-        <ref role="AarEw" to="aucy:~.println()" resolve="println" />
+        <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
         <node concept="1XD0eI" id="6qs$OhcExhc" role="TWiod">
           <node concept="1XD08G" id="6qs$OhcExha" role="1XD0ZN">
             <node concept="21VMdE" id="6qs$OhcExhb" role="1XD0V$">

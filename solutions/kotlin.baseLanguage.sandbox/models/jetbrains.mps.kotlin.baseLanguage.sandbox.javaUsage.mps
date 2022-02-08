@@ -252,7 +252,7 @@
         </node>
       </node>
       <node concept="1NbEFs" id="NA$kug9TdV" role="THmaL">
-        <ref role="AarEw" to="aucy:~.println()" resolve="println" />
+        <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
         <node concept="1XD0eI" id="NA$kug9TeZ" role="TWiod">
           <node concept="1XD08G" id="NA$kug9TeX" role="1XD0ZN">
             <node concept="21VMdE" id="NA$kugcc2$" role="1XD0V$">
@@ -274,7 +274,7 @@
         </node>
       </node>
       <node concept="1NbEFs" id="7xKsisVFH0k" role="THmaL">
-        <ref role="AarEw" to="aucy:~.println()" resolve="println" />
+        <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
         <node concept="1XD0eI" id="7xKsisVFH5X" role="TWiod">
           <node concept="1XD08G" id="7xKsisVFH5V" role="1XD0ZN">
             <node concept="21VMdE" id="7xKsisVFH88" role="1XD0V$">
