@@ -253,7 +253,7 @@
             <ref role="3Mxwex" node="5Hdh9$IhmQ$" resolve="ci.mps.release" />
           </node>
           <node concept="3Mxwew" id="3cBtKDsaqd6" role="3MwsjC">
-            <property role="3MwjfP" value="-b" />
+            <property role="3MwjfP" value="+" />
           </node>
           <node concept="3Mxwey" id="3cBtKDsaqda" role="3MwsjC">
             <ref role="3Mxwex" node="C1f6iDxxIR" resolve="ci.build.tag" />
@@ -280,7 +280,7 @@
           <ref role="3Mxwex" node="5Hdh9$IhmQ$" resolve="ci.mps.release" />
         </node>
         <node concept="3Mxwew" id="2BiN_P7R7Wi" role="3MwsjC">
-          <property role="3MwjfP" value="b" />
+          <property role="3MwjfP" value="." />
         </node>
         <node concept="3Mxwey" id="2BiN_P7R81m" role="3MwsjC">
           <ref role="3Mxwex" node="2BiN_P7R7jO" resolve="ci.build.num" />
@@ -323,7 +323,7 @@
       </node>
       <node concept="3_J27D" id="69s32WJ3dwI" role="3s6cr7">
         <node concept="3Mxwew" id="69s32WJ3dwK" role="3MwsjC">
-          <property role="3MwjfP" value="Coderules typesystem for kotlin in MPS" />
+          <property role="3MwjfP" value="Experimental typesystem for Kotlin in MPS, based on Coderules." />
         </node>
       </node>
       <node concept="2iUeEo" id="11H_0IugNW4" role="2iVFfd">
