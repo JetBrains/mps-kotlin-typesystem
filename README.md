@@ -6,9 +6,9 @@ This repository contains an implementation of the kotlin type system to be used 
 Several samples from [kotlin documentation](https://play.kotlinlang.org/byExample/overview) are also in the project (not in the plugin).
 
 ## Installation
-First, install both coderules and kotlin plugins:
-- see [coderules' readme](https://github.com/jetbrains/mps-coderules) for installation instructions (at least the `coderules` plugin, both is recommended when using baseLanguage and core types)
-- download the latest kotlin plugin from [this build configuration](https://teamcity.jetbrains.com/buildConfiguration/MPS_20213_Distribution_MpsKotlinTypesystem) (link for 2021.3, you can change the URL for ulterior versions)
+First, install both coderules and kotlin plugins, they can be either:
+- downloaded from their respective marketplace pages ([coderules](https://plugins.jetbrains.com/plugin/18646-mps-coderules-typechecking), [kotlin typesystem](https://plugins.jetbrains.com/plugin/18637-mps-kotlin-typesystem)),
+- installed from MPS, as it is currently only released on EAP channel, you first need to [add the following repository](https://www.jetbrains.com/help/idea/managing-plugins.html#add_plugin_repos) to MPS: `https://plugins.jetbrains.com/plugins/eap/list`.
 
 Then, you can toggle usage of coderules in MPS settings via **Other Settings** -> **Typechecking** (`Enable typechecking with coderules` and `Watch model changes and collect updates` are the minimal required for a proper edition experience).
 
