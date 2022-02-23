@@ -12,8 +12,6 @@ First, install both coderules and kotlin plugins, they can be either:
 
 Then, you can toggle usage of coderules in MPS settings via **Other Settings** -> **Typechecking** (`Enable typechecking with coderules` and `Watch model changes and collect updates` are the minimal required for a proper edition experience).
 
-**Note:** the plugin should be released on the [jetbrains marketplace](https://plugins.jetbrains.com/plugin/18637-mps-kotlin-typesystem) once stable
-
 ## Development
 The project requires a version of MPS bundling kotlin (>= 2021.3) with the [codesrules plugins](https://github.com/jetbrains/mps-coderules) to be opened.
 
