@@ -2,7 +2,7 @@
 <model ref="r:3415b85b-06db-40b0-a6c4-52ecbf48edc6(jetbrains.mps.kotlin.baseLanguage.sandbox)">
   <persistence version="9" />
   <languages>
-    <devkit ref="4866b4b4-6ecd-49f3-ae68-c62248cc4306(jetbrains.mps.kotlin.devkit.jvm)" />
+    <devkit ref="4866b4b4-6ecd-49f3-ae68-c62248cc4306(jetbrains.mps.devkit.kotlin.jvm)" />
   </languages>
   <imports>
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />

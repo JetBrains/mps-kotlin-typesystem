@@ -1201,7 +1201,7 @@
       <property role="TrG5h" value="mutableStackOf" />
       <node concept="1XD0l2" id="rbYB7Qd756" role="2BPcuh" />
       <node concept="1XD0fq" id="rbYB7Qd7Dn" role="1XPbGx">
-        <property role="TrG5h" value="E" />
+        <property role="TrG5h" value="E2" />
       </node>
       <node concept="1XD0bi" id="rbYB7Qd88T" role="1XbAXm">
         <property role="TrG5h" value="elements" />
@@ -1214,7 +1214,7 @@
         <ref role="AarEw" node="rbYB7QcWho" resolve="MutableStack" />
         <node concept="1XD0eI" id="rbYB7Qd923" role="TWiod">
           <property role="21Xej9" value="true" />
-          <node concept="UZU4S" id="rbYB7Qd9ca" role="1XD0ZN">
+          <node concept="UZU4S" id="4GncUqyR4iK" role="1XD0ZN">
             <ref role="UZU4V" node="rbYB7Qd88T" resolve="elements" />
           </node>
         </node>
@@ -5545,18 +5545,12 @@
           <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
         </node>
       </node>
-      <node concept="gXE$l" id="5b2DnJ7cRjZ" role="THmaL">
-        <node concept="1PaTwC" id="5b2DnJ7cRk1" role="gXG0x">
-          <node concept="tu5oc" id="5b2DnJ7cRkD" role="1PaTwD">
-            <node concept="1NbEFs" id="5b2DnJ7cNQU" role="tu5of">
-              <ref role="AarEw" to="0:~.TODO()" resolve="TODO" />
-              <node concept="1XD0eI" id="5b2DnJ7cOrn" role="TWiod">
-                <node concept="1XD08G" id="5b2DnJ7cOrl" role="1XD0ZN">
-                  <node concept="21VMdE" id="5b2DnJ7cOH5" role="1XD0V$">
-                    <property role="21VMdD" value="type arguments from receiver type wrong handling" />
-                  </node>
-                </node>
-              </node>
+      <node concept="1NbEFs" id="5b2DnJ7cNQU" role="THmaL">
+        <ref role="AarEw" to="0:~.TODO(String)" resolve="TODO" />
+        <node concept="1XD0eI" id="5b2DnJ7cOrn" role="TWiod">
+          <node concept="1XD08G" id="5b2DnJ7cOrl" role="1XD0ZN">
+            <node concept="21VMdE" id="5b2DnJ7cOH5" role="1XD0V$">
+              <property role="21VMdD" value="type arguments from receiver type wrong handling" />
             </node>
           </node>
         </node>
@@ -5620,6 +5614,7 @@
         </node>
         <node concept="1XD0d2" id="5b2DnJ7cDJg" role="THmaL">
           <node concept="gk1L9" id="5b2DnJ7cG1b" role="1XD0Y5">
+            <ref role="1ap9JL" to="0:~Int.plus(Int)" resolve="plus" />
             <node concept="UZU4S" id="5b2DnJ7cG_$" role="21Pkll">
               <ref role="UZU4V" node="5b2DnJ7cspi" resolve="POINTS_X_PASS" />
             </node>
@@ -7047,6 +7042,123 @@
         </node>
       </node>
       <node concept="1XD0l0" id="5b2DnJ7vGiu" role="2BPcuh" />
+    </node>
+  </node>
+  <node concept="1XD0fY" id="4Cbe_Wcryjr">
+    <property role="TrG5h" value="_03_With" />
+    <property role="3GE5qa" value="06_scope_functions" />
+    <node concept="gXE$l" id="4Cbe_WcryjM" role="1XD0Tu">
+      <node concept="1PaTwC" id="4Cbe_WcryjO" role="gXG0x">
+        <node concept="3oM_SD" id="4Cbe_WcryjU" role="1PaTwD">
+          <property role="3oM_SC" value="https://play.kotlinlang.org/byExample/06_scope_functions/03_with" />
+          <property role="1X82VU" value="https://play.kotlinlang.org/byExample/06_scope_functions/03_with" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0aY" id="4Cbe_WcrylL" role="1XD0Tu">
+      <property role="TrG5h" value="Configuration" />
+      <node concept="1XD0l0" id="4Cbe_WcrylO" role="2BPcuh" />
+      <node concept="1XD08$" id="4Cbe_WcrylP" role="ICcUN" />
+      <node concept="1XD0bf" id="4Cbe_Wcrymd" role="KDYUA">
+        <node concept="1XD0l2" id="4Cbe_Wcryme" role="2BPcuh" />
+        <node concept="1XD0fH" id="4Cbe_Wcrymf" role="1XD008">
+          <property role="TrG5h" value="host" />
+          <property role="21VRqZ" value="true" />
+          <node concept="1XD088" id="4Cbe_WcrymM" role="37iW8f">
+            <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
+          </node>
+        </node>
+        <node concept="1XD0fH" id="4Cbe_WcrymD" role="1XD008">
+          <property role="TrG5h" value="port" />
+          <property role="21VRqZ" value="true" />
+          <node concept="1XD088" id="4Cbe_Wcrypt" role="37iW8f">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="eKYAL" id="4Cbe_Wcrylk" role="1XD0Tu" />
+    <node concept="1XD0bz" id="4Cbe_Wcrykz" role="1XD0Tu">
+      <property role="TrG5h" value="main" />
+      <node concept="1XD0l0" id="4Cbe_WcrykA" role="2BPcuh" />
+      <node concept="TDTJT" id="4Cbe_WcrykV" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="1XD0eA" id="4Cbe_WcrykW" role="TDYyP">
+          <property role="TrG5h" value="configuration" />
+        </node>
+        <node concept="1XD0mK" id="4Cbe_Wcryl4" role="1XD05H">
+          <node concept="1NbEFs" id="4Cbe_WcrypA" role="1XD0cX">
+            <ref role="AarEw" node="4Cbe_Wcrymd" resolve="Configuration" />
+            <node concept="1XD0eI" id="4Cbe_Wcryv8" role="TWiod">
+              <node concept="1XD08G" id="4Cbe_Wcryv6" role="1XD0ZN">
+                <node concept="21VMdE" id="4Cbe_Wcryv7" role="1XD0V$">
+                  <property role="21VMdD" value="localhost" />
+                </node>
+              </node>
+            </node>
+            <node concept="1XD0eI" id="4Cbe_Wcryve" role="TWiod">
+              <node concept="1XD0k7" id="4Cbe_Wcryvm" role="1XD0ZN">
+                <property role="1XD01k" value="25565" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1NbEFs" id="4Cbe_WcrykK" role="THmaL">
+        <ref role="AarEw" to="0:~.with&lt;2&gt;(0,Function1&lt;0,1&gt;)" resolve="with" />
+        <node concept="1XD0eI" id="4Cbe_WcryzG" role="TWiod">
+          <node concept="UZU4S" id="4Cbe_WcryzF" role="1XD0ZN">
+            <ref role="UZU4V" node="4Cbe_WcrykW" resolve="configuration" />
+          </node>
+        </node>
+        <node concept="1XD0f0" id="4Cbe_WcryIk" role="1XD06E">
+          <node concept="gXE$l" id="4KzeyZN5P3m" role="THmaL">
+            <node concept="1PaTwC" id="4KzeyZN5P3n" role="gXG0x">
+              <node concept="3oM_SD" id="4KzeyZN5P3q" role="1PaTwD">
+                <property role="3oM_SC" value="TODO" />
+              </node>
+              <node concept="3oM_SD" id="4KzeyZN5P3T" role="1PaTwD">
+                <property role="3oM_SC" value="println(&quot;$host:$port&quot;)" />
+              </node>
+            </node>
+          </node>
+          <node concept="1NbEFs" id="4KzeyZN5P4f" role="THmaL">
+            <ref role="AarEw" to="0:~.TODO()" resolve="TODO" />
+          </node>
+        </node>
+      </node>
+      <node concept="AQkLs" id="4KzeyZN5P4m" role="THmaL" />
+      <node concept="1NbEFs" id="4KzeyZN5P51" role="THmaL">
+        <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
+        <node concept="1XD0eI" id="4KzeyZN5P5u" role="TWiod">
+          <node concept="1XD08G" id="4KzeyZN5P5s" role="1XD0ZN">
+            <node concept="1XD0lO" id="4KzeyZN5P5Q" role="1XD0V$">
+              <node concept="1XD0a7" id="4KzeyZN5P6d" role="1XD029">
+                <node concept="UZU4S" id="4KzeyZN5Pa1" role="1XD07H">
+                  <ref role="UZU4V" node="4Cbe_Wcrymf" resolve="host" />
+                </node>
+                <node concept="UZU4S" id="4KzeyZN5P5W" role="21Pmik">
+                  <ref role="UZU4V" node="4Cbe_WcrykW" resolve="configuration" />
+                </node>
+              </node>
+            </node>
+            <node concept="21VMdE" id="4KzeyZN5PdO" role="1XD0V$">
+              <property role="21VMdD" value=":" />
+            </node>
+            <node concept="1XD0lO" id="4KzeyZN5PfY" role="1XD0V$">
+              <node concept="1XD0a7" id="4KzeyZN5PsQ" role="1XD029">
+                <node concept="UZU4S" id="4KzeyZN5PXe" role="1XD07H">
+                  <ref role="UZU4V" node="4Cbe_WcrymD" resolve="port" />
+                </node>
+                <node concept="UZU4S" id="4KzeyZN5Pib" role="21Pmik">
+                  <ref role="UZU4V" node="4Cbe_WcrykW" resolve="configuration" />
+                </node>
+              </node>
+            </node>
+            <node concept="21VMdE" id="4KzeyZN5P5t" role="1XD0V$" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
