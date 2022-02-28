@@ -65,13 +65,7 @@
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
         <idea-version since-build="213.1" until-build="221.1" />
-        <changes-notes>
-          <ul>
-            <li>Handling of custom function receiver types in inference</li>
-            <li>Return type of functions using 'in' variance set to Any?</li>
-            <li>Fixes internal inference issues</li>
-          </ul>
-        </changes-notes>
+        <change-notes><![CDATA[<ul> <li>Handling of custom function's receiver types in inference</li> <li>Return type of functions using 'in' variance set to Any?</li> <li>Fixed internal inference issues</li> </ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -94,13 +88,7 @@
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
         <idea-version since-build="213.1" until-build="221.1" />
-        <changes-notes>
-          <ul>
-            <li>Handling of custom function receiver types in inference</li>
-            <li>Return type of functions using 'in' variance set to Any?</li>
-            <li>Fixes internal inference issues</li>
-          </ul>
-        </changes-notes>
+        <change-notes><![CDATA[<ul> <li>Handling of custom function's receiver types in inference</li> <li>Return type of functions using 'in' variance set to Any?</li> <li>Fixed internal inference issues</li> </ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />

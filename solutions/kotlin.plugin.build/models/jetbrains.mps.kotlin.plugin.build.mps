@@ -15,6 +15,9 @@
       <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
         <property id="6666499814681541920" name="text" index="2pMdty" />
       </concept>
+      <concept id="6666499814681299066" name="jetbrains.mps.core.xml.structure.XmlCDATA" flags="ng" index="2pNm8S">
+        <property id="1622293396948985395" name="content" index="3o6aOc" />
+      </concept>
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
         <child id="6666499814681415861" name="attributes" index="2pNNFR" />
@@ -355,27 +358,9 @@
         </node>
       </node>
       <node concept="2pNNFK" id="7R6dmJlrvZ$" role="20twgj">
-        <property role="2pNNFO" value="changes-notes" />
-        <node concept="2pNNFK" id="7R6dmJlrvZJ" role="3o6s8t">
-          <property role="2pNNFO" value="ul" />
-          <node concept="2pNNFK" id="7R6dmJlrvZO" role="3o6s8t">
-            <property role="2pNNFO" value="li" />
-            <node concept="3o6iSG" id="7R6dmJlrvZR" role="3o6s8t">
-              <property role="3o6i5n" value="Handling of custom function receiver types in inference" />
-            </node>
-          </node>
-          <node concept="2pNNFK" id="7R6dmJlrvZY" role="3o6s8t">
-            <property role="2pNNFO" value="li" />
-            <node concept="3o6iSG" id="7R6dmJlrw04" role="3o6s8t">
-              <property role="3o6i5n" value="Return type of functions using 'in' variance set to Any?" />
-            </node>
-          </node>
-          <node concept="2pNNFK" id="7R6dmJlrw0n" role="3o6s8t">
-            <property role="2pNNFO" value="li" />
-            <node concept="3o6iSG" id="7R6dmJlrw0w" role="3o6s8t">
-              <property role="3o6i5n" value="Fixes internal inference issues" />
-            </node>
-          </node>
+        <property role="2pNNFO" value="change-notes" />
+        <node concept="2pNm8S" id="1$9D07Kx70l" role="3o6s8t">
+          <property role="3o6aOc" value="&lt;ul&gt; &lt;li&gt;Handling of custom function's receiver types in inference&lt;/li&gt; &lt;li&gt;Return type of functions using 'in' variance set to Any?&lt;/li&gt; &lt;li&gt;Fixed internal inference issues&lt;/li&gt; &lt;/ul&gt;" />
         </node>
       </node>
       <node concept="3_J27D" id="69s32WJ3dwI" role="3s6cr7">
