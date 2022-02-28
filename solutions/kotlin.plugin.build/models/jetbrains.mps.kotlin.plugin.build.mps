@@ -30,6 +30,9 @@
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
+      <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
+        <child id="9126048691955220762" name="path" index="28jJRO" />
+      </concept>
       <concept id="2755237150521975431" name="jetbrains.mps.build.structure.BuildVariableMacroInitWithString" flags="ng" index="aVJcg">
         <child id="2755237150521975437" name="value" index="aVJcq" />
       </concept>
@@ -55,6 +58,7 @@
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
+      <concept id="7389400916848036984" name="jetbrains.mps.build.structure.BuildLayout_Folder" flags="ng" index="398223" />
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -265,6 +269,29 @@
         <node concept="m$_wl" id="1diEraJ0skE" role="39821P">
           <ref role="m_rDy" node="1diEraJ0skp" resolve="jetbrains.mps.kotlin.typesystem" />
           <node concept="pUk6x" id="1diEraJ0skF" role="pUk7w" />
+          <node concept="398223" id="tboW33penH" role="39821P">
+            <node concept="3_J27D" id="tboW33penI" role="Nbhlr">
+              <node concept="3Mxwew" id="tboW33penL" role="3MwsjC">
+                <property role="3MwjfP" value="META-INF" />
+              </node>
+            </node>
+            <node concept="28jJK3" id="tboW33penN" role="39821P">
+              <node concept="55IIr" id="tboW33penO" role="28jJRO">
+                <node concept="2Ry0Ak" id="tboW33penU" role="iGT6I">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="tboW33penZ" role="2Ry0An">
+                    <property role="2Ry0Am" value="kotlin.plugin.build" />
+                    <node concept="2Ry0Ak" id="tboW33peo2" role="2Ry0An">
+                      <property role="2Ry0Am" value="icons" />
+                      <node concept="2Ry0Ak" id="tboW33peo9" role="2Ry0An">
+                        <property role="2Ry0Am" value="pluginIcon.svg" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -324,6 +351,30 @@
           <property role="2pNUuO" value="until-build" />
           <node concept="2pMdtt" id="3MN9Zh_WyvC" role="2pMdts">
             <property role="2pMdty" value="221.1" />
+          </node>
+        </node>
+      </node>
+      <node concept="2pNNFK" id="7R6dmJlrvZ$" role="20twgj">
+        <property role="2pNNFO" value="changes-notes" />
+        <node concept="2pNNFK" id="7R6dmJlrvZJ" role="3o6s8t">
+          <property role="2pNNFO" value="ul" />
+          <node concept="2pNNFK" id="7R6dmJlrvZO" role="3o6s8t">
+            <property role="2pNNFO" value="li" />
+            <node concept="3o6iSG" id="7R6dmJlrvZR" role="3o6s8t">
+              <property role="3o6i5n" value="Handling of custom function receiver types in inference" />
+            </node>
+          </node>
+          <node concept="2pNNFK" id="7R6dmJlrvZY" role="3o6s8t">
+            <property role="2pNNFO" value="li" />
+            <node concept="3o6iSG" id="7R6dmJlrw04" role="3o6s8t">
+              <property role="3o6i5n" value="Return type of functions using 'in' variance set to Any?" />
+            </node>
+          </node>
+          <node concept="2pNNFK" id="7R6dmJlrw0n" role="3o6s8t">
+            <property role="2pNNFO" value="li" />
+            <node concept="3o6iSG" id="7R6dmJlrw0w" role="3o6s8t">
+              <property role="3o6i5n" value="Fixes internal inference issues" />
+            </node>
           </node>
         </node>
       </node>
