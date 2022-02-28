@@ -1201,7 +1201,7 @@
       <property role="TrG5h" value="mutableStackOf" />
       <node concept="1XD0l2" id="rbYB7Qd756" role="2BPcuh" />
       <node concept="1XD0fq" id="rbYB7Qd7Dn" role="1XPbGx">
-        <property role="TrG5h" value="E2" />
+        <property role="TrG5h" value="P" />
       </node>
       <node concept="1XD0bi" id="rbYB7Qd88T" role="1XbAXm">
         <property role="TrG5h" value="elements" />
