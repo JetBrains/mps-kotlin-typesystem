@@ -9,8 +9,8 @@
   </languages>
   <imports>
     <import index="jyou" ref="r:ca03e632-3f02-43dd-8ea4-ad134e38a5a2(jetbrains.mps.kotlin.plugin)" />
-    <import index="vciu" ref="r:42fb31e7-122b-4950-aa58-2f5f6e5595ce(jetbrains.mps.kotlin.overloading)" />
     <import index="ib3k" ref="r:2c6db891-ff98-4a70-ab91-005b2bda3e0a(jetbrains.mps.kotlin.experimental.structure)" implicit="true" />
+    <import index="kdsm" ref="r:4d5ec8ef-7006-453c-a8cf-f9897337b08c(jetbrains.mps.kotlin.runtime.typesystem)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -111,7 +111,7 @@
                         <ref role="3cqZAo" node="5b2DnJ7pLdc" resolve="it" />
                       </node>
                       <node concept="liA8E" id="5b2DnJ7pLda" role="2OqNvi">
-                        <ref role="37wK5l" to="vciu:7KVUDZaN2C6" resolve="isAvailable" />
+                        <ref role="37wK5l" to="kdsm:7KVUDZaN2C6" resolve="isAvailable" />
                         <node concept="13iPFW" id="5b2DnJ7FWxG" role="37wK5m" />
                       </node>
                     </node>
