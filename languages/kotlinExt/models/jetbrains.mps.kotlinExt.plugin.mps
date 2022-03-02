@@ -185,7 +185,7 @@
   </registry>
   <node concept="1lYeZD" id="7VTXQs1rWl7">
     <property role="TrG5h" value="OverloadResolutionExtension" />
-    <ref role="1lYe$Y" to="jyou:7VTXQs1r_Bu" resolve="OverloadResolverExtension" />
+    <ref role="1lYe$Y" to="jyou:7VTXQs1r_Bu" resolve="TypesystemExtension" />
     <node concept="3Tm1VV" id="7VTXQs1rWl8" role="1B3o_S" />
     <node concept="2tJIrI" id="7VTXQs1rWl9" role="jymVt" />
     <node concept="3tTeZs" id="7VTXQs1rWla" role="jymVt">
@@ -209,7 +209,7 @@
                 <property role="2bfB8j" value="true" />
                 <property role="373rjd" value="true" />
                 <ref role="1Y3XeK" to="kdsm:7VTXQs1r_Rt" resolve="KotlinTypesystem" />
-                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                 <node concept="3Tm1VV" id="5g3vQLJRHhY" role="1B3o_S" />
                 <node concept="3clFb_" id="5g3vQLJRIVd" role="jymVt">
                   <property role="TrG5h" value="getIntermediateType" />
@@ -276,7 +276,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="5g3vQLJRIVu" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
                 <node concept="2tJIrI" id="5g3vQLJRVam" role="jymVt" />
@@ -400,7 +400,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="5g3vQLJRIVM" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
                 <node concept="2tJIrI" id="5g3vQLJSdG0" role="jymVt" />
@@ -443,7 +443,7 @@
                                       <node concept="1eOMI4" id="5g3vQLJSk0P" role="2Oq$k0">
                                         <node concept="10QFUN" id="5g3vQLJSk0Q" role="1eOMHV">
                                           <node concept="3uibUv" id="5g3vQLJSk0R" role="10QFUM">
-                                            <ref role="3uigEE" to="qox2:5BwsbZJE17w" resolve="Queries" />
+                                            <ref role="3uigEE" to="qox2:5BwsbZJE17w" resolve="CoderulesTypecheckingProvider.Queries" />
                                           </node>
                                           <node concept="37vLTw" id="5g3vQLJSk0S" role="10QFUP">
                                             <ref role="3cqZAo" node="5g3vQLJSk0s" resolve="queries" />
@@ -464,7 +464,7 @@
                                 </node>
                                 <node concept="2ZW3vV" id="5g3vQLJSk0W" role="3clFbw">
                                   <node concept="3uibUv" id="5g3vQLJSk0X" role="2ZW6by">
-                                    <ref role="3uigEE" to="qox2:5BwsbZJE17w" resolve="Queries" />
+                                    <ref role="3uigEE" to="qox2:5BwsbZJE17w" resolve="CoderulesTypecheckingProvider.Queries" />
                                   </node>
                                   <node concept="37vLTw" id="5g3vQLJSk0Y" role="2ZW6bz">
                                     <ref role="3cqZAo" node="5g3vQLJSk0s" resolve="queries" />
@@ -536,7 +536,7 @@
                               <node concept="3cpWs6" id="7KVUDZaNiPy" role="3cqZAp">
                                 <node concept="2ZW3vV" id="7KVUDZaN9Kj" role="3cqZAk">
                                   <node concept="3uibUv" id="7KVUDZaN9Kk" role="2ZW6by">
-                                    <ref role="3uigEE" to="qox2:5BwsbZJE17w" resolve="Queries" />
+                                    <ref role="3uigEE" to="qox2:5BwsbZJE17w" resolve="CoderulesTypecheckingProvider.Queries" />
                                   </node>
                                   <node concept="37vLTw" id="7KVUDZaN9Kl" role="2ZW6bz">
                                     <ref role="3cqZAo" node="7KVUDZaN9JN" resolve="queries" />

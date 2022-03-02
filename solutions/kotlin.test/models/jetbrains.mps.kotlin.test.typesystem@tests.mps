@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="1" />
+    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="2" />
   </languages>
   <imports>
     <import index="fefm" ref="r:1007e072-ac19-4b13-85dc-0e4118398cf2(jetbrains.mps.kotlinExt.types)" />
@@ -82,6 +82,9 @@
       <concept id="7138249191285121087" name="jetbrains.mps.kotlin.structure.IVisible" flags="ng" index="2BPcvI">
         <child id="7138249191285121088" name="visibility" index="2BPcuh" />
       </concept>
+      <concept id="6389031306614148912" name="jetbrains.mps.kotlin.structure.StringLiteralLine" flags="ng" index="Df6$J">
+        <child id="6389031306614152501" name="parts" index="Df7GE" />
+      </concept>
       <concept id="6013275720582937818" name="jetbrains.mps.kotlin.structure.IInheritable" flags="ng" index="ICcUM">
         <child id="6013275720582937819" name="inheritance" index="ICcUN" />
       </concept>
@@ -135,7 +138,7 @@
       <concept id="2936055411798373619" name="jetbrains.mps.kotlin.structure.FinalInheritanceModifier" flags="ng" index="1XD08$" />
       <concept id="2936055411798373618" name="jetbrains.mps.kotlin.structure.AbstractInheritanceModifier" flags="ng" index="1XD08_" />
       <concept id="2936055411798373627" name="jetbrains.mps.kotlin.structure.StringLiteral" flags="ng" index="1XD08G">
-        <child id="2936055411798374451" name="content" index="1XD0V$" />
+        <child id="6389031306614148417" name="lines" index="Df6Hu" />
       </concept>
       <concept id="2936055411798373558" name="jetbrains.mps.kotlin.structure.PackageHeader" flags="ng" index="1XD09x" />
       <concept id="2936055411798373456" name="jetbrains.mps.kotlin.structure.NavigationOperation" flags="ng" index="1XD0a7">
@@ -1533,8 +1536,10 @@
               <ref role="9pJMH" node="7NhMAnZ$fPL" resolve="U" />
             </node>
             <node concept="1XD08G" id="7NhMAnZ$g8e" role="THmaL">
-              <node concept="21VMdE" id="7NhMAnZ$g8f" role="1XD0V$">
-                <property role="21VMdD" value="TODO: content" />
+              <node concept="Df6$J" id="5yEpxXMpJIl" role="Df6Hu">
+                <node concept="21VMdE" id="7NhMAnZ$g8f" role="Df7GE">
+                  <property role="21VMdD" value="TODO: content" />
+                </node>
               </node>
             </node>
           </node>

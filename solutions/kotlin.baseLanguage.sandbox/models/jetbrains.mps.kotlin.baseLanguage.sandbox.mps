@@ -29,6 +29,9 @@
       <concept id="7138249191285121087" name="jetbrains.mps.kotlin.structure.IVisible" flags="ng" index="2BPcvI">
         <child id="7138249191285121088" name="visibility" index="2BPcuh" />
       </concept>
+      <concept id="6389031306614148912" name="jetbrains.mps.kotlin.structure.StringLiteralLine" flags="ng" index="Df6$J">
+        <child id="6389031306614152501" name="parts" index="Df7GE" />
+      </concept>
       <concept id="6013275720582937818" name="jetbrains.mps.kotlin.structure.IInheritable" flags="ng" index="ICcUM">
         <child id="6013275720582937819" name="inheritance" index="ICcUN" />
       </concept>
@@ -47,7 +50,7 @@
       <concept id="4662566628538083705" name="jetbrains.mps.kotlin.structure.FunctionCallExpression" flags="ng" index="1NbEFs" />
       <concept id="2936055411798373619" name="jetbrains.mps.kotlin.structure.FinalInheritanceModifier" flags="ng" index="1XD08$" />
       <concept id="2936055411798373627" name="jetbrains.mps.kotlin.structure.StringLiteral" flags="ng" index="1XD08G">
-        <child id="2936055411798374451" name="content" index="1XD0V$" />
+        <child id="6389031306614148417" name="lines" index="Df6Hu" />
       </concept>
       <concept id="2936055411798373481" name="jetbrains.mps.kotlin.structure.ClassDeclaration" flags="ng" index="1XD0aY">
         <child id="2324909103763444261" name="primaryConstructor" index="KDYUA" />
@@ -103,10 +106,12 @@
           <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
           <node concept="1XD0eI" id="7WpE6U5civO" role="TWiod">
             <node concept="1XD08G" id="ZgHBwZyDt0" role="1XD0ZN">
-              <node concept="21VMdE" id="ZgHBwZyDuK" role="1XD0V$">
-                <property role="21VMdD" value="It works!" />
+              <node concept="Df6$J" id="5yEpxXMpJvr" role="Df6Hu">
+                <node concept="21VMdE" id="ZgHBwZyDuK" role="Df7GE">
+                  <property role="21VMdD" value="It works!" />
+                </node>
+                <node concept="21VMdE" id="ZgHBwZyDt1" role="Df7GE" />
               </node>
-              <node concept="21VMdE" id="ZgHBwZyDt1" role="1XD0V$" />
             </node>
           </node>
         </node>

@@ -98,7 +98,7 @@
           <node concept="2OqwBi" id="5b2DnJ7pLd0" role="3cqZAk">
             <node concept="2OqwBi" id="5b2DnJ7pLd1" role="2Oq$k0">
               <node concept="2O5UvJ" id="5b2DnJ7pLd2" role="2Oq$k0">
-                <ref role="2O5UnU" to="jyou:7VTXQs1r_Bu" resolve="OverloadResolverExtension" />
+                <ref role="2O5UnU" to="jyou:7VTXQs1r_Bu" resolve="TypesystemExtension" />
               </node>
               <node concept="SfwO_" id="5b2DnJ7pLd3" role="2OqNvi" />
             </node>
