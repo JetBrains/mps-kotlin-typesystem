@@ -15,9 +15,6 @@
       <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
         <property id="6666499814681541920" name="text" index="2pMdty" />
       </concept>
-      <concept id="6666499814681299066" name="jetbrains.mps.core.xml.structure.XmlCDATA" flags="ng" index="2pNm8S">
-        <property id="1622293396948985395" name="content" index="3o6aOc" />
-      </concept>
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
         <child id="6666499814681415861" name="attributes" index="2pNNFR" />
@@ -347,7 +344,7 @@
         <node concept="2pNUuL" id="11H_0IugNYK" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
           <node concept="2pMdtt" id="11H_0IugNYL" role="2pMdts">
-            <property role="2pMdty" value="213.1" />
+            <property role="2pMdty" value="213.6778" />
           </node>
         </node>
         <node concept="2pNUuL" id="3MN9Zh_WyvB" role="2pNNFR">
@@ -355,12 +352,6 @@
           <node concept="2pMdtt" id="3MN9Zh_WyvC" role="2pMdts">
             <property role="2pMdty" value="221.1" />
           </node>
-        </node>
-      </node>
-      <node concept="2pNNFK" id="7R6dmJlrvZ$" role="20twgj">
-        <property role="2pNNFO" value="change-notes" />
-        <node concept="2pNm8S" id="1$9D07Kx70l" role="3o6s8t">
-          <property role="3o6aOc" value="&lt;ul&gt; &lt;li&gt;Handling of custom function's receiver types in inference&lt;/li&gt; &lt;li&gt;Return type of functions using 'in' variance set to Any?&lt;/li&gt; &lt;li&gt;Fixed internal inference issues&lt;/li&gt; &lt;/ul&gt;" />
         </node>
       </node>
       <node concept="3_J27D" id="69s32WJ3dwI" role="3s6cr7">
@@ -432,6 +423,11 @@
         <node concept="1SiIV0" id="7WpE6U5hkS9" role="3bR37C">
           <node concept="3bR9La" id="7WpE6U5hkSa" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5g3vQLK0ccX" role="3bR37C">
+          <node concept="3bR9La" id="5g3vQLK0ccY" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:Ye$g8PO8Uc" resolve="jetbrains.mps.kotlin" />
           </node>
         </node>
       </node>

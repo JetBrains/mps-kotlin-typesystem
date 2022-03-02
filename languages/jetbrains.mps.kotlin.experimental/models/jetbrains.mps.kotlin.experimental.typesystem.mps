@@ -3285,23 +3285,20 @@
         <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="5g3vQLJvLQu" role="jymVt" />
     <node concept="3clFb_" id="5b2DnJ7tkGY" role="jymVt">
-      <property role="TrG5h" value="getReceiver" />
+      <property role="TrG5h" value="getReceiverType" />
       <node concept="3Tm1VV" id="5b2DnJ7tkH0" role="1B3o_S" />
-      <node concept="3uibUv" id="5b2DnJ7tkH1" role="3clF45">
-        <ref role="3uigEE" to="1p8r:26mUjU3_v7T" resolve="FunctionReceiver" />
+      <node concept="3Tqbb2" id="5g3vQLJvEPD" role="3clF45">
+        <ref role="ehGHo" to="hcm8:2yYXHtl6Jh1" resolve="IType" />
       </node>
       <node concept="2AHcQZ" id="5b2DnJ7tkH7" role="2AJF6D">
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
       <node concept="3clFbS" id="5b2DnJ7tkH8" role="3clF47">
-        <node concept="3cpWs8" id="26mUjU492RL" role="3cqZAp">
-          <node concept="3cpWsn" id="26mUjU492RM" role="3cpWs9">
-            <property role="TrG5h" value="klass" />
-            <node concept="3Tqbb2" id="26mUjU492Ef" role="1tU5fm">
-              <ref role="ehGHo" to="hcm8:2Aaqzls4g9O" resolve="IClassLike" />
-            </node>
-            <node concept="2OqwBi" id="26mUjU492RN" role="33vP2m">
+        <node concept="3cpWs6" id="5g3vQLJvHKw" role="3cqZAp">
+          <node concept="2OqwBi" id="5g3vQLJvFEk" role="3cqZAk">
+            <node concept="2OqwBi" id="26mUjU492RN" role="2Oq$k0">
               <node concept="37vLTw" id="26mUjU492RO" role="2Oq$k0">
                 <ref role="3cqZAo" node="5b2DnJ7tlgb" resolve="myClassParam" />
               </node>
@@ -3313,29 +3310,9 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="26mUjU492_w" role="3cqZAp">
-          <node concept="3clFbS" id="26mUjU492_y" role="3clFbx">
-            <node concept="3cpWs6" id="26mUjU495KJ" role="3cqZAp">
-              <node concept="10Nm6u" id="26mUjU4964R" role="3cqZAk" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="26mUjU494Bh" role="3clFbw">
-            <node concept="37vLTw" id="26mUjU494eo" role="2Oq$k0">
-              <ref role="3cqZAo" node="26mUjU492RM" resolve="klass" />
-            </node>
-            <node concept="3w_OXm" id="26mUjU495e6" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3cpWs6" id="26mUjU3FnkM" role="3cqZAp">
-          <node concept="2ShNRf" id="26mUjU3Fo8_" role="3cqZAk">
-            <node concept="1pGfFk" id="26mUjU3FppC" role="2ShVmc">
-              <property role="373rjd" value="true" />
-              <ref role="37wK5l" to="hez:26mUjU3DZI_" resolve="KotlinClassFunctionReceiver" />
-              <node concept="37vLTw" id="26mUjU492RQ" role="37wK5m">
-                <ref role="3cqZAo" node="26mUjU492RM" resolve="klass" />
-              </node>
+            <node concept="2qgKlT" id="5g3vQLJvGsX" role="2OqNvi">
+              <ref role="37wK5l" to="hez:46gC9M6gB68" resolve="getThisType" />
+              <node concept="3clFbT" id="5g3vQLJvI3Q" role="37wK5m" />
             </node>
           </node>
         </node>
