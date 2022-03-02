@@ -128,6 +128,9 @@
       <concept id="7138249191285121087" name="jetbrains.mps.kotlin.structure.IVisible" flags="ng" index="2BPcvI">
         <child id="7138249191285121088" name="visibility" index="2BPcuh" />
       </concept>
+      <concept id="6389031306614148912" name="jetbrains.mps.kotlin.structure.StringLiteralLine" flags="ng" index="Df6$J">
+        <child id="6389031306614152501" name="parts" index="Df7GE" />
+      </concept>
       <concept id="6013275720582937818" name="jetbrains.mps.kotlin.structure.IInheritable" flags="ng" index="ICcUM">
         <child id="6013275720582937819" name="inheritance" index="ICcUN" />
       </concept>
@@ -160,7 +163,7 @@
       <concept id="2936055411798373599" name="jetbrains.mps.kotlin.structure.ClassType" flags="ng" index="1XD088" />
       <concept id="2936055411798373619" name="jetbrains.mps.kotlin.structure.FinalInheritanceModifier" flags="ng" index="1XD08$" />
       <concept id="2936055411798373627" name="jetbrains.mps.kotlin.structure.StringLiteral" flags="ng" index="1XD08G">
-        <child id="2936055411798374451" name="content" index="1XD0V$" />
+        <child id="6389031306614148417" name="lines" index="Df6Hu" />
       </concept>
       <concept id="2936055411798373537" name="jetbrains.mps.kotlin.structure.PropertyDeclaration" flags="ng" index="1XD09Q">
         <child id="1314219036499436525" name="declaration" index="TDYyH" />
@@ -233,10 +236,12 @@
             <ref role="2yQV70" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
             <node concept="1XD0eI" id="5L2mPNF7X73" role="TWiod">
               <node concept="1XD08G" id="5L2mPNF7X71" role="1XD0ZN">
-                <node concept="21VMdE" id="1dpU28wZMU_" role="1XD0V$">
-                  <property role="21VMdD" value="world" />
+                <node concept="Df6$J" id="5yEpxXMpJvs" role="Df6Hu">
+                  <node concept="21VMdE" id="1dpU28wZMU_" role="Df7GE">
+                    <property role="21VMdD" value="world" />
+                  </node>
+                  <node concept="21VMdE" id="5L2mPNF7X72" role="Df7GE" />
                 </node>
-                <node concept="21VMdE" id="5L2mPNF7X72" role="1XD0V$" />
               </node>
             </node>
           </node>
@@ -255,21 +260,23 @@
         <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
         <node concept="1XD0eI" id="NA$kug9TeZ" role="TWiod">
           <node concept="1XD08G" id="NA$kug9TeX" role="1XD0ZN">
-            <node concept="21VMdE" id="NA$kugcc2$" role="1XD0V$">
-              <property role="21VMdD" value="hello " />
-            </node>
-            <node concept="1XD0lO" id="1dpU28wZMVu" role="1XD0V$">
-              <node concept="1XD0a7" id="1dpU28wZOhW" role="1XD029">
-                <property role="21SRas" value="true" />
-                <node concept="2yQVVM" id="1dpU28wZOk8" role="1XD07H">
-                  <ref role="2yQV70" to="guwi:~File.getName()" resolve="getName" />
-                </node>
-                <node concept="UZU4S" id="1dpU28wZOgZ" role="21Pmik">
-                  <ref role="UZU4V" node="5L2mPNF7WJ_" resolve="file" />
+            <node concept="Df6$J" id="5yEpxXMpJvt" role="Df6Hu">
+              <node concept="21VMdE" id="NA$kugcc2$" role="Df7GE">
+                <property role="21VMdD" value="hello " />
+              </node>
+              <node concept="1XD0lO" id="1dpU28wZMVu" role="Df7GE">
+                <node concept="1XD0a7" id="1dpU28wZOhW" role="1XD029">
+                  <property role="21SRas" value="true" />
+                  <node concept="2yQVVM" id="1dpU28wZOk8" role="1XD07H">
+                    <ref role="2yQV70" to="guwi:~File.getName()" resolve="getName" />
+                  </node>
+                  <node concept="UZU4S" id="1dpU28wZOgZ" role="21Pmik">
+                    <ref role="UZU4V" node="5L2mPNF7WJ_" resolve="file" />
+                  </node>
                 </node>
               </node>
+              <node concept="21VMdE" id="NA$kug9TeY" role="Df7GE" />
             </node>
-            <node concept="21VMdE" id="NA$kug9TeY" role="1XD0V$" />
           </node>
         </node>
       </node>
@@ -277,10 +284,12 @@
         <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
         <node concept="1XD0eI" id="7xKsisVFH5X" role="TWiod">
           <node concept="1XD08G" id="7xKsisVFH5V" role="1XD0ZN">
-            <node concept="21VMdE" id="7xKsisVFH88" role="1XD0V$">
-              <property role="21VMdD" value="3" />
+            <node concept="Df6$J" id="5yEpxXMpJvu" role="Df6Hu">
+              <node concept="21VMdE" id="7xKsisVFH88" role="Df7GE">
+                <property role="21VMdD" value="3" />
+              </node>
+              <node concept="21VMdE" id="7xKsisVFH5W" role="Df7GE" />
             </node>
-            <node concept="21VMdE" id="7xKsisVFH5W" role="1XD0V$" />
           </node>
         </node>
       </node>
@@ -327,10 +336,12 @@
             <node concept="1XD0eI" id="rbYB7QQTQv" role="TWiod">
               <ref role="21Xffc" node="rbYB7QQTiK" resolve="otherValue" />
               <node concept="1XD08G" id="rbYB7QQUeg" role="1XD0ZN">
-                <node concept="21VMdE" id="rbYB7QQUg4" role="1XD0V$">
-                  <property role="21VMdD" value="3" />
+                <node concept="Df6$J" id="5yEpxXMpJvv" role="Df6Hu">
+                  <node concept="21VMdE" id="rbYB7QQUg4" role="Df7GE">
+                    <property role="21VMdD" value="3" />
+                  </node>
+                  <node concept="21VMdE" id="rbYB7QQUei" role="Df7GE" />
                 </node>
-                <node concept="21VMdE" id="rbYB7QQUei" role="1XD0V$" />
               </node>
             </node>
             <node concept="1XD0eI" id="rbYB7QQTLo" role="TWiod">
@@ -344,10 +355,12 @@
                 <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
                 <node concept="1XD0eI" id="TRtBGgyFhZ" role="TWiod">
                   <node concept="1XD08G" id="TRtBGgyFhX" role="1XD0ZN">
-                    <node concept="21VMdE" id="TRtBGgyFjQ" role="1XD0V$">
-                      <property role="21VMdD" value="hi" />
+                    <node concept="Df6$J" id="5yEpxXMpJvw" role="Df6Hu">
+                      <node concept="21VMdE" id="TRtBGgyFjQ" role="Df7GE">
+                        <property role="21VMdD" value="hi" />
+                      </node>
+                      <node concept="21VMdE" id="TRtBGgyFhY" role="Df7GE" />
                     </node>
-                    <node concept="21VMdE" id="TRtBGgyFhY" role="1XD0V$" />
                   </node>
                 </node>
               </node>

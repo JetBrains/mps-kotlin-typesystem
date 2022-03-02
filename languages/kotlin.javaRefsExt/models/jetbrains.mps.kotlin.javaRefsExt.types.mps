@@ -550,7 +550,7 @@
   </node>
   <node concept="AVZre" id="3lDDPlnizM5">
     <property role="TrG5h" value="JavaHierarchy" />
-    <ref role="2YbDB9" to="fefm:27wMicCJzWF" resolve="ClassHierarchy" />
+    <ref role="2YbDB9" to="fefm:27wMicCJzWF" resolve="Hierarchy" />
     <node concept="1nLNMY" id="3lDDPlni$dt" role="1nK1Vg">
       <property role="TrG5h" value="javaClassHierarchy" />
       <node concept="3clFbS" id="3lDDPlni$du" role="1nLNMH">
