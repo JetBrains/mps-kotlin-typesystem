@@ -2937,6 +2937,32 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="3clFb_" id="c49tPrwz4V" role="jymVt">
+      <property role="TrG5h" value="usesReceiver" />
+      <node concept="3Tm1VV" id="c49tPrwz4X" role="1B3o_S" />
+      <node concept="10P_77" id="c49tPrwz4Y" role="3clF45" />
+      <node concept="3clFbS" id="c49tPrwz4Z" role="3clF47">
+        <node concept="3clFbF" id="c49tPrw$6C" role="3cqZAp">
+          <node concept="2OqwBi" id="c49tPrw$H0" role="3clFbG">
+            <node concept="2OqwBi" id="c49tPrw$6E" role="2Oq$k0">
+              <node concept="37vLTw" id="c49tPrw$6F" role="2Oq$k0">
+                <ref role="3cqZAo" node="5b2DnJ7mpF2" resolve="myWrapper" />
+              </node>
+              <node concept="liA8E" id="c49tPrw$6G" role="2OqNvi">
+                <ref role="37wK5l" node="5b2DnJ7luv3" resolve="getReceiver" />
+                <node concept="37vLTw" id="c49tPrw$6H" role="37wK5m">
+                  <ref role="3cqZAo" node="5b2DnJ7mpx_" resolve="myInstance" />
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="c49tPrw_ef" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="c49tPrwz50" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
     <node concept="3clFb_" id="5b2DnJ7moJE" role="jymVt">
       <property role="TrG5h" value="getFunctionDescriptor" />
       <node concept="3Tm1VV" id="5b2DnJ7moJG" role="1B3o_S" />

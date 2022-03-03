@@ -241,7 +241,9 @@
       </concept>
       <concept id="2936055411798373645" name="jetbrains.mps.kotlin.structure.TypeParameter" flags="ng" index="1XD0fq" />
       <concept id="2936055411798373641" name="jetbrains.mps.kotlin.structure.AnonymousInitializer" flags="ng" index="1XD0fu" />
-      <concept id="2936055411798373683" name="jetbrains.mps.kotlin.structure.EnumEntry" flags="ng" index="1XD0f$" />
+      <concept id="2936055411798373683" name="jetbrains.mps.kotlin.structure.EnumEntry" flags="ng" index="1XD0f$">
+        <reference id="6053822427831537398" name="constructor" index="$cB6q" />
+      </concept>
       <concept id="2936055411798373682" name="jetbrains.mps.kotlin.structure.WhenExpression" flags="ng" index="1XD0f_">
         <child id="1243006380188584426" name="target" index="21VO9t" />
         <child id="1243006380188592988" name="elseEntry" index="21VQ3F" />
@@ -3088,128 +3090,96 @@
       <property role="TrG5h" value="State" />
       <node concept="1XD0f$" id="1qppQtOYR1E" role="KSofa">
         <property role="TrG5h" value="IDLE" />
+        <ref role="$cB6q" node="1qppQtOYR1o" resolve="State" />
       </node>
       <node concept="1XD0f$" id="1qppQtOYR1O" role="KSofa">
         <property role="TrG5h" value="RUNNING" />
+        <ref role="$cB6q" node="1qppQtOYR1o" resolve="State" />
       </node>
       <node concept="1XD0f$" id="1qppQtOYR1Y" role="KSofa">
         <property role="TrG5h" value="FINISHED" />
+        <ref role="$cB6q" node="1qppQtOYR1o" resolve="State" />
       </node>
       <node concept="1XD08$" id="1qppQtOYR1q" role="ICcUN" />
       <node concept="1XD0l2" id="1qppQtOYR1s" role="2BPcuh" />
     </node>
     <node concept="eKYAL" id="1qppQtOYRz7" role="1XD0Tu" />
-    <node concept="gXE$l" id="1qppQtOYWS$" role="1XD0Tu">
-      <node concept="1PaTwC" id="1qppQtOYXem" role="gXG0x">
-        <node concept="3oM_SD" id="1qppQtOYXes" role="1PaTwD">
-          <property role="3oM_SC" value="TODO:" />
-        </node>
-        <node concept="3oM_SD" id="1qppQtOYXeu" role="1PaTwD">
-          <property role="3oM_SC" value="primary" />
-        </node>
-        <node concept="3oM_SD" id="1qppQtOYXex" role="1PaTwD">
-          <property role="3oM_SC" value="constructor" />
-        </node>
-        <node concept="3oM_SD" id="1qppQtOYXe_" role="1PaTwD">
-          <property role="3oM_SC" value="not" />
-        </node>
-        <node concept="3oM_SD" id="1qppQtOYXeE" role="1PaTwD">
-          <property role="3oM_SC" value="visible," />
-        </node>
-        <node concept="3oM_SD" id="1qppQtOYXeK" role="1PaTwD">
-          <property role="3oM_SC" value="hard" />
-        </node>
-        <node concept="3oM_SD" id="1qppQtOYXeR" role="1PaTwD">
-          <property role="3oM_SC" value="to" />
-        </node>
-        <node concept="3oM_SD" id="1qppQtOYXeZ" role="1PaTwD">
-          <property role="3oM_SC" value="insert" />
-        </node>
-      </node>
-    </node>
-    <node concept="gXE$l" id="7M9bJcAseys" role="1XD0Tu">
-      <node concept="1PaTwC" id="7M9bJcAseyu" role="gXG0x">
-        <node concept="3oM_SD" id="7M9bJcAseAa" role="1PaTwD">
-          <property role="3oM_SC" value="generation" />
-        </node>
-        <node concept="3oM_SD" id="7M9bJcAseAc" role="1PaTwD">
-          <property role="3oM_SC" value="issues:" />
-        </node>
-        <node concept="tu5oc" id="7M9bJcAseAj" role="1PaTwD">
-          <node concept="1XYkdX" id="1qppQtOYRC_" role="tu5of">
-            <property role="TrG5h" value="Color" />
-            <node concept="eKYAL" id="1qppQtOYRQ3" role="KS$fE" />
-            <node concept="1XD0bz" id="1qppQtOYRQ8" role="KS$fE">
-              <property role="TrG5h" value="containsRed" />
-              <node concept="1XD0l2" id="1qppQtOYRQa" role="2BPcuh" />
-              <node concept="giPaf" id="1qppQtOYSJ4" role="THmaL">
-                <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
-                <node concept="1XD0k7" id="1qppQtOYSJz" role="21Pkll">
-                  <property role="1XD01k" value="0" />
-                </node>
-                <node concept="21PmDL" id="1qppQtOYSff" role="21Pkln">
-                  <ref role="21PmDZ" to="0:~Int.and(Int)" resolve="and" />
-                  <node concept="1XD0k6" id="1qppQtOYSnb" role="21Pkll">
-                    <property role="1XD01i" value="FF0000" />
-                  </node>
-                  <node concept="1XD0a7" id="1qppQtOYRUg" role="21Pkln">
-                    <node concept="UZU4S" id="1qppQtOYRY2" role="1XD07H">
-                      <ref role="UZU4V" node="1qppQtOYRFc" resolve="rgb" />
-                    </node>
-                    <node concept="1XD0df" id="1qppQtOYRRj" role="21Pmik" />
-                  </node>
-                </node>
-              </node>
+    <node concept="1XYkdX" id="1qppQtOYRC_" role="1XD0Tu">
+      <property role="TrG5h" value="Color" />
+      <node concept="eKYAL" id="1qppQtOYRQ3" role="KS$fE" />
+      <node concept="1XD0bz" id="1qppQtOYRQ8" role="KS$fE">
+        <property role="TrG5h" value="containsRed" />
+        <node concept="1XD0l2" id="1qppQtOYRQa" role="2BPcuh" />
+        <node concept="giPaf" id="1qppQtOYSJ4" role="THmaL">
+          <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+          <node concept="1XD0k7" id="1qppQtOYSJz" role="21Pkll">
+            <property role="1XD01k" value="0" />
+          </node>
+          <node concept="21PmDL" id="1qppQtOYSff" role="21Pkln">
+            <ref role="21PmDZ" to="0:~Int.and(Int)" resolve="and" />
+            <node concept="1XD0k6" id="1qppQtOYSnb" role="21Pkll">
+              <property role="1XD01i" value="FF0000" />
             </node>
-            <node concept="1XD08$" id="1qppQtOYRCB" role="ICcUN" />
-            <node concept="1XD0l2" id="1qppQtOYRCD" role="2BPcuh" />
-            <node concept="1XD0bf" id="1qppQtOYRFa" role="KDYUA">
-              <node concept="1XD0l2" id="1qppQtOYRFb" role="2BPcuh" />
-              <node concept="1XD0fH" id="1qppQtOYRFc" role="1XD008">
-                <property role="TrG5h" value="rgb" />
-                <property role="21VRqZ" value="true" />
-                <property role="21VRqX" value="true" />
-                <node concept="1XD088" id="1qppQtOYRFw" role="37iW8f">
-                  <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
-                </node>
+            <node concept="1XD0a7" id="1qppQtOYRUg" role="21Pkln">
+              <node concept="UZU4S" id="1qppQtOYRY2" role="1XD07H">
+                <ref role="UZU4V" node="1qppQtOYRFc" resolve="rgb" />
               </node>
-            </node>
-            <node concept="1XD0f$" id="1qppQtOYRON" role="KSofa">
-              <property role="TrG5h" value="RED" />
-              <node concept="1XD0eI" id="1qppQtOYROO" role="TWiod">
-                <node concept="1XD0k6" id="1qppQtOYROP" role="1XD0ZN">
-                  <property role="1XD01i" value="FF0000" />
-                </node>
-              </node>
-            </node>
-            <node concept="1XD0f$" id="1qppQtOYRKe" role="KSofa">
-              <property role="TrG5h" value="GREEN" />
-              <node concept="1XD0eI" id="1qppQtOYRKp" role="TWiod">
-                <node concept="1XD0k6" id="1qppQtOYRKo" role="1XD0ZN">
-                  <property role="1XD01i" value="00FF00" />
-                </node>
-              </node>
-            </node>
-            <node concept="1XD0f$" id="1qppQtOYRPf" role="KSofa">
-              <property role="TrG5h" value="BLUE" />
-              <node concept="1XD0eI" id="1qppQtOYRPg" role="TWiod">
-                <node concept="1XD0k6" id="1qppQtOYRPh" role="1XD0ZN">
-                  <property role="1XD01i" value="0000FF" />
-                </node>
-              </node>
-            </node>
-            <node concept="1XD0f$" id="1qppQtOYRPr" role="KSofa">
-              <property role="TrG5h" value="YELLOW" />
-              <node concept="1XD0eI" id="1qppQtOYRPs" role="TWiod">
-                <node concept="1XD0k6" id="1qppQtOYRPt" role="1XD0ZN">
-                  <property role="1XD01i" value="FFFF00" />
-                </node>
-              </node>
+              <node concept="1XD0df" id="1qppQtOYRRj" role="21Pmik" />
             </node>
           </node>
         </node>
       </node>
+      <node concept="1XD08$" id="1qppQtOYRCB" role="ICcUN" />
+      <node concept="1XD0l2" id="1qppQtOYRCD" role="2BPcuh" />
+      <node concept="1XD0bf" id="1qppQtOYRFa" role="KDYUA">
+        <node concept="1XD0l2" id="1qppQtOYRFb" role="2BPcuh" />
+        <node concept="1XD0fH" id="1qppQtOYRFc" role="1XD008">
+          <property role="TrG5h" value="rgb" />
+          <property role="21VRqZ" value="true" />
+          <property role="21VRqX" value="true" />
+          <node concept="1XD088" id="1qppQtOYRFw" role="37iW8f">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0f$" id="1qppQtOYRON" role="KSofa">
+        <property role="TrG5h" value="RED" />
+        <ref role="$cB6q" node="1qppQtOYRFa" resolve="Color" />
+        <node concept="1XD0eI" id="1qppQtOYROO" role="TWiod">
+          <node concept="1XD0k6" id="1qppQtOYROP" role="1XD0ZN">
+            <property role="1XD01i" value="FF0000" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0f$" id="1qppQtOYRKe" role="KSofa">
+        <property role="TrG5h" value="GREEN" />
+        <ref role="$cB6q" node="1qppQtOYRFa" resolve="Color" />
+        <node concept="1XD0eI" id="1qppQtOYRKp" role="TWiod">
+          <node concept="1XD0k6" id="1qppQtOYRKo" role="1XD0ZN">
+            <property role="1XD01i" value="00FF00" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0f$" id="1qppQtOYRPf" role="KSofa">
+        <property role="TrG5h" value="BLUE" />
+        <ref role="$cB6q" node="1qppQtOYRFa" resolve="Color" />
+        <node concept="1XD0eI" id="1qppQtOYRPg" role="TWiod">
+          <node concept="1XD0k6" id="1qppQtOYRPh" role="1XD0ZN">
+            <property role="1XD01i" value="0000FF" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0f$" id="1qppQtOYRPr" role="KSofa">
+        <property role="TrG5h" value="YELLOW" />
+        <ref role="$cB6q" node="1qppQtOYRFa" resolve="Color" />
+        <node concept="1XD0eI" id="1qppQtOYRPs" role="TWiod">
+          <node concept="1XD0k6" id="1qppQtOYRPt" role="1XD0ZN">
+            <property role="1XD01i" value="FFFF00" />
+          </node>
+        </node>
+      </node>
     </node>
+    <node concept="eKYAL" id="11vq$BtKE63" role="1XD0Tu" />
     <node concept="1XD0bz" id="1qppQtOYR2m" role="1XD0Tu">
       <property role="TrG5h" value="main" />
       <node concept="TDTJT" id="1qppQtOYR2H" role="THmaL">
@@ -3308,100 +3278,81 @@
           </node>
         </node>
       </node>
-      <node concept="AQkLs" id="1qppQtOYSVS" role="THmaL" />
-      <node concept="gXE$l" id="7M9bJcAseIP" role="THmaL">
-        <node concept="1PaTwC" id="7M9bJcAseIR" role="gXG0x">
-          <node concept="3oM_SD" id="7M9bJcAseL$" role="1PaTwD">
-            <property role="3oM_SC" value="TODO" />
+      <node concept="AQkLs" id="11vq$BtLoiF" role="THmaL" />
+      <node concept="TDTJT" id="1qppQtOYT1i" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="1XD0eA" id="1qppQtOYT1j" role="TDYyP">
+          <property role="TrG5h" value="red" />
+        </node>
+        <node concept="1XD0mK" id="1qppQtOYT69" role="1XD05H">
+          <node concept="1XD0a7" id="1qppQtOYT6f" role="1XD0cX">
+            <node concept="1XD0em" id="1qppQtOYT6e" role="21Pmik">
+              <node concept="1XD088" id="1qppQtOYT6d" role="1XD0Sn">
+                <ref role="1SePDO" node="1qppQtOYRC_" resolve="Color" />
+              </node>
+            </node>
+            <node concept="UZU4S" id="1qppQtOYTdg" role="1XD07H">
+              <ref role="UZU4V" node="1qppQtOYRON" resolve="RED" />
+            </node>
           </node>
         </node>
-        <node concept="1PaTwC" id="7M9bJcAseLB" role="gXG0x">
-          <node concept="tu5oc" id="7M9bJcAseLK" role="1PaTwD">
-            <node concept="TDTJT" id="1qppQtOYT1i" role="tu5of">
-              <property role="1Xb$ne" value="true" />
-              <node concept="1XD0eA" id="1qppQtOYT1j" role="TDYyP">
-                <property role="TrG5h" value="red" />
-              </node>
-              <node concept="1XD0mK" id="1qppQtOYT69" role="1XD05H">
-                <node concept="1XD0a7" id="1qppQtOYT6f" role="1XD0cX">
-                  <node concept="1XD0em" id="1qppQtOYT6e" role="21Pmik">
-                    <node concept="1XD088" id="1qppQtOYT6d" role="1XD0Sn">
-                      <ref role="1SePDO" node="1qppQtOYRC_" resolve="Color" />
-                    </node>
-                  </node>
-                  <node concept="UZU4S" id="1qppQtOYTdg" role="1XD07H">
-                    <ref role="UZU4V" node="1qppQtOYRON" resolve="RED" />
-                  </node>
+      </node>
+      <node concept="1NbEFs" id="1qppQtOYTq0" role="THmaL">
+        <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
+        <node concept="1XD0eI" id="1qppQtOYTxh" role="TWiod">
+          <node concept="UZU4S" id="1qppQtOYTxg" role="1XD0ZN">
+            <ref role="UZU4V" node="1qppQtOYT1j" resolve="red" />
+          </node>
+        </node>
+      </node>
+      <node concept="1NbEFs" id="1qppQtOYTBu" role="THmaL">
+        <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
+        <node concept="1XD0eI" id="1qppQtOYTI6" role="TWiod">
+          <node concept="1XD0a7" id="1qppQtOYTRW" role="1XD0ZN">
+            <node concept="1NbEtQ" id="1qppQtOYU1K" role="1XD07H">
+              <ref role="AarEw" node="1qppQtOYRQ8" resolve="containsRed" />
+            </node>
+            <node concept="UZU4S" id="1qppQtOYTI5" role="21Pmik">
+              <ref role="UZU4V" node="1qppQtOYT1j" resolve="red" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1NbEFs" id="1qppQtOYV$G" role="THmaL">
+        <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
+        <node concept="1XD0eI" id="1qppQtOYV$H" role="TWiod">
+          <node concept="1XD0a7" id="1qppQtOYV$I" role="1XD0ZN">
+            <node concept="1NbEtQ" id="1qppQtOYV$J" role="1XD07H">
+              <ref role="AarEw" node="1qppQtOYRQ8" resolve="containsRed" />
+            </node>
+            <node concept="1XD0a7" id="1qppQtOYV$K" role="21Pmik">
+              <node concept="1XD0em" id="1qppQtOYV$L" role="21Pmik">
+                <node concept="1XD088" id="1qppQtOYV$M" role="1XD0Sn">
+                  <ref role="1SePDO" node="1qppQtOYRC_" resolve="Color" />
                 </node>
+              </node>
+              <node concept="UZU4S" id="1qppQtOYV$N" role="1XD07H">
+                <ref role="UZU4V" node="1qppQtOYRPf" resolve="BLUE" />
               </node>
             </node>
           </node>
-          <node concept="tu5oc" id="7M9bJcAseLL" role="1PaTwD">
-            <node concept="1NbEFs" id="1qppQtOYTq0" role="tu5of">
-              <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
-              <node concept="1XD0eI" id="1qppQtOYTxh" role="TWiod">
-                <node concept="UZU4S" id="1qppQtOYTxg" role="1XD0ZN">
-                  <ref role="UZU4V" node="1qppQtOYT1j" resolve="red" />
+        </node>
+      </node>
+      <node concept="1NbEFs" id="1qppQtOYUTk" role="THmaL">
+        <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
+        <node concept="1XD0eI" id="1qppQtOYV4e" role="TWiod">
+          <node concept="1XD0a7" id="1qppQtOYVgl" role="1XD0ZN">
+            <node concept="1NbEtQ" id="1qppQtOYVst" role="1XD07H">
+              <ref role="AarEw" node="1qppQtOYRQ8" resolve="containsRed" />
+            </node>
+            <node concept="1XD0a7" id="1qppQtOYV4d" role="21Pmik">
+              <node concept="1XD0em" id="1qppQtOYV4c" role="21Pmik">
+                <node concept="1XD088" id="1qppQtOYV4b" role="1XD0Sn">
+                  <ref role="1SePDO" node="1qppQtOYRC_" resolve="Color" />
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="tu5oc" id="7M9bJcAseLM" role="1PaTwD">
-            <node concept="1NbEFs" id="1qppQtOYTBu" role="tu5of">
-              <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
-              <node concept="1XD0eI" id="1qppQtOYTI6" role="TWiod">
-                <node concept="1XD0a7" id="1qppQtOYTRW" role="1XD0ZN">
-                  <node concept="1NbEtQ" id="1qppQtOYU1K" role="1XD07H">
-                    <ref role="AarEw" node="1qppQtOYRQ8" resolve="containsRed" />
-                  </node>
-                  <node concept="UZU4S" id="1qppQtOYTI5" role="21Pmik">
-                    <ref role="UZU4V" node="1qppQtOYT1j" resolve="red" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="tu5oc" id="7M9bJcAseLN" role="1PaTwD">
-            <node concept="1NbEFs" id="1qppQtOYV$G" role="tu5of">
-              <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
-              <node concept="1XD0eI" id="1qppQtOYV$H" role="TWiod">
-                <node concept="1XD0a7" id="1qppQtOYV$I" role="1XD0ZN">
-                  <node concept="1NbEtQ" id="1qppQtOYV$J" role="1XD07H">
-                    <ref role="AarEw" node="1qppQtOYRQ8" resolve="containsRed" />
-                  </node>
-                  <node concept="1XD0a7" id="1qppQtOYV$K" role="21Pmik">
-                    <node concept="1XD0em" id="1qppQtOYV$L" role="21Pmik">
-                      <node concept="1XD088" id="1qppQtOYV$M" role="1XD0Sn">
-                        <ref role="1SePDO" node="1qppQtOYRC_" resolve="Color" />
-                      </node>
-                    </node>
-                    <node concept="UZU4S" id="1qppQtOYV$N" role="1XD07H">
-                      <ref role="UZU4V" node="1qppQtOYRPf" resolve="BLUE" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="tu5oc" id="7M9bJcAseLO" role="1PaTwD">
-            <node concept="1NbEFs" id="1qppQtOYUTk" role="tu5of">
-              <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
-              <node concept="1XD0eI" id="1qppQtOYV4e" role="TWiod">
-                <node concept="1XD0a7" id="1qppQtOYVgl" role="1XD0ZN">
-                  <node concept="1NbEtQ" id="1qppQtOYVst" role="1XD07H">
-                    <ref role="AarEw" node="1qppQtOYRQ8" resolve="containsRed" />
-                  </node>
-                  <node concept="1XD0a7" id="1qppQtOYV4d" role="21Pmik">
-                    <node concept="1XD0em" id="1qppQtOYV4c" role="21Pmik">
-                      <node concept="1XD088" id="1qppQtOYV4b" role="1XD0Sn">
-                        <ref role="1SePDO" node="1qppQtOYRC_" resolve="Color" />
-                      </node>
-                    </node>
-                    <node concept="UZU4S" id="1qppQtOYVcd" role="1XD07H">
-                      <ref role="UZU4V" node="1qppQtOYRPr" resolve="YELLOW" />
-                    </node>
-                  </node>
-                </node>
+              <node concept="UZU4S" id="1qppQtOYVcd" role="1XD07H">
+                <ref role="UZU4V" node="1qppQtOYRPr" resolve="YELLOW" />
               </node>
             </node>
           </node>
@@ -3726,223 +3677,145 @@
         </node>
       </node>
     </node>
-    <node concept="gXE$l" id="7M9bJcArC8b" role="1XD0Tu">
-      <node concept="1PaTwC" id="7M9bJcArC8d" role="gXG0x">
-        <node concept="3oM_SD" id="7M9bJcArC9I" role="1PaTwD">
-          <property role="3oM_SC" value="TODO" />
-        </node>
-        <node concept="3oM_SD" id="7M9bJcArC9K" role="1PaTwD">
-          <property role="3oM_SC" value="text" />
-        </node>
-        <node concept="3oM_SD" id="7M9bJcArC9N" role="1PaTwD">
-          <property role="3oM_SC" value="gen" />
-        </node>
-        <node concept="3oM_SD" id="7M9bJcArCah" role="1PaTwD">
-          <property role="3oM_SC" value="+" />
-        </node>
-        <node concept="3oM_SD" id="7M9bJcArCaq" role="1PaTwD">
-          <property role="3oM_SC" value="edition" />
-        </node>
-        <node concept="3oM_SD" id="7M9bJcArC9R" role="1PaTwD">
-          <property role="3oM_SC" value="issues" />
-        </node>
-        <node concept="3oM_SD" id="7M9bJcArC9W" role="1PaTwD">
-          <property role="3oM_SC" value="with" />
-        </node>
-        <node concept="3oM_SD" id="7M9bJcArCa2" role="1PaTwD">
-          <property role="3oM_SC" value="object" />
-        </node>
-        <node concept="3oM_SD" id="7M9bJcArCa9" role="1PaTwD">
-          <property role="3oM_SC" value="literal" />
+    <node concept="1XD0bz" id="7M9bJcA7p6v" role="1XD0Tu">
+      <property role="TrG5h" value="rentPrice" />
+      <node concept="1XD0l2" id="7M9bJcA7p6x" role="2BPcuh" />
+      <node concept="1XD0bi" id="7M9bJcA7plJ" role="1XbAXm">
+        <property role="TrG5h" value="standardDays" />
+        <node concept="1XD088" id="7M9bJcAeJfC" role="37iW8f">
+          <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
         </node>
       </node>
-    </node>
-    <node concept="gXE$l" id="7M9bJcArBOo" role="1XD0Tu">
-      <node concept="1PaTwC" id="7M9bJcArBOq" role="gXG0x">
-        <node concept="tu5oc" id="7M9bJcArBOG" role="1PaTwD">
-          <node concept="1XD0bz" id="7M9bJcA7p6v" role="tu5of">
-            <property role="TrG5h" value="rentPrice" />
-            <node concept="gXE$l" id="7M9bJcAeLLp" role="THmaL">
-              <node concept="1PaTwC" id="7M9bJcAeLLr" role="gXG0x">
-                <node concept="3oM_SD" id="7M9bJcAeLTb" role="1PaTwD">
-                  <property role="3oM_SC" value="TODO" />
+      <node concept="1XD0bi" id="7M9bJcAeJgx" role="1XbAXm">
+        <property role="TrG5h" value="festivityDays" />
+        <node concept="1XD088" id="7M9bJcAeJH9" role="37iW8f">
+          <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+        </node>
+      </node>
+      <node concept="1XD0bi" id="7M9bJcAeJP1" role="1XbAXm">
+        <property role="TrG5h" value="specialDays" />
+        <node concept="1XD088" id="7M9bJcAeKAF" role="37iW8f">
+          <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+        </node>
+      </node>
+      <node concept="TDTJT" id="7M9bJcAeKIz" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="1XD0eA" id="7M9bJcAeKI$" role="TDYyP">
+          <property role="TrG5h" value="dayRates" />
+        </node>
+        <node concept="1XD0mK" id="7M9bJcAeL4e" role="1XD05H">
+          <node concept="1XD0eZ" id="7M9bJcAeLju" role="1XD0cX">
+            <node concept="1XD09Q" id="7M9bJcAi9Cp" role="KS$fE">
+              <node concept="1XD0eA" id="7M9bJcAi9Cq" role="TDYyH">
+                <property role="TrG5h" value="standard" />
+                <node concept="1XD088" id="7M9bJcAi9CW" role="1XD0Z0">
+                  <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
                 </node>
-                <node concept="3oM_SD" id="7M9bJcAeLTd" role="1PaTwD">
-                  <property role="3oM_SC" value="object" />
-                </node>
-                <node concept="3oM_SD" id="7M9bJcAeLTg" role="1PaTwD">
-                  <property role="3oM_SC" value="edition:" />
-                </node>
-                <node concept="3oM_SD" id="7M9bJcAeMeh" role="1PaTwD">
-                  <property role="3oM_SC" value="awful" />
-                </node>
               </node>
-            </node>
-            <node concept="1XD0l2" id="7M9bJcA7p6x" role="2BPcuh" />
-            <node concept="1XD0bi" id="7M9bJcA7plJ" role="1XbAXm">
-              <property role="TrG5h" value="standardDays" />
-              <node concept="1XD088" id="7M9bJcAeJfC" role="37iW8f">
-                <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
-              </node>
-            </node>
-            <node concept="1XD0bi" id="7M9bJcAeJgx" role="1XbAXm">
-              <property role="TrG5h" value="festivityDays" />
-              <node concept="1XD088" id="7M9bJcAeJH9" role="37iW8f">
-                <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
-              </node>
-            </node>
-            <node concept="1XD0bi" id="7M9bJcAeJP1" role="1XbAXm">
-              <property role="TrG5h" value="specialDays" />
-              <node concept="1XD088" id="7M9bJcAeKAF" role="37iW8f">
-                <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
-              </node>
-            </node>
-            <node concept="TDTJT" id="7M9bJcAeKIz" role="THmaL">
-              <property role="1Xb$ne" value="true" />
-              <node concept="1XD0eA" id="7M9bJcAeKI$" role="TDYyP">
-                <property role="TrG5h" value="dayRates" />
-              </node>
-              <node concept="1XD0mK" id="7M9bJcAeL4e" role="1XD05H">
-                <node concept="1XD0eZ" id="7M9bJcAeLju" role="1XD0cX">
-                  <node concept="1XD09Q" id="7M9bJcAi9Cp" role="KS$fE">
-                    <node concept="1XD0eA" id="7M9bJcAi9Cq" role="TDYyH">
-                      <property role="TrG5h" value="standard" />
-                      <node concept="1XD088" id="7M9bJcAi9CW" role="1XD0Z0">
-                        <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
-                      </node>
-                    </node>
-                    <node concept="1XD08$" id="7M9bJcAi9Cr" role="ICcUN" />
-                    <node concept="1XD0l2" id="7M9bJcAi9Cs" role="2BPcuh" />
-                    <node concept="1XD0mK" id="7M9bJcAi9D6" role="1XD05H">
-                      <node concept="gk1QJ" id="7M9bJcAi9Eb" role="1XD0cX">
-                        <ref role="1ap9JL" to="0:~Int.times(Int)" resolve="times" />
-                        <node concept="UZU4S" id="7M9bJcAi9ES" role="21Pkll">
-                          <ref role="UZU4V" node="7M9bJcA7plJ" resolve="standardDays" />
-                        </node>
-                        <node concept="1XD0k7" id="7M9bJcAi9DX" role="21Pkln">
-                          <property role="1XD01k" value="30" />
-                        </node>
-                      </node>
-                    </node>
+              <node concept="1XD08$" id="7M9bJcAi9Cr" role="ICcUN" />
+              <node concept="1XD0l2" id="7M9bJcAi9Cs" role="2BPcuh" />
+              <node concept="1XD0mK" id="7M9bJcAi9D6" role="1XD05H">
+                <node concept="gk1QJ" id="7M9bJcAi9Eb" role="1XD0cX">
+                  <ref role="1ap9JL" to="0:~Int.times(Int)" resolve="times" />
+                  <node concept="UZU4S" id="7M9bJcAi9ES" role="21Pkll">
+                    <ref role="UZU4V" node="7M9bJcA7plJ" resolve="standardDays" />
                   </node>
-                  <node concept="1XD09Q" id="7M9bJcAi9Fa" role="KS$fE">
-                    <node concept="1XD0eA" id="7M9bJcAi9Fc" role="TDYyH">
-                      <property role="TrG5h" value="festivity" />
-                    </node>
-                    <node concept="1XD08$" id="7M9bJcAi9Fe" role="ICcUN" />
-                    <node concept="1XD0l2" id="7M9bJcAi9Fg" role="2BPcuh" />
-                    <node concept="1XD0mK" id="7M9bJcAi9Fy" role="1XD05H">
-                      <node concept="gk1QJ" id="7M9bJcAi9GB" role="1XD0cX">
-                        <ref role="1ap9JL" to="0:~Int.times(Int)" resolve="times" />
-                        <node concept="UZU4S" id="7M9bJcAi9HU" role="21Pkll">
-                          <ref role="UZU4V" node="7M9bJcAeJgx" resolve="festivityDays" />
-                        </node>
-                        <node concept="1XD0k7" id="7M9bJcAi9Gp" role="21Pkln">
-                          <property role="1XD01k" value="50" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1XD09Q" id="7M9bJcAi9Im" role="KS$fE">
-                    <node concept="1XD0eA" id="7M9bJcAi9Io" role="TDYyH">
-                      <property role="TrG5h" value="special" />
-                    </node>
-                    <node concept="1XD08$" id="7M9bJcAi9Iq" role="ICcUN" />
-                    <node concept="1XD0l2" id="7M9bJcAi9Is" role="2BPcuh" />
-                    <node concept="1XD0mK" id="7M9bJcAi9IS" role="1XD05H">
-                      <node concept="gk1QJ" id="7M9bJcAi9Ke" role="1XD0cX">
-                        <ref role="1ap9JL" to="0:~Int.times(Int)" resolve="times" />
-                        <node concept="UZU4S" id="7M9bJcAi9M7" role="21Pkll">
-                          <ref role="UZU4V" node="7M9bJcAeJP1" resolve="specialDays" />
-                        </node>
-                        <node concept="1XD0k7" id="7M9bJcAi9K0" role="21Pkln">
-                          <property role="1XD01k" value="100" />
-                        </node>
-                      </node>
-                    </node>
+                  <node concept="1XD0k7" id="7M9bJcAi9DX" role="21Pkln">
+                    <property role="1XD01k" value="30" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="AQkLs" id="7M9bJcAi9Mc" role="THmaL" />
-            <node concept="TDTJT" id="7M9bJcAi9Nt" role="THmaL">
-              <property role="1Xb$ne" value="true" />
-              <node concept="1XD0eA" id="7M9bJcAi9Nu" role="TDYyP">
-                <property role="TrG5h" value="total" />
+            <node concept="1XD09Q" id="7M9bJcAi9Fa" role="KS$fE">
+              <node concept="1XD0eA" id="7M9bJcAi9Fc" role="TDYyH">
+                <property role="TrG5h" value="festivity" />
               </node>
-              <node concept="1XD0mK" id="7M9bJcAi9Oc" role="1XD05H">
-                <node concept="gk1L9" id="7M9bJcAjRsy" role="1XD0cX">
-                  <ref role="1ap9JL" to="0:~Int.plus(Int)" resolve="plus" />
-                  <node concept="1XD0a7" id="7M9bJcAjRy_" role="21Pkll">
-                    <node concept="UZU4S" id="7M9bJcAjRCV" role="1XD07H">
-                      <ref role="UZU4V" node="7M9bJcAi9Io" resolve="special" />
-                    </node>
-                    <node concept="UZU4S" id="7M9bJcAjRv1" role="21Pmik">
-                      <ref role="UZU4V" node="7M9bJcAeKI$" resolve="dayRates" />
-                    </node>
+              <node concept="1XD08$" id="7M9bJcAi9Fe" role="ICcUN" />
+              <node concept="1XD0l2" id="7M9bJcAi9Fg" role="2BPcuh" />
+              <node concept="1XD0mK" id="7M9bJcAi9Fy" role="1XD05H">
+                <node concept="gk1QJ" id="7M9bJcAi9GB" role="1XD0cX">
+                  <ref role="1ap9JL" to="0:~Int.times(Int)" resolve="times" />
+                  <node concept="UZU4S" id="7M9bJcAi9HU" role="21Pkll">
+                    <ref role="UZU4V" node="7M9bJcAeJgx" resolve="festivityDays" />
                   </node>
-                  <node concept="gk1L9" id="7M9bJcAjRbW" role="21Pkln">
-                    <ref role="1ap9JL" to="0:~Int.plus(Int)" resolve="plus" />
-                    <node concept="1XD0a7" id="7M9bJcAjRhN" role="21Pkll">
-                      <node concept="UZU4S" id="7M9bJcAjRmK" role="1XD07H">
-                        <ref role="UZU4V" node="7M9bJcAi9Fc" resolve="festivity" />
-                      </node>
-                      <node concept="UZU4S" id="7M9bJcAjRex" role="21Pmik">
-                        <ref role="UZU4V" node="7M9bJcAeKI$" resolve="dayRates" />
-                      </node>
-                    </node>
-                    <node concept="1XD0a7" id="7M9bJcAi9Ox" role="21Pkln">
-                      <node concept="UZU4S" id="7M9bJcAjQKI" role="1XD07H">
-                        <ref role="UZU4V" node="7M9bJcAi9Cq" resolve="standard" />
-                      </node>
-                      <node concept="UZU4S" id="7M9bJcAi9Og" role="21Pmik">
-                        <ref role="UZU4V" node="7M9bJcAeKI$" resolve="dayRates" />
-                      </node>
-                    </node>
+                  <node concept="1XD0k7" id="7M9bJcAi9Gp" role="21Pkln">
+                    <property role="1XD01k" value="50" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="AQkLs" id="7M9bJcArxDz" role="THmaL" />
-            <node concept="gXE$l" id="7M9bJcAr$qN" role="THmaL">
-              <node concept="1PaTwC" id="7M9bJcAr$qP" role="gXG0x">
-                <node concept="3oM_SD" id="7M9bJcAr$Ec" role="1PaTwD">
-                  <property role="3oM_SC" value="TODO" />
-                </node>
-                <node concept="3oM_SD" id="7M9bJcAr$Ee" role="1PaTwD">
-                  <property role="3oM_SC" value="no" />
-                </node>
-                <node concept="3oM_SD" id="7M9bJcAr$Mw" role="1PaTwD">
-                  <property role="3oM_SC" value="way" />
-                </node>
-                <node concept="3oM_SD" id="7M9bJcAr_eb" role="1PaTwD">
-                  <property role="3oM_SC" value="to" />
-                </node>
-                <node concept="3oM_SD" id="7M9bJcAr_eg" role="1PaTwD">
-                  <property role="3oM_SC" value="insert" />
-                </node>
-                <node concept="3oM_SD" id="7M9bJcAr_em" role="1PaTwD">
-                  <property role="3oM_SC" value="plain" />
-                </node>
-                <node concept="3oM_SD" id="7M9bJcAr_xH" role="1PaTwD">
-                  <property role="3oM_SC" value="$" />
+            <node concept="1XD09Q" id="7M9bJcAi9Im" role="KS$fE">
+              <node concept="1XD0eA" id="7M9bJcAi9Io" role="TDYyH">
+                <property role="TrG5h" value="special" />
+              </node>
+              <node concept="1XD08$" id="7M9bJcAi9Iq" role="ICcUN" />
+              <node concept="1XD0l2" id="7M9bJcAi9Is" role="2BPcuh" />
+              <node concept="1XD0mK" id="7M9bJcAi9IS" role="1XD05H">
+                <node concept="gk1QJ" id="7M9bJcAi9Ke" role="1XD0cX">
+                  <ref role="1ap9JL" to="0:~Int.times(Int)" resolve="times" />
+                  <node concept="UZU4S" id="7M9bJcAi9M7" role="21Pkll">
+                    <ref role="UZU4V" node="7M9bJcAeJP1" resolve="specialDays" />
+                  </node>
+                  <node concept="1XD0k7" id="7M9bJcAi9K0" role="21Pkln">
+                    <property role="1XD01k" value="100" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="1NbEFs" id="7M9bJcAry6a" role="THmaL">
-              <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
-              <node concept="1XD0eI" id="7M9bJcAryr3" role="TWiod">
-                <node concept="1XD08G" id="7M9bJcAryr1" role="1XD0ZN">
-                  <node concept="Df6$J" id="5yEpxXMpJwA" role="Df6Hu">
-                    <node concept="21VMdE" id="7M9bJcAryr2" role="Df7GE">
-                      <property role="21VMdD" value="Total price: " />
-                    </node>
-                    <node concept="1XD0lO" id="7M9bJcAryCP" role="Df7GE">
-                      <node concept="UZU4S" id="7M9bJcAryQB" role="1XD029">
-                        <ref role="UZU4V" node="7M9bJcAi9Nu" resolve="total" />
-                      </node>
-                    </node>
-                  </node>
+          </node>
+        </node>
+      </node>
+      <node concept="AQkLs" id="11vq$Btut2x" role="THmaL" />
+      <node concept="TDTJT" id="7M9bJcAi9Nt" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="1XD0eA" id="7M9bJcAi9Nu" role="TDYyP">
+          <property role="TrG5h" value="total" />
+        </node>
+        <node concept="1XD0mK" id="7M9bJcAi9Oc" role="1XD05H">
+          <node concept="gk1L9" id="7M9bJcAjRsy" role="1XD0cX">
+            <ref role="1ap9JL" to="0:~Int.plus(Int)" resolve="plus" />
+            <node concept="1XD0a7" id="7M9bJcAjRy_" role="21Pkll">
+              <node concept="UZU4S" id="7M9bJcAjRCV" role="1XD07H">
+                <ref role="UZU4V" node="7M9bJcAi9Io" resolve="special" />
+              </node>
+              <node concept="UZU4S" id="7M9bJcAjRv1" role="21Pmik">
+                <ref role="UZU4V" node="7M9bJcAeKI$" resolve="dayRates" />
+              </node>
+            </node>
+            <node concept="gk1L9" id="7M9bJcAjRbW" role="21Pkln">
+              <ref role="1ap9JL" to="0:~Int.plus(Int)" resolve="plus" />
+              <node concept="1XD0a7" id="7M9bJcAjRhN" role="21Pkll">
+                <node concept="UZU4S" id="7M9bJcAjRmK" role="1XD07H">
+                  <ref role="UZU4V" node="7M9bJcAi9Fc" resolve="festivity" />
+                </node>
+                <node concept="UZU4S" id="7M9bJcAjRex" role="21Pmik">
+                  <ref role="UZU4V" node="7M9bJcAeKI$" resolve="dayRates" />
+                </node>
+              </node>
+              <node concept="1XD0a7" id="7M9bJcAi9Ox" role="21Pkln">
+                <node concept="UZU4S" id="7M9bJcAjQKI" role="1XD07H">
+                  <ref role="UZU4V" node="7M9bJcAi9Cq" resolve="standard" />
+                </node>
+                <node concept="UZU4S" id="7M9bJcAi9Og" role="21Pmik">
+                  <ref role="UZU4V" node="7M9bJcAeKI$" resolve="dayRates" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="AQkLs" id="7M9bJcArxDz" role="THmaL" />
+      <node concept="1NbEFs" id="7M9bJcAry6a" role="THmaL">
+        <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
+        <node concept="1XD0eI" id="7M9bJcAryr3" role="TWiod">
+          <node concept="1XD08G" id="7M9bJcAryr1" role="1XD0ZN">
+            <node concept="Df6$J" id="5yEpxXMpJwA" role="Df6Hu">
+              <node concept="21VMdE" id="7M9bJcAryr2" role="Df7GE">
+                <property role="21VMdD" value="Total price: \$" />
+              </node>
+              <node concept="1XD0lO" id="7M9bJcAryCP" role="Df7GE">
+                <node concept="UZU4S" id="7M9bJcAryQB" role="1XD029">
+                  <ref role="UZU4V" node="7M9bJcAi9Nu" resolve="total" />
                 </node>
               </node>
             </node>
@@ -4047,30 +3920,25 @@
     <node concept="1XD0bz" id="7M9bJcArAVH" role="1XD0Tu">
       <property role="TrG5h" value="main" />
       <node concept="1XD0l2" id="7M9bJcArAVJ" role="2BPcuh" />
-      <node concept="gXE$l" id="7M9bJcArCNH" role="THmaL">
-        <node concept="1PaTwC" id="7M9bJcArCNI" role="gXG0x">
-          <node concept="tu5oc" id="7M9bJcArCNO" role="1PaTwD">
-            <node concept="1NbEFs" id="7M9bJcArBez" role="tu5of">
-              <ref role="AarEw" node="7M9bJcA7p6v" resolve="rentPrice" />
-              <node concept="1XD0eI" id="7M9bJcArBty" role="TWiod">
-                <node concept="1XD0k7" id="7M9bJcArBtx" role="1XD0ZN">
-                  <property role="1XD01k" value="10" />
-                </node>
-              </node>
-              <node concept="1XD0eI" id="7M9bJcArBtF" role="TWiod">
-                <node concept="1XD0k7" id="7M9bJcArBtW" role="1XD0ZN">
-                  <property role="1XD01k" value="2" />
-                </node>
-              </node>
-              <node concept="1XD0eI" id="7M9bJcArBtO" role="TWiod">
-                <node concept="1XD0k7" id="7M9bJcArBu2" role="1XD0ZN">
-                  <property role="1XD01k" value="1" />
-                </node>
-              </node>
-            </node>
+      <node concept="1NbEFs" id="7M9bJcArBez" role="THmaL">
+        <ref role="AarEw" node="7M9bJcA7p6v" resolve="rentPrice" />
+        <node concept="1XD0eI" id="7M9bJcArBty" role="TWiod">
+          <node concept="1XD0k7" id="7M9bJcArBtx" role="1XD0ZN">
+            <property role="1XD01k" value="10" />
+          </node>
+        </node>
+        <node concept="1XD0eI" id="7M9bJcArBtF" role="TWiod">
+          <node concept="1XD0k7" id="7M9bJcArBtW" role="1XD0ZN">
+            <property role="1XD01k" value="2" />
+          </node>
+        </node>
+        <node concept="1XD0eI" id="7M9bJcArBtO" role="TWiod">
+          <node concept="1XD0k7" id="7M9bJcArBu2" role="1XD0ZN">
+            <property role="1XD01k" value="1" />
           </node>
         </node>
       </node>
+      <node concept="AQkLs" id="c49tPrFa4T" role="THmaL" />
       <node concept="1XD0a7" id="7M9bJcArCSG" role="THmaL">
         <node concept="1NbEtQ" id="7M9bJcArCTW" role="1XD07H">
           <ref role="AarEw" node="7M9bJcArChc" resolve="takeParams" />
