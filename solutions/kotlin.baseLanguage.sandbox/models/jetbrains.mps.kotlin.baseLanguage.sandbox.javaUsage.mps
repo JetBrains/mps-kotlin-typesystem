@@ -137,13 +137,12 @@
       <concept id="2324909103759097704" name="jetbrains.mps.kotlin.structure.IWithClassBody" flags="ng" index="KS$fF">
         <child id="2324909103759097705" name="members" index="KS$fE" />
       </concept>
+      <concept id="5401033615058672984" name="jetbrains.mps.kotlin.structure.ComponentDeclaration" flags="ng" index="2Rs4SG" />
       <concept id="1314219036499415210" name="jetbrains.mps.kotlin.structure.AbstractPropertyDeclaration" flags="ng" index="TDTJE">
         <property id="2936055411806090009" name="isReadonly" index="1Xb$ne" />
         <child id="2936055411798374330" name="assignment" index="1XD05H" />
       </concept>
-      <concept id="1314219036499415225" name="jetbrains.mps.kotlin.structure.LocalPropertyDeclaration" flags="ng" index="TDTJT">
-        <child id="1314219036499436533" name="declarations" index="TDYyP" />
-      </concept>
+      <concept id="1314219036499415225" name="jetbrains.mps.kotlin.structure.LocalPropertyDeclaration" flags="ng" index="TDTJT" />
       <concept id="1314219036498225646" name="jetbrains.mps.kotlin.structure.IStatementHolder" flags="ng" index="THmaI">
         <child id="1314219036498225649" name="statements" index="THmaL" />
       </concept>
@@ -155,6 +154,9 @@
       </concept>
       <concept id="7027413324315184167" name="jetbrains.mps.kotlin.structure.ILambdaAsArgument" flags="ng" index="3$8iW8">
         <child id="2936055411798374269" name="lambda" index="1XD06E" />
+      </concept>
+      <concept id="409518875564192849" name="jetbrains.mps.kotlin.structure.IDeconstructingDeclarations" flags="ng" index="1BvddI">
+        <child id="5401033615058696817" name="variables" index="2Rs2$5" />
       </concept>
       <concept id="4662566628538083705" name="jetbrains.mps.kotlin.structure.FunctionCallExpression" flags="ng" index="1NbEFs" />
       <concept id="6664176324866782072" name="jetbrains.mps.kotlin.structure.IClassReference" flags="ng" index="1SePDR">
@@ -224,13 +226,6 @@
       <node concept="1XD0l2" id="26mUjU3x6Cr" role="2BPcuh" />
       <node concept="TDTJT" id="5L2mPNF7WJ$" role="THmaL">
         <property role="1Xb$ne" value="true" />
-        <node concept="1XD0eA" id="5L2mPNF7WJ_" role="TDYyP">
-          <property role="TrG5h" value="file" />
-          <node concept="2EYIWN" id="5L2mPNF7WO0" role="1XD0Z0">
-            <property role="3V1zfM" value="true" />
-            <ref role="2EYIUZ" to="guwi:~File" resolve="File" />
-          </node>
-        </node>
         <node concept="1XD0mK" id="5L2mPNF7X2c" role="1XD05H">
           <node concept="2yQVVM" id="5L2mPNF7X4P" role="1XD0cX">
             <ref role="2yQV70" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
@@ -246,11 +241,18 @@
             </node>
           </node>
         </node>
+        <node concept="2Rs4SG" id="4FOkRjXXaC2" role="2Rs2$5">
+          <property role="TrG5h" value="file" />
+          <node concept="2EYIWN" id="5L2mPNF7WO0" role="1XD0Z0">
+            <property role="3V1zfM" value="true" />
+            <ref role="2EYIUZ" to="guwi:~File" resolve="File" />
+          </node>
+        </node>
       </node>
       <node concept="1XD0a7" id="5L2mPNF7YHp" role="THmaL">
         <property role="21SRas" value="true" />
         <node concept="UZU4S" id="5L2mPNF7YOd" role="21Pmik">
-          <ref role="UZU4V" node="5L2mPNF7WJ_" resolve="file" />
+          <ref role="UZU4V" node="4FOkRjXXaC2" resolve="file" />
         </node>
         <node concept="2yQVVM" id="4mvBIJf3vSG" role="1XD07H">
           <ref role="2yQV70" to="guwi:~File.canExecute()" resolve="canExecute" />
@@ -271,7 +273,7 @@
                     <ref role="2yQV70" to="guwi:~File.getName()" resolve="getName" />
                   </node>
                   <node concept="UZU4S" id="1dpU28wZOgZ" role="21Pmik">
-                    <ref role="UZU4V" node="5L2mPNF7WJ_" resolve="file" />
+                    <ref role="UZU4V" node="4FOkRjXXaC2" resolve="file" />
                   </node>
                 </node>
               </node>
@@ -293,6 +295,7 @@
           </node>
         </node>
       </node>
+      <node concept="1XD08$" id="11vq$BubPjR" role="ICcUN" />
     </node>
     <node concept="eKYAL" id="3lDDPlnatsx" role="1XD0Tu" />
     <node concept="1XD0aY" id="3lDDPlnatta" role="1XD0Tu">
@@ -435,6 +438,7 @@
             </node>
           </node>
         </node>
+        <node concept="1XD08$" id="11vq$BubPjS" role="ICcUN" />
       </node>
     </node>
     <node concept="eKYAL" id="6qs$Ohcxrt4" role="1XD0Tu" />
@@ -442,6 +446,7 @@
     <node concept="1XD0bz" id="6qs$Ohcxr_D" role="1XD0Tu">
       <property role="TrG5h" value="myFunction" />
       <node concept="1XD0l2" id="6qs$Ohcxr_F" role="2BPcuh" />
+      <node concept="1XD08$" id="11vq$BubPjT" role="ICcUN" />
     </node>
     <node concept="eKYAL" id="6qs$OhcxrFp" role="1XD0Tu" />
     <node concept="eKYAL" id="6qs$OhcxrGT" role="1XD0Tu" />
