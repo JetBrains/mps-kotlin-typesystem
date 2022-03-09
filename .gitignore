@@ -11,6 +11,9 @@
 **/.idea/workspace.xml
 **/.idea/gradle.xml
 **/.idea/misc.xml
+**/.idea/vcs.xml
+**/.idea/prettier.xml
+**/.idea/compiler.xml
 **/.idea/jarRepositories.xml
 **/.mps/workspace.xml
 **/.mps/product-workspace.xml
