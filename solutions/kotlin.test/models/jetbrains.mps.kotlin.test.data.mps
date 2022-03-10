@@ -10,7 +10,6 @@
     <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="1xrd" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.collections(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="s3y3" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.text(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
-    <import index="4j45" ref="r:d5925e70-8a29-4d14-898a-c84f3d8155ee(jetbrains.mps.kotlin.sandbox.samples)" implicit="true" />
   </imports>
   <registry>
     <language id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin">
@@ -37,7 +36,6 @@
         <reference id="2441172150875731342" name="parameter" index="9pJMH" />
       </concept>
       <concept id="5622728304609204267" name="jetbrains.mps.kotlin.structure.EmptyDeclaration" flags="ng" index="eKYAL" />
-      <concept id="5032507314956342034" name="jetbrains.mps.kotlin.structure.TimesOperation" flags="ng" index="gk1QJ" />
       <concept id="5032507314958578745" name="jetbrains.mps.kotlin.structure.IOverloadableOperator" flags="ng" index="gvzE4">
         <reference id="4288690671358895744" name="provider" index="1ap9JL" />
       </concept>
@@ -1628,65 +1626,6 @@
       <node concept="1XD08$" id="2x9yl3xwV_e" role="ICcUN" />
       <node concept="1XD0l2" id="2x9yl3xwV_f" role="2BPcuh" />
     </node>
-  </node>
-  <node concept="1XD0fY" id="2x9yl3xxCXC">
-    <property role="TrG5h" value="testbench" />
-    <node concept="eKYAL" id="2x9yl3xxCYj" role="1XD0Tu" />
-    <node concept="1XD0bz" id="2x9yl3xxH9C" role="1XD0Tu">
-      <property role="TrG5h" value="test" />
-      <node concept="TDTJT" id="6qs$OhcEx74" role="THmaL">
-        <property role="1Xb$ne" value="true" />
-        <node concept="1XD0mK" id="6qs$OhcEx7d" role="1XD05H">
-          <node concept="1NbEFs" id="6qs$OhcEx7p" role="1XD0cX">
-            <ref role="AarEw" to="4j45:6qs$OhcEwyL" resolve="calculate" />
-            <node concept="1XD0eI" id="6qs$OhcEx7F" role="TWiod">
-              <node concept="1XD0k7" id="6qs$OhcEx7E" role="1XD0ZN">
-                <property role="1XD01k" value="4" />
-              </node>
-            </node>
-            <node concept="1XD0eI" id="6qs$OhcExbG" role="TWiod">
-              <node concept="1XD0k7" id="6qs$OhcExbY" role="1XD0ZN">
-                <property role="1XD01k" value="5" />
-              </node>
-            </node>
-            <node concept="1XD0f0" id="6qs$OhcExcl" role="1XD06E">
-              <node concept="gk1QJ" id="6qs$OhcExdy" role="THmaL">
-                <node concept="UZU4S" id="6qs$OhcExdB" role="21Pkll">
-                  <ref role="UZU4V" node="6qs$OhcExcJ" resolve="b" />
-                </node>
-                <node concept="UZU4S" id="6qs$OhcExcY" role="21Pkln">
-                  <ref role="UZU4V" node="6qs$OhcExcA" resolve="a" />
-                </node>
-              </node>
-              <node concept="1XD0eA" id="6qs$OhcExcA" role="21PhDs">
-                <property role="TrG5h" value="a" />
-              </node>
-              <node concept="1XD0eA" id="6qs$OhcExcJ" role="21PhDs">
-                <property role="TrG5h" value="b" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2Rs4SG" id="4FOkRjXXaCI" role="2Rs2$5">
-          <property role="TrG5h" value="mulResult" />
-        </node>
-      </node>
-      <node concept="1XD0bi" id="2x9yl3xxHsx" role="1XbAXm">
-        <property role="TrG5h" value="list" />
-        <node concept="1XD088" id="2x9yl3xxHzW" role="37iW8f">
-          <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
-          <node concept="1XD0kr" id="2x9yl3xxHFa" role="TPadX">
-            <property role="9uIGf" value="27wMicCAy8v/out" />
-            <node concept="1XD088" id="2x9yl3xxHFh" role="1XD02C">
-              <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1XD08$" id="2x9yl3xxH9E" role="ICcUN" />
-      <node concept="1XD0l2" id="2x9yl3xxH9F" role="2BPcuh" />
-    </node>
-    <node concept="eKYAL" id="2x9yl3xxCYl" role="1XD0Tu" />
   </node>
 </model>
 

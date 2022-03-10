@@ -4228,6 +4228,7 @@
             </node>
             <node concept="1XD0f0" id="6qs$OhcExcl" role="1XD06E">
               <node concept="gk1QJ" id="6qs$OhcExdy" role="THmaL">
+                <ref role="1ap9JL" to="0:~Int.times(Int)" resolve="times" />
                 <node concept="UZU4S" id="6qs$OhcExdB" role="21Pkll">
                   <ref role="UZU4V" node="6qs$OhcExcJ" resolve="b" />
                 </node>
