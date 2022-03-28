@@ -51,6 +51,9 @@
       <concept id="2599447651060127508" name="jetbrains.mps.kotlin.structure.ITypeArguments" flags="ng" index="2pIC39">
         <child id="6565639133216732540" name="typeArguments" index="TPadX" />
       </concept>
+      <concept id="5594483833294643617" name="jetbrains.mps.kotlin.structure.ITypeParameter" flags="ng" index="2s$Jz6">
+        <property id="2461357008637365403" name="variance" index="2R5ZeN" />
+      </concept>
       <concept id="1991556721070973461" name="jetbrains.mps.kotlin.structure.EmptyStatement" flags="ng" index="AQkLs" />
       <concept id="7138249191285121087" name="jetbrains.mps.kotlin.structure.IVisible" flags="ng" index="2BPcvI">
         <child id="7138249191285121088" name="visibility" index="2BPcuh" />
@@ -175,9 +178,7 @@
       <concept id="2936055411798373655" name="jetbrains.mps.kotlin.structure.LambdaLiteral" flags="ng" index="1XD0f0">
         <child id="1243006380186866155" name="parameters" index="21PhDs" />
       </concept>
-      <concept id="2936055411798373645" name="jetbrains.mps.kotlin.structure.TypeParameter" flags="ng" index="1XD0fq">
-        <property id="2441172150877051072" name="variance" index="9uD7z" />
-      </concept>
+      <concept id="2936055411798373645" name="jetbrains.mps.kotlin.structure.TypeParameter" flags="ng" index="1XD0fq" />
       <concept id="2936055411798373690" name="jetbrains.mps.kotlin.structure.ClassParameter" flags="ng" index="1XD0fH">
         <property id="1243006380188597512" name="isProperty" index="21VRqZ" />
       </concept>
@@ -2656,14 +2657,14 @@
       <node concept="1XD0l2" id="3Oey_7QMKqi" role="2BPcuh" />
       <node concept="1XD0fq" id="3Oey_7QMKqV" role="1XPbGx">
         <property role="TrG5h" value="X" />
-        <property role="9uD7z" value="27wMicCAy6a/in" />
+        <property role="2R5ZeN" value="27wMicCAy6a/in" />
       </node>
       <node concept="1XD0fq" id="3Oey_7QMK_h" role="1XPbGx">
         <property role="TrG5h" value="Y" />
       </node>
       <node concept="1XD0fq" id="3Oey_7QMK_k" role="1XPbGx">
         <property role="TrG5h" value="Z" />
-        <property role="9uD7z" value="27wMicCAy8v/out" />
+        <property role="2R5ZeN" value="27wMicCAy8v/out" />
       </node>
       <node concept="1XD08$" id="5N0i2C1hGw7" role="ICcUN" />
     </node>

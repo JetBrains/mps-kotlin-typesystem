@@ -2,7 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.kotlin.experimental/jetbrains.mps.kotlin.experimental.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/kotlin.javaRefsExt/jetbrains.mps.kotlin.javaRefsExt.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/kotlinExt/jetbrains.mps.kotlinExt.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/kotlin.baseLanguage.sandbox/jetbrains.mps.kotlin.baseLanguage.sandbox.msd" folder="" />
