@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="2405a196-e75d-462c-938b-ae8e3fac20aa" name="jetbrains.mps.baseLanguage.kotlinRefs" version="0" />
-    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="4" />
+    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
@@ -85,6 +85,7 @@
       <concept id="1243006380187810093" name="jetbrains.mps.kotlin.structure.MemberNavigationOperation" flags="ng" index="21SRaq">
         <child id="2936055411798374203" name="target" index="1XD07G" />
       </concept>
+      <concept id="7751614607563717724" name="jetbrains.mps.kotlin.structure.RegularFunctionReference" flags="ng" index="40NwQ" />
       <concept id="2441172150875731341" name="jetbrains.mps.kotlin.structure.TypeParameterReference" flags="ng" index="9pJMI">
         <reference id="2441172150875731342" name="parameter" index="9pJMH" />
       </concept>
@@ -114,6 +115,12 @@
       <concept id="6565639133219057675" name="jetbrains.mps.kotlin.structure.IArguments" flags="ng" index="TWioa">
         <child id="6565639133219057676" name="arguments" index="TWiod" />
       </concept>
+      <concept id="8818748685424648115" name="jetbrains.mps.kotlin.structure.NodeFunctionReference" flags="ng" index="3sjUa7">
+        <reference id="601663393864982470" name="node" index="19X1pH" />
+      </concept>
+      <concept id="8818748685416965655" name="jetbrains.mps.kotlin.structure.IWithFunctionReference" flags="ng" index="3vQHGz">
+        <child id="8818748685416968866" name="function" index="3vQGYm" />
+      </concept>
       <concept id="4662566628538082515" name="jetbrains.mps.kotlin.structure.FunctionCallTarget" flags="ng" index="1NbEtQ" />
       <concept id="4662566628538083705" name="jetbrains.mps.kotlin.structure.FunctionCallExpression" flags="ng" index="1NbEFs" />
       <concept id="6664176324866782072" name="jetbrains.mps.kotlin.structure.IClassReference" flags="ng" index="1SePDR">
@@ -135,9 +142,6 @@
       </concept>
       <concept id="2936055411798373400" name="jetbrains.mps.kotlin.structure.PrimaryConstructor" flags="ng" index="1XD0bf" />
       <concept id="2936055411798373428" name="jetbrains.mps.kotlin.structure.FunctionDeclaration" flags="ng" index="1XD0bz" />
-      <concept id="2936055411798373439" name="jetbrains.mps.kotlin.structure.AbstractFunctionCall" flags="ng" index="1XD0bC">
-        <reference id="1991556721072067817" name="function" index="AarEw" />
-      </concept>
       <concept id="2936055411798373698" name="jetbrains.mps.kotlin.structure.INullableType" flags="ng" index="1XD0el">
         <property id="6234117012688354198" name="isNullable" index="3V1zfM" />
       </concept>
@@ -383,14 +387,18 @@
       <node concept="1XD0l2" id="1d2BQ0ZQssL" role="2BPcuh" />
       <node concept="1XD0a7" id="2JsDCii7eyu" role="THmaL">
         <node concept="1NbEtQ" id="2JsDCii7ezv" role="1XD07H">
-          <ref role="AarEw" to="qw9d:~KClass.isInstance(kotlin/Any?)" resolve="isInstance" />
           <node concept="1XD0eI" id="1huKj6f3BtH" role="TWiod">
             <node concept="1NbEFs" id="1huKj6f3BtL" role="1XD0ZN">
-              <ref role="AarEw" node="1t03WaziTQs" resolve="SampleClass" />
               <node concept="1XD088" id="1huKj6f3BtM" role="TPadX">
                 <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
               </node>
+              <node concept="40NwQ" id="5v3eTYftFXJ" role="3vQGYm">
+                <ref role="19X1pH" node="1t03WaziTQs" resolve="SampleClass" />
+              </node>
             </node>
+          </node>
+          <node concept="40NwQ" id="5v3eTYftFXK" role="3vQGYm">
+            <ref role="19X1pH" to="qw9d:~KClass.isInstance(kotlin/Any?)" resolve="isInstance" />
           </node>
         </node>
         <node concept="21SRaq" id="1huKj6f3BxF" role="21Pmik">

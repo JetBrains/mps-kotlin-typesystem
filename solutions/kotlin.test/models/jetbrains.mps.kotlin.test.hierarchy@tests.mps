@@ -8,16 +8,16 @@
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="4" />
+    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="5" />
   </languages>
   <imports>
     <import index="fefm" ref="r:1007e072-ac19-4b13-85dc-0e4118398cf2(jetbrains.mps.kotlinExt.types)" />
-    <import index="mx11" ref="r:fa9de6a8-90b7-4d2a-a9a9-a40c05cf603b(jetbrains.mps.kotlin.runtime.types.identifiers)" />
     <import index="w7la" ref="bbf5c548-7111-4a53-a117-cdefc664cf34/java:jetbrains.mps.logic.reactor.evaluation(jetbrains.mps.logic.reactor/)" />
     <import index="6exd" ref="r:0f9b1fb3-00f9-4480-b235-1a906a087ab2(jetbrains.mps.logic.dataform)" />
     <import index="yt73" ref="bbf5c548-7111-4a53-a117-cdefc664cf34/java:jetbrains.mps.unification(jetbrains.mps.logic.reactor/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="6jrw" ref="r:6ed0688b-a983-45cb-b2ba-2afbb11a9c27(jetbrains.mps.kotlin.api.types.identifiers)" />
     <import index="hcm8" ref="r:72a7bf00-0175-42ca-b99b-fe8519b6a16f(jetbrains.mps.kotlin.structure)" implicit="true" />
     <import index="hez" ref="r:b038209d-51a9-4919-b6e5-4fafce96fa00(jetbrains.mps.kotlin.behavior)" implicit="true" />
     <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
@@ -358,7 +358,7 @@
               <node concept="2ShNRf" id="4GncUq$aCRA" role="37wK5m">
                 <node concept="1pGfFk" id="4GncUq$aDd3" role="2ShVmc">
                   <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="mx11:6GqgvHqjq$4" resolve="FunctionType" />
+                  <ref role="37wK5l" to="6jrw:6GqgvHqjq$4" resolve="FunctionType" />
                   <node concept="3cmrfG" id="4GncUq$aDvl" role="37wK5m">
                     <property role="3cmrfH" value="2" />
                   </node>
@@ -378,7 +378,7 @@
                 <node concept="2ShNRf" id="4GncUq$aHkv" role="37wK5m">
                   <node concept="1pGfFk" id="4GncUq$aHkw" role="2ShVmc">
                     <property role="373rjd" value="true" />
-                    <ref role="37wK5l" to="mx11:6GqgvHqjq$4" resolve="FunctionType" />
+                    <ref role="37wK5l" to="6jrw:6GqgvHqjq$4" resolve="FunctionType" />
                     <node concept="3cmrfG" id="4GncUq$aHnn" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -584,7 +584,7 @@
               <node concept="_YKpA" id="4GncUq$aiim" role="1Lm7xW">
                 <node concept="_YKpA" id="4GncUq$aiin" role="_ZDj9">
                   <node concept="3uibUv" id="4GncUq$aiio" role="_ZDj9">
-                    <ref role="3uigEE" to="mx11:6GqgvHqhqpA" resolve="TypeKey" />
+                    <ref role="3uigEE" to="6jrw:6GqgvHqhqpA" resolve="TypeKey" />
                   </node>
                 </node>
               </node>
@@ -866,14 +866,14 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="4GncUq$aU4X" role="1B3o_S" />
       <node concept="3uibUv" id="4GncUq$aU4Z" role="1tU5fm">
-        <ref role="3uigEE" to="mx11:6GqgvHqhqpA" resolve="TypeKey" />
+        <ref role="3uigEE" to="6jrw:6GqgvHqhqpA" resolve="TypeKey" />
       </node>
     </node>
     <node concept="3clFbW" id="4GncUq$aTwp" role="jymVt">
       <node concept="37vLTG" id="4GncUq$aTKo" role="3clF46">
         <property role="TrG5h" value="typeKey" />
         <node concept="3uibUv" id="4GncUq$aTXP" role="1tU5fm">
-          <ref role="3uigEE" to="mx11:6GqgvHqhqpA" resolve="TypeKey" />
+          <ref role="3uigEE" to="6jrw:6GqgvHqhqpA" resolve="TypeKey" />
         </node>
       </node>
       <node concept="3cqZAl" id="4GncUq$aTwr" role="3clF45" />

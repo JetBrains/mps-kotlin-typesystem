@@ -121,6 +121,7 @@
       <concept id="1243006380188575965" name="jetbrains.mps.kotlin.structure.StringLiteralRaw" flags="ng" index="21VMdE">
         <property id="1243006380188575966" name="content" index="21VMdD" />
       </concept>
+      <concept id="7751614607563717724" name="jetbrains.mps.kotlin.structure.RegularFunctionReference" flags="ng" index="40NwQ" />
       <concept id="7996321249597408849" name="jetbrains.mps.kotlin.structure.IInheritExplicitly" flags="ng" index="6Oumu">
         <child id="1991556721067228837" name="superclasses" index="AST3G" />
       </concept>
@@ -152,6 +153,12 @@
       <concept id="5533310174484620657" name="jetbrains.mps.kotlin.structure.VariableRefExpression" flags="ng" index="UZU4S">
         <reference id="5533310174484620658" name="target" index="UZU4V" />
       </concept>
+      <concept id="8818748685424648115" name="jetbrains.mps.kotlin.structure.NodeFunctionReference" flags="ng" index="3sjUa7">
+        <reference id="601663393864982470" name="node" index="19X1pH" />
+      </concept>
+      <concept id="8818748685416965655" name="jetbrains.mps.kotlin.structure.IWithFunctionReference" flags="ng" index="3vQHGz">
+        <child id="8818748685416968866" name="function" index="3vQGYm" />
+      </concept>
       <concept id="7027413324315184167" name="jetbrains.mps.kotlin.structure.ILambdaAsArgument" flags="ng" index="3$8iW8">
         <child id="2936055411798374269" name="lambda" index="1XD06E" />
       </concept>
@@ -176,9 +183,6 @@
       </concept>
       <concept id="2936055411798373481" name="jetbrains.mps.kotlin.structure.ClassDeclaration" flags="ng" index="1XD0aY" />
       <concept id="2936055411798373428" name="jetbrains.mps.kotlin.structure.FunctionDeclaration" flags="ng" index="1XD0bz" />
-      <concept id="2936055411798373439" name="jetbrains.mps.kotlin.structure.AbstractFunctionCall" flags="ng" index="1XD0bC">
-        <reference id="1991556721072067817" name="function" index="AarEw" />
-      </concept>
       <concept id="2936055411798373781" name="jetbrains.mps.kotlin.structure.Assignment" flags="ng" index="1XD0d2">
         <child id="2936055411798374738" name="right" index="1XD0Y5" />
         <child id="2936055411798374735" name="left" index="1XD0Yo" />
@@ -259,7 +263,6 @@
         </node>
       </node>
       <node concept="1NbEFs" id="NA$kug9TdV" role="THmaL">
-        <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
         <node concept="1XD0eI" id="NA$kug9TeZ" role="TWiod">
           <node concept="1XD08G" id="NA$kug9TeX" role="1XD0ZN">
             <node concept="Df6$J" id="5yEpxXMpJvt" role="Df6Hu">
@@ -281,9 +284,11 @@
             </node>
           </node>
         </node>
+        <node concept="40NwQ" id="7DyvjiA$QmQ" role="3vQGYm">
+          <ref role="19X1pH" to="aucy:~.println(kotlin/Any?)" resolve="println" />
+        </node>
       </node>
       <node concept="1NbEFs" id="7xKsisVFH0k" role="THmaL">
-        <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
         <node concept="1XD0eI" id="7xKsisVFH5X" role="TWiod">
           <node concept="1XD08G" id="7xKsisVFH5V" role="1XD0ZN">
             <node concept="Df6$J" id="5yEpxXMpJvu" role="Df6Hu">
@@ -293,6 +298,9 @@
               <node concept="21VMdE" id="7xKsisVFH5W" role="Df7GE" />
             </node>
           </node>
+        </node>
+        <node concept="40NwQ" id="7DyvjiA_on0" role="3vQGYm">
+          <ref role="19X1pH" to="aucy:~.println(kotlin/Any?)" resolve="println" />
         </node>
       </node>
       <node concept="1XD08$" id="11vq$BubPjR" role="ICcUN" />
@@ -355,7 +363,6 @@
             </node>
             <node concept="1XD0f0" id="TRtBGgyEUH" role="1XD06E">
               <node concept="1NbEFs" id="TRtBGgyFex" role="THmaL">
-                <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
                 <node concept="1XD0eI" id="TRtBGgyFhZ" role="TWiod">
                   <node concept="1XD08G" id="TRtBGgyFhX" role="1XD0ZN">
                     <node concept="Df6$J" id="5yEpxXMpJvw" role="Df6Hu">
@@ -365,6 +372,9 @@
                       <node concept="21VMdE" id="TRtBGgyFhY" role="Df7GE" />
                     </node>
                   </node>
+                </node>
+                <node concept="40NwQ" id="5v3eTYftFXI" role="3vQGYm">
+                  <ref role="19X1pH" to="aucy:~.println(kotlin/Any?)" resolve="println" />
                 </node>
               </node>
             </node>

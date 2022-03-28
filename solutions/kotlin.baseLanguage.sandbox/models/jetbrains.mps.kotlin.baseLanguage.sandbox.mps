@@ -22,6 +22,7 @@
       <concept id="1243006380188575965" name="jetbrains.mps.kotlin.structure.StringLiteralRaw" flags="ng" index="21VMdE">
         <property id="1243006380188575966" name="content" index="21VMdD" />
       </concept>
+      <concept id="7751614607563717724" name="jetbrains.mps.kotlin.structure.RegularFunctionReference" flags="ng" index="40NwQ" />
       <concept id="7996321249597408849" name="jetbrains.mps.kotlin.structure.IInheritExplicitly" flags="ng" index="6Oumu">
         <child id="1991556721067228837" name="superclasses" index="AST3G" />
       </concept>
@@ -47,6 +48,12 @@
       <concept id="7188675108981477346" name="jetbrains.mps.kotlin.structure.Parameter" flags="ng" index="37iW8e">
         <child id="7188675108981477347" name="type" index="37iW8f" />
       </concept>
+      <concept id="8818748685424648115" name="jetbrains.mps.kotlin.structure.NodeFunctionReference" flags="ng" index="3sjUa7">
+        <reference id="601663393864982470" name="node" index="19X1pH" />
+      </concept>
+      <concept id="8818748685416965655" name="jetbrains.mps.kotlin.structure.IWithFunctionReference" flags="ng" index="3vQHGz">
+        <child id="8818748685416968866" name="function" index="3vQGYm" />
+      </concept>
       <concept id="4662566628538083705" name="jetbrains.mps.kotlin.structure.FunctionCallExpression" flags="ng" index="1NbEFs" />
       <concept id="2936055411798373619" name="jetbrains.mps.kotlin.structure.FinalInheritanceModifier" flags="ng" index="1XD08$" />
       <concept id="2936055411798373627" name="jetbrains.mps.kotlin.structure.StringLiteral" flags="ng" index="1XD08G">
@@ -60,9 +67,6 @@
       </concept>
       <concept id="2936055411798373428" name="jetbrains.mps.kotlin.structure.FunctionDeclaration" flags="ng" index="1XD0bz">
         <property id="4908873499999643325" name="isOverride" index="3qOnjd" />
-      </concept>
-      <concept id="2936055411798373439" name="jetbrains.mps.kotlin.structure.AbstractFunctionCall" flags="ng" index="1XD0bC">
-        <reference id="1991556721072067817" name="function" index="AarEw" />
       </concept>
       <concept id="2936055411798373753" name="jetbrains.mps.kotlin.structure.ValueArgument" flags="ng" index="1XD0eI">
         <child id="2936055411798374692" name="expression" index="1XD0ZN" />
@@ -103,7 +107,6 @@
         <property role="3qOnjd" value="true" />
         <node concept="1XD0l2" id="ZgHBwZyA93" role="2BPcuh" />
         <node concept="1NbEFs" id="7WpE6U5cirs" role="THmaL">
-          <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
           <node concept="1XD0eI" id="7WpE6U5civO" role="TWiod">
             <node concept="1XD08G" id="ZgHBwZyDt0" role="1XD0ZN">
               <node concept="Df6$J" id="5yEpxXMpJvr" role="Df6Hu">
@@ -113,6 +116,9 @@
                 <node concept="21VMdE" id="ZgHBwZyDt1" role="Df7GE" />
               </node>
             </node>
+          </node>
+          <node concept="40NwQ" id="7DyvjiAzR0L" role="3vQGYm">
+            <ref role="19X1pH" to="aucy:~.println(kotlin/Any?)" resolve="println" />
           </node>
         </node>
         <node concept="1XD08$" id="11vq$BubPjV" role="ICcUN" />
