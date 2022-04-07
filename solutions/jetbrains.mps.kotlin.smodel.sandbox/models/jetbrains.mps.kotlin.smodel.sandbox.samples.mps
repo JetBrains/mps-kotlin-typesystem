@@ -20,9 +20,6 @@
       </concept>
       <concept id="6738951777220763930" name="jetbrains.mps.kotlin.structure.RegularPropertyReference" flags="ng" index="2afF7P" />
       <concept id="5622728304609204267" name="jetbrains.mps.kotlin.structure.EmptyDeclaration" flags="ng" index="eKYAL" />
-      <concept id="2599447651060127508" name="jetbrains.mps.kotlin.structure.ITypeArguments" flags="ng" index="2pIC39">
-        <child id="6565639133216732540" name="typeArguments" index="TPadX" />
-      </concept>
       <concept id="7138249191285121087" name="jetbrains.mps.kotlin.structure.IVisible" flags="ng" index="2BPcvI">
         <child id="7138249191285121088" name="visibility" index="2BPcuh" />
       </concept>
@@ -99,7 +96,7 @@
       <node concept="TDTJT" id="7bIC29gVCJz" role="THmaL">
         <property role="1Xb$ne" value="true" />
         <node concept="2Rs4SG" id="7bIC29gVCJ$" role="2Rs2$5">
-          <property role="TrG5h" value="file" />
+          <property role="TrG5h" value="fileConcept" />
         </node>
         <node concept="1XD0mK" id="2J12cYi9HRW" role="1XD05H">
           <node concept="1XD0em" id="2J12cYii8wO" role="1XD0cX">
@@ -114,9 +111,6 @@
           <node concept="40NwQ" id="2J12cYiApMe" role="3vQGYm">
             <ref role="19X1pH" to="9223:41naeX0DzXN" resolve="new" />
           </node>
-          <node concept="2RgARU" id="2J12cYiApMs" role="TPadX">
-            <ref role="2RgA51" to="hcm8:2yYXHtl6JkD" resolve="KotlinFile" />
-          </node>
           <node concept="1XD0f0" id="2J12cYiApMw" role="1XD06E">
             <node concept="1XD0df" id="2J12cYiAqLU" role="THmaL" />
           </node>
@@ -124,6 +118,21 @@
         <node concept="UZU4S" id="2J12cYioANH" role="21Pmik">
           <node concept="2afF7P" id="2J12cYioANI" role="2akfXf">
             <ref role="2afCM2" node="7bIC29gVCJ$" resolve="file" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0a7" id="7HQvI2SjU81" role="THmaL">
+        <node concept="1NbEtQ" id="7HQvI2SjUOm" role="1XD07G">
+          <node concept="40NwQ" id="7HQvI2SjUOo" role="3vQGYm">
+            <ref role="19X1pH" to="9223:41naeX0DzXN" resolve="new" />
+          </node>
+          <node concept="1XD0f0" id="7HQvI2SjV5z" role="1XD06E">
+            <node concept="1XD0df" id="7HQvI2SjWm9" role="THmaL" />
+          </node>
+        </node>
+        <node concept="1XD0em" id="7HQvI2SjTQk" role="21Pmik">
+          <node concept="2RgARU" id="7HQvI2SjTQi" role="1XD0Sn">
+            <ref role="2RgA51" to="hcm8:2yYXHtl6JkD" resolve="KotlinFile" />
           </node>
         </node>
       </node>
