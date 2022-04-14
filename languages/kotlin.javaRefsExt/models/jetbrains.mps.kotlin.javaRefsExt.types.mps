@@ -11,7 +11,7 @@
     <import index="5m2i" ref="r:13d34207-1d05-4df8-92a6-7cde496142db(jetbrains.mps.kotlin.javaRefs.structure)" />
     <import index="akzu" ref="r:13fdb710-e0ae-40a1-880c-e26a8ee8d411(jetbrains.mps.kotlin.baseLanguage.toKotlin)" />
     <import index="d5k6" ref="r:e9005ea6-e4e0-4b7f-8b34-6e6513630cda(jetbrains.mps.kotlin.baseLanguage.typeConversion)" />
-    <import index="6jrw" ref="r:6ed0688b-a983-45cb-b2ba-2afbb11a9c27(jetbrains.mps.kotlin.api.types.identifiers)" />
+    <import index="mx11" ref="r:fa9de6a8-90b7-4d2a-a9a9-a40c05cf603b(jetbrains.mps.kotlin.api.types.identifiers)" />
     <import index="hcm8" ref="r:72a7bf00-0175-42ca-b99b-fe8519b6a16f(jetbrains.mps.kotlin.structure)" implicit="true" />
   </imports>
   <registry>
@@ -630,7 +630,7 @@
               <node concept="_YKpA" id="69RFwVHjzdd" role="1Lm7xW">
                 <node concept="_YKpA" id="69RFwVHjzde" role="_ZDj9">
                   <node concept="3uibUv" id="69RFwVHj_HS" role="_ZDj9">
-                    <ref role="3uigEE" to="6jrw:6GqgvHqhqpA" resolve="TypeKey" />
+                    <ref role="3uigEE" to="mx11:6GqgvHqhqpA" resolve="TypeKey" />
                   </node>
                 </node>
               </node>

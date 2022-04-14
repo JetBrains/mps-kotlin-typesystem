@@ -19,8 +19,8 @@
     <import index="fefm" ref="r:1007e072-ac19-4b13-85dc-0e4118398cf2(jetbrains.mps.kotlinExt.types)" />
     <import index="vciu" ref="r:42fb31e7-122b-4950-aa58-2f5f6e5595ce(jetbrains.mps.kotlin.overloading)" />
     <import index="i348" ref="r:42a15dec-83a9-4fe1-80d6-3bf898c512bd(jetbrains.mps.lang.coderules.template)" />
-    <import index="cds0" ref="r:475fa32c-735d-4025-9399-088b1e15fb42(jetbrains.mps.kotlin.api.extension)" />
-    <import index="g9sx" ref="r:06f49b99-dde2-4880-9813-771660e71fae(jetbrains.mps.kotlin.api.declaration)" />
+    <import index="1p8r" ref="r:966de44c-de72-437f-889f-78347a061f0c(jetbrains.mps.kotlin.api.declaration)" />
+    <import index="kdsm" ref="r:4d5ec8ef-7006-453c-a8cf-f9897337b08c(jetbrains.mps.kotlin.api.extension)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="ev0w" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typechecking.backend(MPS.Core/)" implicit="true" />
   </imports>
@@ -216,7 +216,7 @@
                 <property role="2bfB8j" value="true" />
                 <property role="373rjd" value="true" />
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                <ref role="1Y3XeK" to="cds0:7VTXQs1r_Rt" resolve="KotlinTypesystem" />
+                <ref role="1Y3XeK" to="kdsm:7VTXQs1r_Rt" resolve="KotlinTypesystem" />
                 <node concept="3Tm1VV" id="5g3vQLJRHhY" role="1B3o_S" />
                 <node concept="3clFb_" id="5g3vQLJRIVd" role="jymVt">
                   <property role="TrG5h" value="getIntermediateType" />
@@ -303,14 +303,14 @@
                     <property role="TrG5h" value="candidates" />
                     <node concept="A3Dl8" id="5g3vQLJRIV_" role="1tU5fm">
                       <node concept="3uibUv" id="5g3vQLJRIVA" role="A3Ik2">
-                        <ref role="3uigEE" to="g9sx:26mUjU3_jTe" resolve="FunctionDeclaration" />
+                        <ref role="3uigEE" to="1p8r:26mUjU3_jTe" resolve="FunctionDeclaration" />
                       </node>
                     </node>
                   </node>
                   <node concept="3Tm1VV" id="5g3vQLJRIVC" role="1B3o_S" />
                   <node concept="1LlUBW" id="5g3vQLJRIVD" role="3clF45">
                     <node concept="3uibUv" id="5g3vQLJRIVE" role="1Lm7xW">
-                      <ref role="3uigEE" to="g9sx:26mUjU3_jTe" resolve="FunctionDeclaration" />
+                      <ref role="3uigEE" to="1p8r:26mUjU3_jTe" resolve="FunctionDeclaration" />
                     </node>
                     <node concept="10P_77" id="5g3vQLJRIVF" role="1Lm7xW" />
                   </node>
