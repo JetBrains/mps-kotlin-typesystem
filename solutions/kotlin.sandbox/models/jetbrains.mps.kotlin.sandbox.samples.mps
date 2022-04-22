@@ -6,8 +6,8 @@
   </languages>
   <imports>
     <import index="qw9d" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.reflect(jetbrains.mps.kotlin.stdlib/)" />
+    <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" />
     <import index="aucy" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.io(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
-    <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="1xrd" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.collections(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="pyzm" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.ranges(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="s3y3" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.text(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
@@ -2788,6 +2788,7 @@
             <ref role="1SePDO" to="0:~kotlin/Any" resolve="Any" />
           </node>
         </node>
+        <node concept="1XD08$" id="11vq$BubPks" role="ICcUN" />
         <node concept="21Pki_" id="1qppQtOYBrk" role="THmaL">
           <node concept="giPau" id="1qppQtOYBTL" role="21Pkll">
             <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
@@ -2815,7 +2816,7 @@
             </node>
           </node>
         </node>
-        <node concept="1XD08$" id="11vq$BubPks" role="ICcUN" />
+        <node concept="1XD0kn" id="7nEc8Satf3k" role="1XPytU" />
       </node>
     </node>
     <node concept="eKYAL" id="1qppQtOYC75" role="1XD0Tu" />
@@ -2919,7 +2920,7 @@
               </node>
               <node concept="1XD0lO" id="1qppQtOYDYb" role="Df7GE">
                 <node concept="giPau" id="1qppQtOYDYc" role="1XD029">
-                  <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+                  <ref role="1ap9JL" node="1qppQtOYBfO" resolve="equals" />
                   <node concept="UZU4S" id="1qppQtOYDYd" role="21Pkll">
                     <ref role="UZU4V" node="4FOkRjXXaCA" resolve="secondUser" />
                   </node>
@@ -2932,6 +2933,8 @@
           </node>
         </node>
       </node>
+      <node concept="1XD0l2" id="1qppQtOYCcw" role="2BPcuh" />
+      <node concept="1XD08$" id="11vq$BubPkt" role="ICcUN" />
       <node concept="1NbEFs" id="1qppQtOYDFY" role="THmaL">
         <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
         <node concept="1XD0eI" id="1qppQtOYDI6" role="TWiod">
@@ -2942,7 +2945,7 @@
               </node>
               <node concept="1XD0lO" id="1qppQtOYDIb" role="Df7GE">
                 <node concept="giPau" id="1qppQtOYDVB" role="1XD029">
-                  <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+                  <ref role="1ap9JL" node="1qppQtOYBfO" resolve="equals" />
                   <node concept="UZU4S" id="1qppQtOYDXG" role="21Pkll">
                     <ref role="UZU4V" node="4FOkRjXXaCB" resolve="thirdUser" />
                   </node>
@@ -3114,8 +3117,6 @@
           </node>
         </node>
       </node>
-      <node concept="1XD0l2" id="1qppQtOYCcw" role="2BPcuh" />
-      <node concept="1XD08$" id="11vq$BubPkt" role="ICcUN" />
     </node>
   </node>
   <node concept="1XD0fY" id="1qppQtOYR0K">
@@ -4676,19 +4677,6 @@
       <node concept="1XD088" id="1qppQtOXN8c" role="21NdcZ">
         <ref role="1SePDO" to="0:~kotlin/Float" resolve="Float" />
       </node>
-      <node concept="gXE$l" id="1qppQtOXRRa" role="THmaL">
-        <node concept="1PaTwC" id="1qppQtOXRRc" role="gXG0x">
-          <node concept="3oM_SD" id="1qppQtOXRYW" role="1PaTwD">
-            <property role="3oM_SC" value="TODO:" />
-          </node>
-          <node concept="3oM_SD" id="1qppQtOXRYY" role="1PaTwD">
-            <property role="3oM_SC" value="it," />
-          </node>
-          <node concept="3oM_SD" id="1qppQtOXV$g" role="1PaTwD">
-            <property role="3oM_SC" value="this" />
-          </node>
-        </node>
-      </node>
       <node concept="1XD0e9" id="1qppQtOXS6N" role="THmaL">
         <node concept="21PmDM" id="1qppQtOXQAb" role="1XD0SB">
           <node concept="1NbEFs" id="7M9bJcAsj8n" role="21Pkll">
@@ -4712,15 +4700,12 @@
               <node concept="1NbEtQ" id="1qppQtOXNCi" role="1XD07H">
                 <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.maxByOrNull&lt;2&gt;(kotlin/Function1&lt;0,1&gt;)" resolve="maxByOrNull" />
                 <node concept="1XD0f0" id="1qppQtOXNPn" role="1XD06E">
-                  <node concept="1XD0eA" id="1qppQtOXNYd" role="21PhDs">
-                    <property role="TrG5h" value="it" />
-                  </node>
                   <node concept="1XD0a7" id="1qppQtOXO65" role="THmaL">
                     <node concept="UZU4S" id="1qppQtOXOh$" role="1XD07H">
                       <ref role="UZU4V" node="1qppQtOXN0T" resolve="price" />
                     </node>
                     <node concept="UZU4S" id="1qppQtOXO1G" role="21Pmik">
-                      <ref role="UZU4V" node="1qppQtOXNYd" resolve="it" />
+                      <ref role="UZU4V" node="1qppQtOXNPn" resolve="it" />
                     </node>
                   </node>
                 </node>
@@ -4749,16 +4734,6 @@
       <node concept="1XD088" id="1qppQtOXUtt" role="21NdcZ">
         <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
       </node>
-      <node concept="gXE$l" id="1qppQtOXUtu" role="THmaL">
-        <node concept="1PaTwC" id="1qppQtOXUtv" role="gXG0x">
-          <node concept="3oM_SD" id="1qppQtOXUtw" role="1PaTwD">
-            <property role="3oM_SC" value="TODO:" />
-          </node>
-          <node concept="3oM_SD" id="1qppQtOXUtx" role="1PaTwD">
-            <property role="3oM_SC" value="it" />
-          </node>
-        </node>
-      </node>
       <node concept="1XD0e9" id="1qppQtOXSrv" role="THmaL">
         <node concept="21PmDM" id="1qppQtOXSrw" role="1XD0SB">
           <node concept="1XD08G" id="1qppQtOXTZf" role="21Pkll">
@@ -4777,18 +4752,12 @@
               <node concept="1NbEtQ" id="1qppQtOXSr_" role="1XD07H">
                 <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.maxByOrNull&lt;2&gt;(kotlin/Function1&lt;0,1&gt;)" resolve="maxByOrNull" />
                 <node concept="1XD0f0" id="1qppQtOXSrA" role="1XD06E">
-                  <node concept="1XD0eA" id="1qppQtOXSrB" role="21PhDs">
-                    <property role="TrG5h" value="it" />
-                    <node concept="1XD088" id="1qppQtOXTbb" role="1XD0Z0">
-                      <ref role="1SePDO" node="1qppQtOXMZd" resolve="Item" />
-                    </node>
-                  </node>
                   <node concept="1XD0a7" id="1qppQtOXSrC" role="THmaL">
                     <node concept="UZU4S" id="1qppQtOXSrD" role="1XD07H">
                       <ref role="UZU4V" node="1qppQtOXN0T" resolve="price" />
                     </node>
                     <node concept="UZU4S" id="1qppQtOXSrE" role="21Pmik">
-                      <ref role="UZU4V" node="1qppQtOXSrB" resolve="it" />
+                      <ref role="UZU4V" node="1qppQtOXSrA" resolve="it" />
                     </node>
                   </node>
                 </node>
@@ -5049,7 +5018,7 @@
         <node concept="1XD0a7" id="1qppQtOYyB4" role="21Pkln">
           <property role="21SRas" value="true" />
           <node concept="1NbEtQ" id="1qppQtOYzTi" role="1XD07H">
-            <ref role="AarEw" to="0:~Any.toString()" resolve="toString" />
+            <ref role="AarEw" to="0:~#Any?.toString()" resolve="toString" />
           </node>
           <node concept="1XD0df" id="1qppQtOYxQm" role="21Pmik" />
         </node>
@@ -5633,6 +5602,7 @@
           <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
         </node>
       </node>
+      <node concept="1XD08$" id="11vq$BubPkQ" role="ICcUN" />
       <node concept="gXE$l" id="5b2DnJ7cKbU" role="THmaL">
         <node concept="1PaTwC" id="5b2DnJ7cKbW" role="gXG0x">
           <node concept="3oM_SD" id="5b2DnJ7cKd5" role="1PaTwD">
@@ -5661,7 +5631,7 @@
       <node concept="1XD0b9" id="5b2DnJ7ct7H" role="THmaL">
         <node concept="1XD0a7" id="5b2DnJ7ctyC" role="1XD00_">
           <node concept="1NbEtQ" id="5b2DnJ7ctSe" role="1XD07H">
-            <ref role="AarEw" to="1xrd:~#Map&lt;0&gt;.containsKey&lt;1&gt;(0)" resolve="containsKey" />
+            <ref role="AarEw" to="1xrd:~#Map&lt;0,*&gt;.containsKey&lt;1&gt;(0)" resolve="containsKey" />
             <node concept="1XD0eI" id="5b2DnJ7cu3Q" role="TWiod">
               <node concept="UZU4S" id="5b2DnJ7cu3P" role="1XD0ZN">
                 <ref role="UZU4V" node="5b2DnJ7ct7p" resolve="accountId" />
@@ -5745,7 +5715,6 @@
           </node>
         </node>
       </node>
-      <node concept="1XD08$" id="11vq$BubPkQ" role="ICcUN" />
     </node>
     <node concept="eKYAL" id="5b2DnJ7cOSh" role="1XD0Tu" />
     <node concept="1XD0bz" id="5b2DnJ7cOV0" role="1XD0Tu">
@@ -6311,7 +6280,7 @@
                 <node concept="1XD0lO" id="5b2DnJ7dyaY" role="Df7GE">
                   <node concept="1XD0a7" id="5b2DnJ7dyl8" role="1XD029">
                     <node concept="1NbEtQ" id="5b2DnJ7dytV" role="1XD07H">
-                      <ref role="AarEw" to="s3y3:~#kotlin/String.toUpperCase()" resolve="toUpperCase" />
+                      <ref role="AarEw" to="s3y3:~#kotlin/String.uppercase()" resolve="uppercase" />
                     </node>
                     <node concept="UZU4S" id="5b2DnJ7dybM" role="21Pmik">
                       <ref role="UZU4V" node="5b2DnJ7dxJ7" resolve="n" />
