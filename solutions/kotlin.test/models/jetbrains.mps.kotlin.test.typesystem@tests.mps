@@ -328,6 +328,28 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="FkvPB76LbU" role="1SL9yI">
+      <property role="TrG5h" value="kotlinInterop" />
+      <node concept="3cqZAl" id="FkvPB76LbV" role="3clF45" />
+      <node concept="3clFbS" id="FkvPB76LbW" role="3clF47">
+        <node concept="3clFbF" id="FkvPB76LbX" role="3cqZAp">
+          <node concept="2OqwBi" id="FkvPB76LbY" role="3clFbG">
+            <node concept="2WthIp" id="FkvPB76LbZ" role="2Oq$k0" />
+            <node concept="2XshWL" id="FkvPB76Lc0" role="2OqNvi">
+              <ref role="2WH_rO" node="4ioyk007kTb" resolve="testModel" />
+              <node concept="1Xw6AR" id="FkvPB76Lc1" role="2XxRq1">
+                <node concept="1dCxOl" id="FkvPB76Lc2" role="1XwpL7">
+                  <property role="1XweGQ" value="r:b7a5ae3c-bdb9-4ed4-88cc-db36937f4170" />
+                  <node concept="1j_P7g" id="FkvPB76Lc3" role="1j$8Uc">
+                    <property role="1j_P7h" value="jetbrains.mps.kotlin.test.data" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
