@@ -13,6 +13,9 @@
   </imports>
   <registry>
     <language id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin">
+      <concept id="1243006380186304290" name="jetbrains.mps.kotlin.structure.IWithReceiver" flags="ng" index="21N7il">
+        <child id="8521376398798405093" name="receiverType" index="39xbXa" />
+      </concept>
       <concept id="1243006380186327175" name="jetbrains.mps.kotlin.structure.IReturnType" flags="ng" index="21NdcK">
         <child id="1243006380186327176" name="returnType" index="21NdcZ" />
       </concept>
@@ -135,6 +138,7 @@
       <concept id="2936055411798373456" name="jetbrains.mps.kotlin.structure.NavigationOperation" flags="ng" index="1XD0a7">
         <child id="2936055411798374203" name="target" index="1XD07G" />
       </concept>
+      <concept id="2936055411798373503" name="jetbrains.mps.kotlin.structure.CallOperation" flags="ng" index="1XD0aC" />
       <concept id="2936055411798373499" name="jetbrains.mps.kotlin.structure.MultiLambdaParameter" flags="ng" index="1XD0aG" />
       <concept id="2936055411798373481" name="jetbrains.mps.kotlin.structure.ClassDeclaration" flags="ng" index="1XD0aY">
         <child id="2324909103763444261" name="primaryConstructor" index="KDYUA" />
@@ -1601,7 +1605,7 @@
             <ref role="AarEw" to="0:~.run&lt;1&gt;(Function0&lt;0&gt;)" resolve="run" />
             <node concept="1XD0f0" id="2x9yl3xwWTJ" role="1XD06E">
               <node concept="1NbEFs" id="2x9yl3xwXuq" role="THmaL">
-                <ref role="AarEw" to="0:~.run&lt;1&gt;(Function0&lt;0&gt;)" resolve="run" />
+                <ref role="AarEw" to="0:~#0.run&lt;2&gt;(Function1&lt;0,1&gt;)" resolve="run" />
                 <node concept="1XD0f0" id="2x9yl3xwXH6" role="1XD06E">
                   <node concept="1XD0k7" id="2x9yl3xwXRb" role="THmaL">
                     <property role="1XD01k" value="3" />
@@ -3317,14 +3321,46 @@
       </node>
     </node>
   </node>
-  <node concept="1XD0fY" id="4wYCrj4MTo7">
-    <property role="TrG5h" value="testbench" />
-    <node concept="eKYAL" id="4wYCrj4MTqY" role="1XD0Tu" />
-    <node concept="1XD0bz" id="4wYCrj4MTrR" role="1XD0Tu">
+  <node concept="1XD0fY" id="7p20EZ0jbss">
+    <property role="TrG5h" value="receivers" />
+    <node concept="eKYAL" id="7p20EZ0jbvj" role="1XD0Tu" />
+    <node concept="1XD0aY" id="7p20EZ0GUM1" role="1XD0Tu">
+      <property role="TrG5h" value="Received" />
+      <node concept="1XD08$" id="7p20EZ0GUM3" role="ICcUN" />
+      <node concept="1XD0l2" id="7p20EZ0GUM4" role="2BPcuh" />
+    </node>
+    <node concept="eKYAL" id="7p20EZ0jbyt" role="1XD0Tu" />
+    <node concept="1XD0bz" id="7p20EZ0jbwc" role="1XD0Tu">
       <property role="TrG5h" value="test" />
-      <node concept="AQkLs" id="4wYCrj4MTus" role="THmaL" />
-      <node concept="1XD08$" id="4wYCrj4MTrT" role="ICcUN" />
-      <node concept="1XD0l2" id="4wYCrj4MTrU" role="2BPcuh" />
+      <node concept="1XD08$" id="7p20EZ0jbwe" role="ICcUN" />
+      <node concept="1XD0l2" id="7p20EZ0jbwf" role="2BPcuh" />
+      <node concept="1XD0bi" id="7p20EZ0jbKV" role="1XbAXm">
+        <property role="TrG5h" value="callee" />
+        <node concept="1XD088" id="7p20EZ0jbNv" role="37iW8f">
+          <ref role="1SePDO" node="7p20EZ0GUM1" resolve="A" />
+        </node>
+      </node>
+      <node concept="1XD0bi" id="7p20EZ0jb_d" role="1XbAXm">
+        <property role="TrG5h" value="op" />
+        <node concept="1XD0mE" id="7p20EZ0jbAT" role="37iW8f">
+          <node concept="1XD088" id="7p20EZ0jbGm" role="1XD036">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+          </node>
+          <node concept="1XD088" id="7p20EZ0jbDR" role="39xbXa">
+            <ref role="1SePDO" node="7p20EZ0GUM1" resolve="A" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0aC" id="7p20EZ0Yu8o" role="THmaL">
+        <node concept="1XD0a7" id="7p20EZ0jcPS" role="21Pmik">
+          <node concept="UZU4S" id="7p20EZ0GTjf" role="1XD07G">
+            <ref role="UZU4V" node="7p20EZ0jb_d" resolve="op" />
+          </node>
+          <node concept="UZU4S" id="7p20EZ0jcHk" role="21Pmik">
+            <ref role="UZU4V" node="7p20EZ0jbKV" resolve="callee" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
