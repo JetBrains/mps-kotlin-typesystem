@@ -22,6 +22,7 @@
     <import index="1p8r" ref="r:966de44c-de72-437f-889f-78347a061f0c(jetbrains.mps.kotlin.api.declaration)" />
     <import index="kdsm" ref="r:4d5ec8ef-7006-453c-a8cf-f9897337b08c(jetbrains.mps.kotlin.api.extension)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="hcm8" ref="r:72a7bf00-0175-42ca-b99b-fe8519b6a16f(jetbrains.mps.kotlin.structure)" implicit="true" />
     <import index="ev0w" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typechecking.backend(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -158,7 +159,9 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -295,6 +298,12 @@
                       <ref role="3uigEE" to="vciu:7mJe6tmz$Nk" resolve="FunctionCall" />
                     </node>
                   </node>
+                  <node concept="37vLTG" id="5w5RuSg4zIC" role="3clF46">
+                    <property role="TrG5h" value="receiverType" />
+                    <node concept="3Tqbb2" id="5w5RuSg4Etb" role="1tU5fm">
+                      <ref role="ehGHo" to="hcm8:2yYXHtl6Jh1" resolve="IType" />
+                    </node>
+                  </node>
                   <node concept="37vLTG" id="5g3vQLJRIVy" role="3clF46">
                     <property role="TrG5h" value="contextNode" />
                     <node concept="3Tqbb2" id="5g3vQLJRIVz" role="1tU5fm" />
@@ -328,6 +337,9 @@
                             <ref role="37wK5l" to="fefm:UQJ11Or2B9" resolve="OverloadResolutionQuery" />
                             <node concept="37vLTw" id="5g3vQLJS7oj" role="37wK5m">
                               <ref role="3cqZAo" node="5g3vQLJRIVw" resolve="call" />
+                            </node>
+                            <node concept="37vLTw" id="5w5RuSg4JNL" role="37wK5m">
+                              <ref role="3cqZAo" node="5w5RuSg4zIC" resolve="receiverType" />
                             </node>
                             <node concept="37vLTw" id="5g3vQLJS93X" role="37wK5m">
                               <ref role="3cqZAo" node="5g3vQLJRIV$" resolve="candidates" />
