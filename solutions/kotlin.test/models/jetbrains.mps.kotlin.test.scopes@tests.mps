@@ -2,7 +2,7 @@
 <model ref="r:5496351e-6e92-4051-85ca-98be7df49c2e(jetbrains.mps.kotlin.test.scopes@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="6" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
@@ -22,6 +22,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -273,6 +274,7 @@
   </registry>
   <node concept="1lH9Xt" id="6nK3tk9SPTE">
     <property role="TrG5h" value="ReceiverScope" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="6nK3tkag$0G" role="1qtyYc">
       <property role="TrG5h" value="getScope" />
       <node concept="3uibUv" id="6nK3tkag$0Y" role="3clF45">
@@ -603,6 +605,7 @@
   </node>
   <node concept="1lH9Xt" id="FkvPB76rup">
     <property role="TrG5h" value="IsLeftExpressionTarget" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="FkvPB76AAw" role="1SL9yI">
       <property role="TrG5h" value="navigationLeftSide" />
       <node concept="3cqZAl" id="FkvPB76AAx" role="3clF45" />
@@ -732,7 +735,7 @@
         <node concept="3vwNmj" id="FkvPB76H4P" role="3cqZAp">
           <node concept="2OqwBi" id="FkvPB76H6$" role="3vwVQn">
             <node concept="3xONca" id="FkvPB76H6_" role="2Oq$k0">
-              <ref role="3xOPvv" node="FkvPB76GJ$" resolve="rVar" />
+              <ref role="3xOPvv" node="FkvPB76GJ$" resolve="lVar" />
             </node>
             <node concept="2qgKlT" id="FkvPB76H6A" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />

@@ -145,13 +145,8 @@
       <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
         <reference id="4278635856200794928" name="language" index="1Busuk" />
       </concept>
-      <concept id="3189788309731981027" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleSolutionRuntime" flags="ng" index="1E0d5M">
-        <reference id="3189788309731981028" name="solution" index="1E0d5P" />
-      </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
-      <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
-        <child id="3189788309731917348" name="runtime" index="1E1XAP" />
-      </concept>
+      <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD" />
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
@@ -402,9 +397,6 @@
             </node>
           </node>
         </node>
-        <node concept="1E0d5M" id="2b3dSh2EpT$" role="1E1XAP">
-          <ref role="1E0d5P" to="ffeo:Ye$g8PO8Vb" resolve="jetbrains.mps.kotlin.runtime" />
-        </node>
         <node concept="1SiIV0" id="69s32WJfBKZ" role="3bR37C">
           <node concept="1Busua" id="69s32WJfBL0" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:Ye$g8PO8Uc" resolve="jetbrains.mps.kotlin" />
@@ -413,11 +405,6 @@
         <node concept="1SiIV0" id="69s32WJfBN1" role="3bR37C">
           <node concept="3bR9La" id="69s32WJfBN2" role="1SiIV1">
             <ref role="3bR37D" to="zqd8:65DJywFj0Fi" resolve="jetbrains.mps.coderules.typechecking" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3xTUo83yYRJ" role="3bR37C">
-          <node concept="3bR9La" id="3xTUo83yYRK" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:Ye$g8PO8Vb" resolve="jetbrains.mps.kotlin.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="7WpE6U5hkS9" role="3bR37C">
@@ -475,11 +462,6 @@
         <node concept="1SiIV0" id="69s32WJ3d$z" role="3bR37C">
           <node concept="3bR9La" id="69s32WJ3d$$" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:Ye$g8PO8XA" resolve="jetbrains.mps.kotlin.baseLanguage.runtime" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="69s32WJ3d$_" role="3bR37C">
-          <node concept="3bR9La" id="69s32WJ3d$A" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:Ye$g8PO8Vb" resolve="jetbrains.mps.kotlin.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="69s32WJfBLc" role="3bR37C">

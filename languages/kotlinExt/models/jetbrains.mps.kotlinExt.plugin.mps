@@ -329,12 +329,12 @@
                       <node concept="3cpWsn" id="5g3vQLJS3W8" role="3cpWs9">
                         <property role="TrG5h" value="query" />
                         <node concept="3uibUv" id="5g3vQLJS3W9" role="1tU5fm">
-                          <ref role="3uigEE" to="fefm:UQJ11Or1ca" resolve="OverloadResolutionQuery" />
+                          <ref role="3uigEE" to="fefm:UQJ11Or1ca" resolve="SelectCandidateQuery" />
                         </node>
                         <node concept="2ShNRf" id="5g3vQLJS5EJ" role="33vP2m">
                           <node concept="1pGfFk" id="5g3vQLJS6Eo" role="2ShVmc">
                             <property role="373rjd" value="true" />
-                            <ref role="37wK5l" to="fefm:UQJ11Or2B9" resolve="OverloadResolutionQuery" />
+                            <ref role="37wK5l" to="fefm:UQJ11Or2B9" resolve="SelectCandidateQuery" />
                             <node concept="37vLTw" id="5g3vQLJS7oj" role="37wK5m">
                               <ref role="3cqZAo" node="5g3vQLJRIVw" resolve="call" />
                             </node>
