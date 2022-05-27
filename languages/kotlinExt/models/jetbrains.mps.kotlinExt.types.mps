@@ -53158,7 +53158,7 @@
                               <node concept="1pGfFk" id="13yL0wnOwN6" role="2ShVmc">
                                 <ref role="37wK5l" node="1SYA9vMCSWA" resolve="ConversionContext" />
                                 <node concept="Rm8GO" id="13yL0wnOwN7" role="37wK5m">
-                                  <ref role="1Px2BO" node="1SYA9vMCS38" resolve="VarHandling" />
+                                  <ref role="1Px2BO" node="1SYA9vMCS38" resolve="ConversionContext.VarHandling" />
                                   <ref role="Rm8GQ" node="1SYA9vMCS9v" resolve="ACCEPT" />
                                 </node>
                               </node>

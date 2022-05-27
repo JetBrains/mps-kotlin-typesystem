@@ -78,6 +78,9 @@
         <child id="2936055411798374535" name="header" index="1XD0Tg" />
       </concept>
       <concept id="1991556721070973461" name="jetbrains.mps.kotlin.structure.EmptyStatement" flags="ng" index="AQkLs" />
+      <concept id="7138249191279592966" name="jetbrains.mps.kotlin.structure.NumericBaseLiteral" flags="ng" index="2Boa7n">
+        <property id="5332309673433868805" name="long" index="BpS5w" />
+      </concept>
       <concept id="7138249191285121087" name="jetbrains.mps.kotlin.structure.IVisible" flags="ng" index="2BPcvI">
         <child id="7138249191285121088" name="visibility" index="2BPcuh" />
       </concept>
@@ -262,12 +265,10 @@
       <concept id="2936055411798373673" name="jetbrains.mps.kotlin.structure.KotlinFile" flags="ng" index="1XD0fY">
         <child id="2936055411798374537" name="declarations" index="1XD0Tu" />
       </concept>
-      <concept id="2936055411798373334" name="jetbrains.mps.kotlin.structure.LongLiteral" flags="ng" index="1XD0k1">
-        <property id="2936055411798374029" name="value" index="1XD01q" />
-      </concept>
       <concept id="2936055411798373333" name="jetbrains.mps.kotlin.structure.NullLiteral" flags="ng" index="1XD0k2" />
       <concept id="2936055411798373332" name="jetbrains.mps.kotlin.structure.RealLiteral" flags="ng" index="1XD0k3">
-        <property id="2936055411798374027" name="real" index="1XD01s" />
+        <property id="8753612534379494068" name="float" index="3koUUc" />
+        <property id="2936055411798374027" name="value" index="1XD01s" />
       </concept>
       <concept id="2936055411798373331" name="jetbrains.mps.kotlin.structure.CharLiteral" flags="ng" index="1XD0k4">
         <property id="2936055411798374025" name="value" index="1XD01u" />
@@ -1813,8 +1814,9 @@
       <node concept="1NbEFs" id="rbYB7QjlXN" role="THmaL">
         <ref role="AarEw" node="rbYB7QdiKL" resolve="cases" />
         <node concept="1XD0eI" id="rbYB7QjlYV" role="TWiod">
-          <node concept="1XD0k1" id="rbYB7QjlYU" role="1XD0ZN">
-            <property role="1XD01q" value="0L" />
+          <node concept="1XD0k7" id="7_V53yH6bdp" role="1XD0ZN">
+            <property role="1XD01k" value="0" />
+            <property role="BpS5w" value="true" />
           </node>
         </node>
       </node>
@@ -4698,18 +4700,6 @@
       </node>
       <node concept="1XD0e9" id="1qppQtOXS6N" role="THmaL">
         <node concept="21PmDM" id="1qppQtOXQAb" role="1XD0SB">
-          <node concept="1NbEFs" id="7M9bJcAsj8n" role="21Pkll">
-            <ref role="AarEw" to="0:~.TODO(String)" resolve="TODO" />
-            <node concept="1XD0eI" id="7M9bJcAsjq8" role="TWiod">
-              <node concept="1XD08G" id="7M9bJcAsjB8" role="1XD0ZN">
-                <node concept="Df6$J" id="5yEpxXMpJwO" role="Df6Hu">
-                  <node concept="21VMdE" id="7M9bJcAsjB9" role="Df7GE">
-                    <property role="21VMdD" value="0F" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="1XD0a7" id="1qppQtOXOza" role="21Pkln">
             <property role="21SRas" value="true" />
             <node concept="UZU4S" id="1qppQtOXOXS" role="1XD07H">
@@ -4736,6 +4726,10 @@
                 <node concept="1XD0df" id="1qppQtOXNc3" role="21Pmik" />
               </node>
             </node>
+          </node>
+          <node concept="1XD0k3" id="7_V53yHi4Br" role="21Pkll">
+            <property role="1XD01s" value=".0" />
+            <property role="3koUUc" value="true" />
           </node>
         </node>
       </node>
@@ -4861,17 +4855,9 @@
                       </node>
                     </node>
                     <node concept="1XD0eI" id="1qppQtOYaO0" role="TWiod">
-                      <node concept="1NbEFs" id="7M9bJcAskWn" role="1XD0ZN">
-                        <ref role="AarEw" to="0:~.TODO(String)" resolve="TODO" />
-                        <node concept="1XD0eI" id="7M9bJcAslXH" role="TWiod">
-                          <node concept="1XD08G" id="7M9bJcAsklF" role="1XD0ZN">
-                            <node concept="Df6$J" id="5yEpxXMpJwR" role="Df6Hu">
-                              <node concept="21VMdE" id="7M9bJcAsklG" role="Df7GE">
-                                <property role="21VMdD" value="25.0F" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
+                      <node concept="1XD0k3" id="7_V53yHae8s" role="1XD0ZN">
+                        <property role="1XD01s" value="25.0" />
+                        <property role="3koUUc" value="true" />
                       </node>
                     </node>
                   </node>
@@ -4889,17 +4875,9 @@
                       </node>
                     </node>
                     <node concept="1XD0eI" id="1qppQtOYcEA" role="TWiod">
-                      <node concept="1NbEFs" id="7M9bJcAsmRX" role="1XD0ZN">
-                        <ref role="AarEw" to="0:~.TODO(String)" resolve="TODO" />
-                        <node concept="1XD0eI" id="7M9bJcAsnTZ" role="TWiod">
-                          <node concept="1XD08G" id="7M9bJcAsmhf" role="1XD0ZN">
-                            <node concept="Df6$J" id="5yEpxXMpJwT" role="Df6Hu">
-                              <node concept="21VMdE" id="7M9bJcAsmhg" role="Df7GE">
-                                <property role="21VMdD" value="29.0F" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
+                      <node concept="1XD0k3" id="7_V53yHbEWT" role="1XD0ZN">
+                        <property role="1XD01s" value="29.0" />
+                        <property role="3koUUc" value="true" />
                       </node>
                     </node>
                   </node>
@@ -4917,17 +4895,9 @@
                       </node>
                     </node>
                     <node concept="1XD0eI" id="1qppQtOYeWj" role="TWiod">
-                      <node concept="1NbEFs" id="7M9bJcAsoQP" role="1XD0ZN">
-                        <ref role="AarEw" to="0:~.TODO(String)" resolve="TODO" />
-                        <node concept="1XD0eI" id="7M9bJcAspdU" role="TWiod">
-                          <node concept="1XD08G" id="7M9bJcAsohL" role="1XD0ZN">
-                            <node concept="Df6$J" id="5yEpxXMpJwV" role="Df6Hu">
-                              <node concept="21VMdE" id="7M9bJcAsohM" role="Df7GE">
-                                <property role="21VMdD" value="12.0F" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
+                      <node concept="1XD0k3" id="7_V53yHbGb2" role="1XD0ZN">
+                        <property role="1XD01s" value="12.0" />
+                        <property role="3koUUc" value="true" />
                       </node>
                     </node>
                   </node>
