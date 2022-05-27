@@ -13,6 +13,7 @@
     <import index="hez" ref="r:b038209d-51a9-4919-b6e5-4fafce96fa00(jetbrains.mps.kotlin.behavior)" />
     <import index="sjya" ref="r:8a99441d-539c-493f-b884-7b6b084d024b(jetbrains.mps.kotlin.scopes.signed)" />
     <import index="2q9i" ref="r:764c4c95-d567-4a0e-99be-3892becb007f(jetbrains.mps.kotlin.api.members)" />
+    <import index="tbhz" ref="r:7d051f7f-1a28-4ed6-9de6-95fd49d3fa23(jetbrains.mps.kotlin.scopes)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
   </imports>
@@ -320,9 +321,9 @@
           <node concept="2YIFZM" id="FkvPB76P1M" role="3cqZAk">
             <ref role="1Pybhc" to="sjya:6Ijh6DJE7jt" resolve="HidingBySignatureScope" />
             <ref role="37wK5l" to="sjya:3HHsmlMOXmx" resolve="of" />
-            <node concept="2YIFZM" id="6nK3tkag$d5" role="37wK5m">
-              <ref role="1Pybhc" to="hez:2t96AMoHiRy" resolve="SignatureScopeHelper" />
-              <ref role="37wK5l" to="hez:2t96AMoH$Wl" resolve="getFunctionScopeParts" />
+            <node concept="2YIFZM" id="7XIUL68CtnZ" role="37wK5m">
+              <ref role="37wK5l" to="sjya:2t96AMoH$Wl" resolve="getFunctionScopeParts" />
+              <ref role="1Pybhc" to="sjya:2t96AMoHiRy" resolve="SignatureScopeHelper" />
               <node concept="37vLTw" id="6nK3tkag$d6" role="37wK5m">
                 <ref role="3cqZAo" node="6nK3tkagzIv" resolve="receiver" />
               </node>
