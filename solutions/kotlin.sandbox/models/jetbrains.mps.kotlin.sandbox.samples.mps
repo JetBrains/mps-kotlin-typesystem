@@ -22,7 +22,7 @@
       </concept>
       <concept id="1243006380186882004" name="jetbrains.mps.kotlin.structure.IsOperator" flags="ng" index="21Pkhz" />
       <concept id="1243006380186881811" name="jetbrains.mps.kotlin.structure.IdentityOperator" flags="ng" index="21Pki$" />
-      <concept id="1243006380186881810" name="jetbrains.mps.kotlin.structure.Conjunction" flags="ng" index="21Pki_" />
+      <concept id="1243006380186881810" name="jetbrains.mps.kotlin.structure.AndExpression" flags="ng" index="21Pki_" />
       <concept id="1243006380186881759" name="jetbrains.mps.kotlin.structure.BinaryExpression" flags="ng" index="21PklC">
         <child id="1243006380186881762" name="right" index="21Pkll" />
         <child id="1243006380186881760" name="left" index="21Pkln" />
@@ -57,6 +57,7 @@
       <concept id="5032507314957736995" name="jetbrains.mps.kotlin.structure.EqualsOperation" flags="ng" index="giPau" />
       <concept id="5032507314956342004" name="jetbrains.mps.kotlin.structure.PlusOperation" flags="ng" index="gk1L9" />
       <concept id="5032507314956341989" name="jetbrains.mps.kotlin.structure.RangeToOperation" flags="ng" index="gk1Lo" />
+      <concept id="5032507314956342154" name="jetbrains.mps.kotlin.structure.UnaryMinusOperation" flags="ng" index="gk1OR" />
       <concept id="5032507314956342259" name="jetbrains.mps.kotlin.structure.NotContainedOperation" flags="ng" index="gk1Pe" />
       <concept id="5032507314956342244" name="jetbrains.mps.kotlin.structure.ContainedOperation" flags="ng" index="gk1Pp" />
       <concept id="5032507314956342214" name="jetbrains.mps.kotlin.structure.PostfixIncOperation" flags="ng" index="gk1PV" />
@@ -2754,8 +2755,11 @@
             <node concept="1XD0k7" id="rbYB7QmpqQ" role="1aUoBw">
               <property role="1XD01k" value="99" />
             </node>
-            <node concept="1XD0k7" id="rbYB7Qmpr1" role="1aUoBw">
-              <property role="1XD01k" value="-42" />
+            <node concept="gk1OR" id="77yS8CrAAj$" role="1aUoBw">
+              <ref role="1ap9JL" to="0:~Int.unaryMinus()" resolve="unaryMinus" />
+              <node concept="1XD0k7" id="rbYB7Qmpr1" role="21Pmik">
+                <property role="1XD01k" value="42" />
+              </node>
             </node>
             <node concept="UZU4S" id="rbYB7Qmpql" role="21Pmik">
               <ref role="UZU4V" node="4FOkRjXXaC$" resolve="max" />
@@ -5820,8 +5824,11 @@
             </node>
           </node>
           <node concept="1XD0eI" id="5b2DnJ7cXZi" role="TWiod">
-            <node concept="1XD0k7" id="5b2DnJ7cY0g" role="1XD0ZN">
-              <property role="1XD01k" value="-2" />
+            <node concept="gk1OR" id="77yS8CrAAj_" role="1XD0ZN">
+              <ref role="1ap9JL" to="0:~Int.unaryMinus()" resolve="unaryMinus" />
+              <node concept="1XD0k7" id="5b2DnJ7cY0g" role="21Pmik">
+                <property role="1XD01k" value="2" />
+              </node>
             </node>
           </node>
           <node concept="1XD0eI" id="5b2DnJ7cY2a" role="TWiod">
@@ -5830,8 +5837,11 @@
             </node>
           </node>
           <node concept="1XD0eI" id="5b2DnJ7cY2k" role="TWiod">
-            <node concept="1XD0k7" id="5b2DnJ7cY2K" role="1XD0ZN">
-              <property role="1XD01k" value="-4" />
+            <node concept="gk1OR" id="77yS8CrAAjA" role="1XD0ZN">
+              <ref role="1ap9JL" to="0:~Int.unaryMinus()" resolve="unaryMinus" />
+              <node concept="1XD0k7" id="5b2DnJ7cY2K" role="21Pmik">
+                <property role="1XD01k" value="4" />
+              </node>
             </node>
           </node>
           <node concept="1XD0eI" id="5b2DnJ7cY2$" role="TWiod">
@@ -5840,8 +5850,11 @@
             </node>
           </node>
           <node concept="1XD0eI" id="5b2DnJ7cY2M" role="TWiod">
-            <node concept="1XD0k7" id="5b2DnJ7cY3i" role="1XD0ZN">
-              <property role="1XD01k" value="-6" />
+            <node concept="gk1OR" id="77yS8CrAAjB" role="1XD0ZN">
+              <ref role="1ap9JL" to="0:~Int.unaryMinus()" resolve="unaryMinus" />
+              <node concept="1XD0k7" id="5b2DnJ7cY3i" role="21Pmik">
+                <property role="1XD01k" value="6" />
+              </node>
             </node>
           </node>
         </node>

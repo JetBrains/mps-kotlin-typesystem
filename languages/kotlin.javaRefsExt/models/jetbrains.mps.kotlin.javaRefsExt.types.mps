@@ -10,9 +10,8 @@
     <import index="fefm" ref="r:1007e072-ac19-4b13-85dc-0e4118398cf2(jetbrains.mps.kotlinExt.types)" />
     <import index="5m2i" ref="r:13d34207-1d05-4df8-92a6-7cde496142db(jetbrains.mps.kotlin.javaRefs.structure)" />
     <import index="akzu" ref="r:13fdb710-e0ae-40a1-880c-e26a8ee8d411(jetbrains.mps.kotlin.baseLanguage.toKotlin)" />
-    <import index="d5k6" ref="r:e9005ea6-e4e0-4b7f-8b34-6e6513630cda(jetbrains.mps.kotlin.baseLanguage.typeConversion)" />
     <import index="mx11" ref="r:fa9de6a8-90b7-4d2a-a9a9-a40c05cf603b(jetbrains.mps.kotlin.api.types.identifiers)" />
-    <import index="hcm8" ref="r:72a7bf00-0175-42ca-b99b-fe8519b6a16f(jetbrains.mps.kotlin.structure)" implicit="true" />
+    <import index="hcm8" ref="r:72a7bf00-0175-42ca-b99b-fe8519b6a16f(jetbrains.mps.kotlin.structure)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -35,9 +34,6 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
-      </concept>
-      <concept id="1201385106094" name="jetbrains.mps.baseLanguage.structure.PropertyReference" flags="nn" index="2S8uIT">
-        <reference id="1201385237847" name="property" index="2S8YL0" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -640,24 +636,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2n1mrwy3LOs" role="3cqZAp" />
-        <node concept="3cpWs8" id="3lDDPlnj2q1" role="3cqZAp">
-          <node concept="3cpWsn" id="3lDDPlnj2q2" role="3cpWs9">
-            <property role="TrG5h" value="javaToKt" />
-            <node concept="3uibUv" id="3lDDPlnj2l6" role="1tU5fm">
-              <ref role="3uigEE" to="akzu:6zWVWr2aCAr" resolve="JavaToKtEngine" />
-            </node>
-            <node concept="2OqwBi" id="3lDDPlnj2q3" role="33vP2m">
-              <node concept="2YIFZM" id="3lDDPlnj2q4" role="2Oq$k0">
-                <ref role="37wK5l" to="d5k6:4mCQDm_CkK3" resolve="getInstance" />
-                <ref role="1Pybhc" to="d5k6:4mCQDm_yPpU" resolve="TypeConversionService" />
-              </node>
-              <node concept="2S8uIT" id="3lDDPlnj2q5" role="2OqNvi">
-                <ref role="2S8YL0" to="d5k6:4mCQDm__ai2" resolve="javaToKt" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="2n1mrwy3NIf" role="3cqZAp" />
         <node concept="3Hbl2A" id="27wMicCOSfx" role="3cqZAp">
           <node concept="3clFbS" id="27wMicCOSfz" role="9aQI4">
@@ -769,9 +747,6 @@
                                             <ref role="37wK5l" to="akzu:4W0pdSCM4tT" resolve="JavaTypeParameterDeclaration" />
                                             <node concept="37vLTw" id="3lDDPlnj1n0" role="37wK5m">
                                               <ref role="3cqZAo" node="3lDDPlnj0pT" resolve="it" />
-                                            </node>
-                                            <node concept="37vLTw" id="3lDDPlnj37d" role="37wK5m">
-                                              <ref role="3cqZAo" node="3lDDPlnj2q2" resolve="javaToKt" />
                                             </node>
                                           </node>
                                         </node>
