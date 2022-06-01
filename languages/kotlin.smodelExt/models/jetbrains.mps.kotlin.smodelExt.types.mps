@@ -181,12 +181,6 @@
       <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
         <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
       </concept>
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
-      </concept>
-      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
-        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
-      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -440,17 +434,7 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7XIUL681mhe" role="3cqZAp">
-          <node concept="3cpWsn" id="7XIUL681mhh" role="3cpWs9">
-            <property role="TrG5h" value="c" />
-            <node concept="3bZ5Sz" id="7XIUL681mhc" role="1tU5fm">
-              <ref role="3bZ5Sy" to="tpck:gw2VY9q" resolve="BaseConcept" />
-            </node>
-            <node concept="35c_gC" id="7XIUL681mzF" role="33vP2m">
-              <ref role="35c_gD" to="hcm8:2Aaqzls4g9O" resolve="IClassLike" />
-            </node>
-          </node>
-        </node>
+        <node concept="3clFbH" id="3PNJzGuxyy0" role="3cqZAp" />
         <node concept="3SKdUt" id="7HQvI2Sh4XJ" role="3cqZAp">
           <node concept="1PaTwC" id="7HQvI2Sh4XK" role="1aUNEU">
             <node concept="3oM_SD" id="7HQvI2Sh50w" role="1PaTwD">
@@ -950,7 +934,7 @@
                               <node concept="37jhX" id="abwK8ktWRi" role="iSaTp">
                                 <node concept="2tJFMh" id="abwK8ktWRf" role="37jj2">
                                   <node concept="ZC_QK" id="abwK8ktWSL" role="2tJFKM">
-                                    <ref role="2aWVGs" to="vzxy:75chmMYrBI9" resolve="NodeType" />
+                                    <ref role="2aWVGs" to="mhbf:~SNode" resolve="SNode" />
                                   </node>
                                 </node>
                               </node>
