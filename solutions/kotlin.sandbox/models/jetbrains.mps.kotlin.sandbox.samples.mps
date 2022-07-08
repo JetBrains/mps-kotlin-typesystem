@@ -4053,7 +4053,7 @@
             <property role="3oM_SC" value="TODO" />
           </node>
           <node concept="3oM_SD" id="7M9bJcArHPU" role="1PaTwD">
-            <property role="3oM_SC" value="typesystem" />
+            <property role="3oM_SC" value="typesystem/scope" />
           </node>
           <node concept="3oM_SD" id="7M9bJcArHPX" role="1PaTwD">
             <property role="3oM_SC" value="issue" />
