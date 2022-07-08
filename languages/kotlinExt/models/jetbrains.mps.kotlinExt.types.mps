@@ -17080,7 +17080,7 @@
             <node concept="2qgKlT" id="1hJVIB$kbQy" role="2OqNvi">
               <ref role="37wK5l" to="hez:4f4W8JpwgWV" resolve="populateSubstitutions" />
               <node concept="37vLTw" id="1hJVIB$kbVu" role="37wK5m">
-                <ref role="3cqZAo" node="1hJVIB$kaM3" resolve="subs" />
+                <ref role="3cqZAo" node="1hJVIB$kaM3" resolve="nodeSubs" />
               </node>
             </node>
           </node>
@@ -17093,7 +17093,7 @@
             </node>
             <node concept="2OqwBi" id="1hJVIB$kigp" role="33vP2m">
               <node concept="37vLTw" id="1hJVIB$kigq" role="2Oq$k0">
-                <ref role="3cqZAo" node="1hJVIB$kaM3" resolve="subs" />
+                <ref role="3cqZAo" node="1hJVIB$kaM3" resolve="nodeSubs" />
               </node>
               <node concept="liA8E" id="1hJVIB$kigr" role="2OqNvi">
                 <ref role="37wK5l" to="hez:27wMicCCjIt" resolve="expand" />
@@ -39299,7 +39299,7 @@
                             <ref role="3cqZAo" node="1hJVIB$FEol" resolve="reference" />
                           </node>
                           <node concept="a7P8L" id="1hJVIB$FEpg" role="3jm6SO">
-                            <ref role="a7OzE" node="1hJVIB$FEoU" resolve="Type" />
+                            <ref role="a7OzE" node="1hJVIB$FEoU" resolve="ThisType" />
                           </node>
                         </node>
                       </node>
@@ -39311,7 +39311,7 @@
                         <node concept="3Aqt3T" id="1hJVIB$G5Q3" role="3I6s78">
                           <ref role="3AqCNq" node="1hJVIB$FG1o" resolve="primarySuperTypeOf" />
                           <node concept="a7P8L" id="1hJVIB$G5QH" role="3AunhB">
-                            <ref role="a7OzE" node="1hJVIB$FEoU" resolve="Type" />
+                            <ref role="a7OzE" node="1hJVIB$FEoU" resolve="ThisType" />
                           </node>
                           <node concept="a7P8L" id="1hJVIB$G72$" role="3AunhB">
                             <ref role="a7OzE" node="1hJVIB$G5T6" resolve="SuperType" />
@@ -63858,7 +63858,7 @@
                             <ref role="3cqZAo" node="1hJVIB$FZao" resolve="subs" />
                           </node>
                           <node concept="37vLTw" id="1hJVIB$G2RC" role="3jicU7">
-                            <ref role="3cqZAo" node="1hJVIB$G2R$" resolve="typeParameterDescriptors" />
+                            <ref role="3cqZAo" node="1hJVIB$G2R$" resolve="typeParameters" />
                           </node>
                           <node concept="a7P8L" id="1hJVIB$FZyv" role="3jm6SO">
                             <ref role="a7OzE" node="1hJVIB$FRc1" resolve="TypeParam" />
@@ -63880,7 +63880,7 @@
                             </node>
                           </node>
                           <node concept="37vLTw" id="1hJVIB$Ib1n" role="3jbY8P">
-                            <ref role="3cqZAo" node="1hJVIB$FOL$" resolve="inheritedType" />
+                            <ref role="3cqZAo" node="1hJVIB$FOL$" resolve="superClassType" />
                           </node>
                         </node>
                       </node>
