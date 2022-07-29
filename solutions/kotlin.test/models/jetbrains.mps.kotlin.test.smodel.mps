@@ -158,7 +158,6 @@
         <property id="1243006380187810091" name="nullSafe" index="21SRas" />
         <child id="2936055411798374203" name="target" index="1XD07G" />
       </concept>
-      <concept id="2936055411798373441" name="jetbrains.mps.kotlin.structure.IType" flags="ng" index="1XD0am" />
       <concept id="2936055411798373481" name="jetbrains.mps.kotlin.structure.ClassDeclaration" flags="ng" index="1XD0aY">
         <child id="2324909103763444261" name="primaryConstructor" index="KDYUA" />
       </concept>
@@ -250,9 +249,6 @@
       </concept>
       <concept id="898881083035823295" name="jetbrains.mps.kotlin.smodel.structure.PropertyAccessExpression" flags="ng" index="HO_GE">
         <reference id="898881083035861997" name="property" index="HOFhS" />
-      </concept>
-      <concept id="2461357008640164221" name="jetbrains.mps.kotlin.smodel.structure.VariableConceptType" flags="ng" index="2RgzTl">
-        <child id="2461357008640189144" name="expression" index="2RgHRK" />
       </concept>
       <concept id="2461357008640152274" name="jetbrains.mps.kotlin.smodel.structure.ConceptType" flags="ng" index="2RgARU">
         <reference id="2461357008640155241" name="concept" index="2RgA51" />
@@ -2322,15 +2318,7 @@
               <property role="1Xb$ne" value="true" />
               <node concept="2Rs4SG" id="7dX2GvaINwO" role="2Rs2$5">
                 <property role="TrG5h" value="myNodeType" />
-                <node concept="3f8zV_" id="7dX2GvaIOQg" role="1XD0Z0">
-                  <node concept="1XD0kr" id="7dX2GvaIOQq" role="2Rg2xS">
-                    <node concept="2RgzTl" id="7dX2GvaIOQn" role="1XD02C">
-                      <node concept="1XD0em" id="7dX2GvaIPJH" role="2RgHRK">
-                        <node concept="1XD0am" id="7dX2GvaIPSh" role="1XD0Sn" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
+                <node concept="3f8zV_" id="7dX2GvaIOQg" role="1XD0Z0" />
               </node>
             </node>
           </node>

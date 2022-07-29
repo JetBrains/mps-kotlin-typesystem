@@ -15,6 +15,9 @@
       <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
         <property id="6666499814681541920" name="text" index="2pMdty" />
       </concept>
+      <concept id="6666499814681299066" name="jetbrains.mps.core.xml.structure.XmlCDATA" flags="ng" index="2pNm8S">
+        <property id="1622293396948985395" name="content" index="3o6aOc" />
+      </concept>
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
         <child id="6666499814681415861" name="attributes" index="2pNNFR" />
@@ -342,14 +345,14 @@
         <node concept="2pNUuL" id="11H_0IugNYK" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
           <node concept="2pMdtt" id="11H_0IugNYL" role="2pMdts">
-            <property role="2pMdty" value="213.6778" />
+            <property role="2pMdty" value="222.1" />
           </node>
         </node>
-        <node concept="2pNUuL" id="3MN9Zh_WyvB" role="2pNNFR">
-          <property role="2pNUuO" value="until-build" />
-          <node concept="2pMdtt" id="3MN9Zh_WyvC" role="2pMdts">
-            <property role="2pMdty" value="221.1" />
-          </node>
+      </node>
+      <node concept="2pNNFK" id="1c8EeOQUqay" role="20twgj">
+        <property role="2pNNFO" value="change-notes" />
+        <node concept="2pNm8S" id="1c8EeOQUqaz" role="3o6s8t">
+          <property role="3o6aOc" value="&lt;ul&gt; &lt;li&gt;Support of lambdas inference&lt;/li&gt; &lt;li&gt;Contextual 'this' or implicit type support (including in lambdas with receiver)&lt;/li&gt; &lt;li&gt;Support for Kotlin SModel language&lt;/li&gt; &lt;li&gt;Improved extensibility and bug fixes&lt;/li&gt; &lt;/ul&gt;" />
         </node>
       </node>
       <node concept="3_J27D" id="69s32WJ3dwI" role="3s6cr7">

@@ -19,6 +19,7 @@
     <import index="1xrd" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.collections(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -298,6 +299,10 @@
       <concept id="2936055411801360063" name="jetbrains.mps.kotlin.structure.InterfaceDeclaration" flags="ng" index="1XXB1C" />
     </language>
     <language id="eb56ebf4-df56-438e-af06-fc1cd08b495a" name="jetbrains.mps.kotlin.smodel">
+      <concept id="3181756179490075795" name="jetbrains.mps.kotlin.smodel.structure.PropertyReference" flags="ng" index="kjMFK">
+        <reference id="3181756179490075797" name="link" index="kjMFQ" />
+        <reference id="3181756179490075796" name="concept" index="kjMFR" />
+      </concept>
       <concept id="3623333307432134200" name="jetbrains.mps.kotlin.smodel.structure.NodeReferenceType" flags="ng" index="m7sLa" />
       <concept id="5594483833294516546" name="jetbrains.mps.kotlin.smodel.structure.ConceptTypeParameter" flags="ng" index="2szew_" />
       <concept id="2461357008640152274" name="jetbrains.mps.kotlin.smodel.structure.ConceptType" flags="ng" index="2RgARU">
@@ -665,6 +670,39 @@
       </node>
       <node concept="2szew_" id="2ul4aX9ek0L" role="1XPbGx">
         <property role="TrG5h" value="U" />
+      </node>
+    </node>
+    <node concept="eKYAL" id="4Ive3RApu8o" role="1XD0Tu" />
+    <node concept="1XD0bz" id="4Ive3RApxjp" role="1XD0Tu">
+      <property role="TrG5h" value="getNameHelper" />
+      <node concept="1XD0a7" id="4Ive3RApBJ9" role="THmaL">
+        <node concept="2yQVVM" id="4Ive3RApBUF" role="1XD07G">
+          <ref role="2yQV70" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty)" resolve="getProperty" />
+          <node concept="1XD0eI" id="4Ive3RApCU4" role="TWiod">
+            <node concept="kjMFK" id="4Ive3RApCU3" role="1XD0ZN">
+              <ref role="kjMFR" to="tpck:h0TrEE$" resolve="INamedConcept" />
+              <ref role="kjMFQ" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="UZU4S" id="4Ive3RApBdL" role="21Pmik">
+          <ref role="UZU4V" node="4Ive3RApxUB" resolve="node" />
+        </node>
+      </node>
+      <node concept="1XD0l0" id="4Ive3RApxjs" role="2BPcuh" />
+      <node concept="1XD08$" id="4Ive3RApxjt" role="ICcUN" />
+      <node concept="1XD0bi" id="4Ive3RApxUB" role="1XbAXm">
+        <property role="TrG5h" value="node" />
+        <node concept="3f8zV_" id="4Ive3RApxY5" role="37iW8f">
+          <node concept="1XD0kr" id="4Ive3RApyrb" role="2Rg2xS">
+            <node concept="9pJMI" id="4Ive3RApyr9" role="1XD02C">
+              <ref role="9pJMH" node="4Ive3RApy6s" resolve="T" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2szew_" id="4Ive3RApy6s" role="1XPbGx">
+        <property role="TrG5h" value="T" />
       </node>
     </node>
     <node concept="eKYAL" id="7gSKPA1yeWE" role="1XD0Tu" />
