@@ -1713,7 +1713,7 @@
             <node concept="2OqwBi" id="Aa0Z148u1b" role="33vP2m">
               <node concept="2OqwBi" id="Aa0Z148u1c" role="2Oq$k0">
                 <node concept="3j8tct" id="Aa0Z148u1d" role="2Oq$k0">
-                  <ref role="3j8tcu" node="Aa0Z148u1D" resolve="nodeType" />
+                  <ref role="3j8tcu" node="Aa0Z148u1D" resolve="projectedType" />
                 </node>
                 <node concept="2qgKlT" id="Aa0Z148u1e" role="2OqNvi">
                   <ref role="37wK5l" to="hez:7an2tsIdpkM" resolve="getTypeParameters" />
@@ -1734,7 +1734,7 @@
             </node>
             <node concept="2OqwBi" id="Aa0Z148u1k" role="3jicU7">
               <node concept="3j8tct" id="Aa0Z148u1l" role="2Oq$k0">
-                <ref role="3j8tcu" node="Aa0Z148u1D" resolve="nodeType" />
+                <ref role="3j8tcu" node="Aa0Z148u1D" resolve="projectedType" />
               </node>
               <node concept="3TrEf2" id="Aa0Z148u1m" role="2OqNvi">
                 <ref role="3Tt5mk" to="vzxy:Aa0Z14hqUI" resolve="projection" />
@@ -1759,7 +1759,7 @@
                     <node concept="2OqwBi" id="Aa0Z14mKsw" role="2Oq$k0">
                       <node concept="2OqwBi" id="Aa0Z14mK2V" role="2Oq$k0">
                         <node concept="3j8tct" id="Aa0Z14mJUT" role="2Oq$k0">
-                          <ref role="3j8tcu" node="Aa0Z148u1D" resolve="nodeRefType" />
+                          <ref role="3j8tcu" node="Aa0Z148u1D" resolve="projectedType" />
                         </node>
                         <node concept="2yIwOk" id="Aa0Z14mKeY" role="2OqNvi" />
                       </node>
