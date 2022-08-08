@@ -6,7 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="2405a196-e75d-462c-938b-ae8e3fac20aa" name="jetbrains.mps.baseLanguage.kotlinRefs" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="7" />
+    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="8" />
     <use id="eb56ebf4-df56-438e-af06-fc1cd08b495a" name="jetbrains.mps.kotlin.smodel" version="0" />
     <use id="9e4ff22b-60f1-43ef-a50b-f9f0fcec22e0" name="jetbrains.mps.kotlin.javaRefs" version="0" />
   </languages>
@@ -265,6 +265,7 @@
         <child id="2936055411798374738" name="right" index="1XD0Y5" />
         <child id="2936055411798374735" name="left" index="1XD0Yo" />
       </concept>
+      <concept id="2936055411798373784" name="jetbrains.mps.kotlin.structure.ThisExpression" flags="ng" index="1XD0df" />
       <concept id="2936055411798373726" name="jetbrains.mps.kotlin.structure.ReturnExpression" flags="ng" index="1XD0e9">
         <child id="2936055411798374640" name="returned" index="1XD0SB" />
       </concept>
@@ -272,7 +273,10 @@
       <concept id="2936055411798373753" name="jetbrains.mps.kotlin.structure.ValueArgument" flags="ng" index="1XD0eI">
         <child id="2936055411798374692" name="expression" index="1XD0ZN" />
       </concept>
-      <concept id="2936055411798373655" name="jetbrains.mps.kotlin.structure.LambdaLiteral" flags="ng" index="1XD0f0" />
+      <concept id="2936055411798373655" name="jetbrains.mps.kotlin.structure.LambdaLiteral" flags="ng" index="1XD0f0">
+        <child id="4032162997650628191" name="_thisTypeHolder_hack" index="Sxo2X" />
+        <child id="4032162997650633732" name="_itTypeHolder_hack" index="SxqFA" />
+      </concept>
       <concept id="2936055411798373690" name="jetbrains.mps.kotlin.structure.ClassParameter" flags="ng" index="1XD0fH">
         <property id="1243006380188597514" name="isReadOnly" index="21VRqX" />
         <property id="1243006380188597512" name="isProperty" index="21VRqZ" />
@@ -578,6 +582,8 @@
                     </node>
                   </node>
                 </node>
+                <node concept="1XD0df" id="3vP7I8fMa$G" role="SxqFA" />
+                <node concept="1XD0df" id="3vP7I8fMa$H" role="Sxo2X" />
               </node>
             </node>
             <node concept="1NbEFs" id="7gSKPA1yt2$" role="21Pmik">
@@ -593,8 +599,12 @@
       </node>
       <node concept="1XD0bi" id="2CxlH6FzWi6" role="1XbAXm">
         <property role="TrG5h" value="klass" />
-        <node concept="19UT3g" id="2CxlH6FzWqN" role="37iW8f">
-          <ref role="19UTlH" to="hcm8:2Aaqzls4g9O" resolve="IClassLike" />
+        <node concept="3f8zV_" id="3vP7I8fqkGv" role="37iW8f">
+          <node concept="1XD0kr" id="3vP7I8fqkGw" role="2Rg2xS">
+            <node concept="2RgARU" id="3vP7I8fqkGx" role="1XD02C">
+              <ref role="2RgA51" to="hcm8:2Aaqzls4g9O" resolve="IClassLike" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1XD0bi" id="2CxlH6FzYmN" role="1XbAXm">

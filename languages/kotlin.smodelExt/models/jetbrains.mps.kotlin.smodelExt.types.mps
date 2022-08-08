@@ -2165,7 +2165,7 @@
                     <node concept="3clFbC" id="69K7DDmjuk$" role="3wWo3s">
                       <node concept="Rm8GO" id="69K7DDmj$Yb" role="3uHU7w">
                         <ref role="Rm8GQ" to="fefm:1SYA9vMCSfm" resolve="FIRST_COME_FIRST_SERVE_INFER" />
-                        <ref role="1Px2BO" to="fefm:1SYA9vMCS38" resolve="VarHandling" />
+                        <ref role="1Px2BO" to="fefm:1SYA9vMCS38" resolve="ConversionContext.VarHandling" />
                       </node>
                       <node concept="2OqwBi" id="69K7DDmjtFT" role="3uHU7B">
                         <node concept="1Ft4W6" id="69K7DDmjtA6" role="2Oq$k0">
