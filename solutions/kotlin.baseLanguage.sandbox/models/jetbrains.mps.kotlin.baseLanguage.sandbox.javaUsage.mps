@@ -197,7 +197,10 @@
         <reference id="1243006380188956795" name="parameter" index="21Xffc" />
         <child id="2936055411798374692" name="expression" index="1XD0ZN" />
       </concept>
-      <concept id="2936055411798373655" name="jetbrains.mps.kotlin.structure.LambdaLiteral" flags="ng" index="1XD0f0" />
+      <concept id="2936055411798373655" name="jetbrains.mps.kotlin.structure.LambdaLiteral" flags="ng" index="1XD0f0">
+        <child id="4032162997650628191" name="_thisTypeHolder_hack" index="Sxo2X" />
+        <child id="4032162997650633732" name="_itTypeHolder_hack" index="SxqFA" />
+      </concept>
       <concept id="2936055411798373673" name="jetbrains.mps.kotlin.structure.KotlinFile" flags="ng" index="1XD0fY">
         <child id="2936055411798374537" name="declarations" index="1XD0Tu" />
       </concept>
@@ -367,6 +370,8 @@
                   </node>
                 </node>
               </node>
+              <node concept="1XD0df" id="3vP7I8fMazc" role="SxqFA" />
+              <node concept="1XD0df" id="3vP7I8fMazd" role="Sxo2X" />
             </node>
           </node>
         </node>
