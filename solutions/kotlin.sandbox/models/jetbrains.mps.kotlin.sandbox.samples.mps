@@ -2337,15 +2337,6 @@
           </node>
         </node>
       </node>
-      <node concept="gk1L9" id="1$jFvlClNgM" role="THmaL">
-        <ref role="1ap9JL" to="0:~Int.plus(Int)" resolve="plus" />
-        <node concept="1XD0k7" id="1$jFvlClNgR" role="21Pkll">
-          <property role="1XD01k" value="3" />
-        </node>
-        <node concept="1XD0k7" id="1$jFvlClNbT" role="21Pkln">
-          <property role="1XD01k" value="3" />
-        </node>
-      </node>
       <node concept="AQkLs" id="rbYB7R3Hlm" role="THmaL" />
       <node concept="1XD0bM" id="rbYB7QmkKw" role="THmaL">
         <ref role="zbWbu" to="1xrd:~IntIterator.next()" resolve="next" />
