@@ -37,7 +37,6 @@
     <language slang="l:c3bbc54c-f861-4bf9-8758-b6b10f69f85f:jetbrains.mps.kotlin.hack" version="0" />
     <language slang="l:9e4ff22b-60f1-43ef-a50b-f9f0fcec22e0:jetbrains.mps.kotlin.javaRefs" version="0" />
     <language slang="l:eb56ebf4-df56-438e-af06-fc1cd08b495a:jetbrains.mps.kotlin.smodel" version="0" />
-    <language slang="l:ad107ed1-c106-497e-a6e8-dabd35b05857:jetbrains.mps.kotlinExt" version="0" />
     <language slang="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />

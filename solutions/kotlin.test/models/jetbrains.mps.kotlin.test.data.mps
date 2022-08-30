@@ -4,7 +4,6 @@
   <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="0b80a2e8-f9f1-47b3-823f-56eb115bca42" name="jetbrains.mps.typechecking.annotation" version="0" />
-    <use id="ad107ed1-c106-497e-a6e8-dabd35b05857" name="jetbrains.mps.kotlinExt" version="0" />
     <devkit ref="3605c367-b661-48bf-8131-d9bd75494e4d(jetbrains.mps.devkit.kotlin)" />
   </languages>
   <imports>

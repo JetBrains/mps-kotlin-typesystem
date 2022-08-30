@@ -537,11 +537,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
-        <node concept="1SiIV0" id="74qBZh4PTQs" role="3bR37C">
-          <node concept="3bR9La" id="74qBZh4PTQt" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:Ye$g8PO9xV" resolve="jetbrains.mps.kotlin.stdlib" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="74qBZh4PTQ$" role="3bR37C">
           <node concept="1Busua" id="74qBZh4PTQ_" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:1G33vFC9d3f" resolve="jetbrains.mps.kotlin.smodel" />

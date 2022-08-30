@@ -5,7 +5,6 @@
   <languages>
     <use id="eb56ebf4-df56-438e-af06-fc1cd08b495a" name="jetbrains.mps.kotlin.smodel" version="0" />
     <use id="0b80a2e8-f9f1-47b3-823f-56eb115bca42" name="jetbrains.mps.typechecking.annotation" version="0" />
-    <use id="ad107ed1-c106-497e-a6e8-dabd35b05857" name="jetbrains.mps.kotlinExt" version="0" />
     <devkit ref="4866b4b4-6ecd-49f3-ae68-c62248cc4306(jetbrains.mps.devkit.kotlin.jvm)" />
   </languages>
   <imports>
