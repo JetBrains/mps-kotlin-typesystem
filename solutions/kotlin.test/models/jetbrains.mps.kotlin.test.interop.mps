@@ -143,6 +143,9 @@
         <child id="2936055411798374738" name="right" index="1XD0Y5" />
         <child id="2936055411798374735" name="left" index="1XD0Yo" />
       </concept>
+      <concept id="2936055411798373698" name="jetbrains.mps.kotlin.structure.INullableType" flags="ng" index="1XD0el">
+        <property id="6234117012688354198" name="isNullable" index="3V1zfM" />
+      </concept>
       <concept id="2936055411798373745" name="jetbrains.mps.kotlin.structure.VariableDeclaration" flags="ng" index="1XD0eA">
         <child id="2936055411798374679" name="type" index="1XD0Z0" />
       </concept>
@@ -510,6 +513,7 @@
         <node concept="1XD0bi" id="FkvPB6ZXRJ" role="1XbAXm">
           <property role="TrG5h" value="s" />
           <node concept="1XD088" id="FkvPB6ZXTf" role="37iW8f">
+            <property role="3V1zfM" value="true" />
             <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
           </node>
         </node>
