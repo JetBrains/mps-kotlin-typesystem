@@ -352,7 +352,7 @@
       <node concept="2pNNFK" id="1c8EeOQUqay" role="20twgj">
         <property role="2pNNFO" value="change-notes" />
         <node concept="2pNm8S" id="1c8EeOQUqaz" role="3o6s8t">
-          <property role="3o6aOc" value="&lt;ul&gt; &lt;li&gt;Support of lambdas inference&lt;/li&gt; &lt;li&gt;Contextual 'this' or implicit type support (including in lambdas with receiver)&lt;/li&gt; &lt;li&gt;Support for Kotlin SModel language&lt;/li&gt; &lt;li&gt;Improved extensibility and bug fixes&lt;/li&gt; &lt;/ul&gt;" />
+          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Type checking for function return&lt;/li&gt;&lt;li&gt;Fix typing of anonymous functions with body&lt;/li&gt;&lt;/ul&gt;" />
         </node>
       </node>
       <node concept="3_J27D" id="69s32WJ3dwI" role="3s6cr7">
@@ -370,7 +370,6 @@
       <node concept="1E1JtD" id="2b3dSh2EpNK" role="2G$12L">
         <property role="TrG5h" value="jetbrains.mps.kotlinExt" />
         <property role="3LESm3" value="ad107ed1-c106-497e-a6e8-dabd35b05857" />
-        <property role="BnDLt" value="true" />
         <node concept="55IIr" id="2b3dSh2EpNN" role="3LF7KH">
           <node concept="2Ry0Ak" id="2b3dSh2EpO$" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
@@ -410,7 +409,7 @@
         </node>
         <node concept="1SiIV0" id="69s32WJfBN1" role="3bR37C">
           <node concept="3bR9La" id="69s32WJfBN2" role="1SiIV1">
-            <ref role="3bR37D" to="zqd8:65DJywFj0Fi" resolve="jetbrains.mps.coderules.typechecking" />
+            <ref role="3bR37D" to="zqd8:2CPBoDB0Mtg" resolve="jetbrains.mps.coderules.typechecking" />
           </node>
         </node>
         <node concept="1SiIV0" id="7WpE6U5hkS9" role="3bR37C">
