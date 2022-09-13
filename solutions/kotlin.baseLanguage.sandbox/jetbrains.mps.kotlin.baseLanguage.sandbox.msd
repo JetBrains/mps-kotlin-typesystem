@@ -4,9 +4,6 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="/Users/clement.bourdonnaye/Downloads/kotlinx-coroutines-core-1.6.0.jar!/" type="kotlin_common">
-      <sourceRoot location="." />
-    </modelRoot>
   </models>
   <facets>
     <facet type="java">
