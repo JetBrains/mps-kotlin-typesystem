@@ -352,7 +352,7 @@
       <node concept="2pNNFK" id="1c8EeOQUqay" role="20twgj">
         <property role="2pNNFO" value="change-notes" />
         <node concept="2pNm8S" id="1c8EeOQUqaz" role="3o6s8t">
-          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Type checking for function return&lt;/li&gt;&lt;li&gt;Fix typing of anonymous functions with body&lt;/li&gt;&lt;/ul&gt;" />
+          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Support for incremental type checks&lt;/li&gt;&lt;li&gt;Improvement of computation time when using smodel language&lt;/li&gt;&lt;/ul&gt;" />
         </node>
       </node>
       <node concept="3_J27D" id="69s32WJ3dwI" role="3s6cr7">
