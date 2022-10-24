@@ -65,7 +65,7 @@
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
         <idea-version since-build="222.1" />
-        <change-notes><![CDATA[<ul><li>Support for property getter/setter</li><li>Support property type parameters</li><li>Fix type of variable references using class type parameter</li></ul>]]></change-notes>
+        <change-notes><![CDATA[<ul><li>Support of recursive types (Class&lt;T : Class&lt;T&gt;&gt;)</li><li>Support for property getter/setter</li><li>Support property type parameters</li><li>Fix type of variable references using class type parameter</li><li>Fix overload resolution of methods with lambda</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -88,7 +88,7 @@
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
         <idea-version since-build="222.1" />
-        <change-notes><![CDATA[<ul><li>Support for property getter/setter</li><li>Support property type parameters</li><li>Fix type of variable references using class type parameter</li></ul>]]></change-notes>
+        <change-notes><![CDATA[<ul><li>Support of recursive types (Class&lt;T : Class&lt;T&gt;&gt;)</li><li>Support for property getter/setter</li><li>Support property type parameters</li><li>Fix type of variable references using class type parameter</li><li>Fix overload resolution of methods with lambda</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
