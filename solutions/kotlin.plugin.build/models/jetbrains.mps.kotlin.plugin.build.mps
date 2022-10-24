@@ -352,7 +352,7 @@
       <node concept="2pNNFK" id="1c8EeOQUqay" role="20twgj">
         <property role="2pNNFO" value="change-notes" />
         <node concept="2pNm8S" id="1c8EeOQUqaz" role="3o6s8t">
-          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Support for property getter/setter&lt;/li&gt;&lt;li&gt;Support property type parameters&lt;/li&gt;&lt;li&gt;Fix type of variable references using class type parameter&lt;/li&gt;&lt;/ul&gt;" />
+          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Support of recursive types (Class&amp;lt;T : Class&amp;lt;T&amp;gt;&amp;gt;)&lt;/li&gt;&lt;li&gt;Support for property getter/setter&lt;/li&gt;&lt;li&gt;Support property type parameters&lt;/li&gt;&lt;li&gt;Fix type of variable references using class type parameter&lt;/li&gt;&lt;li&gt;Fix overload resolution of methods with lambda&lt;/li&gt;&lt;/ul&gt;" />
         </node>
       </node>
       <node concept="3_J27D" id="69s32WJ3dwI" role="3s6cr7">
