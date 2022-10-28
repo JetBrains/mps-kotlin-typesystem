@@ -4150,5 +4150,70 @@
       </node>
     </node>
   </node>
+  <node concept="1XD0fY" id="GCZnN9KUrd">
+    <property role="TrG5h" value="integers" />
+    <node concept="eKYAL" id="GCZnN9KUre" role="1XD0Tu" />
+    <node concept="1XD0bz" id="GCZnN9KUrj" role="1XD0Tu">
+      <property role="TrG5h" value="integerLiteralTypes" />
+      <node concept="TDTJT" id="GCZnN9KUUQ" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="GCZnN9KUUR" role="2Rs2$5">
+          <property role="TrG5h" value="aByte" />
+          <node concept="1XD088" id="GCZnN9KV2Y" role="1XD0Z0">
+            <ref role="1SePDO" to="0:~kotlin/Byte" resolve="Byte" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="GCZnN9KUUW" role="1XD05H">
+          <node concept="1XD0k7" id="GCZnN9KV2Q" role="1XD0cX">
+            <property role="1XD01k" value="3" />
+          </node>
+        </node>
+      </node>
+      <node concept="TDTJT" id="GCZnN9KV31" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="GCZnN9KV32" role="2Rs2$5">
+          <property role="TrG5h" value="aInt" />
+          <node concept="1XD088" id="GCZnN9KV33" role="1XD0Z0">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="GCZnN9KV34" role="1XD05H">
+          <node concept="1XD0k7" id="GCZnN9KV35" role="1XD0cX">
+            <property role="1XD01k" value="3" />
+          </node>
+        </node>
+      </node>
+      <node concept="TDTJT" id="GCZnN9KV3l" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="GCZnN9KV3m" role="2Rs2$5">
+          <property role="TrG5h" value="aShort" />
+          <node concept="1XD088" id="GCZnN9KV3n" role="1XD0Z0">
+            <ref role="1SePDO" to="0:~kotlin/Short" resolve="Short" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="GCZnN9KV3o" role="1XD05H">
+          <node concept="1XD0k7" id="GCZnN9KV3p" role="1XD0cX">
+            <property role="1XD01k" value="3" />
+          </node>
+        </node>
+      </node>
+      <node concept="TDTJT" id="GCZnN9KV3D" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="GCZnN9KV3E" role="2Rs2$5">
+          <property role="TrG5h" value="aLong" />
+          <node concept="1XD088" id="GCZnN9KV3F" role="1XD0Z0">
+            <ref role="1SePDO" to="0:~kotlin/Long" resolve="Long" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="GCZnN9KV3G" role="1XD05H">
+          <node concept="1XD0k7" id="GCZnN9KV3H" role="1XD0cX">
+            <property role="1XD01k" value="3" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD08$" id="GCZnN9KUrl" role="ICcUN" />
+      <node concept="1XD0l2" id="GCZnN9KUrm" role="2BPcuh" />
+    </node>
+  </node>
 </model>
 
