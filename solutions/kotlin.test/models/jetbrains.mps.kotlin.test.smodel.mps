@@ -41,12 +41,12 @@
         <child id="1243006380186327176" name="returnType" index="21NdcZ" />
       </concept>
       <concept id="1243006380186882004" name="jetbrains.mps.kotlin.structure.IsOperator" flags="ng" index="21Pkhz" />
-      <concept id="1243006380186881810" name="jetbrains.mps.kotlin.structure.AndExpression" flags="ng" index="21Pki_" />
+      <concept id="1243006380186881810" name="jetbrains.mps.kotlin.structure.Conjunction" flags="ng" index="21Pki_" />
       <concept id="1243006380186881759" name="jetbrains.mps.kotlin.structure.BinaryExpression" flags="ng" index="21PklC">
         <child id="1243006380186881762" name="right" index="21Pkll" />
         <child id="1243006380186881760" name="left" index="21Pkln" />
       </concept>
-      <concept id="1243006380186881732" name="jetbrains.mps.kotlin.structure.OrExpression" flags="ng" index="21PklN" />
+      <concept id="1243006380186881732" name="jetbrains.mps.kotlin.structure.Disjunction" flags="ng" index="21PklN" />
       <concept id="1243006380186890016" name="jetbrains.mps.kotlin.structure.UnaryExpression" flags="ng" index="21Pmin">
         <child id="1243006380186890019" name="operand" index="21Pmik" />
       </concept>
@@ -218,7 +218,7 @@
       </concept>
       <concept id="2936055411798373333" name="jetbrains.mps.kotlin.structure.NullLiteral" flags="ng" index="1XD0k2" />
       <concept id="2936055411798373332" name="jetbrains.mps.kotlin.structure.RealLiteral" flags="ng" index="1XD0k3">
-        <property id="2936055411798374027" name="value" index="1XD01s" />
+        <property id="2936055411798374027" name="real" index="1XD01s" />
       </concept>
       <concept id="2936055411798373328" name="jetbrains.mps.kotlin.structure.IntegerLiteral" flags="ng" index="1XD0k7">
         <property id="2936055411798374019" name="value" index="1XD01k" />

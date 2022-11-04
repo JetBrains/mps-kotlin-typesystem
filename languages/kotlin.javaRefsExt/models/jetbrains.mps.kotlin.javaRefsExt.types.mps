@@ -13,7 +13,6 @@
     <import index="mx11" ref="r:fa9de6a8-90b7-4d2a-a9a9-a40c05cf603b(jetbrains.mps.kotlin.api.types.identifiers)" />
     <import index="hcm8" ref="r:72a7bf00-0175-42ca-b99b-fe8519b6a16f(jetbrains.mps.kotlin.structure)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="hez" ref="r:b038209d-51a9-4919-b6e5-4fafce96fa00(jetbrains.mps.kotlin.behavior)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -93,10 +92,6 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
-      </concept>
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
@@ -105,7 +100,6 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
-      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -156,7 +150,6 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="5045161044515397667" name="jetbrains.mps.lang.smodel.structure.Node_PointerOperation" flags="ng" index="iZEcu" />
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -249,6 +242,7 @@
         <reference id="3541122455446356437" name="extends" index="2YbDB9" />
         <child id="3575255234175157601" name="template" index="1nK1Vg" />
       </concept>
+      <concept id="5042557354438383712" name="jetbrains.mps.lang.coderules.structure.TermListType" flags="ig" index="VbTHi" />
       <concept id="2381360340662937504" name="jetbrains.mps.lang.coderules.structure.TermType" flags="ig" index="32pEOW" />
       <concept id="6097203247156088058" name="jetbrains.mps.lang.coderules.structure.ExpandMacroInputSpecification" flags="ng" index="3ixlbQ">
         <reference id="6097203247156276310" name="applicableConcept" index="3ixz9q" />
@@ -428,7 +422,7 @@
                       <node concept="3Aqt3T" id="2n1mrwyCgDD" role="3I6s78">
                         <ref role="3AqCNq" to="fefm:3E7baJHzKyT" resolve="hierarchyOf" />
                         <node concept="ns1u0" id="2n1mrwyCgYe" role="3AunhB">
-                          <ref role="ns1xF" to="fefm:5ViKESnU8PM" resolve="classType" />
+                          <ref role="ns1xF" node="3MIIE6P7AbW" resolve="javaClassType" />
                           <node concept="nsMwS" id="2n1mrwyCgYf" role="ns1xD">
                             <ref role="nsMwP" to="fefm:5ViKESnUfMP" resolve="klass" />
                             <node concept="37jhX" id="2n1mrwyCgYg" role="iSaTp">
@@ -721,24 +715,11 @@
       <ref role="3iRiWT" to="fefm:5krUrQ0jW25" resolve="createClassType" />
       <node concept="3clFbS" id="5krUrQ0oTTY" role="3iwQuN">
         <node concept="3clFbJ" id="5krUrQ0k8jN" role="3cqZAp">
-          <node concept="1Wc70l" id="5krUrQ0kr5P" role="3clFbw">
-            <node concept="2OqwBi" id="5krUrQ0k8W2" role="3uHU7B">
-              <node concept="3j8tct" id="5krUrQ0k8_3" role="2Oq$k0">
-                <ref role="3j8tcu" node="5krUrQ0oTU4" resolve="javaClassType" />
-              </node>
-              <node concept="3x8VRR" id="5krUrQ0kqr0" role="2OqNvi" />
+          <node concept="2OqwBi" id="5krUrQ0k8W2" role="3clFbw">
+            <node concept="3j8tct" id="5krUrQ0k8_3" role="2Oq$k0">
+              <ref role="3j8tcu" node="5krUrQ0oTU4" resolve="javaClass" />
             </node>
-            <node concept="2OqwBi" id="5krUrQ0krxJ" role="3uHU7w">
-              <node concept="2OqwBi" id="5krUrQ0krxK" role="2Oq$k0">
-                <node concept="3j8tct" id="5krUrQ0krxL" role="2Oq$k0">
-                  <ref role="3j8tcu" node="5krUrQ0oTU4" resolve="javaClassType" />
-                </node>
-                <node concept="2qgKlT" id="5krUrQ0krxM" role="2OqNvi">
-                  <ref role="37wK5l" to="hez:7an2tsIdpk7" resolve="getClassifier" />
-                </node>
-              </node>
-              <node concept="3x8VRR" id="5krUrQ0krOP" role="2OqNvi" />
-            </node>
+            <node concept="3x8VRR" id="5krUrQ0kqr0" role="2OqNvi" />
           </node>
           <node concept="3clFbS" id="5krUrQ0k8jP" role="3clFbx">
             <node concept="3Aqczg" id="5krUrQ0ksnq" role="3cqZAp">
@@ -752,13 +733,8 @@
                     <ref role="nsMwP" to="fefm:5ViKESnUfMP" resolve="klass" />
                     <node concept="37jhX" id="5krUrQ0ksnv" role="iSaTp">
                       <node concept="2OqwBi" id="5krUrQ0ksnw" role="37jj2">
-                        <node concept="2OqwBi" id="5krUrQ0ksnx" role="2Oq$k0">
-                          <node concept="3j8tct" id="5krUrQ0ksny" role="2Oq$k0">
-                            <ref role="3j8tcu" node="5krUrQ0oTU4" resolve="javaClassType" />
-                          </node>
-                          <node concept="2qgKlT" id="5krUrQ0ksnz" role="2OqNvi">
-                            <ref role="37wK5l" to="hez:7an2tsIdpk7" resolve="getClassifier" />
-                          </node>
+                        <node concept="3j8tct" id="5krUrQ0ksny" role="2Oq$k0">
+                          <ref role="3j8tcu" node="5krUrQ0oTU4" resolve="javaClass" />
                         </node>
                         <node concept="iZEcu" id="5krUrQ0ksn$" role="2OqNvi" />
                       </node>
@@ -794,17 +770,17 @@
         <node concept="aZer4" id="5krUrQ0oTU1" role="3XD1gS">
           <property role="TrG5h" value="Type" />
         </node>
+      </node>
+      <node concept="3uniRu" id="1ob76neZ$ct" role="3tb1AD">
         <node concept="aZer4" id="5krUrQ0oTU2" role="3XD1gS">
           <property role="TrG5h" value="TypeArgs" />
-          <node concept="3cmrfG" id="5krUrQ0yw0O" role="3gj$pD">
-            <property role="3cmrfH" value="0" />
-          </node>
         </node>
+        <node concept="VbTHi" id="1ob76neZ$cE" role="3vLBG7" />
       </node>
       <node concept="3ixlbQ" id="5krUrQ0oTU3" role="3iweTQ">
-        <ref role="3ixz9q" to="5m2i:6zWVWr21w3P" resolve="JavaClassType" />
+        <ref role="3ixz9q" to="tpee:g7pOWCK" resolve="Classifier" />
         <node concept="3ixQyH" id="5krUrQ0oTU4" role="3ix8rx">
-          <property role="TrG5h" value="javaClassType" />
+          <property role="TrG5h" value="javaClass" />
         </node>
       </node>
     </node>
