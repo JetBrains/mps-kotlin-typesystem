@@ -317,6 +317,7 @@
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
+      <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -23671,41 +23672,299 @@
                                 </node>
                               </node>
                               <node concept="3clFbH" id="3Oey_7QRzg1" role="3cqZAp" />
-                              <node concept="3SKdUt" id="3Oey_7QRxX3" role="3cqZAp">
-                                <node concept="1PaTwC" id="3Oey_7QRxX4" role="1aUNEU">
-                                  <node concept="3oM_SD" id="3Oey_7QRAAS" role="1PaTwD">
-                                    <property role="3oM_SC" value="Return" />
+                              <node concept="2lOVwT" id="7PgzVS6x9XZ" role="3cqZAp">
+                                <node concept="1PaTwC" id="7PgzVS6x9Y0" role="2lOMFJ">
+                                  <node concept="3oM_SD" id="7PgzVS6xb1J" role="1PaTwD">
+                                    <property role="3oM_SC" value="Skip" />
                                   </node>
-                                  <node concept="3oM_SD" id="3Oey_7QRAVh" role="1PaTwD">
-                                    <property role="3oM_SC" value="from" />
+                                  <node concept="3oM_SD" id="7PgzVS6xb1L" role="1PaTwD">
+                                    <property role="3oM_SC" value="supertypes" />
                                   </node>
-                                  <node concept="3oM_SD" id="3Oey_7QRBfr" role="1PaTwD">
+                                  <node concept="3oM_SD" id="7PgzVS6xe0d" role="1PaTwD">
+                                    <property role="3oM_SC" value="on" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6xgQg" role="1PaTwD">
+                                    <property role="3oM_SC" value="each" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6xgQl" role="1PaTwD">
+                                    <property role="3oM_SC" value="branch" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6xhYT" role="1PaTwD">
+                                    <property role="3oM_SC" value="for" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6xj7v" role="1PaTwD">
                                     <property role="3oM_SC" value="the" />
                                   </node>
-                                  <node concept="3oM_SD" id="3Oey_7QRC54" role="1PaTwD">
-                                    <property role="3oM_SC" value="foreach" />
+                                  <node concept="3oM_SD" id="7PgzVS6xj7B" role="1PaTwD">
+                                    <property role="3oM_SC" value="last" />
                                   </node>
-                                  <node concept="3oM_SD" id="3Oey_7QRF41" role="1PaTwD">
-                                    <property role="3oM_SC" value="(will" />
+                                  <node concept="3oM_SD" id="7PgzVS6xjPd" role="1PaTwD">
+                                    <property role="3oM_SC" value="type" />
                                   </node>
-                                  <node concept="3oM_SD" id="3Oey_7QRFTG" role="1PaTwD">
-                                    <property role="3oM_SC" value="stop" />
+                                  <node concept="3oM_SD" id="7PgzVS6xjPn" role="1PaTwD">
+                                    <property role="3oM_SC" value="only." />
                                   </node>
-                                  <node concept="3oM_SD" id="3Oey_7QRFTN" role="1PaTwD">
-                                    <property role="3oM_SC" value="explore" />
+                                  <node concept="3oM_SD" id="7PgzVS6xmoU" role="1PaTwD">
+                                    <property role="3oM_SC" value="Reason" />
                                   </node>
-                                  <node concept="3oM_SD" id="3Oey_7QRGMi" role="1PaTwD">
+                                  <node concept="3oM_SD" id="7PgzVS6xoxt" role="1PaTwD">
+                                    <property role="3oM_SC" value="for" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6xpf7" role="1PaTwD">
+                                    <property role="3oM_SC" value="that" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6xrwh" role="1PaTwD">
+                                    <property role="3oM_SC" value="are:" />
+                                  </node>
+                                </node>
+                                <node concept="2DRihI" id="7PgzVS6y3TI" role="2lOMFJ">
+                                  <node concept="3oM_SD" id="7PgzVS6y3TK" role="1PaTwD">
+                                    <property role="3oM_SC" value="Optimization:" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TL" role="1PaTwD">
+                                    <property role="3oM_SC" value="we" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TM" role="1PaTwD">
+                                    <property role="3oM_SC" value="don't" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TN" role="1PaTwD">
+                                    <property role="3oM_SC" value="need" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TO" role="1PaTwD">
+                                    <property role="3oM_SC" value="all" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TP" role="1PaTwD">
+                                    <property role="3oM_SC" value="common" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TQ" role="1PaTwD">
+                                    <property role="3oM_SC" value="supertypes," />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TR" role="1PaTwD">
+                                    <property role="3oM_SC" value="but" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TS" role="1PaTwD">
+                                    <property role="3oM_SC" value="rather" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TT" role="1PaTwD">
+                                    <property role="3oM_SC" value="the" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TU" role="1PaTwD">
+                                    <property role="3oM_SC" value="minimum" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TV" role="1PaTwD">
+                                    <property role="3oM_SC" value="subset" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TW" role="1PaTwD">
+                                    <property role="3oM_SC" value="of" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TX" role="1PaTwD">
+                                    <property role="3oM_SC" value="common" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TY" role="1PaTwD">
+                                    <property role="3oM_SC" value="supertypes" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3TZ" role="1PaTwD">
+                                    <property role="3oM_SC" value="(if" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3U0" role="1PaTwD">
+                                    <property role="3oM_SC" value="all" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3U1" role="1PaTwD">
+                                    <property role="3oM_SC" value="types" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3U2" role="1PaTwD">
+                                    <property role="3oM_SC" value="extends" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3U3" role="1PaTwD">
+                                    <property role="3oM_SC" value="A," />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3U4" role="1PaTwD">
+                                    <property role="3oM_SC" value="no" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3U5" role="1PaTwD">
+                                    <property role="3oM_SC" value="strong" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3U6" role="1PaTwD">
+                                    <property role="3oM_SC" value="need" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3U7" role="1PaTwD">
+                                    <property role="3oM_SC" value="to" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3U8" role="1PaTwD">
+                                    <property role="3oM_SC" value="specify" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3U9" role="1PaTwD">
+                                    <property role="3oM_SC" value="Any" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3Ua" role="1PaTwD">
+                                    <property role="3oM_SC" value="there" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3Ub" role="1PaTwD">
+                                    <property role="3oM_SC" value="for" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y3Uc" role="1PaTwD">
+                                    <property role="3oM_SC" value="instance)." />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y9$L" role="1PaTwD">
+                                    <property role="3oM_SC" value="Returning" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6ybs9" role="1PaTwD">
+                                    <property role="3oM_SC" value="more" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6ycb4" role="1PaTwD">
+                                    <property role="3oM_SC" value="will" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6ycU0" role="1PaTwD">
+                                    <property role="3oM_SC" value="make" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yemq" role="1PaTwD">
+                                    <property role="3oM_SC" value="subsequent" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yfwp" role="1PaTwD">
+                                    <property role="3oM_SC" value="processing" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yfxr" role="1PaTwD">
+                                    <property role="3oM_SC" value="heavier." />
+                                  </node>
+                                </node>
+                                <node concept="2DRihI" id="7PgzVS6y3VV" role="2lOMFJ">
+                                  <node concept="3oM_SD" id="7PgzVS6y3VX" role="1PaTwD">
+                                    <property role="3oM_SC" value="Accuracy:" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y5NA" role="1PaTwD">
+                                    <property role="3oM_SC" value="we" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y6y4" role="1PaTwD">
+                                    <property role="3oM_SC" value="only" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y6yA" role="1PaTwD">
+                                    <property role="3oM_SC" value="skip" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y6z9" role="1PaTwD">
+                                    <property role="3oM_SC" value="the" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y7hE" role="1PaTwD">
+                                    <property role="3oM_SC" value="last" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y8rd" role="1PaTwD">
+                                    <property role="3oM_SC" value="one" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yi6m" role="1PaTwD">
+                                    <property role="3oM_SC" value="as" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yi6v" role="1PaTwD">
+                                    <property role="3oM_SC" value="doing" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yiP4" role="1PaTwD">
+                                    <property role="3oM_SC" value="so" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yk1y" role="1PaTwD">
+                                    <property role="3oM_SC" value="before" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6ylSB" role="1PaTwD">
+                                    <property role="3oM_SC" value="would" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6ymBf" role="1PaTwD">
+                                    <property role="3oM_SC" value="skip" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6ypwE" role="1PaTwD">
+                                    <property role="3oM_SC" value="good" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6ypxn" role="1PaTwD">
+                                    <property role="3oM_SC" value="solutions." />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6ytYJ" role="1PaTwD">
+                                    <property role="3oM_SC" value="For" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yuHr" role="1PaTwD">
+                                    <property role="3oM_SC" value="three" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yvs8" role="1PaTwD">
                                     <property role="3oM_SC" value="paths" />
                                   </node>
-                                  <node concept="3oM_SD" id="3Oey_7QRIq6" role="1PaTwD">
-                                    <property role="3oM_SC" value="from" />
+                                  <node concept="3oM_SD" id="7PgzVS6yx_K" role="1PaTwD">
+                                    <property role="3oM_SC" value="(A,B,C)," />
                                   </node>
-                                  <node concept="3oM_SD" id="3Oey_7QRJen" role="1PaTwD">
-                                    <property role="3oM_SC" value="now)" />
+                                  <node concept="3oM_SD" id="7PgzVS6yyJw" role="1PaTwD">
+                                    <property role="3oM_SC" value="(B,C)" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y$AI" role="1PaTwD">
+                                    <property role="3oM_SC" value="and" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6y_lv" role="1PaTwD">
+                                    <property role="3oM_SC" value="(C)," />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yALI" role="1PaTwD">
+                                    <property role="3oM_SC" value="skipping" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yAM6" role="1PaTwD">
+                                    <property role="3oM_SC" value="all" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yDpG" role="1PaTwD">
+                                    <property role="3oM_SC" value="supertypes" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yDq6" role="1PaTwD">
+                                    <property role="3oM_SC" value="would" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yEzX" role="1PaTwD">
+                                    <property role="3oM_SC" value="result" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yFiO" role="1PaTwD">
+                                    <property role="3oM_SC" value="either" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yFjJ" role="1PaTwD">
+                                    <property role="3oM_SC" value="in" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yFkd" role="1PaTwD">
+                                    <property role="3oM_SC" value="no" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yIJ4" role="1PaTwD">
+                                    <property role="3oM_SC" value="result" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yIJ$" role="1PaTwD">
+                                    <property role="3oM_SC" value="or" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yIK5" role="1PaTwD">
+                                    <property role="3oM_SC" value="in" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yQ8z" role="1PaTwD">
+                                    <property role="3oM_SC" value="{C}" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yKVt" role="1PaTwD">
+                                    <property role="3oM_SC" value="depending" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yKWv" role="1PaTwD">
+                                    <property role="3oM_SC" value="on" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yKX4" role="1PaTwD">
+                                    <property role="3oM_SC" value="processing" />
+                                  </node>
+                                  <node concept="3oM_SD" id="7PgzVS6yNf$" role="1PaTwD">
+                                    <property role="3oM_SC" value="order." />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="3cpWs6" id="3Oey_7QPDgM" role="3cqZAp" />
+                              <node concept="3clFbJ" id="7PgzVS6c$mW" role="3cqZAp">
+                                <node concept="3clFbS" id="7PgzVS6c$mY" role="3clFbx">
+                                  <node concept="3cpWs6" id="3Oey_7QPDgM" role="3cqZAp" />
+                                </node>
+                                <node concept="3clFbC" id="7PgzVS6cI0A" role="3clFbw">
+                                  <node concept="2OqwBi" id="7PgzVS6cN_X" role="3uHU7w">
+                                    <node concept="37vLTw" id="7PgzVS6cLEn" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="3Oey_7QQQdR" resolve="types" />
+                                    </node>
+                                    <node concept="1Rwk04" id="7PgzVS6cRI3" role="2OqNvi" />
+                                  </node>
+                                  <node concept="3cpWs3" id="7PgzVS6cEnT" role="3uHU7B">
+                                    <node concept="37vLTw" id="7PgzVS6cBBc" role="3uHU7B">
+                                      <ref role="3cqZAo" node="3Oey_7QQUU3" resolve="step" />
+                                    </node>
+                                    <node concept="3cmrfG" id="7PgzVS6cEoq" role="3uHU7w">
+                                      <property role="3cmrfH" value="1" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -23799,9 +24058,6 @@
                           <node concept="2GrKxI" id="3Oey_7QUQs0" role="2Gsz3X">
                             <property role="TrG5h" value="item" />
                           </node>
-                          <node concept="37vLTw" id="3Oey_7QUQs1" role="2GsD0m">
-                            <ref role="3cqZAo" node="3Oey_7QUQsd" resolve="list" />
-                          </node>
                           <node concept="3clFbS" id="3Oey_7QUQs2" role="2LFqv$">
                             <node concept="3clFbJ" id="3Oey_7QUQs3" role="3cqZAp">
                               <node concept="3clFbC" id="3Oey_7QUQs4" role="3clFbw">
@@ -23816,6 +24072,9 @@
                                 </node>
                               </node>
                             </node>
+                          </node>
+                          <node concept="37vLTw" id="3Oey_7QUQs1" role="2GsD0m">
+                            <ref role="3cqZAo" node="3Oey_7QUQsd" resolve="list" />
                           </node>
                         </node>
                         <node concept="3clFbH" id="3Oey_7QUQsa" role="3cqZAp" />
@@ -23839,14 +24098,6 @@
                 <node concept="liA8E" id="3Oey_7QUQsg" role="2OqNvi">
                   <ref role="37wK5l" to="1ctc:~Stream.map(java.util.function.Function)" resolve="map" />
                   <node concept="1bVj0M" id="3Oey_7QUQsh" role="37wK5m">
-                    <node concept="37vLTG" id="3Oey_7QUQsi" role="1bW2Oz">
-                      <property role="TrG5h" value="list" />
-                      <node concept="10Q1$e" id="3Oey_7QUQsj" role="1tU5fm">
-                        <node concept="3uibUv" id="3Oey_7QUQsk" role="10Q1$1">
-                          <ref role="3uigEE" to="6exd:1bm7a6EXvsP" resolve="DataForm" />
-                        </node>
-                      </node>
-                    </node>
                     <node concept="3clFbS" id="3Oey_7QUQsl" role="1bW5cS">
                       <node concept="3clFbF" id="3Oey_7QUQsm" role="3cqZAp">
                         <node concept="2YIFZM" id="3Oey_7QUQsn" role="3clFbG">
@@ -23855,6 +24106,14 @@
                           <node concept="37vLTw" id="3Oey_7QUQso" role="37wK5m">
                             <ref role="3cqZAo" node="3Oey_7QUQsi" resolve="list" />
                           </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTG" id="3Oey_7QUQsi" role="1bW2Oz">
+                      <property role="TrG5h" value="list" />
+                      <node concept="10Q1$e" id="3Oey_7QUQsj" role="1tU5fm">
+                        <node concept="3uibUv" id="3Oey_7QUQsk" role="10Q1$1">
+                          <ref role="3uigEE" to="6exd:1bm7a6EXvsP" resolve="DataForm" />
                         </node>
                       </node>
                     </node>
@@ -39171,6 +39430,15 @@
               </node>
             </node>
             <node concept="3xSepi" id="5CvEeUc2i84" role="3xSepv">
+              <node concept="3Aq9E8" id="69T2zTR$X4T" role="3xSepj">
+                <node concept="3I6sU6" id="69T2zTR$X4U" role="3Ip0Jz">
+                  <node concept="3I6s7M" id="69T2zTR$X5t" role="3I6sU7">
+                    <node concept="3Aqt3T" id="69T2zTR$X5s" role="3I6s78">
+                      <ref role="3AqCNq" node="2HcgYk6d4IP" resolve="pushScope" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3Aq9E8" id="5CvEeUc2i85" role="3xSepj">
                 <node concept="3I6sU6" id="5CvEeUc2i86" role="3Ip0Jz">
                   <node concept="3I6s7M" id="5CvEeUc0QrH" role="3I6sU7">
@@ -39195,6 +39463,25 @@
                       </node>
                       <node concept="a7P8L" id="5CvEeUc2mNw" role="3jm6SO">
                         <ref role="a7OzE" node="5CvEeUc2i82" resolve="Status" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Aq9E8" id="69T2zTR$X5w" role="3xSepj">
+                <node concept="3I6sU6" id="69T2zTR$X5x" role="3Ip0Jz">
+                  <node concept="3I6s7M" id="69T2zTR$X68" role="3I6sU7">
+                    <node concept="3Aqt3T" id="69T2zTR$X67" role="3I6s78">
+                      <ref role="3AqCNq" node="2HcgYk6d4IX" resolve="popScope" />
+                      <node concept="37jhX" id="69T2zTR$X6$" role="3AunhB">
+                        <node concept="2OqwBi" id="69T2zTR$XkD" role="37jj2">
+                          <node concept="3A2sRY" id="69T2zTR$X6z" role="2Oq$k0">
+                            <ref role="3A2yKK" node="3CHKp35Jig" resolve="navigation" />
+                          </node>
+                          <node concept="3TrEf2" id="69T2zTR$Yxc" role="2OqNvi">
+                            <ref role="3Tt5mk" to="hcm8:1502Vug_mWz" resolve="operand" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
