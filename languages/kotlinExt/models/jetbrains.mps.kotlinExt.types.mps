@@ -48744,6 +48744,9 @@
                                   <node concept="aZer4" id="390PUnUQ3hg" role="3XD1gS">
                                     <property role="TrG5h" value="OperandType" />
                                   </node>
+                                  <node concept="aZer4" id="6d5MS3Ydfzp" role="3XD1gS">
+                                    <property role="TrG5h" value="Nullable" />
+                                  </node>
                                   <node concept="32pEOW" id="390PUnUQ3hk" role="3vLBG7" />
                                 </node>
                                 <node concept="3clFbH" id="390PUnUQP5v" role="3cqZAp" />
@@ -48760,8 +48763,8 @@
                                             <ref role="37wK5l" to="hez:2gj5XQXMv4y" resolve="getNavigationOperand" />
                                           </node>
                                         </node>
-                                        <node concept="a7P8L" id="2yC2OMyGJrQ" role="3jm6SO">
-                                          <ref role="a7OzE" node="390PUnUQ3hg" resolve="OperandType" />
+                                        <node concept="a7P8L" id="6d5MS3YdgQX" role="3jm6SO">
+                                          <ref role="a7OzE" node="6d5MS3Ydfzp" resolve="Nullable" />
                                         </node>
                                       </node>
                                     </node>
@@ -48879,7 +48882,55 @@
                                             </node>
                                             <node concept="1uHKPH" id="390PUnUQHZr" role="2OqNvi" />
                                           </node>
-                                          <node concept="a7P8L" id="390PUnUQKjY" role="3jm6SO">
+                                          <node concept="a7P8L" id="6d5MS3YdgRE" role="3jm6SO">
+                                            <ref role="a7OzE" node="6d5MS3Ydfzp" resolve="Nullable" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbH" id="6d5MS3YdgTr" role="3cqZAp" />
+                                <node concept="3SKdUt" id="6d5MS3YdmXq" role="3cqZAp">
+                                  <node concept="1PaTwC" id="6d5MS3YdmXr" role="1aUNEU">
+                                    <node concept="3oM_SD" id="6d5MS3Ydnkn" role="1PaTwD">
+                                      <property role="3oM_SC" value="Nullable" />
+                                    </node>
+                                    <node concept="3oM_SD" id="6d5MS3Ydnkp" role="1PaTwD">
+                                      <property role="3oM_SC" value="receiver" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbJ" id="6d5MS3YdgZk" role="3cqZAp">
+                                  <node concept="3clFbS" id="6d5MS3YdgZm" role="3clFbx">
+                                    <node concept="3Aqczg" id="6d5MS3Ydk6y" role="3cqZAp">
+                                      <node concept="3Aqt3T" id="6d5MS3Ydk6x" role="3Aqpz8">
+                                        <ref role="3AqCNq" node="4r2DeT7ZWOP" resolve="nonNullableTypeOf" />
+                                        <node concept="a7P8L" id="6d5MS3Ydk7j" role="3AunhB">
+                                          <ref role="a7OzE" node="6d5MS3Ydfzp" resolve="Nullable" />
+                                        </node>
+                                        <node concept="a7P8L" id="6d5MS3Ydka5" role="3AunhB">
+                                          <ref role="a7OzE" node="390PUnUQ3hg" resolve="OperandType" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="6d5MS3Ydhju" role="3clFbw">
+                                    <node concept="3A2sRY" id="6d5MS3Ydh3K" role="2Oq$k0">
+                                      <ref role="3A2yKK" node="6gQplzy_jFI" resolve="varRef" />
+                                    </node>
+                                    <node concept="2qgKlT" id="6d5MS3Ydisz" role="2OqNvi">
+                                      <ref role="37wK5l" to="hez:5D4bOjqGpyn" resolve="acceptNullable" />
+                                    </node>
+                                  </node>
+                                  <node concept="9aQIb" id="6d5MS3Ydknh" role="9aQIa">
+                                    <node concept="3clFbS" id="6d5MS3Ydkni" role="9aQI4">
+                                      <node concept="3Aqczg" id="6d5MS3YdlCO" role="3cqZAp">
+                                        <node concept="3A8Hvi" id="6d5MS3YdlCL" role="3Aqpz8">
+                                          <node concept="a7P8L" id="6d5MS3YdlCT" role="3A8wtg">
+                                            <ref role="a7OzE" node="6d5MS3Ydfzp" resolve="Nullable" />
+                                          </node>
+                                          <node concept="a7P8L" id="6d5MS3YdlD2" role="3A8w4Q">
                                             <ref role="a7OzE" node="390PUnUQ3hg" resolve="OperandType" />
                                           </node>
                                         </node>

@@ -2439,6 +2439,9 @@
             </node>
           </node>
         </node>
+        <node concept="2Rs4SG" id="4FOkRjXXaCa" role="2Rs2$5">
+          <property role="TrG5h" value="c" />
+        </node>
         <node concept="21PmDL" id="rbYB7R6NfH" role="1XD07v">
           <ref role="21PmDZ" to="pyzm:~#CharProgression.step(kotlin/Int)" resolve="step" />
           <node concept="1XD0k7" id="rbYB7R6NlK" role="21Pkll">
@@ -2453,9 +2456,6 @@
               <property role="1XD01u" value="z" />
             </node>
           </node>
-        </node>
-        <node concept="2Rs4SG" id="4FOkRjXXaCa" role="2Rs2$5">
-          <property role="TrG5h" value="c" />
         </node>
       </node>
       <node concept="1NbEFs" id="rbYB7QmnAQ" role="THmaL">
