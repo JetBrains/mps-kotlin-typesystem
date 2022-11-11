@@ -352,7 +352,7 @@
       <node concept="2pNNFK" id="1c8EeOQUqay" role="20twgj">
         <property role="2pNNFO" value="change-notes" />
         <node concept="2pNm8S" id="1c8EeOQUqaz" role="3o6s8t">
-          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Support of integer literal types&lt;/li&gt;&lt;li&gt;Fix inference error reporting location in methods&lt;/li&gt;&lt;li&gt;Improved SModel types inference support&lt;/li&gt;&lt;li&gt;Improved support of intersection types&lt;/li&gt;&lt;/ul&gt;" />
+          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Support of integer literal types&lt;/li&gt;&lt;li&gt;Fix inference error reporting location in methods&lt;/li&gt;&lt;li&gt;Fix common supertype computation algorithm when provided with more than two types&lt;/li&gt;&lt;li&gt;Improved SModel types inference support&lt;/li&gt;&lt;li&gt;Improved support of intersection types&lt;/li&gt;&lt;/ul&gt;" />
         </node>
       </node>
       <node concept="3_J27D" id="69s32WJ3dwI" role="3s6cr7">
