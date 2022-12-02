@@ -3,16 +3,30 @@
   <persistence version="9" />
   <languages>
     <devkit ref="3605c367-b661-48bf-8131-d9bd75494e4d(jetbrains.mps.devkit.kotlin)" />
+    <devkit ref="4866b4b4-6ecd-49f3-ae68-c62248cc4306(jetbrains.mps.devkit.kotlin.jvm)" />
   </languages>
   <imports>
     <import index="qw9d" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.reflect(jetbrains.mps.kotlin.stdlib/)" />
     <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" />
+    <import index="7fo8" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.chrono(JDK/)" />
+    <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="aucy" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.io(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="1xrd" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.collections(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="pyzm" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.ranges(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="s3y3" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.text(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
   </imports>
   <registry>
+    <language id="9e4ff22b-60f1-43ef-a50b-f9f0fcec22e0" name="jetbrains.mps.kotlin.javaRefs">
+      <concept id="2420378304458348492" name="jetbrains.mps.kotlin.javaRefs.structure.JavaMethodCall" flags="ng" index="2yQVVM">
+        <reference id="2420378304458348798" name="method" index="2yQV70" />
+      </concept>
+      <concept id="7565185111013327093" name="jetbrains.mps.kotlin.javaRefs.structure.JavaClassType" flags="ng" index="2EYIWN">
+        <reference id="7565185111013327225" name="javaClass" index="2EYIUZ" />
+      </concept>
+      <concept id="3848791341541232635" name="jetbrains.mps.kotlin.javaRefs.structure.JavaMethodVariableReference" flags="ng" index="1ygUyI">
+        <reference id="3848791341541234508" name="getter" index="1ygV0p" />
+      </concept>
+    </language>
     <language id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin">
       <concept id="1243006380186304290" name="jetbrains.mps.kotlin.structure.IWithReceiver" flags="ng" index="21N7il">
         <child id="8521376398798405093" name="receiverType" index="39xbXa" />
@@ -27,6 +41,7 @@
         <child id="1243006380186881762" name="right" index="21Pkll" />
         <child id="1243006380186881760" name="left" index="21Pkln" />
       </concept>
+      <concept id="1243006380186881732" name="jetbrains.mps.kotlin.structure.OrExpression" flags="ng" index="21PklN" />
       <concept id="1243006380186890016" name="jetbrains.mps.kotlin.structure.UnaryExpression" flags="ng" index="21Pmin">
         <child id="1243006380186890019" name="operand" index="21Pmik" />
       </concept>
@@ -72,10 +87,13 @@
       <concept id="7358760241248942182" name="jetbrains.mps.kotlin.structure.Comment" flags="ng" index="gXE$l">
         <child id="7358760241248948562" name="lines" index="gXG0x" />
       </concept>
+      <concept id="183384254773978485" name="jetbrains.mps.kotlin.structure.NullableType" flags="ng" index="hI6pR">
+        <child id="183384254773980948" name="type" index="hI6Km" />
+      </concept>
       <concept id="5399479805055080300" name="jetbrains.mps.kotlin.structure.CopyFunctionCall" flags="ng" index="yQH$E">
         <reference id="5399479805055111595" name="constructor" index="yQ_ZH" />
       </concept>
-      <concept id="781120894705658104" name="jetbrains.mps.kotlin.structure.IKotlinRoot" flags="ng" index="2_hZ6C">
+      <concept id="781120894705658104" name="jetbrains.mps.kotlin.structure.IKotlinFile" flags="ng" index="2_hZ6C">
         <child id="2936055411798374535" name="header" index="1XD0Tg" />
       </concept>
       <concept id="1991556721070973461" name="jetbrains.mps.kotlin.structure.EmptyStatement" flags="ng" index="AQkLs" />
@@ -6837,19 +6855,6 @@
         </node>
       </node>
       <node concept="AQkLs" id="5b2DnJ7xQoE" role="THmaL" />
-      <node concept="1NbEFs" id="5b2DnJ7I4t9" role="THmaL">
-        <ref role="AarEw" to="0:~.TODO(String)" resolve="TODO" />
-        <node concept="1XD0eI" id="5b2DnJ7I4_W" role="TWiod">
-          <node concept="1XD08G" id="5b2DnJ7I4_U" role="1XD0ZN">
-            <node concept="Df6$J" id="5yEpxXMpJxz" role="Df6Hu">
-              <node concept="21VMdE" id="5b2DnJ7I4Qa" role="Df7GE">
-                <property role="21VMdD" value="string checking for \&quot;" />
-              </node>
-              <node concept="21VMdE" id="5b2DnJ7I4_V" role="Df7GE" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="TDTJT" id="5b2DnJ7vGkv" role="THmaL">
         <property role="1Xb$ne" value="true" />
         <node concept="1XD0mK" id="5b2DnJ7vGkL" role="1XD05H">
@@ -7186,6 +7191,165 @@
       </node>
       <node concept="1XD0l0" id="5yEpxXMGT6D" role="2BPcuh" />
       <node concept="1XD08$" id="11vq$BubPl2" role="ICcUN" />
+    </node>
+  </node>
+  <node concept="1XD0fY" id="5dE4vdOk4Sx">
+    <property role="3GE5qa" value="08_productivity" />
+    <property role="TrG5h" value="_04_SmartCasts" />
+    <node concept="eKYAL" id="5dE4vdOk4Uu" role="1XD0Tu" />
+    <node concept="gXE$l" id="5dE4vdOk$fI" role="1XD0Tu">
+      <node concept="1PaTwC" id="5dE4vdOk$fK" role="gXG0x">
+        <node concept="3oM_SD" id="5dE4vdOk$CZ" role="1PaTwD">
+          <property role="3oM_SC" value="https://play.kotlinlang.org/byExample/08_productivity_boosters/04_Smart%20Casts" />
+          <property role="1X82VU" value="https://play.kotlinlang.org/byExample/08_productivity_boosters/04_Smart%20Casts" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0bz" id="5dE4vdOkcxu" role="1XD0Tu">
+      <property role="TrG5h" value="main" />
+      <node concept="TDTJT" id="5dE4vdOkdaq" role="THmaL">
+        <node concept="2Rs4SG" id="5dE4vdOkdar" role="2Rs2$5">
+          <property role="TrG5h" value="date" />
+          <node concept="hI6pR" id="5dE4vdOkdbE" role="1XD0Z0">
+            <node concept="2EYIWN" id="5dE4vdOkdax" role="hI6Km">
+              <ref role="2EYIUZ" to="7fo8:~ChronoLocalDate" resolve="ChronoLocalDate" />
+            </node>
+          </node>
+        </node>
+        <node concept="1XD0mK" id="5dE4vdOkdcN" role="1XD05H">
+          <node concept="1XD0a7" id="5dE4vdOkehU" role="1XD0cX">
+            <node concept="2yQVVM" id="5dE4vdOkelg" role="1XD07H">
+              <ref role="2yQV70" to="28m1:~LocalDate.now()" resolve="now" />
+            </node>
+            <node concept="1XD0em" id="5dE4vdOkef9" role="21Pmik">
+              <node concept="2EYIWN" id="5dE4vdOkef7" role="1XD0Sn">
+                <ref role="2EYIUZ" to="28m1:~LocalDate" resolve="LocalDate" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="AQkLs" id="5dE4vdOkepk" role="THmaL" />
+      <node concept="1XD0b9" id="5dE4vdOkeH1" role="THmaL">
+        <node concept="giPaf" id="5dE4vdOkfCt" role="1XD00_">
+          <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+          <node concept="1XD0k2" id="5dE4vdOkgp2" role="21Pkll" />
+          <node concept="UZU4S" id="5dE4vdOkffM" role="21Pkln">
+            <ref role="UZU4V" node="5dE4vdOkdar" resolve="date" />
+          </node>
+        </node>
+        <node concept="1NbEFs" id="5dE4vdOkhuf" role="THmaL">
+          <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
+          <node concept="1XD0eI" id="5dE4vdOki2I" role="TWiod">
+            <node concept="1XD0a7" id="5dE4vdOkiw1" role="1XD0ZN">
+              <node concept="2yQVVM" id="5dE4vdOkiGW" role="1XD07H">
+                <ref role="2yQV70" to="7fo8:~ChronoLocalDate.isLeapYear()" resolve="isLeapYear" />
+              </node>
+              <node concept="UZU4S" id="5dE4vdOki2H" role="21Pmik">
+                <ref role="UZU4V" node="5dE4vdOkdar" resolve="date" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0b9" id="5dE4vdOkjo_" role="THmaL">
+        <node concept="21Pki_" id="5dE4vdOklHI" role="1XD00_">
+          <node concept="1XD0a7" id="5dE4vdOkmPE" role="21Pkll">
+            <node concept="2yQVVM" id="5dE4vdOkn5s" role="1XD07H">
+              <ref role="2yQV70" to="7fo8:~ChronoLocalDate.isLeapYear()" resolve="isLeapYear" />
+            </node>
+            <node concept="UZU4S" id="5dE4vdOkmoR" role="21Pmik">
+              <ref role="UZU4V" node="5dE4vdOkdar" resolve="date" />
+            </node>
+          </node>
+          <node concept="giPaf" id="5dE4vdOkkBM" role="21Pkln">
+            <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+            <node concept="1XD0k2" id="5dE4vdOklwP" role="21Pkll" />
+            <node concept="UZU4S" id="5dE4vdOkkbF" role="21Pkln">
+              <ref role="UZU4V" node="5dE4vdOkdar" resolve="date" />
+            </node>
+          </node>
+        </node>
+        <node concept="1NbEFs" id="5dE4vdOkosQ" role="THmaL">
+          <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
+          <node concept="1XD0eI" id="5dE4vdOkpn2" role="TWiod">
+            <node concept="1XD08G" id="5dE4vdOkpmZ" role="1XD0ZN">
+              <node concept="Df6$J" id="5dE4vdOkpn0" role="Df6Hu">
+                <node concept="21VMdE" id="5dE4vdOkpn1" role="Df7GE">
+                  <property role="21VMdD" value="It's a leap year!" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0b9" id="5dE4vdOkqj4" role="THmaL">
+        <node concept="21PklN" id="5dE4vdOkv$k" role="1XD00_">
+          <node concept="1XD0a7" id="5dE4vdOkwSd" role="21Pkll">
+            <node concept="2yQVVM" id="5dE4vdOkxdT" role="1XD07H">
+              <ref role="2yQV70" to="7fo8:~ChronoLocalDate.isLeapYear()" resolve="isLeapYear" />
+            </node>
+            <node concept="UZU4S" id="5dE4vdOkwln" role="21Pmik">
+              <ref role="UZU4V" node="5dE4vdOkdar" resolve="date" />
+            </node>
+          </node>
+          <node concept="giPau" id="5dE4vdOkrC8" role="21Pkln">
+            <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+            <node concept="1XD0k2" id="5dE4vdOksGz" role="21Pkll" />
+            <node concept="UZU4S" id="5dE4vdOkr5Y" role="21Pkln">
+              <ref role="UZU4V" node="5dE4vdOkdar" resolve="date" />
+            </node>
+          </node>
+        </node>
+        <node concept="1NbEFs" id="5dE4vdOkyyv" role="THmaL">
+          <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
+          <node concept="1XD0eI" id="5dE4vdOkztd" role="TWiod">
+            <node concept="1XD08G" id="5dE4vdOk$eK" role="1XD0ZN">
+              <node concept="Df6$J" id="5dE4vdOk$eL" role="Df6Hu">
+                <node concept="21VMdE" id="5dE4vdOk$eM" role="Df7GE">
+                  <property role="21VMdD" value="There's no Feb 29 this year..." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0b9" id="5dE4vdOkA74" role="THmaL">
+        <node concept="21Pkhz" id="5dE4vdOkBzO" role="1XD00_">
+          <node concept="2EYIWN" id="5dE4vdOkBOc" role="3CdAat">
+            <ref role="2EYIUZ" to="28m1:~LocalDate" resolve="LocalDate" />
+          </node>
+          <node concept="UZU4S" id="5dE4vdOkB25" role="21Pmik">
+            <ref role="UZU4V" node="5dE4vdOkdar" resolve="date" />
+          </node>
+        </node>
+        <node concept="TDTJT" id="5dE4vdOkCfW" role="THmaL">
+          <property role="1Xb$ne" value="true" />
+          <node concept="2Rs4SG" id="5dE4vdOkCfX" role="2Rs2$5">
+            <property role="TrG5h" value="month" />
+          </node>
+          <node concept="1XD0mK" id="5dE4vdOkCgZ" role="1XD05H">
+            <node concept="1XD0a7" id="5dE4vdOkDzN" role="1XD0cX">
+              <node concept="1ygUyI" id="5dE4vdOkF3q" role="1XD07H">
+                <ref role="1ygV0p" to="28m1:~LocalDate.getMonthValue()" resolve="getMonthValue" />
+              </node>
+              <node concept="UZU4S" id="5dE4vdOkCME" role="21Pmik">
+                <ref role="UZU4V" node="5dE4vdOkdar" resolve="date" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1NbEFs" id="5dE4vdOkGjr" role="THmaL">
+          <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
+          <node concept="1XD0eI" id="5dE4vdOkH56" role="TWiod">
+            <node concept="UZU4S" id="5dE4vdOkH55" role="1XD0ZN">
+              <ref role="UZU4V" node="5dE4vdOkCfX" resolve="month" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0l0" id="5dE4vdOkcxx" role="2BPcuh" />
+      <node concept="1XD08$" id="5dE4vdOkcxy" role="ICcUN" />
     </node>
   </node>
 </model>
