@@ -65,7 +65,7 @@
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
         <idea-version since-build="222.1" />
-        <change-notes><![CDATA[<ul><li>Support of integer literal types</li><li>Fix inference error reporting location in methods</li><li>Fix common supertype computation algorithm when provided with more than two types</li><li>Improved SModel types inference support</li><li>Improved support of intersection types</li></ul>]]></change-notes>
+        <change-notes><![CDATA[<ul><li>Fixed overload resolution support of receiver types</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -88,7 +88,7 @@
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
         <idea-version since-build="222.1" />
-        <change-notes><![CDATA[<ul><li>Support of integer literal types</li><li>Fix inference error reporting location in methods</li><li>Fix common supertype computation algorithm when provided with more than two types</li><li>Improved SModel types inference support</li><li>Improved support of intersection types</li></ul>]]></change-notes>
+        <change-notes><![CDATA[<ul><li>Fixed overload resolution support of receiver types</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />

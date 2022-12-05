@@ -197,7 +197,9 @@
         <child id="4032162997650628191" name="_thisTypeHolder_hack" index="Sxo2X" />
         <child id="4032162997650633732" name="_itTypeHolder_hack" index="SxqFA" />
       </concept>
-      <concept id="2936055411798373645" name="jetbrains.mps.kotlin.structure.TypeParameter" flags="ng" index="1XD0fq" />
+      <concept id="2936055411798373645" name="jetbrains.mps.kotlin.structure.TypeParameter" flags="ng" index="1XD0fq">
+        <child id="2936055411798374480" name="bound" index="1XD0U7" />
+      </concept>
       <concept id="2936055411798373690" name="jetbrains.mps.kotlin.structure.ClassParameter" flags="ng" index="1XD0fH">
         <property id="1243006380188597514" name="isReadOnly" index="21VRqX" />
         <property id="1243006380188597512" name="isProperty" index="21VRqZ" />
@@ -4841,6 +4843,365 @@
         </node>
         <node concept="UZU4S" id="3ei97BdE_zi" role="21Pmik">
           <ref role="UZU4V" node="3ei97BdEk4C" resolve="first" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1XD0fY" id="7m63smGvlTj">
+    <property role="TrG5h" value="scopes" />
+    <node concept="eKYAL" id="7m63smGvmv5" role="1XD0Tu" />
+    <node concept="1XD0bz" id="7m63smGvmxX" role="1XD0Tu">
+      <property role="TrG5h" value="test_1" />
+      <node concept="1XD08$" id="7m63smGvmxY" role="ICcUN" />
+      <node concept="1XD0l2" id="7m63smGvmxZ" role="2BPcuh" />
+      <node concept="1XD088" id="7m63smGvmy0" role="39xbXa">
+        <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
+        <node concept="1XD0kr" id="7m63smGvmy1" role="TPadY">
+          <node concept="1XD088" id="7m63smGvmy2" role="1XD02C">
+            <ref role="1SePDO" to="0:~kotlin/Double" resolve="Double" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0bz" id="7m63smGvmxR" role="1XD0Tu">
+      <property role="TrG5h" value="test_1" />
+      <node concept="1XD08$" id="7m63smGvmxS" role="ICcUN" />
+      <node concept="1XD0l2" id="7m63smGvmxT" role="2BPcuh" />
+      <node concept="1XD088" id="7m63smGvmxU" role="39xbXa">
+        <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
+        <node concept="1XD0kr" id="7m63smGvmxV" role="TPadY">
+          <node concept="1XD088" id="7m63smGvmxW" role="1XD02C">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="eKYAL" id="7m63smGvmyP" role="1XD0Tu" />
+    <node concept="1XD0bz" id="7m63smGvmxx" role="1XD0Tu">
+      <property role="TrG5h" value="test_2" />
+      <node concept="1XD08$" id="7m63smGvmxy" role="ICcUN" />
+      <node concept="1XD0l2" id="7m63smGvmxz" role="2BPcuh" />
+      <node concept="1XD088" id="7m63smGvmx$" role="39xbXa">
+        <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
+        <node concept="1XD0kr" id="7m63smGvmx_" role="TPadY">
+          <node concept="9pJMI" id="7m63smGvt_t" role="1XD02C">
+            <ref role="9pJMH" node="7m63smGvtpl" resolve="U" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0fq" id="7m63smGvtpl" role="1XPbGx">
+        <property role="TrG5h" value="U" />
+        <node concept="1XD088" id="7m63smGvtpm" role="1XD0U7">
+          <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
+          <node concept="1XD0kq" id="7m63smGvtpn" role="TPadY" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0bz" id="7m63smGvmva" role="1XD0Tu">
+      <property role="TrG5h" value="test_2" />
+      <node concept="1XD08$" id="7m63smGvmvc" role="ICcUN" />
+      <node concept="1XD0l2" id="7m63smGvmvd" role="2BPcuh" />
+      <node concept="1XD088" id="7m63smGvmvm" role="39xbXa">
+        <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
+        <node concept="1XD0kr" id="7m63smGvmxi" role="TPadY">
+          <node concept="9pJMI" id="7m63smGvmzH" role="1XD02C">
+            <ref role="9pJMH" node="7m63smGvtq6" resolve="T" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0fq" id="7m63smGvtq6" role="1XPbGx">
+        <property role="TrG5h" value="T" />
+        <node concept="1XD088" id="7m63smGvtq7" role="1XD0U7">
+          <ref role="1SePDO" to="0:~kotlin/Number" resolve="Number" />
+        </node>
+      </node>
+    </node>
+    <node concept="eKYAL" id="7m63smGvthi" role="1XD0Tu" />
+    <node concept="1XD0bz" id="7m63smGvtiC" role="1XD0Tu">
+      <property role="TrG5h" value="test_3" />
+      <node concept="1XD08$" id="7m63smGvtiD" role="ICcUN" />
+      <node concept="1XD0l2" id="7m63smGvtiE" role="2BPcuh" />
+      <node concept="1XD088" id="7m63smGvtiF" role="39xbXa">
+        <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
+        <node concept="1XD0kr" id="7m63smGvtiG" role="TPadY">
+          <node concept="9pJMI" id="7m63smGvtiH" role="1XD02C">
+            <ref role="9pJMH" node="7m63smGvtiI" resolve="W" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0fq" id="7m63smGvtiI" role="1XPbGx">
+        <property role="TrG5h" value="W" />
+        <node concept="1XD088" id="7m63smGvtiJ" role="1XD0U7">
+          <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
+          <node concept="1XD0kq" id="7m63smGvtpi" role="TPadY" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0bz" id="7m63smGvtiw" role="1XD0Tu">
+      <property role="TrG5h" value="test_3" />
+      <node concept="1XD08$" id="7m63smGvtix" role="ICcUN" />
+      <node concept="1XD0l2" id="7m63smGvtiy" role="2BPcuh" />
+      <node concept="1XD088" id="7m63smGvtiz" role="39xbXa">
+        <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
+        <node concept="1XD0kr" id="7m63smGvti$" role="TPadY">
+          <node concept="9pJMI" id="7m63smGvti_" role="1XD02C">
+            <ref role="9pJMH" node="7m63smGvtiA" resolve="V" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0fq" id="7m63smGvtiA" role="1XPbGx">
+        <property role="TrG5h" value="V" />
+        <node concept="1XD088" id="7m63smGvtiB" role="1XD0U7">
+          <ref role="1SePDO" to="0:~kotlin/Number" resolve="Number" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0bz" id="7m63smGvtip" role="1XD0Tu">
+      <property role="TrG5h" value="test_3" />
+      <node concept="1XD08$" id="7m63smGvtiq" role="ICcUN" />
+      <node concept="1XD0l2" id="7m63smGvtir" role="2BPcuh" />
+      <node concept="1XD088" id="7m63smGvtis" role="39xbXa">
+        <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
+        <node concept="1XD0kr" id="7m63smGvtit" role="TPadY">
+          <node concept="1XD088" id="7m63smGvtiu" role="1XD02C">
+            <ref role="1SePDO" to="0:~kotlin/Double" resolve="Double" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0bz" id="7m63smGvtij" role="1XD0Tu">
+      <property role="TrG5h" value="test_3" />
+      <node concept="1XD08$" id="7m63smGvtik" role="ICcUN" />
+      <node concept="1XD0l2" id="7m63smGvtil" role="2BPcuh" />
+      <node concept="1XD088" id="7m63smGvtim" role="39xbXa">
+        <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
+        <node concept="1XD0kr" id="7m63smGvtin" role="TPadY">
+          <node concept="1XD088" id="7m63smGvtio" role="1XD02C">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="eKYAL" id="7m63smGvtlV" role="1XD0Tu" />
+    <node concept="1XD0aY" id="7m63smGvxos" role="1XD0Tu">
+      <property role="TrG5h" value="class_1" />
+      <node concept="1XD08$" id="7m63smGvxou" role="ICcUN" />
+      <node concept="1XD0l2" id="7m63smGvxov" role="2BPcuh" />
+      <node concept="1XD0bz" id="7m63smGvxxV" role="KS$fE">
+        <property role="TrG5h" value="test_4" />
+        <node concept="1XD08$" id="7m63smGvxxX" role="ICcUN" />
+        <node concept="1XD0l2" id="7m63smGvxxY" role="2BPcuh" />
+      </node>
+      <node concept="1XD0bz" id="7m63smGvGDm" role="KS$fE">
+        <property role="TrG5h" value="test_5" />
+        <node concept="1XD08$" id="7m63smGvGDo" role="ICcUN" />
+        <node concept="1XD0l2" id="7m63smGvGDp" role="2BPcuh" />
+        <node concept="1XD0fq" id="7m63smGvI5L" role="1XPbGx">
+          <property role="TrG5h" value="X" />
+          <node concept="1XD088" id="7m63smGvI6p" role="1XD0U7">
+            <ref role="1SePDO" to="0:~kotlin/Number" resolve="Number" />
+          </node>
+        </node>
+        <node concept="1XD0bi" id="7m63smGvIf0" role="1XbAXm">
+          <property role="TrG5h" value="t" />
+          <node concept="9pJMI" id="7m63smGvIfo" role="37iW8f">
+            <ref role="9pJMH" node="7m63smGvI5L" resolve="T" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0fq" id="7m63smGvGNh" role="1XPbGx">
+        <property role="TrG5h" value="T" />
+      </node>
+    </node>
+    <node concept="eKYAL" id="7m63smGvIKY" role="1XD0Tu" />
+    <node concept="1XD0bz" id="7m63smGvxAL" role="1XD0Tu">
+      <property role="TrG5h" value="test_4" />
+      <node concept="1XD08$" id="7m63smGvxAN" role="ICcUN" />
+      <node concept="1XD0l2" id="7m63smGvxAO" role="2BPcuh" />
+      <node concept="1XD088" id="7m63smGvxLj" role="39xbXa">
+        <ref role="1SePDO" node="7m63smGvxos" resolve="class_1" />
+      </node>
+    </node>
+    <node concept="1XD0bz" id="7m63smGvIfB" role="1XD0Tu">
+      <property role="TrG5h" value="test_5" />
+      <node concept="1XD08$" id="7m63smGvIfC" role="ICcUN" />
+      <node concept="1XD0l2" id="7m63smGvIfD" role="2BPcuh" />
+      <node concept="1XD0fq" id="7m63smGvIfE" role="1XPbGx">
+        <property role="TrG5h" value="Y" />
+        <node concept="1XD088" id="7m63smGvIfF" role="1XD0U7">
+          <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
+          <node concept="1XD0kq" id="7m63smGvJkF" role="TPadY" />
+        </node>
+      </node>
+      <node concept="1XD0bi" id="7m63smGvIfG" role="1XbAXm">
+        <property role="TrG5h" value="t" />
+        <node concept="9pJMI" id="7m63smGvIfH" role="37iW8f">
+          <ref role="9pJMH" node="7m63smGvIfE" resolve="T" />
+        </node>
+      </node>
+      <node concept="1XD088" id="7m63smGvIC8" role="39xbXa">
+        <ref role="1SePDO" node="7m63smGvxos" resolve="class_1" />
+      </node>
+    </node>
+    <node concept="eKYAL" id="7m63smGvxhk" role="1XD0Tu" />
+    <node concept="gXE$l" id="7m63smGvM_w" role="1XD0Tu">
+      <node concept="1PaTwC" id="7m63smGvM_y" role="gXG0x">
+        <node concept="3oM_SD" id="7m63smGvN2e" role="1PaTwD">
+          <property role="3oM_SC" value="-------------------------------------------" />
+        </node>
+      </node>
+    </node>
+    <node concept="eKYAL" id="7m63smGvNL4" role="1XD0Tu" />
+    <node concept="1XD0bz" id="7m63smGvtnS" role="1XD0Tu">
+      <property role="TrG5h" value="callSite" />
+      <node concept="1XD0a7" id="7m63smGv$3V" role="THmaL">
+        <node concept="1NbEtQ" id="7m63smGv$3W" role="1XD07G">
+          <ref role="AarEw" node="7m63smGvmxR" resolve="test_1" />
+        </node>
+        <node concept="UZU4S" id="7m63smGv$3X" role="21Pmik">
+          <ref role="UZU4V" node="7m63smGvtoX" resolve="list" />
+        </node>
+      </node>
+      <node concept="1XD0a7" id="7m63smGvujc" role="THmaL">
+        <node concept="1NbEtQ" id="7m63smGvuw2" role="1XD07G">
+          <ref role="AarEw" node="7m63smGvmxX" resolve="test_1" />
+          <node concept="1U20sH" id="7m63smGv$nK" role="lGtFl">
+            <property role="1U20sK" value="List&lt;Int&gt; is not List&lt;Double&gt;" />
+          </node>
+        </node>
+        <node concept="UZU4S" id="7m63smGvucI" role="21Pmik">
+          <ref role="UZU4V" node="7m63smGvtoX" resolve="list" />
+        </node>
+      </node>
+      <node concept="AQkLs" id="7m63smGv$W9" role="THmaL" />
+      <node concept="1XD0a7" id="7m63smGv_v1" role="THmaL">
+        <node concept="1NbEtQ" id="7m63smGv_v2" role="1XD07G">
+          <ref role="AarEw" node="7m63smGvmva" resolve="test_2" />
+        </node>
+        <node concept="UZU4S" id="7m63smGv_v3" role="21Pmik">
+          <ref role="UZU4V" node="7m63smGvtoX" resolve="list" />
+        </node>
+      </node>
+      <node concept="1XD0a7" id="7m63smGvvqu" role="THmaL">
+        <node concept="1NbEtQ" id="7m63smGvvDl" role="1XD07G">
+          <ref role="AarEw" node="7m63smGvmxx" resolve="test_2" />
+          <node concept="1U20sH" id="7m63smGv_Ox" role="lGtFl">
+            <property role="1U20sK" value="Int is not a List&lt;*&gt;" />
+          </node>
+        </node>
+        <node concept="UZU4S" id="7m63smGvvjR" role="21Pmik">
+          <ref role="UZU4V" node="7m63smGvtoX" resolve="list" />
+        </node>
+      </node>
+      <node concept="AQkLs" id="7m63smGvB6W" role="THmaL" />
+      <node concept="1XD0a7" id="7m63smGvBiO" role="THmaL">
+        <node concept="1NbEtQ" id="7m63smGvBiP" role="1XD07G">
+          <ref role="AarEw" node="7m63smGvtij" resolve="test_3" />
+        </node>
+        <node concept="UZU4S" id="7m63smGvBiQ" role="21Pmik">
+          <ref role="UZU4V" node="7m63smGvtoX" resolve="list" />
+        </node>
+      </node>
+      <node concept="1XD0a7" id="7m63smGvBB4" role="THmaL">
+        <node concept="1NbEtQ" id="7m63smGvBB5" role="1XD07G">
+          <ref role="AarEw" node="7m63smGvtiC" resolve="test_3" />
+          <node concept="1U20sH" id="7m63smGvBB6" role="lGtFl">
+            <property role="1U20sK" value="Int is not a list" />
+          </node>
+        </node>
+        <node concept="UZU4S" id="7m63smGvBB7" role="21Pmik">
+          <ref role="UZU4V" node="7m63smGvtoX" resolve="list" />
+        </node>
+      </node>
+      <node concept="1XD0a7" id="7m63smGvwyW" role="THmaL">
+        <node concept="1NbEtQ" id="7m63smGvwEj" role="1XD07G">
+          <ref role="AarEw" node="7m63smGvtiw" resolve="test_3" />
+          <node concept="1U20sH" id="7m63smGvB$B" role="lGtFl">
+            <property role="1U20sK" value="List&lt;Int&gt; is more specific" />
+          </node>
+        </node>
+        <node concept="UZU4S" id="7m63smGvwom" role="21Pmik">
+          <ref role="UZU4V" node="7m63smGvtoX" resolve="list" />
+        </node>
+      </node>
+      <node concept="1XD0a7" id="7m63smGvBLB" role="THmaL">
+        <node concept="1NbEtQ" id="7m63smGvBLC" role="1XD07G">
+          <ref role="AarEw" node="7m63smGvtip" resolve="test_3" />
+          <node concept="1U20sH" id="7m63smGvBLD" role="lGtFl">
+            <property role="1U20sK" value="List&lt;Int&gt; is not List&lt;Double&gt;" />
+          </node>
+        </node>
+        <node concept="UZU4S" id="7m63smGvBLE" role="21Pmik">
+          <ref role="UZU4V" node="7m63smGvtoX" resolve="list" />
+        </node>
+      </node>
+      <node concept="AQkLs" id="7m63smGvxOw" role="THmaL" />
+      <node concept="1XD0a7" id="7m63smGvzyh" role="THmaL">
+        <node concept="1NbEtQ" id="7m63smGvzEp" role="1XD07G">
+          <ref role="AarEw" node="7m63smGvxxV" resolve="test_4" />
+        </node>
+        <node concept="UZU4S" id="7m63smGvFHE" role="21Pmik">
+          <ref role="UZU4V" node="7m63smGvENd" resolve="inst" />
+        </node>
+      </node>
+      <node concept="1XD0a7" id="7m63smGvzQ_" role="THmaL">
+        <node concept="1NbEtQ" id="7m63smGvzQA" role="1XD07G">
+          <ref role="AarEw" node="7m63smGvxAL" resolve="test_4" />
+          <node concept="1U20sH" id="7m63smGvEBi" role="lGtFl">
+            <property role="1U20sK" value="priority for inner scope" />
+          </node>
+        </node>
+        <node concept="UZU4S" id="7m63smGvGw7" role="21Pmik">
+          <ref role="UZU4V" node="7m63smGvENd" resolve="inst" />
+        </node>
+      </node>
+      <node concept="AQkLs" id="7m63smGvJDm" role="THmaL" />
+      <node concept="1XD0a7" id="7m63smGvJkI" role="THmaL">
+        <node concept="1NbEtQ" id="7m63smGvJkJ" role="1XD07G">
+          <ref role="AarEw" node="7m63smGvIfB" resolve="test_5" />
+          <node concept="1XD0eI" id="7m63smGvK7R" role="TWiod">
+            <node concept="UZU4S" id="7m63smGvKKw" role="1XD0ZN">
+              <ref role="UZU4V" node="7m63smGvtoX" resolve="list" />
+            </node>
+          </node>
+        </node>
+        <node concept="UZU4S" id="7m63smGvJkK" role="21Pmik">
+          <ref role="UZU4V" node="7m63smGvENd" resolve="inst" />
+        </node>
+      </node>
+      <node concept="1XD0a7" id="7m63smGvJkL" role="THmaL">
+        <node concept="1NbEtQ" id="7m63smGvJkM" role="1XD07G">
+          <ref role="AarEw" node="7m63smGvGDm" resolve="test_5" />
+          <node concept="1XD0eI" id="7m63smGvL45" role="TWiod">
+            <node concept="UZU4S" id="7m63smGvLGt" role="1XD0ZN">
+              <ref role="UZU4V" node="7m63smGvtoX" resolve="list" />
+            </node>
+          </node>
+          <node concept="1U20sH" id="7m63smGvJkN" role="lGtFl">
+            <property role="1U20sK" value="List&lt;Int&gt; is not a number" />
+          </node>
+        </node>
+        <node concept="UZU4S" id="7m63smGvJkO" role="21Pmik">
+          <ref role="UZU4V" node="7m63smGvENd" resolve="inst" />
+        </node>
+      </node>
+      <node concept="1XD08$" id="7m63smGvtnU" role="ICcUN" />
+      <node concept="1XD0l2" id="7m63smGvtnV" role="2BPcuh" />
+      <node concept="1XD0bi" id="7m63smGvtoX" role="1XbAXm">
+        <property role="TrG5h" value="list" />
+        <node concept="1XD088" id="7m63smGvtp1" role="37iW8f">
+          <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
+          <node concept="1XD0kr" id="7m63smGvtpa" role="TPadY">
+            <node concept="1XD088" id="7m63smGvtp8" role="1XD02C">
+              <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0bi" id="7m63smGvENd" role="1XbAXm">
+        <property role="TrG5h" value="inst" />
+        <node concept="1XD088" id="7m63smGvF5d" role="37iW8f">
+          <ref role="1SePDO" node="7m63smGvxos" resolve="class_1" />
         </node>
       </node>
     </node>
