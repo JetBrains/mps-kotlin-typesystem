@@ -907,7 +907,7 @@
                         <node concept="2ShNRf" id="4tHJhwCh3O9" role="33vP2m">
                           <node concept="1pGfFk" id="4tHJhwCh3Oa" role="2ShVmc">
                             <property role="373rjd" value="true" />
-                            <ref role="37wK5l" to="fefm:2AGMd0x3k05" resolve="SelectBestCallReceiverQuery" />
+                            <ref role="37wK5l" to="fefm:2AGMd0x3k05" resolve="FilterByReceiverTypeQuery" />
                             <node concept="37vLTw" id="4tHJhwCh3Ob" role="37wK5m">
                               <ref role="3cqZAo" node="2AGMd0x3e10" resolve="targetType" />
                             </node>
@@ -977,7 +977,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="2AGMd0wXeUg" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
                 <node concept="2tJIrI" id="5g3vQLJSdG0" role="jymVt" />

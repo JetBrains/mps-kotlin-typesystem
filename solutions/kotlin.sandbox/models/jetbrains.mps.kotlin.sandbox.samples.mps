@@ -4734,7 +4734,7 @@
             </node>
             <node concept="1XD0a7" id="1qppQtOXNu3" role="21Pmik">
               <node concept="1NbEtQ" id="1qppQtOXNCi" role="1XD07H">
-                <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.maxByOrNull&lt;2&gt;(kotlin/Function1&lt;0,1&gt;)" resolve="maxByOrNull" />
+                <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.maxByOrNull[*,kotlin/Comparable&lt;1&gt;](kotlin/Function1&lt;0,1&gt;)" resolve="maxByOrNull" />
                 <node concept="1XD0f0" id="1qppQtOXNPn" role="1XD06E">
                   <node concept="1XD0a7" id="1qppQtOXO65" role="THmaL">
                     <node concept="UZU4S" id="1qppQtOXOh$" role="1XD07H">
@@ -4790,7 +4790,7 @@
             </node>
             <node concept="1XD0a7" id="1qppQtOXSr$" role="21Pmik">
               <node concept="1NbEtQ" id="1qppQtOXSr_" role="1XD07H">
-                <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.maxByOrNull&lt;2&gt;(kotlin/Function1&lt;0,1&gt;)" resolve="maxByOrNull" />
+                <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.maxByOrNull[*,kotlin/Comparable&lt;1&gt;](kotlin/Function1&lt;0,1&gt;)" resolve="maxByOrNull" />
                 <node concept="1XD0f0" id="1qppQtOXSrA" role="1XD06E">
                   <node concept="1XD0a7" id="1qppQtOXSrC" role="THmaL">
                     <node concept="UZU4S" id="1qppQtOXSrD" role="1XD07H">

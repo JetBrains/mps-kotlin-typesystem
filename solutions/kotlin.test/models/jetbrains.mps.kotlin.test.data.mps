@@ -2162,7 +2162,7 @@
     </node>
   </node>
   <node concept="1XD0fY" id="1azQtFlOcVb">
-    <property role="TrG5h" value="local_inference" />
+    <property role="TrG5h" value="localInference" />
     <node concept="eKYAL" id="1azQtFlOAb_" role="1XD0Tu" />
     <node concept="1XD0bz" id="1azQtFlO1oX" role="1XD0Tu">
       <property role="TrG5h" value="conditions" />
@@ -4592,7 +4592,7 @@
         </node>
         <node concept="1XD0mK" id="3ei97BdEifY" role="1XD05H">
           <node concept="UZU4S" id="3ei97BdEiOc" role="1XD0cX">
-            <ref role="UZU4V" node="3ei97BdEeyw" resolve="arrayWithDouble" />
+            <ref role="UZU4V" node="3ei97BdEeyw" resolve="arrayWithNumbers" />
           </node>
         </node>
         <node concept="1U20sH" id="3ei97BdEj6c" role="lGtFl">
@@ -4843,6 +4843,164 @@
         </node>
         <node concept="UZU4S" id="3ei97BdE_zi" role="21Pmik">
           <ref role="UZU4V" node="3ei97BdEk4C" resolve="first" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1XD0fY" id="3BUBOoX4DZw">
+    <property role="TrG5h" value="ambiguousScope" />
+    <node concept="eKYAL" id="3BUBOoX4E1t" role="1XD0Tu" />
+    <node concept="1XXB1C" id="3BUBOoX4EU4" role="1XD0Tu">
+      <property role="TrG5h" value="C1" />
+      <node concept="1XD0l2" id="3BUBOoX4EUa" role="2BPcuh" />
+      <node concept="1XD08_" id="3BUBOoX4FZy" role="ICcUN" />
+    </node>
+    <node concept="1XXB1C" id="3BUBOoX4EUx" role="1XD0Tu">
+      <property role="TrG5h" value="C2" />
+      <node concept="1XD0l2" id="3BUBOoX4EUB" role="2BPcuh" />
+      <node concept="1XD08_" id="3BUBOoX4FZ$" role="ICcUN" />
+    </node>
+    <node concept="1XD0aY" id="3BUBOoX4E2H" role="1XD0Tu">
+      <property role="TrG5h" value="X" />
+      <node concept="1XD08$" id="3BUBOoX4E2J" role="ICcUN" />
+      <node concept="1XD0l2" id="3BUBOoX4E2K" role="2BPcuh" />
+      <node concept="KYwOn" id="3BUBOoX4FRR" role="AST3G">
+        <ref role="KYwOm" node="3BUBOoX4EUx" resolve="C2" />
+      </node>
+      <node concept="KYwOn" id="3BUBOoX4Fpn" role="AST3G">
+        <ref role="KYwOm" node="3BUBOoX4EU4" resolve="C1" />
+      </node>
+    </node>
+    <node concept="eKYAL" id="3BUBOoX4FZK" role="1XD0Tu" />
+    <node concept="1XD0bz" id="3BUBOoX4G0e" role="1XD0Tu">
+      <property role="TrG5h" value="myFn" />
+      <node concept="1XD08$" id="3BUBOoX4G0f" role="ICcUN" />
+      <node concept="1XD0l2" id="3BUBOoX4G0g" role="2BPcuh" />
+      <node concept="1XD088" id="3BUBOoX4G0h" role="39xbXa">
+        <ref role="1SePDO" node="3BUBOoX4EU4" resolve="C1" />
+      </node>
+    </node>
+    <node concept="1XD0bz" id="3BUBOoX4E1y" role="1XD0Tu">
+      <property role="TrG5h" value="myFn" />
+      <node concept="1XD08$" id="3BUBOoX4E1$" role="ICcUN" />
+      <node concept="1XD0l2" id="3BUBOoX4E1_" role="2BPcuh" />
+      <node concept="1XD088" id="3BUBOoX4G0a" role="39xbXa">
+        <ref role="1SePDO" node="3BUBOoX4EUx" resolve="C2" />
+      </node>
+    </node>
+    <node concept="eKYAL" id="3BUBOoX4G0U" role="1XD0Tu" />
+    <node concept="1XD0bz" id="3BUBOoX4G1D" role="1XD0Tu">
+      <property role="TrG5h" value="scopes" />
+      <node concept="1XD0a7" id="3BUBOoX4Gkj" role="THmaL">
+        <node concept="1NbEtQ" id="3BUBOoX4Glk" role="1XD07G">
+          <ref role="AarEw" node="3BUBOoX4E1y" resolve="myFn" />
+        </node>
+        <node concept="UZU4S" id="3BUBOoX4Gac" role="21Pmik">
+          <ref role="UZU4V" node="3BUBOoX4G27" resolve="x" />
+        </node>
+      </node>
+      <node concept="TDTJT" id="2k7NUUKqR9F" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="2k7NUUKqR9G" role="2Rs2$5">
+          <property role="TrG5h" value="a" />
+          <node concept="1XD088" id="2k7NUUKqRox" role="1XD0Z0">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="2k7NUUKqRo_" role="1XD05H">
+          <node concept="1XD0k7" id="2k7NUUKqR_V" role="1XD0cX">
+            <property role="1XD01k" value="3" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0bi" id="3BUBOoX4G27" role="1XbAXm">
+        <property role="TrG5h" value="x" />
+        <node concept="1XD088" id="3BUBOoX4G2b" role="37iW8f">
+          <ref role="1SePDO" node="3BUBOoX4E2H" resolve="X" />
+        </node>
+      </node>
+      <node concept="1XD08$" id="3BUBOoX4G1F" role="ICcUN" />
+      <node concept="1XD0l2" id="3BUBOoX4G1G" role="2BPcuh" />
+    </node>
+  </node>
+  <node concept="1XD0fY" id="5_TE1G$jG8V">
+    <property role="TrG5h" value="superConstructors" />
+    <node concept="eKYAL" id="5_TE1G$jJw5" role="1XD0Tu" />
+    <node concept="1XD0aY" id="5_TE1G$jJwg" role="1XD0Tu">
+      <property role="TrG5h" value="TestData" />
+      <node concept="1XD0bt" id="5_TE1G$jJwj" role="1XD06P" />
+      <node concept="1XD08$" id="5_TE1G$jJwk" role="ICcUN" />
+      <node concept="1XD0l2" id="5_TE1G$jJwn" role="2BPcuh" />
+      <node concept="1XD0bf" id="5_TE1G$jJwA" role="KDYUA">
+        <node concept="1XD0l2" id="5_TE1G$jJwB" role="2BPcuh" />
+        <node concept="1XD0fH" id="5_TE1G$jJwC" role="1XD008">
+          <property role="TrG5h" value="a" />
+          <property role="21VRqZ" value="true" />
+          <property role="21VRqX" value="true" />
+          <node concept="1XD088" id="5_TE1G$jJwK" role="37iW8f">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="eKYAL" id="5_TE1G$jJwY" role="1XD0Tu" />
+    <node concept="1XD0aY" id="5_TE1G$jJxB" role="1XD0Tu">
+      <property role="TrG5h" value="Parent" />
+      <node concept="1XD08z" id="5_TE1G$jJxE" role="ICcUN" />
+      <node concept="1XD0l2" id="5_TE1G$jJxF" role="2BPcuh" />
+      <node concept="1XD0bf" id="5_TE1G$jJy3" role="KDYUA">
+        <node concept="1XD0l2" id="5_TE1G$jJy4" role="2BPcuh" />
+        <node concept="1XD0fH" id="5_TE1G$jJy5" role="1XD008">
+          <property role="TrG5h" value="aInt" />
+          <node concept="1XD088" id="5_TE1G$jJyd" role="37iW8f">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="eKYAL" id="5_TE1G$jNA4" role="1XD0Tu" />
+    <node concept="gXE$l" id="5_TE1G$jNB3" role="1XD0Tu">
+      <node concept="1PaTwC" id="5_TE1G$jNB5" role="gXG0x">
+        <node concept="3oM_SD" id="5_TE1G$jNBG" role="1PaTwD">
+          <property role="3oM_SC" value="Should" />
+        </node>
+        <node concept="3oM_SD" id="5_TE1G$jNBI" role="1PaTwD">
+          <property role="3oM_SC" value="compute" />
+        </node>
+        <node concept="3oM_SD" id="5_TE1G$jNBL" role="1PaTwD">
+          <property role="3oM_SC" value="types" />
+        </node>
+        <node concept="3oM_SD" id="5_TE1G$jNBP" role="1PaTwD">
+          <property role="3oM_SC" value="properly" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0aY" id="5_TE1G$jJyT" role="1XD0Tu">
+      <property role="TrG5h" value="Child" />
+      <node concept="1XD08$" id="5_TE1G$jJyV" role="ICcUN" />
+      <node concept="1XD0l2" id="5_TE1G$jJyW" role="2BPcuh" />
+      <node concept="1XD08x" id="5_TE1G$jKvP" role="AST3G">
+        <ref role="KYurZ" node="5_TE1G$jJy3" resolve="Parent" />
+        <node concept="1XD0eI" id="5_TE1G$jLag" role="TWiod">
+          <node concept="1XD0a7" id="5_TE1G$jN97" role="1XD0ZN">
+            <node concept="UZU4S" id="5_TE1G$jNcX" role="1XD07G">
+              <ref role="UZU4V" node="5_TE1G$jJwC" resolve="a" />
+            </node>
+            <node concept="UZU4S" id="5_TE1G$jMVM" role="21Pmik">
+              <ref role="UZU4V" node="5_TE1G$jL_k" resolve="data" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0bf" id="5_TE1G$jL_i" role="KDYUA">
+        <node concept="1XD0l2" id="5_TE1G$jL_j" role="2BPcuh" />
+        <node concept="1XD0fH" id="5_TE1G$jL_k" role="1XD008">
+          <property role="TrG5h" value="data" />
+          <property role="21VRqZ" value="true" />
+          <property role="21VRqX" value="true" />
+          <node concept="1XD088" id="5_TE1G$jLCY" role="37iW8f">
+            <ref role="1SePDO" node="5_TE1G$jJwg" resolve="TestData" />
+          </node>
         </node>
       </node>
     </node>
