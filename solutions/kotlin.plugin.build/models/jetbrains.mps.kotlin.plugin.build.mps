@@ -352,7 +352,7 @@
       <node concept="2pNNFK" id="1c8EeOQUqay" role="20twgj">
         <property role="2pNNFO" value="change-notes" />
         <node concept="2pNm8S" id="1c8EeOQUqaz" role="3o6s8t">
-          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Receiver type support in overload resolution&lt;/li&gt;&lt;li&gt;Experimental utility to filter calls by receiver type&lt;/li&gt;&lt;/ul&gt;" />
+          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Compatibility for 2022.3&lt;/li&gt;&lt;/ul&gt;" />
         </node>
       </node>
       <node concept="3_J27D" id="69s32WJ3dwI" role="3s6cr7">
@@ -370,6 +370,7 @@
       <node concept="1E1JtD" id="2b3dSh2EpNK" role="2G$12L">
         <property role="TrG5h" value="jetbrains.mps.kotlinExt" />
         <property role="3LESm3" value="ad107ed1-c106-497e-a6e8-dabd35b05857" />
+        <property role="BnDLt" value="true" />
         <node concept="55IIr" id="2b3dSh2EpNN" role="3LF7KH">
           <node concept="2Ry0Ak" id="2b3dSh2EpO$" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
@@ -425,6 +426,11 @@
         <node concept="1SiIV0" id="7dX2Gvb4Q4z" role="3bR37C">
           <node concept="3bR9La" id="7dX2Gvb4Q4$" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1ZM$$K$ob$F" role="3bR37C">
+          <node concept="3bR9La" id="1ZM$$K$ob$G" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
           </node>
         </node>
       </node>
