@@ -345,14 +345,14 @@
         <node concept="2pNUuL" id="11H_0IugNYK" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
           <node concept="2pMdtt" id="11H_0IugNYL" role="2pMdts">
-            <property role="2pMdty" value="222.3" />
+            <property role="2pMdty" value="223.0" />
           </node>
         </node>
       </node>
       <node concept="2pNNFK" id="1c8EeOQUqay" role="20twgj">
         <property role="2pNNFO" value="change-notes" />
         <node concept="2pNm8S" id="1c8EeOQUqaz" role="3o6s8t">
-          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Compatibility for 2022.3&lt;/li&gt;&lt;/ul&gt;" />
+          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Deprecated intermediateType query in favor of node attributes on types&lt;/li&gt;&lt;li&gt;New experimental query to filter function declarations by receiver type&lt;/li&gt;&lt;/ul&gt;" />
         </node>
       </node>
       <node concept="3_J27D" id="69s32WJ3dwI" role="3s6cr7">
