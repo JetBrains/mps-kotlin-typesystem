@@ -63,8 +63,8 @@
         <depends>jetbrains.mps.kotlin</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
-        <idea-version since-build="222.3" />
-        <change-notes><![CDATA[<ul><li>Compatibility for 2022.3</li></ul>]]></change-notes>
+        <idea-version since-build="223.0" />
+        <change-notes><![CDATA[<ul><li>Deprecated intermediateType query in favor of node attributes on types</li><li>New experimental query to filter function declarations by receiver type</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -86,8 +86,8 @@
         <depends>jetbrains.mps.kotlin</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
-        <idea-version since-build="222.3" />
-        <change-notes><![CDATA[<ul><li>Compatibility for 2022.3</li></ul>]]></change-notes>
+        <idea-version since-build="223.0" />
+        <change-notes><![CDATA[<ul><li>Deprecated intermediateType query in favor of node attributes on types</li><li>New experimental query to filter function declarations by receiver type</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
