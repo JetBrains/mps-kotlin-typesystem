@@ -410,7 +410,7 @@
       <concept id="8456919074574710634" name="jetbrains.mps.logic.structure.ExpressionItem" flags="ng" index="37jhX">
         <child id="8456919074574710741" name="code" index="37jj2" />
       </concept>
-      <concept id="1564179198502666296" name="jetbrains.mps.logic.structure.LogicalType" flags="ig" index="26uTi9">
+      <concept id="1564179198502666296" name="jetbrains.mps.logic.structure.LogicalType" flags="ng" index="26uTi9">
         <child id="6399471711045454762" name="dataType" index="3vMvoR" />
       </concept>
       <concept id="8169506320648805904" name="jetbrains.mps.logic.structure.LogicalVariableDeclarationContainer" flags="ng" index="29MRiA">
@@ -628,7 +628,6 @@
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
-      <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
       <concept id="1224414427926" name="jetbrains.mps.baseLanguage.collections.structure.SequenceCreator" flags="nn" index="kMnCb">
         <child id="1224414456414" name="elementType" index="kMuH3" />
       </concept>
@@ -773,8 +772,8 @@
       <concept id="1204249894870288679" name="jetbrains.mps.lang.coderules.structure.RequireAllStatement" flags="ng" index="Oftf1">
         <child id="1204249894870289978" name="nodes" index="Oftjs" />
       </concept>
-      <concept id="5042557354438383712" name="jetbrains.mps.lang.coderules.structure.TermListType" flags="ig" index="VbTHi" />
-      <concept id="2381360340662937504" name="jetbrains.mps.lang.coderules.structure.TermType" flags="ig" index="32pEOW" />
+      <concept id="5042557354438383712" name="jetbrains.mps.lang.coderules.structure.TermListType" flags="ng" index="VbTHi" />
+      <concept id="2381360340662937504" name="jetbrains.mps.lang.coderules.structure.TermType" flags="ng" index="32pEOW" />
       <concept id="6097203247139556923" name="jetbrains.mps.lang.coderules.structure.CallMacroTemplate" flags="ng" index="3hwh0R">
         <child id="6097203247147235901" name="logical" index="3h32gL" />
         <child id="6097203247141261094" name="code" index="3hEL4E" />
@@ -16389,9 +16388,8 @@
               <ref role="3uigEE" to="hez:27wMicCxyJQ" resolve="NodeTypeVarSubs" />
             </node>
             <node concept="2ShNRf" id="1hJVIB$kaMH" role="33vP2m">
-              <node concept="HV5vD" id="1hJVIB$kbuI" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="HV5vE" to="hez:27wMicCxyJQ" resolve="NodeTypeVarSubs" />
+              <node concept="1pGfFk" id="7DSH8smmYed" role="2ShVmc">
+                <ref role="37wK5l" to="hez:7DSH8smmnSl" resolve="NodeTypeVarSubs" />
               </node>
             </node>
           </node>
@@ -16420,7 +16418,7 @@
                 <ref role="3cqZAo" node="1hJVIB$kaM3" resolve="nodeSubs" />
               </node>
               <node concept="liA8E" id="1hJVIB$kigr" role="2OqNvi">
-                <ref role="37wK5l" to="hez:27wMicCCjIt" resolve="expand" />
+                <ref role="37wK5l" to="hez:2$1CHwGB4QJ" resolve="expand" />
                 <node concept="2OqwBi" id="1hJVIB$kigs" role="37wK5m">
                   <node concept="2OqwBi" id="1hJVIB$kigt" role="2Oq$k0">
                     <node concept="3j8tct" id="1hJVIB$kigu" role="2Oq$k0">
@@ -16432,13 +16430,6 @@
                   </node>
                   <node concept="3TrEf2" id="1hJVIB$kigw" role="2OqNvi">
                     <ref role="3Tt5mk" to="hcm8:2yYXHtl6Jwg" resolve="type" />
-                  </node>
-                </node>
-                <node concept="2ShNRf" id="1hJVIB$kigx" role="37wK5m">
-                  <node concept="2i4dXS" id="1hJVIB$kigy" role="2ShVmc">
-                    <node concept="3uibUv" id="1hJVIB$kigz" role="HW$YZ">
-                      <ref role="3uigEE" to="1p8r:26mUjU3_L7_" resolve="TypeParameterDeclaration" />
-                    </node>
                   </node>
                 </node>
               </node>

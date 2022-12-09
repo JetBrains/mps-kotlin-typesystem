@@ -117,6 +117,10 @@
       <concept id="409518875564192849" name="jetbrains.mps.kotlin.structure.IDeconstructingDeclarations" flags="ng" index="1BvddI">
         <child id="5401033615058696817" name="variables" index="2Rs2$5" />
       </concept>
+      <concept id="1707674691124158679" name="jetbrains.mps.kotlin.structure.ImplicitReceiverAttribute" flags="ng" index="1FOS72">
+        <property id="1707674691124158692" name="receiverIndex" index="1FOS7L" />
+        <reference id="1707674691124158689" name="receiver" index="1FOS7O" />
+      </concept>
       <concept id="7758491406785007768" name="jetbrains.mps.kotlin.structure.TypePostFixUnaryExpression" flags="ng" index="1HZe9c">
         <child id="266487902735999944" name="type" index="3CdAat" />
       </concept>
@@ -251,6 +255,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -4972,7 +4977,8 @@
     </node>
   </node>
   <node concept="1XD0fY" id="7m63smGvlTj">
-    <property role="TrG5h" value="scopes" />
+    <property role="TrG5h" value="clashingReceiver" />
+    <property role="3GE5qa" value="scopes" />
     <node concept="eKYAL" id="7m63smGvmv5" role="1XD0Tu" />
     <node concept="1XD0bz" id="7m63smGvmxX" role="1XD0Tu">
       <property role="TrG5h" value="test_1" />
@@ -5327,6 +5333,99 @@
         <node concept="1XD088" id="7m63smGvF5d" role="37iW8f">
           <ref role="1SePDO" node="7m63smGvxos" resolve="class_1" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1XD0fY" id="1uMShlWu$eS">
+    <property role="3GE5qa" value="scopes" />
+    <property role="TrG5h" value="thisScopes" />
+    <node concept="eKYAL" id="1uMShlWu$gD" role="1XD0Tu" />
+    <node concept="1XD0aY" id="1uMShlWu$h9" role="1XD0Tu">
+      <property role="TrG5h" value="MyClass" />
+      <node concept="1XD08$" id="1uMShlWu$hb" role="ICcUN" />
+      <node concept="1XD0l2" id="1uMShlWu$hc" role="2BPcuh" />
+      <node concept="1XD0bz" id="1uMShlWu$js" role="KS$fE">
+        <property role="TrG5h" value="myFunction" />
+        <node concept="1NbEFs" id="1uMShlWu_qL" role="THmaL">
+          <ref role="AarEw" to="0:~.with&lt;2&gt;(0,Function1&lt;0,1&gt;)" resolve="with" />
+          <node concept="1XD0eI" id="1uMShlWu__v" role="TWiod">
+            <node concept="1XD08G" id="1uMShlWu__u" role="1XD0ZN">
+              <node concept="Df6$J" id="1uMShlWu_AX" role="Df6Hu">
+                <node concept="21VMdE" id="1uMShlWu_AW" role="Df7GE">
+                  <property role="21VMdD" value="3" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1XD0f0" id="1uMShlWu_Bs" role="1XD06E">
+            <node concept="1NbEFs" id="1uMShlXe8Nd" role="THmaL">
+              <ref role="AarEw" to="0:~NotImplementedError.new(String)" resolve="NotImplementedError" />
+              <node concept="1XD0eI" id="1uMShlXe8Ng" role="TWiod">
+                <node concept="1XD0k7" id="1uMShlXe8Nh" role="1XD0ZN">
+                  <property role="1XD01k" value="3" />
+                </node>
+              </node>
+            </node>
+            <node concept="1NbEFs" id="1uMShlX5nke" role="THmaL">
+              <ref role="AarEw" to="s3y3:~#kotlin/String.substring(kotlin/Int)" resolve="substring" />
+              <node concept="1FOS72" id="1uMShlX5nkg" role="lGtFl">
+                <property role="1FOS7L" value="0" />
+                <ref role="1FOS7O" node="1uMShlWu_Bs" resolve="it" />
+              </node>
+              <node concept="1XD0eI" id="1uMShlX5nUp" role="TWiod">
+                <node concept="1XD0k7" id="1uMShlX5nUo" role="1XD0ZN">
+                  <property role="1XD01k" value="3" />
+                </node>
+              </node>
+            </node>
+            <node concept="1NbEFs" id="1uMShlWuSja" role="THmaL">
+              <ref role="AarEw" to="s3y3:~#kotlin/String.substring(kotlin/Int)" resolve="substring" />
+              <node concept="1FOS72" id="1uMShlWuSjc" role="lGtFl">
+                <property role="1FOS7L" value="0" />
+                <ref role="1FOS7O" node="1uMShlWu_Bs" resolve="it" />
+              </node>
+              <node concept="1XD0eI" id="1uMShlWuSMA" role="TWiod">
+                <node concept="1XD0k7" id="1uMShlWuSM_" role="1XD0ZN">
+                  <property role="1XD01k" value="2" />
+                </node>
+              </node>
+            </node>
+            <node concept="1NbEFs" id="1uMShlWuVTo" role="THmaL">
+              <ref role="AarEw" node="1uMShlWuTOL" resolve="myClassFunction" />
+              <node concept="1FOS72" id="1uMShlWuVTq" role="lGtFl">
+                <property role="1FOS7L" value="0" />
+                <ref role="1FOS7O" node="1uMShlWu$h9" resolve="MyClass" />
+              </node>
+            </node>
+            <node concept="UZU4S" id="1uMShlX9EqK" role="THmaL">
+              <ref role="UZU4V" node="1uMShlX9Cs2" resolve="test" />
+              <node concept="1FOS72" id="1uMShlX9EqM" role="lGtFl">
+                <property role="1FOS7L" value="0" />
+                <ref role="1FOS7O" node="1uMShlWu$h9" resolve="MyClass" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1XD08$" id="1uMShlWu$ju" role="ICcUN" />
+        <node concept="1XD0l2" id="1uMShlWu$jv" role="2BPcuh" />
+      </node>
+      <node concept="1XD09Q" id="1uMShlX9CrZ" role="KS$fE">
+        <property role="1Xb$ne" value="true" />
+        <node concept="1XD08$" id="1uMShlX9Cs1" role="ICcUN" />
+        <node concept="1XD0eA" id="1uMShlX9Cs2" role="TDYyH">
+          <property role="TrG5h" value="test" />
+        </node>
+        <node concept="1XD0l2" id="1uMShlX9Cs4" role="2BPcuh" />
+        <node concept="1XD0mK" id="1uMShlX9D1H" role="1XD05H">
+          <node concept="1XD0k7" id="1uMShlX9DdF" role="1XD0cX">
+            <property role="1XD01k" value="3" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0bz" id="1uMShlWuTOL" role="KS$fE">
+        <property role="TrG5h" value="myClassFunction" />
+        <node concept="1XD08$" id="1uMShlWuTON" role="ICcUN" />
+        <node concept="1XD0l2" id="1uMShlWuTOO" role="2BPcuh" />
       </node>
     </node>
   </node>
