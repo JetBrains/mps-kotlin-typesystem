@@ -5013,7 +5013,7 @@
         <node concept="1XD0a7" id="1qppQtOYyB4" role="21Pkln">
           <property role="21SRas" value="true" />
           <node concept="1NbEtQ" id="1qppQtOYzTi" role="1XD07H">
-            <ref role="AarEw" to="0:~#Any?.toString()" resolve="toString" />
+            <ref role="AarEw" to="0:~Any.toString()" resolve="toString" />
           </node>
           <node concept="1XD0df" id="1qppQtOYxQm" role="21Pmik" />
         </node>
