@@ -130,10 +130,7 @@
         <child id="266487902735999944" name="type" index="3CdAat" />
       </concept>
       <concept id="4662566628538082515" name="jetbrains.mps.kotlin.structure.FunctionCallTarget" flags="ng" index="1NbEtQ" />
-      <concept id="4662566628538083705" name="jetbrains.mps.kotlin.structure.FunctionCallExpression" flags="ng" index="1NbEFs">
-        <property id="7751614607563712585" name="receiverIndex" index="40MKz" />
-        <reference id="7751614607563710510" name="receiver" index="40Mh4" />
-      </concept>
+      <concept id="4662566628538083705" name="jetbrains.mps.kotlin.structure.FunctionCallExpression" flags="ng" index="1NbEFs" />
       <concept id="6664176324866782072" name="jetbrains.mps.kotlin.structure.IClassReference" flags="ng" index="1SePDR">
         <reference id="6664176324866782075" name="class" index="1SePDO" />
       </concept>
@@ -1261,9 +1258,7 @@
               <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.firstNotNullOfOrNull&lt;2&gt;(kotlin/Function1&lt;0,1?&gt;)" resolve="firstNotNullOfOrNull" />
               <node concept="1XD0f0" id="6CwBo20q$RL" role="1XD06E">
                 <node concept="1NbEFs" id="6kJ$aPSY4CI" role="THmaL">
-                  <property role="40MKz" value="0" />
                   <ref role="AarEw" node="6CwBo204VwS" resolve="convert" />
-                  <ref role="40Mh4" node="6CwBo1ZZ9ON" resolve="ConverterEngine" />
                   <node concept="1XD0eI" id="6kJ$aPSY4CK" role="TWiod">
                     <node concept="UZU4S" id="6kJ$aPSY4CL" role="1XD0ZN">
                       <ref role="UZU4V" node="6CwBo20q$RL" resolve="it" />
@@ -1570,7 +1565,6 @@
                 <ref role="AarEw" to="0:~#0.let&lt;2&gt;(Function1&lt;0,1&gt;)" resolve="let" />
                 <node concept="1XD0f0" id="1hJVIB$eYTx" role="1XD06E">
                   <node concept="1NbEFs" id="6kJ$aPSzQws" role="THmaL">
-                    <property role="40MKz" value="0" />
                     <ref role="AarEw" node="6CwBo208cCU" resolve="convert" />
                     <node concept="1XD0eI" id="1hJVIB$fUZB" role="TWiod">
                       <node concept="UZU4S" id="1hJVIB$fUZA" role="1XD0ZN">
