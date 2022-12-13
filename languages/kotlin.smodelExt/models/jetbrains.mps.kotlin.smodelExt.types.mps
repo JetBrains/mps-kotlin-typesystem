@@ -626,12 +626,6 @@
                 <ref role="2sp9C9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
               </node>
             </node>
-            <node concept="3NuqgR" id="468dau37y8c" role="0Rg$4">
-              <node concept="aZer4" id="468dau37y8d" role="3XD1gS">
-                <property role="TrG5h" value="_Params" />
-              </node>
-              <node concept="VbTHi" id="468dau37y8A" role="3vLBG7" />
-            </node>
             <node concept="3xSepi" id="6yQJbFyOZcj" role="3xSepv">
               <node concept="3Aq9E8" id="6yQJbFyOZck" role="3xSepj">
                 <node concept="3I6sU6" id="6yQJbFyOZcl" role="3Ip0Jz">
@@ -1512,12 +1506,6 @@
               </node>
             </node>
             <node concept="3NuqgR" id="JmO2PmUxkJ" role="0Rg$4">
-              <node concept="aZer4" id="JmO2PmUxkK" role="3XD1gS">
-                <property role="TrG5h" value="SubArgs" />
-              </node>
-              <node concept="aZer4" id="JmO2PmUxkL" role="3XD1gS">
-                <property role="TrG5h" value="SuperArgs" />
-              </node>
               <node concept="aZer4" id="6B9Js4S8foc" role="3XD1gS">
                 <property role="TrG5h" value="Sub" />
               </node>
