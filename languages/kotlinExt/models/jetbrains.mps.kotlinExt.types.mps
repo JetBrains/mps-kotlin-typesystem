@@ -40019,7 +40019,7 @@
       </node>
     </node>
     <node concept="1nLNMY" id="3CHKp39Iji" role="1nK1Vg">
-      <property role="TrG5h" value="singleChildTransparentNode" />
+      <property role="TrG5h" value="parenthesis" />
       <node concept="3clFbS" id="3CHKp39Ijj" role="1nLNMH">
         <node concept="1nLNNL" id="4iZ5cr__977" role="3cqZAp">
           <node concept="1nLNMm" id="4iZ5cr__978" role="1nLNNK">
@@ -40082,8 +40082,8 @@
                         <node concept="3A2sRY" id="4iZ5cr__97z" role="2Oq$k0">
                           <ref role="3A2yKK" node="3CHKp39IjL" resolve="node" />
                         </node>
-                        <node concept="2qgKlT" id="4eBTF68QTwO" role="2OqNvi">
-                          <ref role="37wK5l" to="hez:6563FJLePC_" resolve="getDataFlowChild" />
+                        <node concept="3TrEf2" id="4HDl82dpdMS" role="2OqNvi">
+                          <ref role="3Tt5mk" to="hcm8:2yYXHtl6Jqp" resolve="nested" />
                         </node>
                       </node>
                       <node concept="a7P8L" id="4iZ5cr__97_" role="3jm6SO">
@@ -40107,7 +40107,7 @@
         </node>
       </node>
       <node concept="2t___k" id="3CHKp39IjK" role="1nLNMg">
-        <ref role="2t_S0q" to="hcm8:6563FJLeOY_" resolve="IDataflowPassToChild" />
+        <ref role="2t_S0q" to="hcm8:2yYXHtl6Jfy" resolve="ParenthesizedExpression" />
         <node concept="3A20r5" id="3CHKp39IjL" role="2t_VXX">
           <property role="TrG5h" value="node" />
         </node>
@@ -54897,6 +54897,136 @@
     <property role="3GE5qa" value="rules.expression" />
     <property role="TrG5h" value="MemberNavigation" />
     <ref role="2YbDB9" node="5ViKESnVmAv" resolve="TypeChecking" />
+    <node concept="1nLNMY" id="4HDl82dp94w" role="1nK1Vg">
+      <property role="TrG5h" value="memberNavigation" />
+      <node concept="3clFbS" id="4HDl82dp94x" role="1nLNMH">
+        <node concept="1nLNNL" id="4HDl82dpa5a" role="3cqZAp">
+          <node concept="1nLNMm" id="4HDl82dpa5b" role="1nLNNK">
+            <node concept="3Aq93q" id="4HDl82dpa5c" role="1nLNMb">
+              <node concept="3I6sU6" id="4HDl82dpa5d" role="3Ip0Jz">
+                <node concept="3I6s7M" id="4HDl82dpa5e" role="3I6sU7">
+                  <node concept="3Aqt3T" id="4HDl82dpa5f" role="3I6s78">
+                    <ref role="3AqCNq" node="5ViKESnVmAw" resolve="dataflow" />
+                    <node concept="37jhX" id="4HDl82dpa5g" role="3AunhB">
+                      <node concept="3A2sRY" id="4HDl82dpa5h" role="37jj2">
+                        <ref role="3A2yKK" node="4HDl82dp94z" resolve="mno" />
+                      </node>
+                    </node>
+                    <node concept="a7P8L" id="4HDl82dpa5i" role="3AunhB">
+                      <ref role="a7OzE" node="4HDl82dpa5n" resolve="Type" />
+                    </node>
+                    <node concept="a7P8L" id="4HDl82dpa5j" role="3AunhB">
+                      <ref role="a7OzE" node="4HDl82dpa5q" resolve="Before" />
+                    </node>
+                    <node concept="a7P8L" id="4HDl82dpa5k" role="3AunhB">
+                      <ref role="a7OzE" node="4HDl82dpa5r" resolve="After" />
+                    </node>
+                    <node concept="a7P8L" id="4HDl82dpa5l" role="3AunhB">
+                      <ref role="a7OzE" node="4HDl82dpa5u" resolve="Status" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3NuqgR" id="4HDl82dpa5m" role="0Rg$4">
+              <node concept="aZer4" id="4HDl82dpa5n" role="3XD1gS">
+                <property role="TrG5h" value="Type" />
+              </node>
+              <node concept="aZer4" id="4HDl82dpaV3" role="3XD1gS">
+                <property role="TrG5h" value="_Op" />
+              </node>
+              <node concept="32pEOW" id="4HDl82dpa5o" role="3vLBG7" />
+            </node>
+            <node concept="3NuqgR" id="4HDl82dpa5p" role="0Rg$4">
+              <node concept="aZer4" id="4HDl82dpa5q" role="3XD1gS">
+                <property role="TrG5h" value="Before" />
+              </node>
+              <node concept="aZer4" id="4HDl82dpa5r" role="3XD1gS">
+                <property role="TrG5h" value="After" />
+              </node>
+              <node concept="aZer4" id="4HDl82dpc3h" role="3XD1gS">
+                <property role="TrG5h" value="AfterOperand" />
+              </node>
+              <node concept="32pEOW" id="4HDl82dpa5s" role="3vLBG7" />
+            </node>
+            <node concept="3NuqgR" id="4HDl82dpa5t" role="0Rg$4">
+              <node concept="aZer4" id="4HDl82dpa5u" role="3XD1gS">
+                <property role="TrG5h" value="Status" />
+              </node>
+              <node concept="3uibUv" id="4HDl82dpa5v" role="3vLBG7">
+                <ref role="3uigEE" node="7RZWrHVLdNG" resolve="FlowStatus" />
+              </node>
+            </node>
+            <node concept="3xSepi" id="4HDl82dpa5w" role="3xSepv">
+              <node concept="3Aq9E8" id="4HDl82dpaOj" role="3xSepj">
+                <node concept="3I6sU6" id="4HDl82dpaOk" role="3Ip0Jz">
+                  <node concept="3I6s7M" id="4HDl82dpaU$" role="3I6sU7">
+                    <node concept="3jm4v3" id="4HDl82dpaUv" role="3I6s78">
+                      <ref role="3jm46O" node="7RZWrHVM0VG" resolve="dataflowOf" />
+                      <node concept="2OqwBi" id="4HDl82dpbel" role="3jicU7">
+                        <node concept="3A2sRY" id="4HDl82dpbem" role="2Oq$k0">
+                          <ref role="3A2yKK" node="4HDl82dp94z" resolve="mno" />
+                        </node>
+                        <node concept="3TrEf2" id="4HDl82dpbVD" role="2OqNvi">
+                          <ref role="3Tt5mk" to="hcm8:1502Vug_mWz" resolve="operand" />
+                        </node>
+                      </node>
+                      <node concept="a7P8L" id="4HDl82dpaXv" role="3jm6SO">
+                        <ref role="a7OzE" node="4HDl82dpaV3" resolve="_Op" />
+                      </node>
+                      <node concept="a7P8L" id="4HDl82dpbdC" role="3jm6SO">
+                        <ref role="a7OzE" node="4HDl82dpa5q" resolve="Before" />
+                      </node>
+                      <node concept="a7P8L" id="4HDl82dpcgP" role="3jm6SO">
+                        <ref role="a7OzE" node="4HDl82dpc3h" resolve="AfterOperand" />
+                      </node>
+                      <node concept="a7P8L" id="4HDl82dpbe7" role="3jm6SO">
+                        <ref role="a7OzE" node="4HDl82dpa5u" resolve="Status" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Aq9E8" id="4HDl82dpa5x" role="3xSepj">
+                <node concept="3I6sU6" id="4HDl82dpa5y" role="3Ip0Jz">
+                  <node concept="3I6s7M" id="4HDl82dpa5z" role="3I6sU7">
+                    <node concept="3jm4v3" id="4HDl82dpa5$" role="3I6s78">
+                      <ref role="3jm46O" node="7RZWrHVM0VG" resolve="dataflowOf" />
+                      <node concept="2OqwBi" id="4HDl82dpa5_" role="3jicU7">
+                        <node concept="3A2sRY" id="4HDl82dpa5A" role="2Oq$k0">
+                          <ref role="3A2yKK" node="4HDl82dp94z" resolve="mno" />
+                        </node>
+                        <node concept="3TrEf2" id="4HDl82dpc2V" role="2OqNvi">
+                          <ref role="3Tt5mk" to="hcm8:1502VugCR$J" resolve="target" />
+                        </node>
+                      </node>
+                      <node concept="a7P8L" id="4HDl82dpa5C" role="3jm6SO">
+                        <ref role="a7OzE" node="4HDl82dpa5n" resolve="Type" />
+                      </node>
+                      <node concept="a7P8L" id="4HDl82dpcjd" role="3jm6SO">
+                        <ref role="a7OzE" node="4HDl82dpc3h" resolve="AfterOperand" />
+                      </node>
+                      <node concept="a7P8L" id="4HDl82dpa5E" role="3jm6SO">
+                        <ref role="a7OzE" node="4HDl82dpa5r" resolve="After" />
+                      </node>
+                      <node concept="a7P8L" id="4HDl82dpa5F" role="3jm6SO">
+                        <ref role="a7OzE" node="4HDl82dpa5u" resolve="Status" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2t___k" id="4HDl82dp94y" role="1nLNMg">
+        <ref role="2t_S0q" to="hcm8:1502VugCR$H" resolve="MemberNavigationOperation" />
+        <node concept="3A20r5" id="4HDl82dp94z" role="2t_VXX">
+          <property role="TrG5h" value="mno" />
+        </node>
+      </node>
+    </node>
     <node concept="1nLNMY" id="3xTUo83zvm4" role="1nK1Vg">
       <property role="TrG5h" value="functionDeclaration" />
       <node concept="3clFbS" id="3xTUo83zvm5" role="1nLNMH">
@@ -55132,25 +55262,30 @@
               </node>
             </node>
             <node concept="3xSepi" id="4vugIDefK0F" role="3xSepv">
+              <node concept="3Aq9E8" id="4HDl82dAjMO" role="3xSepj">
+                <node concept="3I6sU6" id="4HDl82dAjMP" role="3Ip0Jz">
+                  <node concept="3I6s7M" id="4HDl82dAjMj" role="3I6sU7">
+                    <node concept="3A8Hvi" id="4HDl82dAjMd" role="3I6s78">
+                      <node concept="a7P8L" id="4HDl82dAjM$" role="3A8wtg">
+                        <ref role="a7OzE" node="4vugIDefK0x" resolve="Before" />
+                      </node>
+                      <node concept="a7P8L" id="4HDl82dAjMG" role="3A8w4Q">
+                        <ref role="a7OzE" node="4vugIDefK0y" resolve="After" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3Aq9E8" id="4vugIDefK0M" role="3xSepj">
                 <node concept="3I6sU6" id="4vugIDefK0N" role="3Ip0Jz">
                   <node concept="3I6s7M" id="4vugIDefK0W" role="3I6sU7">
                     <node concept="3jm4v3" id="4vugIDefK0X" role="3I6s78">
-                      <ref role="3jm46O" node="7RZWrHVM0VG" resolve="dataflowOf" />
+                      <ref role="3jm46O" node="3n8adBhO$7X" resolve="isolatedDataflowOf" />
                       <node concept="37vLTw" id="3xTUo83zDem" role="3jicU7">
                         <ref role="3cqZAo" node="3xTUo83zDei" resolve="operand" />
                       </node>
                       <node concept="a7P8L" id="4vugIDefK0Y" role="3jm6SO">
                         <ref role="a7OzE" node="4vugIDefK0_" resolve="OperandType" />
-                      </node>
-                      <node concept="a7P8L" id="4vugIDefLNT" role="3jm6SO">
-                        <ref role="a7OzE" node="4vugIDefK0x" resolve="Before" />
-                      </node>
-                      <node concept="a7P8L" id="3xTUo83Dmza" role="3jm6SO">
-                        <ref role="a7OzE" node="4vugIDefK0y" resolve="After" />
-                      </node>
-                      <node concept="a7P8L" id="4vugIDefK11" role="3jm6SO">
-                        <ref role="a7OzE" node="4vugIDefK0D" resolve="Status" />
                       </node>
                     </node>
                   </node>
@@ -55784,7 +55919,7 @@
                 <node concept="3I6sU6" id="3xTUo83DMkj" role="3Ip0Jz">
                   <node concept="3I6s7M" id="3xTUo83DMkk" role="3I6sU7">
                     <node concept="3jm4v3" id="3xTUo83DMkl" role="3I6s78">
-                      <ref role="3jm46O" node="7RZWrHVM0VG" resolve="dataflowOf" />
+                      <ref role="3jm46O" node="3n8adBhO$7X" resolve="isolatedDataflowOf" />
                       <node concept="2OqwBi" id="3xTUo83DOzy" role="3jicU7">
                         <node concept="3A2sRY" id="3xTUo83DOrt" role="2Oq$k0">
                           <ref role="3A2yKK" node="3xTUo83DKNd" resolve="cmt" />
@@ -55795,15 +55930,6 @@
                       </node>
                       <node concept="a7P8L" id="3xTUo83DMkn" role="3jm6SO">
                         <ref role="a7OzE" node="3xTUo83DMjN" resolve="OperandType" />
-                      </node>
-                      <node concept="a7P8L" id="3xTUo83DMko" role="3jm6SO">
-                        <ref role="a7OzE" node="3xTUo83DMj$" resolve="Before" />
-                      </node>
-                      <node concept="a7P8L" id="3xTUo83DMkp" role="3jm6SO">
-                        <ref role="a7OzE" node="3xTUo83DMj_" resolve="After" />
-                      </node>
-                      <node concept="a7P8L" id="3xTUo83DMkq" role="3jm6SO">
-                        <ref role="a7OzE" node="3xTUo83DMkf" resolve="Status" />
                       </node>
                     </node>
                   </node>
@@ -55838,6 +55964,20 @@
                       </node>
                       <node concept="a7P8L" id="3xTUo83DWSd" role="3A8wtg">
                         <ref role="a7OzE" node="3xTUo83DMjM" resolve="Type" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Aq9E8" id="4HDl82dAjv8" role="3xSepj">
+                <node concept="3I6sU6" id="4HDl82dAjv9" role="3Ip0Jz">
+                  <node concept="3I6s7M" id="4HDl82dAjzU" role="3I6sU7">
+                    <node concept="3A8Hvi" id="4HDl82dAj$0" role="3I6s78">
+                      <node concept="a7P8L" id="4HDl82dAjLR" role="3A8w4Q">
+                        <ref role="a7OzE" node="3xTUo83DMj_" resolve="After" />
+                      </node>
+                      <node concept="a7P8L" id="4HDl82dAjzG" role="3A8wtg">
+                        <ref role="a7OzE" node="3xTUo83DMj$" resolve="Before" />
                       </node>
                     </node>
                   </node>
@@ -55990,11 +56130,25 @@
               </node>
             </node>
             <node concept="3xSepi" id="75chmMYgFOo" role="3xSepv">
+              <node concept="3Aq9E8" id="4HDl82dAkSV" role="3xSepj">
+                <node concept="3I6sU6" id="4HDl82dAkSW" role="3Ip0Jz">
+                  <node concept="3I6s7M" id="4HDl82dAkSb" role="3I6sU7">
+                    <node concept="3A8Hvi" id="4HDl82dAkS5" role="3I6s78">
+                      <node concept="a7P8L" id="4HDl82dAkSF" role="3A8wtg">
+                        <ref role="a7OzE" node="75chmMYgFO4" resolve="Before" />
+                      </node>
+                      <node concept="a7P8L" id="4HDl82dAkSN" role="3A8w4Q">
+                        <ref role="a7OzE" node="75chmMYgFO5" resolve="After" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3Aq9E8" id="75chmMYgFOp" role="3xSepj">
                 <node concept="3I6sU6" id="75chmMYgFOq" role="3Ip0Jz">
                   <node concept="3I6s7M" id="75chmMYgFOr" role="3I6sU7">
                     <node concept="3jm4v3" id="75chmMYgFOs" role="3I6s78">
-                      <ref role="3jm46O" node="7RZWrHVM0VG" resolve="dataflowOf" />
+                      <ref role="3jm46O" node="3n8adBhO$7X" resolve="isolatedDataflowOf" />
                       <node concept="2OqwBi" id="75chmMYgFOt" role="3jicU7">
                         <node concept="3A2sRY" id="75chmMYgFOu" role="2Oq$k0">
                           <ref role="3A2yKK" node="75chmMYgEXc" resolve="pmt" />
@@ -56005,15 +56159,6 @@
                       </node>
                       <node concept="a7P8L" id="75chmMYgFOw" role="3jm6SO">
                         <ref role="a7OzE" node="75chmMYgFOj" resolve="OperandType" />
-                      </node>
-                      <node concept="a7P8L" id="75chmMYgFOx" role="3jm6SO">
-                        <ref role="a7OzE" node="75chmMYgFO4" resolve="Before" />
-                      </node>
-                      <node concept="a7P8L" id="75chmMYgFOy" role="3jm6SO">
-                        <ref role="a7OzE" node="75chmMYgFO5" resolve="After" />
-                      </node>
-                      <node concept="a7P8L" id="75chmMYgFOz" role="3jm6SO">
-                        <ref role="a7OzE" node="75chmMYgFOm" resolve="Status" />
                       </node>
                     </node>
                   </node>
