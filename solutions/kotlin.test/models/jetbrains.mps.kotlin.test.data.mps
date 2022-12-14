@@ -187,9 +187,13 @@
       <concept id="2936055411798373726" name="jetbrains.mps.kotlin.structure.ReturnExpression" flags="ng" index="1XD0e9">
         <child id="2936055411798374640" name="returned" index="1XD0SB" />
       </concept>
+      <concept id="2936055411798373697" name="jetbrains.mps.kotlin.structure.ReceiverType" flags="ng" index="1XD0em">
+        <child id="2936055411798374592" name="type" index="1XD0Sn" />
+      </concept>
       <concept id="2936055411798373745" name="jetbrains.mps.kotlin.structure.VariableDeclaration" flags="ng" index="1XD0eA">
         <child id="2936055411798374679" name="type" index="1XD0Z0" />
       </concept>
+      <concept id="2936055411798373757" name="jetbrains.mps.kotlin.structure.CompanionObject" flags="ng" index="1XD0eE" />
       <concept id="2936055411798373753" name="jetbrains.mps.kotlin.structure.ValueArgument" flags="ng" index="1XD0eI">
         <property id="1243006380188954494" name="isVararg" index="21Xej9" />
         <child id="2936055411798374692" name="expression" index="1XD0ZN" />
@@ -3349,7 +3353,8 @@
     </node>
   </node>
   <node concept="1XD0fY" id="7p20EZ0jbss">
-    <property role="TrG5h" value="receivers" />
+    <property role="TrG5h" value="variables" />
+    <property role="3GE5qa" value="receivers" />
     <node concept="eKYAL" id="7p20EZ0jbvj" role="1XD0Tu" />
     <node concept="1XD0aY" id="7p20EZ0GUM1" role="1XD0Tu">
       <property role="TrG5h" value="Received" />
@@ -5603,6 +5608,60 @@
         </node>
       </node>
       <node concept="1XD08z" id="1KzjWTsEDfJ" role="ICcUN" />
+    </node>
+  </node>
+  <node concept="1XD0fY" id="7ZA3QJnAjQu">
+    <property role="3GE5qa" value="receivers" />
+    <property role="TrG5h" value="companionObject" />
+    <node concept="eKYAL" id="7ZA3QJnAjSr" role="1XD0Tu" />
+    <node concept="1XD0aY" id="7ZA3QJnAjSz" role="1XD0Tu">
+      <property role="TrG5h" value="CompanionValueHolder" />
+      <node concept="1XD0l2" id="7ZA3QJnAjSA" role="2BPcuh" />
+      <node concept="1XD0bf" id="7ZA3QJnAjSR" role="KDYUA">
+        <node concept="1XD0l2" id="7ZA3QJnAjSS" role="2BPcuh" />
+        <node concept="1XD0fH" id="7ZA3QJnAjST" role="1XD008">
+          <property role="TrG5h" value="inner" />
+          <property role="21VRqZ" value="true" />
+          <property role="21VRqX" value="true" />
+          <node concept="9pJMI" id="7ZA3QJnAjTj" role="37iW8f">
+            <ref role="9pJMH" node="7ZA3QJnAjTb" resolve="T" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0fq" id="7ZA3QJnAjTb" role="1XPbGx">
+        <property role="TrG5h" value="T" />
+      </node>
+      <node concept="1XD08z" id="7ZA3QJnAjVh" role="ICcUN" />
+    </node>
+    <node concept="eKYAL" id="7ZA3QJnAjTn" role="1XD0Tu" />
+    <node concept="1XD0aY" id="7ZA3QJnAjU3" role="1XD0Tu">
+      <property role="TrG5h" value="ClassWithCompanion" />
+      <node concept="1XD08$" id="7ZA3QJnAjU5" role="ICcUN" />
+      <node concept="1XD0l2" id="7ZA3QJnAjU6" role="2BPcuh" />
+      <node concept="1XD0eE" id="7ZA3QJnAjUG" role="KS$fE">
+        <node concept="1XD08x" id="7ZA3QJnAjV9" role="AST3G">
+          <ref role="KYurZ" node="7ZA3QJnAjSR" resolve="ValueHolder" />
+          <node concept="1XD088" id="7ZA3QJnAjVb" role="TPadX">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="eKYAL" id="7ZA3QJnAjVk" role="1XD0Tu" />
+    <node concept="1XD0bz" id="7ZA3QJnAjWs" role="1XD0Tu">
+      <property role="TrG5h" value="usage" />
+      <node concept="1XD08$" id="7ZA3QJnAjWu" role="ICcUN" />
+      <node concept="1XD0l2" id="7ZA3QJnAjWv" role="2BPcuh" />
+      <node concept="1XD0a7" id="7ZA3QJnAjYE" role="THmaL">
+        <node concept="UZU4S" id="7ZA3QJnAjZc" role="1XD07G">
+          <ref role="UZU4V" node="7ZA3QJnAjST" resolve="inner" />
+        </node>
+        <node concept="1XD0em" id="7ZA3QJnAjXw" role="21Pmik">
+          <node concept="1XD088" id="7ZA3QJnAjXv" role="1XD0Sn">
+            <ref role="1SePDO" node="7ZA3QJnAjU3" resolve="ClassWithCompanion" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
