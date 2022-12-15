@@ -64,7 +64,7 @@
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
         <idea-version since-build="223.0" />
-        <change-notes><![CDATA[<ul><li>Deprecated intermediateType query in favor of node attributes on types</li><li>New experimental query to filter function declarations by receiver type</li></ul>]]></change-notes>
+        <change-notes><![CDATA[<ul><li>Handling of implicit member receivers (implicit 'this', companion)</li><li>Fix member references (typing of operand, support of receivers)</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -87,7 +87,7 @@
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
         <idea-version since-build="223.0" />
-        <change-notes><![CDATA[<ul><li>Deprecated intermediateType query in favor of node attributes on types</li><li>New experimental query to filter function declarations by receiver type</li></ul>]]></change-notes>
+        <change-notes><![CDATA[<ul><li>Handling of implicit member receivers (implicit 'this', companion)</li><li>Fix member references (typing of operand, support of receivers)</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
