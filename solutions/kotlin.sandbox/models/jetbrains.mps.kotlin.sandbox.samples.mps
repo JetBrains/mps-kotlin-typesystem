@@ -263,6 +263,9 @@
       <concept id="2936055411798373655" name="jetbrains.mps.kotlin.structure.LambdaLiteral" flags="ng" index="1XD0f0">
         <child id="1243006380186866155" name="parameters" index="21PhDs" />
       </concept>
+      <concept id="2936055411798373661" name="jetbrains.mps.kotlin.structure.TryExpression" flags="ng" index="1XD0fa">
+        <child id="5533310174486461754" name="catches" index="UAV_N" />
+      </concept>
       <concept id="2936055411798373645" name="jetbrains.mps.kotlin.structure.TypeParameter" flags="ng" index="1XD0fq" />
       <concept id="2936055411798373641" name="jetbrains.mps.kotlin.structure.AnonymousInitializer" flags="ng" index="1XD0fu" />
       <concept id="2936055411798373683" name="jetbrains.mps.kotlin.structure.EnumEntry" flags="ng" index="1XD0f$">
@@ -331,6 +334,9 @@
         <child id="2936055411798373866" name="expression" index="1XD0cX" />
       </concept>
       <concept id="2936055411798373220" name="jetbrains.mps.kotlin.structure.ObjectDeclaration" flags="ng" index="1XD0mN" />
+      <concept id="2936055411798373152" name="jetbrains.mps.kotlin.structure.CatchBlock" flags="ng" index="1XD0nR">
+        <child id="2936055411798373827" name="type" index="1XD0ck" />
+      </concept>
       <concept id="2936055411803573749" name="jetbrains.mps.kotlin.structure.ITypeParameters" flags="ng" index="1XPbGy">
         <child id="2936055411803573750" name="typeParameters" index="1XPbGx" />
       </concept>
@@ -7302,6 +7308,344 @@
       </node>
       <node concept="1XD0l0" id="5dE4vdOkcxx" role="2BPcuh" />
       <node concept="1XD08$" id="5dE4vdOkcxy" role="ICcUN" />
+    </node>
+  </node>
+  <node concept="1XD0fY" id="74ZS3j_kOqn">
+    <property role="3GE5qa" value="05_collections" />
+    <property role="TrG5h" value="_15_MapElementAccess" />
+    <node concept="gXE$l" id="74ZS3j_lSi1" role="1XD0Tu">
+      <node concept="1PaTwC" id="74ZS3j_lSi3" role="gXG0x">
+        <node concept="3oM_SD" id="74ZS3j_lTe7" role="1PaTwD">
+          <property role="3oM_SC" value="https://play.kotlinlang.org/byExample/05_Collections/15_Map_getValue" />
+          <property role="1X82VU" value="https://play.kotlinlang.org/byExample/05_Collections/15_Map_getValue" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0bz" id="74ZS3j_kQX2" role="1XD0Tu">
+      <property role="TrG5h" value="access" />
+      <node concept="TDTJT" id="74ZS3j_kSMY" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="74ZS3j_kSMZ" role="2Rs2$5">
+          <property role="TrG5h" value="map" />
+        </node>
+        <node concept="1XD0mK" id="74ZS3j_kTgB" role="1XD05H">
+          <node concept="1NbEFs" id="74ZS3j_kTMV" role="1XD0cX">
+            <ref role="AarEw" to="1xrd:~.mapOf&lt;2&gt;(*kotlin/Pair&lt;0,1&gt;)" resolve="mapOf" />
+            <node concept="1XD0eI" id="74ZS3j_kUSJ" role="TWiod">
+              <node concept="21PmDL" id="74ZS3j_kVhL" role="1XD0ZN">
+                <ref role="21PmDZ" to="0:~#0.to&lt;2&gt;(1)" resolve="to" />
+                <node concept="1XD0k7" id="74ZS3j_kVFn" role="21Pkll">
+                  <property role="1XD01k" value="42" />
+                </node>
+                <node concept="1XD08G" id="74ZS3j_kUSG" role="21Pkln">
+                  <node concept="Df6$J" id="74ZS3j_kUSH" role="Df6Hu">
+                    <node concept="21VMdE" id="74ZS3j_kUSI" role="Df7GE">
+                      <property role="21VMdD" value="key" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="TDTJT" id="74ZS3j_kWzA" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="74ZS3j_kWzB" role="2Rs2$5">
+          <property role="TrG5h" value="value1" />
+        </node>
+        <node concept="1XD0mK" id="74ZS3j_kXtf" role="1XD05H">
+          <node concept="1XD0e1" id="74ZS3j_kXZG" role="1XD0cX">
+            <ref role="1ap9JL" to="1xrd:~Map.get(0)" resolve="get" />
+            <node concept="1XD08G" id="74ZS3j_l3xY" role="1XD0SO">
+              <node concept="Df6$J" id="74ZS3j_l3xZ" role="Df6Hu">
+                <node concept="21VMdE" id="74ZS3j_l3y0" role="Df7GE">
+                  <property role="21VMdD" value="key" />
+                </node>
+              </node>
+            </node>
+            <node concept="UZU4S" id="74ZS3j_kXTX" role="21Pmik">
+              <ref role="UZU4V" node="74ZS3j_kSMZ" resolve="map" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="TDTJT" id="74ZS3j_l4$B" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="74ZS3j_l4$C" role="2Rs2$5">
+          <property role="TrG5h" value="value2" />
+        </node>
+        <node concept="1XD0mK" id="74ZS3j_l5kY" role="1XD05H">
+          <node concept="1XD0e1" id="74ZS3j_l6s_" role="1XD0cX">
+            <ref role="1ap9JL" to="1xrd:~Map.get(0)" resolve="get" />
+            <node concept="1XD08G" id="74ZS3j_l7nR" role="1XD0SO">
+              <node concept="Df6$J" id="74ZS3j_l7nS" role="Df6Hu">
+                <node concept="21VMdE" id="74ZS3j_l7nT" role="Df7GE">
+                  <property role="21VMdD" value="key2" />
+                </node>
+              </node>
+            </node>
+            <node concept="UZU4S" id="74ZS3j_l5Rh" role="21Pmik">
+              <ref role="UZU4V" node="74ZS3j_kSMZ" resolve="map" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="AQkLs" id="74ZS3j_lfr1" role="THmaL" />
+      <node concept="TDTJT" id="74ZS3j_l97j" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="74ZS3j_l97k" role="2Rs2$5">
+          <property role="TrG5h" value="value3" />
+          <node concept="1XD088" id="74ZS3j_lbvJ" role="1XD0Z0">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="74ZS3j_lbAz" role="1XD05H">
+          <node concept="1XD0a7" id="74ZS3j_lcr1" role="1XD0cX">
+            <node concept="1NbEtQ" id="74ZS3j_ld8q" role="1XD07H">
+              <ref role="AarEw" to="1xrd:~#Map&lt;0,1&gt;.getValue&lt;2&gt;(0)" resolve="getValue" />
+              <node concept="1XD0eI" id="74ZS3j_ldP8" role="TWiod">
+                <node concept="1XD08G" id="74ZS3j_ldP7" role="1XD0ZN">
+                  <node concept="Df6$J" id="74ZS3j_leia" role="Df6Hu">
+                    <node concept="21VMdE" id="74ZS3j_lei9" role="Df7GE">
+                      <property role="21VMdD" value="key" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="UZU4S" id="74ZS3j_lceA" role="21Pmik">
+              <ref role="UZU4V" node="74ZS3j_kSMZ" resolve="map" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="AQkLs" id="74ZS3j_lg8g" role="THmaL" />
+      <node concept="TDTJT" id="74ZS3j_lgTh" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="74ZS3j_lgTi" role="2Rs2$5">
+          <property role="TrG5h" value="mapWithDefault" />
+        </node>
+        <node concept="1XD0mK" id="74ZS3j_lidi" role="1XD05H">
+          <node concept="1XD0a7" id="74ZS3j_ljHq" role="1XD0cX">
+            <node concept="1NbEtQ" id="74ZS3j_lkyQ" role="1XD07H">
+              <ref role="AarEw" to="1xrd:~#Map&lt;0,1&gt;.withDefault&lt;2&gt;(kotlin/Function1&lt;0,1&gt;)" resolve="withDefault" />
+              <node concept="1XD0f0" id="74ZS3j_llEH" role="1XD06E">
+                <node concept="1XD0eA" id="74ZS3j_lm_q" role="21PhDs">
+                  <property role="TrG5h" value="k" />
+                </node>
+                <node concept="1XD0a7" id="74ZS3j_lojU" role="THmaL">
+                  <node concept="UZU4S" id="74ZS3j_lpbN" role="1XD07H">
+                    <ref role="UZU4V" to="0:~kotlin/String.length" resolve="length" />
+                  </node>
+                  <node concept="UZU4S" id="74ZS3j_lnoN" role="21Pmik">
+                    <ref role="UZU4V" node="74ZS3j_lm_q" resolve="k" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="UZU4S" id="74ZS3j_liVI" role="21Pmik">
+              <ref role="UZU4V" node="74ZS3j_kSMZ" resolve="map" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="TDTJT" id="74ZS3j_lqQv" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="74ZS3j_lqQw" role="2Rs2$5">
+          <property role="TrG5h" value="value4" />
+        </node>
+        <node concept="1XD0mK" id="74ZS3j_lrVn" role="1XD05H">
+          <node concept="1XD0a7" id="74ZS3j_lubO" role="1XD0cX">
+            <node concept="1NbEtQ" id="74ZS3j_lvjA" role="1XD07H">
+              <ref role="AarEw" to="1xrd:~#Map&lt;0,1&gt;.getValue&lt;2&gt;(0)" resolve="getValue" />
+              <node concept="1XD0eI" id="74ZS3j_lwsk" role="TWiod">
+                <node concept="1XD08G" id="74ZS3j_lwsh" role="1XD0ZN">
+                  <node concept="Df6$J" id="74ZS3j_lwsi" role="Df6Hu">
+                    <node concept="21VMdE" id="74ZS3j_lwsj" role="Df7GE">
+                      <property role="21VMdD" value="key2" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="UZU4S" id="74ZS3j_ltid" role="21Pmik">
+              <ref role="UZU4V" node="74ZS3j_lgTi" resolve="mapWithDefault" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="AQkLs" id="74ZS3j_lxkH" role="THmaL" />
+      <node concept="1XD0fa" id="74ZS3j_lyZ0" role="THmaL">
+        <node concept="1XD0a7" id="74ZS3j_lH5D" role="THmaL">
+          <node concept="1NbEtQ" id="74ZS3j_lI94" role="1XD07H">
+            <ref role="AarEw" to="1xrd:~#Map&lt;0,1&gt;.getValue&lt;2&gt;(0)" resolve="getValue" />
+            <node concept="1XD0eI" id="74ZS3j_lJNG" role="TWiod">
+              <node concept="1XD08G" id="74ZS3j_lJND" role="1XD0ZN">
+                <node concept="Df6$J" id="74ZS3j_lJNE" role="Df6Hu">
+                  <node concept="21VMdE" id="74ZS3j_lJNF" role="Df7GE">
+                    <property role="21VMdD" value="anotherKey" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="UZU4S" id="74ZS3j_lGqD" role="21Pmik">
+            <ref role="UZU4V" node="74ZS3j_kSMZ" resolve="map" />
+          </node>
+        </node>
+        <node concept="1XD0nR" id="74ZS3j_lyZ2" role="UAV_N">
+          <property role="TrG5h" value="e" />
+          <node concept="1XD088" id="74ZS3j_l$o2" role="1XD0ck">
+            <ref role="1SePDO" to="0:~kotlin/NoSuchElementException" resolve="NoSuchElementException" />
+          </node>
+          <node concept="1NbEFs" id="74ZS3j_l_Kx" role="THmaL">
+            <ref role="AarEw" to="aucy:~.println(kotlin/Any?)" resolve="println" />
+            <node concept="1XD0eI" id="74ZS3j_lBP7" role="TWiod">
+              <node concept="1XD08G" id="74ZS3j_lBP4" role="1XD0ZN">
+                <node concept="Df6$J" id="74ZS3j_lBP5" role="Df6Hu">
+                  <node concept="21VMdE" id="74ZS3j_lBP6" role="Df7GE">
+                    <property role="21VMdD" value="Message: " />
+                  </node>
+                  <node concept="1XD0lO" id="74ZS3j_lD6a" role="Df7GE">
+                    <node concept="UZU4S" id="74ZS3j_lDHW" role="1XD029">
+                      <ref role="UZU4V" node="74ZS3j_lyZ2" resolve="e" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0l0" id="74ZS3j_kQX5" role="2BPcuh" />
+      <node concept="1XD08$" id="74ZS3j_kQX6" role="ICcUN" />
+    </node>
+  </node>
+  <node concept="1XD0fY" id="74ZS3j_lWqU">
+    <property role="3GE5qa" value="05_collections" />
+    <property role="TrG5h" value="_11_Partition" />
+    <node concept="eKYAL" id="74ZS3j_lYy8" role="1XD0Tu" />
+    <node concept="1XD0bz" id="74ZS3j_lZeD" role="1XD0Tu">
+      <property role="TrG5h" value="partition" />
+      <node concept="1XD0l0" id="74ZS3j_lZeG" role="2BPcuh" />
+      <node concept="1XD08$" id="74ZS3j_lZeH" role="ICcUN" />
+      <node concept="TDTJT" id="74ZS3j_lZXw" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="74ZS3j_lZXx" role="2Rs2$5">
+          <property role="TrG5h" value="numbers" />
+        </node>
+        <node concept="1XD0mK" id="74ZS3j_m0cn" role="1XD05H">
+          <node concept="1NbEFs" id="74ZS3j_m0Kf" role="1XD0cX">
+            <ref role="AarEw" to="1xrd:~.listOf&lt;1&gt;(*0)" resolve="listOf" />
+            <node concept="1XD0eI" id="74ZS3j_m0VU" role="TWiod">
+              <node concept="1XD0k7" id="74ZS3j_m0VT" role="1XD0ZN">
+                <property role="1XD01k" value="1" />
+              </node>
+            </node>
+            <node concept="1XD0eI" id="74ZS3j_m0VY" role="TWiod">
+              <node concept="gk1OR" id="74ZS3j_m1i7" role="1XD0ZN">
+                <ref role="1ap9JL" to="0:~Int.unaryMinus()" resolve="unaryMinus" />
+                <node concept="1XD0k7" id="74ZS3j_m1j7" role="21Pmik">
+                  <property role="1XD01k" value="2" />
+                </node>
+              </node>
+            </node>
+            <node concept="1XD0eI" id="74ZS3j_m1ic" role="TWiod">
+              <node concept="1XD0k7" id="74ZS3j_m1RM" role="1XD0ZN">
+                <property role="1XD01k" value="3" />
+              </node>
+            </node>
+            <node concept="1XD0eI" id="74ZS3j_m2h0" role="TWiod">
+              <node concept="gk1OR" id="74ZS3j_m2tk" role="1XD0ZN">
+                <ref role="1ap9JL" to="0:~Int.unaryMinus()" resolve="unaryMinus" />
+                <node concept="1XD0k7" id="74ZS3j_m2RD" role="21Pmik">
+                  <property role="1XD01k" value="4" />
+                </node>
+              </node>
+            </node>
+            <node concept="1XD0eI" id="74ZS3j_m2QD" role="TWiod">
+              <node concept="1XD0k7" id="74ZS3j_m38s" role="1XD0ZN">
+                <property role="1XD01k" value="5" />
+              </node>
+            </node>
+            <node concept="1XD0eI" id="74ZS3j_m3Bt" role="TWiod">
+              <node concept="gk1OR" id="74ZS3j_m4LT" role="1XD0ZN">
+                <ref role="1ap9JL" to="0:~Int.unaryMinus()" resolve="unaryMinus" />
+                <node concept="1XD0k7" id="74ZS3j_m5hF" role="21Pmik">
+                  <property role="1XD01k" value="6" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="AQkLs" id="74ZS3j_m5Q7" role="THmaL" />
+      <node concept="TDTJT" id="74ZS3j_m6CX" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="74ZS3j_m6CY" role="2Rs2$5">
+          <property role="TrG5h" value="evenOdd" />
+        </node>
+        <node concept="1XD0mK" id="74ZS3j_m7sV" role="1XD05H">
+          <node concept="1XD0a7" id="74ZS3j_m8qg" role="1XD0cX">
+            <node concept="1NbEtQ" id="74ZS3j_m9lX" role="1XD07H">
+              <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.partition&lt;1&gt;(kotlin/Function1&lt;0,kotlin/Boolean&gt;)" resolve="partition" />
+              <node concept="1XD0f0" id="74ZS3j_mact" role="1XD06E">
+                <node concept="giPau" id="74ZS3j_me0S" role="THmaL">
+                  <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+                  <node concept="1XD0k7" id="74ZS3j_me3V" role="21Pkll">
+                    <property role="1XD01k" value="0" />
+                  </node>
+                  <node concept="gk1Qd" id="74ZS3j_mbWs" role="21Pkln">
+                    <ref role="1ap9JL" to="0:~Int.rem(Int)" resolve="rem" />
+                    <node concept="1XD0k7" id="74ZS3j_mck1" role="21Pkll">
+                      <property role="1XD01k" value="2" />
+                    </node>
+                    <node concept="UZU4S" id="74ZS3j_mb1L" role="21Pkln">
+                      <ref role="UZU4V" node="74ZS3j_mact" resolve="it" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="UZU4S" id="74ZS3j_m870" role="21Pmik">
+              <ref role="UZU4V" node="74ZS3j_lZXx" resolve="numbers" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="TDTJT" id="74ZS3j_mgPQ" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="74ZS3j_mgPR" role="2Rs2$5">
+          <property role="TrG5h" value="positives" />
+          <ref role="2Rs3QY" to="0:~Pair.component1()" resolve="component1" />
+        </node>
+        <node concept="2Rs4SG" id="74ZS3j_mi7b" role="2Rs2$5">
+          <property role="TrG5h" value="negatives" />
+          <ref role="2Rs3QY" to="0:~Pair.component2()" resolve="component2" />
+        </node>
+        <node concept="1XD0mK" id="74ZS3j_mjEZ" role="1XD05H">
+          <node concept="1XD0a7" id="74ZS3j_mlXg" role="1XD0cX">
+            <node concept="1NbEtQ" id="74ZS3j_mnBK" role="1XD07H">
+              <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.partition&lt;1&gt;(kotlin/Function1&lt;0,kotlin/Boolean&gt;)" resolve="partition" />
+              <node concept="1XD0f0" id="74ZS3j_moQQ" role="1XD06E">
+                <node concept="gk1Q2" id="74ZS3j_mqVz" role="THmaL">
+                  <ref role="1ap9JL" to="0:~Int.compareTo(Int)" resolve="compareTo" />
+                  <node concept="1XD0k7" id="74ZS3j_msrP" role="21Pkll">
+                    <property role="1XD01k" value="0" />
+                  </node>
+                  <node concept="UZU4S" id="74ZS3j_mqwp" role="21Pkln">
+                    <ref role="UZU4V" node="74ZS3j_moQQ" resolve="it" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="UZU4S" id="74ZS3j_mkQB" role="21Pmik">
+              <ref role="UZU4V" node="74ZS3j_lZXx" resolve="numbers" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
