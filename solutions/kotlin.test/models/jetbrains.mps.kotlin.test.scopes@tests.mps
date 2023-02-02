@@ -286,7 +286,7 @@
             <node concept="2ShNRf" id="6nK3tkagzIw" role="33vP2m">
               <node concept="1pGfFk" id="6nK3tkagzIx" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="hez:1pHfrwZyNdJ" resolve="CallReceiver" />
+                <ref role="37wK5l" to="hez:1pHfrwZyNdJ" resolve="InstanceReceiver" />
                 <node concept="2ShNRf" id="6nK3tkagzIy" role="37wK5m">
                   <node concept="1pGfFk" id="6nK3tkagzIz" role="2ShVmc">
                     <property role="373rjd" value="true" />
@@ -309,7 +309,7 @@
               </node>
             </node>
             <node concept="3uibUv" id="5$XWI2Q1H3m" role="1tU5fm">
-              <ref role="3uigEE" to="hez:1KzjWTsTA9Z" resolve="CallReceiver" />
+              <ref role="3uigEE" to="hez:1KzjWTsTA9Z" resolve="MemberReceiver" />
             </node>
           </node>
         </node>
