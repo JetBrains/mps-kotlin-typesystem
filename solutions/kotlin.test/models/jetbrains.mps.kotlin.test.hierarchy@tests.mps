@@ -8,7 +8,7 @@
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="10" />
+    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="11" />
   </languages>
   <imports>
     <import index="fefm" ref="r:1007e072-ac19-4b13-85dc-0e4118398cf2(jetbrains.mps.kotlinExt.types)" />
@@ -171,9 +171,6 @@
         <child id="1991556721067228837" name="superclasses" index="AST3G" />
       </concept>
       <concept id="5622728304609204267" name="jetbrains.mps.kotlin.structure.EmptyDeclaration" flags="ng" index="eKYAL" />
-      <concept id="7138249191285121087" name="jetbrains.mps.kotlin.structure.IVisible" flags="ng" index="2BPcvI">
-        <child id="7138249191285121088" name="visibility" index="2BPcuh" />
-      </concept>
       <concept id="6013275720582937818" name="jetbrains.mps.kotlin.structure.IInheritable" flags="ng" index="ICcUM">
         <child id="6013275720582937819" name="inheritance" index="ICcUN" />
       </concept>
@@ -191,13 +188,10 @@
         <reference id="2324909103760693884" name="target" index="KYurZ" />
       </concept>
       <concept id="2936055411798373620" name="jetbrains.mps.kotlin.structure.OpenInheritanceModifier" flags="ng" index="1XD08z" />
-      <concept id="2936055411798373619" name="jetbrains.mps.kotlin.structure.FinalInheritanceModifier" flags="ng" index="1XD08$" />
-      <concept id="2936055411798373618" name="jetbrains.mps.kotlin.structure.AbstractInheritanceModifier" flags="ng" index="1XD08_" />
       <concept id="2936055411798373481" name="jetbrains.mps.kotlin.structure.ClassDeclaration" flags="ng" index="1XD0aY" />
       <concept id="2936055411798373673" name="jetbrains.mps.kotlin.structure.KotlinFile" flags="ng" index="1XD0fY">
         <child id="2936055411798374537" name="declarations" index="1XD0Tu" />
       </concept>
-      <concept id="2936055411798373269" name="jetbrains.mps.kotlin.structure.PublicVisibility" flags="ng" index="1XD0l2" />
       <concept id="2936055411798373245" name="jetbrains.mps.kotlin.structure.FunctionType" flags="ng" index="1XD0mE">
         <child id="2936055411798373905" name="returnType" index="1XD036" />
         <child id="2936055411798373902" name="parameters" index="1XD03p" />
@@ -754,7 +748,7 @@
                       </node>
                     </node>
                     <node concept="2qgKlT" id="4GncUq$amcF" role="2OqNvi">
-                      <ref role="37wK5l" to="hez:JmO2PmZtH5" resolve="shallowId" />
+                      <ref role="37wK5l" to="hez:JmO2PmZtH5" resolve="typeKey" />
                     </node>
                   </node>
                 </node>
@@ -770,13 +764,9 @@
         <node concept="eKYAL" id="4GncUq$ah_1" role="1XD0Tu" />
         <node concept="1XXB1C" id="4GncUq$ah_P" role="1XD0Tu">
           <property role="TrG5h" value="Interface" />
-          <node concept="1XD08_" id="4GncUq$ah_Q" role="ICcUN" />
-          <node concept="1XD0l2" id="4GncUq$ah_S" role="2BPcuh" />
         </node>
         <node concept="1XXB1C" id="4GncUq$ahAg" role="1XD0Tu">
           <property role="TrG5h" value="SecondInterface" />
-          <node concept="1XD08_" id="4GncUq$ahAh" role="ICcUN" />
-          <node concept="1XD0l2" id="4GncUq$ahAj" role="2BPcuh" />
           <node concept="3xLA65" id="4GncUq$aoD$" role="lGtFl">
             <property role="TrG5h" value="second" />
           </node>
@@ -798,8 +788,6 @@
         </node>
         <node concept="1XXB1C" id="4GncUq$ahAy" role="1XD0Tu">
           <property role="TrG5h" value="IntermediateInterface" />
-          <node concept="1XD08_" id="4GncUq$ahAz" role="ICcUN" />
-          <node concept="1XD0l2" id="4GncUq$ahA$" role="2BPcuh" />
           <node concept="KYwOn" id="4GncUq$ahCT" role="AST3G">
             <ref role="KYwOm" node="4GncUq$ah_P" resolve="Interface" />
           </node>
@@ -813,8 +801,6 @@
         <node concept="eKYAL" id="4GncUq$ahDk" role="1XD0Tu" />
         <node concept="1XD0aY" id="4GncUq$aiwV" role="1XD0Tu">
           <property role="TrG5h" value="External" />
-          <node concept="1XD08$" id="4GncUq$aiwX" role="ICcUN" />
-          <node concept="1XD0l2" id="4GncUq$aiwZ" role="2BPcuh" />
           <node concept="3xLA65" id="4GncUq$aixv" role="lGtFl">
             <property role="TrG5h" value="external" />
           </node>
@@ -825,7 +811,6 @@
         <node concept="eKYAL" id="4GncUq$aiwu" role="1XD0Tu" />
         <node concept="1XD0aY" id="4GncUq$ahBO" role="1XD0Tu">
           <property role="TrG5h" value="Root" />
-          <node concept="1XD0l2" id="4GncUq$ahBS" role="2BPcuh" />
           <node concept="1XD08z" id="4GncUq$ahD6" role="ICcUN" />
           <node concept="3xLA65" id="4GncUq$aoDu" role="lGtFl">
             <property role="TrG5h" value="root" />
@@ -833,7 +818,6 @@
         </node>
         <node concept="1XD0aY" id="4GncUq$ah_v" role="1XD0Tu">
           <property role="TrG5h" value="Parent" />
-          <node concept="1XD0l2" id="4GncUq$ah_z" role="2BPcuh" />
           <node concept="1XD08x" id="4GncUq$ahD3" role="AST3G">
             <ref role="KYurZ" node="4GncUq$ahBO" resolve="Root" />
           </node>
@@ -844,8 +828,6 @@
         </node>
         <node concept="1XD0aY" id="4GncUq$ah_a" role="1XD0Tu">
           <property role="TrG5h" value="Self" />
-          <node concept="1XD08$" id="4GncUq$ah_c" role="ICcUN" />
-          <node concept="1XD0l2" id="4GncUq$ah_e" role="2BPcuh" />
           <node concept="1XD08x" id="4GncUq$ahD8" role="AST3G">
             <ref role="KYurZ" node="4GncUq$ah_v" resolve="Parent" />
           </node>

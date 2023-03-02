@@ -83,9 +83,6 @@
         <child id="2936055411798374535" name="header" index="1XD0Tg" />
       </concept>
       <concept id="1991556721070973461" name="jetbrains.mps.kotlin.structure.EmptyStatement" flags="ng" index="AQkLs" />
-      <concept id="7138249191285121087" name="jetbrains.mps.kotlin.structure.IVisible" flags="ng" index="2BPcvI">
-        <child id="7138249191285121088" name="visibility" index="2BPcuh" />
-      </concept>
       <concept id="6389031306614148912" name="jetbrains.mps.kotlin.structure.StringLiteralLine" flags="ng" index="Df6$J">
         <child id="6389031306614152501" name="parts" index="Df7GE" />
       </concept>
@@ -142,7 +139,6 @@
         <reference id="2324909103760693884" name="target" index="KYurZ" />
       </concept>
       <concept id="2936055411798373620" name="jetbrains.mps.kotlin.structure.OpenInheritanceModifier" flags="ng" index="1XD08z" />
-      <concept id="2936055411798373619" name="jetbrains.mps.kotlin.structure.FinalInheritanceModifier" flags="ng" index="1XD08$" />
       <concept id="2936055411798373618" name="jetbrains.mps.kotlin.structure.AbstractInheritanceModifier" flags="ng" index="1XD08_" />
       <concept id="2936055411798373627" name="jetbrains.mps.kotlin.structure.StringLiteral" flags="ng" index="1XD08G">
         <child id="6389031306614148417" name="lines" index="Df6Hu" />
@@ -224,7 +220,6 @@
         <child id="2936055411798374015" name="type" index="1XD02C" />
       </concept>
       <concept id="2936055411798373351" name="jetbrains.mps.kotlin.structure.FlexibleBlock" flags="ng" index="1XD0kK" />
-      <concept id="2936055411798373269" name="jetbrains.mps.kotlin.structure.PublicVisibility" flags="ng" index="1XD0l2" />
       <concept id="2936055411798373245" name="jetbrains.mps.kotlin.structure.FunctionType" flags="ng" index="1XD0mE">
         <child id="2936055411798373905" name="returnType" index="1XD036" />
         <child id="2936055411798373902" name="parameters" index="1XD03p" />
@@ -300,8 +295,6 @@
           <ref role="19UTlH" to="hcm8:2Aaqzls4g9O" resolve="IClassLike" />
         </node>
       </node>
-      <node concept="1XD08$" id="7XIUL680z22" role="ICcUN" />
-      <node concept="1XD0l2" id="7XIUL680z23" role="2BPcuh" />
       <node concept="gXE$l" id="7XIUL68_5Ln" role="THmaL">
         <node concept="1PaTwC" id="7XIUL68_5Lp" role="gXG0x">
           <node concept="3oM_SD" id="7XIUL68_5LR" role="1PaTwD">
@@ -454,8 +447,6 @@
       <property role="TrG5h" value="Substituter" />
       <node concept="1XD0bz" id="7B1Fat4v0gF" role="KS$fE">
         <property role="TrG5h" value="has" />
-        <node concept="1XD08$" id="7B1Fat4v0gH" role="ICcUN" />
-        <node concept="1XD0l2" id="7B1Fat4v0gI" role="2BPcuh" />
         <node concept="1XD0bi" id="7B1Fat4v0uU" role="1XbAXm">
           <property role="TrG5h" value="param" />
           <node concept="19UT3g" id="2ul4aX9dweZ" role="37iW8f">
@@ -471,8 +462,6 @@
       </node>
       <node concept="1XD0bz" id="7B1Fat4KRcx" role="KS$fE">
         <property role="TrG5h" value="get" />
-        <node concept="1XD08$" id="7B1Fat4KRcz" role="ICcUN" />
-        <node concept="1XD0l2" id="7B1Fat4KRc$" role="2BPcuh" />
         <node concept="1XD0bi" id="7B1Fat4KTrO" role="1XbAXm">
           <property role="TrG5h" value="param" />
           <node concept="19UT3g" id="2ul4aX9dw05" role="37iW8f">
@@ -494,8 +483,6 @@
             <ref role="19UTlH" to="hcm8:4QzAmvhcm6x" resolve="ITypeParameter" />
           </node>
         </node>
-        <node concept="1XD08$" id="3PNJzGvkEFP" role="ICcUN" />
-        <node concept="1XD0l2" id="3PNJzGvkEFQ" role="2BPcuh" />
         <node concept="1NbEFs" id="3PNJzGvkHOR" role="THmaL">
           <ref role="AarEw" to="0:~.TODO()" resolve="TODO" />
         </node>
@@ -504,8 +491,6 @@
         </node>
       </node>
       <node concept="eKYAL" id="7B1Fat4v1p9" role="KS$fE" />
-      <node concept="1XD08$" id="7B1Fat4uYam" role="ICcUN" />
-      <node concept="1XD0l2" id="7B1Fat4uYan" role="2BPcuh" />
       <node concept="1XD0bz" id="7B1Fat4tWPI" role="KS$fE">
         <property role="TrG5h" value="expand" />
         <node concept="1XD0b9" id="7B1Fat4tYc9" role="THmaL">
@@ -643,8 +628,6 @@
             <ref role="UZU4V" node="7B1Fat4ujP3" resolve="copy" />
           </node>
         </node>
-        <node concept="1XD08$" id="7B1Fat4tWPK" role="ICcUN" />
-        <node concept="1XD0l2" id="7B1Fat4tWPL" role="2BPcuh" />
         <node concept="1XD0bi" id="7B1Fat4tWPR" role="1XbAXm">
           <property role="TrG5h" value="type" />
           <node concept="19UT3g" id="2ul4aX9dybW" role="37iW8f">
@@ -883,8 +866,6 @@
             <ref role="UZU4V" node="7B1Fat4u5xz" resolve="visited" />
           </node>
         </node>
-        <node concept="1XD08$" id="7B1Fat4tZVK" role="ICcUN" />
-        <node concept="1XD0l2" id="7B1Fat4tZVL" role="2BPcuh" />
         <node concept="1XD0bi" id="7B1Fat4u1BN" role="1XbAXm">
           <property role="TrG5h" value="ref" />
           <node concept="19UT3g" id="2ul4aX9dvmw" role="37iW8f">
@@ -998,8 +979,6 @@
     </node>
     <node concept="1XXB1C" id="6CwBo1ZZepa" role="1XD0Tu">
       <property role="TrG5h" value="Converter" />
-      <node concept="1XD08_" id="6CwBo1ZZepd" role="ICcUN" />
-      <node concept="1XD0l2" id="6CwBo1ZZepe" role="2BPcuh" />
       <node concept="2szew_" id="6CwBo1ZZeTM" role="1XPbGx">
         <property role="TrG5h" value="A" />
       </node>
@@ -1014,13 +993,10 @@
             <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
           </node>
         </node>
-        <node concept="1XD0l2" id="6CwBo202PuC" role="2BPcuh" />
         <node concept="1XD08_" id="6CwBo20a5xU" role="ICcUN" />
       </node>
       <node concept="1XD0bz" id="6CwBo2092PD" role="KS$fE">
         <property role="TrG5h" value="convert" />
-        <node concept="1XD08_" id="6CwBo2092PF" role="ICcUN" />
-        <node concept="1XD0l2" id="6CwBo2092PG" role="2BPcuh" />
         <node concept="1XD0bi" id="6CwBo20947d" role="1XbAXm">
           <property role="TrG5h" value="node" />
           <node concept="3f8zV_" id="6CwBo2098cH" role="37iW8f">
@@ -1045,14 +1021,11 @@
     <node concept="eKYAL" id="6CwBo1ZZgsU" role="1XD0Tu" />
     <node concept="1XD0aY" id="6CwBo1ZZ9ON" role="1XD0Tu">
       <property role="TrG5h" value="ConverterEngine" />
-      <node concept="1XD0l2" id="6CwBo1ZZ9OQ" role="2BPcuh" />
       <node concept="1XD09Q" id="6CwBo1ZZ9QP" role="KS$fE">
         <property role="1Xb$ne" value="true" />
-        <node concept="1XD08$" id="6CwBo1ZZ9QR" role="ICcUN" />
         <node concept="1XD0eA" id="6CwBo1ZZ9QS" role="TDYyH">
           <property role="TrG5h" value="converters" />
         </node>
-        <node concept="1XD0l2" id="6CwBo1ZZ9QU" role="2BPcuh" />
         <node concept="1XD0mK" id="6CwBo1ZZ9R1" role="1XD05H">
           <node concept="1NbEFs" id="6CwBo1ZZbcR" role="1XD0cX">
             <ref role="AarEw" to="1xrd:~HashMap.new()" resolve="HashMap" />
@@ -1083,8 +1056,6 @@
       <node concept="eKYAL" id="6CwBo1ZZhPF" role="KS$fE" />
       <node concept="1XD0bz" id="6CwBo1ZZipG" role="KS$fE">
         <property role="TrG5h" value="declareMapping" />
-        <node concept="1XD08$" id="6CwBo1ZZipI" role="ICcUN" />
-        <node concept="1XD0l2" id="6CwBo1ZZipJ" role="2BPcuh" />
         <node concept="1XD0bi" id="6CwBo1ZZjyB" role="1XbAXm">
           <property role="TrG5h" value="sourceConcept" />
           <node concept="9pJMI" id="6CwBo1ZZjON" role="37iW8f">
@@ -1193,8 +1164,6 @@
             </node>
           </node>
         </node>
-        <node concept="1XD08$" id="6CwBo204rj6" role="ICcUN" />
-        <node concept="1XD0l2" id="6CwBo204rj7" role="2BPcuh" />
         <node concept="hI6pR" id="6CwBo204__U" role="21NdcZ">
           <node concept="3f8zV_" id="6CwBo204zv4" role="hI6Km">
             <node concept="1XD0kr" id="6CwBo204$K8" role="2Rg2xS">
@@ -1282,7 +1251,6 @@
             </node>
           </node>
         </node>
-        <node concept="1XD0l2" id="6CwBo204VwV" role="2BPcuh" />
         <node concept="1XD0bi" id="6CwBo204Yl3" role="1XbAXm">
           <property role="TrG5h" value="concept" />
           <node concept="2RgARU" id="6kJ$aPSY4E4" role="37iW8f">
@@ -1313,8 +1281,6 @@
       <node concept="eKYAL" id="6CwBo208bLs" role="KS$fE" />
       <node concept="1XD0bz" id="6CwBo208cCU" role="KS$fE">
         <property role="TrG5h" value="convert" />
-        <node concept="1XD08$" id="6CwBo208cCW" role="ICcUN" />
-        <node concept="1XD0l2" id="6CwBo208cCX" role="2BPcuh" />
         <node concept="1XD0bi" id="6CwBo208gsb" role="1XbAXm">
           <property role="TrG5h" value="source" />
           <node concept="3f8zV_" id="6CwBo208hqT" role="37iW8f">
@@ -1395,11 +1361,9 @@
       <property role="TrG5h" value="ConverterEngineWithClass" />
       <node concept="1XD09Q" id="6CwBo20_4Wx" role="KS$fE">
         <property role="1Xb$ne" value="true" />
-        <node concept="1XD08$" id="6CwBo20_4Wz" role="ICcUN" />
         <node concept="1XD0eA" id="6CwBo20_4W$" role="TDYyH">
           <property role="TrG5h" value="classMap" />
         </node>
-        <node concept="1XD0l2" id="6CwBo20_4WA" role="2BPcuh" />
         <node concept="1XD0mK" id="6CwBo20_5Vg" role="1XD05H">
           <node concept="1NbEFs" id="6CwBo20_8Ku" role="1XD0cX">
             <ref role="AarEw" to="1xrd:~HashMap.new()" resolve="HashMap" />
@@ -1432,8 +1396,6 @@
         </node>
       </node>
       <node concept="eKYAL" id="6CwBo20_QwI" role="KS$fE" />
-      <node concept="1XD08$" id="6CwBo20xMie" role="ICcUN" />
-      <node concept="1XD0l2" id="6CwBo20xMif" role="2BPcuh" />
       <node concept="2szew_" id="6CwBo20xQ4N" role="1XPbGx">
         <property role="TrG5h" value="I" />
       </node>
@@ -1492,8 +1454,6 @@
             </node>
           </node>
         </node>
-        <node concept="1XD08$" id="6CwBo20ySh5" role="ICcUN" />
-        <node concept="1XD0l2" id="6CwBo20ySh6" role="2BPcuh" />
       </node>
       <node concept="1XD08x" id="6CwBo20y7We" role="AST3G">
         <ref role="KYurZ" node="6CwBo1ZZ9ON" resolve="ConverterEngine" />
@@ -1505,7 +1465,6 @@
         </node>
       </node>
       <node concept="1XD0bf" id="6CwBo20ydzU" role="KDYUA">
-        <node concept="1XD0l2" id="6CwBo20ydzV" role="2BPcuh" />
         <node concept="1XD0fH" id="6CwBo20ydzW" role="1XD008">
           <property role="TrG5h" value="classConcept" />
           <property role="21VRqZ" value="true" />
@@ -1525,8 +1484,8 @@
       </node>
       <node concept="eKYAL" id="6CwBo20FQRV" role="KS$fE" />
       <node concept="1XD0bz" id="6CwBo20FR3m" role="KS$fE">
-        <property role="3qOnjd" value="true" />
         <property role="TrG5h" value="convert" />
+        <property role="3qOnjd" value="true" />
         <node concept="1XD0b9" id="6CwBo20FRIj" role="THmaL">
           <node concept="1XD0a7" id="1hJVIB$ho8V" role="THmaL">
             <property role="21SRas" value="true" />
@@ -1616,12 +1575,10 @@
             <node concept="1XD0ew" id="6CwBo20IoT7" role="21Pmik" />
           </node>
         </node>
-        <node concept="1XD08$" id="6CwBo20FR3o" role="ICcUN" />
-        <node concept="1XD0l2" id="6CwBo20FR3q" role="2BPcuh" />
         <node concept="1XD0bi" id="6CwBo20FR8R" role="1XbAXm">
           <property role="TrG5h" value="concept" />
-          <node concept="9pJMI" id="6CwBo20FR8V" role="37iW8f">
-            <ref role="9pJMH" node="6CwBo20xQ4N" resolve="I" />
+          <node concept="2RgARU" id="$5Ka6yncL6" role="37iW8f">
+            <ref role="2RgA51" to="tpck:gw2VY9q" />
           </node>
         </node>
         <node concept="1XD0bi" id="6CwBo20FR8Y" role="1XbAXm">
@@ -1852,8 +1809,6 @@
           </node>
         </node>
       </node>
-      <node concept="1XD08$" id="6CwBo1ZZmWT" role="ICcUN" />
-      <node concept="1XD0l2" id="6CwBo1ZZmWU" role="2BPcuh" />
       <node concept="2szew_" id="6CwBo1ZZoWR" role="1XPbGx">
         <property role="TrG5h" value="I" />
       </node>
@@ -1976,8 +1931,6 @@
           </node>
         </node>
       </node>
-      <node concept="1XD08$" id="7dX2GvaDVDn" role="ICcUN" />
-      <node concept="1XD0l2" id="7dX2GvaDVDo" role="2BPcuh" />
       <node concept="1XD088" id="7dX2GvaEjUv" role="21NdcZ">
         <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
       </node>
@@ -2164,8 +2117,6 @@
           </node>
         </node>
       </node>
-      <node concept="1XD08$" id="7dX2GvaEnnX" role="ICcUN" />
-      <node concept="1XD0l2" id="7dX2GvaEnnY" role="2BPcuh" />
       <node concept="1XD0bi" id="7dX2GvaEpU5" role="1XbAXm">
         <property role="TrG5h" value="list" />
         <node concept="1XD088" id="7dX2GvaEpZz" role="37iW8f">
@@ -2270,8 +2221,6 @@
           </node>
         </node>
       </node>
-      <node concept="1XD08$" id="7dX2GvaIL3E" role="ICcUN" />
-      <node concept="1XD0l2" id="7dX2GvaIL3F" role="2BPcuh" />
       <node concept="gXE$l" id="7dX2GvaOL8t" role="THmaL">
         <node concept="1PaTwC" id="7dX2GvaOL8v" role="gXG0x">
           <node concept="tu5oc" id="7dX2GvaOLhZ" role="1PaTwD">
@@ -2590,8 +2539,6 @@
           </node>
         </node>
       </node>
-      <node concept="1XD08$" id="7dX2GvaPeq8" role="ICcUN" />
-      <node concept="1XD0l2" id="7dX2GvaPeq9" role="2BPcuh" />
       <node concept="19UT3g" id="2ul4aX9dzPW" role="39xbXa">
         <ref role="19UTlH" to="hcm8:2yYXHtl6Jjv" resolve="ClassType" />
       </node>
@@ -2731,8 +2678,6 @@
           </node>
         </node>
       </node>
-      <node concept="1XD08$" id="7dX2GvaPqXj" role="ICcUN" />
-      <node concept="1XD0l2" id="7dX2GvaPqXk" role="2BPcuh" />
       <node concept="1XD088" id="7dX2GvaPqXl" role="21NdcZ">
         <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
       </node>
@@ -2919,8 +2864,6 @@
           </node>
         </node>
       </node>
-      <node concept="1XD08$" id="7dX2GvaPqYt" role="ICcUN" />
-      <node concept="1XD0l2" id="7dX2GvaPqYu" role="2BPcuh" />
       <node concept="1XD0bi" id="7dX2GvaPqYv" role="1XbAXm">
         <property role="TrG5h" value="list" />
         <node concept="1XD088" id="7dX2GvaPqYw" role="37iW8f">
@@ -2958,8 +2901,6 @@
           <ref role="19UTlH" to="hcm8:2Aaqzls4g9O" resolve="IClassLike" />
         </node>
       </node>
-      <node concept="1XD08$" id="7dX2GvaPqZ6" role="ICcUN" />
-      <node concept="1XD0l2" id="7dX2GvaPqZ7" role="2BPcuh" />
       <node concept="gXE$l" id="7dX2GvaQ6rb" role="THmaL">
         <node concept="1PaTwC" id="7dX2GvaQ6rd" role="gXG0x">
           <node concept="3oM_SD" id="7dX2GvaQ6VJ" role="1PaTwD">
@@ -3342,8 +3283,6 @@
           <ref role="9pJMH" node="aTW36PWZXP" resolve="C" />
         </node>
       </node>
-      <node concept="1XD08$" id="aTW36PIi2w" role="ICcUN" />
-      <node concept="1XD0l2" id="aTW36PIi2x" role="2BPcuh" />
       <node concept="2szew_" id="aTW36PWX$w" role="1XPbGx">
         <property role="TrG5h" value="A" />
       </node>
@@ -3504,8 +3443,6 @@
           </node>
         </node>
       </node>
-      <node concept="1XD08$" id="aTW36PYadu" role="ICcUN" />
-      <node concept="1XD0l2" id="aTW36PYadv" role="2BPcuh" />
       <node concept="2szew_" id="aTW36PYaWH" role="1XPbGx">
         <property role="TrG5h" value="C" />
       </node>
@@ -3556,8 +3493,6 @@
           <property role="1U20sK" value="A is not a subtype of B" />
         </node>
       </node>
-      <node concept="1XD08$" id="74qBZh4PNjL" role="ICcUN" />
-      <node concept="1XD0l2" id="74qBZh4PNjM" role="2BPcuh" />
       <node concept="1XD0bi" id="74qBZh4POo9" role="1XbAXm">
         <property role="TrG5h" value="nodeA" />
         <node concept="3f8zV_" id="74qBZh4POoa" role="37iW8f">
@@ -3594,8 +3529,6 @@
     <node concept="eKYAL" id="4seDjeNcjq2" role="1XD0Tu" />
     <node concept="1XD0bz" id="4seDjeNcjyD" role="1XD0Tu">
       <property role="TrG5h" value="setDefaultValue" />
-      <node concept="1XD08$" id="4seDjeNcjyF" role="ICcUN" />
-      <node concept="1XD0l2" id="4seDjeNcjyG" role="2BPcuh" />
       <node concept="19UT3g" id="4seDjeNckB5" role="39xbXa">
         <ref role="19UTlH" to="tpee:hanou1N" resolve="HexIntegerLiteral" />
       </node>
@@ -3618,8 +3551,6 @@
     <node concept="eKYAL" id="4seDjeNcqRY" role="1XD0Tu" />
     <node concept="1XD0bz" id="4seDjeNcqSN" role="1XD0Tu">
       <property role="TrG5h" value="createPrimitiveExpression" />
-      <node concept="1XD08$" id="4seDjeNcqSP" role="ICcUN" />
-      <node concept="1XD0l2" id="4seDjeNcqSQ" role="2BPcuh" />
       <node concept="1XD0bi" id="4seDjeNcrJ8" role="1XbAXm">
         <property role="TrG5h" value="type" />
         <node concept="9pJMI" id="4seDjeNctJc" role="37iW8f">
