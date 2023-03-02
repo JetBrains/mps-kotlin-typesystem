@@ -27,6 +27,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -229,7 +230,6 @@
         <reference id="2324909103760693884" name="target" index="KYurZ" />
       </concept>
       <concept id="2936055411798373620" name="jetbrains.mps.kotlin.structure.OpenInheritanceModifier" flags="ng" index="1XD08z" />
-      <concept id="2936055411798373619" name="jetbrains.mps.kotlin.structure.FinalInheritanceModifier" flags="ng" index="1XD08$" />
       <concept id="2936055411798373627" name="jetbrains.mps.kotlin.structure.StringLiteral" flags="ng" index="1XD08G">
         <child id="6389031306614148417" name="lines" index="Df6Hu" />
       </concept>
@@ -943,6 +943,7 @@
   </node>
   <node concept="1lH9Xt" id="7gSKPA1y5WP">
     <property role="TrG5h" value="TestCompiledKotlinCode" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7gSKPA1y9U2" role="1SKRRt">
       <node concept="1XD0fY" id="7gSKPA1y9UY" role="1qenE9">
         <property role="TrG5h" value="hierarchy" />
@@ -1140,7 +1141,6 @@
     <node concept="1XD0bz" id="2CxlH6FzmkS" role="KS$fE">
       <property role="3qOnjd" value="true" />
       <property role="TrG5h" value="open" />
-      <node concept="1XD08$" id="2CxlH6FzmkU" role="ICcUN" />
       <node concept="UZU4S" id="2CxlH6FzpKp" role="THmaL">
         <ref role="UZU4V" node="1ACpgrw7tPB" resolve="content" />
       </node>

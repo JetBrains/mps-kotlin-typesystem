@@ -1215,7 +1215,7 @@
             </node>
           </node>
           <node concept="giPaf" id="2iBOuvwtM3g" role="21Pkln">
-            <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+            <ref role="1ap9JL" to="0:~String.equals(Any?)" resolve="equals" />
             <node concept="1XD0k2" id="2iBOuvwtM6n" role="21Pkll" />
             <node concept="UZU4S" id="2iBOuvwtLYQ" role="21Pkln">
               <ref role="UZU4V" node="2iBOuvwtLYe" resolve="maybeString" />
@@ -2994,7 +2994,7 @@
         <node concept="1XD08$" id="11vq$BubPks" role="ICcUN" />
         <node concept="21Pki_" id="1qppQtOYBrk" role="THmaL">
           <node concept="giPau" id="1qppQtOYBTL" role="21Pkll">
-            <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+            <ref role="1ap9JL" to="0:~Int.equals(Any?)" resolve="equals" />
             <node concept="1XD0a7" id="1qppQtOYBYL" role="21Pkll">
               <node concept="UZU4S" id="1qppQtOYBZM" role="1XD07H">
                 <ref role="UZU4V" node="1qppQtOYBe1" resolve="id" />
@@ -3353,7 +3353,7 @@
       <node concept="1XD0bz" id="1qppQtOYRQ8" role="KS$fE">
         <property role="TrG5h" value="containsRed" />
         <node concept="giPaf" id="1qppQtOYSJ4" role="THmaL">
-          <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+          <ref role="1ap9JL" to="0:~Int.equals(Any?)" resolve="equals" />
           <node concept="1XD0k7" id="1qppQtOYSJz" role="21Pkll">
             <property role="1XD01k" value="0" />
           </node>
@@ -6071,7 +6071,7 @@
                 <property role="TrG5h" value="it" />
               </node>
               <node concept="giPau" id="5b2DnJ7dpou" role="THmaL">
-                <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+                <ref role="1ap9JL" to="0:~Int.equals(Any?)" resolve="equals" />
                 <node concept="1XD0k7" id="5b2DnJ7dpw8" role="21Pkll">
                   <property role="1XD01k" value="0" />
                 </node>
@@ -6135,7 +6135,7 @@
                 <property role="TrG5h" value="it" />
               </node>
               <node concept="giPau" id="5b2DnJ7dwVd" role="THmaL">
-                <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+                <ref role="1ap9JL" to="0:~Int.equals(Any?)" resolve="equals" />
                 <node concept="1XD0k7" id="5b2DnJ7dwWj" role="21Pkll">
                   <property role="1XD01k" value="1" />
                 </node>
@@ -6446,6 +6446,61 @@
     <node concept="eKYAL" id="5b2DnJ7dDQY" role="1XD0Tu" />
     <node concept="1XD0aY" id="5b2DnJ7dDRt" role="1XD0Tu">
       <property role="TrG5h" value="Delegate" />
+      <node concept="gXE$l" id="3CcDAJ1vNJd" role="KS$fE">
+        <node concept="1PaTwC" id="3CcDAJ1vNJf" role="gXG0x">
+          <node concept="3oM_SD" id="3CcDAJ1vVkU" role="1PaTwD">
+            <property role="3oM_SC" value="TODO" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1vVkX" role="1PaTwD">
+            <property role="3oM_SC" value="error" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1vYFd" role="1PaTwD">
+            <property role="3oM_SC" value="occur" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1vZE2" role="1PaTwD">
+            <property role="3oM_SC" value="because" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1w7ec" role="1PaTwD">
+            <property role="3oM_SC" value="projection(type:" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1weMo" role="1PaTwD">
+            <property role="3oM_SC" value="projection(isStar:" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1wlM8" role="1PaTwD">
+            <property role="3oM_SC" value="true))" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1wrrO" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1wrs5" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1wxRt" role="1PaTwD">
+            <property role="3oM_SC" value="matched," />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1wDrN" role="1PaTwD">
+            <property role="3oM_SC" value="looks" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1wL0b" role="1PaTwD">
+            <property role="3oM_SC" value="like" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1wS$_" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1x091" role="1PaTwD">
+            <property role="3oM_SC" value="issue" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1x09u" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1x09X" role="1PaTwD">
+            <property role="3oM_SC" value="coderules" />
+          </node>
+          <node concept="3oM_SD" id="3CcDAJ1x3HE" role="1PaTwD">
+            <property role="3oM_SC" value="(investigate!)" />
+          </node>
+        </node>
+      </node>
       <node concept="1XD0bz" id="5b2DnJ7dDSL" role="KS$fE">
         <property role="TrG5h" value="getValue" />
         <node concept="1XD0kn" id="5b2DnJ7dDSN" role="1XPytU" />
@@ -7572,7 +7627,7 @@
               <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.partition&lt;1&gt;(kotlin/Function1&lt;0,kotlin/Boolean&gt;)" resolve="partition" />
               <node concept="1XD0f0" id="74ZS3j_mact" role="1XD06E">
                 <node concept="giPau" id="74ZS3j_me0S" role="THmaL">
-                  <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+                  <ref role="1ap9JL" to="0:~Int.equals(Any?)" resolve="equals" />
                   <node concept="1XD0k7" id="74ZS3j_me3V" role="21Pkll">
                     <property role="1XD01k" value="0" />
                   </node>

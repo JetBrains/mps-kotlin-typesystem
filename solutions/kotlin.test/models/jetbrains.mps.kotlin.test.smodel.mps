@@ -1532,7 +1532,7 @@
                     </node>
                     <node concept="1XD0eI" id="1hJVIB$fYhr" role="TWiod">
                       <node concept="1XD0e1" id="1hJVIB$gxjE" role="1XD0ZN">
-                        <ref role="1ap9JL" to="1xrd:~#Map&lt;0,1&gt;.get&lt;2&gt;(0)" resolve="get" />
+                        <ref role="1ap9JL" to="1xrd:~HashMap.get(0)" resolve="get" />
                         <node concept="UZU4S" id="1hJVIB$gL3j" role="1XD0SO">
                           <ref role="UZU4V" node="1hJVIB$eYTx" resolve="it" />
                         </node>
@@ -2098,7 +2098,7 @@
           </node>
           <node concept="1XD0b9" id="7dX2GvaIfGW" role="THmaL">
             <node concept="giPau" id="7dX2GvaHQ7N" role="1XD00_">
-              <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+              <ref role="1ap9JL" to="0:~Int.equals(Any?)" resolve="equals" />
               <node concept="UZU4S" id="7dX2GvaI1BK" role="21Pkll">
                 <ref role="UZU4V" node="7dX2GvaG2ty" resolve="it" />
               </node>
@@ -2845,7 +2845,7 @@
           </node>
           <node concept="1XD0b9" id="7dX2GvaPqYm" role="THmaL">
             <node concept="giPau" id="7dX2GvaPqYn" role="1XD00_">
-              <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+              <ref role="1ap9JL" to="0:~Int.equals(Any?)" resolve="equals" />
               <node concept="UZU4S" id="7dX2GvaPqYo" role="21Pkll">
                 <ref role="UZU4V" node="7dX2GvaPqYe" resolve="it" />
               </node>

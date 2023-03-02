@@ -133,11 +133,16 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
+        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
+        <property id="5253498789149547713" name="reexport" index="3bR36h" />
         <reference id="5253498789149547705" name="module" index="3bR37D" />
+      </concept>
+      <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
+        <child id="763829979718664967" name="files" index="3rtmxm" />
       </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
       <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
@@ -352,7 +357,7 @@
       <node concept="2pNNFK" id="1c8EeOQUqay" role="20twgj">
         <property role="2pNNFO" value="change-notes" />
         <node concept="2pNm8S" id="1c8EeOQUqaz" role="3o6s8t">
-          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Migration to MPS 2023.1&lt;/li&gt;&lt;/ul&gt;" />
+          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Migration to MPS 2023.1&lt;/li&gt;&lt;li&gt;Use of dataflow aspect for better readability&lt;/li&gt;&lt;/ul&gt;" />
         </node>
       </node>
       <node concept="3_J27D" id="69s32WJ3dwI" role="3s6cr7">
@@ -433,6 +438,32 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
           </node>
         </node>
+        <node concept="3rtmxn" id="6WkzEbZ4tZj" role="3bR31x">
+          <node concept="3LXTmp" id="6WkzEbZ4tZk" role="3rtmxm">
+            <node concept="3qWCbU" id="6WkzEbZ4tZl" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="55IIr" id="6WkzEbZ4tZm" role="3LXTmr">
+              <node concept="2Ry0Ak" id="6WkzEbZ4tZn" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6WkzEbZ4tZo" role="2Ry0An">
+                  <property role="2Ry0Am" value="kotlinExt" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6WkzEbZ4yPT" role="3bR37C">
+          <node concept="3bR9La" id="6WkzEbZ4yPU" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="zqd8:7BVjoXzUx9d" resolve="jetbrains.mps.lang.coderules.template" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1mmiQVl_wAX" role="3bR37C">
+          <node concept="3bR9La" id="1mmiQVl_wAY" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LeP" resolve="jetbrains.mps.analyzers.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="74qBZh4PTNG" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -493,6 +524,21 @@
         <node concept="1SiIV0" id="74qBZh4PTO0" role="3bR37C">
           <node concept="1Busua" id="74qBZh4PTO1" role="1SiIV1">
             <ref role="1Busuk" node="2b3dSh2EpNK" resolve="jetbrains.mps.kotlinExt" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="6WkzEbZ4tZq" role="3bR31x">
+          <node concept="3LXTmp" id="6WkzEbZ4tZr" role="3rtmxm">
+            <node concept="3qWCbU" id="6WkzEbZ4tZs" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="55IIr" id="6WkzEbZ4tZt" role="3LXTmr">
+              <node concept="2Ry0Ak" id="6WkzEbZ4tZu" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6WkzEbZ4tZv" role="2Ry0An">
+                  <property role="2Ry0Am" value="kotlin.javaRefsExt" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -575,11 +621,32 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="6WkzEbZ4tZx" role="3bR31x">
+          <node concept="3LXTmp" id="6WkzEbZ4tZy" role="3rtmxm">
+            <node concept="3qWCbU" id="6WkzEbZ4tZz" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="55IIr" id="6WkzEbZ4tZ$" role="3LXTmr">
+              <node concept="2Ry0Ak" id="6WkzEbZ4tZ_" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6WkzEbZ4tZA" role="2Ry0An">
+                  <property role="2Ry0Am" value="kotlin.smodelExt" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2OH1kpiDFOl" role="3bR37C">
+          <node concept="3bR9La" id="2OH1kpiDFOm" role="1SiIV1">
+            <ref role="3bR37D" node="74qBZh4PTNG" resolve="jetbrains.mps.kotlin.javaRefsExt" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6RInlDMvdsd" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="jetbrains.mps.kotlin.plugin.build" />
         <property role="3LESm3" value="4ddb9520-4888-4a48-8d5b-4d6aa4ec0a2b" />
+        <property role="2GAjPV" value="true" />
         <node concept="55IIr" id="6RInlDMvdsg" role="3LF7KH">
           <node concept="2Ry0Ak" id="6RInlDMvdsZ" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
@@ -619,6 +686,21 @@
             </node>
             <node concept="3qWCbU" id="6RInlDMvdtt" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="6WkzEbZ4tZc" role="3bR31x">
+          <node concept="3LXTmp" id="6WkzEbZ4tZd" role="3rtmxm">
+            <node concept="3qWCbU" id="6WkzEbZ4tZe" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="55IIr" id="6WkzEbZ4tZf" role="3LXTmr">
+              <node concept="2Ry0Ak" id="6WkzEbZ4tZg" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6WkzEbZ4tZh" role="2Ry0An">
+                  <property role="2Ry0Am" value="kotlin.plugin.build" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
