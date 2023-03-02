@@ -522,6 +522,9 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
       </concept>
@@ -28154,7 +28157,7 @@
                                   <ref role="3cqZAo" node="4GncUqzCyhd" resolve="it" />
                                 </node>
                                 <node concept="2qgKlT" id="4GncUqzCyhc" role="2OqNvi">
-                                  <ref role="37wK5l" to="hez:JmO2PmZtH5" resolve="shallowId" />
+                                  <ref role="37wK5l" to="hez:JmO2PmZtH5" resolve="typeKey" />
                                 </node>
                               </node>
                             </node>
@@ -41952,6 +41955,14 @@
     <node concept="1nLNMY" id="4vugIDefFgL" role="1nK1Vg">
       <property role="TrG5h" value="lambdaLiteral" />
       <node concept="3clFbS" id="4vugIDefFgM" role="1nLNMH">
+        <node concept="1mebxG" id="oFSgPBgNm5" role="3cqZAp">
+          <node concept="2OqwBi" id="oFSgPBgNGq" role="1mebXD">
+            <node concept="3A2sRY" id="oFSgPBgNrt" role="2Oq$k0">
+              <ref role="3A2yKK" node="4vugIDefFgO" resolve="ll" />
+            </node>
+            <node concept="1mfA1w" id="oFSgPBgOuq" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="3SKdUt" id="7ZP$ZPvOW7w" role="3cqZAp">
           <node concept="1PaTwC" id="7ZP$ZPvOW7x" role="1aUNEU">
             <node concept="3oM_SD" id="7ZP$ZPvOWb5" role="1PaTwD">
@@ -51177,12 +51188,12 @@
                 <node concept="3A2sRY" id="1U$mAVHR3v4" role="2Oq$k0">
                   <ref role="3A2yKK" node="2nEPytiBF74" resolve="func" />
                 </node>
-                <node concept="3TrEf2" id="1U$mAVHR5KO" role="2OqNvi">
-                  <ref role="3Tt5mk" to="hcm8:5dNsAxXOVNr" resolve="inheritance" />
+                <node concept="2qgKlT" id="6jE_6dutDQq" role="2OqNvi">
+                  <ref role="37wK5l" to="hez:6jE_6duswG9" resolve="getInheritance" />
                 </node>
               </node>
-              <node concept="1mIQ4w" id="1U$mAVHR8k5" role="2OqNvi">
-                <node concept="chp4Y" id="1U$mAVHR9pV" role="cj9EA">
+              <node concept="3O6GUB" id="6jE_6dutEc4" role="2OqNvi">
+                <node concept="chp4Y" id="6jE_6dutEqV" role="3QVz_e">
                   <ref role="cht4Q" to="hcm8:2yYXHtl6JjM" resolve="AbstractInheritanceModifier" />
                 </node>
               </node>

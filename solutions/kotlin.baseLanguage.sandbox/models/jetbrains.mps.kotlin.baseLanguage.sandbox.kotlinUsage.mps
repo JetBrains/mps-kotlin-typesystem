@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="2405a196-e75d-462c-938b-ae8e3fac20aa" name="jetbrains.mps.baseLanguage.kotlinRefs" version="0" />
-    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="10" />
+    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="11" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
@@ -95,12 +95,6 @@
       <concept id="781120894705658104" name="jetbrains.mps.kotlin.structure.IKotlinFile" flags="ng" index="2_hZ6C">
         <child id="2936055411798374535" name="header" index="1XD0Tg" />
       </concept>
-      <concept id="7138249191285121087" name="jetbrains.mps.kotlin.structure.IVisible" flags="ng" index="2BPcvI">
-        <child id="7138249191285121088" name="visibility" index="2BPcuh" />
-      </concept>
-      <concept id="6013275720582937818" name="jetbrains.mps.kotlin.structure.IInheritable" flags="ng" index="ICcUM">
-        <child id="6013275720582937819" name="inheritance" index="ICcUN" />
-      </concept>
       <concept id="2324909103759097704" name="jetbrains.mps.kotlin.structure.IWithClassBody" flags="ng" index="KS$fF">
         <child id="2324909103759097705" name="members" index="KS$fE" />
       </concept>
@@ -120,7 +114,6 @@
         <reference id="6664176324866782075" name="class" index="1SePDO" />
       </concept>
       <concept id="2936055411798373599" name="jetbrains.mps.kotlin.structure.ClassType" flags="ng" index="1XD088" />
-      <concept id="2936055411798373619" name="jetbrains.mps.kotlin.structure.FinalInheritanceModifier" flags="ng" index="1XD08$" />
       <concept id="2936055411798373558" name="jetbrains.mps.kotlin.structure.PackageHeader" flags="ng" index="1XD09x">
         <property id="1243006380191787010" name="packageName" index="21C2eP" />
       </concept>
@@ -159,7 +152,6 @@
       <concept id="2936055411798373328" name="jetbrains.mps.kotlin.structure.IntegerLiteral" flags="ng" index="1XD0k7">
         <property id="2936055411798374019" name="value" index="1XD01k" />
       </concept>
-      <concept id="2936055411798373269" name="jetbrains.mps.kotlin.structure.PublicVisibility" flags="ng" index="1XD0l2" />
       <concept id="2936055411798373223" name="jetbrains.mps.kotlin.structure.PropertyDefaultAssignement" flags="ng" index="1XD0mK">
         <child id="2936055411798373866" name="expression" index="1XD0cX" />
       </concept>
@@ -338,11 +330,7 @@
     <node concept="eKYAL" id="1t03WaziTPx" role="1XD0Tu" />
     <node concept="1XD0aY" id="1t03WaziTQq" role="1XD0Tu">
       <property role="TrG5h" value="SampleClass" />
-      <node concept="1XD0bf" id="1t03WaziTQs" role="KDYUA">
-        <node concept="1XD0l2" id="1t03WaziTQu" role="2BPcuh" />
-      </node>
-      <node concept="1XD08$" id="1t03WaziTQw" role="ICcUN" />
-      <node concept="1XD0l2" id="1t03WaziTQy" role="2BPcuh" />
+      <node concept="1XD0bf" id="1t03WaziTQs" role="KDYUA" />
       <node concept="1XD09Q" id="1t03WaziTUn" role="KS$fE">
         <node concept="1XD0eA" id="1t03WaziTUo" role="TDYyH">
           <property role="TrG5h" value="writable" />
@@ -350,8 +338,6 @@
             <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
           </node>
         </node>
-        <node concept="1XD08$" id="1t03WaziTUp" role="ICcUN" />
-        <node concept="1XD0l2" id="1t03WaziTUq" role="2BPcuh" />
         <node concept="1XD0mK" id="1t03WaziUfz" role="1XD05H">
           <node concept="1XD0k7" id="1t03WaziUh6" role="1XD0cX">
             <property role="1XD01k" value="0" />
@@ -367,8 +353,6 @@
             <ref role="9pJMH" node="1t03WaziUvy" resolve="T" />
           </node>
         </node>
-        <node concept="1XD08$" id="1t03WaziTZd" role="ICcUN" />
-        <node concept="1XD0l2" id="1t03WaziTZe" role="2BPcuh" />
         <node concept="1XD0mK" id="1t03WaziUbl" role="1XD05H">
           <node concept="1XD0k2" id="1d2BQ0ZVItN" role="1XD0cX" />
         </node>
@@ -380,7 +364,6 @@
     <node concept="eKYAL" id="7xKsisVFGoV" role="1XD0Tu" />
     <node concept="1XD0bz" id="1d2BQ0ZQssH" role="1XD0Tu">
       <property role="TrG5h" value="standaloneMethod" />
-      <node concept="1XD0l2" id="1d2BQ0ZQssL" role="2BPcuh" />
       <node concept="1XD0a7" id="2JsDCii7eyu" role="THmaL">
         <node concept="1NbEtQ" id="2JsDCii7ezv" role="1XD07H">
           <ref role="AarEw" to="qw9d:~KClass.isInstance(kotlin/Any?)" resolve="isInstance" />
@@ -402,7 +385,6 @@
           <node concept="1XD0fw" id="1huKj6f3BxI" role="1XD07G" />
         </node>
       </node>
-      <node concept="1XD08$" id="11vq$BubPjU" role="ICcUN" />
     </node>
     <node concept="1XD09x" id="1d2BQ0ZVHHb" role="1XD0Tg">
       <property role="21C2eP" value="somePackage" />

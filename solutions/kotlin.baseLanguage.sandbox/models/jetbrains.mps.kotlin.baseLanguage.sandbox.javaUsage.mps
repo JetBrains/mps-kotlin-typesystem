@@ -125,14 +125,8 @@
         <child id="1991556721067228837" name="superclasses" index="AST3G" />
       </concept>
       <concept id="5622728304609204267" name="jetbrains.mps.kotlin.structure.EmptyDeclaration" flags="ng" index="eKYAL" />
-      <concept id="7138249191285121087" name="jetbrains.mps.kotlin.structure.IVisible" flags="ng" index="2BPcvI">
-        <child id="7138249191285121088" name="visibility" index="2BPcuh" />
-      </concept>
       <concept id="6389031306614148912" name="jetbrains.mps.kotlin.structure.StringLiteralLine" flags="ng" index="Df6$J">
         <child id="6389031306614152501" name="parts" index="Df7GE" />
-      </concept>
-      <concept id="6013275720582937818" name="jetbrains.mps.kotlin.structure.IInheritable" flags="ng" index="ICcUM">
-        <child id="6013275720582937819" name="inheritance" index="ICcUN" />
       </concept>
       <concept id="2324909103759097704" name="jetbrains.mps.kotlin.structure.IWithClassBody" flags="ng" index="KS$fF">
         <child id="2324909103759097705" name="members" index="KS$fE" />
@@ -163,7 +157,6 @@
         <reference id="6664176324866782075" name="class" index="1SePDO" />
       </concept>
       <concept id="2936055411798373599" name="jetbrains.mps.kotlin.structure.ClassType" flags="ng" index="1XD088" />
-      <concept id="2936055411798373619" name="jetbrains.mps.kotlin.structure.FinalInheritanceModifier" flags="ng" index="1XD08$" />
       <concept id="2936055411798373627" name="jetbrains.mps.kotlin.structure.StringLiteral" flags="ng" index="1XD08G">
         <child id="6389031306614148417" name="lines" index="Df6Hu" />
       </concept>
@@ -205,7 +198,6 @@
       <concept id="2936055411798373332" name="jetbrains.mps.kotlin.structure.RealLiteral" flags="ng" index="1XD0k3">
         <property id="2936055411798374027" name="value" index="1XD01s" />
       </concept>
-      <concept id="2936055411798373269" name="jetbrains.mps.kotlin.structure.PublicVisibility" flags="ng" index="1XD0l2" />
       <concept id="2936055411798373283" name="jetbrains.mps.kotlin.structure.StringExpressionEvaluation" flags="ng" index="1XD0lO">
         <child id="2936055411798373982" name="expression" index="1XD029" />
       </concept>
@@ -223,7 +215,6 @@
     <property role="TrG5h" value="KotlinUsingJava" />
     <node concept="1XD0bz" id="26mUjU3x6Cn" role="1XD0Tu">
       <property role="TrG5h" value="main" />
-      <node concept="1XD0l2" id="26mUjU3x6Cr" role="2BPcuh" />
       <node concept="TDTJT" id="5L2mPNF7WJ$" role="THmaL">
         <property role="1Xb$ne" value="true" />
         <node concept="1XD0mK" id="5L2mPNF7X2c" role="1XD05H">
@@ -295,7 +286,6 @@
           </node>
         </node>
       </node>
-      <node concept="1XD08$" id="11vq$BubPjR" role="ICcUN" />
     </node>
     <node concept="eKYAL" id="3lDDPlnatsx" role="1XD0Tu" />
     <node concept="1XD0aY" id="3lDDPlnatta" role="1XD0Tu">
@@ -308,14 +298,10 @@
             <ref role="1SePDO" node="3lDDPlnatta" resolve="BetterFile" />
           </node>
         </node>
-        <node concept="1XD08$" id="7KVUDZawmrp" role="ICcUN" />
-        <node concept="1XD0l2" id="7KVUDZawmrq" role="2BPcuh" />
         <node concept="1XD0mK" id="7KVUDZawmwY" role="1XD05H">
           <node concept="1XD0k2" id="7KVUDZawo2R" role="1XD0cX" />
         </node>
       </node>
-      <node concept="1XD08$" id="3lDDPlnattg" role="ICcUN" />
-      <node concept="1XD0l2" id="3lDDPlnatti" role="2BPcuh" />
       <node concept="2yjh30" id="3lDDPlnatux" role="AST3G">
         <ref role="2yiGb3" node="4mvBIJf4tST" resolve="MyClass" />
       </node>
@@ -324,7 +310,6 @@
       </node>
       <node concept="1XD0bz" id="3lDDPlnatwM" role="KS$fE">
         <property role="TrG5h" value="test" />
-        <node concept="1XD0l2" id="3lDDPlnatwQ" role="2BPcuh" />
         <node concept="1m1iNb" id="1huKj6f3_Ml" role="THmaL">
           <ref role="1m1iKM" node="1huKj6f3_6O" resolve="MyClass.NestedClass" />
         </node>
@@ -438,15 +423,12 @@
             </node>
           </node>
         </node>
-        <node concept="1XD08$" id="11vq$BubPjS" role="ICcUN" />
       </node>
     </node>
     <node concept="eKYAL" id="6qs$Ohcxrt4" role="1XD0Tu" />
     <node concept="eKYAL" id="6qs$Ohcxruw" role="1XD0Tu" />
     <node concept="1XD0bz" id="6qs$Ohcxr_D" role="1XD0Tu">
       <property role="TrG5h" value="myFunction" />
-      <node concept="1XD0l2" id="6qs$Ohcxr_F" role="2BPcuh" />
-      <node concept="1XD08$" id="11vq$BubPjT" role="ICcUN" />
     </node>
     <node concept="eKYAL" id="6qs$OhcxrFp" role="1XD0Tu" />
     <node concept="eKYAL" id="6qs$OhcxrGT" role="1XD0Tu" />
