@@ -5511,6 +5511,7 @@
       <node concept="1XD0fq" id="13qggQCidiS" role="1XPbGx">
         <property role="TrG5h" value="T" />
       </node>
+      <node concept="1XD0l1" id="4KPNZJ0FhIu" role="2BPcuh" />
     </node>
     <node concept="eKYAL" id="1KzjWTsE_5S" role="1XD0Tu" />
     <node concept="1XD0aY" id="1KzjWTsE_77" role="1XD0Tu">
@@ -6067,6 +6068,314 @@
       </node>
     </node>
   </node>
+  <node concept="1XD0fY" id="4oNDtEQ79Tw">
+    <property role="3GE5qa" value="scopes" />
+    <property role="TrG5h" value="fileVisibleDeclaration" />
+    <node concept="eKYAL" id="4oNDtEQ7eND" role="1XD0Tu" />
+    <node concept="gXE$l" id="4oNDtES9n$A" role="1XD0Tu">
+      <node concept="1PaTwC" id="4oNDtES9n$C" role="gXG0x">
+        <node concept="3oM_SD" id="4oNDtES9vXT" role="1PaTwD">
+          <property role="3oM_SC" value="declarations" />
+        </node>
+        <node concept="3oM_SD" id="4oNDtES9vXV" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="4oNDtES9vXY" role="1PaTwD">
+          <property role="3oM_SC" value="testing" />
+        </node>
+        <node concept="3oM_SD" id="4oNDtES9vY2" role="1PaTwD">
+          <property role="3oM_SC" value="scopes" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0bz" id="4oNDtEQ7eNT" role="1XD0Tu">
+      <property role="TrG5h" value="privateTopLevelFun" />
+      <node concept="1XD0l1" id="4oNDtEQ7eNX" role="2BPcuh" />
+    </node>
+    <node concept="1XD09Q" id="4oNDtEQ7eOh" role="1XD0Tu">
+      <property role="1Xb$ne" value="true" />
+      <node concept="1XD0l1" id="4oNDtEQ7eOk" role="2BPcuh" />
+      <node concept="1XD0eA" id="4oNDtEQ7eOl" role="TDYyH">
+        <property role="TrG5h" value="privateTopLevelVar" />
+      </node>
+      <node concept="1XD0mK" id="4oNDtEQ7eOw" role="1XD05H">
+        <node concept="1XD0k7" id="4oNDtEQ7fzo" role="1XD0cX">
+          <property role="1XD01k" value="2" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0aY" id="4oNDtER$Dik" role="1XD0Tu">
+      <property role="TrG5h" value="PrivateTopLevelClass" />
+      <node concept="1XD0bf" id="4oNDtER$Dil" role="KDYUA" />
+      <node concept="1XD0l1" id="4oNDtER$Din" role="2BPcuh" />
+    </node>
+    <node concept="1XD0aY" id="4oNDtEQ7fFK" role="1XD0Tu">
+      <property role="TrG5h" value="PrivateTopLevelImplicitConstructor" />
+      <node concept="1XD0bf" id="4oNDtEQ7fGq" role="KDYUA" />
+      <node concept="1XD0l1" id="4oNDtEQ7fG$" role="2BPcuh" />
+    </node>
+    <node concept="eKYAL" id="4oNDtEQ7fEL" role="1XD0Tu" />
+    <node concept="1XD0bz" id="4oNDtEQ7f$z" role="1XD0Tu">
+      <property role="TrG5h" value="internalTopLevelFun" />
+      <node concept="1XD0l0" id="4oNDtEQ7$kS" role="2BPcuh" />
+    </node>
+    <node concept="1XD09Q" id="4oNDtEQ7f$_" role="1XD0Tu">
+      <property role="1Xb$ne" value="true" />
+      <node concept="1XD0l0" id="4oNDtEQ7fM8" role="2BPcuh" />
+      <node concept="1XD0eA" id="4oNDtEQ7f$B" role="TDYyH">
+        <property role="TrG5h" value="internalTopLevelVar" />
+      </node>
+      <node concept="1XD0mK" id="4oNDtEQ7f$C" role="1XD05H">
+        <node concept="1XD0k7" id="4oNDtEQ7f$D" role="1XD0cX">
+          <property role="1XD01k" value="2" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0aY" id="4oNDtER$Scu" role="1XD0Tu">
+      <property role="TrG5h" value="InternalTopLevelClass" />
+      <node concept="1XD0bf" id="4oNDtER$Scv" role="KDYUA" />
+      <node concept="1XD0l0" id="4oNDtER$Scx" role="2BPcuh" />
+    </node>
+    <node concept="1XD0aY" id="4oNDtEQ7fK8" role="1XD0Tu">
+      <property role="TrG5h" value="InternalTopLevelImplicitConstructor" />
+      <node concept="1XD0bf" id="4oNDtEQ7fK9" role="KDYUA" />
+      <node concept="1XD0l0" id="4oNDtEQ7fM$" role="2BPcuh" />
+    </node>
+    <node concept="eKYAL" id="4oNDtEQ7f$E" role="1XD0Tu" />
+    <node concept="1XD0bz" id="4oNDtEQ7f_k" role="1XD0Tu">
+      <property role="TrG5h" value="publicTopLevelFun" />
+    </node>
+    <node concept="1XD09Q" id="4oNDtEQ7f_m" role="1XD0Tu">
+      <property role="1Xb$ne" value="true" />
+      <node concept="1XD0eA" id="4oNDtEQ7f_o" role="TDYyH">
+        <property role="TrG5h" value="publicTopLevelVar" />
+      </node>
+      <node concept="1XD0mK" id="4oNDtEQ7f_p" role="1XD05H">
+        <node concept="1XD0k7" id="4oNDtEQ7f_q" role="1XD0cX">
+          <property role="1XD01k" value="2" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0aY" id="4oNDtER$Wee" role="1XD0Tu">
+      <property role="TrG5h" value="PublicTopLevelClass" />
+      <node concept="1XD0bf" id="4oNDtER$Wef" role="KDYUA" />
+    </node>
+    <node concept="1XD0aY" id="4oNDtEQ7fKQ" role="1XD0Tu">
+      <property role="TrG5h" value="PublicTopLevelImplicitConstructor" />
+      <node concept="1XD0bf" id="4oNDtEQ7fKR" role="KDYUA" />
+    </node>
+    <node concept="eKYAL" id="4oNDtEQ7f_r" role="1XD0Tu" />
+    <node concept="eKYAL" id="4oNDtEQ7fNF" role="1XD0Tu" />
+    <node concept="1XD0bz" id="4oNDtEQ7fP0" role="1XD0Tu">
+      <property role="TrG5h" value="usage" />
+      <node concept="UZU4S" id="4oNDtEQ7i3s" role="THmaL">
+        <ref role="UZU4V" node="4oNDtEQ7eOl" resolve="privateTopLevelVar" />
+      </node>
+      <node concept="1NbEFs" id="4oNDtEQ7kh6" role="THmaL">
+        <ref role="AarEw" node="4oNDtEQ7eNT" resolve="privateTopLevelFun" />
+      </node>
+      <node concept="TDTJT" id="4oNDtEQ7qNl" role="THmaL">
+        <node concept="2Rs4SG" id="4oNDtEQ7qNm" role="2Rs2$5">
+          <property role="TrG5h" value="obj1" />
+          <node concept="1XD088" id="4oNDtEQ7LaL" role="1XD0Z0">
+            <ref role="1SePDO" node="4oNDtER$Dik" resolve="PrivateTopLevelClass" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="4oNDtEQ7r4V" role="1XD05H">
+          <node concept="1NbEFs" id="4oNDtEREgpJ" role="1XD0cX">
+            <ref role="AarEw" node="4oNDtER$Dil" resolve="PrivateTopLevelClass" />
+          </node>
+        </node>
+      </node>
+      <node concept="1NbEFs" id="4oNDtEREqeP" role="THmaL">
+        <ref role="AarEw" node="4oNDtEQ7fGq" resolve="PrivateTopLevelImplicitConstructor" />
+      </node>
+      <node concept="AQkLs" id="4oNDtEQ7t4H" role="THmaL" />
+      <node concept="UZU4S" id="4oNDtEQ7sAx" role="THmaL">
+        <ref role="UZU4V" node="4oNDtEQ7f$B" resolve="internalTopLevelVar" />
+      </node>
+      <node concept="1NbEFs" id="4oNDtEQ7$2W" role="THmaL">
+        <ref role="AarEw" node="4oNDtEQ7f$z" resolve="internalTopLevelFun" />
+      </node>
+      <node concept="TDTJT" id="4oNDtEQ7sAz" role="THmaL">
+        <node concept="2Rs4SG" id="4oNDtEQ7sA$" role="2Rs2$5">
+          <property role="TrG5h" value="obj2" />
+          <node concept="1XD088" id="4oNDtEQ7KBZ" role="1XD0Z0">
+            <ref role="1SePDO" node="4oNDtER$Scu" resolve="InternalTopLevelClass" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="4oNDtEQ7sA_" role="1XD05H">
+          <node concept="1NbEFs" id="4oNDtEQ7sAA" role="1XD0cX">
+            <ref role="AarEw" node="4oNDtER$Scv" resolve="InternalTopLevelClass" />
+          </node>
+        </node>
+      </node>
+      <node concept="1NbEFs" id="4oNDtEREytn" role="THmaL">
+        <ref role="AarEw" node="4oNDtEQ7fK9" resolve="InternalTopLevelImplicitConstructor" />
+      </node>
+      <node concept="AQkLs" id="4oNDtEQ7tma" role="THmaL" />
+      <node concept="UZU4S" id="4oNDtEQ7sN1" role="THmaL">
+        <ref role="UZU4V" node="4oNDtEQ7f_o" resolve="publicTopLevelVar" />
+      </node>
+      <node concept="1NbEFs" id="4oNDtEQ7sN2" role="THmaL">
+        <ref role="AarEw" node="4oNDtEQ7f_k" resolve="publicTopLevelFun" />
+      </node>
+      <node concept="TDTJT" id="4oNDtEQ7sN3" role="THmaL">
+        <node concept="2Rs4SG" id="4oNDtEQ7sN4" role="2Rs2$5">
+          <property role="TrG5h" value="obj3" />
+          <node concept="1XD088" id="4oNDtEQ7K6M" role="1XD0Z0">
+            <ref role="1SePDO" node="4oNDtER$Wee" resolve="PublicTopLevelClass" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="4oNDtEQ7sN5" role="1XD05H">
+          <node concept="1NbEFs" id="4oNDtEQ7sN6" role="1XD0cX">
+            <ref role="AarEw" node="4oNDtER$Wef" resolve="PublicTopLevelClass" />
+          </node>
+        </node>
+      </node>
+      <node concept="1NbEFs" id="4oNDtEREEq3" role="THmaL">
+        <ref role="AarEw" node="4oNDtEQ7fKR" resolve="PublicTopLevelImplicitConstructor" />
+      </node>
+    </node>
+    <node concept="eKYAL" id="4oNDtEQ7fAk" role="1XD0Tu" />
+    <node concept="eKYAL" id="4oNDtEQ7f$n" role="1XD0Tu" />
+  </node>
+  <node concept="1XD0fY" id="4oNDtEQ_c1y">
+    <property role="3GE5qa" value="scopes" />
+    <property role="TrG5h" value="moduleVisibleReferences" />
+    <node concept="eKYAL" id="4oNDtEQ_c1z" role="1XD0Tu" />
+    <node concept="1XD0bz" id="4oNDtEREJAY" role="1XD0Tu">
+      <property role="TrG5h" value="usage" />
+      <node concept="gXE$l" id="4oNDtERY4rg" role="THmaL">
+        <node concept="1PaTwC" id="4oNDtERY4ri" role="gXG0x">
+          <node concept="3oM_SD" id="4oNDtERYgez" role="1PaTwD">
+            <property role="3oM_SC" value="private:" />
+          </node>
+          <node concept="3oM_SD" id="4oNDtERYge_" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="4oNDtERYgeC" role="1PaTwD">
+            <property role="3oM_SC" value="allowed" />
+          </node>
+          <node concept="3oM_SD" id="4oNDtERYgeG" role="1PaTwD">
+            <property role="3oM_SC" value="outside" />
+          </node>
+          <node concept="3oM_SD" id="4oNDtERYgeL" role="1PaTwD">
+            <property role="3oM_SC" value="file" />
+          </node>
+        </node>
+      </node>
+      <node concept="UZU4S" id="4oNDtEREJAZ" role="THmaL">
+        <ref role="UZU4V" node="4oNDtEQ7eOl" resolve="privateTopLevelVar" />
+        <node concept="1U20sH" id="4oNDtERXOSZ" role="lGtFl">
+          <property role="1U20sK" value="error" />
+        </node>
+      </node>
+      <node concept="1NbEFs" id="4oNDtEREJB0" role="THmaL">
+        <ref role="AarEw" node="4oNDtEQ7eNT" resolve="privateTopLevelFun" />
+        <node concept="1U20sH" id="4oNDtERXNLt" role="lGtFl">
+          <property role="1U20sK" value="error" />
+        </node>
+      </node>
+      <node concept="TDTJT" id="4oNDtEREJB1" role="THmaL">
+        <node concept="2Rs4SG" id="4oNDtEREJB2" role="2Rs2$5">
+          <property role="TrG5h" value="obj1" />
+          <node concept="1XD088" id="4oNDtEREJB3" role="1XD0Z0">
+            <ref role="1SePDO" node="4oNDtER$Dik" resolve="PrivateTopLevelClass" />
+            <node concept="1U20sH" id="4oNDtERXNkk" role="lGtFl">
+              <property role="1U20sK" value="error" />
+            </node>
+          </node>
+        </node>
+        <node concept="1XD0mK" id="4oNDtEREJB4" role="1XD05H">
+          <node concept="1NbEFs" id="4oNDtEREJB5" role="1XD0cX">
+            <ref role="AarEw" node="4oNDtER$Dil" resolve="PrivateTopLevelClass" />
+            <node concept="1U20sH" id="4oNDtERXMcM" role="lGtFl">
+              <property role="1U20sK" value="error" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1NbEFs" id="4oNDtEREJB6" role="THmaL">
+        <ref role="AarEw" node="4oNDtEQ7fGq" resolve="PrivateTopLevelImplicitConstructor" />
+        <node concept="1U20sH" id="4oNDtES9e53" role="lGtFl">
+          <property role="1U20sK" value="error" />
+        </node>
+      </node>
+      <node concept="AQkLs" id="4oNDtEREJB7" role="THmaL" />
+      <node concept="gXE$l" id="4oNDtERYrd_" role="THmaL">
+        <node concept="1PaTwC" id="4oNDtERYrdB" role="gXG0x">
+          <node concept="3oM_SD" id="4oNDtERYAzS" role="1PaTwD">
+            <property role="3oM_SC" value="internal," />
+          </node>
+          <node concept="3oM_SD" id="4oNDtERYAzU" role="1PaTwD">
+            <property role="3oM_SC" value="public:" />
+          </node>
+          <node concept="3oM_SD" id="4oNDtERYAzX" role="1PaTwD">
+            <property role="3oM_SC" value="ok" />
+          </node>
+          <node concept="3oM_SD" id="4oNDtERYA$1" role="1PaTwD">
+            <property role="3oM_SC" value="(protected" />
+          </node>
+          <node concept="3oM_SD" id="4oNDtERYA$6" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="4oNDtERYA$c" role="1PaTwD">
+            <property role="3oM_SC" value="applicable)" />
+          </node>
+        </node>
+      </node>
+      <node concept="UZU4S" id="4oNDtEREJB8" role="THmaL">
+        <ref role="UZU4V" node="4oNDtEQ7f$B" resolve="internalTopLevelVar" />
+      </node>
+      <node concept="1NbEFs" id="4oNDtEREJB9" role="THmaL">
+        <ref role="AarEw" node="4oNDtEQ7f$z" resolve="internalTopLevelFun" />
+      </node>
+      <node concept="TDTJT" id="4oNDtEREJBa" role="THmaL">
+        <node concept="2Rs4SG" id="4oNDtEREJBb" role="2Rs2$5">
+          <property role="TrG5h" value="obj2" />
+          <node concept="1XD088" id="4oNDtEREJBc" role="1XD0Z0">
+            <ref role="1SePDO" node="4oNDtER$Scu" resolve="InternalTopLevelClass" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="4oNDtEREJBd" role="1XD05H">
+          <node concept="1NbEFs" id="4oNDtEREJBe" role="1XD0cX">
+            <ref role="AarEw" node="4oNDtER$Scv" resolve="InternalTopLevelClass" />
+          </node>
+        </node>
+      </node>
+      <node concept="1NbEFs" id="4oNDtEREJBf" role="THmaL">
+        <ref role="AarEw" node="4oNDtEQ7fK9" resolve="InternalTopLevelImplicitConstructor" />
+      </node>
+      <node concept="AQkLs" id="4oNDtEREJBg" role="THmaL" />
+      <node concept="UZU4S" id="4oNDtEREJBh" role="THmaL">
+        <ref role="UZU4V" node="4oNDtEQ7f_o" resolve="publicTopLevelVar" />
+      </node>
+      <node concept="1NbEFs" id="4oNDtEREJBi" role="THmaL">
+        <ref role="AarEw" node="4oNDtEQ7f_k" resolve="publicTopLevelFun" />
+      </node>
+      <node concept="TDTJT" id="4oNDtEREJBj" role="THmaL">
+        <node concept="2Rs4SG" id="4oNDtEREJBk" role="2Rs2$5">
+          <property role="TrG5h" value="obj3" />
+          <node concept="1XD088" id="4oNDtEREJBl" role="1XD0Z0">
+            <ref role="1SePDO" node="4oNDtER$Wee" resolve="PublicTopLevelClass" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="4oNDtEREJBm" role="1XD05H">
+          <node concept="1NbEFs" id="4oNDtEREJBn" role="1XD0cX">
+            <ref role="AarEw" node="4oNDtER$Wef" resolve="PublicTopLevelClass" />
+          </node>
+        </node>
+      </node>
+      <node concept="1NbEFs" id="4oNDtEREJBo" role="THmaL">
+        <ref role="AarEw" node="4oNDtEQ7fKR" resolve="PublicTopLevelImplicitConstructor" />
+      </node>
+    </node>
+    <node concept="eKYAL" id="4oNDtEREJAS" role="1XD0Tu" />
+    <node concept="eKYAL" id="4oNDtEQ_c1$" role="1XD0Tu" />
+    <node concept="eKYAL" id="4oNDtEQ_c2y" role="1XD0Tu" />
+    <node concept="eKYAL" id="4oNDtEQ_c2z" role="1XD0Tu" />
+  </node>
   <node concept="1XD0fY" id="4oNDtES9vY7">
     <property role="3GE5qa" value="scopes" />
     <property role="TrG5h" value="publicVisibleReferences" />
@@ -6271,177 +6580,147 @@
       </node>
     </node>
   </node>
-  <node concept="1XD0fY" id="4oNDtEQ79Tw">
+  <node concept="1XD0fY" id="1qvJ0gBPW2M">
     <property role="3GE5qa" value="scopes" />
-    <property role="TrG5h" value="fileVisibleDeclaration" />
-    <node concept="eKYAL" id="4oNDtEQ7eND" role="1XD0Tu" />
-    <node concept="gXE$l" id="4oNDtES9n$A" role="1XD0Tu">
-      <node concept="1PaTwC" id="4oNDtES9n$C" role="gXG0x">
-        <node concept="3oM_SD" id="4oNDtES9vXT" role="1PaTwD">
-          <property role="3oM_SC" value="declarations" />
+    <property role="TrG5h" value="innerClass" />
+    <node concept="eKYAL" id="1qvJ0gBPWhf" role="1XD0Tu" />
+    <node concept="1XD0aY" id="1qvJ0gBPWhk" role="1XD0Tu">
+      <property role="TrG5h" value="OuterClass" />
+      <node concept="1XD09Q" id="1qvJ0gBPWvJ" role="KS$fE">
+        <property role="1Xb$ne" value="true" />
+        <node concept="1XD0eA" id="1qvJ0gBPWvL" role="TDYyH">
+          <property role="TrG5h" value="someValue" />
         </node>
-        <node concept="3oM_SD" id="4oNDtES9vXV" role="1PaTwD">
-          <property role="3oM_SC" value="for" />
-        </node>
-        <node concept="3oM_SD" id="4oNDtES9vXY" role="1PaTwD">
-          <property role="3oM_SC" value="testing" />
-        </node>
-        <node concept="3oM_SD" id="4oNDtES9vY2" role="1PaTwD">
-          <property role="3oM_SC" value="scopes" />
-        </node>
-      </node>
-    </node>
-    <node concept="1XD0bz" id="4oNDtEQ7eNT" role="1XD0Tu">
-      <property role="TrG5h" value="privateTopLevelFun" />
-      <node concept="1XD0l1" id="4oNDtEQ7eNX" role="2BPcuh" />
-    </node>
-    <node concept="1XD09Q" id="4oNDtEQ7eOh" role="1XD0Tu">
-      <property role="1Xb$ne" value="true" />
-      <node concept="1XD0l1" id="4oNDtEQ7eOk" role="2BPcuh" />
-      <node concept="1XD0eA" id="4oNDtEQ7eOl" role="TDYyH">
-        <property role="TrG5h" value="privateTopLevelVar" />
-      </node>
-      <node concept="1XD0mK" id="4oNDtEQ7eOw" role="1XD05H">
-        <node concept="1XD0k7" id="4oNDtEQ7fzo" role="1XD0cX">
-          <property role="1XD01k" value="2" />
-        </node>
-      </node>
-    </node>
-    <node concept="1XD0aY" id="4oNDtER$Dik" role="1XD0Tu">
-      <property role="TrG5h" value="PrivateTopLevelClass" />
-      <node concept="1XD0bf" id="4oNDtER$Dil" role="KDYUA" />
-      <node concept="1XD0l1" id="4oNDtER$Din" role="2BPcuh" />
-    </node>
-    <node concept="1XD0aY" id="4oNDtEQ7fFK" role="1XD0Tu">
-      <property role="TrG5h" value="PrivateTopLevelImplicitConstructor" />
-      <node concept="1XD0bf" id="4oNDtEQ7fGq" role="KDYUA" />
-      <node concept="1XD0l1" id="4oNDtEQ7fG$" role="2BPcuh" />
-    </node>
-    <node concept="eKYAL" id="4oNDtEQ7fEL" role="1XD0Tu" />
-    <node concept="1XD0bz" id="4oNDtEQ7f$z" role="1XD0Tu">
-      <property role="TrG5h" value="internalTopLevelFun" />
-      <node concept="1XD0l0" id="4oNDtEQ7$kS" role="2BPcuh" />
-    </node>
-    <node concept="1XD09Q" id="4oNDtEQ7f$_" role="1XD0Tu">
-      <property role="1Xb$ne" value="true" />
-      <node concept="1XD0l0" id="4oNDtEQ7fM8" role="2BPcuh" />
-      <node concept="1XD0eA" id="4oNDtEQ7f$B" role="TDYyH">
-        <property role="TrG5h" value="internalTopLevelVar" />
-      </node>
-      <node concept="1XD0mK" id="4oNDtEQ7f$C" role="1XD05H">
-        <node concept="1XD0k7" id="4oNDtEQ7f$D" role="1XD0cX">
-          <property role="1XD01k" value="2" />
-        </node>
-      </node>
-    </node>
-    <node concept="1XD0aY" id="4oNDtER$Scu" role="1XD0Tu">
-      <property role="TrG5h" value="InternalTopLevelClass" />
-      <node concept="1XD0bf" id="4oNDtER$Scv" role="KDYUA" />
-      <node concept="1XD0l0" id="4oNDtER$Scx" role="2BPcuh" />
-    </node>
-    <node concept="1XD0aY" id="4oNDtEQ7fK8" role="1XD0Tu">
-      <property role="TrG5h" value="InternalTopLevelImplicitConstructor" />
-      <node concept="1XD0bf" id="4oNDtEQ7fK9" role="KDYUA" />
-      <node concept="1XD0l0" id="4oNDtEQ7fM$" role="2BPcuh" />
-    </node>
-    <node concept="eKYAL" id="4oNDtEQ7f$E" role="1XD0Tu" />
-    <node concept="1XD0bz" id="4oNDtEQ7f_k" role="1XD0Tu">
-      <property role="TrG5h" value="publicTopLevelFun" />
-    </node>
-    <node concept="1XD09Q" id="4oNDtEQ7f_m" role="1XD0Tu">
-      <property role="1Xb$ne" value="true" />
-      <node concept="1XD0eA" id="4oNDtEQ7f_o" role="TDYyH">
-        <property role="TrG5h" value="publicTopLevelVar" />
-      </node>
-      <node concept="1XD0mK" id="4oNDtEQ7f_p" role="1XD05H">
-        <node concept="1XD0k7" id="4oNDtEQ7f_q" role="1XD0cX">
-          <property role="1XD01k" value="2" />
-        </node>
-      </node>
-    </node>
-    <node concept="1XD0aY" id="4oNDtER$Wee" role="1XD0Tu">
-      <property role="TrG5h" value="PublicTopLevelClass" />
-      <node concept="1XD0bf" id="4oNDtER$Wef" role="KDYUA" />
-    </node>
-    <node concept="1XD0aY" id="4oNDtEQ7fKQ" role="1XD0Tu">
-      <property role="TrG5h" value="PublicTopLevelImplicitConstructor" />
-      <node concept="1XD0bf" id="4oNDtEQ7fKR" role="KDYUA" />
-    </node>
-    <node concept="eKYAL" id="4oNDtEQ7f_r" role="1XD0Tu" />
-    <node concept="eKYAL" id="4oNDtEQ7fNF" role="1XD0Tu" />
-    <node concept="1XD0bz" id="4oNDtEQ7fP0" role="1XD0Tu">
-      <property role="TrG5h" value="usage" />
-      <node concept="UZU4S" id="4oNDtEQ7i3s" role="THmaL">
-        <ref role="UZU4V" node="4oNDtEQ7eOl" resolve="privateTopLevelVar" />
-      </node>
-      <node concept="1NbEFs" id="4oNDtEQ7kh6" role="THmaL">
-        <ref role="AarEw" node="4oNDtEQ7eNT" resolve="privateTopLevelFun" />
-      </node>
-      <node concept="TDTJT" id="4oNDtEQ7qNl" role="THmaL">
-        <node concept="2Rs4SG" id="4oNDtEQ7qNm" role="2Rs2$5">
-          <property role="TrG5h" value="obj1" />
-          <node concept="1XD088" id="4oNDtEQ7LaL" role="1XD0Z0">
-            <ref role="1SePDO" node="4oNDtER$Dik" resolve="PrivateTopLevelClass" />
-          </node>
-        </node>
-        <node concept="1XD0mK" id="4oNDtEQ7r4V" role="1XD05H">
-          <node concept="1NbEFs" id="4oNDtEREgpJ" role="1XD0cX">
-            <ref role="AarEw" node="4oNDtER$Dil" resolve="PrivateTopLevelClass" />
+        <node concept="1XD0mK" id="1qvJ0gBPWvQ" role="1XD05H">
+          <node concept="1XD0k7" id="1qvJ0gBUWFq" role="1XD0cX">
+            <property role="1XD01k" value="23" />
           </node>
         </node>
       </node>
-      <node concept="1NbEFs" id="4oNDtEREqeP" role="THmaL">
-        <ref role="AarEw" node="4oNDtEQ7fGq" resolve="PrivateTopLevelImplicitConstructor" />
+      <node concept="1XD0bz" id="1qvJ0gBUWFy" role="KS$fE">
+        <property role="TrG5h" value="someFunction" />
       </node>
-      <node concept="AQkLs" id="4oNDtEQ7t4H" role="THmaL" />
-      <node concept="UZU4S" id="4oNDtEQ7sAx" role="THmaL">
-        <ref role="UZU4V" node="4oNDtEQ7f$B" resolve="internalTopLevelVar" />
-      </node>
-      <node concept="1NbEFs" id="4oNDtEQ7$2W" role="THmaL">
-        <ref role="AarEw" node="4oNDtEQ7f$z" resolve="internalTopLevelFun" />
-      </node>
-      <node concept="TDTJT" id="4oNDtEQ7sAz" role="THmaL">
-        <node concept="2Rs4SG" id="4oNDtEQ7sA$" role="2Rs2$5">
-          <property role="TrG5h" value="obj2" />
-          <node concept="1XD088" id="4oNDtEQ7KBZ" role="1XD0Z0">
-            <ref role="1SePDO" node="4oNDtER$Scu" resolve="InternalTopLevelClass" />
+      <node concept="eKYAL" id="1qvJ0gBUWFD" role="KS$fE" />
+      <node concept="1XD0aY" id="1qvJ0gBUWG3" role="KS$fE">
+        <property role="TrG5h" value="InnerClass" />
+        <node concept="1XD0bs" id="1qvJ0gBUWG6" role="1XD06P" />
+        <node concept="1XD0bz" id="1qvJ0gBVqbi" role="KS$fE">
+          <property role="TrG5h" value="access" />
+          <node concept="gXE$l" id="1qvJ0gBVGkf" role="THmaL">
+            <node concept="1PaTwC" id="1qvJ0gBVGkh" role="gXG0x">
+              <node concept="3oM_SD" id="1qvJ0gBVGkD" role="1PaTwD">
+                <property role="3oM_SC" value="this" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBVGkF" role="1PaTwD">
+                <property role="3oM_SC" value="one" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBVGkI" role="1PaTwD">
+                <property role="3oM_SC" value="is" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBVGkM" role="1PaTwD">
+                <property role="3oM_SC" value="inner," />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBVGkR" role="1PaTwD">
+                <property role="3oM_SC" value="it" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBVGkX" role="1PaTwD">
+                <property role="3oM_SC" value="may" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBVGl4" role="1PaTwD">
+                <property role="3oM_SC" value="access" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBVGlc" role="1PaTwD">
+                <property role="3oM_SC" value="outer" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBVGll" role="1PaTwD">
+                <property role="3oM_SC" value="fields" />
+              </node>
+            </node>
+          </node>
+          <node concept="UZU4S" id="1qvJ0gBVqbj" role="THmaL">
+            <ref role="UZU4V" node="1qvJ0gBPWvL" resolve="someValue" />
+          </node>
+          <node concept="1NbEFs" id="1qvJ0gBVqbk" role="THmaL">
+            <ref role="AarEw" node="1qvJ0gBUWFy" resolve="someFunction" />
+          </node>
+          <node concept="UZU4S" id="$q1KckHNTZ" role="THmaL">
+            <ref role="UZU4V" node="$q1KckHpCf" resolve="someParam" />
           </node>
         </node>
-        <node concept="1XD0mK" id="4oNDtEQ7sA_" role="1XD05H">
-          <node concept="1NbEFs" id="4oNDtEQ7sAA" role="1XD0cX">
-            <ref role="AarEw" node="4oNDtER$Scv" resolve="InternalTopLevelClass" />
+      </node>
+      <node concept="eKYAL" id="1qvJ0gBUWGi" role="KS$fE" />
+      <node concept="1XD0aY" id="1qvJ0gBUWGD" role="KS$fE">
+        <property role="TrG5h" value="StaticClass" />
+        <node concept="1XD0bz" id="1qvJ0gBUWGT" role="KS$fE">
+          <property role="TrG5h" value="access" />
+          <node concept="gXE$l" id="1qvJ0gBV$IE" role="THmaL">
+            <node concept="1PaTwC" id="1qvJ0gBV$IG" role="gXG0x">
+              <node concept="3oM_SD" id="1qvJ0gBV$Vs" role="1PaTwD">
+                <property role="3oM_SC" value="this" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBV$Vu" role="1PaTwD">
+                <property role="3oM_SC" value="class" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBV$Vx" role="1PaTwD">
+                <property role="3oM_SC" value="should" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBV$V_" role="1PaTwD">
+                <property role="3oM_SC" value="not" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBV$VR" role="1PaTwD">
+                <property role="3oM_SC" value="have" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBV$VX" role="1PaTwD">
+                <property role="3oM_SC" value="access" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBV$W4" role="1PaTwD">
+                <property role="3oM_SC" value="to" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBV$Wc" role="1PaTwD">
+                <property role="3oM_SC" value="outer" />
+              </node>
+              <node concept="3oM_SD" id="1qvJ0gBV$Wl" role="1PaTwD">
+                <property role="3oM_SC" value="field" />
+              </node>
+            </node>
+          </node>
+          <node concept="UZU4S" id="1qvJ0gBViNc" role="THmaL">
+            <ref role="UZU4V" node="1qvJ0gBPWvL" resolve="someValue" />
+            <node concept="1U20sH" id="$q1KckCr1Z" role="lGtFl">
+              <property role="1U20sK" value="not in scope" />
+            </node>
+          </node>
+          <node concept="1NbEFs" id="1qvJ0gBVqaW" role="THmaL">
+            <ref role="AarEw" node="1qvJ0gBUWFy" resolve="someFunction" />
+            <node concept="1U20sH" id="$q1KckCtPX" role="lGtFl">
+              <property role="1U20sK" value="not in scope" />
+            </node>
+          </node>
+          <node concept="UZU4S" id="$q1KckHRBe" role="THmaL">
+            <ref role="UZU4V" node="$q1KckHpCf" resolve="someParam" />
+            <node concept="1U20sH" id="$q1KckIesn" role="lGtFl">
+              <property role="1U20sK" value="error" />
+            </node>
           </node>
         </node>
       </node>
-      <node concept="1NbEFs" id="4oNDtEREytn" role="THmaL">
-        <ref role="AarEw" node="4oNDtEQ7fK9" resolve="InternalTopLevelImplicitConstructor" />
-      </node>
-      <node concept="AQkLs" id="4oNDtEQ7tma" role="THmaL" />
-      <node concept="UZU4S" id="4oNDtEQ7sN1" role="THmaL">
-        <ref role="UZU4V" node="4oNDtEQ7f_o" resolve="publicTopLevelVar" />
-      </node>
-      <node concept="1NbEFs" id="4oNDtEQ7sN2" role="THmaL">
-        <ref role="AarEw" node="4oNDtEQ7f_k" resolve="publicTopLevelFun" />
-      </node>
-      <node concept="TDTJT" id="4oNDtEQ7sN3" role="THmaL">
-        <node concept="2Rs4SG" id="4oNDtEQ7sN4" role="2Rs2$5">
-          <property role="TrG5h" value="obj3" />
-          <node concept="1XD088" id="4oNDtEQ7K6M" role="1XD0Z0">
-            <ref role="1SePDO" node="4oNDtER$Wee" resolve="PublicTopLevelClass" />
+      <node concept="1XD0bf" id="$q1KckHpCe" role="KDYUA">
+        <node concept="1XD0fH" id="$q1KckHpCf" role="1XD008">
+          <property role="TrG5h" value="someParam" />
+          <property role="21VRqZ" value="true" />
+          <property role="21VRqX" value="true" />
+          <node concept="1XD088" id="$q1KckHvWg" role="37iW8f">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
           </node>
         </node>
-        <node concept="1XD0mK" id="4oNDtEQ7sN5" role="1XD05H">
-          <node concept="1NbEFs" id="4oNDtEQ7sN6" role="1XD0cX">
-            <ref role="AarEw" node="4oNDtER$Wef" resolve="PublicTopLevelClass" />
+        <node concept="1XD0fH" id="$q1KckHwtI" role="1XD008">
+          <property role="TrG5h" value="someOtherParam" />
+          <node concept="1XD088" id="$q1KckH$Dc" role="37iW8f">
+            <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
           </node>
         </node>
-      </node>
-      <node concept="1NbEFs" id="4oNDtEREEq3" role="THmaL">
-        <ref role="AarEw" node="4oNDtEQ7fKR" resolve="PublicTopLevelImplicitConstructor" />
       </node>
     </node>
-    <node concept="eKYAL" id="4oNDtEQ7fAk" role="1XD0Tu" />
-    <node concept="eKYAL" id="4oNDtEQ7f$n" role="1XD0Tu" />
   </node>
   <node concept="1XD0fY" id="5sK72SOob5A">
     <property role="TrG5h" value="inheritance" />
@@ -7022,280 +7301,143 @@
     <node concept="eKYAL" id="5sK72SOXgK$" role="1XD0Tu" />
     <node concept="eKYAL" id="5sK72SOBgX$" role="1XD0Tu" />
   </node>
-  <node concept="1XD0fY" id="4oNDtEQ_c1y">
+  <node concept="1XD0fY" id="4KPNZJ0EkQo">
     <property role="3GE5qa" value="scopes" />
-    <property role="TrG5h" value="moduleVisibleReferences" />
-    <node concept="eKYAL" id="4oNDtEQ_c1z" role="1XD0Tu" />
-    <node concept="1XD0bz" id="4oNDtEREJAY" role="1XD0Tu">
-      <property role="TrG5h" value="usage" />
-      <node concept="gXE$l" id="4oNDtERY4rg" role="THmaL">
-        <node concept="1PaTwC" id="4oNDtERY4ri" role="gXG0x">
-          <node concept="3oM_SD" id="4oNDtERYgez" role="1PaTwD">
-            <property role="3oM_SC" value="private:" />
+    <property role="TrG5h" value="instanceVisibility" />
+    <node concept="eKYAL" id="4KPNZJ0EkZA" role="1XD0Tu" />
+    <node concept="1XD0aY" id="4KPNZJ0EkZW" role="1XD0Tu">
+      <property role="TrG5h" value="MyClass" />
+      <node concept="1XD0l1" id="4KPNZJ0El00" role="2BPcuh" />
+      <node concept="1XD0bz" id="4KPNZJ0El0d" role="KS$fE">
+        <property role="TrG5h" value="pub" />
+      </node>
+      <node concept="1XD0bz" id="4KPNZJ0El0m" role="KS$fE">
+        <property role="TrG5h" value="priv" />
+        <node concept="1XD0l1" id="4KPNZJ0Pciw" role="2BPcuh" />
+      </node>
+      <node concept="1XD0bz" id="4KPNZJ0El0s" role="KS$fE">
+        <property role="TrG5h" value="prot" />
+        <node concept="1XD0lf" id="4KPNZJ0PeAD" role="2BPcuh" />
+      </node>
+      <node concept="1XD0bz" id="4KPNZJ0El0z" role="KS$fE">
+        <property role="TrG5h" value="int" />
+        <node concept="1XD0l0" id="4KPNZJ0Pi46" role="2BPcuh" />
+      </node>
+      <node concept="eKYAL" id="4KPNZJ0PaxI" role="KS$fE" />
+      <node concept="1XD0bz" id="4KPNZJ0LYeL" role="KS$fE">
+        <property role="TrG5h" value="innerUsage" />
+        <node concept="1XD0a7" id="4KPNZJ0LYeM" role="THmaL">
+          <node concept="1NbEtQ" id="4KPNZJ0LYeN" role="1XD07H">
+            <ref role="AarEw" node="4KPNZJ0El0d" resolve="pub" />
           </node>
-          <node concept="3oM_SD" id="4oNDtERYge_" role="1PaTwD">
-            <property role="3oM_SC" value="not" />
+          <node concept="1XD0df" id="4KPNZJ0MlnL" role="21Pmik" />
+        </node>
+        <node concept="1XD0a7" id="4KPNZJ0MQGT" role="THmaL">
+          <node concept="1NbEtQ" id="4KPNZJ0N2CN" role="1XD07H">
+            <ref role="AarEw" node="4KPNZJ0El0m" resolve="priv" />
           </node>
-          <node concept="3oM_SD" id="4oNDtERYgeC" role="1PaTwD">
-            <property role="3oM_SC" value="allowed" />
+          <node concept="1XD0df" id="4KPNZJ0MEwQ" role="21Pmik" />
+        </node>
+        <node concept="1XD0a7" id="4KPNZJ0NzYj" role="THmaL">
+          <node concept="1NbEtQ" id="4KPNZJ0NHBe" role="1XD07H">
+            <ref role="AarEw" node="4KPNZJ0El0s" resolve="prot" />
           </node>
-          <node concept="3oM_SD" id="4oNDtERYgeG" role="1PaTwD">
-            <property role="3oM_SC" value="outside" />
+          <node concept="1XD0df" id="4KPNZJ0NnM5" role="21Pmik" />
+        </node>
+        <node concept="1XD0a7" id="4KPNZJ0OfOs" role="THmaL">
+          <node concept="1NbEtQ" id="4KPNZJ0Ou4e" role="1XD07H">
+            <ref role="AarEw" node="4KPNZJ0El0z" resolve="int" />
           </node>
-          <node concept="3oM_SD" id="4oNDtERYgeL" role="1PaTwD">
-            <property role="3oM_SC" value="file" />
-          </node>
+          <node concept="1XD0df" id="4KPNZJ0O3cw" role="21Pmik" />
         </node>
       </node>
-      <node concept="UZU4S" id="4oNDtEREJAZ" role="THmaL">
-        <ref role="UZU4V" node="4oNDtEQ7eOl" resolve="privateTopLevelVar" />
-        <node concept="1U20sH" id="4oNDtERXOSZ" role="lGtFl">
-          <property role="1U20sK" value="error" />
-        </node>
+      <node concept="1XD08z" id="4KPNZJ0PKIl" role="ICcUN" />
+    </node>
+    <node concept="eKYAL" id="4KPNZJ0Pp7b" role="1XD0Tu" />
+    <node concept="1XD0aY" id="4KPNZJ0P$v_" role="1XD0Tu">
+      <property role="TrG5h" value="OverrideClass" />
+      <node concept="1XD0l1" id="4KPNZJ0P$vD" role="2BPcuh" />
+      <node concept="1XD08x" id="4KPNZJ19cpm" role="AST3G">
+        <ref role="KYurZ" node="4KPNZJ0EkZW" resolve="MyClass" />
       </node>
-      <node concept="1NbEFs" id="4oNDtEREJB0" role="THmaL">
-        <ref role="AarEw" node="4oNDtEQ7eNT" resolve="privateTopLevelFun" />
-        <node concept="1U20sH" id="4oNDtERXNLt" role="lGtFl">
-          <property role="1U20sK" value="error" />
+      <node concept="1XD0bz" id="4KPNZJ0PSKq" role="KS$fE">
+        <property role="TrG5h" value="overrideUsage" />
+        <node concept="1XD0a7" id="4KPNZJ0PSKr" role="THmaL">
+          <node concept="1NbEtQ" id="4KPNZJ0PSKs" role="1XD07H">
+            <ref role="AarEw" node="4KPNZJ0El0d" resolve="pub" />
+          </node>
+          <node concept="1XD0df" id="4KPNZJ0PSKt" role="21Pmik" />
         </node>
-      </node>
-      <node concept="TDTJT" id="4oNDtEREJB1" role="THmaL">
-        <node concept="2Rs4SG" id="4oNDtEREJB2" role="2Rs2$5">
-          <property role="TrG5h" value="obj1" />
-          <node concept="1XD088" id="4oNDtEREJB3" role="1XD0Z0">
-            <ref role="1SePDO" node="4oNDtER$Dik" resolve="PrivateTopLevelClass" />
-            <node concept="1U20sH" id="4oNDtERXNkk" role="lGtFl">
+        <node concept="1XD0a7" id="4KPNZJ0PSKx" role="THmaL">
+          <node concept="1NbEtQ" id="4KPNZJ0PSKy" role="1XD07H">
+            <ref role="AarEw" node="4KPNZJ0El0s" resolve="prot" />
+          </node>
+          <node concept="1XD0df" id="4KPNZJ0PSKz" role="21Pmik" />
+        </node>
+        <node concept="1XD0a7" id="4KPNZJ0PSK$" role="THmaL">
+          <node concept="1NbEtQ" id="4KPNZJ0PSK_" role="1XD07H">
+            <ref role="AarEw" node="4KPNZJ0El0z" resolve="int" />
+          </node>
+          <node concept="1XD0df" id="4KPNZJ0PSKA" role="21Pmik" />
+        </node>
+        <node concept="AQkLs" id="4KPNZJ0QUcG" role="THmaL" />
+        <node concept="1XD0a7" id="4KPNZJ0PSKu" role="THmaL">
+          <node concept="1NbEtQ" id="4KPNZJ0PSKv" role="1XD07H">
+            <ref role="AarEw" node="4KPNZJ0El0m" resolve="priv" />
+            <node concept="1U20sH" id="4KPNZJ0QIgZ" role="lGtFl">
               <property role="1U20sK" value="error" />
             </node>
           </node>
+          <node concept="1XD0df" id="4KPNZJ0PSKw" role="21Pmik" />
         </node>
-        <node concept="1XD0mK" id="4oNDtEREJB4" role="1XD05H">
-          <node concept="1NbEFs" id="4oNDtEREJB5" role="1XD0cX">
-            <ref role="AarEw" node="4oNDtER$Dil" resolve="PrivateTopLevelClass" />
-            <node concept="1U20sH" id="4oNDtERXMcM" role="lGtFl">
-              <property role="1U20sK" value="error" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1NbEFs" id="4oNDtEREJB6" role="THmaL">
-        <ref role="AarEw" node="4oNDtEQ7fGq" resolve="PrivateTopLevelImplicitConstructor" />
-        <node concept="1U20sH" id="4oNDtES9e53" role="lGtFl">
-          <property role="1U20sK" value="error" />
-        </node>
-      </node>
-      <node concept="AQkLs" id="4oNDtEREJB7" role="THmaL" />
-      <node concept="gXE$l" id="4oNDtERYrd_" role="THmaL">
-        <node concept="1PaTwC" id="4oNDtERYrdB" role="gXG0x">
-          <node concept="3oM_SD" id="4oNDtERYAzS" role="1PaTwD">
-            <property role="3oM_SC" value="internal," />
-          </node>
-          <node concept="3oM_SD" id="4oNDtERYAzU" role="1PaTwD">
-            <property role="3oM_SC" value="public:" />
-          </node>
-          <node concept="3oM_SD" id="4oNDtERYAzX" role="1PaTwD">
-            <property role="3oM_SC" value="ok" />
-          </node>
-          <node concept="3oM_SD" id="4oNDtERYA$1" role="1PaTwD">
-            <property role="3oM_SC" value="(protected" />
-          </node>
-          <node concept="3oM_SD" id="4oNDtERYA$6" role="1PaTwD">
-            <property role="3oM_SC" value="not" />
-          </node>
-          <node concept="3oM_SD" id="4oNDtERYA$c" role="1PaTwD">
-            <property role="3oM_SC" value="applicable)" />
-          </node>
-        </node>
-      </node>
-      <node concept="UZU4S" id="4oNDtEREJB8" role="THmaL">
-        <ref role="UZU4V" node="4oNDtEQ7f$B" resolve="internalTopLevelVar" />
-      </node>
-      <node concept="1NbEFs" id="4oNDtEREJB9" role="THmaL">
-        <ref role="AarEw" node="4oNDtEQ7f$z" resolve="internalTopLevelFun" />
-      </node>
-      <node concept="TDTJT" id="4oNDtEREJBa" role="THmaL">
-        <node concept="2Rs4SG" id="4oNDtEREJBb" role="2Rs2$5">
-          <property role="TrG5h" value="obj2" />
-          <node concept="1XD088" id="4oNDtEREJBc" role="1XD0Z0">
-            <ref role="1SePDO" node="4oNDtER$Scu" resolve="InternalTopLevelClass" />
-          </node>
-        </node>
-        <node concept="1XD0mK" id="4oNDtEREJBd" role="1XD05H">
-          <node concept="1NbEFs" id="4oNDtEREJBe" role="1XD0cX">
-            <ref role="AarEw" node="4oNDtER$Scv" resolve="InternalTopLevelClass" />
-          </node>
-        </node>
-      </node>
-      <node concept="1NbEFs" id="4oNDtEREJBf" role="THmaL">
-        <ref role="AarEw" node="4oNDtEQ7fK9" resolve="InternalTopLevelImplicitConstructor" />
-      </node>
-      <node concept="AQkLs" id="4oNDtEREJBg" role="THmaL" />
-      <node concept="UZU4S" id="4oNDtEREJBh" role="THmaL">
-        <ref role="UZU4V" node="4oNDtEQ7f_o" resolve="publicTopLevelVar" />
-      </node>
-      <node concept="1NbEFs" id="4oNDtEREJBi" role="THmaL">
-        <ref role="AarEw" node="4oNDtEQ7f_k" resolve="publicTopLevelFun" />
-      </node>
-      <node concept="TDTJT" id="4oNDtEREJBj" role="THmaL">
-        <node concept="2Rs4SG" id="4oNDtEREJBk" role="2Rs2$5">
-          <property role="TrG5h" value="obj3" />
-          <node concept="1XD088" id="4oNDtEREJBl" role="1XD0Z0">
-            <ref role="1SePDO" node="4oNDtER$Wee" resolve="PublicTopLevelClass" />
-          </node>
-        </node>
-        <node concept="1XD0mK" id="4oNDtEREJBm" role="1XD05H">
-          <node concept="1NbEFs" id="4oNDtEREJBn" role="1XD0cX">
-            <ref role="AarEw" node="4oNDtER$Wef" resolve="PublicTopLevelClass" />
-          </node>
-        </node>
-      </node>
-      <node concept="1NbEFs" id="4oNDtEREJBo" role="THmaL">
-        <ref role="AarEw" node="4oNDtEQ7fKR" resolve="PublicTopLevelImplicitConstructor" />
       </node>
     </node>
-    <node concept="eKYAL" id="4oNDtEREJAS" role="1XD0Tu" />
-    <node concept="eKYAL" id="4oNDtEQ_c1$" role="1XD0Tu" />
-    <node concept="eKYAL" id="4oNDtEQ_c2y" role="1XD0Tu" />
-    <node concept="eKYAL" id="4oNDtEQ_c2z" role="1XD0Tu" />
-  </node>
-  <node concept="1XD0fY" id="1qvJ0gBPW2M">
-    <property role="3GE5qa" value="scopes" />
-    <property role="TrG5h" value="innerClass" />
-    <node concept="eKYAL" id="1qvJ0gBPWhf" role="1XD0Tu" />
-    <node concept="1XD0aY" id="1qvJ0gBPWhk" role="1XD0Tu">
-      <property role="TrG5h" value="OuterClass" />
-      <node concept="1XD09Q" id="1qvJ0gBPWvJ" role="KS$fE">
-        <property role="1Xb$ne" value="true" />
-        <node concept="1XD0eA" id="1qvJ0gBPWvL" role="TDYyH">
-          <property role="TrG5h" value="someValue" />
+    <node concept="eKYAL" id="4KPNZJ0El0U" role="1XD0Tu" />
+    <node concept="1XD0bz" id="4KPNZJ0El1d" role="1XD0Tu">
+      <property role="TrG5h" value="usage" />
+      <node concept="1XD0a7" id="4KPNZJ0LMj_" role="THmaL">
+        <node concept="1NbEtQ" id="4KPNZJ0LYej" role="1XD07H">
+          <ref role="AarEw" node="4KPNZJ0El0d" resolve="pub" />
         </node>
-        <node concept="1XD0mK" id="1qvJ0gBPWvQ" role="1XD05H">
-          <node concept="1XD0k7" id="1qvJ0gBUWFq" role="1XD0cX">
-            <property role="1XD01k" value="23" />
-          </node>
+        <node concept="UZU4S" id="4KPNZJ0LC0m" role="21Pmik">
+          <ref role="UZU4V" node="4KPNZJ0El1q" resolve="klass" />
         </node>
       </node>
-      <node concept="1XD0bz" id="1qvJ0gBUWFy" role="KS$fE">
-        <property role="TrG5h" value="someFunction" />
-      </node>
-      <node concept="eKYAL" id="1qvJ0gBUWFD" role="KS$fE" />
-      <node concept="1XD0aY" id="1qvJ0gBUWG3" role="KS$fE">
-        <property role="TrG5h" value="InnerClass" />
-        <node concept="1XD0bs" id="1qvJ0gBUWG6" role="1XD06P" />
-        <node concept="1XD0bz" id="1qvJ0gBVqbi" role="KS$fE">
-          <property role="TrG5h" value="access" />
-          <node concept="gXE$l" id="1qvJ0gBVGkf" role="THmaL">
-            <node concept="1PaTwC" id="1qvJ0gBVGkh" role="gXG0x">
-              <node concept="3oM_SD" id="1qvJ0gBVGkD" role="1PaTwD">
-                <property role="3oM_SC" value="this" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBVGkF" role="1PaTwD">
-                <property role="3oM_SC" value="one" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBVGkI" role="1PaTwD">
-                <property role="3oM_SC" value="is" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBVGkM" role="1PaTwD">
-                <property role="3oM_SC" value="inner," />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBVGkR" role="1PaTwD">
-                <property role="3oM_SC" value="it" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBVGkX" role="1PaTwD">
-                <property role="3oM_SC" value="may" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBVGl4" role="1PaTwD">
-                <property role="3oM_SC" value="access" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBVGlc" role="1PaTwD">
-                <property role="3oM_SC" value="outer" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBVGll" role="1PaTwD">
-                <property role="3oM_SC" value="fields" />
-              </node>
-            </node>
-          </node>
-          <node concept="UZU4S" id="1qvJ0gBVqbj" role="THmaL">
-            <ref role="UZU4V" node="1qvJ0gBPWvL" resolve="someValue" />
-          </node>
-          <node concept="1NbEFs" id="1qvJ0gBVqbk" role="THmaL">
-            <ref role="AarEw" node="1qvJ0gBUWFy" resolve="someFunction" />
-          </node>
-          <node concept="UZU4S" id="$q1KckHNTZ" role="THmaL">
-            <ref role="UZU4V" node="$q1KckHpCf" resolve="someParam" />
-          </node>
+      <node concept="1XD0a7" id="4KPNZJ0Ou5c" role="THmaL">
+        <node concept="1NbEtQ" id="4KPNZJ0Ou5d" role="1XD07H">
+          <ref role="AarEw" node="4KPNZJ0El0z" resolve="int" />
+        </node>
+        <node concept="UZU4S" id="4KPNZJ0P8Ir" role="21Pmik">
+          <ref role="UZU4V" node="4KPNZJ0El1q" resolve="obj" />
         </node>
       </node>
-      <node concept="eKYAL" id="1qvJ0gBUWGi" role="KS$fE" />
-      <node concept="1XD0aY" id="1qvJ0gBUWGD" role="KS$fE">
-        <property role="TrG5h" value="StaticClass" />
-        <node concept="1XD0bz" id="1qvJ0gBUWGT" role="KS$fE">
-          <property role="TrG5h" value="access" />
-          <node concept="gXE$l" id="1qvJ0gBV$IE" role="THmaL">
-            <node concept="1PaTwC" id="1qvJ0gBV$IG" role="gXG0x">
-              <node concept="3oM_SD" id="1qvJ0gBV$Vs" role="1PaTwD">
-                <property role="3oM_SC" value="this" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBV$Vu" role="1PaTwD">
-                <property role="3oM_SC" value="class" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBV$Vx" role="1PaTwD">
-                <property role="3oM_SC" value="should" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBV$V_" role="1PaTwD">
-                <property role="3oM_SC" value="not" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBV$VR" role="1PaTwD">
-                <property role="3oM_SC" value="have" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBV$VX" role="1PaTwD">
-                <property role="3oM_SC" value="access" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBV$W4" role="1PaTwD">
-                <property role="3oM_SC" value="to" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBV$Wc" role="1PaTwD">
-                <property role="3oM_SC" value="outer" />
-              </node>
-              <node concept="3oM_SD" id="1qvJ0gBV$Wl" role="1PaTwD">
-                <property role="3oM_SC" value="field" />
-              </node>
-            </node>
+      <node concept="AQkLs" id="4KPNZJ0R31c" role="THmaL" />
+      <node concept="1XD0a7" id="4KPNZJ0Ou56" role="THmaL">
+        <node concept="1NbEtQ" id="4KPNZJ0Ou57" role="1XD07H">
+          <ref role="AarEw" node="4KPNZJ0El0m" resolve="priv" />
+          <node concept="1U20sH" id="4KPNZJ0PktD" role="lGtFl">
+            <property role="1U20sK" value="error" />
           </node>
-          <node concept="UZU4S" id="1qvJ0gBViNc" role="THmaL">
-            <ref role="UZU4V" node="1qvJ0gBPWvL" resolve="someValue" />
-            <node concept="1U20sH" id="$q1KckCr1Z" role="lGtFl">
-              <property role="1U20sK" value="not in scope" />
-            </node>
-          </node>
-          <node concept="1NbEFs" id="1qvJ0gBVqaW" role="THmaL">
-            <ref role="AarEw" node="1qvJ0gBUWFy" resolve="someFunction" />
-            <node concept="1U20sH" id="$q1KckCtPX" role="lGtFl">
-              <property role="1U20sK" value="not in scope" />
-            </node>
-          </node>
-          <node concept="UZU4S" id="$q1KckHRBe" role="THmaL">
-            <ref role="UZU4V" node="$q1KckHpCf" resolve="someParam" />
-            <node concept="1U20sH" id="$q1KckIesn" role="lGtFl">
-              <property role="1U20sK" value="error" />
-            </node>
-          </node>
+        </node>
+        <node concept="UZU4S" id="4KPNZJ0OKPO" role="21Pmik">
+          <ref role="UZU4V" node="4KPNZJ0El1q" resolve="obj" />
         </node>
       </node>
-      <node concept="1XD0bf" id="$q1KckHpCe" role="KDYUA">
-        <node concept="1XD0fH" id="$q1KckHpCf" role="1XD008">
-          <property role="TrG5h" value="someParam" />
-          <property role="21VRqZ" value="true" />
-          <property role="21VRqX" value="true" />
-          <node concept="1XD088" id="$q1KckHvWg" role="37iW8f">
-            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+      <node concept="1XD0a7" id="4KPNZJ0Ou59" role="THmaL">
+        <node concept="1NbEtQ" id="4KPNZJ0Ou5a" role="1XD07H">
+          <ref role="AarEw" node="4KPNZJ0El0s" resolve="prot" />
+          <node concept="1U20sH" id="4KPNZJ0PmMq" role="lGtFl">
+            <property role="1U20sK" value="error" />
           </node>
         </node>
-        <node concept="1XD0fH" id="$q1KckHwtI" role="1XD008">
-          <property role="TrG5h" value="someOtherParam" />
-          <node concept="1XD088" id="$q1KckH$Dc" role="37iW8f">
-            <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
-          </node>
+        <node concept="UZU4S" id="4KPNZJ0OWM4" role="21Pmik">
+          <ref role="UZU4V" node="4KPNZJ0El1q" resolve="obj" />
+        </node>
+      </node>
+      <node concept="1XD0bi" id="4KPNZJ0El1q" role="1XbAXm">
+        <property role="TrG5h" value="obj" />
+        <node concept="1XD088" id="4KPNZJ0EooA" role="37iW8f">
+          <ref role="1SePDO" node="4KPNZJ0EkZW" resolve="MyClass" />
         </node>
       </node>
     </node>

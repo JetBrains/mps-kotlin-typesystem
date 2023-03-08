@@ -65224,7 +65224,7 @@
                       <node concept="3Aqt3T" id="4HsGm__iL3v" role="3I6s78">
                         <ref role="3AqCNq" node="7ZP$ZPvPt5z" resolve="specifyFunctionType" />
                         <node concept="ns1u0" id="4HsGm__iL3w" role="3AunhB">
-                          <ref role="ns1xF" node="5ViKESnU8PM" resolve="classType" />
+                          <ref role="ns1xF" node="60L8gIe1hqj" resolve="ktClassType" />
                           <node concept="nsMwS" id="4HsGm__iLkq" role="ns1xD">
                             <ref role="nsMwP" node="5ViKESnUfMP" resolve="klass" />
                             <node concept="37jhX" id="4HsGm__iLlB" role="iSaTp">
