@@ -7,7 +7,10 @@
     <devkit ref="4866b4b4-6ecd-49f3-ae68-c62248cc4306(jetbrains.mps.devkit.kotlin.jvm)" />
   </languages>
   <imports>
+    <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" />
+    <import index="49cn" ref="d2c5f31a-2aac-440d-a15c-2d8cba42bf3d/kotlinJvm:kotlin.jvm(jetbrains.mps.kotlin.stdlib.jvm/)" />
     <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -18,7 +21,9 @@
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
-      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <property id="1075300953594" name="abstractClass" index="1sVAO0" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -40,6 +45,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -50,6 +56,9 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -57,10 +66,14 @@
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="9e4ff22b-60f1-43ef-a50b-f9f0fcec22e0" name="jetbrains.mps.kotlin.javaRefs">
       <concept id="5016903245542350786" name="jetbrains.mps.kotlin.javaRefs.structure.JavaVariableReference" flags="ng" index="2a$s4D">
         <reference id="5016903245542384507" name="variable" index="2a$nQg" />
+      </concept>
+      <concept id="2420378304467696126" name="jetbrains.mps.kotlin.javaRefs.structure.JavaConstructorSuperSpecifier" flags="ng" index="2yjh30">
+        <reference id="2420378304467708925" name="constructor" index="2yiGb3" />
       </concept>
       <concept id="2420378304458348492" name="jetbrains.mps.kotlin.javaRefs.structure.JavaMethodCall" flags="ng" index="2yQVVM">
         <reference id="2420378304458348798" name="method" index="2yQV70" />
@@ -80,6 +93,12 @@
       <concept id="1243006380186890016" name="jetbrains.mps.kotlin.structure.UnaryExpression" flags="ng" index="21Pmin">
         <child id="1243006380186890019" name="operand" index="21Pmik" />
       </concept>
+      <concept id="1243006380187810093" name="jetbrains.mps.kotlin.structure.MemberNavigationOperation" flags="ng" index="21SRaq">
+        <child id="2936055411798374203" name="target" index="1XD07G" />
+      </concept>
+      <concept id="1243006380188575965" name="jetbrains.mps.kotlin.structure.StringLiteralRaw" flags="ng" index="21VMdE">
+        <property id="1243006380188575966" name="content" index="21VMdD" />
+      </concept>
       <concept id="7996321249597408849" name="jetbrains.mps.kotlin.structure.IInheritExplicitly" flags="ng" index="6Oumu">
         <child id="1991556721067228837" name="superclasses" index="AST3G" />
       </concept>
@@ -90,6 +109,9 @@
       <concept id="1991556721070973461" name="jetbrains.mps.kotlin.structure.EmptyStatement" flags="ng" index="AQkLs" />
       <concept id="7138249191285121087" name="jetbrains.mps.kotlin.structure.IVisible" flags="ng" index="2BPcvI">
         <child id="7138249191285121088" name="visibility" index="2BPcuh" />
+      </concept>
+      <concept id="6389031306614148912" name="jetbrains.mps.kotlin.structure.StringLiteralLine" flags="ng" index="Df6$J">
+        <child id="6389031306614152501" name="parts" index="Df7GE" />
       </concept>
       <concept id="6013275720582937818" name="jetbrains.mps.kotlin.structure.IInheritable" flags="ng" index="ICcUM">
         <child id="6013275720582937819" name="inheritance" index="ICcUN" />
@@ -105,6 +127,9 @@
       <concept id="1314219036499415225" name="jetbrains.mps.kotlin.structure.LocalPropertyDeclaration" flags="ng" index="TDTJT" />
       <concept id="1314219036498225646" name="jetbrains.mps.kotlin.structure.IStatementHolder" flags="ng" index="THmaI">
         <child id="1314219036498225649" name="statements" index="THmaL" />
+      </concept>
+      <concept id="6565639133216732537" name="jetbrains.mps.kotlin.structure.IProjectedTypeArguments" flags="ng" index="TPadS">
+        <child id="6565639133216732540" name="typeProjections" index="TPadX" />
       </concept>
       <concept id="6565639133219057675" name="jetbrains.mps.kotlin.structure.IArguments" flags="ng" index="TWioa">
         <child id="6565639133219057676" name="arguments" index="TWiod" />
@@ -127,11 +152,18 @@
       </concept>
       <concept id="2936055411798373599" name="jetbrains.mps.kotlin.structure.ClassType" flags="ng" index="1XD088" />
       <concept id="2936055411798373619" name="jetbrains.mps.kotlin.structure.FinalInheritanceModifier" flags="ng" index="1XD08$" />
-      <concept id="2936055411798373627" name="jetbrains.mps.kotlin.structure.StringLiteral" flags="ng" index="1XD08G" />
-      <concept id="2936055411798373456" name="jetbrains.mps.kotlin.structure.NavigationOperation" flags="ng" index="1XD0a7">
-        <child id="2936055411798374203" name="target" index="1XD07G" />
+      <concept id="2936055411798373627" name="jetbrains.mps.kotlin.structure.StringLiteral" flags="ng" index="1XD08G">
+        <child id="6389031306614148417" name="lines" index="Df6Hu" />
       </concept>
-      <concept id="2936055411798373481" name="jetbrains.mps.kotlin.structure.ClassDeclaration" flags="ng" index="1XD0aY" />
+      <concept id="2936055411798373456" name="jetbrains.mps.kotlin.structure.NavigationOperation" flags="ng" index="1XD0a7">
+        <child id="2936055411798374203" name="target" index="1XD07H" />
+      </concept>
+      <concept id="2936055411798373481" name="jetbrains.mps.kotlin.structure.ClassDeclaration" flags="ng" index="1XD0aY">
+        <child id="2324909103763444261" name="primaryConstructor" index="KDYUA" />
+      </concept>
+      <concept id="2936055411798373400" name="jetbrains.mps.kotlin.structure.PrimaryConstructor" flags="ng" index="1XD0bf">
+        <child id="2936055411798374111" name="parameters" index="1XD008" />
+      </concept>
       <concept id="2936055411798373381" name="jetbrains.mps.kotlin.structure.FunctionParameter" flags="ng" index="1XD0bi" />
       <concept id="2936055411798373428" name="jetbrains.mps.kotlin.structure.FunctionDeclaration" flags="ng" index="1XD0bz">
         <property id="4908873499999643325" name="isOverride" index="3qOnjd" />
@@ -146,18 +178,27 @@
       <concept id="2936055411798373698" name="jetbrains.mps.kotlin.structure.INullableType" flags="ng" index="1XD0el">
         <property id="6234117012688354198" name="isNullable" index="3V1zfM" />
       </concept>
+      <concept id="2936055411798373697" name="jetbrains.mps.kotlin.structure.ReceiverType" flags="ng" index="1XD0em">
+        <child id="2936055411798374592" name="type" index="1XD0Sn" />
+      </concept>
       <concept id="2936055411798373745" name="jetbrains.mps.kotlin.structure.VariableDeclaration" flags="ng" index="1XD0eA">
         <child id="2936055411798374679" name="type" index="1XD0Z0" />
       </concept>
       <concept id="2936055411798373753" name="jetbrains.mps.kotlin.structure.ValueArgument" flags="ng" index="1XD0eI">
         <child id="2936055411798374692" name="expression" index="1XD0ZN" />
       </concept>
+      <concept id="2936055411798373687" name="jetbrains.mps.kotlin.structure.ClassMemberTarget" flags="ng" index="1XD0fw" />
+      <concept id="2936055411798373690" name="jetbrains.mps.kotlin.structure.ClassParameter" flags="ng" index="1XD0fH" />
       <concept id="2936055411798373673" name="jetbrains.mps.kotlin.structure.KotlinFile" flags="ng" index="1XD0fY">
         <child id="2936055411798374537" name="declarations" index="1XD0Tu" />
       </concept>
       <concept id="2936055411798373328" name="jetbrains.mps.kotlin.structure.IntegerLiteral" flags="ng" index="1XD0k7">
         <property id="2936055411798374019" name="value" index="1XD01k" />
       </concept>
+      <concept id="2936055411798373324" name="jetbrains.mps.kotlin.structure.TypeProjection" flags="ng" index="1XD0kr">
+        <child id="2936055411798374015" name="type" index="1XD02C" />
+      </concept>
+      <concept id="2936055411798373270" name="jetbrains.mps.kotlin.structure.PrivateVisibility" flags="ng" index="1XD0l1" />
       <concept id="2936055411798373269" name="jetbrains.mps.kotlin.structure.PublicVisibility" flags="ng" index="1XD0l2" />
       <concept id="2936055411798373223" name="jetbrains.mps.kotlin.structure.PropertyDefaultAssignement" flags="ng" index="1XD0mK">
         <child id="2936055411798373866" name="expression" index="1XD0cX" />
@@ -200,7 +241,7 @@
         </node>
         <node concept="1XD0mK" id="3dMaGAcjU3Z" role="1XD05H">
           <node concept="1XD0a7" id="3dMaGAcjVNC" role="1XD0cX">
-            <node concept="1ygUyI" id="3dMaGAck0r7" role="1XD07G">
+            <node concept="1ygUyI" id="3dMaGAck0r7" role="1XD07H">
               <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
             </node>
             <node concept="UZU4S" id="3dMaGAcjUMR" role="21Pmik">
@@ -211,7 +252,7 @@
       </node>
       <node concept="1XD0d2" id="3dMaGAckleX" role="THmaL">
         <node concept="1XD0a7" id="3dMaGAck3Wc" role="1XD0Yo">
-          <node concept="1ygUyI" id="3dMaGAckj36" role="1XD07G">
+          <node concept="1ygUyI" id="3dMaGAckj36" role="1XD07H">
             <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
             <ref role="2DD9uJ" node="3dMaGAcjBa3" resolve="setValue" />
           </node>
@@ -234,7 +275,7 @@
       <node concept="1XD0d2" id="3dMaGAcjFvz" role="THmaL">
         <node concept="1XD08G" id="3dMaGAcjFv$" role="1XD0Y5" />
         <node concept="1XD0a7" id="3dMaGAcjFv_" role="1XD0Yo">
-          <node concept="1ygUyI" id="3dMaGAcjFvA" role="1XD07G">
+          <node concept="1ygUyI" id="3dMaGAcjFvA" role="1XD07H">
             <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
           </node>
           <node concept="UZU4S" id="3dMaGAcjFvB" role="21Pmik">
@@ -259,7 +300,7 @@
         </node>
         <node concept="1XD0mK" id="3dMaGAcjIxn" role="1XD05H">
           <node concept="1XD0a7" id="3dMaGAcjL$T" role="1XD0cX">
-            <node concept="2yQVVM" id="3dMaGAcjPTS" role="1XD07G">
+            <node concept="2yQVVM" id="3dMaGAcjPTS" role="1XD07H">
               <ref role="2yQV70" node="3dMaGAcjB8S" resolve="getValue" />
             </node>
             <node concept="UZU4S" id="3dMaGAcjJpa" role="21Pmik">
@@ -269,7 +310,7 @@
         </node>
       </node>
       <node concept="1XD0a7" id="3dMaGAcjRt4" role="THmaL">
-        <node concept="2yQVVM" id="3dMaGAcjSzi" role="1XD07G">
+        <node concept="2yQVVM" id="3dMaGAcjSzi" role="1XD07H">
           <ref role="2yQV70" node="3dMaGAcjBa3" resolve="setValue" />
           <node concept="1XD0eI" id="3dMaGAcjTAY" role="TWiod">
             <node concept="UZU4S" id="3dMaGAcjTAX" role="1XD0ZN">
@@ -282,7 +323,7 @@
         </node>
       </node>
       <node concept="1XD0a7" id="3dMaGAcknRu" role="THmaL">
-        <node concept="2yQVVM" id="3dMaGAckvvN" role="1XD07G">
+        <node concept="2yQVVM" id="3dMaGAckvvN" role="1XD07H">
           <ref role="2yQV70" node="3dMaGAcjBa3" resolve="setValue" />
           <node concept="1XD0eI" id="3dMaGAckw40" role="TWiod">
             <node concept="1XD08G" id="3dMaGAckw3Z" role="1XD0ZN" />
@@ -314,7 +355,7 @@
         </node>
         <node concept="1XD0mK" id="3dMaGAckBt8" role="1XD05H">
           <node concept="1XD0a7" id="3dMaGAckDbg" role="1XD0cX">
-            <node concept="2a$s4D" id="3dMaGAckL6O" role="1XD07G">
+            <node concept="2a$s4D" id="3dMaGAckL6O" role="1XD07H">
               <ref role="2a$nQg" node="3dMaGAckwlw" resolve="myValue" />
             </node>
             <node concept="UZU4S" id="3dMaGAckCbk" role="21Pmik">
@@ -328,7 +369,7 @@
           <ref role="UZU4V" node="3dMaGAckBqD" resolve="value" />
         </node>
         <node concept="1XD0a7" id="3dMaGAckNEC" role="1XD0Yo">
-          <node concept="2a$s4D" id="3dMaGAckRYS" role="1XD07G">
+          <node concept="2a$s4D" id="3dMaGAckRYS" role="1XD07H">
             <ref role="2a$nQg" node="3dMaGAckwlw" resolve="myValue" />
           </node>
           <node concept="UZU4S" id="3dMaGAckMHc" role="21Pmik">
@@ -344,7 +385,7 @@
         </node>
         <node concept="1XD0mK" id="3dMaGAcl5bj" role="1XD05H">
           <node concept="1XD0a7" id="3dMaGAcl6EV" role="1XD0cX">
-            <node concept="2a$s4D" id="3dMaGAclcqF" role="1XD07G">
+            <node concept="2a$s4D" id="3dMaGAclcqF" role="1XD07H">
               <ref role="2a$nQg" node="3dMaGAckUya" resolve="myFinalValue" />
             </node>
             <node concept="UZU4S" id="3dMaGAcl5E7" role="21Pmik">
@@ -358,7 +399,7 @@
           <ref role="UZU4V" node="3dMaGAcl5ay" resolve="finalValue" />
         </node>
         <node concept="1XD0a7" id="3dMaGAckW0A" role="1XD0Yo">
-          <node concept="2a$s4D" id="3dMaGAcl4E0" role="1XD07G">
+          <node concept="2a$s4D" id="3dMaGAcl4E0" role="1XD07H">
             <ref role="2a$nQg" node="3dMaGAckUya" resolve="myFinalValue" />
           </node>
           <node concept="UZU4S" id="3dMaGAckV3e" role="21Pmik">
@@ -518,7 +559,7 @@
           </node>
         </node>
         <node concept="1XD0a7" id="FkvPB700t9" role="THmaL">
-          <node concept="1NbEtQ" id="FkvPB705zO" role="1XD07G">
+          <node concept="1NbEtQ" id="FkvPB705zO" role="1XD07H">
             <ref role="AarEw" to="0:~Int.toDouble()" resolve="toDouble" />
           </node>
           <node concept="UZU4S" id="FkvPB6ZYll" role="21Pmik">
@@ -528,8 +569,72 @@
       </node>
     </node>
     <node concept="eKYAL" id="3dMaGAclfZE" role="1XD0Tu" />
+    <node concept="1XD0aY" id="6e74p5eOM97" role="1XD0Tu">
+      <property role="TrG5h" value="OverrideSpecificConstructor" />
+      <node concept="1XD08$" id="6e74p5eOM99" role="ICcUN" />
+      <node concept="1XD0l2" id="6e74p5eOM9a" role="2BPcuh" />
+      <node concept="2yjh30" id="6e74p5eONv4" role="AST3G">
+        <ref role="2yiGb3" node="6e74p5eOLIr" resolve="MultipleConstructroClass" />
+        <node concept="1XD0eI" id="6e74p5eONFc" role="TWiod">
+          <node concept="1XD08G" id="6e74p5eONFb" role="1XD0ZN" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0aY" id="6e74p5eONwB" role="1XD0Tu">
+      <property role="TrG5h" value="OverrideAnotherSpecificConstructor" />
+      <node concept="1XD08$" id="6e74p5eONwD" role="ICcUN" />
+      <node concept="1XD0l2" id="6e74p5eONwE" role="2BPcuh" />
+      <node concept="2yjh30" id="6e74p5eON_y" role="AST3G">
+        <ref role="2yiGb3" node="6e74p5eOLUE" resolve="MultipleConstructroClass" />
+        <node concept="1XD0eI" id="6e74p5eONAH" role="TWiod">
+          <node concept="1XD0k7" id="6e74p5eONAG" role="1XD0ZN">
+            <property role="1XD01k" value="2" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="eKYAL" id="6e74p5eOOlP" role="1XD0Tu" />
+    <node concept="gXE$l" id="6e74p5eOOp6" role="1XD0Tu">
+      <node concept="1PaTwC" id="6e74p5eOOp8" role="gXG0x">
+        <node concept="3oM_SD" id="6e74p5eOOrV" role="1PaTwD">
+          <property role="3oM_SC" value="MPS-35497" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0aY" id="6e74p5eONJE" role="1XD0Tu">
+      <property role="TrG5h" value="SomeExternalClass" />
+      <node concept="1XD08$" id="6e74p5eONJG" role="ICcUN" />
+      <node concept="1XD0l2" id="6e74p5eONJH" role="2BPcuh" />
+      <node concept="2yjh30" id="6e74p5eOOls" role="AST3G">
+        <ref role="2yiGb3" to="31cb:~ModuleFacetBase.&lt;init&gt;(java.lang.String,org.jetbrains.mps.openapi.module.SModule)" resolve="ModuleFacetBase" />
+        <node concept="1XD0eI" id="6e74p5f8G99" role="TWiod">
+          <node concept="1XD08G" id="6e74p5f8GaK" role="1XD0ZN">
+            <node concept="Df6$J" id="6e74p5f8GaO" role="Df6Hu">
+              <node concept="21VMdE" id="6e74p5f8GaN" role="Df7GE">
+                <property role="21VMdD" value="myFacetName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1XD0eI" id="6e74p5fdy8t" role="TWiod">
+          <node concept="UZU4S" id="6e74p5fdyjq" role="1XD0ZN">
+            <ref role="UZU4V" node="6e74p5f8Gb2" resolve="module" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0bf" id="6e74p5f8Gb0" role="KDYUA">
+        <node concept="1XD0l2" id="6e74p5f8Gb1" role="2BPcuh" />
+        <node concept="1XD0fH" id="6e74p5f8Gb2" role="1XD008">
+          <property role="TrG5h" value="module" />
+          <node concept="2EYIWN" id="6e74p5f8Gba" role="37iW8f">
+            <ref role="2EYIUZ" to="31cb:~SModuleBase" resolve="SModuleBase" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="eKYAL" id="6e74p5eOM7J" role="1XD0Tu" />
     <node concept="1XD0bz" id="3dMaGAclg0n" role="1XD0Tu">
-      <property role="TrG5h" value="tryOut" />
+      <property role="TrG5h" value="references" />
       <node concept="1XD08$" id="3dMaGAclg0p" role="ICcUN" />
       <node concept="1XD0l2" id="3dMaGAclg0q" role="2BPcuh" />
       <node concept="1XD0bi" id="3dMaGAclgRG" role="1XbAXm">
@@ -543,7 +648,7 @@
           <property role="1XD01k" value="3" />
         </node>
         <node concept="1XD0a7" id="3dMaGAcljO0" role="1XD0Yo">
-          <node concept="1ygUyI" id="3dMaGAclnOf" role="1XD07G">
+          <node concept="1ygUyI" id="3dMaGAclnOf" role="1XD07H">
             <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
             <ref role="2DD9uJ" node="3dMaGAcjBa3" resolve="setValue" />
           </node>
@@ -559,7 +664,7 @@
         </node>
         <node concept="1XD0mK" id="FkvPB6Z$0w" role="1XD05H">
           <node concept="1XD0a7" id="FkvPB6Z_Fe" role="1XD0cX">
-            <node concept="1ygUyI" id="FkvPB6ZHLg" role="1XD07G">
+            <node concept="1ygUyI" id="FkvPB6ZHLg" role="1XD07H">
               <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
             </node>
             <node concept="UZU4S" id="FkvPB6Z$fY" role="21Pmik">
@@ -570,7 +675,7 @@
       </node>
       <node concept="AQkLs" id="FkvPB705BL" role="THmaL" />
       <node concept="1XD0a7" id="FkvPB708hF" role="THmaL">
-        <node concept="1NbEtQ" id="FkvPB709s6" role="1XD07G">
+        <node concept="1NbEtQ" id="FkvPB709s6" role="1XD07H">
           <ref role="AarEw" node="FkvPB6ZXvz" resolve="overridenMethod" />
           <node concept="1XD0eI" id="FkvPB709Rf" role="TWiod">
             <node concept="1XD0k7" id="FkvPB709Re" role="1XD0ZN">
@@ -586,7 +691,7 @@
         </node>
       </node>
       <node concept="1XD0a7" id="FkvPB70cCT" role="THmaL">
-        <node concept="2yQVVM" id="FkvPB70q$j" role="1XD07G">
+        <node concept="2yQVVM" id="FkvPB70q$j" role="1XD07H">
           <ref role="2yQV70" node="FkvPB6ZX0a" resolve="overridenMethod" />
           <node concept="1XD0eI" id="FkvPB70rkh" role="TWiod">
             <node concept="1XD0k7" id="FkvPB70rkg" role="1XD0ZN">
@@ -602,6 +707,69 @@
         </node>
         <node concept="1U20sH" id="FkvPB70v$1" role="lGtFl">
           <property role="1U20sK" value="hidden by kotlin method" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="6e74p5eOLyT">
+    <property role="TrG5h" value="MultipleConstructorClass" />
+    <property role="1sVAO0" value="true" />
+    <node concept="3clFbW" id="6e74p5eOLIr" role="jymVt">
+      <node concept="37vLTG" id="6e74p5eOLIX" role="3clF46">
+        <property role="TrG5h" value="a" />
+        <node concept="3uibUv" id="6e74p5eOLO$" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6e74p5eOLIt" role="3clF45" />
+      <node concept="3Tm1VV" id="6e74p5eOLIu" role="1B3o_S" />
+      <node concept="3clFbS" id="6e74p5eOLIv" role="3clF47" />
+    </node>
+    <node concept="3clFbW" id="6e74p5eOLUE" role="jymVt">
+      <node concept="37vLTG" id="6e74p5eOLUF" role="3clF46">
+        <property role="TrG5h" value="b" />
+        <node concept="10Oyi0" id="6e74p5eOM0w" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="6e74p5eOLUH" role="3clF45" />
+      <node concept="3Tmbuc" id="6e74p5eONGm" role="1B3o_S" />
+      <node concept="3clFbS" id="6e74p5eOLUJ" role="3clF47" />
+    </node>
+    <node concept="3Tm1VV" id="6e74p5eOLyU" role="1B3o_S" />
+  </node>
+  <node concept="1XD0fY" id="6e74p5eOOsh">
+    <property role="TrG5h" value="jvmSpecific" />
+    <node concept="eKYAL" id="6e74p5eOO_O" role="1XD0Tu" />
+    <node concept="1XD0bz" id="6e74p5eOO_Z" role="1XD0Tu">
+      <property role="TrG5h" value="jvmSpecificUsage" />
+      <node concept="1XD0l1" id="6e74p5eOOA2" role="2BPcuh" />
+      <node concept="1XD08$" id="6e74p5eOOA3" role="ICcUN" />
+      <node concept="TDTJT" id="6e74p5eU0o$" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="6e74p5eU0o_" role="2Rs2$5">
+          <property role="TrG5h" value="intClass" />
+          <node concept="2EYIWN" id="6e74p5eU0re" role="1XD0Z0">
+            <ref role="2EYIUZ" to="wyt6:~Class" resolve="Class" />
+            <node concept="1XD0kr" id="6e74p5eU0rK" role="TPadX">
+              <node concept="1XD088" id="6e74p5eU0rI" role="1XD02C">
+                <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1XD0mK" id="6e74p5eU0pi" role="1XD05H">
+          <node concept="1XD0a7" id="6e74p5eOOM4" role="1XD0cX">
+            <node concept="UZU4S" id="6e74p5eOPE8" role="1XD07H">
+              <ref role="UZU4V" to="49cn:~kotlin/jvm#kotlin/reflect/KClass&lt;0&gt;.java&lt;1&gt;" resolve="java" />
+            </node>
+            <node concept="21SRaq" id="6e74p5eOOCz" role="21Pmik">
+              <node concept="1XD0fw" id="6e74p5eOOJX" role="1XD07G" />
+              <node concept="1XD0em" id="6e74p5eOOC0" role="21Pmik">
+                <node concept="1XD088" id="6e74p5eOOBY" role="1XD0Sn">
+                  <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
