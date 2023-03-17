@@ -61,7 +61,6 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
-      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
@@ -78,7 +77,9 @@
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
+      <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
@@ -455,19 +456,20 @@
                   </node>
                 </node>
                 <node concept="2tJIrI" id="2AGMd0x3c4k" role="jymVt" />
-                <node concept="Wx3nA" id="3a6esuJfYeF" role="jymVt">
+                <node concept="312cEg" id="73s7TtL2X87" role="jymVt">
                   <property role="TrG5h" value="receiverTypeFilterEnabled" />
-                  <node concept="3Tm6S6" id="3a6esuJfTuS" role="1B3o_S" />
-                  <node concept="10P_77" id="3a6esuJfY04" role="1tU5fm" />
-                  <node concept="3clFbT" id="3a6esuJg01p" role="33vP2m" />
-                  <node concept="z59LJ" id="3a6esuJg0lu" role="lGtFl">
-                    <node concept="TZ5HA" id="3a6esuJg0lv" role="TZ5H$">
-                      <node concept="1dT_AC" id="3a6esuJg0lw" role="1dT_Ay">
+                  <property role="3TUv4t" value="true" />
+                  <node concept="10P_77" id="73s7TtL2X8b" role="1tU5fm" />
+                  <node concept="3clFbT" id="73s7TtL2X8c" role="33vP2m" />
+                  <node concept="3Tm6S6" id="73s7TtL2X8a" role="1B3o_S" />
+                  <node concept="z59LJ" id="73s7TtL2X8i" role="lGtFl">
+                    <node concept="TZ5HA" id="73s7TtL2X8j" role="TZ5H$">
+                      <node concept="1dT_AC" id="73s7TtL2X8k" role="1dT_Ay">
                         <property role="1dT_AB" value="Allows to enable receiver type filtering by typesystem for receiver scopes" />
                       </node>
                     </node>
-                    <node concept="TZ5HA" id="3a6esuJg0$l" role="TZ5H$">
-                      <node concept="1dT_AC" id="3a6esuJg0$m" role="1dT_Ay">
+                    <node concept="TZ5HA" id="73s7TtL2X8l" role="TZ5H$">
+                      <node concept="1dT_AC" id="73s7TtL2X8m" role="1dT_Ay">
                         <property role="1dT_AB" value="This is time consuming, so it can be disabled." />
                       </node>
                     </node>
@@ -606,7 +608,7 @@
                       </node>
                       <node concept="3fqX7Q" id="3a6esuJiT3M" role="3clFbw">
                         <node concept="37vLTw" id="3a6esuJiT3O" role="3fr31v">
-                          <ref role="3cqZAo" node="3a6esuJfYeF" resolve="receiverTypeFilterEnabled" />
+                          <ref role="3cqZAo" node="73s7TtL2X87" resolve="receiverTypeFilterEnabled" />
                         </node>
                       </node>
                     </node>
