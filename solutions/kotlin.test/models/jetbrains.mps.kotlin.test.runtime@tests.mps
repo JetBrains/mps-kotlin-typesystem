@@ -714,56 +714,13 @@
   <node concept="1XD0fY" id="2CxlH6FzleA">
     <property role="TrG5h" value="messages" />
     <property role="3GE5qa" value="messages" />
-    <node concept="eKYAL" id="2CxlH6Fzlk5" role="1XD0Tu" />
-    <node concept="1XXB1C" id="2CxlH6FzlhF" role="1XD0Tu">
-      <property role="TrG5h" value="Message" />
-      <node concept="1XD0bv" id="2CxlH6FzlhJ" role="ICcUN" />
-      <node concept="1XD0l2" id="2CxlH6FzlhK" role="2BPcuh" />
-      <node concept="1XD0bz" id="2CxlH6FzlkA" role="KS$fE">
-        <property role="TrG5h" value="open" />
-        <node concept="1XD08_" id="2CxlH6FzlkC" role="ICcUN" />
-        <node concept="1XD0l2" id="2CxlH6FzlkD" role="2BPcuh" />
-        <node concept="1XD088" id="2CxlH6Fzlm2" role="21NdcZ">
-          <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
-        </node>
-      </node>
-    </node>
-    <node concept="eKYAL" id="2CxlH6Fzlmw" role="1XD0Tu" />
-    <node concept="1XD0aY" id="2CxlH6FzntV" role="1XD0Tu">
-      <property role="TrG5h" value="GenericMessage" />
-      <node concept="1XD08z" id="2CxlH6FzntY" role="ICcUN" />
-      <node concept="1XD0l2" id="2CxlH6FzntZ" role="2BPcuh" />
-      <node concept="1XD0bf" id="2CxlH6FznwH" role="KDYUA">
-        <node concept="1XD0l2" id="2CxlH6FznwI" role="2BPcuh" />
-        <node concept="1XD0fH" id="2CxlH6FznwJ" role="1XD008">
-          <property role="TrG5h" value="content" />
-          <property role="21VRqZ" value="true" />
-          <property role="21VRqX" value="true" />
-          <node concept="1XD088" id="2CxlH6FznzO" role="37iW8f">
-            <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
-          </node>
-        </node>
-      </node>
-      <node concept="KYwOn" id="2CxlH6FzonI" role="AST3G">
-        <ref role="KYwOm" node="2CxlH6FzlhF" resolve="Message" />
-      </node>
-      <node concept="1XD0bz" id="2CxlH6FzmkS" role="KS$fE">
-        <property role="3qOnjd" value="true" />
-        <property role="TrG5h" value="open" />
-        <node concept="1XD08$" id="2CxlH6FzmkU" role="ICcUN" />
-        <node concept="1XD0l2" id="2CxlH6FzmkW" role="2BPcuh" />
-        <node concept="UZU4S" id="2CxlH6FzpKp" role="THmaL">
-          <ref role="UZU4V" node="2CxlH6FznwJ" resolve="content" />
-        </node>
-      </node>
-    </node>
     <node concept="eKYAL" id="2CxlH6Fznsa" role="1XD0Tu" />
     <node concept="1XD0aY" id="2CxlH6Fzlng" role="1XD0Tu">
       <property role="TrG5h" value="HelloWorldMessage" />
       <node concept="1XD08$" id="2CxlH6Fzlni" role="ICcUN" />
       <node concept="1XD0l2" id="2CxlH6Fzlnj" role="2BPcuh" />
       <node concept="1XD08x" id="2CxlH6Fzqem" role="AST3G">
-        <ref role="KYurZ" node="2CxlH6FznwH" resolve="GenericMessage" />
+        <ref role="KYurZ" node="1ACpgrw7tP_" resolve="GenericMessage" />
         <node concept="1XD0eI" id="2CxlH6Fzqo9" role="TWiod">
           <node concept="1XD08G" id="2CxlH6Fzqo8" role="1XD0ZN">
             <node concept="Df6$J" id="2CxlH6FzqoD" role="Df6Hu">
@@ -780,7 +737,7 @@
       <node concept="1XD08$" id="2CxlH6FzmzA" role="ICcUN" />
       <node concept="1XD0l2" id="2CxlH6FzmzB" role="2BPcuh" />
       <node concept="1XD08x" id="2CxlH6Fzqxf" role="AST3G">
-        <ref role="KYurZ" node="2CxlH6FznwH" resolve="GenericMessage" />
+        <ref role="KYurZ" node="1ACpgrw7tP_" resolve="GenericMessage" />
         <node concept="1XD0eI" id="2CxlH6FzrYJ" role="TWiod">
           <node concept="1XD08G" id="2CxlH6FzrYG" role="1XD0ZN">
             <node concept="Df6$J" id="2CxlH6FzrYH" role="Df6Hu">
@@ -801,7 +758,7 @@
       <node concept="3Tm1VV" id="2CxlH6Fzs9f" role="1B3o_S" />
       <node concept="_YKpA" id="2CxlH6FzRew" role="1tU5fm">
         <node concept="2EXVeE" id="2CxlH6FzRey" role="_ZDj9">
-          <ref role="2EWHzA" node="2CxlH6FzlhF" resolve="Message" />
+          <ref role="2EWHzA" node="1ACpgrvwkv7" resolve="Message" />
         </node>
       </node>
       <node concept="2ShNRf" id="2CxlH6FzwA5" role="33vP2m">
@@ -833,7 +790,7 @@
       <node concept="37vLTG" id="2CxlH6Fzs2I" role="3clF46">
         <property role="TrG5h" value="message" />
         <node concept="2EXVeE" id="2CxlH6Fzs2H" role="1tU5fm">
-          <ref role="2EWHzA" node="2CxlH6FzlhF" resolve="Message" />
+          <ref role="2EWHzA" node="1ACpgrvwkv7" resolve="Message" />
         </node>
       </node>
     </node>
@@ -923,7 +880,7 @@
         <node concept="3cpWs6" id="2CxlH6FzVP5" role="3cqZAp">
           <node concept="10QFUN" id="7gSKPA1HwaL" role="3cqZAk">
             <node concept="2EXVeE" id="7gSKPA1HwyT" role="10QFUM">
-              <ref role="2EWHzA" node="2CxlH6FzlhF" resolve="Message" />
+              <ref role="2EWHzA" node="1ACpgrvwkv7" resolve="Message" />
             </node>
             <node concept="2OqwBi" id="2CxlH6FzKmu" role="10QFUP">
               <node concept="37vLTw" id="2CxlH6FzJpe" role="2Oq$k0">
@@ -944,7 +901,7 @@
                           <node concept="1eOMI4" id="7gSKPA1Hxbf" role="2Oq$k0">
                             <node concept="10QFUN" id="7gSKPA1HxzE" role="1eOMHV">
                               <node concept="2EXVeE" id="7gSKPA1HxL8" role="10QFUM">
-                                <ref role="2EWHzA" node="2CxlH6FzlhF" resolve="Message" />
+                                <ref role="2EWHzA" node="1ACpgrvwkv7" resolve="Message" />
                               </node>
                               <node concept="37vLTw" id="7gSKPA1Hxbg" role="10QFUP">
                                 <ref role="3cqZAo" node="7gSKPA1GKli" resolve="message" />
@@ -967,7 +924,7 @@
       </node>
       <node concept="3Tm1VV" id="2CxlH6FzIZ5" role="1B3o_S" />
       <node concept="2EXVeE" id="2CxlH6FzVzg" role="3clF45">
-        <ref role="2EWHzA" node="2CxlH6FzlhF" resolve="Message" />
+        <ref role="2EWHzA" node="1ACpgrvwkv7" resolve="Message" />
       </node>
       <node concept="37vLTG" id="2CxlH6FzPoo" role="3clF46">
         <property role="TrG5h" value="pattern" />
@@ -1019,7 +976,7 @@
           <node concept="3cpWsn" id="7gSKPA1y9Hs" role="3cpWs9">
             <property role="TrG5h" value="message" />
             <node concept="2EXVeE" id="7gSKPA1y9G5" role="1tU5fm">
-              <ref role="2EWHzA" node="2CxlH6FzlhF" resolve="Message" />
+              <ref role="2EWHzA" node="1ACpgrvwkv7" resolve="Message" />
             </node>
             <node concept="2ShNRf" id="7gSKPA1y9Ht" role="33vP2m">
               <node concept="3jrJrx" id="7gSKPA1y9Hu" role="2ShVmc">
@@ -1147,6 +1104,49 @@
   </node>
   <node concept="2XOHcx" id="1zgeQQWw4RG">
     <property role="2XOHcw" value="${kotlin_home}" />
+  </node>
+  <node concept="1XXB1C" id="1ACpgrvwkv7">
+    <property role="3GE5qa" value="messages" />
+    <property role="TrG5h" value="Message" />
+    <node concept="1XD0l2" id="1ACpgrvwkva" role="2BPcuh" />
+    <node concept="1XD0bv" id="1ACpgrvwkz_" role="ICcUN" />
+    <node concept="1XD0bz" id="2CxlH6FzlkA" role="KS$fE">
+      <property role="TrG5h" value="open" />
+      <node concept="1XD08_" id="2CxlH6FzlkC" role="ICcUN" />
+      <node concept="1XD0l2" id="2CxlH6FzlkD" role="2BPcuh" />
+      <node concept="1XD088" id="2CxlH6Fzlm2" role="21NdcZ">
+        <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
+      </node>
+    </node>
+  </node>
+  <node concept="1XD0aY" id="1ACpgrw7tL4">
+    <property role="3GE5qa" value="messages" />
+    <property role="TrG5h" value="GenericMessage" />
+    <node concept="1XD0l2" id="1ACpgrw7tL6" role="2BPcuh" />
+    <node concept="1XD0bf" id="1ACpgrw7tP_" role="KDYUA">
+      <node concept="1XD0l2" id="1ACpgrw7tPA" role="2BPcuh" />
+      <node concept="1XD0fH" id="1ACpgrw7tPB" role="1XD008">
+        <property role="TrG5h" value="content" />
+        <property role="21VRqZ" value="true" />
+        <property role="21VRqX" value="true" />
+        <node concept="1XD088" id="1ACpgrw7tPJ" role="37iW8f">
+          <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
+        </node>
+      </node>
+    </node>
+    <node concept="KYwOn" id="1ACpgrw7x1j" role="AST3G">
+      <ref role="KYwOm" node="1ACpgrvwkv7" resolve="Message" />
+    </node>
+    <node concept="1XD0bz" id="2CxlH6FzmkS" role="KS$fE">
+      <property role="3qOnjd" value="true" />
+      <property role="TrG5h" value="open" />
+      <node concept="1XD08$" id="2CxlH6FzmkU" role="ICcUN" />
+      <node concept="1XD0l2" id="2CxlH6FzmkW" role="2BPcuh" />
+      <node concept="UZU4S" id="2CxlH6FzpKp" role="THmaL">
+        <ref role="UZU4V" node="1ACpgrw7tPB" resolve="content" />
+      </node>
+    </node>
+    <node concept="1XD08z" id="1ACpgrw7x9a" role="ICcUN" />
   </node>
 </model>
 
