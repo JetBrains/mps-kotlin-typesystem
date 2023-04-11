@@ -6,7 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="2405a196-e75d-462c-938b-ae8e3fac20aa" name="jetbrains.mps.baseLanguage.kotlinRefs" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="10" />
+    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="11" />
     <use id="eb56ebf4-df56-438e-af06-fc1cd08b495a" name="jetbrains.mps.kotlin.smodel" version="0" />
     <use id="9e4ff22b-60f1-43ef-a50b-f9f0fcec22e0" name="jetbrains.mps.kotlin.javaRefs" version="0" />
   </languages>
@@ -230,7 +230,6 @@
       </concept>
       <concept id="2936055411798373620" name="jetbrains.mps.kotlin.structure.OpenInheritanceModifier" flags="ng" index="1XD08z" />
       <concept id="2936055411798373619" name="jetbrains.mps.kotlin.structure.FinalInheritanceModifier" flags="ng" index="1XD08$" />
-      <concept id="2936055411798373618" name="jetbrains.mps.kotlin.structure.AbstractInheritanceModifier" flags="ng" index="1XD08_" />
       <concept id="2936055411798373627" name="jetbrains.mps.kotlin.structure.StringLiteral" flags="ng" index="1XD08G">
         <child id="6389031306614148417" name="lines" index="Df6Hu" />
       </concept>
@@ -289,7 +288,6 @@
       </concept>
       <concept id="2936055411798373271" name="jetbrains.mps.kotlin.structure.InternalVisibility" flags="ng" index="1XD0l0" />
       <concept id="2936055411798373270" name="jetbrains.mps.kotlin.structure.PrivateVisibility" flags="ng" index="1XD0l1" />
-      <concept id="2936055411798373269" name="jetbrains.mps.kotlin.structure.PublicVisibility" flags="ng" index="1XD0l2" />
       <concept id="2936055411798373223" name="jetbrains.mps.kotlin.structure.PropertyDefaultAssignement" flags="ng" index="1XD0mK">
         <child id="2936055411798373866" name="expression" index="1XD0cX" />
       </concept>
@@ -703,8 +701,6 @@
     <node concept="eKYAL" id="2CxlH6Fznsa" role="1XD0Tu" />
     <node concept="1XD0aY" id="2CxlH6Fzlng" role="1XD0Tu">
       <property role="TrG5h" value="HelloWorldMessage" />
-      <node concept="1XD08$" id="2CxlH6Fzlni" role="ICcUN" />
-      <node concept="1XD0l2" id="2CxlH6Fzlnj" role="2BPcuh" />
       <node concept="1XD08x" id="2CxlH6Fzqem" role="AST3G">
         <ref role="KYurZ" node="1ACpgrw7tP_" resolve="GenericMessage" />
         <node concept="1XD0eI" id="2CxlH6Fzqo9" role="TWiod">
@@ -720,8 +716,6 @@
     </node>
     <node concept="1XD0aY" id="2CxlH6Fzmz$" role="1XD0Tu">
       <property role="TrG5h" value="GoodByeMessage" />
-      <node concept="1XD08$" id="2CxlH6FzmzA" role="ICcUN" />
-      <node concept="1XD0l2" id="2CxlH6FzmzB" role="2BPcuh" />
       <node concept="1XD08x" id="2CxlH6Fzqxf" role="AST3G">
         <ref role="KYurZ" node="1ACpgrw7tP_" resolve="GenericMessage" />
         <node concept="1XD0eI" id="2CxlH6FzrYJ" role="TWiod">
@@ -1089,9 +1083,7 @@
   <node concept="1XD0aY" id="1ACpgrw7tL4">
     <property role="3GE5qa" value="messages" />
     <property role="TrG5h" value="GenericMessage" />
-    <node concept="1XD0l2" id="1ACpgrw7tL6" role="2BPcuh" />
     <node concept="1XD0bf" id="1ACpgrw7tP_" role="KDYUA">
-      <node concept="1XD0l2" id="1ACpgrw7tPA" role="2BPcuh" />
       <node concept="1XD0fH" id="1ACpgrw7tPB" role="1XD008">
         <property role="TrG5h" value="content" />
         <property role="21VRqZ" value="true" />
@@ -1108,7 +1100,6 @@
       <property role="3qOnjd" value="true" />
       <property role="TrG5h" value="open" />
       <node concept="1XD08$" id="2CxlH6FzmkU" role="ICcUN" />
-      <node concept="1XD0l2" id="2CxlH6FzmkW" role="2BPcuh" />
       <node concept="UZU4S" id="2CxlH6FzpKp" role="THmaL">
         <ref role="UZU4V" node="1ACpgrw7tPB" resolve="content" />
       </node>
@@ -1118,12 +1109,9 @@
   <node concept="1XXB1C" id="1ACpgrvwkv7">
     <property role="3GE5qa" value="messages" />
     <property role="TrG5h" value="Message" />
-    <node concept="1XD0l2" id="1ACpgrvwkva" role="2BPcuh" />
     <node concept="1XD0bv" id="1ACpgrvwkz_" role="ICcUN" />
     <node concept="1XD0bz" id="2CxlH6FzlkA" role="KS$fE">
       <property role="TrG5h" value="open" />
-      <node concept="1XD08_" id="2CxlH6FzlkC" role="ICcUN" />
-      <node concept="1XD0l2" id="2CxlH6FzlkD" role="2BPcuh" />
       <node concept="1XD088" id="2CxlH6Fzlm2" role="21NdcZ">
         <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
       </node>
