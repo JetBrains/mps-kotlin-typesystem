@@ -119,9 +119,6 @@
       <concept id="6389031306614148912" name="jetbrains.mps.kotlin.structure.StringLiteralLine" flags="ng" index="Df6$J">
         <child id="6389031306614152501" name="parts" index="Df7GE" />
       </concept>
-      <concept id="6013275720582937818" name="jetbrains.mps.kotlin.structure.IInheritable" flags="ng" index="ICcUM">
-        <child id="6013275720582937819" name="inheritance" index="ICcUN" />
-      </concept>
       <concept id="2324909103759097704" name="jetbrains.mps.kotlin.structure.IWithClassBody" flags="ng" index="KS$fF">
         <child id="2324909103759097705" name="members" index="KS$fE" />
       </concept>
@@ -158,7 +155,6 @@
         <child id="2936055411806083457" name="parameters" index="1XbAXm" />
       </concept>
       <concept id="2936055411798373599" name="jetbrains.mps.kotlin.structure.ClassType" flags="ng" index="1XD088" />
-      <concept id="2936055411798373619" name="jetbrains.mps.kotlin.structure.FinalInheritanceModifier" flags="ng" index="1XD08$" />
       <concept id="2936055411798373627" name="jetbrains.mps.kotlin.structure.StringLiteral" flags="ng" index="1XD08G">
         <child id="6389031306614148417" name="lines" index="Df6Hu" />
       </concept>
@@ -209,7 +205,6 @@
         <child id="2936055411798374015" name="type" index="1XD02C" />
       </concept>
       <concept id="2936055411798373270" name="jetbrains.mps.kotlin.structure.PrivateVisibility" flags="ng" index="1XD0l1" />
-      <concept id="2936055411798373269" name="jetbrains.mps.kotlin.structure.PublicVisibility" flags="ng" index="1XD0l2" />
       <concept id="2936055411798373223" name="jetbrains.mps.kotlin.structure.PropertyDefaultAssignement" flags="ng" index="1XD0mK">
         <child id="2936055411798373866" name="expression" index="1XD0cX" />
       </concept>
@@ -665,8 +660,6 @@
     <node concept="eKYAL" id="3dMaGAclfZE" role="1XD0Tu" />
     <node concept="1XD0aY" id="6e74p5eOM97" role="1XD0Tu">
       <property role="TrG5h" value="OverrideSpecificConstructor" />
-      <node concept="1XD08$" id="6e74p5eOM99" role="ICcUN" />
-      <node concept="1XD0l2" id="6e74p5eOM9a" role="2BPcuh" />
       <node concept="2yjh30" id="6e74p5eONv4" role="AST3G">
         <ref role="2yiGb3" node="6e74p5eOLIr" resolve="MultipleConstructroClass" />
         <node concept="1XD0eI" id="6e74p5eONFc" role="TWiod">
@@ -676,8 +669,6 @@
     </node>
     <node concept="1XD0aY" id="6e74p5eONwB" role="1XD0Tu">
       <property role="TrG5h" value="OverrideAnotherSpecificConstructor" />
-      <node concept="1XD08$" id="6e74p5eONwD" role="ICcUN" />
-      <node concept="1XD0l2" id="6e74p5eONwE" role="2BPcuh" />
       <node concept="2yjh30" id="6e74p5eON_y" role="AST3G">
         <ref role="2yiGb3" node="6e74p5eOLUE" resolve="MultipleConstructroClass" />
         <node concept="1XD0eI" id="6e74p5eONAH" role="TWiod">
@@ -697,8 +688,6 @@
     </node>
     <node concept="1XD0aY" id="6e74p5eONJE" role="1XD0Tu">
       <property role="TrG5h" value="SomeExternalClass" />
-      <node concept="1XD08$" id="6e74p5eONJG" role="ICcUN" />
-      <node concept="1XD0l2" id="6e74p5eONJH" role="2BPcuh" />
       <node concept="2yjh30" id="6e74p5eOOls" role="AST3G">
         <ref role="2yiGb3" to="31cb:~ModuleFacetBase.&lt;init&gt;(java.lang.String,org.jetbrains.mps.openapi.module.SModule)" resolve="ModuleFacetBase" />
         <node concept="1XD0eI" id="6e74p5f8G99" role="TWiod">
@@ -717,7 +706,6 @@
         </node>
       </node>
       <node concept="1XD0bf" id="6e74p5f8Gb0" role="KDYUA">
-        <node concept="1XD0l2" id="6e74p5f8Gb1" role="2BPcuh" />
         <node concept="1XD0fH" id="6e74p5f8Gb2" role="1XD008">
           <property role="TrG5h" value="module" />
           <node concept="2EYIWN" id="6e74p5f8Gba" role="37iW8f">
@@ -1071,7 +1059,6 @@
     <node concept="1XD0bz" id="6e74p5eOO_Z" role="1XD0Tu">
       <property role="TrG5h" value="jvmSpecificUsage" />
       <node concept="1XD0l1" id="6e74p5eOOA2" role="2BPcuh" />
-      <node concept="1XD08$" id="6e74p5eOOA3" role="ICcUN" />
       <node concept="TDTJT" id="6e74p5eU0o$" role="THmaL">
         <property role="1Xb$ne" value="true" />
         <node concept="2Rs4SG" id="6e74p5eU0o_" role="2Rs2$5">

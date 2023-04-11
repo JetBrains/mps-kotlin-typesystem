@@ -4,7 +4,7 @@
   <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
-    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="10" />
+    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="11" />
     <use id="9e4ff22b-60f1-43ef-a50b-f9f0fcec22e0" name="jetbrains.mps.kotlin.javaRefs" version="0" />
     <use id="eb56ebf4-df56-438e-af06-fc1cd08b495a" name="jetbrains.mps.kotlin.smodel" version="0" />
   </languages>
@@ -50,14 +50,8 @@
         <child id="6565639133216732540" name="typeArguments" index="TPadX" />
       </concept>
       <concept id="1991556721070973461" name="jetbrains.mps.kotlin.structure.EmptyStatement" flags="ng" index="AQkLs" />
-      <concept id="7138249191285121087" name="jetbrains.mps.kotlin.structure.IVisible" flags="ng" index="2BPcvI">
-        <child id="7138249191285121088" name="visibility" index="2BPcuh" />
-      </concept>
       <concept id="6389031306614148912" name="jetbrains.mps.kotlin.structure.StringLiteralLine" flags="ng" index="Df6$J">
         <child id="6389031306614152501" name="parts" index="Df7GE" />
-      </concept>
-      <concept id="6013275720582937818" name="jetbrains.mps.kotlin.structure.IInheritable" flags="ng" index="ICcUM">
-        <child id="6013275720582937819" name="inheritance" index="ICcUN" />
       </concept>
       <concept id="1314219036498225646" name="jetbrains.mps.kotlin.structure.IStatementHolder" flags="ng" index="THmaI">
         <child id="1314219036498225649" name="statements" index="THmaL" />
@@ -95,7 +89,6 @@
       <concept id="2936055411798373622" name="jetbrains.mps.kotlin.structure.ConstructorSuperSpecifier" flags="ng" index="1XD08x">
         <reference id="2324909103760693884" name="target" index="KYurZ" />
       </concept>
-      <concept id="2936055411798373619" name="jetbrains.mps.kotlin.structure.FinalInheritanceModifier" flags="ng" index="1XD08$" />
       <concept id="2936055411798373627" name="jetbrains.mps.kotlin.structure.StringLiteral" flags="ng" index="1XD08G">
         <child id="6389031306614148417" name="lines" index="Df6Hu" />
       </concept>
@@ -143,7 +136,6 @@
       <concept id="2936055411798373324" name="jetbrains.mps.kotlin.structure.TypeProjection" flags="ng" index="1XD0kr">
         <child id="2936055411798374015" name="type" index="1XD02C" />
       </concept>
-      <concept id="2936055411798373269" name="jetbrains.mps.kotlin.structure.PublicVisibility" flags="ng" index="1XD0l2" />
       <concept id="2936055411798373245" name="jetbrains.mps.kotlin.structure.FunctionType" flags="ng" index="1XD0mE">
         <child id="2936055411798373905" name="returnType" index="1XD036" />
         <child id="2936055411798373902" name="parameters" index="1XD03p" />
@@ -221,8 +213,6 @@
         <property role="TrG5h" value="AAA" />
         <ref role="$cB6q" node="4W64WfRLLaj" resolve="VisibilityLevel" />
       </node>
-      <node concept="1XD0l2" id="6IoRyVfwm3Q" role="2BPcuh" />
-      <node concept="1XD08$" id="6IoRyVfwmnI" role="ICcUN" />
       <node concept="1XD08x" id="16Tg2dF08s" role="AST3G">
         <ref role="KYurZ" to="0:~Enum.new(String,Int)" resolve="Enum" />
         <node concept="1XD088" id="16Tg2dF08u" role="TPadX">
@@ -250,10 +240,7 @@
             <ref role="1SePDO" to="0:~kotlin/Boolean" resolve="Boolean" />
           </node>
         </node>
-        <node concept="1XD0l2" id="6IoRyVfwoR$" role="2BPcuh" />
       </node>
-      <node concept="1XD0l2" id="6IoRyVfwmFA" role="2BPcuh" />
-      <node concept="1XD08$" id="6IoRyVfwmZu" role="ICcUN" />
     </node>
     <node concept="1XD0aY" id="4W64WfRQcBT" role="1XD0Tu">
       <property role="TrG5h" value="ParametersPanel" />
@@ -267,15 +254,10 @@
             <ref role="1SePDO" node="4W64WfRCZ61" resolve="Method" />
           </node>
         </node>
-        <node concept="1XD0l2" id="6IoRyVfwpbs" role="2BPcuh" />
       </node>
-      <node concept="1XD0l2" id="6IoRyVfwnjm" role="2BPcuh" />
-      <node concept="1XD08$" id="6IoRyVfwozw" role="ICcUN" />
     </node>
     <node concept="1XD0bz" id="16Tg2dHa82" role="1XD0Tu">
       <property role="TrG5h" value="toParameters" />
-      <node concept="1XD08$" id="16Tg2dHa84" role="ICcUN" />
-      <node concept="1XD0l2" id="16Tg2dHa85" role="2BPcuh" />
       <node concept="1XD0bi" id="16Tg2dHI4J" role="1XbAXm">
         <property role="TrG5h" value="method" />
         <node concept="1XD088" id="16Tg2dHMin" role="37iW8f">
@@ -462,8 +444,6 @@
           <ref role="1SePDO" node="4W64WfRCZ61" resolve="Method" />
         </node>
       </node>
-      <node concept="1XD0l2" id="6IoRyVfwpvw" role="2BPcuh" />
-      <node concept="1XD08$" id="6IoRyVfwqtp" role="ICcUN" />
     </node>
     <node concept="eKYAL" id="16Tg2dIDWp" role="1XD0Tu" />
     <node concept="1XD0bz" id="16Tg2dJWdA" role="1XD0Tu">
@@ -551,8 +531,6 @@
           </node>
         </node>
       </node>
-      <node concept="1XD08$" id="16Tg2dJWdC" role="ICcUN" />
-      <node concept="1XD0l2" id="16Tg2dJWdD" role="2BPcuh" />
       <node concept="1NbEFs" id="16Tg2dL37V" role="THmaL">
         <ref role="AarEw" to="0:~Array.new(Int,Function1&lt;Int,0&gt;)" resolve="Array" />
         <node concept="1XD088" id="16Tg2dL37W" role="TPadX">
@@ -665,8 +643,6 @@
     <node concept="eKYAL" id="35Vaqj6iydY" role="1XD0Tu" />
     <node concept="1XD0bz" id="35Vaqj6iBcm" role="1XD0Tu">
       <property role="TrG5h" value="function" />
-      <node concept="1XD08$" id="35Vaqj6iBcn" role="ICcUN" />
-      <node concept="1XD0l2" id="35Vaqj6iBco" role="2BPcuh" />
       <node concept="1XD088" id="35Vaqj6iBcp" role="39xbXa">
         <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
         <node concept="1XD0kr" id="35Vaqj6iBcq" role="TPadY">
@@ -678,8 +654,6 @@
     </node>
     <node concept="1XD0bz" id="35Vaqj6iz5U" role="1XD0Tu">
       <property role="TrG5h" value="function" />
-      <node concept="1XD08$" id="35Vaqj6iz5W" role="ICcUN" />
-      <node concept="1XD0l2" id="35Vaqj6iz5X" role="2BPcuh" />
       <node concept="1XD088" id="35Vaqj6i_rj" role="39xbXa">
         <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
         <node concept="1XD0kr" id="35Vaqj6iAid" role="TPadY">
@@ -692,8 +666,6 @@
     <node concept="eKYAL" id="35Vaqj6iDWx" role="1XD0Tu" />
     <node concept="1XD0bz" id="35Vaqj6iFID" role="1XD0Tu">
       <property role="TrG5h" value="callIt" />
-      <node concept="1XD08$" id="35Vaqj6iFIF" role="ICcUN" />
-      <node concept="1XD0l2" id="35Vaqj6iFIG" role="2BPcuh" />
       <node concept="1XD0bi" id="35Vaqj6iGYc" role="1XbAXm">
         <property role="TrG5h" value="list" />
         <node concept="1XD088" id="35Vaqj6iHSj" role="37iW8f">
