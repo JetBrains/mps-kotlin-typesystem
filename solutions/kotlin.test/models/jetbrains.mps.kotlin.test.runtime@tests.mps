@@ -243,6 +243,9 @@
       <concept id="2936055411798373456" name="jetbrains.mps.kotlin.structure.NavigationOperation" flags="ng" index="1XD0a7">
         <child id="2936055411798374203" name="target" index="1XD07G" />
       </concept>
+      <concept id="2936055411798373450" name="jetbrains.mps.kotlin.structure.CollectionLiteral" flags="ng" index="1XD0at">
+        <child id="2936055411798374194" name="expressions" index="1XD07_" />
+      </concept>
       <concept id="2936055411798373481" name="jetbrains.mps.kotlin.structure.ClassDeclaration" flags="ng" index="1XD0aY">
         <child id="2324909103763444261" name="primaryConstructor" index="KDYUA" />
       </concept>
@@ -556,9 +559,6 @@
                   <node concept="1XD0a7" id="2CxlH6F$26E" role="21Pmik">
                     <node concept="2yQVVM" id="2CxlH6FDpHg" role="1XD07G">
                       <ref role="2yQV70" to="hez:46gC9M6gB68" resolve="getThisType" />
-                      <node concept="1XD0eI" id="2CxlH6FDqLE" role="TWiod">
-                        <node concept="1XD0ko" id="2CxlH6FDqLD" role="1XD0ZN" />
-                      </node>
                     </node>
                     <node concept="UZU4S" id="2CxlH6F$1IT" role="21Pmik">
                       <ref role="UZU4V" node="2CxlH6FzWi6" resolve="klass" />
@@ -712,6 +712,31 @@
             </node>
           </node>
         </node>
+        <node concept="1XD0eI" id="5pwU7dGPit5" role="TWiod">
+          <node concept="1XD0at" id="5pwU7dGPv3k" role="1XD0ZN">
+            <node concept="1XD08G" id="5pwU7dGPzYo" role="1XD07_">
+              <node concept="Df6$J" id="5pwU7dGPzYs" role="Df6Hu">
+                <node concept="21VMdE" id="5pwU7dGPzYr" role="Df7GE">
+                  <property role="21VMdD" value="A" />
+                </node>
+              </node>
+            </node>
+            <node concept="1XD08G" id="5pwU7dGPCTE" role="1XD07_">
+              <node concept="Df6$J" id="5pwU7dGPCTP" role="Df6Hu">
+                <node concept="21VMdE" id="5pwU7dGPCTO" role="Df7GE">
+                  <property role="21VMdD" value="B" />
+                </node>
+              </node>
+            </node>
+            <node concept="1XD08G" id="5pwU7dGPMKU" role="1XD07_">
+              <node concept="Df6$J" id="5pwU7dGPMLb" role="Df6Hu">
+                <node concept="21VMdE" id="5pwU7dGPMLa" role="Df7GE">
+                  <property role="21VMdD" value="C" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1XD0aY" id="2CxlH6Fzmz$" role="1XD0Tu">
@@ -726,6 +751,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="1XD0eI" id="5pwU7dGPMLg" role="TWiod">
+          <node concept="1XD0at" id="5pwU7dGQ1yG" role="1XD0ZN" />
         </node>
       </node>
     </node>
@@ -1090,6 +1118,19 @@
         <property role="21VRqX" value="true" />
         <node concept="1XD088" id="1ACpgrw7tPJ" role="37iW8f">
           <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
+        </node>
+      </node>
+      <node concept="1XD0fH" id="5pwU7dGPcj7" role="1XD008">
+        <property role="TrG5h" value="tags" />
+        <property role="21VRqZ" value="true" />
+        <property role="21VRqX" value="true" />
+        <node concept="1XD088" id="5pwU7dGPe$t" role="37iW8f">
+          <ref role="1SePDO" to="0:~kotlin/Array" resolve="Array" />
+          <node concept="1XD0kr" id="5pwU7dGPhuL" role="TPadY">
+            <node concept="1XD088" id="5pwU7dGPhuJ" role="1XD02C">
+              <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
