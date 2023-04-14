@@ -526,9 +526,6 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
-        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
-      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
       </concept>
@@ -51837,19 +51834,12 @@
           <node concept="3cpWsn" id="1U$mAVHR2fF" role="3cpWs9">
             <property role="TrG5h" value="abstractFunction" />
             <node concept="10P_77" id="1U$mAVHR2fA" role="1tU5fm" />
-            <node concept="2OqwBi" id="1U$mAVHR7OU" role="33vP2m">
-              <node concept="2OqwBi" id="1U$mAVHR3W7" role="2Oq$k0">
-                <node concept="3A2sRY" id="1U$mAVHR3v4" role="2Oq$k0">
-                  <ref role="3A2yKK" node="2nEPytiBF74" resolve="func" />
-                </node>
-                <node concept="2qgKlT" id="6jE_6dutDQq" role="2OqNvi">
-                  <ref role="37wK5l" to="hez:6jE_6duswG9" resolve="getInheritance" />
-                </node>
+            <node concept="2OqwBi" id="1U$mAVHR3W7" role="33vP2m">
+              <node concept="3A2sRY" id="1U$mAVHR3v4" role="2Oq$k0">
+                <ref role="3A2yKK" node="2nEPytiBF74" resolve="func" />
               </node>
-              <node concept="3O6GUB" id="6jE_6dutEc4" role="2OqNvi">
-                <node concept="chp4Y" id="6jE_6dutEqV" role="3QVz_e">
-                  <ref role="cht4Q" to="hcm8:2yYXHtl6JjM" resolve="AbstractInheritanceModifier" />
-                </node>
+              <node concept="2qgKlT" id="6xwxUiQg7iT" role="2OqNvi">
+                <ref role="37wK5l" to="hez:4KPNZIZDjbY" resolve="isAbstract" />
               </node>
             </node>
           </node>
