@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/kotlin.javaRefsExt/jetbrains.mps.kotlin.javaRefsExt.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/kotlin.smodelExt/jetbrains.mps.kotlin.smodelExt.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/kotlinExt/jetbrains.mps.kotlinExt.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/jetbrains.mps.coderules.typeflow/jetbrains.mps.coderules.typeflow.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/kotlin.baseLanguage.sandbox/jetbrains.mps.kotlin.baseLanguage.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/kotlin.plugin.build/jetbrains.mps.kotlin.plugin.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/kotlin.sandbox/jetbrains.mps.kotlin.sandbox.msd" folder="" />
