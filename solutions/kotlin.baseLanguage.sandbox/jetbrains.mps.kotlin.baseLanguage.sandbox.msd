@@ -42,6 +42,7 @@
     <module reference="f3acaa14-73fc-4d4e-94e9-734089d7618b(jetbrains.mps.kotlin.baseLanguage.sandbox)" version="0" />
     <module reference="b50d89c0-0fb9-4105-b652-222148c26a9b(jetbrains.mps.kotlin.stdlib)" version="0" />
     <module reference="b50d89c0-0fb9-1234-b652-222148c26a9b(jetbrains.mps.kotlin.stdlib.jvm)" version="0" />
+    <module reference="d2c5f31a-2aac-440d-a15c-2d8cba42bf3d(jetbrains.mps.kotlin.stdlib.jvm)" version="0" />
   </dependencyVersions>
 </solution>
 

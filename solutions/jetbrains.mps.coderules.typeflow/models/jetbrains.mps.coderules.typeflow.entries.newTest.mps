@@ -80,7 +80,7 @@
       <node concept="3uibUv" id="5zUhwJfNQNP" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~List" resolve="List" />
         <node concept="3uibUv" id="5zUhwJfO0QQ" role="11_B2D">
-          <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowEntry" />
+          <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowNode" />
         </node>
       </node>
       <node concept="3Tm6S6" id="5zUhwJfNQQ9" role="1B3o_S" />
@@ -159,7 +159,7 @@
       <node concept="3uibUv" id="5zUhwJfO18e" role="3clF45">
         <ref role="3uigEE" to="33ny:~List" resolve="List" />
         <node concept="3uibUv" id="5zUhwJfO18f" role="11_B2D">
-          <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowEntry" />
+          <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowNode" />
         </node>
       </node>
     </node>
@@ -169,21 +169,21 @@
     <node concept="312cEg" id="5zUhwJfNRqO" role="jymVt">
       <property role="TrG5h" value="previous" />
       <node concept="3uibUv" id="5zUhwJfNRq_" role="1tU5fm">
-        <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowEntry" />
+        <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowNode" />
       </node>
       <node concept="3Tm1VV" id="5zUhwJfNRuP" role="1B3o_S" />
     </node>
     <node concept="312cEg" id="5zUhwJfNRrz" role="jymVt">
       <property role="TrG5h" value="afterTrue" />
       <node concept="3uibUv" id="5zUhwJfNRri" role="1tU5fm">
-        <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowEntry" />
+        <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowNode" />
       </node>
       <node concept="3Tm1VV" id="5zUhwJfNRv2" role="1B3o_S" />
     </node>
     <node concept="312cEg" id="5zUhwJfNRs5" role="jymVt">
       <property role="TrG5h" value="afterFalse" />
       <node concept="3uibUv" id="5zUhwJfNRs6" role="1tU5fm">
-        <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowEntry" />
+        <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowNode" />
       </node>
       <node concept="3Tm1VV" id="5zUhwJfNRvf" role="1B3o_S" />
     </node>

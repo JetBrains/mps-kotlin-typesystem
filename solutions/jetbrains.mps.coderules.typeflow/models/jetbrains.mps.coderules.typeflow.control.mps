@@ -96,7 +96,7 @@
     <node concept="16euLQ" id="7FvwziZwHFO" role="16eVyc">
       <property role="TrG5h" value="T" />
       <node concept="3uibUv" id="7FvwziZwHGd" role="3ztrMU">
-        <ref role="3uigEE" node="7FvwziZwHEX" resolve="ControlFlowPoint" />
+        <ref role="3uigEE" node="7FvwziZwHEX" resolve="ControlPoint" />
         <node concept="16syzq" id="7FvwziZwHGy" role="11_B2D">
           <ref role="16sUi3" node="7FvwziZwHFO" resolve="T" />
         </node>
