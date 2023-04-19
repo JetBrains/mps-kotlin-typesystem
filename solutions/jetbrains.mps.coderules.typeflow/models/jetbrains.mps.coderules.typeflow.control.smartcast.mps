@@ -11,7 +11,6 @@
     <import index="qvge" ref="r:006c44c6-2ca7-41fd-afb1-a152c57718d7(jetbrains.mps.coderules.typeflow.control)" />
     <import index="6exd" ref="r:0f9b1fb3-00f9-4480-b235-1a906a087ab2(jetbrains.mps.logic.dataform)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -20,12 +19,6 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
-      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
-        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
-      </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
-        <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -38,7 +31,6 @@
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
@@ -60,7 +52,6 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -68,9 +59,6 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
-      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
-        <child id="1068581517676" name="expression" index="3cqZAk" />
-      </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -81,7 +69,6 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -89,9 +76,6 @@
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
-        <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
@@ -104,14 +88,6 @@
   </registry>
   <node concept="312cEu" id="7FvwziZwHQE">
     <property role="TrG5h" value="SmartCastTransfer" />
-    <node concept="312cEg" id="7FvwziZwI9k" role="jymVt">
-      <property role="TrG5h" value="previous" />
-      <node concept="3Tm6S6" id="7FvwziZwI8H" role="1B3o_S" />
-      <node concept="3uibUv" id="7FvwziZwI92" role="1tU5fm">
-        <ref role="3uigEE" node="7FvwziZwHQE" resolve="SmartCastTransfer" />
-      </node>
-      <node concept="10Nm6u" id="5zUhwJfJO9C" role="33vP2m" />
-    </node>
     <node concept="312cEg" id="7FvwziZwIOv" role="jymVt">
       <property role="TrG5h" value="variableDeclaration" />
       <node concept="3Tm6S6" id="7FvwziZwIIh" role="1B3o_S" />
@@ -124,15 +100,8 @@
         <ref role="3uigEE" node="5zUhwJfJUZl" resolve="TransferOperation" />
       </node>
     </node>
-    <node concept="2tJIrI" id="7FvwziZwTl$" role="jymVt" />
     <node concept="2tJIrI" id="7FvwziZwUwI" role="jymVt" />
     <node concept="3Tm1VV" id="7FvwziZwHQF" role="1B3o_S" />
-    <node concept="3uibUv" id="7FvwziZwHSe" role="EKbjA">
-      <ref role="3uigEE" to="qvge:7FvwziZwHEX" resolve="ControlPoint" />
-      <node concept="3uibUv" id="7FvwziZwHSP" role="11_B2D">
-        <ref role="3uigEE" node="7FvwziZwHQE" resolve="SmartCastTransfer" />
-      </node>
-    </node>
     <node concept="3clFbW" id="7FvwziZwUyX" role="jymVt">
       <node concept="3cqZAl" id="7FvwziZwUyY" role="3clF45" />
       <node concept="3Tm1VV" id="7FvwziZwUyZ" role="1B3o_S" />
@@ -173,42 +142,6 @@
         <node concept="3uibUv" id="5zUhwJfJVeQ" role="1tU5fm">
           <ref role="3uigEE" node="5zUhwJfJUZl" resolve="TransferOperation" />
         </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="7FvwziZwW9Y" role="jymVt" />
-    <node concept="3clFb_" id="7FvwziZwIbP" role="jymVt">
-      <property role="TrG5h" value="previous" />
-      <node concept="3Tm1VV" id="7FvwziZwIbR" role="1B3o_S" />
-      <node concept="3uibUv" id="7FvwziZwIbT" role="3clF45">
-        <ref role="3uigEE" node="7FvwziZwHQE" resolve="SmartCastTransfer" />
-      </node>
-      <node concept="3clFbS" id="7FvwziZwIbU" role="3clF47">
-        <node concept="3cpWs6" id="7FvwziZwIwz" role="3cqZAp">
-          <node concept="37vLTw" id="7FvwziZwIzz" role="3cqZAk">
-            <ref role="3cqZAo" node="7FvwziZwI9k" resolve="previous" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="7FvwziZwIbV" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="7FvwziZwMe4" role="jymVt" />
-    <node concept="3clFb_" id="7FvwziZwVBF" role="jymVt">
-      <property role="TrG5h" value="kind" />
-      <node concept="3Tm1VV" id="7FvwziZwVBH" role="1B3o_S" />
-      <node concept="3uibUv" id="7FvwziZwVBI" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-      </node>
-      <node concept="3clFbS" id="7FvwziZwVBJ" role="3clF47">
-        <node concept="3clFbF" id="7FvwziZwVT_" role="3cqZAp">
-          <node concept="3VsKOn" id="7FvwziZwW3Y" role="3clFbG">
-            <ref role="3VsUkX" node="7FvwziZwHQE" resolve="SmartCastTransfer" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="7FvwziZwVBK" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
