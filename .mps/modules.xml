@@ -10,7 +10,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/kotlin.plugin.build/jetbrains.mps.kotlin.plugin.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/kotlin.sandbox/jetbrains.mps.kotlin.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/kotlin.test/jetbrains.mps.kotlin.test.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/migration/migration.msd" folder="" />
     </projectModules>
   </component>
   <component name="ProjectModuleManager">
