@@ -86,16 +86,12 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -886,10 +882,6 @@
           <property role="TrG5h" value="node" />
           <node concept="3Tqbb2" id="5zUhwJfRD9i" role="1tU5fm" />
         </node>
-        <node concept="37vLTG" id="4LZNkD_UkvK" role="3clF46">
-          <property role="TrG5h" value="unchecked" />
-          <node concept="10P_77" id="4LZNkD_UkvL" role="1tU5fm" />
-        </node>
         <node concept="3clFbS" id="5zUhwJfRBQC" role="3clF47">
           <node concept="3SKdUt" id="4LZNkD_V6oo" role="3cqZAp">
             <node concept="1PaTwC" id="4LZNkD_V6op" role="1aUNEU">
@@ -998,14 +990,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbJ" id="4LZNkD_VHZJ" role="3cqZAp">
-            <node concept="3clFbS" id="4LZNkD_VHZL" role="3clFbx">
-              <node concept="3clFbH" id="4LZNkD_VHZK" role="3cqZAp" />
-            </node>
-            <node concept="37vLTw" id="4LZNkD_VJGb" role="3clFbw">
-              <ref role="3cqZAo" node="4LZNkD_UkvK" resolve="unchecked" />
-            </node>
-          </node>
           <node concept="3cpWs6" id="5zUhwJfSkp6" role="3cqZAp">
             <node concept="2ShNRf" id="5zUhwJfRYvD" role="3cqZAk">
               <node concept="1pGfFk" id="5zUhwJfRZy8" role="2ShVmc">
@@ -1036,8 +1020,9 @@
           </node>
         </node>
       </node>
+      <node concept="2tJIrI" id="4LZNkD_XyU3" role="jymVt" />
       <node concept="3clFb_" id="4LZNkD_VyRF" role="jymVt">
-        <property role="TrG5h" value="addNextConditional" />
+        <property role="TrG5h" value="addNextUncheckedConditional" />
         <node concept="37vLTG" id="4LZNkD_VyRG" role="3clF46">
           <property role="TrG5h" value="node" />
           <node concept="3Tqbb2" id="4LZNkD_VyRH" role="1tU5fm" />
@@ -1098,14 +1083,24 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="4LZNkD_VDdz" role="3cqZAp">
-            <node concept="1rXfSq" id="4LZNkD_VDdy" role="3clFbG">
-              <ref role="37wK5l" node="5zUhwJfRBQ_" resolve="addNextConditional" />
+          <node concept="3clFbF" id="4LZNkD_X3OX" role="3cqZAp">
+            <node concept="1rXfSq" id="4LZNkD_X3OV" role="3clFbG">
+              <ref role="37wK5l" node="4LZNkD_UJvv" resolve="addStandalones" />
+              <node concept="2ShNRf" id="4LZNkD_X62J" role="37wK5m">
+                <node concept="2HTt$P" id="4LZNkD_X9DQ" role="2ShVmc">
+                  <node concept="3Tqbb2" id="4LZNkD_XbKK" role="2HTBi0" />
+                  <node concept="37vLTw" id="4LZNkD_Xd2w" role="2HTEbv">
+                    <ref role="3cqZAo" node="4LZNkD_VyRG" resolve="node" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="4LZNkD_XjGK" role="3cqZAp">
+            <node concept="1rXfSq" id="4LZNkD_VDdy" role="3cqZAk">
+              <ref role="37wK5l" node="4LZNkD_VyRF" resolve="addNextConditional" />
               <node concept="37vLTw" id="4LZNkD_VE0E" role="37wK5m">
                 <ref role="3cqZAo" node="4LZNkD_VyRG" resolve="node" />
-              </node>
-              <node concept="3clFbT" id="4LZNkD_VFzB" role="37wK5m">
-                <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>
@@ -1115,14 +1110,9 @@
           <ref role="3uigEE" node="5zUhwJfNUsz" resolve="Branch" />
         </node>
         <node concept="P$JXv" id="4LZNkD_VySt" role="lGtFl">
-          <node concept="TZ5HA" id="4LZNkD_VySu" role="TZ5H$">
-            <node concept="1dT_AC" id="4LZNkD_VySv" role="1dT_Ay">
-              <property role="1dT_AB" value="Add next element as a condition. Returns a secondary branch that will be mapped to the 'false' output." />
-            </node>
-          </node>
-          <node concept="TZ5HA" id="4LZNkD_VySw" role="TZ5H$">
-            <node concept="1dT_AC" id="4LZNkD_VySx" role="1dT_Ay">
-              <property role="1dT_AB" value="Current branch is considered the 'true' branch." />
+          <node concept="TZ5HA" id="4LZNkD_XEsW" role="TZ5H$">
+            <node concept="1dT_AC" id="4LZNkD_XEsX" role="1dT_Ay">
+              <property role="1dT_AB" value="Same as addNextConditional, but condition is not type checked by the caller" />
             </node>
           </node>
         </node>
