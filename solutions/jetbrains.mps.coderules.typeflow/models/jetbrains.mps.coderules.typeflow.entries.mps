@@ -17,6 +17,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -1376,7 +1377,7 @@
           </node>
           <node concept="3cpWs6" id="4LZNkD_XjGK" role="3cqZAp">
             <node concept="1rXfSq" id="4LZNkD_VDdy" role="3cqZAk">
-              <ref role="37wK5l" node="4LZNkD_VyRF" resolve="addNextConditional" />
+              <ref role="37wK5l" node="5zUhwJfRBQ_" resolve="addNextConditional" />
               <node concept="37vLTw" id="4LZNkD_VE0E" role="37wK5m">
                 <ref role="3cqZAo" node="4LZNkD_VyRG" resolve="node" />
               </node>
@@ -1510,29 +1511,83 @@
             <node concept="3clFbS" id="67WSUY2AbVv" role="3clFbx">
               <node concept="3cpWs6" id="67WSUY2AetH" role="3cqZAp" />
             </node>
-            <node concept="3clFbC" id="67WSUY2Ad_n" role="3clFbw">
-              <node concept="Xjq3P" id="67WSUY2AdCO" role="3uHU7w" />
-              <node concept="37vLTw" id="67WSUY2AcIW" role="3uHU7B">
-                <ref role="3cqZAo" node="5zUhwJfPHne" resolve="targetBranch" />
+            <node concept="22lmx$" id="4LZNkDAXwy$" role="3clFbw">
+              <node concept="3clFbC" id="4LZNkDAXwZI" role="3uHU7w">
+                <node concept="10Nm6u" id="4LZNkDAXxiP" role="3uHU7w" />
+                <node concept="2OqwBi" id="4LZNkDAXwGz" role="3uHU7B">
+                  <node concept="Xjq3P" id="4LZNkDAXwFr" role="2Oq$k0" />
+                  <node concept="2OwXpG" id="4LZNkDAXwR4" role="2OqNvi">
+                    <ref role="2Oxat5" node="5zUhwJfO2xo" resolve="previous" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="67WSUY2Ad_n" role="3uHU7B">
+                <node concept="37vLTw" id="67WSUY2AcIW" role="3uHU7B">
+                  <ref role="3cqZAo" node="5zUhwJfPHne" resolve="targetBranch" />
+                </node>
+                <node concept="Xjq3P" id="67WSUY2AdCO" role="3uHU7w" />
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="5zUhwJfPJ0K" role="3cqZAp">
-            <node concept="2OqwBi" id="5zUhwJfPNKP" role="3clFbG">
-              <node concept="2OqwBi" id="5zUhwJfPKkd" role="2Oq$k0">
-                <node concept="37vLTw" id="5zUhwJfPJ0J" role="2Oq$k0">
+          <node concept="3clFbJ" id="4LZNkDAXusU" role="3cqZAp">
+            <node concept="3clFbS" id="4LZNkDAXusW" role="3clFbx">
+              <node concept="3clFbF" id="4LZNkDAXvBm" role="3cqZAp">
+                <node concept="37vLTI" id="4LZNkDAXweU" role="3clFbG">
+                  <node concept="2ShNRf" id="4LZNkDAXwh4" role="37vLTx">
+                    <node concept="1pGfFk" id="4LZNkDAXwwv" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;(java.util.Collection)" resolve="ArrayList" />
+                      <node concept="2OqwBi" id="4LZNkDAXxpG" role="37wK5m">
+                        <node concept="Xjq3P" id="4LZNkDAXxn0" role="2Oq$k0" />
+                        <node concept="2OwXpG" id="4LZNkDAXxwy" role="2OqNvi">
+                          <ref role="2Oxat5" node="5zUhwJfO2xo" resolve="previous" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="4LZNkDAXvRG" role="37vLTJ">
+                    <node concept="37vLTw" id="4LZNkDAXvBk" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5zUhwJfPHne" resolve="targetBranch" />
+                    </node>
+                    <node concept="2OwXpG" id="4LZNkDAXw5M" role="2OqNvi">
+                      <ref role="2Oxat5" node="5zUhwJfO2xo" resolve="previous" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="4LZNkDAXHcY" role="3clFbw">
+              <node concept="2OqwBi" id="4LZNkDAXuIn" role="3uHU7B">
+                <node concept="37vLTw" id="4LZNkDAXuCa" role="2Oq$k0">
                   <ref role="3cqZAo" node="5zUhwJfPHne" resolve="targetBranch" />
                 </node>
-                <node concept="2OwXpG" id="5zUhwJfPLHd" role="2OqNvi">
+                <node concept="2OwXpG" id="4LZNkDAXuYi" role="2OqNvi">
                   <ref role="2Oxat5" node="5zUhwJfO2xo" resolve="previous" />
                 </node>
               </node>
-              <node concept="liA8E" id="5zUhwJfPSK1" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
-                <node concept="2OqwBi" id="5zUhwJfPVY5" role="37wK5m">
-                  <node concept="Xjq3P" id="5zUhwJfPU9q" role="2Oq$k0" />
-                  <node concept="2OwXpG" id="5zUhwJfPXxi" role="2OqNvi">
-                    <ref role="2Oxat5" node="5zUhwJfO2xo" resolve="previous" />
+              <node concept="10Nm6u" id="4LZNkDAXvvt" role="3uHU7w" />
+            </node>
+            <node concept="9aQIb" id="4LZNkDAXz6P" role="9aQIa">
+              <node concept="3clFbS" id="4LZNkDAXz6Q" role="9aQI4">
+                <node concept="3clFbF" id="5zUhwJfPJ0K" role="3cqZAp">
+                  <node concept="2OqwBi" id="5zUhwJfPNKP" role="3clFbG">
+                    <node concept="2OqwBi" id="5zUhwJfPKkd" role="2Oq$k0">
+                      <node concept="37vLTw" id="5zUhwJfPJ0J" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5zUhwJfPHne" resolve="targetBranch" />
+                      </node>
+                      <node concept="2OwXpG" id="5zUhwJfPLHd" role="2OqNvi">
+                        <ref role="2Oxat5" node="5zUhwJfO2xo" resolve="previous" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="5zUhwJfPSK1" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
+                      <node concept="2OqwBi" id="5zUhwJfPVY5" role="37wK5m">
+                        <node concept="Xjq3P" id="5zUhwJfPU9q" role="2Oq$k0" />
+                        <node concept="2OwXpG" id="5zUhwJfPXxi" role="2OqNvi">
+                          <ref role="2Oxat5" node="5zUhwJfO2xo" resolve="previous" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1569,6 +1624,25 @@
       <node concept="3clFb_" id="5zUhwJfQr3$" role="jymVt">
         <property role="TrG5h" value="fork" />
         <node concept="3clFbS" id="5zUhwJfQr3B" role="3clF47">
+          <node concept="3clFbJ" id="4LZNkDAZdg7" role="3cqZAp">
+            <node concept="3clFbS" id="4LZNkDAZdg9" role="3clFbx">
+              <node concept="3cpWs6" id="4LZNkDAZm7q" role="3cqZAp">
+                <node concept="2ShNRf" id="4LZNkDAZmbr" role="3cqZAk">
+                  <node concept="1pGfFk" id="4LZNkDAZnyL" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" node="5zUhwJfO2__" resolve="Branch" />
+                    <node concept="10Nm6u" id="4LZNkDAZqeo" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="4LZNkDAZhYq" role="3clFbw">
+              <node concept="10Nm6u" id="4LZNkDAZj_6" role="3uHU7w" />
+              <node concept="37vLTw" id="4LZNkDAZeCn" role="3uHU7B">
+                <ref role="3cqZAo" node="5zUhwJfO2xo" resolve="previous" />
+              </node>
+            </node>
+          </node>
           <node concept="3cpWs6" id="5zUhwJfQuqs" role="3cqZAp">
             <node concept="2ShNRf" id="5zUhwJfQu$G" role="3cqZAk">
               <node concept="1pGfFk" id="5zUhwJfQwFz" role="2ShVmc">
@@ -2238,22 +2312,17 @@
                             </node>
                           </node>
                           <node concept="3clFbF" id="4LZNkDA51LW" role="3cqZAp">
-                            <node concept="2OqwBi" id="4LZNkDA51LX" role="3clFbG">
-                              <node concept="2OqwBi" id="4LZNkDA51LY" role="2Oq$k0">
-                                <node concept="2OqwBi" id="4LZNkDA51LZ" role="2Oq$k0">
-                                  <node concept="37vLTw" id="4LZNkDA51M0" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="5zUhwJfRQDw" resolve="trueBranch" />
-                                  </node>
-                                  <node concept="liA8E" id="4LZNkDA51M1" role="2OqNvi">
-                                    <ref role="37wK5l" to="i5cy:~AtomicReference.get()" resolve="get" />
-                                  </node>
+                            <node concept="2OqwBi" id="4LZNkDA51LY" role="3clFbG">
+                              <node concept="2OqwBi" id="4LZNkDA51LZ" role="2Oq$k0">
+                                <node concept="37vLTw" id="4LZNkDA51M0" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="5zUhwJfRQDw" resolve="trueBranch" />
                                 </node>
-                                <node concept="liA8E" id="4LZNkDA51M2" role="2OqNvi">
-                                  <ref role="37wK5l" to="n2i4:5zUhwJfNQRm" resolve="getPrevious" />
+                                <node concept="liA8E" id="4LZNkDA51M1" role="2OqNvi">
+                                  <ref role="37wK5l" to="i5cy:~AtomicReference.get()" resolve="get" />
                                 </node>
                               </node>
-                              <node concept="liA8E" id="4LZNkDA51M3" role="2OqNvi">
-                                <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+                              <node concept="liA8E" id="4LZNkDA51M2" role="2OqNvi">
+                                <ref role="37wK5l" to="n2i4:4LZNkDAY3ga" resolve="addPrevious" />
                                 <node concept="2OqwBi" id="4LZNkDA51M4" role="37wK5m">
                                   <node concept="37vLTw" id="4LZNkDA51M5" role="2Oq$k0">
                                     <ref role="3cqZAo" node="4LZNkDA4UD5" resolve="controlFlow" />
@@ -2268,22 +2337,17 @@
                           <node concept="3clFbJ" id="4LZNkDA56He" role="3cqZAp">
                             <node concept="3clFbS" id="4LZNkDA56Hg" role="3clFbx">
                               <node concept="3clFbF" id="4LZNkDA51M7" role="3cqZAp">
-                                <node concept="2OqwBi" id="4LZNkDA51M8" role="3clFbG">
-                                  <node concept="2OqwBi" id="4LZNkDA51M9" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="4LZNkDA51Ma" role="2Oq$k0">
-                                      <node concept="37vLTw" id="4LZNkDA51Mb" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="4LZNkD_Ycl2" resolve="falseBranch" />
-                                      </node>
-                                      <node concept="liA8E" id="4LZNkDA51Mc" role="2OqNvi">
-                                        <ref role="37wK5l" to="i5cy:~AtomicReference.get()" resolve="get" />
-                                      </node>
+                                <node concept="2OqwBi" id="4LZNkDA51M9" role="3clFbG">
+                                  <node concept="2OqwBi" id="4LZNkDA51Ma" role="2Oq$k0">
+                                    <node concept="37vLTw" id="4LZNkDA51Mb" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="4LZNkD_Ycl2" resolve="falseBranch" />
                                     </node>
-                                    <node concept="liA8E" id="4LZNkDA51Md" role="2OqNvi">
-                                      <ref role="37wK5l" to="n2i4:5zUhwJfNQRm" resolve="getPrevious" />
+                                    <node concept="liA8E" id="4LZNkDA51Mc" role="2OqNvi">
+                                      <ref role="37wK5l" to="i5cy:~AtomicReference.get()" resolve="get" />
                                     </node>
                                   </node>
-                                  <node concept="liA8E" id="4LZNkDA51Me" role="2OqNvi">
-                                    <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+                                  <node concept="liA8E" id="4LZNkDA51Md" role="2OqNvi">
+                                    <ref role="37wK5l" to="n2i4:4LZNkDAY3ga" resolve="addPrevious" />
                                     <node concept="2OqwBi" id="4LZNkDA51Mf" role="37wK5m">
                                       <node concept="37vLTw" id="4LZNkDA51Mg" role="2Oq$k0">
                                         <ref role="3cqZAo" node="4LZNkDA4UD5" resolve="controlFlow" />

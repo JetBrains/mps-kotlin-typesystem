@@ -108,6 +108,9 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -280,6 +283,59 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5zUhwJfOv0P" role="jymVt" />
+    <node concept="3clFb_" id="4LZNkDAY3ga" role="jymVt">
+      <property role="TrG5h" value="addPrevious" />
+      <node concept="3clFbS" id="4LZNkDAY3gd" role="3clF47">
+        <node concept="3clFbJ" id="4LZNkDAY3up" role="3cqZAp">
+          <node concept="3clFbC" id="4LZNkDAY5MV" role="3clFbw">
+            <node concept="10Nm6u" id="4LZNkDAY6hJ" role="3uHU7w" />
+            <node concept="37vLTw" id="4LZNkDAY3Ml" role="3uHU7B">
+              <ref role="3cqZAo" node="5zUhwJfNQO4" resolve="previous" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4LZNkDAY3ur" role="3clFbx">
+            <node concept="3clFbF" id="4LZNkDAY6SS" role="3cqZAp">
+              <node concept="37vLTI" id="4LZNkDAY7fW" role="3clFbG">
+                <node concept="2ShNRf" id="4LZNkDAYmNt" role="37vLTx">
+                  <node concept="1pGfFk" id="4LZNkDAYnf6" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;(int)" resolve="ArrayList" />
+                    <node concept="3cmrfG" id="4LZNkDAYnz3" role="37wK5m">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="4LZNkDAY6SR" role="37vLTJ">
+                  <ref role="3cqZAo" node="5zUhwJfNQO4" resolve="previous" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4LZNkDAYp_u" role="3cqZAp">
+          <node concept="2OqwBi" id="4LZNkDAYqCC" role="3clFbG">
+            <node concept="37vLTw" id="4LZNkDAYp_s" role="2Oq$k0">
+              <ref role="3cqZAo" node="5zUhwJfNQO4" resolve="previous" />
+            </node>
+            <node concept="liA8E" id="4LZNkDAYsaq" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+              <node concept="37vLTw" id="4LZNkDAYsDz" role="37wK5m">
+                <ref role="3cqZAo" node="4LZNkDAY6tP" resolve="node" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4LZNkDAY34I" role="1B3o_S" />
+      <node concept="3cqZAl" id="4LZNkDAY3g1" role="3clF45" />
+      <node concept="37vLTG" id="4LZNkDAY6tP" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3uibUv" id="4LZNkDAY6EH" role="1tU5fm">
+          <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowNode" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4LZNkDAY2S$" role="jymVt" />
     <node concept="3clFb_" id="5zUhwJfNQRm" role="jymVt">
       <property role="TrG5h" value="getPrevious" />
       <node concept="3Tm1VV" id="5zUhwJfNQRo" role="1B3o_S" />
