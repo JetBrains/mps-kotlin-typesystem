@@ -27,6 +27,7 @@
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -47,6 +48,7 @@
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -54,6 +56,9 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -61,6 +66,10 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -151,8 +160,8 @@
       <property role="TrG5h" value="getPrevious" />
       <node concept="3Tm1VV" id="5zUhwJfNQRo" role="1B3o_S" />
       <node concept="3clFbS" id="5zUhwJfNQRp" role="3clF47">
-        <node concept="3clFbF" id="5zUhwJfNQRq" role="3cqZAp">
-          <node concept="2OqwBi" id="5zUhwJfNQRj" role="3clFbG">
+        <node concept="3cpWs6" id="4LZNkD_Y7OL" role="3cqZAp">
+          <node concept="2OqwBi" id="5zUhwJfNQRj" role="3cqZAk">
             <node concept="Xjq3P" id="5zUhwJfNQRk" role="2Oq$k0" />
             <node concept="2OwXpG" id="5zUhwJfNQRl" role="2OqNvi">
               <ref role="2Oxat5" node="5zUhwJfNQO4" resolve="previous" />
@@ -167,15 +176,34 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="4LZNkD_Y1uk" role="jymVt" />
+    <node concept="3clFb_" id="4LZNkDA1tXz" role="jymVt">
+      <property role="TrG5h" value="isEmpty" />
+      <node concept="3clFbS" id="4LZNkDA1tXA" role="3clF47">
+        <node concept="3cpWs6" id="4LZNkDA1udA" role="3cqZAp">
+          <node concept="3clFbC" id="4LZNkDA1v3i" role="3cqZAk">
+            <node concept="10Nm6u" id="4LZNkDA1vhH" role="3uHU7w" />
+            <node concept="37vLTw" id="4LZNkDA1utt" role="3uHU7B">
+              <ref role="3cqZAo" node="5zUhwJfNR5f" resolve="content" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4LZNkDA1tQG" role="3clF45" />
+      <node concept="3Tm1VV" id="4LZNkDA1vnn" role="1B3o_S" />
+    </node>
   </node>
   <node concept="312cEu" id="5zUhwJfNRpJ">
     <property role="TrG5h" value="NodeControlFlow" />
     <node concept="312cEg" id="5zUhwJfNRqO" role="jymVt">
       <property role="TrG5h" value="previous" />
-      <node concept="3uibUv" id="5zUhwJfNRq_" role="1tU5fm">
-        <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowNode" />
-      </node>
       <node concept="3Tm1VV" id="5zUhwJfNRuP" role="1B3o_S" />
+      <node concept="3uibUv" id="4LZNkDA2aYz" role="1tU5fm">
+        <ref role="3uigEE" to="33ny:~List" resolve="List" />
+        <node concept="3uibUv" id="4LZNkDA2aY$" role="11_B2D">
+          <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowNode" />
+        </node>
+      </node>
     </node>
     <node concept="312cEg" id="5zUhwJfNRrz" role="jymVt">
       <property role="TrG5h" value="afterTrue" />
@@ -197,6 +225,17 @@
       <node concept="3Tm6S6" id="4LZNkD_WsKj" role="1B3o_S" />
       <node concept="2I9FWS" id="4LZNkD_WsKl" role="1tU5fm" />
     </node>
+    <node concept="312cEg" id="4LZNkD_Y3b9" role="jymVt">
+      <property role="TrG5h" value="myToSubstitute" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="4LZNkD_Y3ba" role="1B3o_S" />
+      <node concept="3uibUv" id="4LZNkD_Y3bc" role="1tU5fm">
+        <ref role="3uigEE" to="33ny:~List" resolve="List" />
+        <node concept="3uibUv" id="4LZNkD_Y3bd" role="11_B2D">
+          <ref role="3uigEE" to="rgyg:7FvwziZxbjt" resolve="EvaluateNode" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="5zUhwJfUSrj" role="jymVt" />
     <node concept="3Tm1VV" id="5zUhwJfNRpK" role="1B3o_S" />
     <node concept="3clFbW" id="5zUhwJfUSrE" role="jymVt">
@@ -212,7 +251,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="5zUhwJfUSrV" role="37vLTx">
-              <ref role="3cqZAo" node="5zUhwJfUSrL" resolve="previous" />
+              <ref role="3cqZAo" node="4LZNkDA26mQ" resolve="before" />
             </node>
           </node>
         </node>
@@ -225,7 +264,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="5zUhwJfUSs7" role="37vLTx">
-              <ref role="3cqZAo" node="5zUhwJfUSrX" resolve="afterTrue" />
+              <ref role="3cqZAo" node="5zUhwJfUSrL" resolve="afterTrue" />
             </node>
           </node>
         </node>
@@ -238,7 +277,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="5zUhwJfUSsj" role="37vLTx">
-              <ref role="3cqZAo" node="5zUhwJfUSs9" resolve="afterFalse" />
+              <ref role="3cqZAo" node="5zUhwJfUSrX" resolve="afterFalse" />
             </node>
           </node>
         </node>
@@ -252,23 +291,45 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4LZNkD_Y3be" role="3cqZAp">
+          <node concept="37vLTI" id="4LZNkD_Y3bg" role="3clFbG">
+            <node concept="37vLTw" id="4LZNkD_Y3bj" role="37vLTJ">
+              <ref role="3cqZAo" node="4LZNkD_Y3b9" resolve="myToSubstitute" />
+            </node>
+            <node concept="37vLTw" id="4LZNkD_Y3bk" role="37vLTx">
+              <ref role="3cqZAo" node="4LZNkD_Y2M$" resolve="toSubstitute" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4LZNkDA26mQ" role="3clF46">
+        <property role="TrG5h" value="before" />
+        <node concept="3uibUv" id="4LZNkDA26mR" role="1tU5fm">
+          <ref role="3uigEE" to="33ny:~List" resolve="List" />
+          <node concept="3uibUv" id="4LZNkDA26mS" role="11_B2D">
+            <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowNode" />
+          </node>
+        </node>
       </node>
       <node concept="37vLTG" id="5zUhwJfUSrL" role="3clF46">
-        <property role="TrG5h" value="previous" />
+        <property role="TrG5h" value="afterTrue" />
         <node concept="3uibUv" id="5zUhwJfUSrK" role="1tU5fm">
           <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowNode" />
         </node>
       </node>
       <node concept="37vLTG" id="5zUhwJfUSrX" role="3clF46">
-        <property role="TrG5h" value="afterTrue" />
+        <property role="TrG5h" value="afterFalse" />
         <node concept="3uibUv" id="5zUhwJfUSrW" role="1tU5fm">
           <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowNode" />
         </node>
       </node>
-      <node concept="37vLTG" id="5zUhwJfUSs9" role="3clF46">
-        <property role="TrG5h" value="afterFalse" />
-        <node concept="3uibUv" id="5zUhwJfUSs8" role="1tU5fm">
-          <ref role="3uigEE" node="5zUhwJfNQMZ" resolve="DataflowNode" />
+      <node concept="37vLTG" id="4LZNkD_Y2M$" role="3clF46">
+        <property role="TrG5h" value="toSubstitute" />
+        <node concept="3uibUv" id="4LZNkD_Y30j" role="1tU5fm">
+          <ref role="3uigEE" to="33ny:~List" resolve="List" />
+          <node concept="3uibUv" id="4LZNkD_Y36Q" role="11_B2D">
+            <ref role="3uigEE" to="rgyg:7FvwziZxbjt" resolve="EvaluateNode" />
+          </node>
         </node>
       </node>
       <node concept="37vLTG" id="4LZNkD_Wou_" role="3clF46">

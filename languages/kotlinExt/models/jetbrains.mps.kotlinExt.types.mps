@@ -52994,7 +52994,7 @@
   <node concept="AVZre" id="5ViKESnVmAv">
     <property role="3GE5qa" value="rules" />
     <property role="TrG5h" value="TypeChecking" />
-    <ref role="2YbDB9" node="58nnH5MGFz" resolve="Debugging" />
+    <ref role="2YbDB9" node="4LZNkD_XW$o" resolve="DataflowCollection" />
     <node concept="1nLNMY" id="58nnH5Q0ne" role="1nK1Vg">
       <property role="TrG5h" value="debug_setupDataFlowId" />
       <node concept="3clFbS" id="58nnH5Q0nf" role="1nLNMH">
@@ -54467,19 +54467,6 @@
       <node concept="1zAUYm" id="2t3z978ePpI" role="1zAUyy">
         <property role="TrG5h" value="type" />
         <node concept="32pEOW" id="3n8adBiDgts" role="3gTf24" />
-      </node>
-    </node>
-    <node concept="3AqmO8" id="5zUhwJfwPKY" role="8PkJo">
-      <property role="TrG5h" value="dataflowOf" />
-      <node concept="1zAUYm" id="5zUhwJfwPX9" role="1zAUyy">
-        <property role="TrG5h" value="node" />
-        <node concept="3Tqbb2" id="5zUhwJfwPZJ" role="3gTf24" />
-      </node>
-      <node concept="1zAUYm" id="5zUhwJfwPZM" role="1zAUyy">
-        <property role="TrG5h" value="entry" />
-        <node concept="3uibUv" id="5zUhwJfwQ2p" role="3gTf24">
-          <ref role="3uigEE" to="rgyg:7FvwziZxbjb" resolve="Entry" />
-        </node>
       </node>
     </node>
     <node concept="3AqmO8" id="2t3z978eMY1" role="8PkJo">
@@ -74519,6 +74506,85 @@
       <node concept="1zAsnw" id="73s7TtKAq$2" role="lGtFl">
         <node concept="3SKdUq" id="73s7TtKAq$3" role="27qylF">
           <property role="3SKdUp" value="Handles the receiver type of a variable declaration in the context of a reference. Populate subs and add constraints on type parameters into scope." />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="0oKg$" id="4LZNkD_XWz5">
+    <property role="TrG5h" value="DataflowMerge" />
+    <property role="3GE5qa" value="dataflow" />
+  </node>
+  <node concept="AVZre" id="4LZNkD_XW$o">
+    <property role="3GE5qa" value="dataflow" />
+    <property role="TrG5h" value="DataflowCollection" />
+    <ref role="2YbDB9" node="58nnH5MGFz" resolve="Debugging" />
+    <node concept="1nLNMY" id="4LZNkD_Y0QY" role="1nK1Vg">
+      <property role="TrG5h" value="collectDataflow" />
+      <node concept="3clFbS" id="4LZNkD_Y0QZ" role="1nLNMH">
+        <node concept="1nLNNL" id="4LZNkD_Y0ZJ" role="3cqZAp">
+          <node concept="1nLNMm" id="4LZNkD_Y0ZL" role="1nLNNK">
+            <node concept="3Aq93q" id="4LZNkD_Y10g" role="1nLNMb">
+              <property role="3ArMco" value="true" />
+              <node concept="3I6sU6" id="4LZNkD_Y10h" role="3Ip0Jz">
+                <node concept="3I6s7M" id="4LZNkD_Y10K" role="3I6sU7">
+                  <node concept="3Aqt3T" id="4LZNkD_Y10J" role="3I6s78">
+                    <ref role="3AqCNq" node="4LZNkD_XWBL" resolve="collectDataflow" />
+                    <node concept="a7P8L" id="4LZNkD_Y18x" role="3AunhB">
+                      <ref role="a7OzE" node="4LZNkD_Y12I" resolve="Node" />
+                    </node>
+                    <node concept="a7P8L" id="4LZNkD_Y1fQ" role="3AunhB">
+                      <ref role="a7OzE" node="4LZNkD_Y1bu" resolve="Result" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3NuqgR" id="4LZNkD_Y12H" role="0Rg$4">
+              <node concept="aZer4" id="4LZNkD_Y12I" role="3XD1gS">
+                <property role="TrG5h" value="Node" />
+              </node>
+              <node concept="3Tqbb2" id="4LZNkD_Y15P" role="3vLBG7" />
+            </node>
+            <node concept="3NuqgR" id="4LZNkD_Y1bt" role="0Rg$4">
+              <node concept="aZer4" id="4LZNkD_Y1bu" role="3XD1gS">
+                <property role="TrG5h" value="Result" />
+              </node>
+              <node concept="3uibUv" id="4LZNkD_Y1d8" role="3vLBG7">
+                <ref role="3uigEE" to="n2i4:5zUhwJfNQMZ" resolve="DataflowNode" />
+              </node>
+            </node>
+            <node concept="3xSepi" id="4LZNkD_Y1jM" role="3xSepv">
+              <node concept="3Aq9E8" id="4LZNkD_Y1jN" role="3xSepj">
+                <node concept="3I6sU6" id="4LZNkD_Y1jO" role="3Ip0Jz" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3AqmO8" id="4LZNkD_XWBL" role="8PkJo">
+      <property role="TrG5h" value="collectDataflow" />
+      <node concept="1zAUYm" id="4LZNkD_XWEn" role="1zAUyy">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="4LZNkD_XWIe" role="3gTf24" />
+      </node>
+      <node concept="1zAUYm" id="4LZNkD_XWIG" role="1zAUyy">
+        <property role="TrG5h" value="dataflowResult" />
+        <node concept="3uibUv" id="4LZNkD_XWK$" role="3gTf24">
+          <ref role="3uigEE" to="n2i4:5zUhwJfNQMZ" resolve="DataflowNode" />
+        </node>
+      </node>
+    </node>
+    <node concept="3AqmO8" id="5zUhwJfwPKY" role="8PkJo">
+      <property role="TrG5h" value="dataflowOf" />
+      <node concept="1zAUYm" id="5zUhwJfwPX9" role="1zAUyy">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="5zUhwJfwPZJ" role="3gTf24" />
+      </node>
+      <node concept="1zAUYm" id="5zUhwJfwPZM" role="1zAUyy">
+        <property role="TrG5h" value="entry" />
+        <node concept="3uibUv" id="5zUhwJfwQ2p" role="3gTf24">
+          <ref role="3uigEE" to="rgyg:7FvwziZxbjb" resolve="Entry" />
         </node>
       </node>
     </node>
