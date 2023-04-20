@@ -214,15 +214,13 @@
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
-      <concept id="1237467461002" name="jetbrains.mps.baseLanguage.collections.structure.GetIteratorOperation" flags="nn" index="uNJiE" />
-      <concept id="1237467705688" name="jetbrains.mps.baseLanguage.collections.structure.IteratorType" flags="in" index="uOF1S">
-        <child id="1237467730343" name="elementType" index="uOL27" />
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
-      <concept id="1237470895604" name="jetbrains.mps.baseLanguage.collections.structure.HasNextOperation" flags="nn" index="v0PNk" />
-      <concept id="1237471031357" name="jetbrains.mps.baseLanguage.collections.structure.GetNextOperation" flags="nn" index="v1n4t" />
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1235573135402" name="jetbrains.mps.baseLanguage.collections.structure.SingletonSequenceCreator" flags="nn" index="2HTt$P">
         <child id="1235573175711" name="elementType" index="2HTBi0" />
         <child id="1235573187520" name="singletonValue" index="2HTEbv" />
@@ -1695,8 +1693,8 @@
       <property role="TrG5h" value="myTargets" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="7FvwziZxbm2" role="1B3o_S" />
-      <node concept="A3Dl8" id="67WSUY2wAZc" role="1tU5fm">
-        <node concept="3Tqbb2" id="67WSUY2wAZd" role="A3Ik2" />
+      <node concept="_YKpA" id="4LZNkDAcp_q" role="1tU5fm">
+        <node concept="3Tqbb2" id="4LZNkDAcp_s" role="_ZDj9" />
       </node>
     </node>
     <node concept="312cEg" id="4LZNkD_Y9Je" role="jymVt">
@@ -1745,8 +1743,11 @@
                 <ref role="2Oxat5" node="7FvwziZxbm1" resolve="myTargets" />
               </node>
             </node>
-            <node concept="37vLTw" id="4LZNkD_Yd9C" role="37vLTx">
-              <ref role="3cqZAo" node="4LZNkD_Yd9u" resolve="myTargets" />
+            <node concept="2OqwBi" id="4LZNkDAcr0Q" role="37vLTx">
+              <node concept="37vLTw" id="4LZNkD_Yd9C" role="2Oq$k0">
+                <ref role="3cqZAo" node="4LZNkD_Yd9u" resolve="targets" />
+              </node>
+              <node concept="ANE8D" id="4LZNkDAcrlq" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -1865,14 +1866,17 @@
                 <node concept="312cEg" id="4LZNkDA4UHh" role="jymVt">
                   <property role="TrG5h" value="itr" />
                   <node concept="3Tm6S6" id="4LZNkDA4UHi" role="1B3o_S" />
-                  <node concept="uOF1S" id="4LZNkDA4UHk" role="1tU5fm">
-                    <node concept="3Tqbb2" id="4LZNkDA4USm" role="uOL27" />
+                  <node concept="3uibUv" id="4LZNkDAct9V" role="1tU5fm">
+                    <ref role="3uigEE" to="33ny:~ListIterator" resolve="ListIterator" />
+                    <node concept="3Tqbb2" id="4LZNkDAcuCs" role="11_B2D" />
                   </node>
                   <node concept="2OqwBi" id="4LZNkDA4UHm" role="33vP2m">
                     <node concept="37vLTw" id="4LZNkDA4UHn" role="2Oq$k0">
                       <ref role="3cqZAo" node="7FvwziZxbm1" resolve="myTargets" />
                     </node>
-                    <node concept="uNJiE" id="4LZNkDA4UHo" role="2OqNvi" />
+                    <node concept="liA8E" id="4LZNkDAcso0" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~List.listIterator()" resolve="listIterator" />
+                    </node>
                   </node>
                 </node>
                 <node concept="2tJIrI" id="4LZNkDA4U4D" role="jymVt" />
@@ -1886,7 +1890,9 @@
                         <node concept="37vLTw" id="4LZNkDA5CLb" role="2Oq$k0">
                           <ref role="3cqZAo" node="4LZNkDA4UHh" resolve="itr" />
                         </node>
-                        <node concept="v0PNk" id="4LZNkDA5F9U" role="2OqNvi" />
+                        <node concept="liA8E" id="4LZNkDAcvDf" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~ListIterator.hasNext()" resolve="hasNext" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -1931,12 +1937,85 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3cpWs6" id="4LZNkDA4UVN" role="3cqZAp">
-                      <node concept="2OqwBi" id="4LZNkDA4VvD" role="3cqZAk">
-                        <node concept="37vLTw" id="4LZNkDA4V88" role="2Oq$k0">
+                    <node concept="3cpWs8" id="4LZNkDAcA7m" role="3cqZAp">
+                      <node concept="3cpWsn" id="4LZNkDAcA7n" role="3cpWs9">
+                        <property role="TrG5h" value="next" />
+                        <node concept="3Tqbb2" id="4LZNkDAc_da" role="1tU5fm" />
+                        <node concept="2OqwBi" id="4LZNkDAcA7o" role="33vP2m">
+                          <node concept="37vLTw" id="4LZNkDAcA7p" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4LZNkDA4UHh" resolve="itr" />
+                          </node>
+                          <node concept="liA8E" id="4LZNkDAcA7q" role="2OqNvi">
+                            <ref role="37wK5l" to="33ny:~ListIterator.next()" resolve="next" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3SKdUt" id="4LZNkDAcCOD" role="3cqZAp">
+                      <node concept="1PaTwC" id="4LZNkDAcCOE" role="1aUNEU">
+                        <node concept="3oM_SD" id="4LZNkDAcDz6" role="1PaTwD">
+                          <property role="3oM_SC" value="we" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcDz8" role="1PaTwD">
+                          <property role="3oM_SC" value="will" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcDzb" role="1PaTwD">
+                          <property role="3oM_SC" value="not" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcDzf" role="1PaTwD">
+                          <property role="3oM_SC" value="process" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcDzk" role="1PaTwD">
+                          <property role="3oM_SC" value="it" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcDzq" role="1PaTwD">
+                          <property role="3oM_SC" value="again" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcDzx" role="1PaTwD">
+                          <property role="3oM_SC" value="later" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcDzD" role="1PaTwD">
+                          <property role="3oM_SC" value="on:" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcFGQ" role="1PaTwD">
+                          <property role="3oM_SC" value="coderules" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcFHw" role="1PaTwD">
+                          <property role="3oM_SC" value="will" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcFIb" role="1PaTwD">
+                          <property role="3oM_SC" value="not" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcFJn" role="1PaTwD">
+                          <property role="3oM_SC" value="loop" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcFK$" role="1PaTwD">
+                          <property role="3oM_SC" value="over" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcFLi" role="1PaTwD">
+                          <property role="3oM_SC" value="DF" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcFMx" role="1PaTwD">
+                          <property role="3oM_SC" value="definition" />
+                        </node>
+                        <node concept="3oM_SD" id="4LZNkDAcFNL" role="1PaTwD">
+                          <property role="3oM_SC" value="there" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="4LZNkDAcxN6" role="3cqZAp">
+                      <node concept="2OqwBi" id="4LZNkDAcySd" role="3clFbG">
+                        <node concept="37vLTw" id="4LZNkDAcxN4" role="2Oq$k0">
                           <ref role="3cqZAo" node="4LZNkDA4UHh" resolve="itr" />
                         </node>
-                        <node concept="v1n4t" id="4LZNkDA4VMo" role="2OqNvi" />
+                        <node concept="liA8E" id="4LZNkDAczC4" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~ListIterator.remove()" resolve="remove" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs6" id="4LZNkDA4UVN" role="3cqZAp">
+                      <node concept="37vLTw" id="4LZNkDAcA7r" role="3cqZAk">
+                        <ref role="3cqZAo" node="4LZNkDAcA7n" resolve="next" />
                       </node>
                     </node>
                   </node>
@@ -2135,7 +2214,9 @@
                         <node concept="37vLTw" id="4LZNkDA4Wt7" role="2Oq$k0">
                           <ref role="3cqZAo" node="4LZNkDA4UHh" resolve="itr" />
                         </node>
-                        <node concept="v0PNk" id="4LZNkDA4Wt8" role="2OqNvi" />
+                        <node concept="liA8E" id="4LZNkDAcDRx" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~ListIterator.hasNext()" resolve="hasNext" />
+                        </node>
                       </node>
                       <node concept="9aQIb" id="4LZNkDA51vv" role="9aQIa">
                         <node concept="3clFbS" id="4LZNkDA51vw" role="9aQI4">
