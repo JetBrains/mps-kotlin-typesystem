@@ -48705,6 +48705,24 @@
                   </node>
                 </node>
               </node>
+              <node concept="3Aq9E8" id="4PpMPs5nA0H" role="3xSepj">
+                <node concept="3I6sU6" id="4PpMPs5nA0I" role="3Ip0Jz">
+                  <node concept="3I6s7M" id="4PpMPs5nA0J" role="3I6sU7">
+                    <node concept="3wWvb2" id="4PpMPs5nA0K" role="3I6s78">
+                      <node concept="2OqwBi" id="4PpMPs5nA0L" role="3wWo3s">
+                        <node concept="1Ft4W6" id="4PpMPs5nA0M" role="2Oq$k0">
+                          <node concept="a7P8L" id="4PpMPs5nA0N" role="1FtiSR">
+                            <ref role="a7OzE" node="1vYW8S3sLdW" resolve="Iterator" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="4PpMPs5nA0O" role="2OqNvi">
+                          <ref role="37wK5l" to="n2i4:4LZNkDAcRp3" resolve="next" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3Aq9E8" id="4LZNkDAjpd6" role="3xSepj">
                 <node concept="3I6sU6" id="4LZNkDAjpd7" role="3Ip0Jz">
                   <node concept="3I6s7M" id="4LZNkDAjulI" role="3I6sU7">
@@ -48810,9 +48828,27 @@
               </node>
               <node concept="3Aq9E8" id="1vYW8S3sLey" role="3xSepj">
                 <node concept="3I6sU6" id="1vYW8S3sLez" role="3Ip0Jz">
+                  <node concept="3I6s7M" id="4PpMPs5n_vN" role="3I6sU7">
+                    <node concept="3wWvb2" id="4PpMPs5n_vO" role="3I6s78">
+                      <node concept="2OqwBi" id="4PpMPs5n_vP" role="3wWo3s">
+                        <node concept="1Ft4W6" id="4PpMPs5n_vQ" role="2Oq$k0">
+                          <node concept="a7P8L" id="4PpMPs5n_vR" role="1FtiSR">
+                            <ref role="a7OzE" node="4LZNkDAhcOM" resolve="Iterator" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="4PpMPs5n_vS" role="2OqNvi">
+                          <ref role="37wK5l" to="n2i4:4LZNkDAcRp3" resolve="next" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Aq9E8" id="4PpMPs5n_vL" role="3xSepj">
+                <node concept="3I6sU6" id="4PpMPs5n_vM" role="3Ip0Jz">
                   <node concept="3I6s7M" id="4LZNkDAjv_G" role="3I6sU7">
                     <node concept="3Aqt3T" id="4LZNkDAjv_H" role="3I6s78">
-                      <ref role="3AqCNq" node="1vYW8S3rTfF" resolve="iterateFlow" />
+                      <ref role="3AqCNq" node="1vYW8S3rTfF" resolve="iterateSmartCastFlow" />
                       <node concept="a7P8L" id="4LZNkDAjv_J" role="3AunhB">
                         <ref role="a7OzE" node="1vYW8S3sLeo" resolve="TypeIs" />
                       </node>
@@ -48929,6 +48965,24 @@
                   </node>
                 </node>
               </node>
+              <node concept="3Aq9E8" id="4PpMPs5nyjp" role="3xSepj">
+                <node concept="3I6sU6" id="4PpMPs5nyjq" role="3Ip0Jz">
+                  <node concept="3I6s7M" id="4PpMPs5nyjM" role="3I6sU7">
+                    <node concept="3wWvb2" id="4PpMPs5nyjL" role="3I6s78">
+                      <node concept="2OqwBi" id="4PpMPs5nyuh" role="3wWo3s">
+                        <node concept="1Ft4W6" id="4PpMPs5nykS" role="2Oq$k0">
+                          <node concept="a7P8L" id="4PpMPs5nykR" role="1FtiSR">
+                            <ref role="a7OzE" node="4LZNkDAhhF0" resolve="Iterator" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="4PpMPs5n$l_" role="2OqNvi">
+                          <ref role="37wK5l" to="n2i4:4LZNkDAcRp3" resolve="next" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3Aq9E8" id="1vYW8S3sEkC" role="3xSepj">
                 <node concept="3I6sU6" id="1vYW8S3sEkD" role="3Ip0Jz">
                   <node concept="3I6s7M" id="4LZNkDAjwfT" role="3I6sU7">
@@ -49034,6 +49088,24 @@
                       <ref role="3jm46O" node="60L8gIe1FP$" resolve="nothingType" />
                       <node concept="a7P8L" id="60L8gIe2AXs" role="3jm6SO">
                         <ref role="a7OzE" node="60L8gIe2B1y" resolve="Nothing" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Aq9E8" id="4PpMPs5nA4X" role="3xSepj">
+                <node concept="3I6sU6" id="4PpMPs5nA4Y" role="3Ip0Jz">
+                  <node concept="3I6s7M" id="4PpMPs5nA4Z" role="3I6sU7">
+                    <node concept="3wWvb2" id="4PpMPs5nA50" role="3I6s78">
+                      <node concept="2OqwBi" id="4PpMPs5nA51" role="3wWo3s">
+                        <node concept="1Ft4W6" id="4PpMPs5nA52" role="2Oq$k0">
+                          <node concept="a7P8L" id="4PpMPs5nA53" role="1FtiSR">
+                            <ref role="a7OzE" node="4LZNkDAhloN" resolve="Iterator" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="4PpMPs5nA54" role="2OqNvi">
+                          <ref role="37wK5l" to="n2i4:4LZNkDAcRp3" resolve="next" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -49784,7 +49856,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="4LZNkDAjOA5" role="2OqNvi">
-                              <ref role="37wK5l" to="n2i4:4LZNkDAcRp3" resolve="next" />
+                              <ref role="37wK5l" to="n2i4:4LZNkDAgDkn" resolve="peek" />
                             </node>
                           </node>
                           <node concept="liA8E" id="4LZNkDAjOA6" role="2OqNvi">
@@ -49971,6 +50043,24 @@
         <node concept="1nLNNL" id="2QUw51r3q0D" role="3cqZAp">
           <node concept="1nLNMm" id="2QUw51r3q0E" role="1nLNNK">
             <node concept="3xSepi" id="4LZNkDAkE6s" role="3xSepv">
+              <node concept="3Aq9E8" id="4PpMPs5nANa" role="3xSepj">
+                <node concept="3I6sU6" id="4PpMPs5nANb" role="3Ip0Jz">
+                  <node concept="3I6s7M" id="4PpMPs5nANc" role="3I6sU7">
+                    <node concept="3wWvb2" id="4PpMPs5nANd" role="3I6s78">
+                      <node concept="2OqwBi" id="4PpMPs5nANe" role="3wWo3s">
+                        <node concept="1Ft4W6" id="4PpMPs5nANf" role="2Oq$k0">
+                          <node concept="a7P8L" id="4PpMPs5nANg" role="1FtiSR">
+                            <ref role="a7OzE" node="4LZNkDAjSjF" resolve="Iterator" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="4PpMPs5nANh" role="2OqNvi">
+                          <ref role="37wK5l" to="n2i4:4LZNkDAcRp3" resolve="next" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3Aq9E8" id="4LZNkDAkEPk" role="3xSepj">
                 <node concept="3I6sU6" id="4LZNkDAkEPl" role="3Ip0Jz">
                   <node concept="3I6s7M" id="4LZNkDAkE9y" role="3I6sU7">
