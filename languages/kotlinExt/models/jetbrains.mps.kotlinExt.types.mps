@@ -47,9 +47,10 @@
     <import index="2q9i" ref="r:764c4c95-d567-4a0e-99be-3892becb007f(jetbrains.mps.kotlin.api.members)" />
     <import index="nww" ref="r:f44f82b0-1fd9-4105-a80c-2fa6e5033003(jetbrains.mps.kotlin.signatures)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
-    <import index="rgyg" ref="r:2571c433-57ab-49d1-963f-26f359563c89(jetbrains.mps.coderules.typeflow.entries)" />
-    <import index="kt7d" ref="r:9e9a0657-8aed-4bdb-aa93-cdc3c0022396(jetbrains.mps.coderules.typeflow.control.smartcast)" />
-    <import index="n2i4" ref="r:77da3ba1-cfaf-4222-a21c-27b3c351365c(jetbrains.mps.coderules.typeflow.entries.newTest)" />
+    <import index="rgyg" ref="r:2571c433-57ab-49d1-963f-26f359563c89(jetbrains.mps.coderules.typeflow.builder)" />
+    <import index="kt7d" ref="r:9e9a0657-8aed-4bdb-aa93-cdc3c0022396(jetbrains.mps.coderules.typeflow.smartcast)" />
+    <import index="n2i4" ref="r:77da3ba1-cfaf-4222-a21c-27b3c351365c(jetbrains.mps.coderules.typeflow.nodes)" />
+    <import index="kbc3" ref="r:5e247f33-1c7a-4a36-868a-c3c35a269aa5(jetbrains.mps.coderules.typeflow.debug)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -13783,20 +13784,30 @@
       <node concept="3clFbS" id="7RZWrHVay$l" role="3hEL4E">
         <node concept="3clFbJ" id="5aV8Unb6mrl" role="3cqZAp">
           <node concept="3clFbS" id="5aV8Unb6mrn" role="3clFbx">
-            <node concept="3clFbF" id="67WSUY2uOij" role="3cqZAp">
-              <node concept="2OqwBi" id="67WSUY2uOrZ" role="3clFbG">
-                <node concept="3hN9Ij" id="67WSUY2uOih" role="2Oq$k0">
-                  <ref role="3hLkJx" node="67WSUY2uNuM" resolve="dataflowBranch" />
-                </node>
-                <node concept="liA8E" id="67WSUY2uOEc" role="2OqNvi">
-                  <ref role="37wK5l" to="rgyg:7FvwziZwWnY" resolve="addNext" />
-                  <node concept="2OqwBi" id="67WSUY2uPtg" role="37wK5m">
-                    <node concept="3hN9Ij" id="67WSUY2uOIG" role="2Oq$k0">
-                      <ref role="3hLkJx" node="7RZWrHVay_c" resolve="children" />
+            <node concept="3clFbJ" id="4PpMPs6hIbl" role="3cqZAp">
+              <node concept="3clFbS" id="4PpMPs6hIbn" role="3clFbx">
+                <node concept="3clFbF" id="67WSUY2uOij" role="3cqZAp">
+                  <node concept="2OqwBi" id="67WSUY2uOrZ" role="3clFbG">
+                    <node concept="3hN9Ij" id="67WSUY2uOih" role="2Oq$k0">
+                      <ref role="3hLkJx" node="67WSUY2uNuM" resolve="dataflowBranch" />
                     </node>
-                    <node concept="ANE8D" id="67WSUY2uPUI" role="2OqNvi" />
+                    <node concept="liA8E" id="67WSUY2uOEc" role="2OqNvi">
+                      <ref role="37wK5l" to="rgyg:7FvwziZwWnY" resolve="addNext" />
+                      <node concept="2OqwBi" id="67WSUY2uPtg" role="37wK5m">
+                        <node concept="3hN9Ij" id="67WSUY2uOIG" role="2Oq$k0">
+                          <ref role="3hLkJx" node="7RZWrHVay_c" resolve="children" />
+                        </node>
+                        <node concept="ANE8D" id="67WSUY2uPUI" role="2OqNvi" />
+                      </node>
+                      <node concept="3clFbT" id="4LZNkD_WAJS" role="37wK5m" />
+                    </node>
                   </node>
-                  <node concept="3clFbT" id="4LZNkD_WAJS" role="37wK5m" />
+                </node>
+              </node>
+              <node concept="3y3z36" id="4PpMPs6hIvH" role="3clFbw">
+                <node concept="10Nm6u" id="4PpMPs6hICJ" role="3uHU7w" />
+                <node concept="3hN9Ij" id="4PpMPs6hIew" role="3uHU7B">
+                  <ref role="3hLkJx" node="67WSUY2uNuM" resolve="dataflowBranch" />
                 </node>
               </node>
             </node>
@@ -34028,7 +34039,6 @@
     <node concept="1nLNMY" id="eMKlnF$erS" role="1nK1Vg">
       <property role="TrG5h" value="ifCondition" />
       <node concept="3clFbS" id="eMKlnF$erT" role="1nLNMH">
-        <node concept="3clFbH" id="4XaBo_Yuyth" role="3cqZAp" />
         <node concept="3cpWs8" id="67WSUY2s9h_" role="3cqZAp">
           <node concept="3cpWsn" id="67WSUY2s9hA" role="3cpWs9">
             <property role="TrG5h" value="nodeFlow" />
@@ -43642,6 +43652,9 @@
                                 <node concept="3A2sRY" id="28Q2rIHqT6p" role="3jicU7">
                                   <ref role="3A2yKK" node="7gOZMBfzixQ" resolve="mlp" />
                                 </node>
+                                <node concept="37vLTw" id="4PpMPs6hHiW" role="3jicU7">
+                                  <ref role="3cqZAo" node="67WSUY2s9r4" resolve="mainBranch" />
+                                </node>
                                 <node concept="a7P8L" id="28Q2rIHqT6q" role="3jm6SO">
                                   <ref role="a7OzE" node="28Q2rIHqPe$" resolve="Type" />
                                 </node>
@@ -50043,24 +50056,6 @@
         <node concept="1nLNNL" id="2QUw51r3q0D" role="3cqZAp">
           <node concept="1nLNMm" id="2QUw51r3q0E" role="1nLNNK">
             <node concept="3xSepi" id="4LZNkDAkE6s" role="3xSepv">
-              <node concept="3Aq9E8" id="4PpMPs5nANa" role="3xSepj">
-                <node concept="3I6sU6" id="4PpMPs5nANb" role="3Ip0Jz">
-                  <node concept="3I6s7M" id="4PpMPs5nANc" role="3I6sU7">
-                    <node concept="3wWvb2" id="4PpMPs5nANd" role="3I6s78">
-                      <node concept="2OqwBi" id="4PpMPs5nANe" role="3wWo3s">
-                        <node concept="1Ft4W6" id="4PpMPs5nANf" role="2Oq$k0">
-                          <node concept="a7P8L" id="4PpMPs5nANg" role="1FtiSR">
-                            <ref role="a7OzE" node="4LZNkDAjSjF" resolve="Iterator" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="4PpMPs5nANh" role="2OqNvi">
-                          <ref role="37wK5l" to="n2i4:4LZNkDAcRp3" resolve="next" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3Aq9E8" id="4LZNkDAkEPk" role="3xSepj">
                 <node concept="3I6sU6" id="4LZNkDAkEPl" role="3Ip0Jz">
                   <node concept="3I6s7M" id="4LZNkDAkE9y" role="3I6sU7">
@@ -72191,7 +72186,7 @@
         </node>
       </node>
       <node concept="3hPv5a" id="67WSUY2HsZC" role="3hP23H">
-        <property role="TrG5h" value="dataflowNode" />
+        <property role="TrG5h" value="anchor" />
         <node concept="3uibUv" id="67WSUY2Ht0h" role="3hPmi9">
           <ref role="3uigEE" to="n2i4:5zUhwJfNQMZ" resolve="DataflowNode" />
         </node>
@@ -72266,6 +72261,22 @@
         <node concept="3clFbH" id="4LZNkDB3j0q" role="3cqZAp" />
         <node concept="3clFbJ" id="73s7TtKR3tv" role="3cqZAp">
           <node concept="3clFbS" id="73s7TtKR3tx" role="3clFbx">
+            <node concept="3SKdUt" id="4PpMPs6$N9P" role="3cqZAp">
+              <node concept="1PaTwC" id="4PpMPs6$N9Q" role="1aUNEU">
+                <node concept="3oM_SD" id="4PpMPs6$Nbz" role="1PaTwD">
+                  <property role="3oM_SC" value="Ensure" />
+                </node>
+                <node concept="3oM_SD" id="4PpMPs6$Nb_" role="1PaTwD">
+                  <property role="3oM_SC" value="parent" />
+                </node>
+                <node concept="3oM_SD" id="4PpMPs6$NfM" role="1PaTwD">
+                  <property role="3oM_SC" value="dataflow" />
+                </node>
+                <node concept="3oM_SD" id="4PpMPs6$NbC" role="1PaTwD">
+                  <property role="3oM_SC" value="computed" />
+                </node>
+              </node>
+            </node>
             <node concept="3Aqczg" id="4LZNkDAl1IK" role="3cqZAp">
               <node concept="3Aqt3T" id="4LZNkDAl1IJ" role="3Aqpz8">
                 <ref role="3AqCNq" node="4LZNkD_XWBL" resolve="collectDataflow" />
@@ -72363,19 +72374,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3Aqczg" id="4LZNkDAkPdC" role="3cqZAp">
-              <node concept="3Aqt3T" id="4LZNkDAkPdB" role="3Aqpz8">
-                <ref role="3AqCNq" node="4LZNkD_XWBL" resolve="collectDataflow" />
-                <node concept="37jhX" id="4LZNkDAkPfU" role="3AunhB">
-                  <node concept="3hN9Ij" id="4LZNkDAkPfS" role="37jj2">
-                    <ref role="3hLkJx" node="73s7TtK_J_S" resolve="varRef" />
-                  </node>
-                </node>
-                <node concept="a7P8L" id="4LZNkDAkQ59" role="3AunhB">
-                  <ref role="a7OzE" node="4LZNkDAkPm7" resolve="Dataflow" />
-                </node>
-              </node>
-            </node>
             <node concept="3Aqczg" id="4LZNkDAkQgz" role="3cqZAp">
               <node concept="3A8Hvi" id="4LZNkDAkQgt" role="3Aqpz8">
                 <node concept="a7P8L" id="4LZNkDAkQii" role="3A8wtg">
@@ -72386,14 +72384,14 @@
                     <node concept="1pGfFk" id="4LZNkDAkS2D" role="2ShVmc">
                       <property role="373rjd" value="true" />
                       <ref role="37wK5l" to="kt7d:4LZNkDAi5cT" resolve="SmartCastDataIterator" />
-                      <node concept="2OqwBi" id="4LZNkDAkSag" role="37wK5m">
-                        <node concept="1Ft4W6" id="4LZNkDAkS4b" role="2Oq$k0">
-                          <node concept="a7P8L" id="4LZNkDAkS4a" role="1FtiSR">
-                            <ref role="a7OzE" node="4LZNkDAkPm7" resolve="Dataflow" />
+                      <node concept="2ShNRf" id="4PpMPs5$ZjK" role="37wK5m">
+                        <node concept="2HTt$P" id="4PpMPs5_1N_" role="2ShVmc">
+                          <node concept="3uibUv" id="4PpMPs5_1Rg" role="2HTBi0">
+                            <ref role="3uigEE" to="n2i4:5zUhwJfNQMZ" resolve="DataflowNode" />
                           </node>
-                        </node>
-                        <node concept="2OwXpG" id="4LZNkDAkSsf" role="2OqNvi">
-                          <ref role="2Oxat5" to="n2i4:5zUhwJfNRqO" resolve="previous" />
+                          <node concept="3hN9Ij" id="4PpMPs5IutX" role="2HTEbv">
+                            <ref role="3hLkJx" node="67WSUY2HsZC" resolve="anchor" />
+                          </node>
                         </node>
                       </node>
                       <node concept="2OqwBi" id="73s7TtKR0Kw" role="37wK5m">
@@ -72641,11 +72639,17 @@
         </node>
       </node>
       <node concept="3uniRu" id="4LZNkDAkPm6" role="3hEOkk">
-        <node concept="aZer4" id="4LZNkDAkPm7" role="3XD1gS">
-          <property role="TrG5h" value="Dataflow" />
-        </node>
         <node concept="aZer4" id="4LZNkDAl1Wf" role="3XD1gS">
           <property role="TrG5h" value="_RootDataflow" />
+        </node>
+        <node concept="aZer4" id="4PpMPs5$W_B" role="3XD1gS">
+          <property role="TrG5h" value="ParentFlow" />
+        </node>
+        <node concept="aZer4" id="4PpMPs5YDFc" role="3XD1gS">
+          <property role="TrG5h" value="ParentFlow2" />
+        </node>
+        <node concept="aZer4" id="4PpMPs5YDFm" role="3XD1gS">
+          <property role="TrG5h" value="ParentFlow3" />
         </node>
         <node concept="3uibUv" id="4LZNkDAkPsV" role="3vLBG7">
           <ref role="3uigEE" to="n2i4:5zUhwJfNRpJ" resolve="NodeControlFlow" />
@@ -73680,6 +73684,20 @@
                       <ref role="3AqCNq" node="4LZNkDA6ika" resolve="evaluateMissingChildren" />
                       <node concept="a7P8L" id="4PpMPs4Xq_Q" role="3AunhB">
                         <ref role="a7OzE" node="4LZNkDA6w$W" resolve="Iterator" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3xSepi" id="4PpMPs6S7Go" role="3xSepv">
+              <node concept="3Aq9E8" id="4PpMPs6S7Gp" role="3xSepj">
+                <node concept="3I6sU6" id="4PpMPs6S7Gq" role="3Ip0Jz">
+                  <node concept="3I6s7M" id="4PpMPs6S7Pk" role="3I6sU7">
+                    <node concept="1lHd6T" id="4PpMPs6S7Pj" role="3I6s78">
+                      <property role="1lHdp1" value="4jcOV4hu0nx/WARN" />
+                      <node concept="Xl_RD" id="4PpMPs6S7Pt" role="1ljv2e">
+                        <property role="Xl_RC" value="dataflow evaluation ran into an error" />
                       </node>
                     </node>
                   </node>
