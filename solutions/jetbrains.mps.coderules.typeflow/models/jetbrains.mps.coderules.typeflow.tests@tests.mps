@@ -711,13 +711,8 @@
             <node concept="2ShNRf" id="4PpMPs5jVv6" role="33vP2m">
               <node concept="1pGfFk" id="4PpMPs5jVi1" role="2ShVmc">
                 <ref role="37wK5l" to="kt7d:4LZNkDAi5cT" resolve="SmartCastDataIterator" />
-                <node concept="2OqwBi" id="4PpMPs5jVZ_" role="37wK5m">
-                  <node concept="37vLTw" id="4PpMPs5jVGo" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4PpMPs5jCcD" resolve="anchor" />
-                  </node>
-                  <node concept="liA8E" id="4PpMPs5jWmN" role="2OqNvi">
-                    <ref role="37wK5l" to="n2i4:5zUhwJfNQRm" resolve="getPrevious" />
-                  </node>
+                <node concept="37vLTw" id="4PpMPs5jVGo" role="37wK5m">
+                  <ref role="3cqZAo" node="4PpMPs5jCcD" resolve="anchor" />
                 </node>
                 <node concept="3xONca" id="4PpMPs5jYtv" role="37wK5m">
                   <ref role="3xOPvv" node="4PpMPs5fLR7" resolve="decl" />
@@ -742,7 +737,7 @@
               <ref role="3cqZAo" node="4PpMPs5jU64" resolve="smartCastIterator" />
             </node>
             <node concept="liA8E" id="4PpMPs5kcum" role="2OqNvi">
-              <ref role="37wK5l" to="n2i4:4LZNkDAcRp3" resolve="next" />
+              <ref role="37wK5l" to="kt7d:1r6GceDRa8P" resolve="next" />
             </node>
           </node>
           <node concept="37vLTw" id="4PpMPs5kcun" role="3tpDZB">
@@ -765,7 +760,7 @@
               <ref role="3cqZAo" node="4PpMPs5jU64" resolve="smartCastIterator" />
             </node>
             <node concept="liA8E" id="4PpMPs5k8IK" role="2OqNvi">
-              <ref role="37wK5l" to="n2i4:4LZNkDAcRp3" resolve="next" />
+              <ref role="37wK5l" to="kt7d:1r6GceDRa8P" resolve="next" />
             </node>
           </node>
           <node concept="37vLTw" id="4PpMPs5k9sM" role="3tpDZB">
