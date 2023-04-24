@@ -206,6 +206,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -2434,8 +2435,11 @@
               <node concept="Xl_RD" id="6WkzEbYBF2z" role="3uHU7B">
                 <property role="Xl_RC" value="node[" />
               </node>
-              <node concept="37vLTw" id="6WkzEbYBFxr" role="3uHU7w">
-                <ref role="3cqZAo" node="6WkzEbYBDdP" resolve="myNode" />
+              <node concept="2OqwBi" id="6WkzEbZ4tYt" role="3uHU7w">
+                <node concept="37vLTw" id="6WkzEbYBFxr" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6WkzEbYBDdP" resolve="myNode" />
+                </node>
+                <node concept="2Iv5rx" id="6WkzEbZ4tYu" role="2OqNvi" />
               </node>
             </node>
           </node>

@@ -229,7 +229,6 @@
         <reference id="2324909103760693884" name="target" index="KYurZ" />
       </concept>
       <concept id="2936055411798373620" name="jetbrains.mps.kotlin.structure.OpenInheritanceModifier" flags="ng" index="1XD08z" />
-      <concept id="2936055411798373619" name="jetbrains.mps.kotlin.structure.FinalInheritanceModifier" flags="ng" index="1XD08$" />
       <concept id="2936055411798373627" name="jetbrains.mps.kotlin.structure.StringLiteral" flags="ng" index="1XD08G">
         <child id="6389031306614148417" name="lines" index="Df6Hu" />
       </concept>
@@ -1140,7 +1139,6 @@
     <node concept="1XD0bz" id="2CxlH6FzmkS" role="KS$fE">
       <property role="3qOnjd" value="true" />
       <property role="TrG5h" value="open" />
-      <node concept="1XD08$" id="2CxlH6FzmkU" role="ICcUN" />
       <node concept="UZU4S" id="2CxlH6FzpKp" role="THmaL">
         <ref role="UZU4V" node="1ACpgrw7tPB" resolve="content" />
       </node>

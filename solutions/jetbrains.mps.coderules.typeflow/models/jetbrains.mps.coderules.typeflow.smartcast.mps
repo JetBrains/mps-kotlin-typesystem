@@ -204,6 +204,7 @@
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -386,8 +387,11 @@
                   <node concept="Xl_RD" id="4PpMPs5jtNG" role="3uHU7B">
                     <property role="Xl_RC" value="smart cast[" />
                   </node>
-                  <node concept="37vLTw" id="4PpMPs5jv1k" role="3uHU7w">
-                    <ref role="3cqZAo" node="7FvwziZwIOv" resolve="variableDeclaration" />
+                  <node concept="2OqwBi" id="6WkzEbZ4tK6" role="3uHU7w">
+                    <node concept="37vLTw" id="4PpMPs5jv1k" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7FvwziZwIOv" resolve="variableDeclaration" />
+                    </node>
+                    <node concept="2Iv5rx" id="6WkzEbZ4tK7" role="2OqNvi" />
                   </node>
                 </node>
               </node>
