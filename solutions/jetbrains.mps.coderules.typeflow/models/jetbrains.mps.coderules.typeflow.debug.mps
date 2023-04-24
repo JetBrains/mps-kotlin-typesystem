@@ -579,8 +579,14 @@
                       <node concept="37vLTw" id="4PpMPs5P7Ju" role="37wK5m">
                         <ref role="3cqZAo" node="4PpMPs5v8Xl" resolve="stringBuilder" />
                       </node>
-                      <node concept="37vLTw" id="4PpMPs6$ujZ" role="37wK5m">
-                        <ref role="3cqZAo" node="4PpMPs6$tbC" resolve="visited" />
+                      <node concept="2ShNRf" id="6WkzEbXRAL_" role="37wK5m">
+                        <node concept="1pGfFk" id="6WkzEbXRATe" role="2ShVmc">
+                          <property role="373rjd" value="true" />
+                          <ref role="37wK5l" to="33ny:~HashSet.&lt;init&gt;(java.util.Collection)" resolve="HashSet" />
+                          <node concept="37vLTw" id="6WkzEbXRAUo" role="37wK5m">
+                            <ref role="3cqZAo" node="4PpMPs6$tbC" resolve="visited" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
