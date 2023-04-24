@@ -9,6 +9,8 @@
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
+    <use id="ad93155d-79b2-4759-b10c-55123e763903" name="jetbrains.mps.lang.messages" version="0" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="6exd" ref="r:0f9b1fb3-00f9-4480-b235-1a906a087ab2(jetbrains.mps.logic.dataform)" />
@@ -1617,6 +1619,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6WkzEbYCajV" role="3cqZAp" />
         <node concept="2$JKZl" id="1r6GceDRlBL" role="3cqZAp">
           <node concept="3clFbS" id="1r6GceDRlBN" role="2LFqv$">
             <node concept="3cpWs8" id="6WkzEbXAJae" role="3cqZAp">
@@ -1701,6 +1704,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6WkzEbYCayX" role="3cqZAp" />
         <node concept="3cpWs6" id="1r6GceDRBfl" role="3cqZAp">
           <node concept="1rXfSq" id="1r6GceDRCNq" role="3cqZAk">
             <ref role="37wK5l" node="1r6GceDRoo7" resolve="isCurrentValid" />
@@ -1785,22 +1789,25 @@
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbH" id="6WkzEbXqa6S" role="3cqZAp" />
-        <node concept="3clFbF" id="6WkzEbXqa7J" role="3cqZAp">
-          <node concept="37vLTI" id="6WkzEbXqa7K" role="3clFbG">
-            <node concept="Rm8GO" id="6WkzEbXqaSx" role="37vLTx">
-              <ref role="Rm8GQ" node="6WkzEbXpZXW" resolve="ALL" />
-              <ref role="1Px2BO" node="6WkzEbXpYt1" resolve="VisitStatus" />
+          <node concept="9aQIb" id="6WkzEbYH4NS" role="9aQIa">
+            <node concept="3clFbS" id="6WkzEbYH4NT" role="9aQI4">
+              <node concept="3clFbF" id="6WkzEbXqa7J" role="3cqZAp">
+                <node concept="37vLTI" id="6WkzEbXqa7K" role="3clFbG">
+                  <node concept="Rm8GO" id="6WkzEbXqaSx" role="37vLTx">
+                    <ref role="Rm8GQ" node="6WkzEbXpZXW" resolve="ALL" />
+                    <ref role="1Px2BO" node="6WkzEbXpYt1" resolve="VisitStatus" />
+                  </node>
+                  <node concept="37vLTw" id="6WkzEbXqa7M" role="37vLTJ">
+                    <ref role="3cqZAo" node="6WkzEbXpaEt" resolve="currentVisitStatus" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="1r6GceDS74s" role="3cqZAp">
+                <node concept="37vLTw" id="6WkzEbXHlJR" role="3cqZAk">
+                  <ref role="3cqZAo" node="6WkzEbXs3nE" resolve="FORK" />
+                </node>
+              </node>
             </node>
-            <node concept="37vLTw" id="6WkzEbXqa7M" role="37vLTJ">
-              <ref role="3cqZAo" node="6WkzEbXpaEt" resolve="currentVisited" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="1r6GceDS74s" role="3cqZAp">
-          <node concept="37vLTw" id="6WkzEbXHlJR" role="3cqZAk">
-            <ref role="3cqZAo" node="6WkzEbXs3nE" resolve="FORK" />
           </node>
         </node>
       </node>
