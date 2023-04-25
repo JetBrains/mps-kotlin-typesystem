@@ -651,24 +651,9 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="6WkzEbZ4yQc" role="3bR37C">
-          <node concept="3bR9La" id="6WkzEbZ4yQd" role="1SiIV1">
-            <ref role="3bR37D" to="zqd8:7BVjoXzUx$V" resolve="jetbrains.mps.logic.runtime" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6WkzEbZ4yQe" role="3bR37C">
-          <node concept="3bR9La" id="6WkzEbZ4yQf" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6WkzEbZ4yQg" role="3bR37C">
           <node concept="3bR9La" id="6WkzEbZ4yQh" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6WkzEbZ4yQi" role="3bR37C">
-          <node concept="3bR9La" id="6WkzEbZ4yQj" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
         <node concept="1SiIV0" id="6WkzEbZ4yQk" role="3bR37C">

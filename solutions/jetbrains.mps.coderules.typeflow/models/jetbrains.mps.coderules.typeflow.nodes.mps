@@ -11,8 +11,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="rgyg" ref="r:2571c433-57ab-49d1-963f-26f359563c89(jetbrains.mps.coderules.typeflow.builder)" />
-    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -191,7 +189,6 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
@@ -205,7 +202,6 @@
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
       <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
@@ -510,19 +506,7 @@
       </node>
       <node concept="3Tm1VV" id="5zUhwJfNRvf" role="1B3o_S" />
     </node>
-    <node concept="312cEg" id="4LZNkD_WsKi" role="jymVt">
-      <property role="TrG5h" value="myStandaloneChildren" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="4LZNkD_WsKj" role="1B3o_S" />
-      <node concept="2I9FWS" id="4LZNkD_WsKl" role="1tU5fm" />
-      <node concept="z59LJ" id="4PpMPs5v1dB" role="lGtFl">
-        <node concept="TZ5HA" id="4PpMPs5v1dC" role="TZ5H$">
-          <node concept="1dT_AC" id="4PpMPs5v1dD" role="1dT_Ay">
-            <property role="1dT_AB" value="TODO remove that and replace with a &quot;dependency&quot; constraint instead?" />
-          </node>
-        </node>
-      </node>
-    </node>
+    <node concept="2tJIrI" id="7e2hTcapLT8" role="jymVt" />
     <node concept="312cEg" id="4LZNkD_Y3b9" role="jymVt">
       <property role="TrG5h" value="myToSubstitute" />
       <property role="3TUv4t" value="true" />
@@ -584,16 +568,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4LZNkD_WsKm" role="3cqZAp">
-          <node concept="37vLTI" id="4LZNkD_WsKo" role="3clFbG">
-            <node concept="37vLTw" id="4LZNkD_WsKr" role="37vLTJ">
-              <ref role="3cqZAo" node="4LZNkD_WsKi" resolve="myStandaloneChildren" />
-            </node>
-            <node concept="37vLTw" id="4LZNkD_WsKs" role="37vLTx">
-              <ref role="3cqZAo" node="4LZNkD_Wou_" resolve="standaloneChildren" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="4LZNkD_Y3be" role="3cqZAp">
           <node concept="37vLTI" id="4LZNkD_Y3bg" role="3clFbG">
             <node concept="37vLTw" id="4LZNkD_Y3bj" role="37vLTJ">
@@ -631,10 +605,6 @@
             <ref role="3uigEE" node="7FvwziZxbjt" resolve="EvaluateNode" />
           </node>
         </node>
-      </node>
-      <node concept="37vLTG" id="4LZNkD_Wou_" role="3clF46">
-        <property role="TrG5h" value="standaloneChildren" />
-        <node concept="2I9FWS" id="4LZNkD_WsJ5" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="4LZNkDA6d_R" role="jymVt" />
