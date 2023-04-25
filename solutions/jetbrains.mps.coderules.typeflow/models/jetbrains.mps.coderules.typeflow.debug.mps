@@ -35,6 +35,7 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -426,6 +427,18 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="7e2hTccHTYb" role="3cqZAp">
+          <node concept="3clFbS" id="7e2hTccHTYd" role="3clFbx">
+            <node concept="3cpWs6" id="7e2hTccI3mz" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="7e2hTccHYi8" role="3clFbw">
+            <node concept="10Nm6u" id="7e2hTccHZeN" role="3uHU7w" />
+            <node concept="37vLTw" id="7e2hTccHV4D" role="3uHU7B">
+              <ref role="3cqZAo" node="4PpMPs5v8Xh" resolve="node" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7e2hTccI4c1" role="3cqZAp" />
         <node concept="3clFbJ" id="4PpMPs6$vrm" role="3cqZAp">
           <node concept="3clFbS" id="4PpMPs6$vro" role="3clFbx">
             <node concept="3clFbF" id="4PpMPs6$zqP" role="3cqZAp">
