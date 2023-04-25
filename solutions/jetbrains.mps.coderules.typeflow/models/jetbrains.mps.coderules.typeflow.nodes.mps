@@ -654,9 +654,6 @@
         </node>
         <node concept="3clFbJ" id="6WkzEbY4w4u" role="3cqZAp">
           <node concept="22lmx$" id="6WkzEbY5Fja" role="3clFbw">
-            <node concept="37vLTw" id="6WkzEbY5H5S" role="3uHU7w">
-              <ref role="3cqZAo" node="6WkzEbY4tyn" resolve="simplified" />
-            </node>
             <node concept="3fqX7Q" id="6WkzEbY5ed8" role="3uHU7B">
               <node concept="2OqwBi" id="6WkzEbY5eda" role="3fr31v">
                 <node concept="37vLTw" id="6WkzEbY5edb" role="2Oq$k0">
@@ -666,6 +663,9 @@
                   <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
                 </node>
               </node>
+            </node>
+            <node concept="37vLTw" id="6WkzEbY5H5S" role="3uHU7w">
+              <ref role="3cqZAo" node="6WkzEbY4tyn" resolve="simplified" />
             </node>
           </node>
           <node concept="3clFbS" id="6WkzEbY4w4w" role="3clFbx">
