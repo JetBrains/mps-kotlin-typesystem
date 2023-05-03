@@ -7352,5 +7352,36 @@
       </node>
     </node>
   </node>
+  <node concept="1XD0fY" id="5LR8ISgQSHl">
+    <property role="TrG5h" value="_testbench" />
+    <node concept="eKYAL" id="5LR8ISgQSHm" role="1XD0Tu" />
+    <node concept="1XD0bz" id="5LR8ISgQSHr" role="1XD0Tu">
+      <property role="TrG5h" value="dataflow" />
+      <node concept="1XD0b9" id="5LR8ISgR2Lw" role="THmaL">
+        <node concept="21Pkhz" id="5LR8ISgRhj7" role="1XD00_">
+          <node concept="1XD088" id="5LR8ISgRhIj" role="3CdAat">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+          </node>
+          <node concept="UZU4S" id="5LR8ISgRbjA" role="21Pmik">
+            <ref role="UZU4V" node="5LR8ISgR2L_" resolve="a" />
+          </node>
+        </node>
+        <node concept="1XD0kK" id="5LR8ISgRvOF" role="1XD00I">
+          <node concept="1XD0k7" id="5LR8ISgRE55" role="THmaL">
+            <property role="1XD01k" value="3" />
+          </node>
+        </node>
+        <node concept="UZU4S" id="5LR8ISgRAEh" role="THmaL">
+          <ref role="UZU4V" node="5LR8ISgR2L_" resolve="a" />
+        </node>
+      </node>
+      <node concept="1XD0bi" id="5LR8ISgR2L_" role="1XbAXm">
+        <property role="TrG5h" value="a" />
+        <node concept="1XD088" id="5LR8ISgR4T4" role="37iW8f">
+          <ref role="1SePDO" to="0:~kotlin/Any" resolve="Any" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
