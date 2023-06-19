@@ -5652,7 +5652,7 @@
       <node concept="1XD0l2" id="7ZA3QJnAjU6" role="2BPcuh" />
       <node concept="1XD0eE" id="7ZA3QJnAjUG" role="KS$fE">
         <node concept="1XD08x" id="7ZA3QJnAjV9" role="AST3G">
-          <ref role="KYurZ" node="7ZA3QJnAjSR" resolve="ValueHolder" />
+          <ref role="KYurZ" node="7ZA3QJnAjSR" resolve="CompanionValueHolder" />
           <node concept="1XD088" id="7ZA3QJnAjVb" role="TPadX">
             <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
           </node>
