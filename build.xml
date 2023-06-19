@@ -64,7 +64,7 @@
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
         <idea-version since-build="223.0" />
-        <change-notes><![CDATA[<ul><li>Handling of implicit member receivers (implicit 'this', companion)</li><li>Fix member references (typing of operand, support of receivers)</li></ul>]]></change-notes>
+        <change-notes><![CDATA[<ul><li>Fix least upper bound for types with 2+ type parameters</li><li>Better typing for when expression (else branch, variable declaration)</li><li>Fix lambda deconstructing parameters</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -87,7 +87,7 @@
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
         <idea-version since-build="223.0" />
-        <change-notes><![CDATA[<ul><li>Handling of implicit member receivers (implicit 'this', companion)</li><li>Fix member references (typing of operand, support of receivers)</li></ul>]]></change-notes>
+        <change-notes><![CDATA[<ul><li>Fix least upper bound for types with 2+ type parameters</li><li>Better typing for when expression (else branch, variable declaration)</li><li>Fix lambda deconstructing parameters</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
