@@ -7,6 +7,7 @@
     <devkit ref="3605c367-b661-48bf-8131-d9bd75494e4d(jetbrains.mps.devkit.kotlin)" />
   </languages>
   <imports>
+    <import index="qw9d" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.reflect(jetbrains.mps.kotlin.stdlib/)" />
     <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="1xrd" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.collections(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="s3y3" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.text(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
@@ -6457,6 +6458,7 @@
   </node>
   <node concept="1XD0fY" id="1p9od2I9_XX">
     <property role="TrG5h" value="pairs" />
+    <property role="3GE5qa" value="samples" />
     <node concept="eKYAL" id="1p9od2I9BO_" role="1XD0Tu" />
     <node concept="1XD0bz" id="1p9od2I8SAE" role="1XD0Tu">
       <property role="TrG5h" value="bestMatching" />
@@ -6579,6 +6581,69 @@
       </node>
     </node>
     <node concept="eKYAL" id="1p9od2I9_ZU" role="1XD0Tu" />
+  </node>
+  <node concept="1XD0fY" id="1p9od2I$a39">
+    <property role="3GE5qa" value="samples" />
+    <property role="TrG5h" value="starProjection" />
+    <node concept="eKYAL" id="1p9od2I$aaz" role="1XD0Tu" />
+    <node concept="1XD0bz" id="5b2DnJ7dDSL" role="1XD0Tu">
+      <property role="TrG5h" value="getValue" />
+      <node concept="gXE$l" id="1p9od2I$atV" role="THmaL">
+        <node concept="1PaTwC" id="1p9od2I$atX" role="gXG0x">
+          <node concept="3oM_SD" id="1p9od2I$auA" role="1PaTwD">
+            <property role="3oM_SC" value="test" />
+          </node>
+          <node concept="3oM_SD" id="1p9od2I$auC" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="1p9od2I$auF" role="1PaTwD">
+            <property role="3oM_SC" value="do" />
+          </node>
+          <node concept="3oM_SD" id="1p9od2I$auJ" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="1p9od2I$auO" role="1PaTwD">
+            <property role="3oM_SC" value="face" />
+          </node>
+          <node concept="3oM_SD" id="1p9od2I$auU" role="1PaTwD">
+            <property role="3oM_SC" value="unhandled" />
+          </node>
+          <node concept="3oM_SD" id="1p9od2I$av1" role="1PaTwD">
+            <property role="3oM_SC" value="hierarchy" />
+          </node>
+          <node concept="3oM_SD" id="1p9od2I$av9" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="1p9od2I$avB" role="1PaTwD">
+            <property role="3oM_SC" value="*" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0kn" id="5b2DnJ7dDSN" role="1XPytU" />
+      <node concept="1XD0l2" id="5b2DnJ7dDSO" role="2BPcuh" />
+      <node concept="1XD0bi" id="5b2DnJ7dDTK" role="1XbAXm">
+        <property role="TrG5h" value="prop" />
+        <node concept="1XD088" id="5b2DnJ7dDXO" role="37iW8f">
+          <ref role="1SePDO" to="qw9d:~kotlin/reflect/KProperty" resolve="KProperty" />
+          <node concept="1XD0kq" id="5b2DnJ7dE9y" role="TPadY" />
+        </node>
+      </node>
+      <node concept="1XD088" id="5b2DnJ7dEaG" role="21NdcZ">
+        <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
+      </node>
+      <node concept="1XD0e9" id="5b2DnJ7dEcP" role="THmaL">
+        <node concept="1XD0a7" id="1p9od2I$akA" role="1XD0SB">
+          <node concept="UZU4S" id="1p9od2I$aon" role="1XD07H">
+            <ref role="UZU4V" to="qw9d:~kotlin/reflect/KCallable.name" resolve="name" />
+          </node>
+          <node concept="UZU4S" id="1p9od2I$ahE" role="21Pmik">
+            <ref role="UZU4V" node="5b2DnJ7dDTK" resolve="prop" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD08$" id="11vq$BubPkW" role="ICcUN" />
+    </node>
+    <node concept="eKYAL" id="1p9od2I$a9W" role="1XD0Tu" />
   </node>
 </model>
 
