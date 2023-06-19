@@ -329,7 +329,7 @@
                               <ref role="3cqZAo" node="5g3vQLJRIVw" resolve="call" />
                             </node>
                             <node concept="37vLTw" id="5w5RuSg4JNL" role="37wK5m">
-                              <ref role="3cqZAo" node="5w5RuSg4zIC" resolve="receiverType" />
+                              <ref role="3cqZAo" node="5w5RuSg4zIC" resolve="receiverTypes" />
                             </node>
                             <node concept="37vLTw" id="5g3vQLJS93X" role="37wK5m">
                               <ref role="3cqZAo" node="5g3vQLJRIV$" resolve="candidates" />

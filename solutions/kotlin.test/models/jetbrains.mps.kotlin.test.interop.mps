@@ -574,7 +574,7 @@
       <node concept="1XD08$" id="6e74p5eOM99" role="ICcUN" />
       <node concept="1XD0l2" id="6e74p5eOM9a" role="2BPcuh" />
       <node concept="2yjh30" id="6e74p5eONv4" role="AST3G">
-        <ref role="2yiGb3" node="6e74p5eOLIr" resolve="MultipleConstructroClass" />
+        <ref role="2yiGb3" node="6e74p5eOLIr" resolve="MultipleConstructorClass" />
         <node concept="1XD0eI" id="6e74p5eONFc" role="TWiod">
           <node concept="1XD08G" id="6e74p5eONFb" role="1XD0ZN" />
         </node>
@@ -585,7 +585,7 @@
       <node concept="1XD08$" id="6e74p5eONwD" role="ICcUN" />
       <node concept="1XD0l2" id="6e74p5eONwE" role="2BPcuh" />
       <node concept="2yjh30" id="6e74p5eON_y" role="AST3G">
-        <ref role="2yiGb3" node="6e74p5eOLUE" resolve="MultipleConstructroClass" />
+        <ref role="2yiGb3" node="6e74p5eOLUE" resolve="MultipleConstructorClass" />
         <node concept="1XD0eI" id="6e74p5eONAH" role="TWiod">
           <node concept="1XD0k7" id="6e74p5eONAG" role="1XD0ZN">
             <property role="1XD01k" value="2" />
