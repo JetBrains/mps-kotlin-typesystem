@@ -5510,7 +5510,7 @@
               </node>
               <node concept="1XD0mK" id="13qggQCkY0Z" role="1XD05H">
                 <node concept="1NbEFs" id="13qggQCkYC_" role="1XD0cX">
-                  <ref role="AarEw" to="s3y3:~#kotlin/String.substring(kotlin/Int)" resolve="substring" />
+                  <ref role="AarEw" to="s3y3:~#kotlin/CharSequence.substring(kotlin/Int,kotlin/Int)" resolve="substring" />
                   <node concept="1XD0eI" id="13qggQCkZ6U" role="TWiod">
                     <node concept="1XD0k7" id="13qggQCl1Ne" role="1XD0ZN">
                       <property role="1XD01k" value="2" />
