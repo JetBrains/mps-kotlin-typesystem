@@ -1472,9 +1472,76 @@
         </node>
       </node>
     </node>
+    <node concept="eKYAL" id="1p9od2HTlUE" role="1XD0Tu" />
+    <node concept="1XD0bz" id="1p9od2HTm0X" role="1XD0Tu">
+      <property role="TrG5h" value="multiLambdaParameterInferred" />
+      <node concept="1XD08$" id="1p9od2HTm0Z" role="ICcUN" />
+      <node concept="1XD0l2" id="1p9od2HTm10" role="2BPcuh" />
+      <node concept="1XD0bi" id="1p9od2HTmvn" role="1XbAXm">
+        <property role="TrG5h" value="map" />
+        <node concept="1XD088" id="1p9od2HTmDn" role="37iW8f">
+          <ref role="1SePDO" to="1xrd:~kotlin/collections/Map" resolve="Map" />
+          <node concept="1XD0kr" id="1p9od2HTmOT" role="TPadY">
+            <node concept="1XD088" id="1p9od2HTmOR" role="1XD02C">
+              <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+            </node>
+          </node>
+          <node concept="1XD0kr" id="1p9od2HTn1A" role="TPadY">
+            <node concept="1XD088" id="1p9od2HTn1$" role="1XD02C">
+              <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="TDTJT" id="1p9od2HTrc_" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="1p9od2HTrcA" role="2Rs2$5">
+          <property role="TrG5h" value="listOfString" />
+          <node concept="1XD088" id="1p9od2HWhTU" role="1XD0Z0">
+            <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
+            <node concept="1XD0kr" id="1p9od2HWi1p" role="TPadY">
+              <node concept="1XD088" id="1p9od2HWi1n" role="1XD02C">
+                <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1XD0mK" id="1p9od2HTrmB" role="1XD05H">
+          <node concept="1XD0a7" id="1p9od2HTnro" role="1XD0cX">
+            <node concept="1NbEtQ" id="1p9od2HTnAK" role="1XD07H">
+              <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.map&lt;2&gt;(kotlin/Function1&lt;0,1&gt;)" resolve="map" />
+              <node concept="1XD0f0" id="1p9od2HTnZV" role="1XD06E">
+                <node concept="1XD0aG" id="1p9od2HTnZX" role="21PhDs">
+                  <node concept="2Rs4SG" id="1p9od2HTnZY" role="2Rs2$5">
+                    <property role="TrG5h" value="id" />
+                    <ref role="2Rs3QY" to="1xrd:~#Map.Entry&lt;0,1&gt;.component1&lt;2&gt;()" resolve="component1" />
+                  </node>
+                  <node concept="2Rs4SG" id="1p9od2HTnZZ" role="2Rs2$5">
+                    <property role="TrG5h" value="someString" />
+                    <ref role="2Rs3QY" to="1xrd:~#Map.Entry&lt;0,1&gt;.component2&lt;2&gt;()" resolve="component2" />
+                  </node>
+                </node>
+                <node concept="UZU4S" id="1p9od2HTo00" role="THmaL">
+                  <ref role="UZU4V" node="1p9od2HTnZZ" resolve="someString" />
+                </node>
+              </node>
+            </node>
+            <node concept="1XD0a7" id="1p9od2HTo$p" role="21Pmik">
+              <node concept="UZU4S" id="1p9od2HToOf" role="1XD07H">
+                <ref role="UZU4V" to="1xrd:~kotlin/collections/Map.entries" resolve="entries" />
+              </node>
+              <node concept="UZU4S" id="1p9od2HTndV" role="21Pmik">
+                <ref role="UZU4V" node="1p9od2HTmvn" resolve="map" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1XD0fY" id="7ZP$ZPvH8TZ">
     <property role="TrG5h" value="lambdas" />
+    <property role="3GE5qa" value="expressions" />
     <node concept="eKYAL" id="4t0pAlYhvbf" role="1XD0Tu" />
     <node concept="1XXB1C" id="2x9yl3xwPr7" role="1XD0Tu">
       <property role="3Dur9a" value="true" />
@@ -1746,6 +1813,7 @@
   </node>
   <node concept="1XD0fY" id="1azQtFlNsbZ">
     <property role="TrG5h" value="operators" />
+    <property role="3GE5qa" value="expressions" />
     <node concept="1XD0aY" id="788DB8wBSMm" role="1XD0Tu">
       <property role="TrG5h" value="CustomNumber" />
       <node concept="1XD0l2" id="788DB8wBSMu" role="2BPcuh" />
@@ -3606,6 +3674,7 @@
   </node>
   <node concept="1XD0fY" id="4sGtiLfLmHj">
     <property role="TrG5h" value="numbers" />
+    <property role="3GE5qa" value="expressions" />
     <node concept="eKYAL" id="4sGtiLfLpdb" role="1XD0Tu" />
     <node concept="1XD0bz" id="4sGtiLfLpe4" role="1XD0Tu">
       <property role="TrG5h" value="expressions" />
@@ -3798,6 +3867,7 @@
   </node>
   <node concept="1XD0fY" id="5aV8UnaXyXj">
     <property role="TrG5h" value="returns" />
+    <property role="3GE5qa" value="expressions" />
     <node concept="eKYAL" id="5aV8UnaXyXk" role="1XD0Tu" />
     <node concept="gXE$l" id="5aV8UnaXIur" role="1XD0Tu">
       <node concept="1PaTwC" id="5aV8UnaXIut" role="gXG0x">
@@ -4149,6 +4219,7 @@
   </node>
   <node concept="1XD0fY" id="GCZnN9KUrd">
     <property role="TrG5h" value="integers" />
+    <property role="3GE5qa" value="expressions" />
     <node concept="eKYAL" id="GCZnN9KUre" role="1XD0Tu" />
     <node concept="1XD0bz" id="GCZnN9KUrj" role="1XD0Tu">
       <property role="TrG5h" value="integerLiteralTypes" />
@@ -4844,6 +4915,7 @@
   </node>
   <node concept="1XD0fY" id="3BUBOoX4DZw">
     <property role="TrG5h" value="ambiguousScope" />
+    <property role="3GE5qa" value="scopes" />
     <node concept="eKYAL" id="3BUBOoX4E1t" role="1XD0Tu" />
     <node concept="1XXB1C" id="3BUBOoX4EU4" role="1XD0Tu">
       <property role="TrG5h" value="C1" />
@@ -4920,6 +4992,7 @@
   </node>
   <node concept="1XD0fY" id="5_TE1G$jG8V">
     <property role="TrG5h" value="superConstructors" />
+    <property role="3GE5qa" value="expressions" />
     <node concept="eKYAL" id="5_TE1G$jJw5" role="1XD0Tu" />
     <node concept="1XD0aY" id="5_TE1G$jJwg" role="1XD0Tu">
       <property role="TrG5h" value="TestData" />
@@ -6195,6 +6268,7 @@
   </node>
   <node concept="1XD0fY" id="1p9od2HQX6l">
     <property role="TrG5h" value="whenExpression" />
+    <property role="3GE5qa" value="expressions" />
     <node concept="eKYAL" id="1p9od2HQX6p" role="1XD0Tu" />
     <node concept="1XD0bz" id="1p9od2HQX6x" role="1XD0Tu">
       <property role="TrG5h" value="whenExpression" />
