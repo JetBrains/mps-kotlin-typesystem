@@ -7400,7 +7400,7 @@
           <ref role="AarEw" node="4KPNZJ0El0d" resolve="pub" />
         </node>
         <node concept="UZU4S" id="4KPNZJ0LC0m" role="21Pmik">
-          <ref role="UZU4V" node="4KPNZJ0El1q" resolve="klass" />
+          <ref role="UZU4V" node="4KPNZJ0El1q" resolve="obj" />
         </node>
       </node>
       <node concept="1XD0a7" id="4KPNZJ0Ou5c" role="THmaL">

@@ -876,7 +876,7 @@
       <node concept="1XD0bi" id="2WKiBklFRJQ" role="1XbAXm">
         <property role="TrG5h" value="javaObject" />
         <node concept="2EYIWN" id="2WKiBklFS4_" role="37iW8f">
-          <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="VisibleClass" />
+          <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="TestObject.VisibleClass" />
         </node>
       </node>
     </node>
@@ -889,7 +889,7 @@
         </node>
         <node concept="1XD0em" id="2WKiBklIREl" role="21Pmik">
           <node concept="2EYIWN" id="2WKiBklIREm" role="1XD0Sn">
-            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="VisibleClass" />
+            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="TestObject.VisibleClass" />
           </node>
         </node>
       </node>
@@ -899,7 +899,7 @@
         </node>
         <node concept="1XD0em" id="2WKiBklIQU0" role="21Pmik">
           <node concept="2EYIWN" id="2WKiBklIQTY" role="1XD0Sn">
-            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="VisibleClass" />
+            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="TestObject.VisibleClass" />
           </node>
         </node>
       </node>
@@ -912,7 +912,7 @@
         </node>
         <node concept="1XD0em" id="2WKiBklIRJ9" role="21Pmik">
           <node concept="2EYIWN" id="2WKiBklIRJa" role="1XD0Sn">
-            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="VisibleClass" />
+            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="TestObject.VisibleClass" />
           </node>
         </node>
       </node>
@@ -925,7 +925,7 @@
         </node>
         <node concept="1XD0em" id="2WKiBklIRLL" role="21Pmik">
           <node concept="2EYIWN" id="2WKiBklIRLM" role="1XD0Sn">
-            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="VisibleClass" />
+            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="TestObject.VisibleClass" />
           </node>
         </node>
       </node>
@@ -936,7 +936,7 @@
         </node>
         <node concept="1XD0em" id="2WKiBklIV4O" role="21Pmik">
           <node concept="2EYIWN" id="2WKiBklIV4P" role="1XD0Sn">
-            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="VisibleClass" />
+            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="TestObject.VisibleClass" />
           </node>
         </node>
       </node>
@@ -946,7 +946,7 @@
         </node>
         <node concept="1XD0em" id="2WKiBklIVoY" role="21Pmik">
           <node concept="2EYIWN" id="2WKiBklIVoZ" role="1XD0Sn">
-            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="VisibleClass" />
+            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="TestObject.VisibleClass" />
           </node>
         </node>
       </node>
@@ -959,7 +959,7 @@
         </node>
         <node concept="1XD0em" id="2WKiBklIVs1" role="21Pmik">
           <node concept="2EYIWN" id="2WKiBklIVs2" role="1XD0Sn">
-            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="VisibleClass" />
+            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="TestObject.VisibleClass" />
           </node>
         </node>
       </node>
@@ -972,7 +972,7 @@
         </node>
         <node concept="1XD0em" id="2WKiBklIVvc" role="21Pmik">
           <node concept="2EYIWN" id="2WKiBklIVvd" role="1XD0Sn">
-            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="VisibleClass" />
+            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="TestObject.VisibleClass" />
           </node>
         </node>
       </node>
@@ -1014,7 +1014,7 @@
       <node concept="1XD0bi" id="2WKiBklWVjz" role="1XbAXm">
         <property role="TrG5h" value="javaObject" />
         <node concept="2EYIWN" id="2WKiBklWVj$" role="37iW8f">
-          <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="VisibleClass" />
+          <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="TestObject.VisibleClass" />
         </node>
       </node>
     </node>
@@ -1030,7 +1030,7 @@
         </node>
         <node concept="1XD0em" id="2WKiBklWVjD" role="21Pmik">
           <node concept="2EYIWN" id="2WKiBklWVjE" role="1XD0Sn">
-            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="VisibleClass" />
+            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="TestObject.VisibleClass" />
           </node>
         </node>
       </node>
@@ -1044,7 +1044,7 @@
         </node>
         <node concept="1XD0em" id="2WKiBklWVjW" role="21Pmik">
           <node concept="2EYIWN" id="2WKiBklWVjX" role="1XD0Sn">
-            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="VisibleClass" />
+            <ref role="2EYIUZ" node="2WKiBklFRqA" resolve="TestObject.VisibleClass" />
           </node>
         </node>
       </node>

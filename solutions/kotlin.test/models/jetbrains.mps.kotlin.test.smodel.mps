@@ -1578,7 +1578,7 @@
         <node concept="1XD0bi" id="6CwBo20FR8R" role="1XbAXm">
           <property role="TrG5h" value="concept" />
           <node concept="2RgARU" id="$5Ka6yncL6" role="37iW8f">
-            <ref role="2RgA51" to="tpck:gw2VY9q" />
+            <ref role="2RgA51" to="tpck:gw2VY9q" resolve="BaseConcept" />
           </node>
         </node>
         <node concept="1XD0bi" id="6CwBo20FR8Y" role="1XbAXm">
