@@ -2994,7 +2994,7 @@
         <node concept="1XD08$" id="11vq$BubPks" role="ICcUN" />
         <node concept="21Pki_" id="1qppQtOYBrk" role="THmaL">
           <node concept="giPau" id="1qppQtOYBTL" role="21Pkll">
-            <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+            <ref role="1ap9JL" to="0:~Int.equals(Any?)" resolve="equals" />
             <node concept="1XD0a7" id="1qppQtOYBYL" role="21Pkll">
               <node concept="UZU4S" id="1qppQtOYBZM" role="1XD07H">
                 <ref role="UZU4V" node="1qppQtOYBe1" resolve="id" />
@@ -3353,7 +3353,7 @@
       <node concept="1XD0bz" id="1qppQtOYRQ8" role="KS$fE">
         <property role="TrG5h" value="containsRed" />
         <node concept="giPaf" id="1qppQtOYSJ4" role="THmaL">
-          <ref role="1ap9JL" to="0:~Any.equals(Any?)" resolve="equals" />
+          <ref role="1ap9JL" to="0:~Int.equals(Any?)" resolve="equals" />
           <node concept="1XD0k7" id="1qppQtOYSJz" role="21Pkll">
             <property role="1XD01k" value="0" />
           </node>
@@ -7367,7 +7367,7 @@
         </node>
         <node concept="1XD0mK" id="74ZS3j_kTgB" role="1XD05H">
           <node concept="1NbEFs" id="74ZS3j_kTMV" role="1XD0cX">
-            <ref role="AarEw" to="1xrd:~.mapOf&lt;2&gt;(*kotlin/Pair&lt;0,1&gt;)" resolve="mapOf" />
+            <ref role="AarEw" to="1xrd:~.mapOf&lt;2&gt;(kotlin/Pair&lt;0,1&gt;)" resolve="mapOf" />
             <node concept="1XD0eI" id="74ZS3j_kUSJ" role="TWiod">
               <node concept="21PmDL" id="74ZS3j_kVhL" role="1XD0ZN">
                 <ref role="21PmDZ" to="0:~#0.to&lt;2&gt;(1)" resolve="to" />
