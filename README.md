@@ -1,5 +1,5 @@
 # Type system for MPS kotlin
-[![Build status for 2021.3](http://teamcity.jetbrains.com/app/rest/builds/buildType(id:MPS_20213_Distribution_MpsKotlinTypesystem)/statusIcon)](https://teamcity.jetbrains.com/viewType.html?buildTypeId=MPS_20213_Distribution_MpsKotlinTypesystem)
+[![JetBrains team project](http://jb.gg/badges/team-flat-square.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub) [![Build status for 2023.2](http://teamcity.jetbrains.com/app/rest/builds/buildType(id:MPS_20232_Distribution_MpsKotlinTypesystem)/statusIcon)](https://teamcity.jetbrains.com/viewType.html?buildTypeId=MPS_20232_Distribution_MpsKotlinTypesystem)
 
 This repository contains an implementation of the kotlin type system to be used with the kotlin language in MPS. The implementation relies on [MPS coderules](https://github.com/jetbrains/mps-coderules).
 
