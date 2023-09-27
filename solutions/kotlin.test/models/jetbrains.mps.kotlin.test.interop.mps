@@ -11,6 +11,7 @@
     <import index="49cn" ref="d2c5f31a-2aac-440d-a15c-2d8cba42bf3d/kotlinJvm:kotlin.jvm(jetbrains.mps.kotlin.stdlib.jvm/)" />
     <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="1xrd" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.collections(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -61,7 +62,7 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
@@ -93,6 +94,9 @@
       </concept>
     </language>
     <language id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin">
+      <concept id="1243006380186304290" name="jetbrains.mps.kotlin.structure.IWithReceiver" flags="ngI" index="21N7il">
+        <child id="8521376398798405093" name="receiverType" index="39xbXa" />
+      </concept>
       <concept id="1243006380186890016" name="jetbrains.mps.kotlin.structure.UnaryExpression" flags="ng" index="21Pmin">
         <child id="1243006380186890019" name="operand" index="21Pmik" />
       </concept>
@@ -102,24 +106,24 @@
       <concept id="1243006380188575965" name="jetbrains.mps.kotlin.structure.StringLiteralRaw" flags="ng" index="21VMdE">
         <property id="1243006380188575966" name="content" index="21VMdD" />
       </concept>
-      <concept id="7996321249597408849" name="jetbrains.mps.kotlin.structure.IInheritExplicitly" flags="ng" index="6Oumu">
+      <concept id="7996321249597408849" name="jetbrains.mps.kotlin.structure.IInheritExplicitly" flags="ngI" index="6Oumu">
         <child id="1991556721067228837" name="superclasses" index="AST3G" />
       </concept>
       <concept id="5622728304609204267" name="jetbrains.mps.kotlin.structure.EmptyDeclaration" flags="ng" index="eKYAL" />
       <concept id="7358760241248942182" name="jetbrains.mps.kotlin.structure.Comment" flags="ng" index="gXE$l">
         <child id="7358760241248948562" name="lines" index="gXG0x" />
       </concept>
-      <concept id="781120894705658104" name="jetbrains.mps.kotlin.structure.IKotlinFile" flags="ng" index="2_hZ6C">
+      <concept id="781120894705658104" name="jetbrains.mps.kotlin.structure.IKotlinFile" flags="ngI" index="2_hZ6C">
         <child id="2936055411798374535" name="header" index="1XD0Tg" />
       </concept>
       <concept id="1991556721070973461" name="jetbrains.mps.kotlin.structure.EmptyStatement" flags="ng" index="AQkLs" />
-      <concept id="7138249191285121087" name="jetbrains.mps.kotlin.structure.IVisible" flags="ng" index="2BPcvI">
+      <concept id="7138249191285121087" name="jetbrains.mps.kotlin.structure.IVisible" flags="ngI" index="2BPcvI">
         <child id="7138249191285121088" name="visibility" index="2BPcuh" />
       </concept>
       <concept id="6389031306614148912" name="jetbrains.mps.kotlin.structure.StringLiteralLine" flags="ng" index="Df6$J">
         <child id="6389031306614152501" name="parts" index="Df7GE" />
       </concept>
-      <concept id="2324909103759097704" name="jetbrains.mps.kotlin.structure.IWithClassBody" flags="ng" index="KS$fF">
+      <concept id="2324909103759097704" name="jetbrains.mps.kotlin.structure.IWithClassBody" flags="ngI" index="KS$fF">
         <child id="2324909103759097705" name="members" index="KS$fE" />
       </concept>
       <concept id="5401033615058672984" name="jetbrains.mps.kotlin.structure.ComponentDeclaration" flags="ng" index="2Rs4SG" />
@@ -128,13 +132,13 @@
         <child id="2936055411798374330" name="assignment" index="1XD05H" />
       </concept>
       <concept id="1314219036499415225" name="jetbrains.mps.kotlin.structure.LocalPropertyDeclaration" flags="ng" index="TDTJT" />
-      <concept id="1314219036498225646" name="jetbrains.mps.kotlin.structure.IStatementHolder" flags="ng" index="THmaI">
+      <concept id="1314219036498225646" name="jetbrains.mps.kotlin.structure.IStatementHolder" flags="ngI" index="THmaI">
         <child id="1314219036498225649" name="statements" index="THmaL" />
       </concept>
-      <concept id="6565639133216732537" name="jetbrains.mps.kotlin.structure.IProjectedTypeArguments" flags="ng" index="TPadS">
+      <concept id="6565639133216732537" name="jetbrains.mps.kotlin.structure.IProjectedTypeArguments" flags="ngI" index="TPadS">
         <child id="6565639133216732540" name="typeProjections" index="TPadX" />
       </concept>
-      <concept id="6565639133219057675" name="jetbrains.mps.kotlin.structure.IArguments" flags="ng" index="TWioa">
+      <concept id="6565639133219057675" name="jetbrains.mps.kotlin.structure.IArguments" flags="ngI" index="TWioa">
         <child id="6565639133219057676" name="arguments" index="TWiod" />
       </concept>
       <concept id="5533310174484620657" name="jetbrains.mps.kotlin.structure.VariableRefExpression" flags="ng" index="UZU4S">
@@ -143,15 +147,18 @@
       <concept id="7188675108981477346" name="jetbrains.mps.kotlin.structure.Parameter" flags="ng" index="37iW8e">
         <child id="7188675108981477347" name="type" index="37iW8f" />
       </concept>
-      <concept id="409518875564192849" name="jetbrains.mps.kotlin.structure.IDeconstructingDeclarations" flags="ng" index="1BvddI">
+      <concept id="7027413324315184167" name="jetbrains.mps.kotlin.structure.ILambdaAsArgument" flags="ngI" index="3$8iW8">
+        <child id="2936055411798374269" name="lambda" index="1XD06E" />
+      </concept>
+      <concept id="409518875564192849" name="jetbrains.mps.kotlin.structure.IDeconstructingDeclarations" flags="ngI" index="1BvddI">
         <child id="5401033615058696817" name="variables" index="2Rs2$5" />
       </concept>
       <concept id="4662566628538082515" name="jetbrains.mps.kotlin.structure.FunctionCallTarget" flags="ng" index="1NbEtQ" />
       <concept id="4662566628538083705" name="jetbrains.mps.kotlin.structure.FunctionCallExpression" flags="ng" index="1NbEFs" />
-      <concept id="6664176324866782072" name="jetbrains.mps.kotlin.structure.IClassReference" flags="ng" index="1SePDR">
+      <concept id="6664176324866782072" name="jetbrains.mps.kotlin.structure.IClassReference" flags="ngI" index="1SePDR">
         <reference id="6664176324866782075" name="class" index="1SePDO" />
       </concept>
-      <concept id="2936055411806083456" name="jetbrains.mps.kotlin.structure.IFunctionParameters" flags="ng" index="1XbAXn">
+      <concept id="2936055411806083456" name="jetbrains.mps.kotlin.structure.IFunctionParameters" flags="ngI" index="1XbAXn">
         <child id="2936055411806083457" name="parameters" index="1XbAXm" />
       </concept>
       <concept id="2936055411798373599" name="jetbrains.mps.kotlin.structure.ClassType" flags="ng" index="1XD088" />
@@ -181,7 +188,8 @@
         <child id="2936055411798374738" name="right" index="1XD0Y5" />
         <child id="2936055411798374735" name="left" index="1XD0Yo" />
       </concept>
-      <concept id="2936055411798373698" name="jetbrains.mps.kotlin.structure.INullableType" flags="ng" index="1XD0el">
+      <concept id="2936055411798373784" name="jetbrains.mps.kotlin.structure.ThisExpression" flags="ng" index="1XD0df" />
+      <concept id="2936055411798373698" name="jetbrains.mps.kotlin.structure.INullableType" flags="ngI" index="1XD0el">
         <property id="6234117012688354198" name="isNullable" index="3V1zfM" />
       </concept>
       <concept id="2936055411798373697" name="jetbrains.mps.kotlin.structure.ReceiverType" flags="ng" index="1XD0em">
@@ -193,6 +201,7 @@
       <concept id="2936055411798373753" name="jetbrains.mps.kotlin.structure.ValueArgument" flags="ng" index="1XD0eI">
         <child id="2936055411798374692" name="expression" index="1XD0ZN" />
       </concept>
+      <concept id="2936055411798373655" name="jetbrains.mps.kotlin.structure.LambdaLiteral" flags="ng" index="1XD0f0" />
       <concept id="2936055411798373687" name="jetbrains.mps.kotlin.structure.ClassMemberTarget" flags="ng" index="1XD0fw" />
       <concept id="2936055411798373690" name="jetbrains.mps.kotlin.structure.ClassParameter" flags="ng" index="1XD0fH" />
       <concept id="2936055411798373673" name="jetbrains.mps.kotlin.structure.KotlinFile" flags="ng" index="1XD0fY">
@@ -218,7 +227,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -416,6 +425,97 @@
         <node concept="2EYIWN" id="3dMaGAckwev" role="37iW8f">
           <ref role="2EYIUZ" node="3dMaGAcjB0B" resolve="TestObject" />
         </node>
+      </node>
+    </node>
+    <node concept="eKYAL" id="28G1OFtHvkJ" role="1XD0Tu" />
+    <node concept="1XD0bz" id="28G1OFtHvuw" role="1XD0Tu">
+      <property role="TrG5h" value="implicitReceiver" />
+      <node concept="gXE$l" id="28G1OFtH_LF" role="THmaL">
+        <node concept="1PaTwC" id="28G1OFtH_LH" role="gXG0x">
+          <node concept="3oM_SD" id="28G1OFtHA8X" role="1PaTwD">
+            <property role="3oM_SC" value="Should" />
+          </node>
+          <node concept="3oM_SD" id="28G1OFtHA9o" role="1PaTwD">
+            <property role="3oM_SC" value="work" />
+          </node>
+          <node concept="3oM_SD" id="28G1OFtHAam" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="28G1OFtHAjd" role="1PaTwD">
+            <property role="3oM_SC" value="both" />
+          </node>
+          <node concept="3oM_SD" id="28G1OFtHAkA" role="1PaTwD">
+            <property role="3oM_SC" value="implicit" />
+          </node>
+          <node concept="3oM_SD" id="28G1OFtHAlB" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="28G1OFtHAm7" role="1PaTwD">
+            <property role="3oM_SC" value="explicit" />
+          </node>
+          <node concept="3oM_SD" id="28G1OFtHAnz" role="1PaTwD">
+            <property role="3oM_SC" value="types" />
+          </node>
+        </node>
+      </node>
+      <node concept="2yQVVM" id="28G1OFtH_10" role="THmaL">
+        <ref role="2yQV70" to="wyt6:~StringBuilder.append(java.lang.CharSequence)" resolve="append" />
+        <node concept="1XD0eI" id="28G1OFtH_11" role="TWiod">
+          <node concept="1XD08G" id="28G1OFtH_12" role="1XD0ZN" />
+        </node>
+      </node>
+      <node concept="1XD0a7" id="28G1OFtHxP0" role="THmaL">
+        <node concept="2yQVVM" id="28G1OFtHzo8" role="1XD07H">
+          <ref role="2yQV70" to="wyt6:~StringBuilder.append(java.lang.CharSequence)" resolve="append" />
+          <node concept="1XD0eI" id="28G1OFtHzoa" role="TWiod">
+            <node concept="1XD08G" id="28G1OFtHzob" role="1XD0ZN" />
+          </node>
+        </node>
+        <node concept="1XD0df" id="28G1OFtHx$r" role="21Pmik" />
+      </node>
+      <node concept="AQkLs" id="28G1OFtNvI$" role="THmaL" />
+      <node concept="1XD0a7" id="28G1OFtHE24" role="THmaL">
+        <node concept="1NbEtQ" id="28G1OFtHFcX" role="1XD07H">
+          <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.forEach&lt;1&gt;(kotlin/Function1&lt;0,kotlin/Unit&gt;)" resolve="forEach" />
+          <node concept="1XD0f0" id="28G1OFtHFMf" role="1XD06E">
+            <node concept="2yQVVM" id="28G1OFtHFSD" role="THmaL">
+              <ref role="2yQV70" to="wyt6:~StringBuilder.append(java.lang.CharSequence)" resolve="append" />
+              <node concept="1XD0eI" id="28G1OFtHFSE" role="TWiod">
+                <node concept="1XD08G" id="28G1OFtHFSF" role="1XD0ZN" />
+              </node>
+            </node>
+            <node concept="1XD0a7" id="28G1OFtHFSG" role="THmaL">
+              <node concept="2yQVVM" id="28G1OFtHFSH" role="1XD07H">
+                <ref role="2yQV70" to="wyt6:~StringBuilder.append(java.lang.CharSequence)" resolve="append" />
+                <node concept="1XD0eI" id="28G1OFtHFSI" role="TWiod">
+                  <node concept="1XD08G" id="28G1OFtHFSJ" role="1XD0ZN" />
+                </node>
+              </node>
+              <node concept="1XD0df" id="28G1OFtHFSK" role="21Pmik" />
+            </node>
+          </node>
+        </node>
+        <node concept="1NbEFs" id="28G1OFtHBQq" role="21Pmik">
+          <ref role="AarEw" to="1xrd:~.listOf&lt;1&gt;(*0)" resolve="listOf" />
+          <node concept="1XD0eI" id="28G1OFtHCMK" role="TWiod">
+            <node concept="1XD0k7" id="28G1OFtHCMJ" role="1XD0ZN">
+              <property role="1XD01k" value="1" />
+            </node>
+          </node>
+          <node concept="1XD0eI" id="28G1OFtHCMO" role="TWiod">
+            <node concept="1XD0k7" id="28G1OFtHDhi" role="1XD0ZN">
+              <property role="1XD01k" value="2" />
+            </node>
+          </node>
+          <node concept="1XD0eI" id="28G1OFtHDhk" role="TWiod">
+            <node concept="1XD0k7" id="28G1OFtHDpU" role="1XD0ZN">
+              <property role="1XD01k" value="3" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2EYIWN" id="28G1OFtHyfX" role="39xbXa">
+        <ref role="2EYIUZ" to="wyt6:~StringBuilder" resolve="StringBuilder" />
       </node>
     </node>
   </node>
