@@ -38,7 +38,8 @@
         <reference id="1243006380186886600" name="function" index="21PmDZ" />
       </concept>
       <concept id="1243006380186886597" name="jetbrains.mps.kotlin.structure.ElvisOperator" flags="ng" index="21PmDM" />
-      <concept id="1243006380187810093" name="jetbrains.mps.kotlin.structure.MemberNavigationOperation" flags="ng" index="21SRaq">
+      <concept id="1243006380187810093" name="jetbrains.mps.kotlin.structure.MemberNavigationExpression" flags="ng" index="21SRaq">
+        <child id="2141615173277786460" name="operand" index="1ttUFV" />
         <child id="2936055411798374203" name="target" index="1XD07G" />
       </concept>
       <concept id="1243006380188576008" name="jetbrains.mps.kotlin.structure.ILabelTarget" flags="ngI" index="21VMaZ">
@@ -5895,7 +5896,7 @@
         <node concept="9BM0z" id="4HDl82dw$lw" role="1XD07G">
           <ref role="9BMMk" node="7ZA3QJo3R43" resolve="regularFunction" />
         </node>
-        <node concept="UZU4S" id="4HDl82doTOR" role="21Pmik">
+        <node concept="UZU4S" id="4HDl82doTOR" role="1ttUFV">
           <ref role="UZU4V" node="7ZA3QJo3RlY" resolve="instance" />
         </node>
       </node>
@@ -5903,7 +5904,7 @@
         <node concept="3fpGMk" id="4HDl82dw$Lu" role="1XD07G">
           <ref role="3w$npj" node="7ZA3QJo3R7W" resolve="regularProperty" />
         </node>
-        <node concept="UZU4S" id="4HDl82dp0t4" role="21Pmik">
+        <node concept="UZU4S" id="4HDl82dp0t4" role="1ttUFV">
           <ref role="UZU4V" node="7ZA3QJo3RlY" resolve="instance" />
         </node>
       </node>
@@ -5914,7 +5915,7 @@
             <property role="1U20sK" value="companion members not in scope" />
           </node>
         </node>
-        <node concept="UZU4S" id="4HDl82dA0Hd" role="21Pmik">
+        <node concept="UZU4S" id="4HDl82dA0Hd" role="1ttUFV">
           <ref role="UZU4V" node="7ZA3QJo3RlY" resolve="instance" />
         </node>
       </node>
@@ -5925,7 +5926,7 @@
             <property role="1U20sK" value="companion members not in scope" />
           </node>
         </node>
-        <node concept="UZU4S" id="4HDl82dA3xQ" role="21Pmik">
+        <node concept="UZU4S" id="4HDl82dA3xQ" role="1ttUFV">
           <ref role="UZU4V" node="7ZA3QJo3RlY" resolve="instance" />
         </node>
       </node>
@@ -5933,7 +5934,7 @@
         <node concept="9BM0z" id="4HDl82dA6sN" role="1XD07G">
           <ref role="9BMMk" node="7ZA3QJo3QFg" resolve="InnerClass" />
         </node>
-        <node concept="UZU4S" id="4HDl82dA5DF" role="21Pmik">
+        <node concept="UZU4S" id="4HDl82dA5DF" role="1ttUFV">
           <ref role="UZU4V" node="7ZA3QJo3RlY" resolve="instance" />
         </node>
       </node>
@@ -5944,7 +5945,7 @@
             <property role="1U20sK" value="companion members not in scope" />
           </node>
         </node>
-        <node concept="UZU4S" id="4HDl82dA7Y1" role="21Pmik">
+        <node concept="UZU4S" id="4HDl82dA7Y1" role="1ttUFV">
           <ref role="UZU4V" node="7ZA3QJo3RlY" resolve="instance" />
         </node>
       </node>
@@ -5955,7 +5956,7 @@
             <property role="1U20sK" value="companion members not in scope" />
           </node>
         </node>
-        <node concept="UZU4S" id="4HDl82dI5PZ" role="21Pmik">
+        <node concept="UZU4S" id="4HDl82dI5PZ" role="1ttUFV">
           <ref role="UZU4V" node="7ZA3QJo3RlY" resolve="instance" />
         </node>
       </node>
@@ -5966,7 +5967,7 @@
             <property role="1U20sK" value="companion members not in scope" />
           </node>
         </node>
-        <node concept="UZU4S" id="4HDl82dI2Y$" role="21Pmik">
+        <node concept="UZU4S" id="4HDl82dI2Y$" role="1ttUFV">
           <ref role="UZU4V" node="7ZA3QJo3RlY" resolve="instance" />
         </node>
       </node>
@@ -5991,7 +5992,7 @@
         <node concept="9BM0z" id="4HDl82dAb7K" role="1XD07G">
           <ref role="9BMMk" node="7ZA3QJo3R43" resolve="regularFunction" />
         </node>
-        <node concept="1XD0em" id="4HDl82dAcWC" role="21Pmik">
+        <node concept="1XD0em" id="4HDl82dAcWC" role="1ttUFV">
           <node concept="1XD088" id="4HDl82dAcWA" role="1XD0Sn">
             <ref role="1SePDO" node="7ZA3QJo3Q_$" resolve="RegularClass" />
           </node>
@@ -6001,7 +6002,7 @@
         <node concept="3fpGMk" id="4HDl82dAb7N" role="1XD07G">
           <ref role="3w$npj" node="7ZA3QJo3R7W" resolve="regularProperty" />
         </node>
-        <node concept="1XD0em" id="4HDl82dAdwA" role="21Pmik">
+        <node concept="1XD0em" id="4HDl82dAdwA" role="1ttUFV">
           <node concept="1XD088" id="4HDl82dAdw$" role="1XD0Sn">
             <ref role="1SePDO" node="7ZA3QJo3Q_$" resolve="RegularClass" />
           </node>
@@ -6011,7 +6012,7 @@
         <node concept="9BM0z" id="4HDl82dAb7Q" role="1XD07G">
           <ref role="9BMMk" node="7ZA3QJo3QAg" resolve="companionFunction" />
         </node>
-        <node concept="1XD0em" id="4HDl82dAec6" role="21Pmik">
+        <node concept="1XD0em" id="4HDl82dAec6" role="1ttUFV">
           <node concept="1XD088" id="4HDl82dAec4" role="1XD0Sn">
             <ref role="1SePDO" node="7ZA3QJo3Q_$" resolve="RegularClass" />
           </node>
@@ -6021,7 +6022,7 @@
         <node concept="3fpGMk" id="4HDl82dAb7T" role="1XD07G">
           <ref role="3w$npj" node="7ZA3QJo3QAN" resolve="companionProperty" />
         </node>
-        <node concept="1XD0em" id="4HDl82dAeRB" role="21Pmik">
+        <node concept="1XD0em" id="4HDl82dAeRB" role="1ttUFV">
           <node concept="1XD088" id="4HDl82dAeR_" role="1XD0Sn">
             <ref role="1SePDO" node="7ZA3QJo3Q_$" resolve="RegularClass" />
           </node>
@@ -6031,7 +6032,7 @@
         <node concept="9BM0z" id="4HDl82dAb7W" role="1XD07G">
           <ref role="9BMMk" node="7ZA3QJo3QFg" resolve="InnerClass" />
         </node>
-        <node concept="1XD0em" id="4HDl82dAgEa" role="21Pmik">
+        <node concept="1XD0em" id="4HDl82dAgEa" role="1ttUFV">
           <node concept="1XD088" id="4HDl82dAgE8" role="1XD0Sn">
             <ref role="1SePDO" node="7ZA3QJo3Q_$" resolve="RegularClass" />
           </node>
@@ -6041,7 +6042,7 @@
         <node concept="9BM0z" id="4HDl82dAb7Z" role="1XD07G">
           <ref role="9BMMk" node="7ZA3QJo3QVx" resolve="NestedClass" />
         </node>
-        <node concept="1XD0em" id="4HDl82dAfYD" role="21Pmik">
+        <node concept="1XD0em" id="4HDl82dAfYD" role="1ttUFV">
           <node concept="1XD088" id="4HDl82dAfYB" role="1XD0Sn">
             <ref role="1SePDO" node="7ZA3QJo3Q_$" resolve="RegularClass" />
           </node>
@@ -6051,7 +6052,7 @@
         <node concept="3fpGMk" id="4HDl82dHX2a" role="1XD07G">
           <ref role="3w$npj" node="7ZA3QJo3QNA" resolve="superTypeProperty" />
         </node>
-        <node concept="1XD0em" id="4HDl82dHTO_" role="21Pmik">
+        <node concept="1XD0em" id="4HDl82dHTO_" role="1ttUFV">
           <node concept="1XD088" id="4HDl82dHTOz" role="1XD0Sn">
             <ref role="1SePDO" node="7ZA3QJo3Q_$" resolve="RegularClass" />
           </node>
@@ -6061,7 +6062,7 @@
         <node concept="9BM0z" id="4HDl82dHVOd" role="1XD07G">
           <ref role="9BMMk" node="7ZA3QJo3QNW" resolve="superTypeFunction" />
         </node>
-        <node concept="1XD0em" id="4HDl82dHVOe" role="21Pmik">
+        <node concept="1XD0em" id="4HDl82dHVOe" role="1ttUFV">
           <node concept="1XD088" id="4HDl82dHVOf" role="1XD0Sn">
             <ref role="1SePDO" node="7ZA3QJo3Q_$" resolve="RegularClass" />
           </node>
@@ -7794,7 +7795,7 @@
             <node concept="1XD0eI" id="3CcDAIXbMnY" role="TWiod">
               <node concept="1XD0a7" id="3CcDAIXbWiY" role="1XD0ZN">
                 <node concept="1NbEtQ" id="3CcDAIXcvBF" role="1XD07H">
-                  <ref role="AarEw" to="0:~#Any?.toString()" resolve="toString" />
+                  <ref role="AarEw" to="0:~Any.toString()" resolve="toString" />
                 </node>
                 <node concept="UZU4S" id="3CcDAIXbMnX" role="21Pmik">
                   <ref role="UZU4V" node="3CcDAIVP0HF" resolve="x" />

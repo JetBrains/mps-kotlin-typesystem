@@ -10,8 +10,8 @@
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" />
     <import index="49cn" ref="d2c5f31a-2aac-440d-a15c-2d8cba42bf3d/kotlinJvm:kotlin.jvm(jetbrains.mps.kotlin.stdlib.jvm/)" />
     <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="1xrd" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.collections(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -100,7 +100,8 @@
       <concept id="1243006380186890016" name="jetbrains.mps.kotlin.structure.UnaryExpression" flags="ng" index="21Pmin">
         <child id="1243006380186890019" name="operand" index="21Pmik" />
       </concept>
-      <concept id="1243006380187810093" name="jetbrains.mps.kotlin.structure.MemberNavigationOperation" flags="ng" index="21SRaq">
+      <concept id="1243006380187810093" name="jetbrains.mps.kotlin.structure.MemberNavigationExpression" flags="ng" index="21SRaq">
+        <child id="2141615173277786460" name="operand" index="1ttUFV" />
         <child id="2936055411798374203" name="target" index="1XD07G" />
       </concept>
       <concept id="1243006380188575965" name="jetbrains.mps.kotlin.structure.StringLiteralRaw" flags="ng" index="21VMdE">
@@ -188,7 +189,9 @@
         <child id="2936055411798374738" name="right" index="1XD0Y5" />
         <child id="2936055411798374735" name="left" index="1XD0Yo" />
       </concept>
-      <concept id="2936055411798373784" name="jetbrains.mps.kotlin.structure.ThisExpression" flags="ng" index="1XD0df" />
+      <concept id="2936055411798373784" name="jetbrains.mps.kotlin.structure.ThisExpression" flags="ng" index="1XD0df">
+        <reference id="7138249191276895869" name="targetLabel" index="2BlRAG" />
+      </concept>
       <concept id="2936055411798373698" name="jetbrains.mps.kotlin.structure.INullableType" flags="ngI" index="1XD0el">
         <property id="6234117012688354198" name="isNullable" index="3V1zfM" />
       </concept>
@@ -427,7 +430,7 @@
         </node>
       </node>
     </node>
-    <node concept="eKYAL" id="28G1OFtHvkJ" role="1XD0Tu" />
+    <node concept="eKYAL" id="5VmLFJfCjA8" role="1XD0Tu" />
     <node concept="1XD0bz" id="28G1OFtHvuw" role="1XD0Tu">
       <property role="TrG5h" value="implicitReceiver" />
       <node concept="gXE$l" id="28G1OFtH_LF" role="THmaL">
@@ -459,39 +462,297 @@
         </node>
       </node>
       <node concept="2yQVVM" id="28G1OFtH_10" role="THmaL">
-        <ref role="2yQV70" to="wyt6:~StringBuilder.append(java.lang.CharSequence)" resolve="append" />
+        <ref role="2yQV70" node="FkvPB6ZX0a" resolve="overridenMethod" />
+        <node concept="1XD0eI" id="5VmLFJfCqwV" role="TWiod">
+          <node concept="1XD0k7" id="5VmLFJfCqCq" role="1XD0ZN">
+            <property role="1XD01k" value="1" />
+          </node>
+        </node>
         <node concept="1XD0eI" id="28G1OFtH_11" role="TWiod">
           <node concept="1XD08G" id="28G1OFtH_12" role="1XD0ZN" />
         </node>
       </node>
       <node concept="1XD0a7" id="28G1OFtHxP0" role="THmaL">
-        <node concept="2yQVVM" id="28G1OFtHzo8" role="1XD07H">
-          <ref role="2yQV70" to="wyt6:~StringBuilder.append(java.lang.CharSequence)" resolve="append" />
-          <node concept="1XD0eI" id="28G1OFtHzoa" role="TWiod">
-            <node concept="1XD08G" id="28G1OFtHzob" role="1XD0ZN" />
+        <node concept="1XD0df" id="28G1OFtHx$r" role="21Pmik" />
+        <node concept="2yQVVM" id="5VmLFJfCqGm" role="1XD07H">
+          <ref role="2yQV70" node="FkvPB6ZX0a" resolve="overridenMethod" />
+          <node concept="1XD0eI" id="5VmLFJfCqGn" role="TWiod">
+            <node concept="1XD0k7" id="5VmLFJfCqGo" role="1XD0ZN">
+              <property role="1XD01k" value="1" />
+            </node>
+          </node>
+          <node concept="1XD0eI" id="5VmLFJfCqGp" role="TWiod">
+            <node concept="1XD08G" id="5VmLFJfCqGq" role="1XD0ZN" />
           </node>
         </node>
-        <node concept="1XD0df" id="28G1OFtHx$r" role="21Pmik" />
       </node>
-      <node concept="AQkLs" id="28G1OFtNvI$" role="THmaL" />
+      <node concept="1XD0a7" id="5VmLFJfC59Y" role="THmaL">
+        <node concept="1XD0df" id="5VmLFJfC20B" role="21Pmik">
+          <ref role="2BlRAG" node="28G1OFtHvuw" resolve="implicitReceiver" />
+        </node>
+        <node concept="2yQVVM" id="5VmLFJfCqN$" role="1XD07H">
+          <ref role="2yQV70" node="FkvPB6ZX0a" resolve="overridenMethod" />
+          <node concept="1XD0eI" id="5VmLFJfCqN_" role="TWiod">
+            <node concept="1XD0k7" id="5VmLFJfCqNA" role="1XD0ZN">
+              <property role="1XD01k" value="1" />
+            </node>
+          </node>
+          <node concept="1XD0eI" id="5VmLFJfCqNB" role="TWiod">
+            <node concept="1XD08G" id="5VmLFJfCqNC" role="1XD0ZN" />
+          </node>
+        </node>
+      </node>
+      <node concept="AQkLs" id="5VmLFJfCvKH" role="THmaL" />
+      <node concept="2a$s4D" id="5VmLFJfCvf3" role="THmaL">
+        <ref role="2a$nQg" node="3dMaGAckwlw" resolve="myValue" />
+      </node>
+      <node concept="1XD0a7" id="5VmLFJfCt3I" role="THmaL">
+        <node concept="2a$s4D" id="5VmLFJfCtpt" role="1XD07H">
+          <ref role="2a$nQg" node="3dMaGAckwlw" resolve="myValue" />
+        </node>
+        <node concept="1XD0df" id="5VmLFJfCsWe" role="21Pmik" />
+      </node>
+      <node concept="1XD0a7" id="5VmLFJfCuEM" role="THmaL">
+        <node concept="2a$s4D" id="5VmLFJfCuVF" role="1XD07H">
+          <ref role="2a$nQg" node="3dMaGAckwlw" resolve="myValue" />
+        </node>
+        <node concept="1XD0df" id="5VmLFJfCtKs" role="21Pmik">
+          <ref role="2BlRAG" node="28G1OFtHvuw" resolve="implicitReceiver" />
+        </node>
+      </node>
+      <node concept="AQkLs" id="5wKFMyp6iTa" role="THmaL" />
+      <node concept="1ygUyI" id="5wKFMyp6ilD" role="THmaL">
+        <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
+      </node>
+      <node concept="1XD0a7" id="5wKFMyp6jmM" role="THmaL">
+        <node concept="1ygUyI" id="5wKFMyp6jLp" role="1XD07H">
+          <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
+        </node>
+        <node concept="1XD0df" id="5wKFMyp6j9$" role="21Pmik" />
+      </node>
+      <node concept="1XD0a7" id="5wKFMyp6kU4" role="THmaL">
+        <node concept="1ygUyI" id="5wKFMyp6l8r" role="1XD07H">
+          <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
+        </node>
+        <node concept="1XD0df" id="5wKFMyp6k9m" role="21Pmik">
+          <ref role="2BlRAG" node="28G1OFtHvuw" resolve="implicitReceiver" />
+        </node>
+      </node>
+      <node concept="AQkLs" id="5wKFMyp6yYN" role="THmaL" />
+      <node concept="gXE$l" id="5wKFMyp6z_9" role="THmaL">
+        <node concept="1PaTwC" id="5wKFMyp6z_b" role="gXG0x">
+          <node concept="3oM_SD" id="5wKFMyp6zFt" role="1PaTwD">
+            <property role="3oM_SC" value="setter" />
+          </node>
+          <node concept="3oM_SD" id="5wKFMyp6zHz" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5wKFMyp6zHA" role="1PaTwD">
+            <property role="3oM_SC" value="handled" />
+          </node>
+          <node concept="3oM_SD" id="5wKFMyp6zI3" role="1PaTwD">
+            <property role="3oM_SC" value="differently" />
+          </node>
+          <node concept="3oM_SD" id="5wKFMyp6zOq" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="5wKFMyp6zOw" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="5wKFMyp6zOB" role="1PaTwD">
+            <property role="3oM_SC" value="kind" />
+          </node>
+          <node concept="3oM_SD" id="5wKFMyp6zP8" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5wKFMyp6zPh" role="1PaTwD">
+            <property role="3oM_SC" value="variable" />
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0d2" id="5wKFMyp6xKx" role="THmaL">
+        <node concept="1XD0k7" id="5wKFMyp6xMu" role="1XD0Y5">
+          <property role="1XD01k" value="2" />
+        </node>
+        <node concept="1ygUyI" id="5wKFMyp6wo_" role="1XD0Yo">
+          <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
+          <ref role="2DD9uJ" node="3dMaGAcjBa3" resolve="setValue" />
+        </node>
+      </node>
+      <node concept="1XD0d2" id="5wKFMyp6ydZ" role="THmaL">
+        <node concept="1XD0k7" id="5wKFMyp6yfW" role="1XD0Y5">
+          <property role="1XD01k" value="2" />
+        </node>
+        <node concept="1XD0a7" id="5wKFMyp6woA" role="1XD0Yo">
+          <node concept="1ygUyI" id="5wKFMyp6woB" role="1XD07H">
+            <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
+            <ref role="2DD9uJ" node="3dMaGAcjBa3" resolve="setValue" />
+          </node>
+          <node concept="1XD0df" id="5wKFMyp6woC" role="21Pmik" />
+        </node>
+      </node>
+      <node concept="1XD0d2" id="5wKFMyp6yJm" role="THmaL">
+        <node concept="1XD0k7" id="5wKFMyp6yLj" role="1XD0Y5">
+          <property role="1XD01k" value="2" />
+        </node>
+        <node concept="1XD0a7" id="5wKFMyp6woD" role="1XD0Yo">
+          <node concept="1ygUyI" id="5wKFMyp6woE" role="1XD07H">
+            <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
+            <ref role="2DD9uJ" node="3dMaGAcjBa3" resolve="setValue" />
+          </node>
+          <node concept="1XD0df" id="5wKFMyp6woF" role="21Pmik">
+            <ref role="2BlRAG" node="28G1OFtHvuw" resolve="implicitReceiver" />
+          </node>
+        </node>
+      </node>
+      <node concept="AQkLs" id="5wKFMyp6lk_" role="THmaL" />
       <node concept="1XD0a7" id="28G1OFtHE24" role="THmaL">
         <node concept="1NbEtQ" id="28G1OFtHFcX" role="1XD07H">
           <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.forEach&lt;1&gt;(kotlin/Function1&lt;0,kotlin/Unit&gt;)" resolve="forEach" />
           <node concept="1XD0f0" id="28G1OFtHFMf" role="1XD06E">
-            <node concept="2yQVVM" id="28G1OFtHFSD" role="THmaL">
-              <ref role="2yQV70" to="wyt6:~StringBuilder.append(java.lang.CharSequence)" resolve="append" />
-              <node concept="1XD0eI" id="28G1OFtHFSE" role="TWiod">
-                <node concept="1XD08G" id="28G1OFtHFSF" role="1XD0ZN" />
+            <node concept="2yQVVM" id="5VmLFJfCqUw" role="THmaL">
+              <ref role="2yQV70" node="FkvPB6ZX0a" resolve="overridenMethod" />
+              <node concept="1XD0eI" id="5VmLFJfCqUx" role="TWiod">
+                <node concept="1XD0k7" id="5VmLFJfCqUy" role="1XD0ZN">
+                  <property role="1XD01k" value="1" />
+                </node>
+              </node>
+              <node concept="1XD0eI" id="5VmLFJfCqUz" role="TWiod">
+                <node concept="1XD08G" id="5VmLFJfCqU$" role="1XD0ZN" />
               </node>
             </node>
             <node concept="1XD0a7" id="28G1OFtHFSG" role="THmaL">
-              <node concept="2yQVVM" id="28G1OFtHFSH" role="1XD07H">
-                <ref role="2yQV70" to="wyt6:~StringBuilder.append(java.lang.CharSequence)" resolve="append" />
-                <node concept="1XD0eI" id="28G1OFtHFSI" role="TWiod">
-                  <node concept="1XD08G" id="28G1OFtHFSJ" role="1XD0ZN" />
+              <node concept="1XD0df" id="28G1OFtHFSK" role="21Pmik" />
+              <node concept="2yQVVM" id="5VmLFJfCr3l" role="1XD07H">
+                <ref role="2yQV70" node="FkvPB6ZX0a" resolve="overridenMethod" />
+                <node concept="1XD0eI" id="5VmLFJfCr3m" role="TWiod">
+                  <node concept="1XD0k7" id="5VmLFJfCr3n" role="1XD0ZN">
+                    <property role="1XD01k" value="1" />
+                  </node>
+                </node>
+                <node concept="1XD0eI" id="5VmLFJfCr3o" role="TWiod">
+                  <node concept="1XD08G" id="5VmLFJfCr3p" role="1XD0ZN" />
                 </node>
               </node>
-              <node concept="1XD0df" id="28G1OFtHFSK" role="21Pmik" />
+            </node>
+            <node concept="1XD0a7" id="5VmLFJfC8YA" role="THmaL">
+              <node concept="1XD0df" id="5VmLFJfC8YE" role="21Pmik">
+                <ref role="2BlRAG" node="28G1OFtHvuw" resolve="implicitReceiver" />
+              </node>
+              <node concept="2yQVVM" id="5VmLFJfCr8O" role="1XD07H">
+                <ref role="2yQV70" node="FkvPB6ZX0a" resolve="overridenMethod" />
+                <node concept="1XD0eI" id="5VmLFJfCr8P" role="TWiod">
+                  <node concept="1XD0k7" id="5VmLFJfCr8Q" role="1XD0ZN">
+                    <property role="1XD01k" value="1" />
+                  </node>
+                </node>
+                <node concept="1XD0eI" id="5VmLFJfCr8R" role="TWiod">
+                  <node concept="1XD08G" id="5VmLFJfCr8S" role="1XD0ZN" />
+                </node>
+              </node>
+            </node>
+            <node concept="AQkLs" id="5VmLFJfCsDL" role="THmaL" />
+            <node concept="2a$s4D" id="5VmLFJfCwYR" role="THmaL">
+              <ref role="2a$nQg" node="3dMaGAckwlw" resolve="myValue" />
+            </node>
+            <node concept="1XD0a7" id="5VmLFJfCwYS" role="THmaL">
+              <node concept="2a$s4D" id="5VmLFJfCwYT" role="1XD07H">
+                <ref role="2a$nQg" node="3dMaGAckwlw" resolve="myValue" />
+              </node>
+              <node concept="1XD0df" id="5VmLFJfCwYU" role="21Pmik" />
+            </node>
+            <node concept="1XD0a7" id="5VmLFJfCwYV" role="THmaL">
+              <node concept="2a$s4D" id="5VmLFJfCwYW" role="1XD07H">
+                <ref role="2a$nQg" node="3dMaGAckwlw" resolve="myValue" />
+              </node>
+              <node concept="1XD0df" id="5VmLFJfCwYX" role="21Pmik">
+                <ref role="2BlRAG" node="28G1OFtHvuw" resolve="implicitReceiver" />
+              </node>
+            </node>
+            <node concept="AQkLs" id="5wKFMyp6lM1" role="THmaL" />
+            <node concept="1ygUyI" id="5wKFMyp6lBs" role="THmaL">
+              <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
+            </node>
+            <node concept="1XD0a7" id="5wKFMyp6lBt" role="THmaL">
+              <node concept="1ygUyI" id="5wKFMyp6lBu" role="1XD07H">
+                <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
+              </node>
+              <node concept="1XD0df" id="5wKFMyp6lBv" role="21Pmik" />
+            </node>
+            <node concept="1XD0a7" id="5wKFMyp6lBw" role="THmaL">
+              <node concept="1ygUyI" id="5wKFMyp6lBx" role="1XD07H">
+                <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
+              </node>
+              <node concept="1XD0df" id="5wKFMyp6lBy" role="21Pmik">
+                <ref role="2BlRAG" node="28G1OFtHvuw" resolve="implicitReceiver" />
+              </node>
+            </node>
+            <node concept="AQkLs" id="5wKFMyp6zQZ" role="THmaL" />
+            <node concept="gXE$l" id="5wKFMyp6zSa" role="THmaL">
+              <node concept="1PaTwC" id="5wKFMyp6zSb" role="gXG0x">
+                <node concept="3oM_SD" id="5wKFMyp6zSc" role="1PaTwD">
+                  <property role="3oM_SC" value="setter" />
+                </node>
+                <node concept="3oM_SD" id="5wKFMyp6zSd" role="1PaTwD">
+                  <property role="3oM_SC" value="are" />
+                </node>
+                <node concept="3oM_SD" id="5wKFMyp6zSe" role="1PaTwD">
+                  <property role="3oM_SC" value="handled" />
+                </node>
+                <node concept="3oM_SD" id="5wKFMyp6zSf" role="1PaTwD">
+                  <property role="3oM_SC" value="differently" />
+                </node>
+                <node concept="3oM_SD" id="5wKFMyp6zSg" role="1PaTwD">
+                  <property role="3oM_SC" value="on" />
+                </node>
+                <node concept="3oM_SD" id="5wKFMyp6zSh" role="1PaTwD">
+                  <property role="3oM_SC" value="this" />
+                </node>
+                <node concept="3oM_SD" id="5wKFMyp6zSi" role="1PaTwD">
+                  <property role="3oM_SC" value="kind" />
+                </node>
+                <node concept="3oM_SD" id="5wKFMyp6zSj" role="1PaTwD">
+                  <property role="3oM_SC" value="of" />
+                </node>
+                <node concept="3oM_SD" id="5wKFMyp6zSk" role="1PaTwD">
+                  <property role="3oM_SC" value="variable" />
+                </node>
+              </node>
+            </node>
+            <node concept="1XD0d2" id="5wKFMyp6zSl" role="THmaL">
+              <node concept="1XD0k7" id="5wKFMyp6zSm" role="1XD0Y5">
+                <property role="1XD01k" value="2" />
+              </node>
+              <node concept="1ygUyI" id="5wKFMyp6zSn" role="1XD0Yo">
+                <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
+                <ref role="2DD9uJ" node="3dMaGAcjBa3" resolve="setValue" />
+              </node>
+            </node>
+            <node concept="1XD0d2" id="5wKFMyp6zSo" role="THmaL">
+              <node concept="1XD0k7" id="5wKFMyp6zSp" role="1XD0Y5">
+                <property role="1XD01k" value="2" />
+              </node>
+              <node concept="1XD0a7" id="5wKFMyp6zSq" role="1XD0Yo">
+                <node concept="1ygUyI" id="5wKFMyp6zSr" role="1XD07H">
+                  <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
+                  <ref role="2DD9uJ" node="3dMaGAcjBa3" resolve="setValue" />
+                </node>
+                <node concept="1XD0df" id="5wKFMyp6zSs" role="21Pmik" />
+              </node>
+            </node>
+            <node concept="1XD0d2" id="5wKFMyp6zSt" role="THmaL">
+              <node concept="1XD0k7" id="5wKFMyp6zSu" role="1XD0Y5">
+                <property role="1XD01k" value="2" />
+              </node>
+              <node concept="1XD0a7" id="5wKFMyp6zSv" role="1XD0Yo">
+                <node concept="1ygUyI" id="5wKFMyp6zSw" role="1XD07H">
+                  <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
+                  <ref role="2DD9uJ" node="3dMaGAcjBa3" resolve="setValue" />
+                </node>
+                <node concept="1XD0df" id="5wKFMyp6zSx" role="21Pmik">
+                  <ref role="2BlRAG" node="28G1OFtHvuw" resolve="implicitReceiver" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -515,7 +776,7 @@
         </node>
       </node>
       <node concept="2EYIWN" id="28G1OFtHyfX" role="39xbXa">
-        <ref role="2EYIUZ" to="wyt6:~StringBuilder" resolve="StringBuilder" />
+        <ref role="2EYIUZ" node="3dMaGAcjB0B" resolve="TestObject" />
       </node>
     </node>
   </node>
@@ -1179,7 +1440,7 @@
             </node>
             <node concept="21SRaq" id="6e74p5eOOCz" role="21Pmik">
               <node concept="1XD0fw" id="6e74p5eOOJX" role="1XD07G" />
-              <node concept="1XD0em" id="6e74p5eOOC0" role="21Pmik">
+              <node concept="1XD0em" id="6e74p5eOOC0" role="1ttUFV">
                 <node concept="1XD088" id="6e74p5eOOBY" role="1XD0Sn">
                   <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
                 </node>
