@@ -68,7 +68,7 @@
     <module reference="23865718-e2ed-41b5-a132-0da1d04e266d(jetbrains.mps.ide.httpsupport.manager)" version="0" />
     <module reference="ae6d8005-36be-4cb6-945b-8c8cfc033c51(jetbrains.mps.ide.httpsupport.runtime)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
-    <module reference="6b3888c1-9802-44d8-8baf-f8e6c33ed689(jetbrains.mps.kotlin)" version="1" />
+    <module reference="6b3888c1-9802-44d8-8baf-f8e6c33ed689(jetbrains.mps.kotlin)" version="2" />
     <module reference="e6f528fa-a980-4ee7-951f-1f04ff86bc54(jetbrains.mps.kotlin.sandbox)" version="0" />
     <module reference="d23a40f1-3b52-44c2-822a-4d3bb398ef15(jetbrains.mps.kotlin.smodel.runtime)" version="0" />
     <module reference="b50d89c0-0fb9-4105-b652-222148c26a9b(jetbrains.mps.kotlin.stdlib)" version="0" />

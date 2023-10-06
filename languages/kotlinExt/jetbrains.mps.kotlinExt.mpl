@@ -101,7 +101,7 @@
     <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
     <module reference="bfbdd672-7ff5-403f-af4f-16da5226f34c(jetbrains.mps.findUsages.runtime)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
-    <module reference="6b3888c1-9802-44d8-8baf-f8e6c33ed689(jetbrains.mps.kotlin)" version="1" />
+    <module reference="6b3888c1-9802-44d8-8baf-f8e6c33ed689(jetbrains.mps.kotlin)" version="2" />
     <module reference="c3bbc54c-f861-4bf9-8758-b6b10f69f85f(jetbrains.mps.kotlin.hack)" version="0" />
     <module reference="b50d89c0-0fb9-4105-b652-222148c26a9b(jetbrains.mps.kotlin.stdlib)" version="0" />
     <module reference="d2c5f31a-2aac-440d-a15c-2d8cba42bf3d(jetbrains.mps.kotlin.stdlib.jvm)" version="0" />

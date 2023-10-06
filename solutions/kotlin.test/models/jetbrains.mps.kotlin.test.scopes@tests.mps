@@ -305,19 +305,30 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="6nK3tkag$d4" role="3cqZAp">
-          <node concept="2YIFZM" id="FkvPB76P1M" role="3cqZAk">
-            <ref role="1Pybhc" to="sjya:6Ijh6DJE7jt" resolve="HidingBySignatureScope" />
-            <ref role="37wK5l" to="sjya:3HHsmlMOXmx" resolve="of" />
-            <node concept="2YIFZM" id="7XIUL68CtnZ" role="37wK5m">
-              <ref role="37wK5l" to="sjya:2t96AMoH$Wl" resolve="getFunctionScopeParts" />
-              <ref role="1Pybhc" to="sjya:2t96AMoHiRy" resolve="KotlinScopesHelper" />
-              <node concept="37vLTw" id="6nK3tkag$d6" role="37wK5m">
-                <ref role="3cqZAo" node="6nK3tkagzIv" resolve="receiver" />
+        <node concept="3cpWs6" id="3UQQw2lCFVL" role="3cqZAp">
+          <node concept="2OqwBi" id="3UQQw2lCF4n" role="3cqZAk">
+            <node concept="2OqwBi" id="3UQQw2lCEj6" role="2Oq$k0">
+              <node concept="2OqwBi" id="3UQQw2lCC7o" role="2Oq$k0">
+                <node concept="2YIFZM" id="3UQQw2lCr00" role="2Oq$k0">
+                  <ref role="37wK5l" to="sjya:3UQQw2lC$mg" resolve="create" />
+                  <ref role="1Pybhc" to="sjya:3UQQw2lwzMq" resolve="KotlinScopes" />
+                  <node concept="3xONca" id="3UQQw2lCs7P" role="37wK5m">
+                    <ref role="3xOPvv" node="6nK3tkagzVF" resolve="object" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="3UQQw2lCE7H" role="2OqNvi">
+                  <ref role="37wK5l" to="sjya:3UQQw2lxFMg" resolve="functions" />
+                </node>
               </node>
-              <node concept="3xONca" id="6nK3tkag$d7" role="37wK5m">
-                <ref role="3xOPvv" node="6nK3tkagzVF" resolve="object" />
+              <node concept="liA8E" id="3UQQw2lCEKJ" role="2OqNvi">
+                <ref role="37wK5l" to="sjya:3UQQw2lAIAs" resolve="receiver" />
+                <node concept="37vLTw" id="3UQQw2lCEUo" role="37wK5m">
+                  <ref role="3cqZAo" node="6nK3tkagzIv" resolve="receiver" />
+                </node>
               </node>
+            </node>
+            <node concept="liA8E" id="3UQQw2lCF_w" role="2OqNvi">
+              <ref role="37wK5l" to="sjya:3UQQw2lyq9T" resolve="buildSigScope" />
             </node>
           </node>
         </node>
