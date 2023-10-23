@@ -411,7 +411,7 @@
                 <ref role="AarEw" to="x6hl:~Panel.row(javax/swing/JLabel?,kotlin/Function1&lt;Row,kotlin/Unit&gt;)" resolve="row" />
                 <node concept="1XD0f0" id="4W64WfROXvh" role="1XD06E">
                   <node concept="1NbEFs" id="4W64WfRPqsn" role="THmaL">
-                    <ref role="AarEw" to="x6hl:~Row.cell[javax/swing/JComponent](0,javax/swing/JComponent)" resolve="cell" />
+                    <ref role="AarEw" to="x6hl:~Row.cell[javax/swing/JComponent](0)" resolve="cell" />
                     <node concept="1XD0eI" id="4W64WfRS1Jw" role="TWiod">
                       <node concept="1NbEFs" id="4W64WfRS1Jv" role="1XD0ZN">
                         <ref role="AarEw" node="4W64WfRX6sO" resolve="ParametersPanel" />

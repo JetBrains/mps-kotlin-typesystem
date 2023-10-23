@@ -92,6 +92,9 @@
         <reference id="8657391497894800413" name="setter" index="2DD9uJ" />
         <reference id="3848791341541234508" name="getter" index="1ygV0p" />
       </concept>
+      <concept id="8216400987860022767" name="jetbrains.mps.kotlin.javaRefs.structure.JavaMemberTarget" flags="ng" index="3R_z35">
+        <reference id="8216400987860024559" name="member" index="3R_zB5" />
+      </concept>
     </language>
     <language id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin">
       <concept id="1243006380186304290" name="jetbrains.mps.kotlin.structure.IWithReceiver" flags="ngI" index="21N7il">
@@ -500,6 +503,33 @@
           <node concept="1XD0eI" id="5VmLFJfCqNB" role="TWiod">
             <node concept="1XD08G" id="5VmLFJfCqNC" role="1XD0ZN" />
           </node>
+        </node>
+      </node>
+      <node concept="21SRaq" id="3DLhCcqFI_o" role="THmaL">
+        <node concept="3R_z35" id="3DLhCcqFIPP" role="1XD07G">
+          <ref role="3R_zB5" node="FkvPB6ZX0a" resolve="overridenMethod" />
+        </node>
+      </node>
+      <node concept="21SRaq" id="3DLhCcqOR9N" role="THmaL">
+        <node concept="3R_z35" id="3DLhCcqOTa$" role="1XD07G">
+          <ref role="3R_zB5" node="FkvPB6ZX0a" resolve="overridenMethod" />
+        </node>
+        <node concept="1XD0df" id="3DLhCcqFKGr" role="1ttUFV" />
+      </node>
+      <node concept="1XD0a7" id="3DLhCcqOW0q" role="THmaL">
+        <node concept="2yQVVM" id="3DLhCcqOWf1" role="1XD07H">
+          <ref role="2yQV70" node="FkvPB6ZX0a" resolve="overridenMethod" />
+          <node concept="1XD0eI" id="5u0W3EFDyJg" role="TWiod">
+            <node concept="1XD0k7" id="5u0W3EFDyJf" role="1XD0ZN">
+              <property role="1XD01k" value="1" />
+            </node>
+          </node>
+          <node concept="1XD0eI" id="5u0W3EFDyJk" role="TWiod">
+            <node concept="1XD08G" id="5u0W3EFDyRe" role="1XD0ZN" />
+          </node>
+        </node>
+        <node concept="1XD0df" id="3DLhCcqOVkB" role="21Pmik">
+          <ref role="2BlRAG" node="28G1OFtHvuw" resolve="implicitReceiver" />
         </node>
       </node>
       <node concept="AQkLs" id="5VmLFJfCvKH" role="THmaL" />
