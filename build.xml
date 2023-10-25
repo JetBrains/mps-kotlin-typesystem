@@ -8,7 +8,7 @@
   <property name="mps.macro.coderules_home" location="${coderules_home}" />
   <property name="ci.build.num" value="9999" />
   <property name="ci.build.tag" value="SNAPSHOT" />
-  <property name="ci.mps.release" value="231" />
+  <property name="ci.mps.release" value="232" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.coderules" location="${coderules_home}" />
   <property name="artifacts.mpsKotlinPlugin" location="${mps_home}/plugins" />
@@ -63,8 +63,8 @@
         <depends>jetbrains.mps.kotlin</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
-        <idea-version since-build="231.0" />
-        <change-notes><![CDATA[<ul><li>Migration to MPS 2023.2</li><li>Use of dataflow aspect for better readability and performances</li></ul>]]></change-notes>
+        <idea-version since-build="232.0" />
+        <change-notes><![CDATA[<ul><li>Migrate to latest coderules version</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -86,8 +86,8 @@
         <depends>jetbrains.mps.kotlin</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
-        <idea-version since-build="231.0" />
-        <change-notes><![CDATA[<ul><li>Migration to MPS 2023.2</li><li>Use of dataflow aspect for better readability and performances</li></ul>]]></change-notes>
+        <idea-version since-build="232.0" />
+        <change-notes><![CDATA[<ul><li>Migrate to latest coderules version</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -824,7 +824,7 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.jar" />
-        <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.ideaplugin.jar" />
+        <fileset file="${artifacts.coderules}/coderules-ideaplugin/jetbrains.mps.coderules.ideaplugin.jar" />
         <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.runtime.jar" />
         <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.typechecking.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
