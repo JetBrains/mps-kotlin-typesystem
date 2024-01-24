@@ -14189,7 +14189,7 @@
                 <ref role="1PxDUh" to="wyt6:~Boolean" resolve="Boolean" />
               </node>
               <node concept="3hN9Ij" id="3CcDAIYSxyZ" role="3uHU7B">
-                <ref role="3hLkJx" node="7ZP$ZPvLssW" resolve="skipInferenceOnReturn" />
+                <ref role="3hLkJx" node="7ZP$ZPvLssW" resolve="skipDefaultToUnit" />
               </node>
             </node>
             <node concept="2OqwBi" id="6gam351dcbm" role="3uHU7B">
@@ -22467,12 +22467,12 @@
         <node concept="3clFbF" id="6lHpTcL60p0" role="3cqZAp">
           <node concept="37vLTI" id="6lHpTcL6206" role="3clFbG">
             <node concept="37vLTw" id="6lHpTcL622P" role="37vLTx">
-              <ref role="3cqZAo" node="6lHpTcL5TxH" resolve="externallyHandledTypes" />
+              <ref role="3cqZAo" node="6lHpTcL5TxH" resolve="defaultToPullDown" />
             </node>
             <node concept="2OqwBi" id="6lHpTcL60ws" role="37vLTJ">
               <node concept="Xjq3P" id="6lHpTcL60oZ" role="2Oq$k0" />
               <node concept="2S8uIT" id="6lHpTcL60II" role="2OqNvi">
-                <ref role="2S8YL0" node="6lHpTcL5TIR" resolve="externallyHandledTypes" />
+                <ref role="2S8YL0" node="6lHpTcL5TIR" resolve="defaultToPullDown" />
               </node>
             </node>
           </node>
@@ -44978,7 +44978,7 @@
               <node concept="2OqwBi" id="4ioyk0010c4" role="3uHU7w">
                 <node concept="2OqwBi" id="4ioyk000Z7q" role="2Oq$k0">
                   <node concept="3A2sRY" id="4ioyk000YR3" role="2Oq$k0">
-                    <ref role="3A2yKK" node="2t3z978gQyu" resolve="dataFlowSource" />
+                    <ref role="3A2yKK" node="2t3z978gQyu" resolve="checkRoot" />
                   </node>
                   <node concept="2Xjw5R" id="4ioyk0010ap" role="2OqNvi">
                     <node concept="1xMEDy" id="4ioyk0010ar" role="1xVPHs">
@@ -44996,7 +44996,7 @@
                   <ref role="37wK5l" to="w1kc:~SModelStereotype.isStubModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isStubModel" />
                   <node concept="2OqwBi" id="Ad0bnW2R7u" role="37wK5m">
                     <node concept="3A2sRY" id="Ad0bnW2R7v" role="2Oq$k0">
-                      <ref role="3A2yKK" node="2t3z978gQyu" resolve="dataFlowSource" />
+                      <ref role="3A2yKK" node="2t3z978gQyu" resolve="checkRoot" />
                     </node>
                     <node concept="I4A8Y" id="Ad0bnW2R7w" role="2OqNvi" />
                   </node>
@@ -45006,7 +45006,7 @@
             <node concept="3fqX7Q" id="aFWmv4wROS" role="3uHU7w">
               <node concept="2OqwBi" id="aFWmv4wS1e" role="3fr31v">
                 <node concept="3A2sRY" id="aFWmv4wRQO" role="2Oq$k0">
-                  <ref role="3A2yKK" node="2t3z978gQyu" resolve="dataFlowSource" />
+                  <ref role="3A2yKK" node="2t3z978gQyu" resolve="checkRoot" />
                 </node>
                 <node concept="1mIQ4w" id="aFWmv4wSqR" role="2OqNvi">
                   <node concept="chp4Y" id="aFWmv4wSsx" role="cj9EA">
@@ -46061,7 +46061,7 @@
         </node>
       </node>
       <node concept="2t___k" id="4HDl82dp94y" role="1nLNMg">
-        <ref role="2t_S0q" to="hcm8:1502VugCR$H" resolve="MemberNavigationOperation" />
+        <ref role="2t_S0q" to="hcm8:1502VugCR$H" resolve="MemberNavigationExpression" />
         <node concept="3A20r5" id="4HDl82dp94z" role="2t_VXX">
           <property role="TrG5h" value="mno" />
         </node>
