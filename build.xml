@@ -8,7 +8,7 @@
   <property name="mps.macro.coderules_home" location="${coderules_home}" />
   <property name="ci.build.num" value="9999" />
   <property name="ci.build.tag" value="SNAPSHOT" />
-  <property name="ci.mps.release" value="232" />
+  <property name="ci.mps.release" value="233" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.coderules" location="${coderules_home}" />
   <property name="artifacts.mpsKotlinPlugin" location="${mps_home}/plugins" />
@@ -64,7 +64,7 @@
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
         <idea-version since-build="232.0" />
-        <change-notes><![CDATA[<ul><li>Migrate to 2023.2</li><li>Support for try/catch expression</li></ul>]]></change-notes>
+        <change-notes><![CDATA[<ul><li>Migrate to 2023.3</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -87,7 +87,7 @@
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
         <idea-version since-build="232.0" />
-        <change-notes><![CDATA[<ul><li>Migrate to 2023.2</li><li>Support for try/catch expression</li></ul>]]></change-notes>
+        <change-notes><![CDATA[<ul><li>Migrate to 2023.3</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -132,6 +132,7 @@
           <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
           <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
           <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
+          <module ref="3330376f-82a0-45ed-ae50-a320ee8b0b63(jetbrains.mps.lang.script.rt)" kind="rt" />
           <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
           <module ref="f486b8aa-5b2d-4ec0-8ef5-8f45d773fb84(jetbrains.mps.lang.typechecking.runtime)" kind="rt" />
           <module ref="a5478664-6b44-4c62-a9f7-434f8aa57eee(jetbrains.mps.logic.runtime)" kind="rt" />
@@ -270,6 +271,7 @@
           <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
           <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
           <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
+          <module ref="3330376f-82a0-45ed-ae50-a320ee8b0b63(jetbrains.mps.lang.script.rt)" kind="rt" />
           <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
           <module ref="f486b8aa-5b2d-4ec0-8ef5-8f45d773fb84(jetbrains.mps.lang.typechecking.runtime)" kind="rt" />
           <module ref="a5478664-6b44-4c62-a9f7-434f8aa57eee(jetbrains.mps.logic.runtime)" kind="rt" />
@@ -394,6 +396,7 @@
           <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
           <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
           <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
+          <module ref="3330376f-82a0-45ed-ae50-a320ee8b0b63(jetbrains.mps.lang.script.rt)" kind="rt" />
           <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
           <module ref="f486b8aa-5b2d-4ec0-8ef5-8f45d773fb84(jetbrains.mps.lang.typechecking.runtime)" kind="rt" />
           <module ref="a5478664-6b44-4c62-a9f7-434f8aa57eee(jetbrains.mps.logic.runtime)" kind="rt" />
@@ -608,14 +611,14 @@
     <echo message="generating" />
     <generate fork="true" logLevel="${mps.ant.log}">      
       <settings refid="m2m-defaults" />
-      <plugin path="${artifacts.coderules}/jetbrains.mps.coderules" />
-      <plugin path="${artifacts.mps}/lib/mps-workbench.jar" />
-      <plugin path="${artifacts.mps}/plugins/mps-build" />
-      <plugin path="${artifacts.mps}/plugins/mps-core" />
-      <plugin path="${artifacts.mps}/plugins/mps-java" />
-      <plugin path="${artifacts.mps}/plugins/mps-kotlin" />
-      <plugin path="${artifacts.mps}/plugins/mps-make" />
-      <plugin path="${artifacts.mps}/plugins/mps-testing" />
+      <plugin path="${artifacts.coderules}/jetbrains.mps.coderules" id="jetbrains.mps.coderules" />
+      <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
+      <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
+      <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
+      <plugin path="${artifacts.mps}/plugins/mps-java" id="jetbrains.mps.ide.java" />
+      <plugin path="${artifacts.mps}/plugins/mps-kotlin" id="jetbrains.mps.kotlin" />
+      <plugin path="${artifacts.mps}/plugins/mps-make" id="jetbrains.mps.ide.make" />
+      <plugin path="${artifacts.mps}/plugins/mps-testing" id="jetbrains.mps.testing" />
       <library file="${artifacts.mps}/languages/baseLanguage/closures.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/collections.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
@@ -666,13 +669,13 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.rules.skeleton.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.context.defs.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.context.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.doc.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.analyzers.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.extension.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.feedback.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.feedback.messages.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.feedback.problem.childAndProp.jar" />
@@ -733,6 +736,7 @@
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.problem.rules.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.messages.api.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.migration.runtime.jar" />
+      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.script.rt.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.refactoring.runtime.jar" />
       <library file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
@@ -740,6 +744,7 @@
       <library file="${artifacts.mps}/languages/tools/jetbrains.mps.tool.common.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.java.stub.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.kernel.jar" />
+      <library file="${artifacts.mps}/languages/util/jetbrains.mps.lang.extension.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.lang.makeup.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.project.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.refactoring.jar" />
@@ -782,9 +787,9 @@
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-context.jar" />
         <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
@@ -802,6 +807,7 @@
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
@@ -811,6 +817,7 @@
         <fileset file="${artifacts.mps}/lib/util_rt.jar" />
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
         <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
@@ -824,9 +831,10 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.jar" />
-        <fileset file="${artifacts.coderules}/coderules-ideaplugin/jetbrains.mps.coderules.ideaplugin.jar" />
+        <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.ideaplugin.jar" />
         <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.runtime.jar" />
         <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.typechecking.jar" />
+        <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-kotlin/languages/kotlin/jetbrains.mps.kotlin.jar" />
         <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.lang.coderules.runtime.jar" />
@@ -870,9 +878,9 @@
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-context.jar" />
         <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
@@ -890,6 +898,7 @@
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.kotlinExt" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
@@ -900,6 +909,7 @@
         <fileset file="${artifacts.mps}/lib/util_rt.jar" />
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
         <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
@@ -909,6 +919,7 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-kotlin/languages/kotlin/jetbrains.mps.kotlin.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-kotlin/languages/kotlin/jetbrains.mps.kotlin.baseLanguage.runtime.jar" />
@@ -944,9 +955,9 @@
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-context.jar" />
         <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
@@ -964,6 +975,7 @@
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.kotlin.javaRefsExt" />
         <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/lib/jetbrains.mps.coderules.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.kotlinExt" />
@@ -976,6 +988,7 @@
         <fileset file="${artifacts.mps}/lib/util_rt.jar" />
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
         <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
@@ -983,6 +996,7 @@
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-kotlin/languages/kotlin/jetbrains.mps.kotlin.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-kotlin/languages/kotlin/jetbrains.mps.kotlin.javaRefs.jar" />
@@ -1019,9 +1033,9 @@
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-context.jar" />
         <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
@@ -1039,6 +1053,7 @@
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.kotlin.smodelExt" />
         <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/lib/jetbrains.mps.coderules.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.kotlinExt" />
@@ -1051,6 +1066,7 @@
         <fileset file="${artifacts.mps}/lib/util_rt.jar" />
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
         <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />

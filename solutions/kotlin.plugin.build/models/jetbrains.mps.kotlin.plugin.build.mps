@@ -227,7 +227,7 @@
       <node concept="aVJcg" id="5Hdh9$IhmQ_" role="aVJcv">
         <node concept="NbPM2" id="5Hdh9$IhmQA" role="aVJcq">
           <node concept="3Mxwew" id="5Hdh9$IhmQB" role="3MwsjC">
-            <property role="3MwjfP" value="232" />
+            <property role="3MwjfP" value="233" />
           </node>
         </node>
       </node>
@@ -357,7 +357,7 @@
       <node concept="2pNNFK" id="1c8EeOQUqay" role="20twgj">
         <property role="2pNNFO" value="change-notes" />
         <node concept="2pNm8S" id="1c8EeOQUqaz" role="3o6s8t">
-          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Migrate to 2023.2&lt;/li&gt;&lt;li&gt;Support for try/catch expression&lt;/li&gt;&lt;/ul&gt;" />
+          <property role="3o6aOc" value="&lt;ul&gt;&lt;li&gt;Migrate to 2023.3&lt;/li&gt;&lt;/ul&gt;" />
         </node>
       </node>
       <node concept="3_J27D" id="69s32WJ3dwI" role="3s6cr7">
