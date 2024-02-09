@@ -167,6 +167,7 @@
         <child id="1243006380186325231" name="getter" index="21NdHo" />
         <child id="1314219036499436525" name="declaration" index="TDYyH" />
       </concept>
+      <concept id="2936055411798373544" name="jetbrains.mps.kotlin.structure.FinallyBlock" flags="ng" index="1XD09Z" />
       <concept id="2936055411798373456" name="jetbrains.mps.kotlin.structure.NavigationOperation" flags="ng" index="1XD0a7">
         <child id="2936055411798374203" name="target" index="1XD07H" />
       </concept>
@@ -216,6 +217,9 @@
       <concept id="2936055411798373726" name="jetbrains.mps.kotlin.structure.ReturnExpression" flags="ng" index="1XD0e9">
         <child id="2936055411798374640" name="returned" index="1XD0SB" />
       </concept>
+      <concept id="2936055411798373725" name="jetbrains.mps.kotlin.structure.ThrowExpression" flags="ng" index="1XD0ea">
+        <child id="2936055411798374638" name="throwable" index="1XD0ST" />
+      </concept>
       <concept id="2936055411798373697" name="jetbrains.mps.kotlin.structure.ReceiverType" flags="ng" index="1XD0em">
         <child id="2936055411798374592" name="type" index="1XD0Sn" />
       </concept>
@@ -231,6 +235,10 @@
       </concept>
       <concept id="2936055411798373655" name="jetbrains.mps.kotlin.structure.LambdaLiteral" flags="ng" index="1XD0f0">
         <child id="1243006380186866155" name="parameters" index="21PhDs" />
+      </concept>
+      <concept id="2936055411798373661" name="jetbrains.mps.kotlin.structure.TryExpression" flags="ng" index="1XD0fa">
+        <child id="5533310174486461755" name="finally" index="UAV_M" />
+        <child id="5533310174486461754" name="catches" index="UAV_N" />
       </concept>
       <concept id="2936055411798373645" name="jetbrains.mps.kotlin.structure.TypeParameter" flags="ng" index="1XD0fq">
         <child id="2936055411798374480" name="bound" index="1XD0U7" />
@@ -284,6 +292,9 @@
       </concept>
       <concept id="2936055411798373223" name="jetbrains.mps.kotlin.structure.PropertyDefaultAssignement" flags="ng" index="1XD0mK">
         <child id="2936055411798373866" name="expression" index="1XD0cX" />
+      </concept>
+      <concept id="2936055411798373152" name="jetbrains.mps.kotlin.structure.CatchBlock" flags="ng" index="1XD0nR">
+        <child id="2936055411798373827" name="type" index="1XD0ck" />
       </concept>
       <concept id="2936055411803573749" name="jetbrains.mps.kotlin.structure.ITypeParameters" flags="ngI" index="1XPbGy">
         <child id="2936055411803573750" name="typeParameters" index="1XPbGx" />
@@ -3840,8 +3851,10 @@
       </node>
       <node concept="AQkLs" id="5aV8UnaXDtS" role="THmaL" />
       <node concept="1XD0e9" id="5aV8UnaXzGQ" role="THmaL">
-        <node concept="UZU4S" id="5aV8UnaX$rK" role="1XD0SB">
-          <ref role="UZU4V" to="0:~kotlin/Unit" resolve="Unit" />
+        <node concept="1XD0em" id="3U$pLpTinqJ" role="1XD0SB">
+          <node concept="1XD088" id="6M3tEW0ioOJ" role="1XD0Sn">
+            <ref role="1SePDO" to="0:~kotlin/Unit" resolve="Unit" />
+          </node>
         </node>
       </node>
     </node>
@@ -4348,7 +4361,7 @@
       <node concept="TDTJT" id="mSiKgDQYmi" role="THmaL">
         <property role="1Xb$ne" value="true" />
         <node concept="2Rs4SG" id="mSiKgDQYmj" role="2Rs2$5">
-          <property role="TrG5h" value="arrayOfBytes" />
+          <property role="TrG5h" value="arrayOfBytes2" />
           <node concept="1XD088" id="mSiKgDQYmk" role="1XD0Z0">
             <ref role="1SePDO" to="0:~kotlin/Array" resolve="Array" />
             <node concept="1XD0kr" id="mSiKgDQYml" role="TPadY">
@@ -4427,7 +4440,7 @@
       <node concept="TDTJT" id="7SBZzimm2fj" role="THmaL">
         <property role="1Xb$ne" value="true" />
         <node concept="2Rs4SG" id="7SBZzimm2fk" role="2Rs2$5">
-          <property role="TrG5h" value="arrayOfMixed" />
+          <property role="TrG5h" value="arrayOfMixed2" />
           <node concept="1XD088" id="7SBZzimm2fl" role="1XD0Z0">
             <ref role="1SePDO" to="0:~kotlin/Array" resolve="Array" />
             <node concept="1XD0kr" id="7SBZzimm2fm" role="TPadY">
@@ -7794,7 +7807,7 @@
             <node concept="1XD0eI" id="3CcDAIXbMnY" role="TWiod">
               <node concept="1XD0a7" id="3CcDAIXbWiY" role="1XD0ZN">
                 <node concept="1NbEtQ" id="3CcDAIXcvBF" role="1XD07H">
-                  <ref role="AarEw" to="0:~#Any?.toString()" resolve="toString" />
+                  <ref role="AarEw" to="0:~Any.toString()" resolve="toString" />
                 </node>
                 <node concept="UZU4S" id="3CcDAIXbMnX" role="21Pmik">
                   <ref role="UZU4V" node="3CcDAIVP0HF" resolve="x" />
@@ -8214,6 +8227,176 @@
         </node>
       </node>
       <node concept="AQkLs" id="1p9od2HR7id" role="THmaL" />
+    </node>
+  </node>
+  <node concept="1XD0fY" id="3luvtaySO6g">
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="try" />
+    <node concept="eKYAL" id="3luvtaySOaa" role="1XD0Tu" />
+    <node concept="1XD0bz" id="3luvtaySOcp" role="1XD0Tu">
+      <property role="TrG5h" value="regularFlow" />
+      <node concept="TDTJT" id="3luvtaySOeZ" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="3luvtaySOf0" role="2Rs2$5">
+          <property role="TrG5h" value="result" />
+        </node>
+        <node concept="1XD0mK" id="3luvtaySOhu" role="1XD05H">
+          <node concept="1XD0fa" id="3luvtaySOiq" role="1XD0cX">
+            <node concept="1XD0k7" id="3luvtaySOj9" role="THmaL">
+              <property role="1XD01k" value="3" />
+            </node>
+            <node concept="1XD0nR" id="3luvtaySOrH" role="UAV_N">
+              <property role="TrG5h" value="e" />
+              <node concept="TDTJT" id="3luvtaySP4W" role="THmaL">
+                <property role="1Xb$ne" value="true" />
+                <node concept="2Rs4SG" id="3luvtaySP4X" role="2Rs2$5">
+                  <property role="TrG5h" value="asDouble" />
+                  <node concept="1XD088" id="3luvtaySPfC" role="1XD0Z0">
+                    <ref role="1SePDO" to="0:~kotlin/Double" resolve="Double" />
+                  </node>
+                </node>
+                <node concept="1XD0mK" id="3luvtaySPhC" role="1XD05H">
+                  <node concept="UZU4S" id="3luvtaySPjf" role="1XD0cX">
+                    <ref role="UZU4V" node="3luvtaySOrH" resolve="e" />
+                  </node>
+                </node>
+                <node concept="1U20sH" id="3luvtaySPmY" role="lGtFl">
+                  <property role="1U20sK" value="arithmetic exception is not double" />
+                </node>
+              </node>
+              <node concept="TDTJT" id="3luvtaySOw$" role="THmaL">
+                <property role="1Xb$ne" value="true" />
+                <node concept="2Rs4SG" id="3luvtaySOw_" role="2Rs2$5">
+                  <property role="TrG5h" value="asException" />
+                  <node concept="1XD088" id="3luvtaySOxM" role="1XD0Z0">
+                    <ref role="1SePDO" to="0:~kotlin/ArithmeticException" resolve="ArithmeticException" />
+                  </node>
+                </node>
+                <node concept="1XD0mK" id="3luvtaySOy1" role="1XD05H">
+                  <node concept="UZU4S" id="3luvtaySOzG" role="1XD0cX">
+                    <ref role="UZU4V" node="3luvtaySOrH" resolve="e" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1XD0k7" id="3luvtaySO$V" role="THmaL">
+                <property role="1XD01k" value="2" />
+              </node>
+              <node concept="1XD088" id="3luvtaySOtD" role="1XD0ck">
+                <ref role="1SePDO" to="0:~kotlin/ArithmeticException" resolve="ArithmeticException" />
+              </node>
+            </node>
+            <node concept="1XD09Z" id="3luvtaySP_R" role="UAV_M">
+              <node concept="1XD08G" id="3luvtaySPFX" role="THmaL" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="AQkLs" id="3luvtaySPxr" role="THmaL" />
+      <node concept="TDTJT" id="3luvtaySOEq" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="3luvtaySOEr" role="2Rs2$5">
+          <property role="TrG5h" value="asInt" />
+          <node concept="1XD088" id="3luvtaySOMm" role="1XD0Z0">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="3luvtaySOGd" role="1XD05H">
+          <node concept="UZU4S" id="3luvtaySOJn" role="1XD0cX">
+            <ref role="UZU4V" node="3luvtaySOf0" resolve="result" />
+          </node>
+        </node>
+      </node>
+      <node concept="TDTJT" id="3luvtaySOOp" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="3luvtaySOOq" role="2Rs2$5">
+          <property role="TrG5h" value="asString" />
+          <node concept="1XD088" id="3luvtaySOOr" role="1XD0Z0">
+            <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="3luvtaySOOs" role="1XD05H">
+          <node concept="UZU4S" id="3luvtaySOOt" role="1XD0cX">
+            <ref role="UZU4V" node="3luvtaySOf0" resolve="result" />
+          </node>
+        </node>
+        <node concept="1U20sH" id="3luvtaySOWS" role="lGtFl">
+          <property role="1U20sK" value="int is not a string" />
+        </node>
+      </node>
+      <node concept="1XD0l1" id="3luvtaySOct" role="2BPcuh" />
+    </node>
+    <node concept="eKYAL" id="3luvtaySPIJ" role="1XD0Tu" />
+    <node concept="1XD0bz" id="3luvtaySPOW" role="1XD0Tu">
+      <property role="TrG5h" value="throwing" />
+      <node concept="TDTJT" id="3luvtaySPZu" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="3luvtaySPZv" role="2Rs2$5">
+          <property role="TrG5h" value="result" />
+        </node>
+        <node concept="1XD0mK" id="3luvtaySPZw" role="1XD05H">
+          <node concept="1XD0fa" id="3luvtaySPZx" role="1XD0cX">
+            <node concept="1XD0k7" id="3luvtaySPZy" role="THmaL">
+              <property role="1XD01k" value="3" />
+            </node>
+            <node concept="1XD0nR" id="3luvtaySPZz" role="UAV_N">
+              <property role="TrG5h" value="e" />
+              <node concept="1XD0ea" id="3luvtaySQ8I" role="THmaL">
+                <node concept="1NbEFs" id="3luvtaySQR0" role="1XD0ST">
+                  <ref role="AarEw" to="0:~AssertionError.new(Any?)" />
+                  <node concept="1XD0eI" id="3luvtaySQTg" role="TWiod">
+                    <node concept="1XD08G" id="3luvtaySQTf" role="1XD0ZN">
+                      <node concept="Df6$J" id="3luvtaySQV4" role="Df6Hu">
+                        <node concept="21VMdE" id="3luvtaySQV3" role="Df7GE">
+                          <property role="21VMdD" value="not happy!" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1XD088" id="3luvtaySPZK" role="1XD0ck">
+                <ref role="1SePDO" to="0:~kotlin/ArithmeticException" resolve="ArithmeticException" />
+              </node>
+            </node>
+            <node concept="1XD09Z" id="3luvtaySPZL" role="UAV_M">
+              <node concept="1XD08G" id="3luvtaySPZM" role="THmaL" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="AQkLs" id="3luvtaySPZN" role="THmaL" />
+      <node concept="TDTJT" id="3luvtaySPZO" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="3luvtaySPZP" role="2Rs2$5">
+          <property role="TrG5h" value="asInt" />
+          <node concept="1XD088" id="3luvtaySPZQ" role="1XD0Z0">
+            <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="3luvtaySPZR" role="1XD05H">
+          <node concept="UZU4S" id="3luvtaySPZS" role="1XD0cX">
+            <ref role="UZU4V" node="3luvtaySPZv" resolve="result" />
+          </node>
+        </node>
+      </node>
+      <node concept="TDTJT" id="3luvtaySPZT" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="3luvtaySPZU" role="2Rs2$5">
+          <property role="TrG5h" value="asString" />
+          <node concept="1XD088" id="3luvtaySPZV" role="1XD0Z0">
+            <ref role="1SePDO" to="0:~kotlin/String" resolve="String" />
+          </node>
+        </node>
+        <node concept="1XD0mK" id="3luvtaySPZW" role="1XD05H">
+          <node concept="UZU4S" id="3luvtaySPZX" role="1XD0cX">
+            <ref role="UZU4V" node="3luvtaySPZv" resolve="result" />
+          </node>
+        </node>
+        <node concept="1U20sH" id="3luvtaySPZY" role="lGtFl">
+          <property role="1U20sK" value="int is not a string" />
+        </node>
+      </node>
+      <node concept="1XD0l1" id="3luvtaySPP0" role="2BPcuh" />
     </node>
   </node>
 </model>

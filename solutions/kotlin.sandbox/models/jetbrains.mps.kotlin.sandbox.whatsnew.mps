@@ -14,8 +14,8 @@
     <import index="x6hl" ref="398d67d2-c2e9-11e2-ad49-6cf049e62ea4/kotlinJvm:com.intellij.ui.dsl.builder(jetbrains.mps.kotin.ui.dsl/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
-    <import index="9223" ref="r:4cc53280-f3bd-4909-ac6e-932df5f37f0f(jetbrains.mps.kotlin.smodel.runtime.lib)" implicit="true" />
     <import index="1xrd" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.collections(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
+    <import index="9223" ref="r:4cc53280-f3bd-4909-ac6e-932df5f37f0f(jetbrains.mps.kotlin.smodel.runtime.lib)" implicit="true" />
   </imports>
   <registry>
     <language id="9e4ff22b-60f1-43ef-a50b-f9f0fcec22e0" name="jetbrains.mps.kotlin.javaRefs">
@@ -27,7 +27,7 @@
       </concept>
     </language>
     <language id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin">
-      <concept id="1243006380186304290" name="jetbrains.mps.kotlin.structure.IWithReceiver" flags="ng" index="21N7il">
+      <concept id="1243006380186304290" name="jetbrains.mps.kotlin.structure.IWithReceiver" flags="ngI" index="21N7il">
         <child id="8521376398798405093" name="receiverType" index="39xbXa" />
       </concept>
       <concept id="1243006380186890016" name="jetbrains.mps.kotlin.structure.UnaryExpression" flags="ng" index="21Pmin">
@@ -39,27 +39,27 @@
       <concept id="1243006380188575965" name="jetbrains.mps.kotlin.structure.StringLiteralRaw" flags="ng" index="21VMdE">
         <property id="1243006380188575966" name="content" index="21VMdD" />
       </concept>
-      <concept id="7996321249597408849" name="jetbrains.mps.kotlin.structure.IInheritExplicitly" flags="ng" index="6Oumu">
+      <concept id="7996321249597408849" name="jetbrains.mps.kotlin.structure.IInheritExplicitly" flags="ngI" index="6Oumu">
         <child id="1991556721067228837" name="superclasses" index="AST3G" />
       </concept>
       <concept id="5622728304609204267" name="jetbrains.mps.kotlin.structure.EmptyDeclaration" flags="ng" index="eKYAL" />
       <concept id="7358760241248942182" name="jetbrains.mps.kotlin.structure.Comment" flags="ng" index="gXE$l">
         <child id="7358760241248948562" name="lines" index="gXG0x" />
       </concept>
-      <concept id="2599447651060127508" name="jetbrains.mps.kotlin.structure.ITypeArguments" flags="ng" index="2pIC39">
+      <concept id="2599447651060127508" name="jetbrains.mps.kotlin.structure.ITypeArguments" flags="ngI" index="2pIC39">
         <child id="6565639133216732540" name="typeArguments" index="TPadX" />
       </concept>
       <concept id="1991556721070973461" name="jetbrains.mps.kotlin.structure.EmptyStatement" flags="ng" index="AQkLs" />
       <concept id="6389031306614148912" name="jetbrains.mps.kotlin.structure.StringLiteralLine" flags="ng" index="Df6$J">
         <child id="6389031306614152501" name="parts" index="Df7GE" />
       </concept>
-      <concept id="1314219036498225646" name="jetbrains.mps.kotlin.structure.IStatementHolder" flags="ng" index="THmaI">
+      <concept id="1314219036498225646" name="jetbrains.mps.kotlin.structure.IStatementHolder" flags="ngI" index="THmaI">
         <child id="1314219036498225649" name="statements" index="THmaL" />
       </concept>
-      <concept id="6565639133216732537" name="jetbrains.mps.kotlin.structure.IProjectedTypeArguments" flags="ng" index="TPadS">
+      <concept id="6565639133216732537" name="jetbrains.mps.kotlin.structure.IProjectedTypeArguments" flags="ngI" index="TPadS">
         <child id="6565639133216732540" name="typeProjections" index="TPadY" />
       </concept>
-      <concept id="6565639133219057675" name="jetbrains.mps.kotlin.structure.IArguments" flags="ng" index="TWioa">
+      <concept id="6565639133219057675" name="jetbrains.mps.kotlin.structure.IArguments" flags="ngI" index="TWioa">
         <child id="6565639133219057676" name="arguments" index="TWiod" />
       </concept>
       <concept id="5533310174484620657" name="jetbrains.mps.kotlin.structure.VariableRefExpression" flags="ng" index="UZU4S">
@@ -74,21 +74,18 @@
       <concept id="8163976557865110008" name="jetbrains.mps.kotlin.structure.PropertyMemberTarget" flags="ng" index="3fpGMk">
         <reference id="219803515061375090" name="variable" index="3w$npj" />
       </concept>
-      <concept id="7027413324315184167" name="jetbrains.mps.kotlin.structure.ILambdaAsArgument" flags="ng" index="3$8iW8">
+      <concept id="7027413324315184167" name="jetbrains.mps.kotlin.structure.ILambdaAsArgument" flags="ngI" index="3$8iW8">
         <child id="2936055411798374269" name="lambda" index="1XD06E" />
       </concept>
       <concept id="4662566628538082515" name="jetbrains.mps.kotlin.structure.FunctionCallTarget" flags="ng" index="1NbEtQ" />
       <concept id="4662566628538083705" name="jetbrains.mps.kotlin.structure.FunctionCallExpression" flags="ng" index="1NbEFs" />
-      <concept id="6664176324866782072" name="jetbrains.mps.kotlin.structure.IClassReference" flags="ng" index="1SePDR">
+      <concept id="6664176324866782072" name="jetbrains.mps.kotlin.structure.IClassReference" flags="ngI" index="1SePDR">
         <reference id="6664176324866782075" name="class" index="1SePDO" />
       </concept>
-      <concept id="2936055411806083456" name="jetbrains.mps.kotlin.structure.IFunctionParameters" flags="ng" index="1XbAXn">
+      <concept id="2936055411806083456" name="jetbrains.mps.kotlin.structure.IFunctionParameters" flags="ngI" index="1XbAXn">
         <child id="2936055411806083457" name="parameters" index="1XbAXm" />
       </concept>
       <concept id="2936055411798373599" name="jetbrains.mps.kotlin.structure.ClassType" flags="ng" index="1XD088" />
-      <concept id="2936055411798373622" name="jetbrains.mps.kotlin.structure.ConstructorSuperSpecifier" flags="ng" index="1XD08x">
-        <reference id="2324909103760693884" name="target" index="KYurZ" />
-      </concept>
       <concept id="2936055411798373627" name="jetbrains.mps.kotlin.structure.StringLiteral" flags="ng" index="1XD08G">
         <child id="6389031306614148417" name="lines" index="Df6Hu" />
       </concept>
@@ -156,7 +153,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -213,13 +210,8 @@
         <property role="TrG5h" value="AAA" />
         <ref role="$cB6q" node="4W64WfRLLaj" resolve="VisibilityLevel" />
       </node>
-      <node concept="1XD08x" id="16Tg2dF08s" role="AST3G">
-        <ref role="KYurZ" to="0:~Enum.new(String,Int)" resolve="Enum" />
-        <node concept="1XD088" id="16Tg2dF08u" role="TPadX">
-          <ref role="1SePDO" node="4W64WfRLLaj" resolve="VisibilityLevel" />
-        </node>
-      </node>
     </node>
+    <node concept="eKYAL" id="37xFOb4PtdG" role="1XD0Tu" />
     <node concept="1XD0aY" id="4W64WfRCZ61" role="1XD0Tu">
       <property role="TrG5h" value="Method" />
       <node concept="1XD0bt" id="4W64WfRCZ64" role="1XD06P" />
@@ -383,12 +375,17 @@
                 </node>
                 <node concept="1XD0f0" id="4W64WfRJY1A" role="1XD06E">
                   <node concept="1NbEFs" id="4W64WfRKwJz" role="THmaL">
-                    <ref role="AarEw" to="x6hl:~Row.comboBox&lt;1&gt;(kotlin/Array&lt;0&gt;,javax/swing/ListCellRenderer&lt;0?&gt;?)" resolve="comboBox" />
+                    <ref role="AarEw" to="x6hl:~Row.comboBox&lt;1&gt;(kotlin/collections/Collection&lt;0&gt;,javax/swing/ListCellRenderer&lt;0?&gt;?)" resolve="comboBox" />
                     <node concept="1XD0eI" id="4W64WfRKZYY" role="TWiod">
-                      <node concept="1NbEFs" id="4W64WfRKZYX" role="1XD0ZN">
-                        <ref role="AarEw" to="0:~.enumValues[Enum&lt;0&gt;]()" resolve="enumValues" />
-                        <node concept="1XD088" id="4W64WfRMF1U" role="TPadX">
-                          <ref role="1SePDO" node="4W64WfRLLaj" resolve="VisibilityLevel" />
+                      <node concept="1XD0a7" id="37xFOb4OZ6$" role="1XD0ZN">
+                        <node concept="1NbEtQ" id="37xFOb4OZBj" role="1XD07H">
+                          <ref role="AarEw" to="1xrd:~#kotlin/Array&lt;0&gt;.toList&lt;1&gt;()" resolve="toList" />
+                        </node>
+                        <node concept="1NbEFs" id="4W64WfRKZYX" role="21Pmik">
+                          <ref role="AarEw" to="0:~.enumValues[Enum&lt;0&gt;]()" resolve="enumValues" />
+                          <node concept="1XD088" id="4W64WfRMF1U" role="TPadX">
+                            <ref role="1SePDO" node="4W64WfRLLaj" resolve="VisibilityLevel" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -398,7 +395,7 @@
             </node>
           </node>
           <node concept="1NbEFs" id="4W64WfRNEwd" role="THmaL">
-            <ref role="AarEw" to="x6hl:~Panel.group(kotlin/String?,kotlin/Boolean,kotlin/Boolean?,kotlin/Boolean?,kotlin/Function1&lt;Panel,kotlin/Unit&gt;)" resolve="group" />
+            <ref role="AarEw" to="x6hl:~Panel.group(kotlin/String?,kotlin/Boolean,kotlin/Function1&lt;Panel,kotlin/Unit&gt;)" resolve="group" />
             <node concept="1XD0eI" id="4W64WfRNOHK" role="TWiod">
               <node concept="1XD08G" id="4W64WfRNOHJ" role="1XD0ZN">
                 <node concept="Df6$J" id="4W64WfRO8De" role="Df6Hu">
