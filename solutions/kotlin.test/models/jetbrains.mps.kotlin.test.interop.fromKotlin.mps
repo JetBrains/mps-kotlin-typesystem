@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:00d77b6d-6812-41ab-b775-547e9c59d223(jetbrains.mps.kotlin.test.interop)">
+<model ref="r:00d77b6d-6812-41ab-b775-547e9c59d223(jetbrains.mps.kotlin.test.interop.fromKotlin)">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="true" />
   <languages>
@@ -8,7 +8,7 @@
   </languages>
   <imports>
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" />
-    <import index="49cn" ref="d2c5f31a-2aac-440d-a15c-2d8cba42bf3d/kotlinJvm:kotlin.jvm(jetbrains.mps.kotlin.stdlib.jvm/)" />
+    <import index="49cn" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin_jvm:kotlin.jvm(jetbrains.mps.kotlin.stdlib/)" />
     <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="1xrd" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin.collections(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -84,6 +84,9 @@
       </concept>
       <concept id="7565185111013327093" name="jetbrains.mps.kotlin.javaRefs.structure.JavaClassType" flags="ng" index="2EYIWN">
         <reference id="7565185111013327225" name="javaClass" index="2EYIUZ" />
+      </concept>
+      <concept id="6585624606749620859" name="jetbrains.mps.kotlin.javaRefs.structure.JavaDefaultConstructorCall" flags="ng" index="1m1iNb">
+        <reference id="6585624606749620866" name="classifier" index="1m1iKM" />
       </concept>
       <concept id="6585624606750892678" name="jetbrains.mps.kotlin.javaRefs.structure.JavaDefaultConstructorSuperSpecifier" flags="ng" index="1m4rgQ">
         <reference id="6585624606750892685" name="classifier" index="1m4rgX" />
@@ -231,6 +234,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -247,7 +251,8 @@
     </language>
   </registry>
   <node concept="1XD0fY" id="3dMaGAcjnKz">
-    <property role="TrG5h" value="scopes" />
+    <property role="TrG5h" value="members" />
+    <property role="3GE5qa" value="scopes" />
     <node concept="eKYAL" id="3dMaGAcjnK$" role="1XD0Tu" />
     <node concept="1XD0bz" id="3dMaGAcjFvk" role="1XD0Tu">
       <property role="TrG5h" value="methodAsVariable" />
@@ -295,6 +300,7 @@
         <node concept="1XD0a7" id="3dMaGAcjFv_" role="1XD0Yo">
           <node concept="1ygUyI" id="3dMaGAcjFvA" role="1XD07H">
             <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
+            <ref role="2DD9uJ" node="3dMaGAcjBa3" resolve="setValue" />
           </node>
           <node concept="UZU4S" id="3dMaGAcjFvB" role="21Pmik">
             <ref role="UZU4V" node="3dMaGAcjFvx" resolve="file" />
@@ -812,6 +818,7 @@
   </node>
   <node concept="312cEu" id="3dMaGAcjB0B">
     <property role="TrG5h" value="TestObject" />
+    <property role="3GE5qa" value="stubs" />
     <node concept="312cEg" id="3dMaGAckwlw" role="jymVt">
       <property role="TrG5h" value="myValue" />
       <node concept="3Tm1VV" id="3dMaGAckwjY" role="1B3o_S" />
@@ -1445,10 +1452,26 @@
     </node>
   </node>
   <node concept="1XD0fY" id="6e74p5eOOsh">
-    <property role="TrG5h" value="jvmSpecific" />
+    <property role="TrG5h" value="javaClass" />
     <node concept="eKYAL" id="6e74p5eOO_O" role="1XD0Tu" />
     <node concept="1XD0bz" id="6e74p5eOO_Z" role="1XD0Tu">
       <property role="TrG5h" value="jvmSpecificUsage" />
+      <node concept="gXE$l" id="7ffJaDGKNvU" role="THmaL">
+        <node concept="1PaTwC" id="7ffJaDGKNvW" role="gXG0x">
+          <node concept="3oM_SD" id="7ffJaDGKNwq" role="1PaTwD">
+            <property role="3oM_SC" value="Specific" />
+          </node>
+          <node concept="3oM_SD" id="7ffJaDGKNwt" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="7ffJaDGKNwz" role="1PaTwD">
+            <property role="3oM_SC" value="jvm" />
+          </node>
+          <node concept="3oM_SD" id="7ffJaDGKNwE" role="1PaTwD">
+            <property role="3oM_SC" value="stubs" />
+          </node>
+        </node>
+      </node>
       <node concept="1XD0l1" id="6e74p5eOOA2" role="2BPcuh" />
       <node concept="TDTJT" id="6e74p5eU0o$" role="THmaL">
         <property role="1Xb$ne" value="true" />
@@ -1484,6 +1507,7 @@
   <node concept="312cEu" id="6e74p5eOLyT">
     <property role="TrG5h" value="MultipleConstructorClass" />
     <property role="1sVAO0" value="true" />
+    <property role="3GE5qa" value="stubs" />
     <node concept="3clFbW" id="6e74p5eOLIr" role="jymVt">
       <node concept="37vLTG" id="6e74p5eOLIX" role="3clF46">
         <property role="TrG5h" value="a" />
@@ -1505,6 +1529,48 @@
       <node concept="3clFbS" id="6e74p5eOLUJ" role="3clF47" />
     </node>
     <node concept="3Tm1VV" id="6e74p5eOLyU" role="1B3o_S" />
+  </node>
+  <node concept="1XD0fY" id="7ffJaDGKNxe">
+    <property role="TrG5h" value="constructors" />
+    <property role="3GE5qa" value="scopes" />
+    <node concept="1XD0bz" id="7ffJaDGKRF_" role="1XD0Tu">
+      <property role="TrG5h" value="constructorCalls" />
+      <node concept="1m1iNb" id="41gkEW$ZUMy" role="THmaL">
+        <ref role="1m1iKM" node="3dMaGAcjB0B" resolve="TestObject" />
+      </node>
+      <node concept="2yQVVM" id="7ffJaDGKRGR" role="THmaL">
+        <ref role="2yQV70" node="6e74p5eOLIr" resolve="MultipleConstructorClass" />
+        <node concept="1XD0eI" id="7ffJaDGKRGS" role="TWiod">
+          <node concept="1XD08G" id="7ffJaDGKRGT" role="1XD0ZN" />
+        </node>
+      </node>
+      <node concept="2yQVVM" id="7ffJaDGKRG6" role="THmaL">
+        <ref role="2yQV70" node="6e74p5eOLUE" />
+        <node concept="1XD0eI" id="7ffJaDGKRGG" role="TWiod">
+          <node concept="1XD0k7" id="7ffJaDGKRI5" role="1XD0ZN">
+            <property role="1XD01k" value="2" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1XD0bz" id="7ffJaDGKN$3" role="1XD0Tu">
+      <property role="TrG5h" value="constructorReferences" />
+      <node concept="21SRaq" id="41gkEW$ZUGA" role="THmaL">
+        <node concept="3R_z35" id="41gkEW$ZUJ3" role="1XD07G">
+          <ref role="3R_zB5" node="3dMaGAcjB0B" resolve="TestObject" />
+        </node>
+      </node>
+      <node concept="21SRaq" id="41gkEW$ZSGt" role="THmaL">
+        <node concept="3R_z35" id="41gkEW$ZSHD" role="1XD07G">
+          <ref role="3R_zB5" node="6e74p5eOLIr" resolve="MultipleConstructorClass" />
+        </node>
+      </node>
+      <node concept="21SRaq" id="41gkEW$ZSJD" role="THmaL">
+        <node concept="3R_z35" id="41gkEW$ZSKG" role="1XD07G">
+          <ref role="3R_zB5" node="6e74p5eOLUE" resolve="MultipleConstructorClass" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

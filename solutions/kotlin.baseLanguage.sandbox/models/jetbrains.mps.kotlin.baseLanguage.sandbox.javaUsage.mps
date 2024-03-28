@@ -449,6 +449,12 @@
       <node concept="3cqZAl" id="4mvBIJf4tSV" role="3clF45" />
       <node concept="3Tm1VV" id="4mvBIJf4tSW" role="1B3o_S" />
       <node concept="3clFbS" id="4mvBIJf4tSX" role="3clF47" />
+      <node concept="37vLTG" id="6cin1kbVwfQ" role="3clF46">
+        <property role="TrG5h" value="a" />
+        <node concept="3uibUv" id="6cin1kbVwfP" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Double" resolve="Double" />
+        </node>
+      </node>
     </node>
     <node concept="312cEg" id="4mvBIJf4tGh" role="jymVt">
       <property role="TrG5h" value="myVariable" />
