@@ -16,6 +16,15 @@
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
+      <concept id="1201370618622" name="jetbrains.mps.baseLanguage.structure.Property" flags="ig" index="2RhdJD">
+        <property id="1201371481316" name="propertyName" index="2RkwnN" />
+        <child id="1201371521209" name="type" index="2RkE6I" />
+        <child id="1201372378714" name="propertyImplementation" index="2RnVtd" />
+      </concept>
+      <concept id="1201372606839" name="jetbrains.mps.baseLanguage.structure.DefaultPropertyImplementation" flags="ng" index="2RoN1w">
+        <child id="1202065356069" name="defaultGetAccessor" index="3wFrgM" />
+        <child id="1202078082794" name="defaultSetAccessor" index="3xrYvX" />
+      </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -30,6 +39,13 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1109279763828" name="jetbrains.mps.baseLanguage.structure.TypeVariableDeclaration" flags="ng" index="16euLQ" />
+      <concept id="1109279851642" name="jetbrains.mps.baseLanguage.structure.GenericDeclaration" flags="ng" index="16eOlS">
+        <child id="1109279881614" name="typeVariableDeclaration" index="16eVyc" />
+      </concept>
+      <concept id="1109283449304" name="jetbrains.mps.baseLanguage.structure.TypeVariableReference" flags="in" index="16syzq">
+        <reference id="1109283546497" name="typeVariableDeclaration" index="16sUi3" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -61,6 +77,10 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="1202065242027" name="jetbrains.mps.baseLanguage.structure.DefaultGetAccessor" flags="ng" index="3wEZqW" />
+      <concept id="1202077725299" name="jetbrains.mps.baseLanguage.structure.DefaultSetAccessor" flags="ng" index="3xqBd$">
+        <child id="1202077744034" name="visibility" index="3xqFEP" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -102,6 +122,9 @@
     <language id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin">
       <concept id="1243006380186304290" name="jetbrains.mps.kotlin.structure.IWithReceiver" flags="ngI" index="21N7il">
         <child id="8521376398798405093" name="receiverType" index="39xbXa" />
+      </concept>
+      <concept id="1243006380186327175" name="jetbrains.mps.kotlin.structure.IReturnType" flags="ngI" index="21NdcK">
+        <child id="1243006380186327176" name="returnType" index="21NdcZ" />
       </concept>
       <concept id="1243006380186890016" name="jetbrains.mps.kotlin.structure.UnaryExpression" flags="ng" index="21Pmin">
         <child id="1243006380186890019" name="operand" index="21Pmik" />
@@ -197,6 +220,9 @@
       </concept>
       <concept id="2936055411798373784" name="jetbrains.mps.kotlin.structure.ThisExpression" flags="ng" index="1XD0df">
         <reference id="7138249191276895869" name="targetLabel" index="2BlRAG" />
+      </concept>
+      <concept id="2936055411798373726" name="jetbrains.mps.kotlin.structure.ReturnExpression" flags="ng" index="1XD0e9">
+        <child id="2936055411798374640" name="returned" index="1XD0SB" />
       </concept>
       <concept id="2936055411798373698" name="jetbrains.mps.kotlin.structure.INullableType" flags="ngI" index="1XD0el">
         <property id="6234117012688354198" name="isNullable" index="3V1zfM" />
@@ -1570,6 +1596,77 @@
           <ref role="3R_zB5" node="6e74p5eOLUE" resolve="MultipleConstructorClass" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1XD0fY" id="1NGOXNJFf4Q">
+    <property role="TrG5h" value="subtyping" />
+    <node concept="eKYAL" id="1NGOXNJFfEp" role="1XD0Tu" />
+    <node concept="1XD0bz" id="1NGOXNJFfE$" role="1XD0Tu">
+      <property role="TrG5h" value="generics" />
+      <node concept="TDTJT" id="1NGOXNJFpbw" role="THmaL">
+        <property role="1Xb$ne" value="true" />
+        <node concept="2Rs4SG" id="1NGOXNJFpbx" role="2Rs2$5">
+          <property role="TrG5h" value="value" />
+        </node>
+        <node concept="1XD0mK" id="1NGOXNJFpbQ" role="1XD05H">
+          <node concept="1XD0a7" id="1NGOXNJFpgk" role="1XD0cX">
+            <node concept="2a$s4D" id="1NGOXNJFpnJ" role="1XD07H">
+              <ref role="2a$nQg" node="1NGOXNJFhyB" resolve="value" />
+            </node>
+            <node concept="UZU4S" id="1NGOXNJFpdR" role="21Pmik">
+              <ref role="UZU4V" node="1NGOXNJFivt" resolve="obj" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1XD0e9" id="1NGOXNJFpsP" role="THmaL">
+        <node concept="UZU4S" id="1NGOXNJFpx0" role="1XD0SB">
+          <ref role="UZU4V" node="1NGOXNJFpbx" resolve="value" />
+        </node>
+      </node>
+      <node concept="1XD0l1" id="1NGOXNJFfEC" role="2BPcuh" />
+      <node concept="1XD0bi" id="1NGOXNJFivt" role="1XbAXm">
+        <property role="TrG5h" value="obj" />
+        <node concept="2EYIWN" id="1NGOXNJFivx" role="37iW8f">
+          <ref role="2EYIUZ" node="1NGOXNJFgVf" resolve="Container" />
+          <node concept="1XD0kr" id="1NGOXNJFiw1" role="TPadX">
+            <node concept="1XD088" id="1NGOXNJFivZ" role="1XD02C">
+              <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1XD088" id="1NGOXNJFpyH" role="21NdcZ">
+        <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="1NGOXNJFgVf">
+    <property role="3GE5qa" value="stubs" />
+    <property role="TrG5h" value="Container" />
+    <node concept="312cEg" id="1NGOXNJFhyB" role="jymVt">
+      <property role="TrG5h" value="value" />
+      <node concept="3Tm1VV" id="1NGOXNJFp7Q" role="1B3o_S" />
+      <node concept="16syzq" id="1NGOXNJFhyp" role="1tU5fm">
+        <ref role="16sUi3" node="1NGOXNJFhx9" resolve="T" />
+      </node>
+    </node>
+    <node concept="2RhdJD" id="1NGOXNJFhSu" role="jymVt">
+      <property role="2RkwnN" value="propertyValue" />
+      <node concept="3Tm1VV" id="1NGOXNJFhSv" role="1B3o_S" />
+      <node concept="2RoN1w" id="1NGOXNJFhSw" role="2RnVtd">
+        <node concept="3wEZqW" id="1NGOXNJFhSx" role="3wFrgM" />
+        <node concept="3xqBd$" id="1NGOXNJFhSy" role="3xrYvX">
+          <node concept="3Tm6S6" id="1NGOXNJFhSz" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="16syzq" id="1NGOXNJFiuG" role="2RkE6I">
+        <ref role="16sUi3" node="1NGOXNJFhx9" resolve="T" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="1NGOXNJFgVg" role="1B3o_S" />
+    <node concept="16euLQ" id="1NGOXNJFhx9" role="16eVyc">
+      <property role="TrG5h" value="T" />
     </node>
   </node>
 </model>

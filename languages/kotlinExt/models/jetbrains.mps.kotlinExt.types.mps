@@ -16,6 +16,7 @@
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="acfc188d-d5d6-4598-b370-6f4a983f05b2" name="jetbrains.mps.baseLanguage.methodReferences" version="0" />
+    <use id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable" version="0" />
     <engage id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers" />
     <devkit ref="888618cf-7697-4adc-80cd-8c6ea3486ef7(jetbrains.mps.devkit.aspect.types)" />
     <devkit ref="4866b4b4-6ecd-49f3-ae68-c62248cc4306(jetbrains.mps.devkit.kotlin.jvm)" />
@@ -615,6 +616,10 @@
       <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
+    </language>
+    <language id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable">
+      <concept id="1177714083117" name="jetbrains.mps.baseLanguage.varVariable.structure.VarType" flags="in" index="PeGgZ" />
+      <concept id="1236693300889" name="jetbrains.mps.baseLanguage.varVariable.structure.VarVariableDeclaration" flags="ng" index="3KEzu6" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -64948,66 +64953,29 @@
         </node>
       </node>
     </node>
-    <node concept="3hwh0R" id="73s7TtKAcHt" role="0oKgB">
+    <node concept="3hwh0R" id="1NGOXNJG$zT" role="0oKgB">
       <property role="TrG5h" value="handleVariableReceiver" />
-      <node concept="3hPv5a" id="73s7TtKAfW4" role="3hP23H">
+      <node concept="3hPv5a" id="1NGOXNJG$zU" role="3hP23H">
         <property role="TrG5h" value="reference" />
-        <node concept="3Tqbb2" id="73s7TtKAgk7" role="3hPmi9">
-          <ref role="ehGHo" to="hcm8:4Nah4_QdulL" resolve="VariableRefExpression" />
+        <node concept="3Tqbb2" id="1NGOXNJG$zV" role="3hPmi9">
+          <ref role="ehGHo" to="hcm8:2yYXHtl6JeQ" resolve="INavigationTarget" />
         </node>
-        <node concept="10Nm6u" id="1zv4n$aMsqJ" role="1u322O" />
+        <node concept="10Nm6u" id="1NGOXNJG$zW" role="1u322O" />
       </node>
-      <node concept="3hPv5a" id="73s7TtKAfIG" role="3hP23H">
+      <node concept="3hPv5a" id="1NGOXNJGDmN" role="3hP23H">
+        <property role="TrG5h" value="declaredReceiver" />
+        <node concept="3Tqbb2" id="1NGOXNJGDzi" role="3hPmi9">
+          <ref role="ehGHo" to="hcm8:2yYXHtl6Jh1" resolve="IType" />
+        </node>
+      </node>
+      <node concept="3hPv5a" id="1NGOXNJG$zX" role="3hP23H">
         <property role="TrG5h" value="subs" />
-        <node concept="3uibUv" id="73s7TtKAfPZ" role="3hPmi9">
+        <node concept="3uibUv" id="1NGOXNJG$zY" role="3hPmi9">
           <ref role="3uigEE" node="69s32WIPsJc" resolve="LogicalTypeVarSubs" />
         </node>
-        <node concept="10Nm6u" id="1zv4n$aMsqK" role="1u322O" />
+        <node concept="10Nm6u" id="1NGOXNJG$zZ" role="1u322O" />
       </node>
-      <node concept="3clFbS" id="73s7TtKAcHv" role="3hEL4E">
-        <node concept="3SKdUt" id="73s7TtKA_3O" role="3cqZAp">
-          <node concept="1PaTwC" id="73s7TtKA_3P" role="1aUNEU">
-            <node concept="3oM_SD" id="73s7TtKA_gR" role="1PaTwD">
-              <property role="3oM_SC" value="TODO" />
-            </node>
-            <node concept="3oM_SD" id="73s7TtKA_gU" role="1PaTwD">
-              <property role="3oM_SC" value="merge" />
-            </node>
-            <node concept="3oM_SD" id="73s7TtKA_gZ" role="1PaTwD">
-              <property role="3oM_SC" value="this" />
-            </node>
-            <node concept="3oM_SD" id="73s7TtKA_h6" role="1PaTwD">
-              <property role="3oM_SC" value="logic" />
-            </node>
-            <node concept="3oM_SD" id="73s7TtKA_hf" role="1PaTwD">
-              <property role="3oM_SC" value="with" />
-            </node>
-            <node concept="3oM_SD" id="73s7TtKA_hQ" role="1PaTwD">
-              <property role="3oM_SC" value="functions" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="73s7TtKAjJ6" role="3cqZAp">
-          <node concept="3cpWsn" id="73s7TtKAjJ7" role="3cpWs9">
-            <property role="TrG5h" value="declaredReceiver" />
-            <node concept="3Tqbb2" id="73s7TtKAjDC" role="1tU5fm">
-              <ref role="ehGHo" to="hcm8:2yYXHtl6Jh1" resolve="IType" />
-            </node>
-            <node concept="2OqwBi" id="73s7TtKAjJ8" role="33vP2m">
-              <node concept="2OqwBi" id="73s7TtKAjJ9" role="2Oq$k0">
-                <node concept="3hN9Ij" id="73s7TtKAjJa" role="2Oq$k0">
-                  <ref role="3hLkJx" node="73s7TtKAfW4" resolve="reference" />
-                </node>
-                <node concept="3TrEf2" id="73s7TtKAjJb" role="2OqNvi">
-                  <ref role="3Tt5mk" to="hcm8:4Nah4_QdulM" resolve="target" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="73s7TtKAjJc" role="2OqNvi">
-                <ref role="37wK5l" to="hez:75chmMYh8YE" resolve="getReceiverType" />
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="3clFbS" id="1NGOXNJG$$0" role="3hEL4E">
         <node concept="3clFbJ" id="73s7TtKAkCL" role="3cqZAp">
           <node concept="3clFbS" id="73s7TtKAkCN" role="3clFbx">
             <node concept="3SKdUt" id="73s7TtK_$nR" role="3cqZAp">
@@ -65115,21 +65083,17 @@
               </node>
             </node>
             <node concept="3cpWs8" id="73s7TtK_$nW" role="3cqZAp">
-              <node concept="3cpWsn" id="73s7TtK_$nX" role="3cpWs9">
+              <node concept="3KEzu6" id="1NGOXNJGz4L" role="3cpWs9">
                 <property role="TrG5h" value="receiverTypeParameters" />
-                <node concept="A3Dl8" id="73s7TtK_$nY" role="1tU5fm">
-                  <node concept="3uibUv" id="73s7TtK_$nZ" role="A3Ik2">
-                    <ref role="3uigEE" to="1p8r:26mUjU3_L7_" resolve="TypeParameterDeclaration" />
+                <node concept="2OqwBi" id="1NGOXNJGz4T" role="33vP2m">
+                  <node concept="3hN9Ij" id="1NGOXNJGEY0" role="2Oq$k0">
+                    <ref role="3hLkJx" node="1NGOXNJGDmN" resolve="declaredReceiver" />
                   </node>
-                </node>
-                <node concept="2OqwBi" id="73s7TtK_$o0" role="33vP2m">
-                  <node concept="37vLTw" id="73s7TtKAn3P" role="2Oq$k0">
-                    <ref role="3cqZAo" node="73s7TtKAjJ7" resolve="declaredReceiver" />
-                  </node>
-                  <node concept="2qgKlT" id="73s7TtK_$o2" role="2OqNvi">
+                  <node concept="2qgKlT" id="1NGOXNJGz4V" role="2OqNvi">
                     <ref role="37wK5l" to="hez:7an2tsIdpkM" resolve="getTypeParameters" />
                   </node>
                 </node>
+                <node concept="PeGgZ" id="1NGOXNJGz4K" role="1tU5fm" />
               </node>
             </node>
             <node concept="3X$Joe" id="73s7TtK_$o3" role="3cqZAp">
@@ -65137,7 +65101,7 @@
                 <property role="TrG5h" value="TypeParameters" />
                 <node concept="2OqwBi" id="73s7TtK_$o5" role="3gj$pD">
                   <node concept="37vLTw" id="73s7TtK_$o6" role="2Oq$k0">
-                    <ref role="3cqZAo" node="73s7TtK_$nX" resolve="receiverTypeParameters" />
+                    <ref role="3cqZAo" node="1NGOXNJGz4L" resolve="receiverTypeParameters" />
                   </node>
                   <node concept="34oBXx" id="73s7TtK_$o7" role="2OqNvi" />
                 </node>
@@ -65156,13 +65120,13 @@
                 <node concept="1uXrbS" id="1zv4n$aMspt" role="3GayWF">
                   <ref role="1uXrre" node="2gj5XQXsM1g" resolve="subs" />
                   <node concept="3hN9Ij" id="73s7TtKAfQ9" role="1uXrr8">
-                    <ref role="3hLkJx" node="73s7TtKAfIG" resolve="subs" />
+                    <ref role="3hLkJx" node="1NGOXNJG$zX" resolve="subs" />
                   </node>
                 </node>
                 <node concept="1uXrbS" id="1zv4n$aMspu" role="3GayWF">
                   <ref role="1uXrre" node="2gj5XQXsOgA" resolve="params" />
                   <node concept="37vLTw" id="73s7TtK_$oe" role="1uXrr8">
-                    <ref role="3cqZAo" node="73s7TtK_$nX" resolve="receiverTypeParameters" />
+                    <ref role="3cqZAo" node="1NGOXNJGz4L" resolve="receiverTypeParameters" />
                   </node>
                 </node>
               </node>
@@ -65170,8 +65134,8 @@
             <node concept="3Aqczg" id="73s7TtK_$og" role="3cqZAp">
               <node concept="3jbYBd" id="73s7TtK_$oh" role="3Aqpz8">
                 <ref role="3jbY9l" node="5ViKESnVQ3k" resolve="lift" />
-                <node concept="37vLTw" id="73s7TtKAncB" role="3jbY8P">
-                  <ref role="3cqZAo" node="73s7TtKAjJ7" resolve="declaredReceiver" />
+                <node concept="3hN9Ij" id="1NGOXNJGEMT" role="3jbY8P">
+                  <ref role="3hLkJx" node="1NGOXNJGDmN" resolve="declaredReceiver" />
                 </node>
                 <node concept="a7P8L" id="73s7TtK_$oj" role="3jbY8V">
                   <ref role="a7OzE" node="73s7TtK_$o8" resolve="DeclaredType" />
@@ -65180,7 +65144,7 @@
                   <node concept="3jhG_Z" id="73s7TtK_$ol" role="3jhGob">
                     <ref role="3jhG_U" node="27wMicDpg9C" resolve="substitutions" />
                     <node concept="3hN9Ij" id="73s7TtKAfVY" role="3jhG_S">
-                      <ref role="3hLkJx" node="73s7TtKAfIG" resolve="subs" />
+                      <ref role="3hLkJx" node="1NGOXNJG$zX" resolve="subs" />
                     </node>
                   </node>
                 </node>
@@ -65289,7 +65253,7 @@
                         <ref role="37wK5l" to="hez:7iropoGYOd$" resolve="ofNavTarget" />
                         <ref role="1Pybhc" to="hez:1KzjWTsTA9Z" resolve="MemberReceiver" />
                         <node concept="3hN9Ij" id="73s7TtK_T1g" role="37wK5m">
-                          <ref role="3hLkJx" node="73s7TtKAfW4" resolve="reference" />
+                          <ref role="3hLkJx" node="1NGOXNJG$zU" resolve="reference" />
                         </node>
                       </node>
                     </node>
@@ -65299,7 +65263,7 @@
               <node concept="17R0WA" id="73s7TtK_$oK" role="3clFbw">
                 <node concept="2OqwBi" id="73s7TtK_$oL" role="3uHU7B">
                   <node concept="3hN9Ij" id="73s7TtK_Sd7" role="2Oq$k0">
-                    <ref role="3hLkJx" node="73s7TtKAfW4" resolve="reference" />
+                    <ref role="3hLkJx" node="1NGOXNJG$zU" resolve="reference" />
                   </node>
                   <node concept="2NL2c5" id="73s7TtK_$oN" role="2OqNvi" />
                 </node>
@@ -65317,7 +65281,7 @@
                           <node concept="2OqwBi" id="73s7TtK_$oV" role="2Oq$k0">
                             <node concept="2OqwBi" id="73s7TtK_$oW" role="2Oq$k0">
                               <node concept="3hN9Ij" id="73s7TtK_SNl" role="2Oq$k0">
-                                <ref role="3hLkJx" node="73s7TtKAfW4" resolve="reference" />
+                                <ref role="3hLkJx" node="1NGOXNJG$zU" resolve="reference" />
                               </node>
                               <node concept="z$bX8" id="73s7TtK_$oY" role="2OqNvi">
                                 <node concept="1xMEDy" id="73s7TtK_$oZ" role="1xVPHs">
@@ -65379,7 +65343,7 @@
                   <ref role="1uXrre" node="1QSyUt0P84q" resolve="nullSafe" />
                   <node concept="2OqwBi" id="1QSyUt0PEm8" role="1uXrr8">
                     <node concept="3hN9Ij" id="1QSyUt0PE8T" role="2Oq$k0">
-                      <ref role="3hLkJx" node="73s7TtKAfW4" resolve="reference" />
+                      <ref role="3hLkJx" node="1NGOXNJG$zU" resolve="reference" />
                     </node>
                     <node concept="2qgKlT" id="1QSyUt0PFpD" role="2OqNvi">
                       <ref role="37wK5l" to="hez:5D4bOjqGpyn" resolve="acceptNullable" />
@@ -65497,10 +65461,67 @@
             </node>
           </node>
           <node concept="2OqwBi" id="73s7TtKAli9" role="3clFbw">
-            <node concept="37vLTw" id="73s7TtKAl96" role="2Oq$k0">
-              <ref role="3cqZAo" node="73s7TtKAjJ7" resolve="declaredReceiver" />
+            <node concept="3hN9Ij" id="1NGOXNJGEN3" role="2Oq$k0">
+              <ref role="3hLkJx" node="1NGOXNJGDmN" resolve="declaredReceiver" />
             </node>
             <node concept="3x8VRR" id="73s7TtKAlEM" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="1zAsnw" id="1NGOXNJG$Bc" role="lGtFl">
+        <node concept="3SKdUq" id="1NGOXNJG$Bd" role="27qylF">
+          <property role="3SKdUp" value="Handles the receiver type of a variable declaration in the context of a reference. Populate subs and add constraints on type parameters into scope." />
+        </node>
+      </node>
+    </node>
+    <node concept="3hwh0R" id="73s7TtKAcHt" role="0oKgB">
+      <property role="TrG5h" value="handleKotlinVariableReceiver" />
+      <node concept="3hPv5a" id="73s7TtKAfW4" role="3hP23H">
+        <property role="TrG5h" value="reference" />
+        <node concept="3Tqbb2" id="73s7TtKAgk7" role="3hPmi9">
+          <ref role="ehGHo" to="hcm8:4Nah4_QdulL" resolve="VariableRefExpression" />
+        </node>
+        <node concept="10Nm6u" id="1zv4n$aMsqJ" role="1u322O" />
+      </node>
+      <node concept="3hPv5a" id="73s7TtKAfIG" role="3hP23H">
+        <property role="TrG5h" value="subs" />
+        <node concept="3uibUv" id="73s7TtKAfPZ" role="3hPmi9">
+          <ref role="3uigEE" node="69s32WIPsJc" resolve="LogicalTypeVarSubs" />
+        </node>
+        <node concept="10Nm6u" id="1zv4n$aMsqK" role="1u322O" />
+      </node>
+      <node concept="3clFbS" id="73s7TtKAcHv" role="3hEL4E">
+        <node concept="3Aqczg" id="1NGOXNJGG39" role="3cqZAp">
+          <node concept="3jm4v3" id="1NGOXNJGG38" role="3Aqpz8">
+            <ref role="3jm46O" node="1NGOXNJG$zT" resolve="handleVariableReceiver" />
+            <node concept="1uXrbS" id="1NGOXNJGG3x" role="3GayWF">
+              <ref role="1uXrre" node="1NGOXNJG$zU" resolve="reference" />
+              <node concept="3hN9Ij" id="1NGOXNJGG3X" role="1uXrr8">
+                <ref role="3hLkJx" node="73s7TtKAfW4" resolve="reference" />
+              </node>
+            </node>
+            <node concept="1uXrbS" id="1NGOXNJGG42" role="3GayWF">
+              <ref role="1uXrre" node="1NGOXNJGDmN" resolve="declaredReceiver" />
+              <node concept="2OqwBi" id="1NGOXNJGNC2" role="1uXrr8">
+                <node concept="2OqwBi" id="1NGOXNJGML8" role="2Oq$k0">
+                  <node concept="3hN9Ij" id="1NGOXNJGMzW" role="2Oq$k0">
+                    <ref role="3hLkJx" node="73s7TtKAfW4" resolve="reference" />
+                  </node>
+                  <node concept="3TrEf2" id="1NGOXNJGNo2" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hcm8:4Nah4_QdulM" resolve="target" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="1NGOXNJGNWr" role="2OqNvi">
+                  <ref role="37wK5l" to="hez:75chmMYh8YE" resolve="getReceiverType" />
+                </node>
+              </node>
+            </node>
+            <node concept="1uXrbS" id="1NGOXNJGG48" role="3GayWF">
+              <ref role="1uXrre" node="1NGOXNJG$zX" resolve="subs" />
+              <node concept="3hN9Ij" id="1NGOXNJGO23" role="1uXrr8">
+                <ref role="3hLkJx" node="73s7TtKAfIG" resolve="subs" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
