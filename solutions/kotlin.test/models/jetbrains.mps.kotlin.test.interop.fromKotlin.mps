@@ -1571,7 +1571,7 @@
         </node>
       </node>
       <node concept="2yQVVM" id="7ffJaDGKRG6" role="THmaL">
-        <ref role="2yQV70" node="6e74p5eOLUE" />
+        <ref role="2yQV70" node="6e74p5eOLUE" resolve="MultipleConstructorClass" />
         <node concept="1XD0eI" id="7ffJaDGKRGG" role="TWiod">
           <node concept="1XD0k7" id="7ffJaDGKRI5" role="1XD0ZN">
             <property role="1XD01k" value="2" />

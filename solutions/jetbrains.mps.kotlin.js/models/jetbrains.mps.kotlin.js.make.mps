@@ -443,7 +443,7 @@
                       <ref role="AarEw" node="7$Q$upHFLgR" resolve="canBeCompiled" />
                       <node concept="1XD0eI" id="7$Q$upHFMRl" role="TWiod">
                         <node concept="UZU4S" id="7$Q$upHFMRk" role="1XD0ZN">
-                          <ref role="UZU4V" node="7$Q$upHFJZc" />
+                          <ref role="UZU4V" node="7$Q$upHFJZc" resolve="it" />
                         </node>
                       </node>
                     </node>
@@ -461,7 +461,7 @@
                             <ref role="1ygV0p" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
                           </node>
                           <node concept="UZU4S" id="7$Q$upHFNBc" role="21Pmik">
-                            <ref role="UZU4V" node="7$Q$upHFJZc" />
+                            <ref role="UZU4V" node="7$Q$upHFJZc" resolve="it" />
                           </node>
                         </node>
                       </node>
@@ -491,7 +491,7 @@
                             </node>
                           </node>
                           <node concept="UZU4S" id="7$Q$upHFSOn" role="21Pmik">
-                            <ref role="UZU4V" node="7$Q$upHFJZc" />
+                            <ref role="UZU4V" node="7$Q$upHFJZc" resolve="it" />
                           </node>
                         </node>
                       </node>
@@ -578,7 +578,7 @@
                 </node>
                 <node concept="1XD0mK" id="7$Q$upHG$wj" role="1XD05H">
                   <node concept="1NbEFs" id="7$Q$upHG_af" role="1XD0cX">
-                    <ref role="AarEw" node="7$Q$upHG_pT" />
+                    <ref role="AarEw" node="7$Q$upHG_pT" resolve="ModuleContainer" />
                     <node concept="1XD0eI" id="7$Q$upHG_kQ" role="TWiod">
                       <node concept="UZU4S" id="7$Q$upHG_kP" role="1XD0ZN">
                         <ref role="UZU4V" node="38Z6ZyiWlaV" resolve="platform" />
@@ -596,7 +596,7 @@
                         <ref role="AarEw" node="7$Q$upHGDRR" resolve="createModule" />
                         <node concept="1XD0eI" id="7$Q$upHGECM" role="TWiod">
                           <node concept="UZU4S" id="7$Q$upHGECL" role="1XD0ZN">
-                            <ref role="UZU4V" node="7$Q$upHGDbs" />
+                            <ref role="UZU4V" node="7$Q$upHGDbs" resolve="it" />
                           </node>
                         </node>
                       </node>
@@ -615,7 +615,7 @@
                           <ref role="AarEw" node="7$Q$upHFLgR" resolve="canBeCompiled" />
                           <node concept="1XD0eI" id="7$Q$upHGCfu" role="TWiod">
                             <node concept="UZU4S" id="7$Q$upHGCft" role="1XD0ZN">
-                              <ref role="UZU4V" node="7$Q$upHGBl1" />
+                              <ref role="UZU4V" node="7$Q$upHGBl1" resolve="it" />
                             </node>
                           </node>
                         </node>
@@ -654,7 +654,7 @@
                 </node>
                 <node concept="1XD0mK" id="7$Q$upHGN0K" role="1XD05H">
                   <node concept="1NbEFs" id="7$Q$upHGNnU" role="1XD0cX">
-                    <ref role="AarEw" node="7$Q$upHG_pT" />
+                    <ref role="AarEw" node="7$Q$upHG_pT" resolve="ModuleContainer" />
                     <node concept="1XD0eI" id="7$Q$upHGNE$" role="TWiod">
                       <node concept="UZU4S" id="7$Q$upHGNEz" role="1XD0ZN">
                         <ref role="UZU4V" node="38Z6ZyiWlaV" resolve="platform" />
@@ -702,7 +702,7 @@
                                   <ref role="AarEw" node="7$Q$upHNCLP" resolve="isExcluded" />
                                   <node concept="1XD0eI" id="7$Q$upHNEg2" role="TWiod">
                                     <node concept="UZU4S" id="7$Q$upHNEg1" role="1XD0ZN">
-                                      <ref role="UZU4V" node="7$Q$upHNB9q" />
+                                      <ref role="UZU4V" node="7$Q$upHNB9q" resolve="it" />
                                     </node>
                                   </node>
                                 </node>
@@ -754,7 +754,7 @@
             </node>
           </node>
           <node concept="1NbEFs" id="7$Q$upHGqEE" role="21Pmik">
-            <ref role="AarEw" node="7$Q$upHGrr4" />
+            <ref role="AarEw" node="7$Q$upHGrr4" resolve="CompositeTracer" />
             <node concept="1XD0eI" id="7$Q$upHGqEG" role="TWiod">
               <node concept="UZU4S" id="7$Q$upHGqEH" role="1XD0ZN">
                 <ref role="UZU4V" node="7$Q$upHFnvw" resolve="tracer" />
@@ -890,7 +890,7 @@
             <ref role="UZU4V" node="7$Q$upHQ9pc" resolve="v" />
           </node>
           <node concept="UZU4S" id="7$Q$upHQ9OO" role="1XD0Yo">
-            <ref role="UZU4V" node="7$Q$upHQ9pb" />
+            <ref role="UZU4V" node="7$Q$upHQ9pb" resolve="field" />
           </node>
         </node>
       </node>
@@ -1322,7 +1322,7 @@
                 </node>
               </node>
               <node concept="UZU4S" id="7$Q$upHFBrb" role="21Pmik">
-                <ref role="UZU4V" node="7$Q$upHFAEn" />
+                <ref role="UZU4V" node="7$Q$upHFAEn" resolve="it" />
               </node>
             </node>
             <node concept="1XD0fa" id="7$Q$upHF$pI" role="THmaL">
@@ -1332,7 +1332,7 @@
                     <ref role="UZU4V" node="7$Q$upHF$q4" resolve="action" />
                   </node>
                   <node concept="UZU4S" id="7$Q$upHFD1Q" role="1aUoBw">
-                    <ref role="UZU4V" node="7$Q$upHFAEn" />
+                    <ref role="UZU4V" node="7$Q$upHFAEn" resolve="it" />
                   </node>
                 </node>
               </node>
@@ -1342,7 +1342,7 @@
                     <ref role="2yQV70" to="yyf4:~ProgressMonitor.done()" resolve="done" />
                   </node>
                   <node concept="UZU4S" id="7$Q$upHFCq2" role="21Pmik">
-                    <ref role="UZU4V" node="7$Q$upHFAEn" />
+                    <ref role="UZU4V" node="7$Q$upHFAEn" resolve="it" />
                   </node>
                 </node>
               </node>
@@ -1420,7 +1420,7 @@
                     <ref role="UZU4V" node="7$Q$upHFFZa" resolve="action" />
                   </node>
                   <node concept="UZU4S" id="7$Q$upHFIsG" role="1aUoBw">
-                    <ref role="UZU4V" node="7$Q$upHFGXg" />
+                    <ref role="UZU4V" node="7$Q$upHFGXg" resolve="it" />
                   </node>
                 </node>
                 <node concept="1XD0ko" id="7$Q$upHFJ4n" role="THmaL" />
@@ -1482,7 +1482,7 @@
         </node>
       </node>
       <node concept="1XD0d6" id="7$Q$upHGsyo" role="1XbAM7">
-        <ref role="1N2Gzy" node="7$Q$upHGc72" />
+        <ref role="1N2Gzy" node="7$Q$upHGc72" resolve="CompositeTracer" />
         <node concept="1XD0eI" id="7$Q$upHGsR9" role="TWiod">
           <node concept="1XD0a7" id="7$Q$upHGuJY" role="1XD0ZN">
             <node concept="UZU4S" id="7$Q$upHGv37" role="1XD07H">
@@ -1722,7 +1722,7 @@
                       <ref role="2yQV70" to="vqh0:~MessageSender.info(java.lang.String)" resolve="info" />
                       <node concept="1XD0eI" id="7$Q$upHGpH1" role="TWiod">
                         <node concept="UZU4S" id="7$Q$upHGpH0" role="1XD0ZN">
-                          <ref role="UZU4V" node="7$Q$upHGoDh" />
+                          <ref role="UZU4V" node="7$Q$upHGoDh" resolve="it" />
                         </node>
                       </node>
                     </node>
@@ -2558,7 +2558,7 @@
                       </node>
                     </node>
                     <node concept="UZU4S" id="7$Q$upHNvG9" role="21Pmik">
-                      <ref role="UZU4V" node="7$Q$upHNvBe" />
+                      <ref role="UZU4V" node="7$Q$upHNvBe" resolve="it" />
                     </node>
                   </node>
                 </node>
@@ -2592,7 +2592,7 @@
                 </node>
                 <node concept="1XD0em" id="7$Q$upHNzhe" role="21Pmik">
                   <node concept="2EYIWN" id="7$Q$upHNzhd" role="1XD0Sn">
-                    <ref role="2EYIUZ" to="gp7a:~GlobalModuleDependenciesManager$Deptype" resolve="Deptype" />
+                    <ref role="2EYIUZ" to="gp7a:~GlobalModuleDependenciesManager$Deptype" resolve="GlobalModuleDependenciesManager.Deptype" />
                   </node>
                 </node>
               </node>

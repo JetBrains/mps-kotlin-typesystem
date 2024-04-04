@@ -301,6 +301,7 @@
       <concept id="2936055411798373223" name="jetbrains.mps.kotlin.structure.PropertyDefaultAssignement" flags="ng" index="1XD0mK">
         <child id="2936055411798373866" name="expression" index="1XD0cX" />
       </concept>
+      <concept id="2936055411798373220" name="jetbrains.mps.kotlin.structure.ObjectDeclaration" flags="ng" index="1XD0mN" />
       <concept id="2936055411798373152" name="jetbrains.mps.kotlin.structure.CatchBlock" flags="ng" index="1XD0nR">
         <child id="2936055411798373827" name="type" index="1XD0ck" />
       </concept>
@@ -4006,8 +4007,10 @@
         </node>
         <node concept="1XD0kK" id="5aV8UnaXG9Y" role="1XD00I">
           <node concept="1XD0e9" id="5aV8UnaXGSM" role="THmaL">
-            <node concept="UZU4S" id="5aV8UnaXHBE" role="1XD0SB">
-              <ref role="UZU4V" to="0:~kotlin/Unit" resolve="Unit" />
+            <node concept="1XD0em" id="7DjBSo4pHc3" role="1XD0SB">
+              <node concept="1XD088" id="7DjBSo4pHc4" role="1XD0Sn">
+                <ref role="1SePDO" to="0:~kotlin/Unit" resolve="Unit" />
+              </node>
             </node>
             <node concept="1U20sH" id="5MrjHj8vqVh" role="lGtFl">
               <property role="1U20sK" value="error" />
@@ -8462,7 +8465,7 @@
               <property role="TrG5h" value="e" />
               <node concept="1XD0ea" id="3luvtaySQ8I" role="THmaL">
                 <node concept="1NbEFs" id="3luvtaySQR0" role="1XD0ST">
-                  <ref role="AarEw" to="0:~AssertionError.new(Any?)" />
+                  <ref role="AarEw" to="0:~AssertionError.new(Any?)" resolve="AssertionError" />
                   <node concept="1XD0eI" id="3luvtaySQTg" role="TWiod">
                     <node concept="1XD08G" id="3luvtaySQTf" role="1XD0ZN">
                       <node concept="Df6$J" id="3luvtaySQV4" role="Df6Hu">
@@ -8552,7 +8555,7 @@
       </node>
     </node>
     <node concept="1XD08x" id="4DC0lW7acp" role="AST3G">
-      <ref role="KYurZ" node="4DC0lW7bbN" />
+      <ref role="KYurZ" node="4DC0lW7bbN" resolve="Nested" />
       <node concept="1XD0eI" id="4DC0lW7bed" role="TWiod">
         <node concept="1XD0a7" id="4DC0lW7bfi" role="1XD0ZN">
           <node concept="1NbEtQ" id="4DC0lWo4FV" role="1XD07H">
@@ -8580,7 +8583,7 @@
     <node concept="1XD0aY" id="4DC0lWo5kQ" role="KS$fE">
       <property role="TrG5h" value="OtherNested" />
       <node concept="1XD08x" id="4DC0lWo5pV" role="AST3G">
-        <ref role="KYurZ" node="4DC0lW7bbN" />
+        <ref role="KYurZ" node="4DC0lW7bbN" resolve="Nested" />
         <node concept="1XD0eI" id="4DC0lWo5rI" role="TWiod">
           <node concept="UZU4S" id="4DC0lWo75z" role="1XD0ZN">
             <ref role="UZU4V" node="4DC0lWo716" resolve="d" />
@@ -8608,6 +8611,24 @@
             <ref role="1SePDO" to="0:~kotlin/Int" resolve="Int" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1XD0fY" id="6XYagOy8Ifm">
+    <property role="3GE5qa" value="scopes" />
+    <property role="TrG5h" value="objects" />
+    <node concept="eKYAL" id="6XYagOy8IOT" role="1XD0Tu" />
+    <node concept="1XD0mN" id="6XYagOy8IOY" role="1XD0Tu">
+      <property role="TrG5h" value="Standalone" />
+      <node concept="1XD0mN" id="6XYagOy8IPJ" role="KS$fE">
+        <property role="TrG5h" value="Nested" />
+      </node>
+    </node>
+    <node concept="eKYAL" id="6XYagOy8IQb" role="1XD0Tu" />
+    <node concept="1XD0aY" id="6XYagOy8IQm" role="1XD0Tu">
+      <property role="TrG5h" value="SomeClass" />
+      <node concept="1XD0mN" id="6XYagOy8IQQ" role="KS$fE">
+        <property role="TrG5h" value="NestedInClass" />
       </node>
     </node>
   </node>

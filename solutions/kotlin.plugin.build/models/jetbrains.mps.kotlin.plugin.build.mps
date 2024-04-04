@@ -207,10 +207,10 @@
       </node>
       <node concept="24cAiW" id="1GKPrS22Kir" role="24cAkG">
         <node concept="24YFd4" id="37xFOb516St" role="24YFd7">
-          <ref role="24YFd5" node="1diEraJ0skp" />
+          <ref role="24YFd5" node="1diEraJ0skp" resolve="jetbrains.mps.kotlin.typesystem" />
         </node>
         <node concept="24YFd4" id="37xFOb516Sv" role="24YFd7">
-          <ref role="24YFd5" to="zqd8:7BVjoXzUx67" />
+          <ref role="24YFd5" to="zqd8:7BVjoXzUx67" resolve="jetbrains.mps.coderules" />
         </node>
         <node concept="NbPM2" id="5pz4PwHrDMq" role="24c_eh">
           <node concept="3Mxwew" id="37xFOb516S$" role="3MwsjC">

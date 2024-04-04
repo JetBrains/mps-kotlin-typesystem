@@ -1244,14 +1244,14 @@
                             <ref role="1Pybhc" to="akzu:77yS8CrUJ$d" resolve="JavaToKtConversion" />
                             <node concept="2OqwBi" id="1NGOXNJGTWX" role="37wK5m">
                               <node concept="3TrEf2" id="1NGOXNJGTWY" role="2OqNvi">
-                                <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" />
+                                <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" resolve="type" />
                               </node>
                               <node concept="2OqwBi" id="1NGOXNJGTWZ" role="2Oq$k0">
                                 <node concept="3A2sRY" id="1NGOXNJGTX0" role="2Oq$k0">
                                   <ref role="3A2yKK" node="6gQplzy_jFI" resolve="varRef" />
                                 </node>
                                 <node concept="3TrEf2" id="1NGOXNJGTX1" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="5m2i:4mvBIJf3IdV" />
+                                  <ref role="3Tt5mk" to="5m2i:4mvBIJf3IdV" resolve="variable" />
                                 </node>
                               </node>
                             </node>

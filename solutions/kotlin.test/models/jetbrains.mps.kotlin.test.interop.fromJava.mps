@@ -4,7 +4,7 @@
   <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
-    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="12" />
+    <use id="6b3888c1-9802-44d8-8baf-f8e6c33ed689" name="jetbrains.mps.kotlin" version="13" />
     <use id="9e4ff22b-60f1-43ef-a50b-f9f0fcec22e0" name="jetbrains.mps.kotlin.javaRefs" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="2405a196-e75d-462c-938b-ae8e3fac20aa" name="jetbrains.mps.baseLanguage.kotlinRefs" version="0" />
@@ -150,13 +150,13 @@
     <node concept="1XD0bz" id="1DhEmk598Ib" role="1XD0Tu">
       <property role="TrG5h" value="extensionMethod" />
       <node concept="2EYIWN" id="1DhEmk598Ic" role="39xbXa">
-        <ref role="2EYIUZ" node="1DhEmk596LD" />
+        <ref role="2EYIUZ" node="1DhEmk596LD" resolve="SampleJavaClass" />
       </node>
     </node>
     <node concept="1XD0bz" id="1DhEmk58Qu9" role="1XD0Tu">
       <property role="TrG5h" value="superExtensionMethod" />
       <node concept="2EYIWN" id="1DhEmk598NZ" role="39xbXa">
-        <ref role="2EYIUZ" node="1DhEmk59dQp" />
+        <ref role="2EYIUZ" node="1DhEmk59dQp" resolve="SampleJavaSuperType" />
       </node>
     </node>
     <node concept="eKYAL" id="1DhEmk58Uhs" role="1XD0Tu" />
@@ -219,7 +219,7 @@
     </node>
     <node concept="3Tm1VV" id="1DhEmk596LE" role="1B3o_S" />
     <node concept="3uibUv" id="1DhEmk59e9O" role="EKbjA">
-      <ref role="3uigEE" node="1DhEmk59dQp" />
+      <ref role="3uigEE" node="1DhEmk59dQp" resolve="SampleJavaSuperType" />
     </node>
   </node>
   <node concept="3HP615" id="1DhEmk59dQp">
