@@ -1295,7 +1295,7 @@
                     <ref role="3j8tcu" node="abwK8kpRHw" resolve="shortNodeType" />
                   </node>
                   <node concept="2qgKlT" id="3VE$ZCzuvzS" role="2OqNvi">
-                    <ref role="37wK5l" to="jglh:28CvMylq0Pm" resolve="getConceptType" />
+                    <ref role="37wK5l" to="jglh:4VnyIrvoQ8N" resolve="getConceptType" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="3VE$ZCzuw0A" role="2OqNvi">
