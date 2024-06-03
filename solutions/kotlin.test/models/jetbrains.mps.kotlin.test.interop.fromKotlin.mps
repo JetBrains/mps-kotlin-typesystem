@@ -327,13 +327,13 @@
           <node concept="1ygUyI" id="3dMaGAcjFvA" role="1XD07H">
             <ref role="1ygV0p" node="3dMaGAcjB8S" resolve="getValue" />
             <ref role="2DD9uJ" node="3dMaGAcjBa3" resolve="setValue" />
+            <node concept="1U20sH" id="3ULqWH3NZqo" role="lGtFl">
+              <property role="1U20sK" value="ktClassType('String') is not a subtype of ktClassType('Int')" />
+            </node>
           </node>
           <node concept="UZU4S" id="3dMaGAcjFvB" role="21Pmik">
             <ref role="UZU4V" node="3dMaGAcjFvx" resolve="file" />
           </node>
-        </node>
-        <node concept="1U20sH" id="3dMaGAckmoy" role="lGtFl">
-          <property role="1U20sK" value="string is not int" />
         </node>
       </node>
     </node>
@@ -453,9 +453,9 @@
           <node concept="UZU4S" id="3dMaGAckV3e" role="21Pmik">
             <ref role="UZU4V" node="3dMaGAckwem" resolve="file" />
           </node>
-        </node>
-        <node concept="1U20sH" id="3dMaGAcleZF" role="lGtFl">
-          <property role="1U20sK" value="val cannot be reassigned" />
+          <node concept="1U20sH" id="3ULqWH3NR7Y" role="lGtFl">
+            <property role="1U20sK" value="Val cannot be reassigned" />
+          </node>
         </node>
       </node>
       <node concept="1XD0bi" id="3dMaGAckwem" role="1XbAXm">
