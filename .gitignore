@@ -26,6 +26,8 @@
 classes_gen
 source_gen
 source_gen.caches
+test_gen
+test_gen.caches
 *.class
 deps
 .mps-caches

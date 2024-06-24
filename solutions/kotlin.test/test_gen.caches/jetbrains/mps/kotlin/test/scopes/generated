@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-dag8ck0pdl7d5ppxt2hpu4mcl2wxdx1">
-  <files names="AmbiguousScope_Test.java:ClashingReceiver_Test.java:Inheritance_Test.java:InnerClassVisibility_Test.java:InstanceVisibility_Test.java:IsLeftExpressionTarget_Test.java:JavaInheritance_Test.java:JavaMemberVisibility_Test.java:ModuleVisibleReferences_Test.java:ReceiverScope_Test.java:StaticInstanceScope_Test.java:ThisScopes_Test.java:TopLevelVisibility_Test.java" />
-</product>
-

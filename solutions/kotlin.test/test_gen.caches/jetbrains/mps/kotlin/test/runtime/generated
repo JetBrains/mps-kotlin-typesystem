@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-2kh185zmfhyb4cofxvs8edk7vcr7xjx">
-  <files names="Post.java:TestCompiledKotlinCode_Test.java" />
-  <files dir="kotlin/default/jetbrains/mps/kotlin/test/runtime" names="ClassHierarchy.kt:GenericMessage.kt:Message.kt:_Properties.kt:messages.kt" />
-</product>
-
