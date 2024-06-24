@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:d5925e70-8a29-4d14-898a-c84f3d8155ee(jetbrains.mps.kotlin.sandbox.samples)">
+<model ref="r:aef14727-fcda-4ca8-b4e7-04121b25aed4(jetbrains.mps.kotlin.test.samples)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <devkit ref="3605c367-b661-48bf-8131-d9bd75494e4d(jetbrains.mps.devkit.kotlin)" />
     <devkit ref="4866b4b4-6ecd-49f3-ae68-c62248cc4306(jetbrains.mps.devkit.kotlin.jvm)" />

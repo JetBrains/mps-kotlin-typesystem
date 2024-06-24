@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:38084a08-bc59-4dbd-86a4-7236d93dab64(jetbrains.mps.kotlin.test.hierarchy@tests)/5410850268120684857">
+    <file name="AncestorFinders_Test.java">
+      <node id="5410850268120684857" at="33,33,34,60" concept="10" />
+      <node id="5410850268120688597" at="38,53,39,44" concept="1" />
+      <node id="5410850268120707404" at="42,54,43,45" concept="1" />
+      <node id="5410850268120778410" at="46,58,47,49" concept="1" />
+      <node id="5410850268120810438" at="50,56,51,47" concept="1" />
+      <node id="5410850268120684857" at="56,52,57,19" concept="10" />
+      <node id="5410850268120684857" at="61,36,62,46" concept="1" />
+      <node id="5410850268120688597" at="65,55,66,22" concept="1" />
+      <node id="5410850268120705188" at="68,13,69,95" concept="1" />
+      <node id="5410850268120705077" at="69,95,70,24" concept="1" />
+      <node id="5410850268120705077" at="71,48,72,31" concept="7" />
+      <node id="5410850268120707404" at="76,56,77,22" concept="1" />
+      <node id="5410850268120707404" at="77,22,78,227" concept="1" />
+      <node id="5410850268120778410" at="80,60,81,22" concept="1" />
+      <node id="5410850268120779209" at="82,30,83,85" concept="5" />
+      <node id="5410850268120778947" at="83,85,84,43" concept="1" />
+      <node id="5410850268120796459" at="85,13,86,45" concept="1" />
+      <node id="5410850268120796458" at="86,45,87,24" concept="1" />
+      <node id="5410850268120796458" at="88,48,89,31" concept="7" />
+      <node id="5410850268120810438" at="93,58,94,22" concept="1" />
+      <node id="5410850268120877861" at="95,30,96,89" concept="5" />
+      <node id="5410850268120878213" at="96,89,97,94" concept="5" />
+      <node id="5410850268120877816" at="97,94,98,0" concept="8" />
+      <node id="5410850268122999045" at="98,0,99,45" concept="7" />
+      <node id="5410850268122971895" at="99,45,100,102" concept="5" />
+      <node id="5410850268120879946" at="100,102,101,102" concept="5" />
+      <node id="5410850268120932977" at="101,102,102,0" concept="8" />
+      <node id="5410850268122966709" at="102,0,103,105" concept="7" />
+      <node id="5410850268122974088" at="103,105,104,77" concept="1" />
+      <node id="5410850268120921991" at="104,77,105,120" concept="1" />
+      <node id="5410850268120687763" at="109,52,110,155" concept="5" />
+      <node id="5410850268120687772" at="110,155,111,61" concept="5" />
+      <node id="5410850268120687784" at="113,65,114,68" concept="1" />
+      <node id="5410850268120687798" at="116,7,117,20" concept="6" />
+      <node id="5410850268120712602" at="119,65,120,54" concept="5" />
+      <node id="5410850268120696902" at="121,39,122,150" concept="1" />
+      <node id="5410850268120684857" at="30,0,32,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="5410850268120684857" at="33,0,36,0" concept="0" trace="AncestorFinders_Test#()V" />
+      <node id="5410850268120684857" at="56,0,59,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="5410850268120687782" at="112,72,115,9" concept="3" />
+      <node id="5410850268120708819" at="120,54,123,7" concept="3" />
+      <node id="5410850268120688597" at="37,0,41,0" concept="4" trace="test_lookupInvalid#()V" />
+      <node id="5410850268120707404" at="41,0,45,0" concept="4" trace="test_lookupExisting#()V" />
+      <node id="5410850268120778410" at="45,0,49,0" concept="4" trace="test_lookupFunctionType#()V" />
+      <node id="5410850268120810438" at="49,0,53,0" concept="4" trace="test_commonSuperTypes#()V" />
+      <node id="5410850268120684857" at="60,0,64,0" concept="4" trace="initTestNodes#()V" />
+      <node id="5410850268120707404" at="76,0,80,0" concept="4" trace="test_lookupExisting#()V" />
+      <node id="5410850268120687780" at="111,61,116,7" concept="3" />
+      <node id="5410850268120705077" at="67,30,73,9" concept="11" />
+      <node id="5410850268120796458" at="84,43,90,9" concept="11" />
+      <node id="5410850268120696694" at="119,0,125,0" concept="4" trace="lookupOnFinder#(Lorg/jetbrains/mps/openapi/model/SNode;null)V" />
+      <node id="5410850268120688597" at="66,22,74,9" concept="1" />
+      <node id="5410850268120778410" at="81,22,91,9" concept="1" />
+      <node id="5410850268120687759" at="109,0,119,0" concept="4" trace="createFinder#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/kotlinExt/types/AncestorFinder;" />
+      <node id="5410850268120688597" at="65,0,76,0" concept="4" trace="test_lookupInvalid#()V" />
+      <node id="5410850268120810438" at="94,22,106,9" concept="1" />
+      <node id="5410850268120778410" at="80,0,93,0" concept="4" trace="test_lookupFunctionType#()V" />
+      <node id="5410850268120810438" at="93,0,108,0" concept="4" trace="test_commonSuperTypes#()V" />
+      <scope id="5410850268120684857" at="33,33,34,60" />
+      <scope id="5410850268120688597" at="38,53,39,44" />
+      <scope id="5410850268120707404" at="42,54,43,45" />
+      <scope id="5410850268120778410" at="46,58,47,49" />
+      <scope id="5410850268120810438" at="50,56,51,47" />
+      <scope id="5410850268120684857" at="56,52,57,19" />
+      <scope id="5410850268120684857" at="61,36,62,46" />
+      <scope id="5410850268120705077" at="71,48,72,31" />
+      <scope id="5410850268120796458" at="88,48,89,31" />
+      <scope id="5410850268120687783" at="113,65,114,68" />
+      <scope id="5410850268120708825" at="121,39,122,150" />
+      <scope id="5410850268120705077" at="68,13,70,24" />
+      <scope id="5410850268120705077" at="71,9,73,9">
+        <var name="e" id="5410850268120705077" />
+      </scope>
+      <scope id="5410850268120707404" at="76,56,78,227" />
+      <scope id="5410850268120796458" at="85,13,87,24" />
+      <scope id="5410850268120796458" at="88,9,90,9">
+        <var name="e" id="5410850268120796458" />
+      </scope>
+      <scope id="5410850268120684857" at="33,0,36,0" />
+      <scope id="5410850268120684857" at="56,0,59,0">
+        <var name="owner" id="5410850268120684857" />
+      </scope>
+      <scope id="5410850268120687781" at="112,72,115,9" />
+      <scope id="5410850268120687782" at="112,72,115,9">
+        <var name="typeKey" id="5410850268120687793" />
+      </scope>
+      <scope id="5410850268120708819" at="120,54,123,7">
+        <var name="seeked" id="5410850268120708821" />
+      </scope>
+      <scope id="5410850268120688597" at="37,0,41,0" />
+      <scope id="5410850268120707404" at="41,0,45,0" />
+      <scope id="5410850268120778410" at="45,0,49,0" />
+      <scope id="5410850268120810438" at="49,0,53,0" />
+      <scope id="5410850268120684857" at="60,0,64,0" />
+      <scope id="5410850268120707404" at="76,0,80,0" />
+      <scope id="5410850268120696694" at="119,65,123,7">
+        <var name="finder" id="5410850268120712603" />
+      </scope>
+      <scope id="5410850268120687780" at="111,61,116,7">
+        <var name="nodePath" id="5410850268120687794" />
+      </scope>
+      <scope id="5410850268120688597" at="67,30,73,9" />
+      <scope id="5410850268120696694" at="119,0,125,0">
+        <var name="self" id="5410850268120696871" />
+        <var name="superTypes" id="5410850268120696877" />
+      </scope>
+      <scope id="5410850268120778410" at="82,30,90,9">
+        <var name="finder" id="5410850268120779210" />
+      </scope>
+      <scope id="5410850268120687759" at="109,52,117,20">
+        <var name="finder" id="5410850268120687773" />
+        <var name="paths" id="5410850268120687764" />
+      </scope>
+      <scope id="5410850268120688597" at="65,55,74,9" />
+      <scope id="5410850268120810438" at="95,30,105,120">
+        <var name="otherFinder" id="5410850268120878214" />
+        <var name="otherSelfCommon" id="7891992940532675073" />
+        <var name="selfFinder" id="5410850268120877862" />
+        <var name="selfOtherCommon" id="7891992940532674516" />
+      </scope>
+      <scope id="5410850268120687759" at="109,0,119,0">
+        <var name="type" id="5410850268120687801" />
+      </scope>
+      <scope id="5410850268120688597" at="65,0,76,0" />
+      <scope id="5410850268120778410" at="80,60,91,9" />
+      <scope id="5410850268120778410" at="80,0,93,0" />
+      <scope id="5410850268120810438" at="93,58,106,9" />
+      <scope id="5410850268120810438" at="93,0,108,0" />
+      <unit id="5410850268120684857" at="54,0,126,0" name="jetbrains.mps.kotlin.test.hierarchy.AncestorFinders_Test$TestBody" />
+      <unit id="5410850268120684857" at="28,0,127,0" name="jetbrains.mps.kotlin.test.hierarchy.AncestorFinders_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:38084a08-bc59-4dbd-86a4-7236d93dab64(jetbrains.mps.kotlin.test.hierarchy@tests)/5410850268120821711">
+    <file name="TestDataForm.java">
+      <node id="5410850268120850748" at="15,0,16,0" concept="2" trace="myTypeKey" />
+      <node id="5410850268120850752" at="16,40,17,24" concept="1" />
+      <node id="5410850268120853028" at="21,26,22,21" concept="6" />
+      <node id="5410850268120998996" at="25,28,26,32" concept="6" />
+      <node id="5410850268120832222" at="33,37,34,16" concept="6" />
+      <node id="5410850268120832232" at="37,58,38,16" concept="6" />
+      <node id="5410850268120832242" at="41,57,42,16" concept="6" />
+      <node id="5410850268120832253" at="45,31,46,13" concept="6" />
+      <node id="5410850268120832274" at="49,49,50,16" concept="6" />
+      <node id="5410850268120832283" at="53,21,54,16" concept="6" />
+      <node id="5410850268120832294" at="57,37,58,17" concept="6" />
+      <node id="5410850268120832308" at="61,35,62,13" concept="6" />
+      <node id="5410850268120848409" at="16,0,19,0" concept="0" trace="TestDataForm#(Ljetbrains/mps/kotlin/api/types/identifiers/TypeKey;)V" />
+      <node id="5410850268120994950" at="24,0,28,0" concept="4" trace="toString#()Ljava/lang/String;" />
+      <node id="5410850268120832215" at="32,0,36,0" concept="4" trace="copyRecursively#()Ljetbrains/mps/logic/dataform/DataForm;" />
+      <node id="5410850268120832223" at="36,0,40,0" concept="4" trace="mapRecursively#(Ljetbrains/mps/logic/dataform/DataForm/Mapper;)Ljetbrains/mps/logic/dataform/DataForm;" />
+      <node id="5410850268120832233" at="40,0,44,0" concept="4" trace="acceptVisitor#(Ljetbrains/mps/logic/dataform/DataForm/Visitor;)Ljava/lang/Object;" />
+      <node id="5410850268120832243" at="44,0,48,0" concept="4" trace="variablesCount#()I" />
+      <node id="5410850268120832264" at="48,0,52,0" concept="4" trace="arguments#()Ljava/util/Collection;" />
+      <node id="5410850268120832275" at="52,0,56,0" concept="4" trace="get#()Ljetbrains/mps/unification/Term;" />
+      <node id="5410850268120832284" at="56,0,60,0" concept="4" trace="is#(Ljetbrains/mps/unification/Term/Kind;)Z" />
+      <node id="5410850268120832295" at="60,0,64,0" concept="4" trace="compareTo#(Ljetbrains/mps/unification/Term;)I" />
+      <node id="5410850268120832254" at="19,0,24,0" concept="4" trace="symbol#()Ljava/lang/Object;" />
+      <scope id="5410850268120848413" at="16,40,17,24" />
+      <scope id="5410850268120832260" at="21,26,22,21" />
+      <scope id="5410850268120994957" at="25,28,26,32" />
+      <scope id="5410850268120832219" at="33,37,34,16" />
+      <scope id="5410850268120832229" at="37,58,38,16" />
+      <scope id="5410850268120832239" at="41,57,42,16" />
+      <scope id="5410850268120832250" at="45,31,46,13" />
+      <scope id="5410850268120832271" at="49,49,50,16" />
+      <scope id="5410850268120832280" at="53,21,54,16" />
+      <scope id="5410850268120832291" at="57,37,58,17" />
+      <scope id="5410850268120832305" at="61,35,62,13" />
+      <scope id="5410850268120848409" at="16,0,19,0">
+        <var name="typeKey" id="5410850268120849432" />
+      </scope>
+      <scope id="5410850268120994950" at="24,0,28,0" />
+      <scope id="5410850268120832215" at="32,0,36,0" />
+      <scope id="5410850268120832223" at="36,0,40,0">
+        <var name="mapper" id="5410850268120832224" />
+      </scope>
+      <scope id="5410850268120832233" at="40,0,44,0">
+        <var name="visitor" id="5410850268120832234" />
+      </scope>
+      <scope id="5410850268120832243" at="44,0,48,0" />
+      <scope id="5410850268120832264" at="48,0,52,0" />
+      <scope id="5410850268120832275" at="52,0,56,0" />
+      <scope id="5410850268120832284" at="56,0,60,0">
+        <var name="kind" id="5410850268120832288" />
+      </scope>
+      <scope id="5410850268120832295" at="60,0,64,0">
+        <var name="term" id="5410850268120832299" />
+      </scope>
+      <scope id="5410850268120832254" at="19,0,24,0" />
+      <unit id="5410850268120821711" at="14,0,65,0" name="jetbrains.mps.kotlin.test.hierarchy.TestDataForm" />
+    </file>
+  </root>
+</debug-info>
+

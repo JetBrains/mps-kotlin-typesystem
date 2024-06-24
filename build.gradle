@@ -62,5 +62,5 @@ clean {
 
 check {
     // tests from this target also include model checker invocation, which requires everything to be built
-    finalizedBy ':mps-kotlin-check'
+    finalizedBy ':mps-kotlin-test'
 }
