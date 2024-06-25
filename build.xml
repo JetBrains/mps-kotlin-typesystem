@@ -817,7 +817,7 @@
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="reactive-streams-1.0.0.final.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="rxjava-2.2.18.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="rxjava2-swing-0.3.7.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-kotlin/lib/kotlin-stdlib-1.9.0.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-kotlin/lib/kotlin-stdlib-1.9.20.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="collection-0.7.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="trove4j-3.0.3.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="conreactor-core-0.9.17.jar" />
@@ -1149,7 +1149,7 @@
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="reactive-streams-1.0.0.final.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="rxjava-2.2.18.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="rxjava2-swing-0.3.7.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-kotlin/lib/kotlin-stdlib-1.9.0.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-kotlin/lib/kotlin-stdlib-1.9.20.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="collection-0.7.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="trove4j-3.0.3.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="conreactor-core-0.9.17.jar" />
@@ -1228,7 +1228,7 @@
       <plugin id="jetbrains.mps.kotlin.typesystem" path="${build.tmp}/default/mps-kotlin-typesystem-_dl__lbrace_ci.mps.release_rbrace_+_dl__lbrace_ci.build.tag_rbrace_.zip/mps-kotlin-typesystem" />
       <macro name="kotlin_home" path="${basedir}" />
       <macro name="coderules_home" path="${coderules_home}" />
-      
+      <project path="${basedir}" />
       <testmodules>        
         <path refid="mps.tests.path" />
       </testmodules>
