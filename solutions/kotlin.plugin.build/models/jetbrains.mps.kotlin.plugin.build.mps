@@ -43,7 +43,6 @@
       <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
         <child id="6593674873639478221" name="haltonfailure" index="24c_eh" />
         <child id="6593674873635848987" name="requiredPlugins" index="24YFd7" />
-        <child id="5794342746865473745" name="openTestReport" index="tFFNm" />
         <child id="3609768169816292377" name="jvmArgs" index="1psgkv" />
       </concept>
       <concept id="6593674873635848984" name="jetbrains.mps.build.mps.tests.structure.RequiredPlugin" flags="ng" index="24YFd4">
@@ -224,11 +223,6 @@
         <node concept="NbPM2" id="3mytCjZmOqB" role="1psgkv">
           <node concept="3Mxwew" id="3mytCjZo1OL" role="3MwsjC">
             <property role="3MwjfP" value="-Dmps.coderules.typechecking.enabled=true -Xss2048k -Xmx2048m --add-opens=java.desktop/com.apple.laf=ALL-UNNAMED --add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED --add-opens=java.desktop/com.apple.eawt.event=ALL-UNNAMED" />
-          </node>
-        </node>
-        <node concept="NbPM2" id="CMQga5SU0m" role="tFFNm">
-          <node concept="3Mxwew" id="CMQga5SU0l" role="3MwsjC">
-            <property role="3MwjfP" value="true" />
           </node>
         </node>
       </node>

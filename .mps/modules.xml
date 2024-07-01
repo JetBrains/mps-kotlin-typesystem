@@ -14,7 +14,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/mps-kotlin-typesystem.iml" filepath="$PROJECT_DIR$/.idea/mps-kotlin-typesystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mps-kotlin-typesystem.iml" filepath="$PROJECT_DIR$/mps-kotlin-typesystem.iml" />
     </modules>
   </component>
 </project>

@@ -530,7 +530,6 @@
       <module namespace="jetbrains.mps.kotlin.plugin.build" type="solution" uuid="4ddb9520-4888-4a48-8d5b-4d6aa4ec0a2b">
         <dependencies>
           <module ref="bc9cd1e7-827b-4d61-b111-d2c896dcae6f(jetbrains.mps.coderules.build)" kind="cl" />
-          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
@@ -1194,7 +1193,7 @@
     </path>
     <pathconvert property="mps.tests.path.string" refid="mps.tests.path" />
     <property name="build.jna.library.path" location="${artifacts.mps}/lib/jna" />
-    <launchtests fork="true" haltonfailure="false" mpshome="${artifacts.mps}" reports="${build.tmp}" opentest="true">      
+    <launchtests fork="true" haltonfailure="false" mpshome="${artifacts.mps}" reports="${build.tmp}">      
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Dmps.coderules.typechecking.enabled=true" />
