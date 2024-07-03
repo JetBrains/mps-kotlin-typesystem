@@ -7269,7 +7269,7 @@
                         <ref role="a7OzE" node="6fEml8VUkmf" resolve="Scope" />
                       </node>
                       <node concept="a7P8L" id="6fEml8VUkmn" role="3AunhB">
-                        <ref role="a7OzE" node="6fEml8VUkma" resolve="RLow" />
+                        <ref role="a7OzE" node="6fEml8VUkma" resolve="R" />
                       </node>
                       <node concept="a7P8L" id="6fEml8VUkmo" role="3AunhB">
                         <ref role="a7OzE" node="6fEml8VUkm9" resolve="LLow" />
@@ -22180,7 +22180,7 @@
                       <node concept="HKQnh" id="3kQbxgd7ZI7" role="3A8w4Q">
                         <node concept="2ShNRf" id="3kQbxgd7ZIf" role="HKQng">
                           <node concept="1pGfFk" id="6lHpTcL7JgC" role="2ShVmc">
-                            <ref role="37wK5l" node="6lHpTcL5QmE" />
+                            <ref role="37wK5l" node="6lHpTcL5QmE" resolve="LeastUpperBound" />
                             <node concept="1Ft4W6" id="1G1kCT7Bhuu" role="37wK5m">
                               <node concept="a7P8L" id="1G1kCT7Bhut" role="1FtiSR">
                                 <ref role="a7OzE" node="1G1kCT7BfT3" resolve="DefaultToPullDown" />
@@ -47158,7 +47158,7 @@
                             <ref role="3A2yKK" node="4HDl82dp94z" resolve="mno" />
                           </node>
                           <node concept="3TrEf2" id="7e2hTcatfDk" role="2OqNvi">
-                            <ref role="3Tt5mk" to="hcm8:1QSyUt0NM5s" />
+                            <ref role="3Tt5mk" to="hcm8:1QSyUt0NM5s" resolve="operand" />
                           </node>
                         </node>
                       </node>
@@ -61946,7 +61946,7 @@
                       <node concept="HKQnh" id="7SBZzimkM5D" role="3A8w4Q">
                         <node concept="2ShNRf" id="7SBZzimkM5E" role="HKQng">
                           <node concept="1pGfFk" id="6lHpTcL7Fgu" role="2ShVmc">
-                            <ref role="37wK5l" node="6lHpTcL5QmE" />
+                            <ref role="37wK5l" node="6lHpTcL5QmE" resolve="LeastUpperBound" />
                             <node concept="3clFbT" id="5mAtEs5DPCB" role="37wK5m" />
                           </node>
                         </node>

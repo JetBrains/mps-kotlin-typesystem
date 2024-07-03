@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
   </languages>
@@ -159,7 +159,7 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
-        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
+        <property id="2928402740576877067" name="javaCode" index="3vZFNd" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
@@ -213,7 +213,7 @@
           <ref role="24YFd5" to="zqd8:7BVjoXzUx67" resolve="jetbrains.mps.coderules" />
         </node>
         <node concept="24YFd4" id="CMQga5TSxb" role="24YFd7">
-          <ref role="24YFd5" to="ffeo:1diEraJ0skp" />
+          <ref role="24YFd5" to="ffeo:1diEraJ0skp" resolve="jetbrains.mps.kotlin" />
         </node>
         <node concept="NbPM2" id="5pz4PwHrDMq" role="24c_eh">
           <node concept="3Mxwew" id="37xFOb516S$" role="3MwsjC">
@@ -364,7 +364,7 @@
         <ref role="L2wRA" node="37xFOb516N9" resolve="jetbrains.mps.kotlin.test" />
       </node>
       <node concept="L2wRC" id="37xFOb51ayZ" role="39821P">
-        <ref role="L2wRA" node="37xFOb516PE" resolve="jetbrains.mps.kotlin.sandbox" />
+        <ref role="L2wRA" node="37xFOb516PE" resolve="jetbrains.mps.kotlin.test.external" />
       </node>
     </node>
     <node concept="m$_wf" id="1diEraJ0skp" role="3989C9">
@@ -711,7 +711,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="jetbrains.mps.kotlin.plugin.build" />
         <property role="3LESm3" value="4ddb9520-4888-4a48-8d5b-4d6aa4ec0a2b" />
-        <property role="2GAjPV" value="true" />
+        <property role="3vZFNd" value="3kCd1ud3JDD/compile_ext" />
         <node concept="55IIr" id="6RInlDMvdsg" role="3LF7KH">
           <node concept="2Ry0Ak" id="6RInlDMvdsZ" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
