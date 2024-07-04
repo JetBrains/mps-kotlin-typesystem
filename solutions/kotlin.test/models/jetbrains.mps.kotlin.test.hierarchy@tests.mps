@@ -14,11 +14,11 @@
   <imports>
     <import index="fefm" ref="r:1007e072-ac19-4b13-85dc-0e4118398cf2(jetbrains.mps.kotlinExt.types)" />
     <import index="w7la" ref="bbf5c548-7111-4a53-a117-cdefc664cf34/java:jetbrains.mps.logic.reactor.evaluation(jetbrains.mps.logic.reactor/)" />
-    <import index="6exd" ref="r:0f9b1fb3-00f9-4480-b235-1a906a087ab2(jetbrains.mps.logic.dataform)" />
     <import index="yt73" ref="bbf5c548-7111-4a53-a117-cdefc664cf34/java:jetbrains.mps.unification(jetbrains.mps.logic.reactor/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="mx11" ref="r:fa9de6a8-90b7-4d2a-a9a9-a40c05cf603b(jetbrains.mps.kotlin.api.types.identifiers)" />
+    <import index="cof4" ref="r:0a9d1d47-250c-4f98-8962-b65edf8b0721(jetbrains.mps.logic.dataform)" />
     <import index="hcm8" ref="r:72a7bf00-0175-42ca-b99b-fe8519b6a16f(jetbrains.mps.kotlin.structure)" implicit="true" />
     <import index="hez" ref="r:b038209d-51a9-4919-b6e5-4fafce96fa00(jetbrains.mps.kotlin.behavior)" implicit="true" />
     <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
@@ -860,8 +860,8 @@
         </node>
       </node>
     </node>
-    <node concept="3uibUv" id="4GncUq$aN0D" role="EKbjA">
-      <ref role="3uigEE" to="6exd:1bm7a6EXvsP" resolve="DataForm" />
+    <node concept="3uibUv" id="1bCcuUUtd9u" role="EKbjA">
+      <ref role="3uigEE" to="cof4:1bm7a6EXvsP" resolve="DataForm" />
     </node>
     <node concept="3clFb_" id="4GncUq$aPzY" role="jymVt">
       <property role="TrG5h" value="symbol" />
@@ -912,7 +912,7 @@
     <node concept="3clFb_" id="4GncUq$aPzn" role="jymVt">
       <property role="TrG5h" value="copyRecursively" />
       <node concept="3uibUv" id="4GncUq$aPzo" role="3clF45">
-        <ref role="3uigEE" to="6exd:1bm7a6EXvsP" resolve="DataForm" />
+        <ref role="3uigEE" to="cof4:1bm7a6EXvsP" resolve="DataForm" />
       </node>
       <node concept="3Tm1VV" id="4GncUq$aPzp" role="1B3o_S" />
       <node concept="3clFbS" id="4GncUq$aPzr" role="3clF47">
@@ -929,11 +929,11 @@
       <node concept="37vLTG" id="4GncUq$aPzw" role="3clF46">
         <property role="TrG5h" value="mapper" />
         <node concept="3uibUv" id="4GncUq$aPzx" role="1tU5fm">
-          <ref role="3uigEE" to="6exd:3OPtF02TdNT" resolve="DataForm.Mapper" />
+          <ref role="3uigEE" to="cof4:3OPtF02TdNT" resolve="Mapper" />
         </node>
       </node>
       <node concept="3uibUv" id="4GncUq$aPzy" role="3clF45">
-        <ref role="3uigEE" to="6exd:1bm7a6EXvsP" resolve="DataForm" />
+        <ref role="3uigEE" to="cof4:1bm7a6EXvsP" resolve="DataForm" />
       </node>
       <node concept="3Tm1VV" id="4GncUq$aPzz" role="1B3o_S" />
       <node concept="3clFbS" id="4GncUq$aPz_" role="3clF47">
@@ -950,7 +950,7 @@
       <node concept="37vLTG" id="4GncUq$aPzE" role="3clF46">
         <property role="TrG5h" value="visitor" />
         <node concept="3uibUv" id="4GncUq$aPzF" role="1tU5fm">
-          <ref role="3uigEE" to="6exd:104EUzFOARB" resolve="DataForm.Visitor" />
+          <ref role="3uigEE" to="cof4:104EUzFOARB" resolve="Visitor" />
         </node>
       </node>
       <node concept="3uibUv" id="4GncUq$aPzG" role="3clF45">

@@ -164,7 +164,6 @@
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
-        <property id="5253498789149547713" name="reexport" index="3bR36h" />
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
@@ -520,12 +519,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="6WkzEbZ4yPT" role="3bR37C">
-          <node concept="3bR9La" id="6WkzEbZ4yPU" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="zqd8:7BVjoXzUx9d" resolve="jetbrains.mps.lang.coderules.template" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="74qBZh4PTNG" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -711,7 +704,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="jetbrains.mps.kotlin.plugin.build" />
         <property role="3LESm3" value="4ddb9520-4888-4a48-8d5b-4d6aa4ec0a2b" />
-        <property role="3vZFNd" value="3kCd1ud3JDD/compile_ext" />
+        <property role="3vZFNd" value="3kCd1ud3JDF/none" />
         <node concept="55IIr" id="6RInlDMvdsg" role="3LF7KH">
           <node concept="2Ry0Ak" id="6RInlDMvdsZ" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
@@ -803,7 +796,7 @@
         </node>
         <node concept="1SiIV0" id="37xFOb516NP" role="3bR37C">
           <node concept="3bR9La" id="37xFOb516NQ" role="1SiIV1">
-            <ref role="3bR37D" to="zqd8:7BVjoXzUx$V" resolve="jetbrains.mps.logic.runtime" />
+            <ref role="3bR37D" to="zqd8:74$3PKm_L$v" resolve="jetbrains.mps.logic.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="37xFOb516NR" role="3bR37C">
