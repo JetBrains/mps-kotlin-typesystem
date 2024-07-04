@@ -48,9 +48,6 @@
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ngI" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
       <concept id="8333855927540283103" name="jetbrains.mps.lang.test.structure.NodeConstraintsErrorCheckOperation" flags="ng" index="39XrGg">
         <child id="8333855927548182241" name="errorRef" index="39rjcI" />
       </concept>
@@ -367,9 +364,6 @@
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
-  <node concept="2XOHcx" id="1zgeQQWw4RG">
-    <property role="2XOHcw" value="${kotlin_home}" />
-  </node>
   <node concept="1lH9Xt" id="3bgqfmmMXeu">
     <property role="TrG5h" value="TypeSystem" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
