@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:a797db79-9494-4632-8ec6-b288c37d4226(jetbrains.mps.kotlin.js.make)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <devkit ref="4866b4b4-6ecd-49f3-ae68-c62248cc4306(jetbrains.mps.devkit.kotlin.jvm)" />
   </languages>
