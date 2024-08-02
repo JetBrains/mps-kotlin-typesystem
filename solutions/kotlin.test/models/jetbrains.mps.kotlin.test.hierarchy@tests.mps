@@ -923,7 +923,7 @@
       <node concept="37vLTG" id="4GncUq$aPzw" role="3clF46">
         <property role="TrG5h" value="mapper" />
         <node concept="3uibUv" id="4GncUq$aPzx" role="1tU5fm">
-          <ref role="3uigEE" to="cof4:3OPtF02TdNT" resolve="Mapper" />
+          <ref role="3uigEE" to="cof4:3OPtF02TdNT" resolve="DataForm.Mapper" />
         </node>
       </node>
       <node concept="3uibUv" id="4GncUq$aPzy" role="3clF45">
@@ -944,7 +944,7 @@
       <node concept="37vLTG" id="4GncUq$aPzE" role="3clF46">
         <property role="TrG5h" value="visitor" />
         <node concept="3uibUv" id="4GncUq$aPzF" role="1tU5fm">
-          <ref role="3uigEE" to="cof4:104EUzFOARB" resolve="Visitor" />
+          <ref role="3uigEE" to="cof4:104EUzFOARB" resolve="DataForm.Visitor" />
         </node>
       </node>
       <node concept="3uibUv" id="4GncUq$aPzG" role="3clF45">
