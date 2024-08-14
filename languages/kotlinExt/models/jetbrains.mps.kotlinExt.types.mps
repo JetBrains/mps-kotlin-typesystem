@@ -18678,10 +18678,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="15s5l7" id="2gj5XQXsOig" role="lGtFl">
-                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
-                <property role="huDt6" value="all typesystem messages" />
-              </node>
             </node>
             <node concept="3Aqczg" id="6iCs5$nitPf" role="3cqZAp">
               <node concept="3jm4v3" id="6iCs5$nitPd" role="3Aqpz8">
