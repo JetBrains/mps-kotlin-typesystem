@@ -19,6 +19,7 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="mx11" ref="r:fa9de6a8-90b7-4d2a-a9a9-a40c05cf603b(jetbrains.mps.kotlin.api.types.identifiers)" />
     <import index="cof4" ref="r:0a9d1d47-250c-4f98-8962-b65edf8b0721(jetbrains.mps.logic.dataform)" />
+    <import index="bj13" ref="bbf5c548-7111-4a53-a117-cdefc664cf34/java:jetbrains.mps.logic.reactor.logical(jetbrains.mps.logic.reactor/)" />
     <import index="hcm8" ref="r:72a7bf00-0175-42ca-b99b-fe8519b6a16f(jetbrains.mps.kotlin.structure)" implicit="true" />
     <import index="hez" ref="r:b038209d-51a9-4919-b6e5-4fafce96fa00(jetbrains.mps.kotlin.behavior)" implicit="true" />
     <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" implicit="true" />
@@ -250,6 +251,9 @@
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
+      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
+        <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
@@ -899,10 +903,25 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="4GncUq$aUT8" role="jymVt" />
     <node concept="2tJIrI" id="4GncUq$aUUx" role="jymVt" />
-    <node concept="2tJIrI" id="4GncUq$aVb3" role="jymVt" />
-    <node concept="2tJIrI" id="4GncUq$aVcu" role="jymVt" />
+    <node concept="3clFb_" id="6bE8t37swxZ" role="jymVt">
+      <property role="TrG5h" value="variables" />
+      <node concept="3Tm1VV" id="6bE8t37swy1" role="1B3o_S" />
+      <node concept="A3Dl8" id="6bE8t37swy2" role="3clF45">
+        <node concept="3uibUv" id="6bE8t37swy3" role="A3Ik2">
+          <ref role="3uigEE" to="cof4:uNmovXiEd4" resolve="Variable" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6bE8t37swyb" role="3clF47">
+        <node concept="3clFbF" id="6bE8t37szP0" role="3cqZAp">
+          <node concept="10Nm6u" id="6bE8t37szOZ" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6bE8t37swyc" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6bE8t37syXA" role="jymVt" />
     <node concept="3clFb_" id="4GncUq$aPzn" role="jymVt">
       <property role="TrG5h" value="copyRecursively" />
       <node concept="3uibUv" id="4GncUq$aPzo" role="3clF45">
