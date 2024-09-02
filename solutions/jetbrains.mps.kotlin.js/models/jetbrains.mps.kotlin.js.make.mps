@@ -312,8 +312,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
@@ -2240,60 +2250,101 @@
       </node>
     </node>
     <node concept="eKYAL" id="6WP0ZYvql6f" role="KS$fE" />
-    <node concept="1XD0bz" id="6WP0ZYvrofO" role="KS$fE">
-      <property role="TrG5h" value="scc" />
-      <property role="QH8Do" value="true" />
-      <node concept="1XD088" id="6WP0ZYvrqSf" role="21NdcZ">
-        <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
-        <node concept="1XD0kr" id="6WP0ZYvrrdv" role="TPadY">
-          <node concept="1XD088" id="6WP0ZYvrrdt" role="1XD02C">
-            <ref role="1SePDO" to="1xrd:~kotlin/collections/MutableList" resolve="MutableList" />
-            <node concept="1XD0kr" id="6WP0ZYvrs6C" role="TPadY">
-              <node concept="1XD088" id="6WP0ZYvrs6A" role="1XD02C">
-                <ref role="1SePDO" node="7$Q$upHFo2C" resolve="KmpKotlinModule" />
+    <node concept="gXE$l" id="5ciypEOnwEA" role="KS$fE">
+      <node concept="1PaTwC" id="5ciypEOnwEC" role="gXG0x">
+        <node concept="3oM_SD" id="5ciypEOnx0h" role="1PaTwD">
+          <property role="3oM_SC" value="FIXME" />
+        </node>
+        <node concept="3oM_SD" id="5ciypEOnFPB" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="5ciypEOny1_" role="1PaTwD">
+          <property role="3oM_SC" value="following" />
+        </node>
+        <node concept="3oM_SD" id="5ciypEOnyaD" role="1PaTwD">
+          <property role="3oM_SC" value="method" />
+        </node>
+        <node concept="3oM_SD" id="5ciypEOnyZs" role="1PaTwD">
+          <property role="3oM_SC" value="causes" />
+        </node>
+        <node concept="3oM_SD" id="5ciypEOnyZt" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="5ciypEOnz8x" role="1PaTwD">
+          <property role="3oM_SC" value="query" />
+        </node>
+        <node concept="3oM_SD" id="5ciypEOnzZ3" role="1PaTwD">
+          <property role="3oM_SC" value="overloadResolution" />
+        </node>
+        <node concept="3oM_SD" id="5ciypEOn$87" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="5ciypEOn$hb" role="1PaTwD">
+          <property role="3oM_SC" value="fail" />
+        </node>
+        <node concept="3oM_SD" id="5ciypEOnFPC" role="1PaTwD">
+          <property role="3oM_SC" value="MPS-37707" />
+        </node>
+      </node>
+    </node>
+    <node concept="1X3_iC" id="5ciypEOn82$" role="lGtFl">
+      <property role="3V$3am" value="members" />
+      <property role="3V$3ak" value="6b3888c1-9802-44d8-8baf-f8e6c33ed689/2324909103759097704/2324909103759097705" />
+      <node concept="1XD0bz" id="6WP0ZYvrofO" role="8Wnug">
+        <property role="TrG5h" value="scc" />
+        <property role="QH8Do" value="true" />
+        <node concept="1XD088" id="6WP0ZYvrqSf" role="21NdcZ">
+          <ref role="1SePDO" to="1xrd:~kotlin/collections/List" resolve="List" />
+          <node concept="1XD0kr" id="6WP0ZYvrrdv" role="TPadY">
+            <node concept="1XD088" id="6WP0ZYvrrdt" role="1XD02C">
+              <ref role="1SePDO" to="1xrd:~kotlin/collections/MutableList" resolve="MutableList" />
+              <node concept="1XD0kr" id="6WP0ZYvrs6C" role="TPadY">
+                <node concept="1XD088" id="6WP0ZYvrs6A" role="1XD02C">
+                  <ref role="1SePDO" node="7$Q$upHFo2C" resolve="KmpKotlinModule" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-      </node>
-      <node concept="1XD0e9" id="6cin1kcd9m_" role="THmaL">
-        <node concept="1XD0a7" id="6WP0ZYvr_Bb" role="1XD0SB">
-          <node concept="2yQVVM" id="6WP0ZYvrA_G" role="1XD07H">
-            <ref role="2yQV70" to="h31v:~Graph.scc()" resolve="scc" />
-          </node>
-          <node concept="1XD0a7" id="6WP0ZYvrv0o" role="21Pmik">
-            <node concept="1NbEtQ" id="6WP0ZYvrvs2" role="1XD07H">
-              <ref role="AarEw" to="0:~#0.also&lt;1&gt;(Function1&lt;0,Unit&gt;)" resolve="also" />
-              <node concept="1XD0f0" id="6WP0ZYvrvW9" role="1XD06E">
-                <node concept="1XD0a7" id="6WP0ZYvryRv" role="THmaL">
-                  <node concept="1NbEtQ" id="6WP0ZYvrzJA" role="1XD07H">
-                    <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.forEach&lt;1&gt;(kotlin/Function1&lt;0,kotlin/Unit&gt;)" resolve="forEach" />
-                    <node concept="1XD0eI" id="6WP0ZYvr$9F" role="TWiod">
-                      <node concept="21SRaq" id="6WP0ZYvr$rY" role="1XD0ZN">
-                        <node concept="3R_z35" id="6WP0ZYvr$ME" role="1XD07G">
-                          <ref role="3R_zB5" to="h31v:~Graph.add(jetbrains.mps.make.dependencies.graph.IVertex)" resolve="add" />
-                        </node>
-                        <node concept="UZU4S" id="6WP0ZYvr$9E" role="1ttUFV">
-                          <ref role="UZU4V" node="6WP0ZYvrvW9" resolve="it" />
+        <node concept="1XD0e9" id="6cin1kcd9m_" role="THmaL">
+          <node concept="1XD0a7" id="6WP0ZYvr_Bb" role="1XD0SB">
+            <node concept="2yQVVM" id="6WP0ZYvrA_G" role="1XD07H">
+              <ref role="2yQV70" to="h31v:~Graph.scc()" resolve="scc" />
+            </node>
+            <node concept="1XD0a7" id="6WP0ZYvrv0o" role="21Pmik">
+              <node concept="1NbEtQ" id="6WP0ZYvrvs2" role="1XD07H">
+                <ref role="AarEw" to="0:~#0.also&lt;1&gt;(Function1&lt;0,Unit&gt;)" resolve="also" />
+                <node concept="1XD0f0" id="6WP0ZYvrvW9" role="1XD06E">
+                  <node concept="1XD0a7" id="6WP0ZYvryRv" role="THmaL">
+                    <node concept="1NbEtQ" id="6WP0ZYvrzJA" role="1XD07H">
+                      <ref role="AarEw" to="1xrd:~#Iterable&lt;0&gt;.forEach&lt;1&gt;(kotlin/Function1&lt;0,kotlin/Unit&gt;)" resolve="forEach" />
+                      <node concept="1XD0eI" id="6WP0ZYvr$9F" role="TWiod">
+                        <node concept="21SRaq" id="6WP0ZYvr$rY" role="1XD0ZN">
+                          <node concept="3R_z35" id="6WP0ZYvr$ME" role="1XD07G">
+                            <ref role="3R_zB5" to="h31v:~Graph.add(jetbrains.mps.make.dependencies.graph.IVertex)" resolve="add" />
+                          </node>
+                          <node concept="UZU4S" id="6WP0ZYvr$9E" role="1ttUFV">
+                            <ref role="UZU4V" node="6WP0ZYvrvW9" resolve="it" />
+                          </node>
                         </node>
                       </node>
                     </node>
-                  </node>
-                  <node concept="1XD0a7" id="6WP0ZYvrwVc" role="21Pmik">
-                    <node concept="UZU4S" id="6WP0ZYvrye1" role="1XD07H">
-                      <ref role="UZU4V" to="1xrd:~kotlin/collections/MutableMap.values" resolve="values" />
-                    </node>
-                    <node concept="UZU4S" id="6WP0ZYvrwAu" role="21Pmik">
-                      <ref role="UZU4V" node="7$Q$upHGG1M" resolve="modules" />
+                    <node concept="1XD0a7" id="6WP0ZYvrwVc" role="21Pmik">
+                      <node concept="UZU4S" id="6WP0ZYvrye1" role="1XD07H">
+                        <ref role="UZU4V" to="1xrd:~kotlin/collections/MutableMap.values" resolve="values" />
+                      </node>
+                      <node concept="UZU4S" id="6WP0ZYvrwAu" role="21Pmik">
+                        <ref role="UZU4V" node="7$Q$upHGG1M" resolve="modules" />
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="2yQVVM" id="6WP0ZYvrt4n" role="21Pmik">
-              <ref role="2yQV70" to="h31v:~Graph.&lt;init&gt;()" resolve="Graph" />
-              <node concept="1XD088" id="6WP0ZYvru1n" role="TPadX">
-                <ref role="1SePDO" node="7$Q$upHFo2C" resolve="KmpKotlinModule" />
+              <node concept="2yQVVM" id="6WP0ZYvrt4n" role="21Pmik">
+                <ref role="2yQV70" to="h31v:~Graph.&lt;init&gt;()" resolve="Graph" />
+                <node concept="1XD088" id="6WP0ZYvru1n" role="TPadX">
+                  <ref role="1SePDO" node="7$Q$upHFo2C" resolve="KmpKotlinModule" />
+                </node>
               </node>
             </node>
           </node>
