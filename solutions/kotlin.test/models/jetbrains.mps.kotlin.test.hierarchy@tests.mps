@@ -998,7 +998,7 @@
       <property role="TrG5h" value="arguments" />
       <node concept="3Tm1VV" id="4GncUq$aP$9" role="1B3o_S" />
       <node concept="3uibUv" id="4GncUq$aP$b" role="3clF45">
-        <ref role="3uigEE" to="33ny:~Collection" resolve="Collection" />
+        <ref role="3uigEE" to="33ny:~List" resolve="List" />
         <node concept="3qUE_q" id="4GncUq$aP$c" role="11_B2D">
           <node concept="3uibUv" id="4GncUq$aP$d" role="3qUE_r">
             <ref role="3uigEE" to="yt73:~Term" resolve="Term" />
