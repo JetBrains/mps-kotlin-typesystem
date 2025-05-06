@@ -74,7 +74,7 @@
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
         <idea-version since-build="251.23774" until-build="251.*" />
-        <change-notes><![CDATA[<ul><li>Compatible with MPS 2024.3 EAP</li></ul>]]></change-notes>
+        <change-notes><![CDATA[<ul><li>Compatible with MPS 2025.1</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
