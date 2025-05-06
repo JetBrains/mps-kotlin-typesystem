@@ -73,7 +73,7 @@
         <depends>jetbrains.mps.kotlin</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
-        <idea-version since-build="243.21565" until-build="243.*" />
+        <idea-version since-build="251.23774" until-build="251.*" />
         <change-notes><![CDATA[<ul><li>Compatible with MPS 2024.3 EAP</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
