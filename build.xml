@@ -11,7 +11,7 @@
   <property name="mps.macro.coderules_home" location="${coderules_home}" />
   <property name="ci.build.num" value="9999" />
   <property name="ci.build.tag" value="SNAPSHOT" />
-  <property name="ci.mps.release" value="241" />
+  <property name="ci.mps.release" value="251" />
   <property name="kotlinc_home" location="${mps_home}/plugins/mps-kotlin/kotlinc" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.coderules" location="${coderules_home}" />
