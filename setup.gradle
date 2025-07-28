@@ -57,9 +57,9 @@ task installMps(type: Copy) {
 }
 
 task installCoderules(type: Copy) {
-    onlyIf {
-        !file(coderulesLocation).exists()
-    }
+//    onlyIf {
+//        !file(coderulesLocation).exists()
+//    }
 
     // Condition below identify the coderules plugin files among its artifacts
     from zipTree(configurations.coderules[1])
