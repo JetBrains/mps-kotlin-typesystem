@@ -64,6 +64,9 @@
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -429,7 +432,6 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="5045161044515397667" name="jetbrains.mps.lang.smodel.structure.Node_PointerOperation" flags="ng" index="iZEcu" />
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -1001,9 +1003,9 @@
             <node concept="3xONca" id="FkvPB76GJR" role="2Oq$k0">
               <ref role="3xOPvv" node="FkvPB76AB8" resolve="lNav" />
             </node>
-            <node concept="2qgKlT" id="FkvPB76GJS" role="2OqNvi">
+            <node concept="3zqWPK" id="3Dw1Jrwn_4d" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />
-              <node concept="359W_D" id="FkvPB76GJT" role="37wK5m">
+              <node concept="359W_D" id="3Dw1Jrwn_4f" role="37wK5m">
                 <ref role="359W_E" to="hcm8:2yYXHtl6Jhg" resolve="NavigationOperation" />
                 <ref role="359W_F" to="hcm8:1502Vug_mWz" resolve="operand" />
               </node>
@@ -1015,9 +1017,9 @@
             <node concept="3xONca" id="FkvPB76GJW" role="2Oq$k0">
               <ref role="3xOPvv" node="FkvPB76AB8" resolve="lNav" />
             </node>
-            <node concept="2qgKlT" id="FkvPB76GJX" role="2OqNvi">
+            <node concept="3zqWPK" id="3Dw1Jrwn_4g" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />
-              <node concept="359W_D" id="FkvPB76GJY" role="37wK5m">
+              <node concept="359W_D" id="3Dw1Jrwn_4i" role="37wK5m">
                 <ref role="359W_E" to="hcm8:2yYXHtl6Jhg" resolve="NavigationOperation" />
                 <ref role="359W_F" to="hcm8:2yYXHtl6JsV" resolve="target" />
               </node>
@@ -1029,9 +1031,9 @@
             <node concept="3xONca" id="FkvPB76ABs" role="2Oq$k0">
               <ref role="3xOPvv" node="FkvPB76AB8" resolve="lNav" />
             </node>
-            <node concept="2qgKlT" id="FkvPB76Gki" role="2OqNvi">
+            <node concept="3zqWPK" id="3Dw1Jrwn_4j" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />
-              <node concept="10Nm6u" id="FkvPB76GIF" role="37wK5m" />
+              <node concept="10Nm6u" id="3Dw1Jrwn_4l" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -1040,9 +1042,9 @@
             <node concept="3xONca" id="FkvPB76GA2" role="2Oq$k0">
               <ref role="3xOPvv" node="FkvPB76GJu" resolve="parentNav" />
             </node>
-            <node concept="2qgKlT" id="FkvPB76GA3" role="2OqNvi">
+            <node concept="3zqWPK" id="3Dw1Jrwn_4m" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />
-              <node concept="359W_D" id="FkvPB76GA4" role="37wK5m">
+              <node concept="359W_D" id="3Dw1Jrwn_4o" role="37wK5m">
                 <ref role="359W_E" to="hcm8:2yYXHtl6Jhg" resolve="NavigationOperation" />
                 <ref role="359W_F" to="hcm8:1502Vug_mWz" resolve="operand" />
               </node>
@@ -1098,9 +1100,9 @@
             <node concept="3xONca" id="FkvPB76Hdi" role="2Oq$k0">
               <ref role="3xOPvv" node="FkvPB76GJu" resolve="parentNav" />
             </node>
-            <node concept="2qgKlT" id="FkvPB76Hdj" role="2OqNvi">
+            <node concept="3zqWPK" id="3Dw1Jrwn_4p" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />
-              <node concept="359W_D" id="FkvPB76Hdk" role="37wK5m">
+              <node concept="359W_D" id="3Dw1Jrwn_4r" role="37wK5m">
                 <ref role="359W_E" to="hcm8:2yYXHtl6Jhg" resolve="NavigationOperation" />
                 <ref role="359W_F" to="hcm8:2yYXHtl6JsV" resolve="target" />
               </node>
@@ -1112,9 +1114,9 @@
             <node concept="3xONca" id="FkvPB76Hh4" role="2Oq$k0">
               <ref role="3xOPvv" node="FkvPB76GJu" resolve="parentNav" />
             </node>
-            <node concept="2qgKlT" id="FkvPB76Hh5" role="2OqNvi">
+            <node concept="3zqWPK" id="3Dw1Jrwn_4s" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />
-              <node concept="10Nm6u" id="FkvPB76H_x" role="37wK5m" />
+              <node concept="10Nm6u" id="3Dw1Jrwn_4u" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -1123,9 +1125,9 @@
             <node concept="3xONca" id="FkvPB76H6_" role="2Oq$k0">
               <ref role="3xOPvv" node="FkvPB76GJ$" resolve="lVar" />
             </node>
-            <node concept="2qgKlT" id="FkvPB76H6A" role="2OqNvi">
+            <node concept="3zqWPK" id="3Dw1Jrwn_4v" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />
-              <node concept="10Nm6u" id="FkvPB76HBq" role="37wK5m" />
+              <node concept="10Nm6u" id="3Dw1Jrwn_4x" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -1140,9 +1142,9 @@
             <node concept="3xONca" id="FkvPB76IJ_" role="2Oq$k0">
               <ref role="3xOPvv" node="FkvPB76GJC" resolve="regularVar" />
             </node>
-            <node concept="2qgKlT" id="FkvPB76IJA" role="2OqNvi">
+            <node concept="3zqWPK" id="3Dw1Jrwn_4y" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />
-              <node concept="10Nm6u" id="FkvPB76IJB" role="37wK5m" />
+              <node concept="10Nm6u" id="3Dw1Jrwn_4$" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -1157,9 +1159,9 @@
             <node concept="3xONca" id="FkvPB76ITo" role="2Oq$k0">
               <ref role="3xOPvv" node="FkvPB76ISZ" resolve="assign" />
             </node>
-            <node concept="2qgKlT" id="FkvPB76Jdx" role="2OqNvi">
+            <node concept="3zqWPK" id="3Dw1Jrwn_4_" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />
-              <node concept="359W_D" id="FkvPB76Jit" role="37wK5m">
+              <node concept="359W_D" id="3Dw1Jrwn_4B" role="37wK5m">
                 <ref role="359W_E" to="hcm8:2yYXHtl6Jml" resolve="Assignment" />
                 <ref role="359W_F" to="hcm8:2yYXHtl6J_f" resolve="left" />
               </node>
@@ -1171,9 +1173,9 @@
             <node concept="3xONca" id="FkvPB76JQE" role="2Oq$k0">
               <ref role="3xOPvv" node="FkvPB76ISZ" resolve="assign" />
             </node>
-            <node concept="2qgKlT" id="FkvPB76JQF" role="2OqNvi">
+            <node concept="3zqWPK" id="3Dw1Jrwn_4C" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />
-              <node concept="359W_D" id="FkvPB76JQG" role="37wK5m">
+              <node concept="359W_D" id="3Dw1Jrwn_4E" role="37wK5m">
                 <ref role="359W_E" to="hcm8:2yYXHtl6Jml" resolve="Assignment" />
                 <ref role="359W_F" to="hcm8:2yYXHtl6J_i" resolve="right" />
               </node>
@@ -1191,9 +1193,9 @@
             <node concept="3xONca" id="FkvPB76KK3" role="2Oq$k0">
               <ref role="3xOPvv" node="FkvPB76KxP" resolve="rNav" />
             </node>
-            <node concept="2qgKlT" id="FkvPB76KK4" role="2OqNvi">
+            <node concept="3zqWPK" id="3Dw1Jrwn_4F" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />
-              <node concept="359W_D" id="FkvPB76KK5" role="37wK5m">
+              <node concept="359W_D" id="3Dw1Jrwn_4H" role="37wK5m">
                 <ref role="359W_E" to="hcm8:2yYXHtl6Jhg" resolve="NavigationOperation" />
                 <ref role="359W_F" to="hcm8:1502Vug_mWz" resolve="operand" />
               </node>
@@ -1205,9 +1207,9 @@
             <node concept="3xONca" id="FkvPB76KK8" role="2Oq$k0">
               <ref role="3xOPvv" node="FkvPB76KxP" resolve="rNav" />
             </node>
-            <node concept="2qgKlT" id="FkvPB76KK9" role="2OqNvi">
+            <node concept="3zqWPK" id="3Dw1Jrwn_4I" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />
-              <node concept="359W_D" id="FkvPB76KKa" role="37wK5m">
+              <node concept="359W_D" id="3Dw1Jrwn_4K" role="37wK5m">
                 <ref role="359W_E" to="hcm8:2yYXHtl6Jhg" resolve="NavigationOperation" />
                 <ref role="359W_F" to="hcm8:2yYXHtl6JsV" resolve="target" />
               </node>
@@ -1219,9 +1221,9 @@
             <node concept="3xONca" id="FkvPB76KKd" role="2Oq$k0">
               <ref role="3xOPvv" node="FkvPB76KxP" resolve="rNav" />
             </node>
-            <node concept="2qgKlT" id="FkvPB76KKe" role="2OqNvi">
+            <node concept="3zqWPK" id="3Dw1Jrwn_4L" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />
-              <node concept="10Nm6u" id="FkvPB76KKf" role="37wK5m" />
+              <node concept="10Nm6u" id="3Dw1Jrwn_4N" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -1230,9 +1232,9 @@
             <node concept="3xONca" id="FkvPB76KKi" role="2Oq$k0">
               <ref role="3xOPvv" node="FkvPB76KxK" resolve="rVar" />
             </node>
-            <node concept="2qgKlT" id="FkvPB76KKj" role="2OqNvi">
+            <node concept="3zqWPK" id="3Dw1Jrwn_4O" role="2OqNvi">
               <ref role="37wK5l" to="hez:69RFwVHPwd9" resolve="isLeftExpressionTarget" />
-              <node concept="10Nm6u" id="FkvPB76L2n" role="37wK5m" />
+              <node concept="10Nm6u" id="3Dw1Jrwn_4Q" role="37wK5m" />
             </node>
           </node>
         </node>

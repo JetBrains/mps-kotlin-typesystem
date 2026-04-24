@@ -32,6 +32,9 @@
         <child id="1238857834412" name="index" index="1LF_Uc" />
       </concept>
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -210,7 +213,6 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="5045161044515397667" name="jetbrains.mps.lang.smodel.structure.Node_PointerOperation" flags="ng" index="iZEcu" />
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7400021826771268254" name="jetbrains.mps.lang.smodel.structure.SNodePointerType" flags="ig" index="2sp9CU">
         <reference id="7400021826771268269" name="concept" index="2sp9C9" />
       </concept>
@@ -1032,7 +1034,7 @@
                 <node concept="3j8tct" id="Aa0Z148u1d" role="2Oq$k0">
                   <ref role="3j8tcu" node="Aa0Z148u1D" resolve="projectedType" />
                 </node>
-                <node concept="2qgKlT" id="Aa0Z148u1e" role="2OqNvi">
+                <node concept="3zqWPK" id="3Dw1Jrwn_4R" role="2OqNvi">
                   <ref role="37wK5l" to="hez:7an2tsIdpkM" resolve="getTypeParameters" />
                 </node>
               </node>
@@ -1261,7 +1263,7 @@
                 <node concept="3j8tct" id="3VE$ZCzuuSc" role="2Oq$k0">
                   <ref role="3j8tcu" node="abwK8kpRHw" resolve="shortNodeType" />
                 </node>
-                <node concept="2qgKlT" id="3VE$ZCzuuSd" role="2OqNvi">
+                <node concept="3zqWPK" id="3Dw1Jrwn_4T" role="2OqNvi">
                   <ref role="37wK5l" to="hez:7an2tsIdpkM" resolve="getTypeParameters" />
                 </node>
               </node>
@@ -1294,11 +1296,11 @@
                   <node concept="3j8tct" id="3VE$ZCzuuSk" role="2Oq$k0">
                     <ref role="3j8tcu" node="abwK8kpRHw" resolve="shortNodeType" />
                   </node>
-                  <node concept="2qgKlT" id="3VE$ZCzuvzS" role="2OqNvi">
+                  <node concept="3zqWPK" id="3Dw1Jrwn_4V" role="2OqNvi">
                     <ref role="37wK5l" to="jglh:4VnyIrvoQ8N" resolve="getConceptType" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="3VE$ZCzuw0A" role="2OqNvi">
+                <node concept="3zqWPK" id="3Dw1Jrwn_4X" role="2OqNvi">
                   <ref role="37wK5l" to="hez:2gj5XQXIqKf" resolve="asInvariantProjection" />
                 </node>
               </node>
@@ -2096,9 +2098,9 @@
                     <node concept="37vLTw" id="1U$mAVHMNHX" role="2Oq$k0">
                       <ref role="3cqZAo" node="1U$mAVHMpOB" resolve="concept" />
                     </node>
-                    <node concept="2qgKlT" id="1U$mAVHMNHY" role="2OqNvi">
+                    <node concept="3zqWPK" id="3Dw1Jrwn_4Z" role="2OqNvi">
                       <ref role="37wK5l" to="tpcn:4UTtJHK9fEJ" resolve="isSubconceptOf" />
-                      <node concept="35c_gC" id="1U$mAVHMNHZ" role="37wK5m">
+                      <node concept="35c_gC" id="3Dw1Jrwn_51" role="37wK5m">
                         <ref role="35c_gD" to="vzxy:Aa0Z14eY4v" resolve="ProjectedConceptParameterizedType" />
                       </node>
                     </node>
