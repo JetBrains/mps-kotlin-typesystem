@@ -71,8 +71,8 @@
         <depends>jetbrains.mps.kotlin</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.platform</depends>
-        <idea-version since-build="253.27864" until-build="253.*" />
-        <change-notes><![CDATA[<ul><li>Compatible with MPS 2025.3</li></ul>]]></change-notes>
+        <idea-version since-build="261.23567" until-build="261.*" />
+        <change-notes><![CDATA[<ul><li>Compatible with MPS 2026.1</li></ul>]]></change-notes>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -686,6 +686,7 @@
       <settings refid="m2m-defaults" />
       <plugin path="${artifacts.coderules}/jetbrains.mps.coderules" id="jetbrains.mps.coderules" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
+      <plugin path="${artifacts.mps}/plugins/java" id="com.intellij.java" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
       <plugin path="${artifacts.mps}/plugins/mps-httpsupport" id="jetbrains.mps.ide.httpsupport" />
@@ -694,11 +695,6 @@
       <plugin path="${artifacts.mps}/plugins/mps-kotlin" id="jetbrains.mps.kotlin" />
       <plugin path="${artifacts.mps}/plugins/mps-make" id="jetbrains.mps.ide.make" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" id="jetbrains.mps.testing" />
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
-      <library file="${artifacts.mps}/languages/util/jetbrains.mps.lang.extension.jar" />
-      <library file="${artifacts.mps}/languages/workbench-stub.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
       <chunk>
         <module file="${basedir}/languages/kotlin.javaRefsExt/jetbrains.mps.kotlin.javaRefsExt.mpl" />
         <module file="${basedir}/solutions/kotlin.plugin.build/jetbrains.mps.kotlin.plugin.build.msd" />
@@ -769,17 +765,44 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/lib/hamcrest.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.fastutil.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.kotlinx.collections.immutable.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.kotlinx.coroutines.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.netty.buffer.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.netty.codec.http.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.swingx.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.analysis.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.analysis.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.builtInServer.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.builtInServer.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.ui.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.debugger.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.diff.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.locking.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectFrame.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectModel.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectModel.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.util.ex.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.util.ui.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -806,7 +829,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
         <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.logic.reactor.jar" />
         <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.logic.runtime.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-kotlin/lib/kotlin-stdlib-2.1.0.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-kotlin/lib/kotlin-stdlib-2.3.0.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="collection-0.7.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="trove4j-3.0.3.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="conreactor-core-0.9.21.jar" />
@@ -862,17 +885,44 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/lib/hamcrest.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.fastutil.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.kotlinx.collections.immutable.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.kotlinx.coroutines.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.netty.buffer.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.netty.codec.http.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.swingx.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.analysis.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.analysis.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.builtInServer.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.builtInServer.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.ui.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.debugger.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.diff.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.locking.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectFrame.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectModel.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectModel.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.util.ex.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.util.ui.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
@@ -950,17 +1000,44 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/lib/hamcrest.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.fastutil.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.kotlinx.collections.immutable.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.kotlinx.coroutines.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.netty.buffer.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.netty.codec.http.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.swingx.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.analysis.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.analysis.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.builtInServer.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.builtInServer.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.ui.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.debugger.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.diff.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.locking.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectFrame.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectModel.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectModel.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.util.ex.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.util.ui.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.coderules.jar" />
@@ -1037,17 +1114,44 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/lib/hamcrest.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.fastutil.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.kotlinx.collections.immutable.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.kotlinx.coroutines.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.netty.buffer.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.netty.codec.http.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.swingx.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.analysis.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.analysis.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.builtInServer.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.builtInServer.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.ui.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.debugger.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.diff.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.locking.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectFrame.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectModel.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectModel.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.util.ex.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.util.ui.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-kotlin/languages/kotlin/jetbrains.mps.kotlin.jar" />
@@ -1109,17 +1213,44 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/lib/hamcrest.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
-        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.fastutil.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.kotlinx.collections.immutable.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.kotlinx.coroutines.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.netty.buffer.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.netty.codec.http.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.swingx.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.analysis.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.analysis.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.builtInServer.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.builtInServer.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.ui.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.debugger.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.diff.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.locking.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectFrame.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectModel.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectModel.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.util.ex.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.util.ui.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
@@ -1144,7 +1275,7 @@
         <fileset file="${artifacts.coderules}/jetbrains.mps.coderules/languages/jetbrains.mps.logic.runtime.jar" />
         <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
         <fileset file="${artifacts.mps}/lib/junit4.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-kotlin/lib/kotlin-stdlib-2.1.0.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-kotlin/lib/kotlin-stdlib-2.3.0.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="collection-0.7.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="trove4j-3.0.3.jar" />
         <fileset dir="${artifacts.coderules}/jetbrains.mps.coderules/lib" includes="conreactor-core-0.9.21.jar" />
@@ -1205,14 +1336,10 @@
       </jvmargs>
       
       
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
-      <library file="${artifacts.mps}/languages/util/jetbrains.mps.lang.extension.jar" />
-      <library file="${artifacts.mps}/languages/workbench-stub.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
       
       <plugin id="jetbrains.mps.coderules" path="${artifacts.coderules}/jetbrains.mps.coderules" />
       <plugin id="com.intellij.modules.mps" path="${artifacts.mps}/lib/mps-workbench.jar" />
+      <plugin id="com.intellij.java" path="${artifacts.mps}/plugins/java" />
       <plugin id="jetbrains.mps.build" path="${artifacts.mps}/plugins/mps-build" />
       <plugin id="jetbrains.mps.core" path="${artifacts.mps}/plugins/mps-core" />
       <plugin id="jetbrains.mps.ide.httpsupport" path="${artifacts.mps}/plugins/mps-httpsupport" />
