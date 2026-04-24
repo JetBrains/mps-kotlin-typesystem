@@ -13,7 +13,7 @@ java {
 defaultTasks 'assemble'
 
 if (!file(mpsLocation).exists() || !file(coderulesLocation).exists()) {
-    throw new GradleException("dependencies are missing, please run ./gradlew -b setup.gradle")
+    throw new GradleException("dependencies are missing, please run ./gradlew -p setup")
 }
 
 configurations {
